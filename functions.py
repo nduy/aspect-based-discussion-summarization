@@ -352,8 +352,9 @@ def prun_graph(graph,options):
     NUM_MAX_NODES = 200  # maximum number of nodes to keep
     NUM_MAX_EDGES = 300  # maximum number of edge to keep.
     #                      The value could not more than (NUM_MAX_NODES)*(NUM_MAX_NODES-1)
-    EDGE_FREQ_MIN = 3  # minimum frequency that an edge is required to be. Being smaller, it will be eliminated.
-    NODE_FREQ_MIN = 3  # minimum frequency that a node is required to be. Being smaller, it will be eliminated.
+    EDGE_FREQ_MIN = 1  # minimum frequency that an edge is required to be. Being smaller, it will be eliminated.
+    NODE_FREQ_MIN = 1  # minimum frequency that a node is required to be. Being smaller, it will be eliminated.
+    NODE_DEGREE_MIN = 1  # minimum degree that a node is required to have. Being smaller, it will be eliminated.
     MIN_WORD_LENGTH = 3  # Minimum number of character of a word, accepted to enter the graph
 
 
@@ -378,11 +379,12 @@ def prun_graph(graph,options):
     if 'num_max_edges' in options:
         NUM_MAX_EDGES = options['num_max_edges']
 
-
     if 'edge_freq_min' in options:
         EDGE_FREQ_MIN = options['edge_freq_min']
     if 'node_freq_min' in options:
         NODE_FREQ_MIN = options['node_freq_min']
+    if 'node_degree_min' in options:
+        NODE_DEGREE_MIN = options['node_degree_min']
 
     if 'unify_matched_keywords' in options:
         try:
@@ -426,11 +428,31 @@ def prun_graph(graph,options):
             # the latter cover the former one
             # Implementation of INTRA cluster unification
             if INTRA_CLUSTER_UNIFY: # Unify the same  keywords in one cluster
-                # First separate nodes by its thread
-
-
-
-                maybe_print("Warning! Intra-cluster unification is not implemented!",1)
+                if UNIFY_MODE == 'link':
+                    max_score,_ = get_max_value_attribute(g, 'weight') # Get the max weight of all nodes in graph
+                    print max_score
+                    # Now make the links
+                    print matches
+                    for node0,node1 in matches:
+                        if g.node[node0]['thread_id'] == g.node[node1]['thread_id']: # unify if in the same thread
+                            g.add_edge(node0, node1, {'weight': max_score, 'id': node0+'|'+node1})
+                elif UNIFY_MODE == 'contract':
+                    t_g = g
+                    while len(matches)> 0:
+                        node0 = matches[0][0]
+                        node1 = matches[0][1]
+                        if g.node[node0]['thread_id'] == g.node[node1]['thread_id']:
+                            sum_weight = g.node[node0]['weight'] + g.node[node1]['weight']
+                            t_g = nx.contracted_nodes(t_g,node0,node1)
+                            t_g.node[node0]['weight'] = sum_weight
+                            t_g.node[node0]['label'] = g.node[node0]['label']
+                            # Update the match lst
+                            for i in xrange(0, len(matches)): # now node1 disappear, the unified node holds node0 id
+                                m = node0 if matches[i][0] == node1 else matches[i][0]
+                                n = node0 if matches[i][1] == node1 else matches[i][1]
+                                matches[i] = (m, n)
+                        matches.pop(0)  # Remove first element
+                    g = t_g
 
             # Implementation of INTER cluster unification
             if INTER_CLUSTER_UNIFY:
@@ -447,7 +469,7 @@ def prun_graph(graph,options):
                         node0 = matches[0][0]
                         node1 = matches[0][1]
                         sum_weight = g.node[node0]['weight'] + g.node[node1]['weight']
-                        t_g = nx.contracted_nodes(t_g,node0,node1)
+                        t_g = nx.contracted_nodes(t_g, node0, node1)
                         t_g.node[node0]['weight'] = sum_weight
                         t_g.node[node0]['label'] = g.node[node0]['label']
                         # Update the match lst
@@ -457,6 +479,21 @@ def prun_graph(graph,options):
                             n = node0 if matches[i][1] == node1 else matches[i][1]
                             matches[i] = (m, n)
                     g = t_g
+
+    # Filter nodes by frequency
+    to_remove_nodes = []
+    if NODE_FREQ_MIN > 1:
+        to_remove_nodes = [n for n in g.nodes() if g.node[n]['weight']<NODE_FREQ_MIN]
+        g.remove_nodes_from(to_remove_nodes)
+
+    if EDGE_FREQ_MIN > 1:
+        to_remove_edges = [(s, t) for (s, t) in g.edges() if g.edge[s][t]['weight'] < EDGE_FREQ_MIN]
+        g.remove_edges_from(to_remove_edges)
+
+    # Filter nodes by degree
+    if NODE_DEGREE_MIN > 1:
+        to_remove_nodes = [n for n in g.nodes() if g.degree(n) < NODE_DEGREE_MIN]
+        g.remove_nodes_from(to_remove_nodes)
 
     # Remove isolated nodes
     to_remove_nodes = []
@@ -470,10 +507,7 @@ def prun_graph(graph,options):
         g.remove_nodes_from(to_remove_nodes)
         g.remove_edges_from(to_remove_edges)
 
-
-    # Filter nodes by frequency
-
-    # :: Done prunning
+    # :: Done pruning
     maybe_print("--> Graph PRUNNING completed.\n    Number of nodes: {0}\n    Number of edges: {1}"
                 .format(len(g.nodes()), len(g.edges())))
 

@@ -12,10 +12,13 @@ options = {
     'remove_isolated_node': True,
     'unify_matched_keywords': {
         'enable': True,
-        'intra_cluster_unify': False,
+        'intra_cluster_unify': True,
         'inter_cluster_unify': False,
         'unification_mode': 'contract'  # modes: link, contract
     },
+    'node_freq_min': 1,
+    'edge_freq_min': 1,
+    'node_degree_min': 2
 }
 from functions import *
 
