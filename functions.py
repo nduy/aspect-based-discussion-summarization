@@ -44,6 +44,12 @@ script_verbality= 1     # 0: silent, 1: print sometime, 2: print everything
 
 preredTags = set(['NOUN','PROPN']);
 
+MERGE_MODE = 0  # 0: Do nothing
+
+# Sentiment analysis mode:
+#   'global': use TextBlob sentiment analysis to analyse the whole sentence. The result polarity therefore stand for
+SENTIMENT_ANALYSIS_MODE = 'global'
+
 ######################################
 # FUNCTIONS
 
@@ -54,19 +60,51 @@ preredTags = set(['NOUN','PROPN']);
 #               - 1: Keyword match. unify keywords that are exactly the same into one node
 #               - 2: Semantic similarity
 # @return: One summarization aspect graph.
-def build_sum_graph(merging_mode,thrds):
+def build_sum_graph(merging_mode,thrds,build_options):
     #g = nx.Graph()
     maybe_print("Start building sum graph in mode {0}".format(merging_mode), 1)
-    if merging_mode == 0:
+    # Read options
+    MERGE_MODE = build_options['merge_mode'] if build_options['merge_mode'] else 0
+    SENTIMENT_ANALYSIS_MODE = build_options['sentiment_ana_mode'] if build_options['sentiment_ana_mode'] else 'global'
+
+    if MERGE_MODE == 0:
         # print merge_mode_0(thrds)
         #print thrds
         g = merge_mode_0(thrds)
         #print g.edges()
         maybe_print("--> Graph BUILD completed.\n    Number of nodes: {0}\n    Number of edges: {1}"
-
                      .format(len(g.nodes()), len(g.edges())), 1)
         #print "zzzz", g.nodes()
         return g
+
+# Merging mode 0: Do nothing. Indeed, it just copy exactly all nodes and edges from the extracted keygraph.
+# @param: Target graph G and data threads to be merge thrds
+# @output: The result graph
+def merge_mode_0(thrds):
+    rs = nx.Graph()
+
+    for thrd in thrds:
+        maybe_print(":: Building aspect graph for text {0}".format(thrd), 3)
+        # Extract the graph
+        cen_gr, sup_grs = build_thread_graph(thrd)  # Extract central and supports
+        maybe_print("---- Found {0} centroid and {1} valid support(s).\n".format(1 if cen_gr else 0, len(sup_grs)),
+                    3)
+        # Add the nodes
+        if cen_gr:
+            # print "XXXXXX", len(cen_gr.nodes(data=True))
+            rs.add_nodes_from(cen_gr.nodes(data=True))
+        if sup_grs:
+            rs.add_nodes_from(flatten_list([sup_gr.nodes(data=True) for sup_gr in sup_grs]))
+        # Add the edges
+        if cen_gr:
+            # print "XXXXXX", len(cen_gr.edges(data=True))
+            rs.add_edges_from(cen_gr.edges(data=True))
+            # print cen_gr.edges()
+        if sup_grs:
+            rs.add_edges_from(flatten_list([sup_gr.edges(data=True) for sup_gr in sup_grs]))
+            # print ooo
+    return rs
+
 
 
 # Build the graph with text THREAD as input. Each thread has a structure as defined in the next procedure
@@ -82,26 +120,27 @@ def build_thread_graph(thrd):
     # Build graph for central text
     central_gr = None;
     if central:
-        central_gr = build_graph_from_text(central, thread_id);
+        central_gr = build_graph_from_text(central, thread_id, '0');
 
     # Build graphs for support texts
-    supports_gr = [build_graph_from_text(sup, thread_id) for sup in supports]
+    supports_gr = [build_graph_from_text(supports[i], thread_id,i) for i in xrange(0,len(supports))]
     #print supports_gr[0].edges()
     return central_gr, [sup for sup in supports_gr if sup]
 
 
 # Build a graph from a text
-def build_graph_from_text(txt,threadid):
+def build_graph_from_text(txt,threadid='_',comment_id='_'):
     maybe_print(u"Generating graph for text: {0}".format(txt), 3)
     sentences = sent_tokenize(txt.strip())  # sentence segmentation
     G = nx.Graph()
     # Get nodes and edges from sentence
-    sen_count = 1;
+    sen_count = 0;
     for sen in sentences:
         #print sen
         # Extract named-entities
         named_entities = []
-        n_ent = 0;        pg_text = Text(sen)# convert to pyglot
+        n_ent = 0
+        pg_text = Text(sen)# convert to pyglot
         try:
             n_ent = pg_text.entities
         except:
@@ -113,16 +152,25 @@ def build_graph_from_text(txt,threadid):
         tb_text = TextBlob(sen)  # Convert to textblob. # find noun phrases in text.noun_phrases
         noun_phrases = tb_text.noun_phrases
 
-        text = sen
+        raw_text = sen
         for item in (named_entities+noun_phrases): # group the words in noun phrase / NE into one big word
-            text = text.replace(item, item.replace(' ', '_'))
-
-        text = Text(text, hint_language_code='en')
-
+            raw_text = raw_text.replace(item, item.replace(' ', '_'))
+        # Convert to polygot format
+        text = Text(raw_text, hint_language_code='en')
+        # Filter tokens by POS tag
         preferred_words = [lemmatizer.lemmatize(w.lower()) for w, t in text.pos_tags if t in preredTags]
-        filtered_words = set([w for w in preferred_words if w not in stopwords])
+        # Filter stopwords
+        #filtered_words = list(set([w for w in preferred_words if w not in stopwords]))
+        filtered_words = [w for w in preferred_words if w not in stopwords]
+        # do sentiment analysis
+        sen_scores = None;
+        if SENTIMENT_ANALYSIS_MODE == 'global':
+            blob = TextBlob(raw_text)
+            sen_scores = [blob.sentiment.polarity for _ in filtered_words]
+
         # Assign id and label to the nodes before adding the graph
-        assigned_nodes = [('{0}~{1}~{2}'.format(w, threadid,gen_mcs_only()), {'label': w}) for w in filtered_words]
+        assigned_nodes = [('{0}~{1}~{2}~{3}'.format(filtered_words[i], threadid, comment_id, gen_mcs_only()),
+                           {'label': filtered_words[i]}) for i in xrange(0, len(filtered_words))]
         #print '---____----',assigned_nodes
         G.add_nodes_from(assigned_nodes)  # Add nodes from filtered words
         # Update nodes's weight
@@ -132,10 +180,12 @@ def build_graph_from_text(txt,threadid):
             except KeyError:
                 G.node[node[0]]['weight'] = 1
                 G.node[node[0]]['thread_id'] = threadid
+
         maybe_print('Sentence no ' + str(sen_count) + '\nNodes ' + str(G.nodes()), 3)
         sen_count +=1
         edges = combinations([i[0] for i in assigned_nodes], 2)
-        filtered_edges = list(edges)
+        filtered_edges = [(n,m) for n,m in edges if n.split('~')[0] != m.split('~')[0]]
+        #print list(edges)
         #print 'xxxafsdgfsa',filtered_edges
         if filtered_edges:
             G.add_edges_from(filtered_edges)  # Add edges from the combination of words co-occurred in the same sentence
@@ -146,6 +196,7 @@ def build_graph_from_text(txt,threadid):
                 except KeyError:
                     G.edge[u][v]['weight'] = 1
             maybe_print('Edges ' + str(G.edges()) + '\n', 3)
+        sen_count +=1  # Increase the sentence count index
     if len(G.nodes()) == 0:
         return None
 
@@ -245,7 +296,7 @@ def generate_json_from_graph(G):
         if G.node[node]['weight']:
             w = G.node[node]['weight']
             item['value'] = w
-            item['title'] = "frequency: " + str(w)
+            item['title'] = "freq: " + str(w)
         if G.node[node]['label']:
             item['label'] = G.node[node]['label']
         #print item
@@ -258,7 +309,7 @@ def generate_json_from_graph(G):
         if G.edge[edge[0]][edge[1]]['weight']:
             w = G.edge[edge[0]][edge[1]]['weight']
             item['value'] = w
-            item['title'] = "frequency: " + str(w)
+            item['title'] = "freq: " + str(w)
         #if G.edge[edge[0]][edge[1]]['label']:
         #    item['label'] = G.edge[edge[0]][edge[1]]['label']
         item['from'] = edge[0]
@@ -277,34 +328,6 @@ def flatten_list(l):
         return lx
     else:
         return l
-
-
-# Merging mode 0: Do nothing. Indeed, it just copy exactly all nodes and edges from the extracted keygraph.
-# @param: Target graph G and data threads to be merge thrds
-# @output: The result graph
-def merge_mode_0(thrds):
-    rs = nx.Graph()
-
-    for thrd in thrds:
-        maybe_print(":: Building aspect graph for text {0}".format(thrd), 3)
-        # Extract the graph
-        cen_gr,sup_grs = build_thread_graph(thrd) # Extract central and supports
-        maybe_print("---- Found {0} centroid and {1} valid support(s).\n".format(1 if cen_gr else 0,len(sup_grs)), 3)
-        # Add the nodes
-        if cen_gr:
-            #print "XXXXXX", len(cen_gr.nodes(data=True))
-            rs.add_nodes_from(cen_gr.nodes(data=True))
-        if sup_grs:
-            rs.add_nodes_from(flatten_list([sup_gr.nodes(data=True) for sup_gr in sup_grs]))
-        # Add the edges
-        if cen_gr:
-            #print "XXXXXX", len(cen_gr.edges(data=True))
-            rs.add_edges_from(cen_gr.edges(data=True))
-            #print cen_gr.edges()
-        if sup_grs:
-            rs.add_edges_from(flatten_list([sup_gr.edges(data=True) for sup_gr in sup_grs]))
-            #print ooo
-    return rs
 
 
 # get maximum node weight of the graph
@@ -443,6 +466,7 @@ def prun_graph(graph,options):
                         node1 = matches[0][1]
                         if g.node[node0]['thread_id'] == g.node[node1]['thread_id']:
                             sum_weight = g.node[node0]['weight'] + g.node[node1]['weight']
+                            #print node0,node1
                             t_g = nx.contracted_nodes(t_g,node0,node1)
                             t_g.node[node0]['weight'] = sum_weight
                             t_g.node[node0]['label'] = g.node[node0]['label']

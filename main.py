@@ -5,8 +5,12 @@
     Created on Mon Jun 19 10:51:42 2017
     MAIN SUMMARIZATION BASELINE
 '''
+build_options = {
+    'merge_mode': 0,
+    'sentiment_ana_mode': 'global'  # 'global','global-with-subjectivity', 'local'
+}
 
-options = {
+pruning_options = {
     'enable_pruning': True,
     'min_word_length': 2,
     'remove_isolated_node': True,
@@ -25,10 +29,10 @@ from functions import *
 if __name__ == "__main__":
     dataset = read_comment_file("data/comments_article0.txt");
     maybe_print("Loaded data set! Number of conversation thread: {0}".format(len(dataset)), 0)
-    asp_graph = build_sum_graph(0,dataset) # Build sum keyraph at mode 0
+    asp_graph = build_sum_graph(0,dataset,build_options) # Build sum keyraph at mode 0
     #print asp_graph.edges()
     # pruning
-    pruned_graph = prun_graph(asp_graph, options)
+    pruned_graph = prun_graph(asp_graph, pruning_options)
     #print pruned_graph.edges()
     if pruned_graph:
         json_g = generate_json_from_graph(pruned_graph)
