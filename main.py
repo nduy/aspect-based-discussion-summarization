@@ -5,9 +5,13 @@
     Created on Mon Jun 19 10:51:42 2017
     MAIN SUMMARIZATION BASELINE
 '''
+
+from functions import *
+from decoration import *
+
 build_options = {
     'merge_mode': 0,
-    'sentiment_ana_mode': 'global'  # 'global','global-with-subjectivity', 'local'
+    'sentiment_ana_mode': 'global'  # 'global', 'local'
 }
 
 pruning_options = {
@@ -24,7 +28,7 @@ pruning_options = {
     'edge_freq_min': 1,
     'node_degree_min': 2
 }
-from functions import *
+
 
 if __name__ == "__main__":
     dataset = read_comment_file("data/comments_article0.txt");
@@ -34,8 +38,14 @@ if __name__ == "__main__":
     # pruning
     pruned_graph = prun_graph(asp_graph, pruning_options)
     #print pruned_graph.edges()
-    if pruned_graph:
-        json_g = generate_json_from_graph(pruned_graph)
+    sen_graph = compute_sentiment_score(pruned_graph)
+    colored_graph = coloring_nodes(sen_graph)
+    #for n in colored_graph.nodes():
+    #    print colored_graph.node[n]
+
+    json_g = None
+    if colored_graph.nodes():
+        json_g = generate_json_from_graph(colored_graph)
     with open('dump.json', 'w') as outfile:
         json.dump(json_g, outfile, sort_keys=True, indent=4, separators=(',', ': '))
 

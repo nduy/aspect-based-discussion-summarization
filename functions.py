@@ -1,15 +1,14 @@
 #!/usr/bin/python -tt
 # -*- coding: utf-8 -*-
 """
- Author: Nguyen Duc Duy - UNITN
+    Author: Nguyen Duc Duy - UNITN
     Created on Mon Jun 19 10:51:42 2017
     FUNCTIONS FOR TEXT SUMMARIZATION
 """
 
 ######################################
 # IMPORT LIBRARY
-import csv, re, codecs, json
-from cucco import Cucco
+import csv, codecs, json
 from datetime import datetime
 import networkx as nx
 from textblob import TextBlob
@@ -19,36 +18,27 @@ from itertools import combinations
 from polyglot.text import Text
 from polyglot.downloader import downloader
 from nltk.stem import WordNetLemmatizer
+from nltk.sentiment.vader import SentimentIntensityAnalyzer
+from utils import *
 
 ######################################
 # EXTRA DECLARATIONS
-
-# Normalization and cleaning engine
-cucco = Cucco()
-
 # Lemmatizer
 lemmatizer = WordNetLemmatizer()
 
-normalizations = [
-    'remove_accent_marks',
-    ('replace_urls', {'replacement': ''}),
-    ('replace_emails', {'replacement': ''}),
-    'remove_extra_whitespaces',
-]
+# Sentiment analyzer
+sid = SentimentIntensityAnalyzer()
 
 stopwords = set(stopwords.words('english')) # Add more stopword to ignore her
 
-
-# Verbality: to print or not to print ################################################################################
-script_verbality= 1     # 0: silent, 1: print sometime, 2: print everything
 
 preredTags = set(['NOUN','PROPN']);
 
 MERGE_MODE = 0  # 0: Do nothing
 
 # Sentiment analysis mode:
-#   'global': use TextBlob sentiment analysis to analyse the whole sentence. The result polarity therefore stand for
-SENTIMENT_ANALYSIS_MODE = 'global'
+#   'global': use TextBlob sentiment analysis to analyse the whole comment. 'local': perform at the sentence level
+SENTIMENT_ANALYSIS_MODE = 'local'  # m
 
 ######################################
 # FUNCTIONS
@@ -134,7 +124,11 @@ def build_graph_from_text(txt,threadid='_',comment_id='_'):
     sentences = sent_tokenize(txt.strip())  # sentence segmentation
     G = nx.Graph()
     # Get nodes and edges from sentence
-    sen_count = 0;
+    sen_count = 0
+    sen_scores = [];
+    # Perform sentiment analysis for GLOBAL mode
+    if SENTIMENT_ANALYSIS_MODE == 'global':
+        sen_scores = [sid.polarity_scores(txt)['compound'] for _ in xrange(0, len(sentences))]
     for sen in sentences:
         #print sen
         # Extract named-entities
@@ -162,11 +156,11 @@ def build_graph_from_text(txt,threadid='_',comment_id='_'):
         # Filter stopwords
         #filtered_words = list(set([w for w in preferred_words if w not in stopwords]))
         filtered_words = [w for w in preferred_words if w not in stopwords]
-        # do sentiment analysis
-        sen_scores = None;
-        if SENTIMENT_ANALYSIS_MODE == 'global':
-            blob = TextBlob(raw_text)
-            sen_scores = [blob.sentiment.polarity for _ in filtered_words]
+        # Perform sentiment analysis for LOCAL mode
+        sen_score = 0
+        if SENTIMENT_ANALYSIS_MODE == 'local':
+            sen_score = sid.polarity_scores(raw_text)['compound']
+            sen_scores.append(sen_score)
 
         # Assign id and label to the nodes before adding the graph
         assigned_nodes = [('{0}~{1}~{2}~{3}'.format(filtered_words[i], threadid, comment_id, gen_mcs_only()),
@@ -175,16 +169,27 @@ def build_graph_from_text(txt,threadid='_',comment_id='_'):
         G.add_nodes_from(assigned_nodes)  # Add nodes from filtered words
         # Update nodes's weight
         for node in assigned_nodes:
-            try:
+            try:  # Node has already existed
                 G.node[node[0]]['weight'] += 1
-            except KeyError:
+                # Update sentiment score
+                if sen_score > 0:
+                    G.node[node[0]]['sentiment']['pos_count'] += 1
+                elif sen_score < 0:
+                    G.node[node[0]]['sentiment']['neg_count'] += 1
+                else:
+                    G.node[node[0]]['sentiment']['neu_count'] += 1
+
+            except KeyError: # New node
                 G.node[node[0]]['weight'] = 1
                 G.node[node[0]]['thread_id'] = threadid
+                G.node[node[0]]['sentiment'] = {'pos_count': 1 if sen_score > 0 else 0, # Add sentiment score
+                                                'neg_count': 1 if sen_score < 0 else 0,
+                                                'neu_count': 1 if sen_score == 0 else 0}
 
         maybe_print('Sentence no ' + str(sen_count) + '\nNodes ' + str(G.nodes()), 3)
         sen_count +=1
         edges = combinations([i[0] for i in assigned_nodes], 2)
-        filtered_edges = [(n,m) for n,m in edges if n.split('~')[0] != m.split('~')[0]]
+        filtered_edges = [(n, m) for n,m in edges if n.split('~')[0] != m.split('~')[0]]
         #print list(edges)
         #print 'xxxafsdgfsa',filtered_edges
         if filtered_edges:
@@ -235,25 +240,6 @@ def read_comment_file(dataFile):
     return dataset
 
 
-# Clean up the text, and get rig of unnecessary characters
-def text_preprocessing(rawText):
-    txt = cucco.normalize(rawText, normalizations)
-    txt = re.sub('<a.*>.*?</a>', '', txt)
-    txt = txt.replace('<blockquote>', '').replace('</blockquote>', '')
-    return txt;
-
-
-# Decide to print the print text or not according to the verbality
-# command_verbality:
-#   0: always print
-#   1: sometime print
-#   2: rarely print
-def maybe_print(text, command_verbality=1):
-    if script_verbality > 0:
-        if script_verbality >= command_verbality:
-            print text;
-
-
 # Read unicode csv file, ignore unencodable characters
 def unicode_csv_reader(unicode_csv_data, dialect=csv.excel, **kwargs):
     # csv.py doesn't do Unicode; encode temporarily as UTF-8:
@@ -280,7 +266,7 @@ def gen_mcs_only():
     return hex(int(datetime.now().strftime("%s")))
 
 
-# Generate the JSON code from the networkx graph structure
+# Generate the JSON code from the networkx graph structure and perform node coloring
 def generate_json_from_graph(G):
     result = {'nodes': [],
               'edges': []
@@ -289,18 +275,20 @@ def generate_json_from_graph(G):
         return None
 
     for node in G.nodes():
-        #print node
+        #print G.node[node]
         # Go one by one
         item = {}
         item['id'] = node
         if G.node[node]['weight']:
             w = G.node[node]['weight']
             item['value'] = w
-            item['title'] = "freq: " + str(w)
+            item['title'] = "*Freq: " + str(w) + " | *Sentiment: " + json.dumps(G.node[node]['sentiment'])
         if G.node[node]['label']:
             item['label'] = G.node[node]['label']
+        if G.node[node]['color']:
+            item['color'] = str(G.node[node]['color'])
         #print item
-        result["nodes"].append(item)
+        result['nodes'].append(item)
 
     for edge in G.edges():
         item = {}
@@ -314,43 +302,9 @@ def generate_json_from_graph(G):
         #    item['label'] = G.edge[edge[0]][edge[1]]['label']
         item['from'] = edge[0]
         item['to'] = edge[1]
-        result["edges"].append(item)
+        result['edges'].append(item)
 
     return result
-
-
-# flattening list of sublist into a single list
-def flatten_list(l):
-    if isinstance(l, list):
-        lx = []
-        for lz in l:
-            lx.extend(map(flatten_list, lz))
-        return lx
-    else:
-        return l
-
-
-# get maximum node weight of the graph
-# @param: the graph g, respect to attribute att
-# @output: the integer of maximum weight AND the id of node
-def get_max_value_attribute(g,att):
-    #print g.nodes()
-    #if not g.nodes():
-    #    raise ValueError, "Can't get max weight of undefined graph"
-    #return None,None
-
-    max = -1
-    id = None
-    for node in g.nodes():
-        try:
-            val = g.node[node][att]
-            if val > max:
-                max = val
-                id = node
-        except:
-            raise ValueError,"Attribute " + att + "  not found for node " + node
-    return max,id
-
 
 # Pruning the graph according to restrictions in options
 def prun_graph(graph,options):
@@ -465,11 +419,22 @@ def prun_graph(graph,options):
                         node0 = matches[0][0]
                         node1 = matches[0][1]
                         if g.node[node0]['thread_id'] == g.node[node1]['thread_id']:
+                            # Sum up the weight of the two node
                             sum_weight = g.node[node0]['weight'] + g.node[node1]['weight']
-                            #print node0,node1
                             t_g = nx.contracted_nodes(t_g,node0,node1)
                             t_g.node[node0]['weight'] = sum_weight
                             t_g.node[node0]['label'] = g.node[node0]['label']
+                            # Sum up the sentiment of the two nodes
+                            pos_count = g.node[node0]['sentiment']['pos_count'] \
+                                        + g.node[node1]['sentiment']['pos_count']
+                            neg_count = g.node[node0]['sentiment']['neg_count'] \
+                                        + g.node[node1]['sentiment']['neg_count']
+                            neu_count = g.node[node0]['sentiment']['neu_count'] \
+                                        + g.node[node1]['sentiment']['neu_count']
+                            t_g.node[node0]['sentiment'] = {'pos_count': pos_count,
+                                                            'neg_count': neg_count,
+                                                            'neu_count': neu_count
+                                                            }
                             # Update the match lst
                             for i in xrange(0, len(matches)): # now node1 disappear, the unified node holds node0 id
                                 m = node0 if matches[i][0] == node1 else matches[i][0]
@@ -489,13 +454,29 @@ def prun_graph(graph,options):
                         g.add_edge(node0, node1, {'weight': max_score, 'id': node0+'|'+node1})
                 elif UNIFY_MODE == 'contract':
                     t_g = g
-                    while len(matches)> 0:
+                    while len(matches) > 0:
                         node0 = matches[0][0]
                         node1 = matches[0][1]
                         sum_weight = g.node[node0]['weight'] + g.node[node1]['weight']
                         t_g = nx.contracted_nodes(t_g, node0, node1)
                         t_g.node[node0]['weight'] = sum_weight
                         t_g.node[node0]['label'] = g.node[node0]['label']
+                        # Sum up the weight of the two node
+                        sum_weight = g.node[node0]['weight'] + g.node[node1]['weight']
+                        t_g = nx.contracted_nodes(t_g, node0, node1)
+                        t_g.node[node0]['weight'] = sum_weight
+                        t_g.node[node0]['label'] = g.node[node0]['label']
+                        # Sum up the sentiment of the two nodes
+                        pos_count = g.node[node0]['sentiment']['pos_count'] \
+                                    + g.node[node1]['sentiment']['pos_count']
+                        neg_count = g.node[node0]['sentiment']['neg_count'] \
+                                    + g.node[node1]['sentiment']['neg_count']
+                        neu_count = g.node[node0]['sentiment']['neu_count'] \
+                                    + g.node[node1]['sentiment']['neu_count']
+                        t_g.node[node0]['sentiment'] = {'pos_count': pos_count,
+                                                        'neg_count': neg_count,
+                                                        'neu_count': neu_count
+                                                        }
                         # Update the match lst
                         matches.pop(0) # Remove first element
                         for i in xrange(0, len(matches)): # since now node1 disappear, the unified node holds node0 id
@@ -537,4 +518,20 @@ def prun_graph(graph,options):
 
     return g
 
+
+# Compute polarity of sentiment of the graph G. This score is compute as (positive_score-negative_score)/max_freq
+# where max_freq is the normalization constant, and max_freq is the maximum frequency of all nodes on the graph
+# @param: graph g
+# @return: new graph with sentiment_score attached
+def compute_sentiment_score(g):
+    # get the normalization constant
+    max_val,_ = get_max_value_attribute(g,'weight')
+    #print max_val
+    tg_g = g # copy the graph
+    for n in g.nodes():
+        #print g.node[n]['sentiment']['pos_count'],g.node[n]['sentiment']['pos_count']
+        tg_g.node[n]['sentiment_score'] = float((g.node[n]['sentiment']['pos_count']
+                                                 - g.node[n]['sentiment']['neg_count']))\
+                                          /max_val
+    return tg_g
 
