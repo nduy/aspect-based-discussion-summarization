@@ -282,7 +282,10 @@ def generate_json_from_graph(G):
         if G.node[node]['weight']:
             w = G.node[node]['weight']
             item['value'] = w
-            item['title'] = "*Freq: " + str(w) + " | *Sentiment: " + json.dumps(G.node[node]['sentiment'])
+            item['title'] = "*Freq: " + str(w) \
+                            + " | *Sen_Score: " + str(round(G.node[node]['sentiment_score'], 4)) \
+                            + " | *Sentiment: " + json.dumps(G.node[node]['sentiment'])
+
         if G.node[node]['label']:
             item['label'] = G.node[node]['label']
         if G.node[node]['color']:
