@@ -8,6 +8,7 @@
 
 from functions import *
 from decoration import *
+import datetime
 
 build_options = {
     'merge_mode': 0,
@@ -46,6 +47,12 @@ if __name__ == "__main__":
     json_g = None
     if colored_graph.nodes():
         json_g = generate_json_from_graph(colored_graph)
+        # Add build options
+        json_g['options'] = {
+            'timestamp' : datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S %Z"),
+            'build_option': build_options,
+            'pruning_option': pruning_options
+        }
     with open('dump.json', 'w') as outfile:
         json.dump(json_g, outfile, sort_keys=True, indent=4, separators=(',', ': '))
 
