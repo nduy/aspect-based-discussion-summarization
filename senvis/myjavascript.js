@@ -166,9 +166,6 @@ function draw() {
 	network.on("hoverNode", function (params) {
         neighbourhoodHighlight(params);
     });
-	network.on("blurNode", function (params) {
-        restoreColorAllNodes();
-    });
 }
  
 function neighbourhoodHighlight(params) {
@@ -245,12 +242,6 @@ function neighbourhoodHighlight(params) {
  nodesDataset.update(updateArray);
 }
 
-// Reset color of all nodes to its original as loaded
-function restoreColorAllNodes() {
-	for (var nodeId in allNodes) {
-     allNodes[nodeId].color = color_book[nodeId];
-   }
-}
 
 $(document).ready(function () {
 	jtextArea = document.getElementById("jsonarea");
