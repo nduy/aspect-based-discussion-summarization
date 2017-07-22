@@ -415,6 +415,9 @@ function drawFromJS() {
 	//jtextArea.value="Input the json";
 	// Event of pressing input json
 	document.getElementById("submitbutton").addEventListener("click", function(){
+		// Hide the language selection combobox
+		document.getElementById("locale").disabled = true;
+		// Get the data
 		jtext = jtextArea.value;
 		if (jtext== "") {
 			alert("Please enter json document! oyo")

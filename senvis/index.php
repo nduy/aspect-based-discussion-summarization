@@ -13,8 +13,8 @@
 	</head>
 	<body onload="init();">
 		<div id="netcontainer" > 
-			<p class="styled-select blue semi-square">
-			  <label for="locale">Select a locale:</label>
+			<p>
+			  <label for="locale" style="font-family: Sans-serif, serif;">Select a locale:</label>
 			  <select id="locale" onchange="drawFromJS();">
 			    <option value="en">Enlish</option>
 			    <option value="de">Deutsch</option>
