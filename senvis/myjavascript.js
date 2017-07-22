@@ -2,11 +2,13 @@
 var dataset_options = {};
 var nodesDataset = new vis.DataSet(dataset_options); 
 var edgesDataset = new vis.DataSet(dataset_options);
-var network;
+var network = null;
 var allNodes;
+var allEdges;
 var highlightActive = false;
 var parsed_text;
 var color_book; // save original color of all nodes
+var seed = 2;
 var locales = {
   en: {
     edit: 'Edit',
@@ -25,7 +27,27 @@ var locales = {
   }
 }
 
+function setDefaultLocale() {
+   var defaultLocal = navigator.language;
+   var select = document.getElementById('locale');
+   select.selectedIndex = 0; // set fallback value
+   for (var i = 0, j = select.options.length; i < j; ++i) {
+     if (select.options[i].getAttribute('value') === defaultLocal) {
+       select.selectedIndex = i;
+       break;
+     }
+   }
+}
+ 
+function destroy() {
+   if (network !== null) {
+     network.destroy();
+     network = null;
+   }
+}
+ 
 function draw() {
+	destroy();
    // create a network
 	var container = document.getElementById('mynetwork');
 	//console.log(jsondata.nodes);
@@ -35,13 +57,44 @@ function draw() {
 	   autoResize: true,
 		height: '100%',
 	   width: '100%',
-	   locale: 'en',
-	   locales: locales,
+	   locale: document.getElementById('locale').value,
+	   manipulation: {
+       addNode: function (data, callback) {
+         // filling in the popup DOM elements
+         document.getElementById('node-operation').innerHTML = "Add Node";
+         
+         editNode(data, callback);
+       },
+       editNode: function (data, callback) {
+         // filling in the popup DOM elements
+         document.getElementById('node-operation').innerHTML = "Edit Node";
+         editNode(data, callback);
+       },
+       addEdge: function (data, callback) {
+         if (data.from == data.to) {
+           var r = confirm("Do you want to connect the node to itself?");
+           if (r != true) {
+             callback(null);
+             return;
+           }
+         }
+         document.getElementById('edge-operation').innerHTML = "Add Edge";
+         editEdgeWithoutDrag(data, callback);
+       },
+       editEdge: {
+         editWithoutDrag: function(data, callback) {
+           document.getElementById('edge-operation').innerHTML = "Edit Edge";
+           editEdgeWithoutDrag(data,callback);
+         }
+       }
+	   },
+	   //locales: locales,
 	   clickToUse: false,
 	   physics: true,
 	   
 	   layout: {
-	    improvedLayout:false
+	    improvedLayout:false,
+	    randomSeed:seed
 	  	},
 	   
 	   interaction:{
@@ -89,6 +142,7 @@ function draw() {
 	network = new vis.Network(container, data, options);
 	// get a JSON object
 	allNodes = nodesDataset.get({returnType:"Object"});
+	allEdges = edgesDataset.get({returnType:"Object"});
 	
 	// Save all original color to color box
 	color_book = {};
@@ -167,7 +221,97 @@ function draw() {
         neighbourhoodHighlight(params);
     });
 }
- 
+
+function editNode(data, callback) {
+	console.log(data);
+   document.getElementById('node-label').value = data.label;
+   document.getElementById('node-id').value = data.id;
+	document.getElementById('node-color').value = color2hex(data.color.background);
+	document.getElementById('node-value').value = data.value;
+   document.getElementById('node-saveButton').onclick = saveNodeData.bind(this, data, callback);
+   document.getElementById('node-cancelButton').onclick = clearNodePopUp.bind();
+   document.getElementById('node-popUp').style.display = 'block';
+}
+
+function clearNodePopUp() {
+   document.getElementById('node-saveButton').onclick = null;
+   document.getElementById('node-cancelButton').onclick = null;
+   document.getElementById('node-popUp').style.display = 'none';
+ }
+
+function cancelNodeEdit(callback) {
+   clearNodePopUp();
+   callback(null);
+   
+ }
+
+function saveNodeData(data, callback) {
+	data.id = document.getElementById('node-id').value;
+   data.label = document.getElementById('node-label').value;
+   var clr = document.getElementById('node-color').value;
+	data.color.background = clr;
+	data.color.border = clr;
+	data.value = document.getElementById('node-value').value;
+	var original_title = data.title;
+	data.title = "[edited] Value: ".concat(data.value);
+	allNodes[data.id]['color'] = clr;
+	// update color book
+	color_book[data.id] = clr;
+	allNodes[data.id]['value'] = data.value;
+	allNodes[data.id]['title'] = "[edited] <br>*Value: ".concat(data.value)
+											.concat(' <br>*Score: UNKNOWN')
+											.concat(' <br>*Color: ').concat(data.color.background)
+											.concat('<br>[original] <br>')
+											.concat(original_title);
+   clearNodePopUp();
+   //console.log(data);
+   callback(data);
+}
+
+function editEdgeWithoutDrag(data, callback) {
+   // filling in the popup DOM elements
+   console.log(data);
+   document.getElementById('edge-label').value = allEdges[data.id]['label'];
+   document.getElementById('edge-value').value = allEdges[data.id]['value'];
+   document.getElementById('edge-saveButton').onclick = saveEdgeData.bind(this, data, callback);
+   document.getElementById('edge-cancelButton').onclick = cancelEdgeEdit.bind(this,callback);
+   document.getElementById('edge-popUp').style.display = 'block';
+}
+
+function clearEdgePopUp() {
+   document.getElementById('edge-saveButton').onclick = null;
+   document.getElementById('edge-cancelButton').onclick = null;
+   document.getElementById('edge-popUp').style.display = 'none';
+}
+
+function cancelEdgeEdit(callback) {
+   clearEdgePopUp();
+   callback(null);
+   
+}
+
+function saveEdgeData(data, callback) {
+   if (typeof data.to === 'object')
+     data.to = data.to.id
+   if (typeof data.from === 'object')
+     data.from = data.from.id
+   data.label = document.getElementById('edge-label').value;
+   data.value = document.getElementById('edge-value').value;
+   var original_title = data.title;
+   allEdges[data.id]['value'] = data.value;
+   allEdges[data.id]['label'] = data.label;
+	allEdges[data.id]['title'] = "[edited] <br>*Value: ".concat(data.value)
+											.concat(' <br>*Score: UNKNOWN')
+											.concat('<br>[original] <br>')
+											.concat(original_title);
+   clearEdgePopUp();
+   callback(data);
+}
+
+function init() {
+   setDefaultLocale();
+}
+
 function neighbourhoodHighlight(params) {
 //console.log(params);
  // if something is selected:
@@ -242,9 +386,8 @@ function neighbourhoodHighlight(params) {
  nodesDataset.update(updateArray);
 }
 
-
-$(document).ready(function () {
-	jtextArea = document.getElementById("jsonarea");
+function drawFromJS() {
+   jtextArea = document.getElementById("jsonarea");
 	//jtextArea.value="Input the json";
 	// Event of pressing input json
 	document.getElementById("submitbutton").addEventListener("click", function(){
@@ -255,15 +398,33 @@ $(document).ready(function () {
 		else {
 			try {
 				parsed_text = JSON.parse(jtext);
+				nodesDataset.clear();
+   			edgesDataset.clear();
 				nodesDataset.add(parsed_text.nodes);
 				edgesDataset.add(parsed_text.edges);
 				draw();
 			}
 			catch(err) {
 				console.log(err.message);
-				alert(console.log(err.message));
+				alert("Unable to draw the network!", console.log(err.message));
 			};
 		};
 		
 	});
+}
+
+//Function to convert hex format to a rgb color
+function color2hex(rgb){
+ ori = rgb;
+ rgb = rgb.match(/^rgba?[\s+]?\([\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?/i);
+ return (rgb && rgb.length === 4) ? "#" +
+  ("0" + parseInt(rgb[1],10).toString(16)).slice(-2) +
+  ("0" + parseInt(rgb[2],10).toString(16)).slice(-2) +
+  ("0" + parseInt(rgb[3],10).toString(16)).slice(-2) : ori;
+}
+
+
+
+$(document).ready(function () {
+	drawFromJS();
 });
