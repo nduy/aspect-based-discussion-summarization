@@ -142,6 +142,7 @@ function draw() {
 	network = new vis.Network(container, data, options);
 	// get a JSON object
 	allNodes = nodesDataset.get({returnType:"Object"});
+	//console.log(allNodes);
 	allEdges = edgesDataset.get({returnType:"Object"});
 	
 	// Save all original color to color box
@@ -223,13 +224,13 @@ function draw() {
 }
 
 function editNode(data, callback) {
-	console.log(data);
+   //console.log(data);
    document.getElementById('node-label').value = data.label;
    document.getElementById('node-id').value = data.id;
-	document.getElementById('node-color').value = color2hex(data.color.background);
-	document.getElementById('node-value').value = data.value;
+   document.getElementById('node-color').value = data.color ? color2hex(data.color.background) : 'white';
+   document.getElementById('node-value').value = data.value ? data.value : 1;
    document.getElementById('node-saveButton').onclick = saveNodeData.bind(this, data, callback);
-   document.getElementById('node-cancelButton').onclick = clearNodePopUp.bind();
+   document.getElementById('node-cancelButton').onclick = cancelNodeEdit.bind(this,callback);
    document.getElementById('node-popUp').style.display = 'block';
 }
 
@@ -246,23 +247,40 @@ function cancelNodeEdit(callback) {
  }
 
 function saveNodeData(data, callback) {
-	data.id = document.getElementById('node-id').value;
-   data.label = document.getElementById('node-label').value;
-   var clr = document.getElementById('node-color').value;
-	data.color.background = clr;
+	data.id = document.getElementById('node-label').value
+			.concat('~x~x~')
+			.concat(document.getElementById('node-id').value);
+    data.label = document.getElementById('node-label').value;
+    var clr = document.getElementById('node-color').value;
+    if (data.color){
+		data.color.background = clr;
+	} else {
+		data['color'] = {'background':clr, 'border' : clr};
+	}
 	data.color.border = clr;
 	data.value = document.getElementById('node-value').value;
-	var original_title = data.title;
-	data.title = "[edited] Value: ".concat(data.value);
-	allNodes[data.id]['color'] = clr;
-	// update color book
-	color_book[data.id] = clr;
-	allNodes[data.id]['value'] = data.value;
-	allNodes[data.id]['title'] = "[edited] <br>*Value: ".concat(data.value)
+	var new_title = "[edited] <br>*Value: ".concat(data.value)
 											.concat(' <br>*Score: UNKNOWN')
 											.concat(' <br>*Color: ').concat(data.color.background)
-											.concat('<br>[original] <br>')
-											.concat(original_title);
+											.concat(data.title? '<br>[original] <br>'.concat(data.title) : '<br>[New node]')
+											;
+	data.title = new_title;
+	if (allNodes[data.id]){
+		allNodes[data.id]['value'] = data.value;
+		allNodes[data.id]['title'] = new_title;
+	} else {
+		allNodes[data.id]=
+			{
+				"color": clr,
+				"id": data.id,
+				"label": data.label,
+				"title": new_title,
+				"value": data.value
+			};
+		}
+	allNodes[data.id]['color'] = clr;
+	// update color book
+   color_book[data.id] = clr;
    clearNodePopUp();
    //console.log(data);
    callback(data);
@@ -270,9 +288,8 @@ function saveNodeData(data, callback) {
 
 function editEdgeWithoutDrag(data, callback) {
    // filling in the popup DOM elements
-   console.log(data);
-   document.getElementById('edge-label').value = allEdges[data.id]['label'];
-   document.getElementById('edge-value').value = allEdges[data.id]['value'];
+   document.getElementById('edge-label').value = allEdges[data.id] ? allEdges[data.id]['label'] : 'new label';
+   document.getElementById('edge-value').value = allEdges[data.id]? allEdges[data.id]['value'] : 1;
    document.getElementById('edge-saveButton').onclick = saveEdgeData.bind(this, data, callback);
    document.getElementById('edge-cancelButton').onclick = cancelEdgeEdit.bind(this,callback);
    document.getElementById('edge-popUp').style.display = 'block';
@@ -297,13 +314,20 @@ function saveEdgeData(data, callback) {
      data.from = data.from.id
    data.label = document.getElementById('edge-label').value;
    data.value = document.getElementById('edge-value').value;
-   var original_title = data.title;
-   allEdges[data.id]['value'] = data.value;
-   allEdges[data.id]['label'] = data.label;
-	allEdges[data.id]['title'] = "[edited] <br>*Value: ".concat(data.value)
-											.concat(' <br>*Score: UNKNOWN')
-											.concat('<br>[original] <br>')
-											.concat(original_title);
+   var new_title = "[edited] <br>*Value: ".concat(data.value)
+					.concat(' <br>*Score: UNKNOWN')
+					.concat(data.title ? '<br>[original] <br>'.concat(data.title) : '<br>[New edge]');
+   data.title = new_title;
+   if (allEdges[data.id]) {
+	   allEdges[data.id]['value'] = data.value;
+	   allEdges[data.id]['label'] = data.label;
+	   allEdges[data.id]['title'] = new_title;
+   } else {
+	   allEdges[data.id] = {'id': data.id,
+							'label': data.label,
+							'title': new_title
+		                    };
+   }
    clearEdgePopUp();
    callback(data);
 }

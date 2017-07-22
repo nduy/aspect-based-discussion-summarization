@@ -16,13 +16,13 @@
 			<p class="styled-select blue semi-square">
 			  <label for="locale">Select a locale:</label>
 			  <select id="locale" onchange="drawFromJS();">
-			    <option value="en">en</option>
-			    <option value="de">de</option>
-			    <option value="es">es</option>
-			    <option value="it">it</option>
-			    <option value="nl">nl</option>
-			    <option value="pt-br">pt</option>
-			    <option value="ru">ru</option>
+			    <option value="en">Enlish</option>
+			    <option value="de">Deutsch</option>
+			    <option value="es">Español</option>
+			    <option value="it">Italiano</option>
+			    <option value="nl">Nederlands</option>
+			    <option value="pt-br">Português</option>
+			    <option value="ru">русский </option>
 			  </select>
 			</p>
 			
