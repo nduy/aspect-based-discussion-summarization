@@ -59,34 +59,45 @@ function draw() {
 	   width: '100%',
 	   locale: document.getElementById('locale').value,
 	   manipulation: {
-       addNode: function (data, callback) {
-         // filling in the popup DOM elements
-         document.getElementById('node-operation').innerHTML = "Add Node";
-         
-         editNode(data, callback);
-       },
-       editNode: function (data, callback) {
-         // filling in the popup DOM elements
-         document.getElementById('node-operation').innerHTML = "Edit Node";
-         editNode(data, callback);
-       },
-       addEdge: function (data, callback) {
-         if (data.from == data.to) {
-           var r = confirm("Do you want to connect the node to itself?");
-           if (r != true) {
-             callback(null);
-             return;
-           }
-         }
-         document.getElementById('edge-operation').innerHTML = "Add Edge";
-         editEdgeWithoutDrag(data, callback);
-       },
-       editEdge: {
-         editWithoutDrag: function(data, callback) {
-           document.getElementById('edge-operation').innerHTML = "Edit Edge";
-           editEdgeWithoutDrag(data,callback);
-         }
-       }
+		   addNode: function (data, callback) {
+			 // filling in the popup DOM elements
+			 document.getElementById('node-operation').innerHTML = "Add Node";
+			 
+			 editNode(data, callback);
+		   },
+		   editNode: function (data, callback) {
+			 // filling in the popup DOM elements
+			 document.getElementById('node-operation').innerHTML = "Edit Node";
+			 editNode(data, callback);
+		   },
+		   addEdge: function (data, callback) {
+			 if (data.from == data.to) {
+			   var r = confirm("Do you want to connect the node to itself?");
+			   if (r != true) {
+				 callback(null);
+				 return;
+			   }
+			 }
+			 document.getElementById('edge-operation').innerHTML = "Add Edge";
+			 editEdgeWithoutDrag(data, callback);
+		   },
+		   editEdge: {
+			 editWithoutDrag: function(data, callback) {
+			   document.getElementById('edge-operation').innerHTML = "Edit Edge";
+			   editEdgeWithoutDrag(data,callback);
+			 }
+		   },
+		   deleteNode: function (data, callback) {
+			 // Remove the node from all nodes and color box
+			 //console.log(allNodes[data.nodes[0]]);
+			 delete allNodes[data.nodes[0]]; 
+			 //console.log(allNodes[data.nodes[0]]);
+			 //console.log(color_book[data.nodes[0]]);
+			 delete color_book[data.nodes[0]];
+			 //console.log(color_book[data.nodes[0]]);
+			 //console.log(data);
+			 callback(data);
+		   }
 	   },
 	   //locales: locales,
 	   clickToUse: false,
@@ -247,11 +258,10 @@ function cancelNodeEdit(callback) {
  }
 
 function saveNodeData(data, callback) {
-	data.id = document.getElementById('node-label').value
-			.concat('~x~x~')
-			.concat(document.getElementById('node-id').value);
+	data.id = document.getElementById('node-id').value;
     data.label = document.getElementById('node-label').value;
-    var clr = document.getElementById('node-color').value;
+    var clr = color_book[data.id] ? color_book[data.id] : 'white'
+    //document.getElementById('node-color').value;
     if (data.color){
 		data.color.background = clr;
 	} else {
@@ -269,6 +279,8 @@ function saveNodeData(data, callback) {
 		allNodes[data.id]['value'] = data.value;
 		allNodes[data.id]['title'] = new_title;
 	} else {
+		data.id = document.getElementById('node-label').value
+			.concat('~x~x~').concat(data.id );
 		allNodes[data.id]=
 			{
 				"color": clr,
@@ -288,8 +300,8 @@ function saveNodeData(data, callback) {
 
 function editEdgeWithoutDrag(data, callback) {
    // filling in the popup DOM elements
-   document.getElementById('edge-label').value = allEdges[data.id] ? allEdges[data.id]['label'] : 'new label';
-   document.getElementById('edge-value').value = allEdges[data.id]? allEdges[data.id]['value'] : 1;
+   document.getElementById('edge-label').value = allEdges[data.id] ? allEdges[data.id]['label'] : '';
+   document.getElementById('edge-value').value = allEdges[data.id] ? allEdges[data.id]['value'] : 1;
    document.getElementById('edge-saveButton').onclick = saveEdgeData.bind(this, data, callback);
    document.getElementById('edge-cancelButton').onclick = cancelEdgeEdit.bind(this,callback);
    document.getElementById('edge-popUp').style.display = 'block';

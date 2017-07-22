@@ -2,6 +2,7 @@
 	"http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
+		<meta charset="utf-8">
 		<title>Text Summarization visualization</title>
 		<script src="jquery-1.11.3.min.js"></script>
 		<script type="text/javascript" src="exampleUtil.js"></script>
@@ -13,8 +14,8 @@
 	</head>
 	<body onload="init();">
 		<div id="netcontainer" > 
-			<p>
-			  <label for="locale" style="font-family: Sans-serif, serif;">Select a locale:</label>
+			<p style="margin-bottom:0.7vh;margin-top:0.7vh;">
+			  <label for="locale" style="font-family: Sans-serif, serif; font-size: 12px;">Select a locale:</label>
 			  <select id="locale" onchange="drawFromJS();">
 			    <option value="en">Enlish</option>
 			    <option value="de">Deutsch</option>
@@ -22,7 +23,7 @@
 			    <option value="it">Italiano</option>
 			    <option value="nl">Nederlands</option>
 			    <option value="pt-br">Português</option>
-			    <option value="ru">русский </option>
+			    <option value="ru">Русский </option>
 			  </select>
 			</p>
 			
