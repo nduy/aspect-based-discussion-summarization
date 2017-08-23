@@ -9,7 +9,7 @@
 from functions import *
 from decoration import *
 import datetime
-
+from stanford import *
 build_options = {
     'merge_mode': 0,
     'sentiment_ana_mode': 'global'  # 'global', 'local'
@@ -32,6 +32,7 @@ pruning_options = {
 
 
 if __name__ == "__main__":
+    '''
     dataset = read_comment_file("data/comments_article0.txt");
     maybe_print("Loaded data set! Number of conversation thread: {0}".format(len(dataset)), 0)
     asp_graph = build_sum_graph(0,dataset,build_options) # Build sum keyraph at mode 0
@@ -58,3 +59,12 @@ if __name__ == "__main__":
 
 
     #print json.dumps(json_g, sort_keys=True, indent=4, separators=(',', ': '))
+   
+    sentence = 'Bills on ports and immigration were submitted by Senator Brownback, Republican of Kansas'
+    '''
+    filter_opt = {
+        'prefered_pos': 'all',  # preferred part-of-speech tags
+        'prefered_rel': 'all'  # ['nsubk','nsubkpass','obj','iobj'] list of relation to remains
+    }
+
+    dep_extract_from_sent(sentence, filter_opt)
