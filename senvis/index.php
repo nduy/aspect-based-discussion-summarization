@@ -7,14 +7,17 @@
 <!---		<script src="jquery-1.11.3.min.js"></script> 
 		<script src="jquery-ui.js"></script>
 		<script type="text/javascript" src="vis.js"></script>
+		<link href="vis-network.min.css" rel="stylesheet" type="text/css"/> 
 		--->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.20.1/vis.min.css">
+		<link href="mystyle.css" rel="stylesheet" type="text/css"/> 
+		<link href="vis.min.css" rel="stylesheet" type="text/css"/> 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.20.1/vis.min.js"></script>
 		<script type="text/javascript" src="exampleUtil.js"></script>
-		<link href="vis-network.min.css" rel="stylesheet" type="text/css"/> 
-		<link href="mystyle.css" rel="stylesheet" type="text/css"/> 
+
 		
 		
 	</head>

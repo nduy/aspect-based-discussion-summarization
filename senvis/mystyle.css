@@ -135,9 +135,10 @@ div.outerBorder {
 	  text-shadow: -1px 1px #193047;
 	}
 
-.div.vis-configuration-wrapper {
-	visibility: hidden;
-}	
+.vis-configuration-wrapper {
+    display:none	!imprtant;
+    visibility: hidden	!imprtant;
+}
 
 .floatBox{
 	position: fixed;

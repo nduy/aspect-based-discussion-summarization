@@ -232,6 +232,7 @@ function draw() {
 	network.on("hoverNode", function (params) {
         neighbourhoodHighlight(params);
     });
+    document.getElementsByClassName("vis-configuration-wrapper")[0].style.display = "none";
 }
 
 function editNode(data, callback) {
@@ -438,17 +439,17 @@ function drawFromJS() {
 			try {
 				parsed_text = JSON.parse(jtext);
 				nodesDataset.clear();
-   			edgesDataset.clear();
+				edgesDataset.clear();
 				nodesDataset.add(parsed_text.nodes);
 				edgesDataset.add(parsed_text.edges);
 				draw();
+				
 			}
 			catch(err) {
 				console.log(err.message);
 				alert("Unable to draw the network!", console.log(err.message));
 			};
-		};
-		
+		};	
 	});
 }
 
