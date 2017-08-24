@@ -232,7 +232,6 @@ function draw() {
 	network.on("hoverNode", function (params) {
         neighbourhoodHighlight(params);
     });
-    document.getElementsByClassName("vis-configuration-wrapper")[0].style.display = "none";
 }
 
 function editNode(data, callback) {

@@ -34,7 +34,7 @@ stopwords = set(stopwords.words('english')) # Add more stopword to ignore her
 
 preredTags = set(['NOUN','PROPN']);
 
-MERGE_MODE = 0  # 0: Do nothing
+BUILD_MODE = 0  # 0: Do nothing
 
 # Sentiment analysis mode:
 #   'global': use TextBlob sentiment analysis to analyse the whole comment. 'local': perform at the sentence level
@@ -54,23 +54,30 @@ def build_sum_graph(merging_mode,thrds,build_options):
     #g = nx.Graph()
     maybe_print("Start building sum graph in mode {0}".format(merging_mode), 1)
     # Read options
-    MERGE_MODE = build_options['merge_mode'] if build_options['merge_mode'] else 0
+    MERGE_MODE = build_options['build_mode'] if build_options['build_mode'] else 0
     SENTIMENT_ANALYSIS_MODE = build_options['sentiment_ana_mode'] if build_options['sentiment_ana_mode'] else 'global'
 
     if MERGE_MODE == 0:
-        # print merge_mode_0(thrds)
+        # print build_mode_0(thrds)
         #print thrds
-        g = merge_mode_0(thrds)
+        g = build_mode_0(thrds)
         #print g.edges()
-        maybe_print("--> Graph BUILD completed.\n    Number of nodes: {0}\n    Number of edges: {1}"
+        maybe_print("--> Graph BUILD in mode 0 completed.\n    Number of nodes: {0}\n    Number of edges: {1}"
                      .format(len(g.nodes()), len(g.edges())), 1)
         #print "zzzz", g.nodes()
+        return g
+    if MERGE_MODE == 1:
+        g = build_mode_1(thrds)
+        # print g.edges()
+        maybe_print("--> Graph BUILD in mode 1 completed.\n    Number of nodes: {0}\n    Number of edges: {1}"
+                    .format(len(g.nodes()), len(g.edges())), 1)
+        # print "zzzz", g.nodes()
         return g
 
 # Merging mode 0: Do nothing. Indeed, it just copy exactly all nodes and edges from the extracted keygraph.
 # @param: Target graph G and data threads to be merge thrds
 # @output: The result graph
-def merge_mode_0(thrds):
+def build_mode_0(thrds):
     rs = nx.Graph()
 
     for thrd in thrds:
@@ -240,7 +247,31 @@ def read_comment_file(dataFile):
     return dataset
 
 
-# Read unicode csv file, ignore unencodable characters
+# Read the ARTICLE file
+# @param: path to the data file
+# @return: a pair of
+#  1. title sentence
+#  2. a list, each element is a line in data file
+def read_article_file(dataFile):
+    title = None
+    article = None
+    try:
+        with codecs.open(dataFile, "rb", "utf8") as article_file:
+            count = 0
+            article = []
+            for line in article_file:
+                if count != 0:
+                    ln = line.strip()
+                    article.append(ln if ln else "|*new-line*|")
+                else:  # the title line
+                    title = line
+                count += 1
+    except IOError:
+        print "Unable to open {0}".format(dataFile)
+    return title, article
+
+
+#  Read unicode csv file, ignore unencodable characters
 def unicode_csv_reader(unicode_csv_data, dialect=csv.excel, **kwargs):
     # csv.py doesn't do Unicode; encode temporarily as UTF-8:
     csv_reader = csv.reader(utf_8_encoder(unicode_csv_data),
@@ -250,7 +281,7 @@ def unicode_csv_reader(unicode_csv_data, dialect=csv.excel, **kwargs):
         yield [unicode(cell, 'utf-8') for cell in row]
 
 
-# Support function for reading unicode charcters
+# Support function for reading unicode characters
 def utf_8_encoder(unicode_csv_data):
     for line in unicode_csv_data:
         yield line.encode('utf-8', 'ignore')
@@ -275,7 +306,7 @@ def generate_json_from_graph(G):
         return None
 
     for node in G.nodes():
-        #print G.node[node]
+        # print G.node[node]
         # Go one by one
         item = {}
         item['id'] = node

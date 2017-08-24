@@ -10,12 +10,13 @@ from functions import *
 from decoration import *
 import datetime
 from stanford import *
+
 build_options = {
-    'merge_mode': 0,
+    'build_mode': 0,
     'sentiment_ana_mode': 'global'  # 'global', 'local'
 }
 
-pruning_options = {
+prune_options = {
     'enable_pruning': True,
     'min_word_length': 2,
     'remove_isolated_node': True,
@@ -32,13 +33,19 @@ pruning_options = {
 
 
 if __name__ == "__main__":
-    '''
-    dataset = read_comment_file("data/comments_article0.txt");
+
+    dataset = read_comment_file("data/comments_article0.txt")
+    title, article = read_article_file("data/article0.txt")
+    print title
+    print article
+
     maybe_print("Loaded data set! Number of conversation thread: {0}".format(len(dataset)), 0)
+
+    '''
     asp_graph = build_sum_graph(0,dataset,build_options) # Build sum keyraph at mode 0
     #print asp_graph.edges()
     # pruning
-    pruned_graph = prun_graph(asp_graph, pruning_options)
+    pruned_graph = prun_graph(asp_graph, prune_options)
     #print pruned_graph.edges()
     sen_graph = compute_sentiment_score(pruned_graph)
     colored_graph = coloring_nodes(sen_graph)
@@ -52,19 +59,20 @@ if __name__ == "__main__":
         json_g['options'] = {
             'timestamp' : datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S %Z"),
             'build_option': build_options,
-            'pruning_option': pruning_options
+            'pruning_option': prune_options
         }
     with open('dump.json', 'w') as outfile:
         json.dump(json_g, outfile, sort_keys=True, indent=4, separators=(',', ': '))
 
 
     #print json.dumps(json_g, sort_keys=True, indent=4, separators=(',', ': '))
-   
+    
     sentence = 'Bills on ports and immigration were submitted by Senator Brownback, Republican of Kansas'
-    '''
+    
     filter_opt = {
         'prefered_pos': 'all',  # preferred part-of-speech tags
         'prefered_rel': 'all'  # ['nsubk','nsubkpass','obj','iobj'] list of relation to remains
     }
 
     dep_extract_from_sent(sentence, filter_opt)
+    '''
