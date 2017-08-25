@@ -12,11 +12,10 @@ import csv, codecs, json
 from datetime import datetime
 import networkx as nx
 from textblob import TextBlob
-from nltk.tokenize import sent_tokenize
+from nltk.tokenize import sent_tokenize,texttiling
 from nltk.corpus import stopwords
 from itertools import combinations
 from polyglot.text import Text
-from polyglot.downloader import downloader
 from nltk.stem import WordNetLemmatizer
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from utils import *
@@ -29,10 +28,10 @@ lemmatizer = WordNetLemmatizer()
 # Sentiment analyzer
 sid = SentimentIntensityAnalyzer()
 
-stopwords = set(stopwords.words('english')) # Add more stopword to ignore her
+stopwords = set(stopwords.words('english'))  # Add more stopword to ignore her
 
 
-preredTags = set(['NOUN','PROPN']);
+preferredTags = {'NOUN', 'PROPN'};
 
 BUILD_MODE = 0  # 0: Do nothing
 
@@ -103,25 +102,24 @@ def build_mode_0(thrds):
     return rs
 
 
-
 # Build the graph with text THREAD as input. Each thread has a structure as defined in the next procedure
 # @param: text thread, each has a ID, a central and some supports
 # @return: central_graph, support_graphs(as an array) and dictionary for looking up
 def build_thread_graph(thrd):
-    maybe_print("- Buliding keygraph for thread "+ thrd['id'],1)
+    maybe_print("- Building keygraph for thread "+ thrd['id'],1)
     thread_id = thrd['id']
     central = thrd['central']
     supports = thrd['supports']
     maybe_print("-------\nAnalyzing thread {0} with {1} central and {2} support(s)"
                 .format(thread_id, "ONE" if central else "NO", len(supports)), 2)
     # Build graph for central text
-    central_gr = None;
+    central_gr = None
     if central:
-        central_gr = build_graph_from_text(central, thread_id, '0');
+        central_gr = build_graph_from_text(central, thread_id, '0')
 
     # Build graphs for support texts
-    supports_gr = [build_graph_from_text(supports[i], thread_id,i) for i in xrange(0,len(supports))]
-    #print supports_gr[0].edges()
+    supports_gr = [build_graph_from_text(supports[i], thread_id, i) for i in xrange(0, len(supports))]
+    # print supports_gr[0].edges()
     return central_gr, [sup for sup in supports_gr if sup]
 
 
@@ -159,7 +157,7 @@ def build_graph_from_text(txt,threadid='_',comment_id='_'):
         # Convert to polygot format
         text = Text(raw_text, hint_language_code='en')
         # Filter tokens by POS tag
-        preferred_words = [lemmatizer.lemmatize(w.lower()) for w, t in text.pos_tags if t in preredTags]
+        preferred_words = [lemmatizer.lemmatize(w.lower()) for w, t in text.pos_tags if t in preferredTags]
         # Filter stopwords
         #filtered_words = list(set([w for w in preferred_words if w not in stopwords]))
         filtered_words = [w for w in preferred_words if w not in stopwords]
@@ -251,7 +249,7 @@ def read_comment_file(dataFile):
 # @param: path to the data file
 # @return: a pair of
 #  1. title sentence
-#  2. a list, each element is a line in data file
+#  2. a list, each element is a sentence
 def read_article_file(dataFile):
     title = None
     article = None
@@ -261,14 +259,26 @@ def read_article_file(dataFile):
             article = []
             for line in article_file:
                 if count != 0:
-                    ln = line.strip()
-                    article.append(ln if ln else "|*new-line*|")
+                    if line:
+                        sens = sent_tokenize(line.replace("\r",""))
+                        if sens:
+                            article.extend(sens)
                 else:  # the title line
                     title = line
                 count += 1
     except IOError:
         print "Unable to open {0}".format(dataFile)
     return title, article
+
+
+# Segmentize the sentences
+# @param: a list, each element is a sentence the document
+# @return: a list, each element is group of sentence concatenated to form a paragraph.
+def TextTilingTokenize(sentence_list):
+    doc = ' '.join(sentence_list)
+    tt = texttiling.TextTilingTokenizer()
+    segmented_text = tt.tokenize(doc)
+    return [simple_normalize(para.strip()) for para in segmented_text if para.strip()]
 
 
 #  Read unicode csv file, ignore unencodable characters
@@ -569,3 +579,19 @@ def compute_sentiment_score(g):
                                           /max_val
     return tg_g
 
+
+# Function to perform simple rule-based normalization the text
+# @param: a string, should be in unicode
+# @return: the normalized string
+def simple_normalize(cnt):
+    reps = ('\n', ''), \
+           ('            ', ''), \
+           ("\n \n", ""), \
+           (u"\u201c", "\""), \
+           (u"\u201d", "\""), \
+           (u"\u2019", "\'"), \
+           (u"\u2018", "\'"), \
+           (u"\u2013", "-"), \
+           (u"\u2014", "-"), \
+           (u"\u2011", "-")
+    return reduce(lambda a, kv: a.replace(*kv), reps, cnt)

@@ -36,8 +36,9 @@ if __name__ == "__main__":
 
     dataset = read_comment_file("data/comments_article0.txt")
     title, article = read_article_file("data/article0.txt")
-    print title
-    print article
+    #v print title
+    # print article
+    print 'SSS',TextTilingTokenize(article)
 
     maybe_print("Loaded data set! Number of conversation thread: {0}".format(len(dataset)), 0)
 
