@@ -8,22 +8,30 @@
 
 ######################################
 # IMPORT LIBRARY
-import csv, codecs, json
+import csv
+import codecs
+import json
 from datetime import datetime
 import networkx as nx
 from textblob import TextBlob
-from nltk.tokenize import sent_tokenize,texttiling
+from nltk.tokenize import sent_tokenize, texttiling, word_tokenize
 from nltk.corpus import stopwords
 from itertools import combinations
 from polyglot.text import Text
 from nltk.stem import WordNetLemmatizer
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from utils import *
+from main import dep_opt
+from nltk.parse.stanford import StanfordDependencyParser
+
 
 ######################################
 # EXTRA DECLARATIONS
 # Lemmatizer
 lemmatizer = WordNetLemmatizer()
+
+# Stanford dependency tagger
+dep_parser = StanfordDependencyParser(model_path="/home/duy/stanford-parser-full-2017-06-09/models/edu/stanford/nlp/models/lexparser/wsjFactored.ser.gz")
 
 # Sentiment analyzer
 sid = SentimentIntensityAnalyzer()
@@ -31,7 +39,10 @@ sid = SentimentIntensityAnalyzer()
 stopwords = set(stopwords.words('english'))  # Add more stopword to ignore her
 
 
-preferredTags = {'NOUN', 'PROPN'};
+preferredTags = {'NOUN', 'PROPN'}
+
+
+
 
 BUILD_MODE = 0  # 0: Do nothing
 
@@ -39,39 +50,42 @@ BUILD_MODE = 0  # 0: Do nothing
 #   'global': use TextBlob sentiment analysis to analyse the whole comment. 'local': perform at the sentence level
 SENTIMENT_ANALYSIS_MODE = 'local'  # m
 
+
 ######################################
 # FUNCTIONS
 
 # Build a aspect graph from inpData.
-# @params: thrds - discussion threads. Structure array of {id: "id", :"content", supports:[]}.
-#           mergining_mode:
+# @params: threads - discussion threads. Structure array of {id: "id", :"content", supports:[]}.
+#           merging_mode:
 #               - 0: NO merging. Just put all graphs together
 #               - 1: Keyword match. unify keywords that are exactly the same into one node
 #               - 2: Semantic similarity
 # @return: One summarization aspect graph.
-def build_sum_graph(merging_mode,thrds,build_options):
-    #g = nx.Graph()
+def build_sum_graph(merging_mode, dataset, build_options):
     maybe_print("Start building sum graph in mode {0}".format(merging_mode), 1)
     # Read options
     MERGE_MODE = build_options['build_mode'] if build_options['build_mode'] else 0
     SENTIMENT_ANALYSIS_MODE = build_options['sentiment_ana_mode'] if build_options['sentiment_ana_mode'] else 'global'
 
     if MERGE_MODE == 0:
-        # print build_mode_0(thrds)
-        #print thrds
-        g = build_mode_0(thrds)
-        #print g.edges()
+        #  print build_mode_0(thrds)
+        #  print thrds
+        threads = dataset['comments']
+        g = build_mode_0(threads)
+        #  print g.edges()
         maybe_print("--> Graph BUILD in mode 0 completed.\n    Number of nodes: {0}\n    Number of edges: {1}"
                      .format(len(g.nodes()), len(g.edges())), 1)
-        #print "zzzz", g.nodes()
+        #  print "---", g.nodes()
         return g
     if MERGE_MODE == 1:
-        g = build_mode_1(thrds)
+        # g = build_mode_1()
         # print g.edges()
-        maybe_print("--> Graph BUILD in mode 1 completed.\n    Number of nodes: {0}\n    Number of edges: {1}"
-                    .format(len(g.nodes()), len(g.edges())), 1)
-        # print "zzzz", g.nodes()
-        return g
+        #maybe_print("--> Graph BUILD in mode 1 completed.\n    Number of nodes: {0}\n    Number of edges: {1}"
+        #            .format(len(g.nodes()), len(g.edges())), 1)
+        # print "---", g.nodes()
+        #return g
+        print "j"
+
 
 # Merging mode 0: Do nothing. Indeed, it just copy exactly all nodes and edges from the extracted keygraph.
 # @param: Target graph G and data threads to be merge thrds
@@ -102,11 +116,45 @@ def build_mode_0(thrds):
     return rs
 
 
+# ================== UNDER CONSTRUCTION =================
+# Merging mode 1: In build mode 1, we perform the several tasks:
+# 1. Extract the graph representation of the article (title and content)
+# 2. Attach discussion comments to the built graph
+# 3. Extract the graph for comments
+# 4. Attach these extracted to the built graph
+# @param: Target graph G and data threads to be merge thrds
+# @output: The result graph
+def build_mode_1(title,article,thrds):
+    rs = nx.Graph()
+
+    for thrd in thrds:
+        maybe_print(":: Building aspect graph for text {0}".format(thrd), 3)
+        # Extract the graph
+        cen_gr, sup_grs = build_thread_graph(thrd)  # Extract central and supports
+        maybe_print("---- Found {0} centroid and {1} valid support(s).\n".format(1 if cen_gr else 0, len(sup_grs)),
+                    3)
+        # Add the nodes
+        if cen_gr:
+            # print "--", len(cen_gr.nodes(data=True))
+            rs.add_nodes_from(cen_gr.nodes(data=True))
+        if sup_grs:
+            rs.add_nodes_from(flatten_list([sup_gr.nodes(data=True) for sup_gr in sup_grs]))
+        # Add the edges
+        if cen_gr:
+            # print "--", len(cen_gr.edges(data=True))
+            rs.add_edges_from(cen_gr.edges(data=True))
+            # print cen_gr.edges()
+        if sup_grs:
+            rs.add_edges_from(flatten_list([sup_gr.edges(data=True) for sup_gr in sup_grs]))
+            # print ooo
+    return rs
+
+
 # Build the graph with text THREAD as input. Each thread has a structure as defined in the next procedure
 # @param: text thread, each has a ID, a central and some supports
 # @return: central_graph, support_graphs(as an array) and dictionary for looking up
 def build_thread_graph(thrd):
-    maybe_print("- Building keygraph for thread "+ thrd['id'],1)
+    maybe_print("- Building keygraph for thread " + thrd['id'], 1)
     thread_id = thrd['id']
     central = thrd['central']
     supports = thrd['supports']
@@ -123,23 +171,23 @@ def build_thread_graph(thrd):
     return central_gr, [sup for sup in supports_gr if sup]
 
 
-# Build a graph from a text
-def build_graph_from_text(txt,threadid='_',comment_id='_'):
+# Build a graph from a text ---- Initial implementation
+def build_graph_from_text(txt, threadid='_', comment_id='_'):
     maybe_print(u"Generating graph for text: {0}".format(txt), 3)
     sentences = sent_tokenize(txt.strip())  # sentence segmentation
-    G = nx.Graph()
+    g = nx.Graph()
     # Get nodes and edges from sentence
     sen_count = 0
-    sen_scores = [];
+    sen_scores = []
     # Perform sentiment analysis for GLOBAL mode
     if SENTIMENT_ANALYSIS_MODE == 'global':
         sen_scores = [sid.polarity_scores(txt)['compound'] for _ in xrange(0, len(sentences))]
     for sen in sentences:
-        #print sen
+        #  print sen
         # Extract named-entities
         named_entities = []
         n_ent = 0
-        pg_text = Text(sen)# convert to pyglot
+        pg_text = Text(sen)  # convert to pyglot
         try:
             n_ent = pg_text.entities
         except:
@@ -159,7 +207,7 @@ def build_graph_from_text(txt,threadid='_',comment_id='_'):
         # Filter tokens by POS tag
         preferred_words = [lemmatizer.lemmatize(w.lower()) for w, t in text.pos_tags if t in preferredTags]
         # Filter stopwords
-        #filtered_words = list(set([w for w in preferred_words if w not in stopwords]))
+        #  filtered_words = list(set([w for w in preferred_words if w not in stopwords]))
         filtered_words = [w for w in preferred_words if w not in stopwords]
         # Perform sentiment analysis for LOCAL mode
         sen_score = 0
@@ -170,49 +218,142 @@ def build_graph_from_text(txt,threadid='_',comment_id='_'):
         # Assign id and label to the nodes before adding the graph
         assigned_nodes = [('{0}~{1}~{2}~{3}'.format(filtered_words[i], threadid, comment_id, gen_mcs_only()),
                            {'label': filtered_words[i]}) for i in xrange(0, len(filtered_words))]
-        #print '---____----',assigned_nodes
-        G.add_nodes_from(assigned_nodes)  # Add nodes from filtered words
+        #  print '---____----',assigned_nodes
+        g.add_nodes_from(assigned_nodes)  # Add nodes from filtered words
         # Update nodes's weight
         for node in assigned_nodes:
             try:  # Node has already existed
-                G.node[node[0]]['weight'] += 1
+                g.node[node[0]]['weight'] += 1
                 # Update sentiment score
                 if sen_score > 0:
-                    G.node[node[0]]['sentiment']['pos_count'] += 1
+                    g.node[node[0]]['sentiment']['pos_count'] += 1
                 elif sen_score < 0:
-                    G.node[node[0]]['sentiment']['neg_count'] += 1
+                    g.node[node[0]]['sentiment']['neg_count'] += 1
                 else:
-                    G.node[node[0]]['sentiment']['neu_count'] += 1
+                    g.node[node[0]]['sentiment']['neu_count'] += 1
 
             except KeyError: # New node
-                G.node[node[0]]['weight'] = 1
-                G.node[node[0]]['thread_id'] = threadid
-                G.node[node[0]]['sentiment'] = {'pos_count': 1 if sen_score > 0 else 0, # Add sentiment score
+                g.node[node[0]]['weight'] = 1
+                g.node[node[0]]['thread_id'] = threadid
+                g.node[node[0]]['sentiment'] = {'pos_count': 1 if sen_score > 0 else 0, # Add sentiment score
                                                 'neg_count': 1 if sen_score < 0 else 0,
                                                 'neu_count': 1 if sen_score == 0 else 0}
 
-        maybe_print('Sentence no ' + str(sen_count) + '\nNodes ' + str(G.nodes()), 3)
-        sen_count +=1
+        maybe_print('Sentence no ' + str(sen_count) + '\nNodes ' + str(g.nodes()), 3)
+        sen_count += 1
         edges = combinations([i[0] for i in assigned_nodes], 2)
-        filtered_edges = [(n, m) for n,m in edges if n.split('~')[0] != m.split('~')[0]]
-        #print list(edges)
-        #print 'xxxafsdgfsa',filtered_edges
+        filtered_edges = [(n, m) for n, m in edges if n.split('~')[0] != m.split('~')[0]]
+        #  print list(edges)
+        #  print '-----',filtered_edges
         if filtered_edges:
-            G.add_edges_from(filtered_edges)  # Add edges from the combination of words co-occurred in the same sentence
+            g.add_edges_from(filtered_edges)  # Add edges from the combination of words co-occurred in the same sentence
             # Update edges's weight
             for u, v in filtered_edges:
                 try:
-                    G.edge[u][v]['weight'] += 1
+                    g.edge[u][v]['weight'] += 1
                 except KeyError:
-                    G.edge[u][v]['weight'] = 1
-            maybe_print('Edges ' + str(G.edges()) + '\n', 3)
+                    g.edge[u][v]['weight'] = 1
+            maybe_print('Edges ' + str(g.edges()) + '\n', 3)
         sen_count +=1  # Increase the sentence count index
-    if len(G.nodes()) == 0:
+    if len(g.nodes()) == 0:
         return None
 
-    maybe_print('Nodes ' + str(G.nodes()), 2)
-    maybe_print('Edges ' + str(G.edges()) + '\n', 2)
-    return G
+    maybe_print('Nodes ' + str(g.nodes()), 2)
+    maybe_print('Edges ' + str(g.edges()) + '\n', 2)
+    return g
+
+
+# Build a graph from a text ---- Directional implementation
+# This function build a directed graph fom a piece of text
+def build_directed_graph_from_text(txt, threadid='_', comment_id='_'):
+    maybe_print(u"Generating directed graph for text: {0}".format(txt), 3)
+    sentences = sent_tokenize(txt.strip())  # sentence segmentation
+    g = nx.Graph()
+    # Get nodes and edges from sentence
+    sen_count = 0
+    sen_scores = []
+    # Perform sentiment analysis for GLOBAL mode
+    if SENTIMENT_ANALYSIS_MODE == 'global':
+        sen_scores = [sid.polarity_scores(txt)['compound'] for _ in xrange(0, len(sentences))]
+    for sen in sentences:
+        #  print sen
+        # Extract named-entities
+        named_entities = []
+        n_ent = 0
+        pg_text = Text(sen)  # convert to pyglot
+        try:
+            n_ent = pg_text.entities
+        except:
+            pass
+
+        if n_ent > 0:
+            named_entities = [' '.join(list(item)) for item in pg_text.entities if len(item) > 1]
+
+        tb_text = TextBlob(sen)  # Convert to textblob. # find noun phrases in text.noun_phrases
+        noun_phrases = tb_text.noun_phrases
+
+        raw_text = sen
+        for item in (named_entities+noun_phrases): # group the words in noun phrase / NE into one big word
+            raw_text = raw_text.replace(item, item.replace(' ', '_'))
+        # Convert to polygot format
+        text = Text(raw_text, hint_language_code='en')
+        # Filter tokens by POS tag
+        preferred_words = [lemmatizer.lemmatize(w.lower()) for w, t in text.pos_tags if t in preferredTags]
+        # Filter stopwords
+        #  filtered_words = list(set([w for w in preferred_words if w not in stopwords]))
+        filtered_words = [w for w in preferred_words if w not in stopwords]
+        # Perform sentiment analysis for LOCAL mode
+        sen_score = 0
+        if SENTIMENT_ANALYSIS_MODE == 'local':
+            sen_score = sid.polarity_scores(raw_text)['compound']
+            sen_scores.append(sen_score)
+
+        # Assign id and label to the nodes before adding the graph
+        assigned_nodes = [('{0}~{1}~{2}~{3}'.format(filtered_words[i], threadid, comment_id, gen_mcs_only()),
+                           {'label': filtered_words[i]}) for i in xrange(0, len(filtered_words))]
+        #  print '---____----',assigned_nodes
+        g.add_nodes_from(assigned_nodes)  # Add nodes from filtered words
+        # Update nodes's weight
+        for node in assigned_nodes:
+            try:  # Node has already existed
+                g.node[node[0]]['weight'] += 1
+                # Update sentiment score
+                if sen_score > 0:
+                    g.node[node[0]]['sentiment']['pos_count'] += 1
+                elif sen_score < 0:
+                    g.node[node[0]]['sentiment']['neg_count'] += 1
+                else:
+                    g.node[node[0]]['sentiment']['neu_count'] += 1
+
+            except KeyError: # New node
+                g.node[node[0]]['weight'] = 1
+                g.node[node[0]]['thread_id'] = threadid
+                g.node[node[0]]['sentiment'] = {'pos_count': 1 if sen_score > 0 else 0, # Add sentiment score
+                                                'neg_count': 1 if sen_score < 0 else 0,
+                                                'neu_count': 1 if sen_score == 0 else 0}
+
+        maybe_print('Sentence no ' + str(sen_count) + '\nNodes ' + str(g.nodes()), 3)
+        sen_count += 1
+        edges = combinations([i[0] for i in assigned_nodes], 2)
+        filtered_edges = [(n, m) for n, m in edges if n.split('~')[0] != m.split('~')[0]]
+        #  print list(edges)
+        #  print '-----',filtered_edges
+        if filtered_edges:
+            g.add_edges_from(filtered_edges)  # Add edges from the combination of words co-occurred in the same sentence
+            # Update edges's weight
+            for u, v in filtered_edges:
+                try:
+                    g.edge[u][v]['weight'] += 1
+                except KeyError:
+                    g.edge[u][v]['weight'] = 1
+            maybe_print('Edges ' + str(g.edges()) + '\n', 3)
+        sen_count +=1  # Increase the sentence count index
+    if len(g.nodes()) == 0:
+        return None
+
+    maybe_print('Nodes ' + str(g.nodes()), 2)
+    maybe_print('Edges ' + str(g.edges()) + '\n', 2)
+    return g
 
 
 # Read a data file, cluster threads of discussion
@@ -220,16 +361,16 @@ def build_graph_from_text(txt,threadid='_',comment_id='_'):
 # @return: data structure: [
 #   [{'id':'cluster_id', 'central_comment': 'abc', 'supports':[support comments]},
 #                       {}]
-def read_comment_file(dataFile):
-    dataset=None;
+def read_comment_file(data_file):
+    dataset = None
     try:
-        with codecs.open(dataFile, "rb", "utf8") as comment_file:
+        with codecs.open(data_file, "rb", "utf8") as comment_file:
             reader = unicode_csv_reader(comment_file, delimiter='	', quotechar='"')
             dataset = []
             index = -1;
             count = 0;
             for entry in reader:
-                #print entry;
+                #  print entry;
                 if entry[2] == u"":
                     cluster_id = gen_mcs() + "^" + str(index+1);
                     dataset.append({'id': cluster_id, 'central': text_preprocessing(entry[6]), 'supports': []})
@@ -239,7 +380,7 @@ def read_comment_file(dataFile):
                         dataset[index]['supports'].append(text_preprocessing(entry[6]))
                 count += 1
     except IOError:
-        print "Unable to open {0}".format(dataFile)
+        print "Unable to open {0}".format(data_file)
 
     maybe_print(json.dumps(dataset, sort_keys=True, indent=4, separators=(',', ': ')), 2)
     return dataset
@@ -250,11 +391,11 @@ def read_comment_file(dataFile):
 # @return: a pair of
 #  1. title sentence
 #  2. a list, each element is a sentence
-def read_article_file(dataFile):
+def read_article_file(data_file):
     title = None
     article = None
     try:
-        with codecs.open(dataFile, "rb", "utf8") as article_file:
+        with codecs.open(data_file, "rb", "utf8") as article_file:
             count = 0
             article = []
             for line in article_file:
@@ -267,14 +408,14 @@ def read_article_file(dataFile):
                     title = line
                 count += 1
     except IOError:
-        print "Unable to open {0}".format(dataFile)
+        print "Unable to open {0}".format(data_file)
     return title, article
 
 
 # Segmentize the sentences
 # @param: a list, each element is a sentence the document
 # @return: a list, each element is group of sentence concatenated to form a paragraph.
-def TextTilingTokenize(sentence_list):
+def texttiling_tokenize(sentence_list):
     doc = ' '.join(sentence_list)
     tt = texttiling.TextTilingTokenizer()
     segmented_text = tt.tokenize(doc)
@@ -331,18 +472,18 @@ def generate_json_from_graph(G):
             item['label'] = G.node[node]['label']
         if G.node[node]['color']:
             item['color'] = str(G.node[node]['color'])
-        #print item
+        #  print item
         result['nodes'].append(item)
 
     for edge in G.edges():
         item = {}
         item['id'] = edge[0]+'|'+edge[1]
-        #print "SSSSS",type(G.edges())
+        #  print "SSSSS",type(G.edges())
         if G.edge[edge[0]][edge[1]]['weight']:
             w = G.edge[edge[0]][edge[1]]['weight']
             item['value'] = w
             item['title'] = "freq: " + str(w)
-        #if G.edge[edge[0]][edge[1]]['label']:
+        #  if G.edge[edge[0]][edge[1]]['label']:
         #    item['label'] = G.edge[edge[0]][edge[1]]['label']
         item['from'] = edge[0]
         item['to'] = edge[1]
@@ -350,8 +491,9 @@ def generate_json_from_graph(G):
 
     return result
 
+
 # Pruning the graph according to restrictions in options
-def prun_graph(graph,options):
+def prune_graph(graph, options):
     g = graph
     # Load options
     if not g or not options:
@@ -363,7 +505,7 @@ def prun_graph(graph,options):
     #                     If total number of edge is  < this number, pruning will be skipped
     REMOVE_ISOLATED_NODE = True #
 
-    #For keyword matching and unification
+    #  For keyword matching and unification
     ENABLE_UNIFY_MATCHED_KEYWORDS = True
     INTRA_CLUSTER_UNIFY = True
     INTER_CLUSTER_UNIFY = False
@@ -532,7 +674,7 @@ def prun_graph(graph,options):
     # Filter nodes by frequency
     to_remove_nodes = []
     if NODE_FREQ_MIN > 1:
-        to_remove_nodes = [n for n in g.nodes() if g.node[n]['weight']<NODE_FREQ_MIN]
+        to_remove_nodes = [n for n in g.nodes() if g.node[n]['weight']< NODE_FREQ_MIN]
         g.remove_nodes_from(to_remove_nodes)
 
     if EDGE_FREQ_MIN > 1:
@@ -595,3 +737,60 @@ def simple_normalize(cnt):
            (u"\u2014", "-"), \
            (u"\u2011", "-")
     return reduce(lambda a, kv: a.replace(*kv), reps, cnt)
+
+# Extract a graph from a sentence
+# @param: a sentence, and filtering options
+# @output: a list of dependencies
+def dep_extract_from_sent(sentence,filter_opt):
+    result = dep_parser.raw_parse(sentence)
+    dependencies = result.next()
+    raw_results = list(dependencies.triples())
+    # print('Options: ',filter_opt)
+    # Filter out by POS
+    prefered_pos = filter_opt['prefered_pos']
+    if type(prefered_pos) != list:  # take all POS
+        filter_pos_result = raw_results
+    else:
+        # filter tripples whse beginning and ending tags are inside the list
+        filter_pos_result = [trip for trip in raw_results if (trip[0][1] in prefered_pos and trip[2][1] in prefered_pos)]
+
+    # Filter by relationship
+    # print filter_pos_result
+    prefered_rel = filter_opt['prefered_rel']
+    if type(prefered_rel) != list:  # take all POS
+        filter_rel_result =  filter_pos_result
+    else:
+        # filter tripples that has relation in the list
+        filter_rel_result = [trip for trip in raw_results if (trip[1] in prefered_rel)]
+
+    print filter_rel_result
+    # Merge compounds
+    compound_merge = filter_opt['compound_merge']
+    if compound_merge:
+        tokens = word_tokenize(sentence)
+        compounds = [(t,s) for (s,s_tag),r,(t,t_tag) in filter_rel_result if r == u'compound' and s_tag == t_tag]
+        # print "!!!!!!!!!", compounds
+        replacements = dict()
+        for i in xrange(0, len(tokens)-1):
+            if (tokens[i],tokens[i+1]) in compounds:
+                replacements[tokens[i]] = tokens[i]+"_" + tokens[i+1]
+                replacements[tokens[i+1]] = tokens[i] + "_" + tokens[i + 1]
+                # Now do the replace
+                #print "found compound", tokens[i],tokens[i+1]
+        duplicate_indeces = {}
+        for i in xrange(0,len(filter_rel_result)):
+            (s,s_tag),r,(t,t_tag) = filter_rel_result[i]
+            if replacements.has_key(s):
+                filter_rel_result[i] = (replacements[s],s_tag),r,(t,t_tag)
+            (s, s_tag), r, (t, t_tag) = filter_rel_result[i]  # Update in case 1st element changes
+            if s == t:
+                duplicate_indeces.add(i)
+            if replacements.has_key(t):
+                filter_rel_result[i] = (s,s_tag),r,(replacements[t],t_tag)
+
+        # now remove duplicate
+        filter_comp_result = [filter_rel_result[i] for i in xrange(len(filter_rel_result)) if i not in duplicate_indeces]
+    else:
+        filter_comp_result = filter_rel_result
+
+    return filter_comp_result

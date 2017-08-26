@@ -9,7 +9,6 @@
 from functions import *
 from decoration import *
 import datetime
-from stanford import *
 
 build_options = {
     'build_mode': 0,
@@ -31,34 +30,45 @@ prune_options = {
     'node_degree_min': 2
 }
 
+dep_opt = {
+    'prefered_pos': ['NNP','NN','NNS','VB','VBD','RB'], # preferred part-of-speech tags
+    'prefered_rel': 'all', # ['nsubk','nsubkpass','obj','iobj'] list of relation to remains
+    'compound_merge': True
+
+}
+
 
 if __name__ == "__main__":
 
-    dataset = read_comment_file("data/comments_article0.txt")
-    title, article = read_article_file("data/article0.txt")
-    #v print title
-    # print article
-    print 'SSS',TextTilingTokenize(article)
-
-    maybe_print("Loaded data set! Number of conversation thread: {0}".format(len(dataset)), 0)
+    comments = read_comment_file("data/comments_article1.txt")
+    title, article = read_article_file("data/article1.txt")
+    print dep_extract_from_sent(title,dep_opt)
 
     '''
+    dataset = {'title': title,
+               'article': article,
+               'comments': comments}
+    #  print title
+    # print article
+    print 'SSS', texttiling_tokenize(article)
+
+    maybe_print("Loaded data set! Number of conversation thread: {0}".format(len(dataset['title'])), 0)
+
     asp_graph = build_sum_graph(0,dataset,build_options) # Build sum keyraph at mode 0
     #print asp_graph.edges()
     # pruning
-    pruned_graph = prun_graph(asp_graph, prune_options)
+    pruned_graph = prune_graph(asp_graph, prune_options)
     #print pruned_graph.edges()
     sen_graph = compute_sentiment_score(pruned_graph)
     colored_graph = coloring_nodes(sen_graph)
     #for n in colored_graph.nodes():
-    #    print colored_graph.node[n]
-
+    #  print colored_graph.node[n]
     json_g = None
     if colored_graph.nodes():
         json_g = generate_json_from_graph(colored_graph)
         # Add build options
         json_g['options'] = {
-            'timestamp' : datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S %Z"),
+            'timestamp': datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S %Z"),
             'build_option': build_options,
             'pruning_option': prune_options
         }

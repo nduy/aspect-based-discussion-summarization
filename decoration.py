@@ -24,7 +24,7 @@ def coloring_nodes(g):
     #print max_sen, min_sen
     #colors = list(Color("red").range_to(Color("green"), N_COLOR))
     colors = list(Color("#ff0000").range_to(Color("#0000ff"), N_COLOR))
-    print colors
+    #  print colors
     marks = np.linspace(min_sen,max_sen,N_COLOR+1)
     for n in g.nodes():
         sen_score = g.node[n]['sentiment_score']
