@@ -763,7 +763,7 @@ def dep_extract_from_sent(sentence,filter_opt):
         # filter tripples that has relation in the list
         filter_rel_result = [trip for trip in raw_results if (trip[1] in prefered_rel)]
 
-    print filter_rel_result
+    #print filter_rel_result
     # Merge compounds
     compound_merge = filter_opt['compound_merge']
     if compound_merge:
