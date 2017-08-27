@@ -130,9 +130,11 @@ function draw() {
 		  },  
 	    },
 	    edges: {
-	     // smooth: {
-	     //   type: 'continuous'
-	     // }
+			arrows: {
+			  to:     {enabled: true, scaleFactor:1, type:'arrow'},
+			  middle: {enabled: false, scaleFactor:1, type:'arrow'},
+			  from:   {enabled: false, scaleFactor:1, type:'arrow'}
+			},
 			color: {inherit: 'both'},
 			smooth: false
 	    },

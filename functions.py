@@ -78,7 +78,7 @@ def build_sum_graph(merging_mode, dataset, build_options):
         #  print "---", g.nodes()
         return g
     if MERGE_MODE == 1:
-        # g = build_mode_1()
+        g = build_mode_1(dataset['title'], dataset['article'], dataset['comments'])
         # print g.edges()
         #maybe_print("--> Graph BUILD in mode 1 completed.\n    Number of nodes: {0}\n    Number of edges: {1}"
         #            .format(len(g.nodes()), len(g.edges())), 1)
@@ -254,7 +254,7 @@ def build_graph_from_text(txt, threadid='_', comment_id='_'):
                 except KeyError:
                     g.edge[u][v]['weight'] = 1
             maybe_print('Edges ' + str(g.edges()) + '\n', 3)
-        sen_count +=1  # Increase the sentence count index
+        sen_count += 1  # Increase the sentence count index
     if len(g.nodes()) == 0:
         return None
 
@@ -276,43 +276,19 @@ def build_directed_graph_from_text(txt, threadid='_', comment_id='_'):
     if SENTIMENT_ANALYSIS_MODE == 'global':
         sen_scores = [sid.polarity_scores(txt)['compound'] for _ in xrange(0, len(sentences))]
     for sen in sentences:
-        #  print sen
-        # Extract named-entities
-        named_entities = []
-        n_ent = 0
-        pg_text = Text(sen)  # convert to pyglot
-        try:
-            n_ent = pg_text.entities
-        except:
-            pass
-
-        if n_ent > 0:
-            named_entities = [' '.join(list(item)) for item in pg_text.entities if len(item) > 1]
-
-        tb_text = TextBlob(sen)  # Convert to textblob. # find noun phrases in text.noun_phrases
-        noun_phrases = tb_text.noun_phrases
-
-        raw_text = sen
-        for item in (named_entities+noun_phrases): # group the words in noun phrase / NE into one big word
-            raw_text = raw_text.replace(item, item.replace(' ', '_'))
-        # Convert to polygot format
-        text = Text(raw_text, hint_language_code='en')
-        # Filter tokens by POS tag
-        preferred_words = [lemmatizer.lemmatize(w.lower()) for w, t in text.pos_tags if t in preferredTags]
-        # Filter stopwords
-        #  filtered_words = list(set([w for w in preferred_words if w not in stopwords]))
-        filtered_words = [w for w in preferred_words if w not in stopwords]
+        dependencies,keys,new_sen = dep_extract_from_sent(sen,dep_opt)
         # Perform sentiment analysis for LOCAL mode
         sen_score = 0
         if SENTIMENT_ANALYSIS_MODE == 'local':
-            sen_score = sid.polarity_scores(raw_text)['compound']
+            sen_score = sid.polarity_scores(new_sen)['compound']
             sen_scores.append(sen_score)
 
         # Assign id and label to the nodes before adding the graph
-        assigned_nodes = [('{0}~{1}~{2}~{3}'.format(filtered_words[i], threadid, comment_id, gen_mcs_only()),
-                           {'label': filtered_words[i]}) for i in xrange(0, len(filtered_words))]
-        #  print '---____----',assigned_nodes
+        assigned_nodes = [('{0}~{1}~{2}~{3}'.format(keys[i], threadid, comment_id, gen_mcs_only()),
+                           {'label': keys[i]}) for i in xrange(0, len(keys))]
+        #print '---____----',assigned_nodes
         g.add_nodes_from(assigned_nodes)  # Add nodes from filtered words
+        #print "wewewew ", g.nodes()
         # Update nodes's weight
         for node in assigned_nodes:
             try:  # Node has already existed
@@ -331,24 +307,28 @@ def build_directed_graph_from_text(txt, threadid='_', comment_id='_'):
                 g.node[node[0]]['sentiment'] = {'pos_count': 1 if sen_score > 0 else 0, # Add sentiment score
                                                 'neg_count': 1 if sen_score < 0 else 0,
                                                 'neu_count': 1 if sen_score == 0 else 0}
-
+        #print "wewewew2 ", g.nodes(data=True)
         maybe_print('Sentence no ' + str(sen_count) + '\nNodes ' + str(g.nodes()), 3)
         sen_count += 1
-        edges = combinations([i[0] for i in assigned_nodes], 2)
-        filtered_edges = [(n, m) for n, m in edges if n.split('~')[0] != m.split('~')[0]]
+        #######################################################
+        #edges = combinations([i[0] for i in assigned_nodes], 2)
+        word2id= dict(zip(keys, assigned_nodes))
+        print word2id
+        filtered_edges = [(word2id[s][0], word2id[t][0],{'label':r}) for (s,_),r,(t,_) in dependencies]
         #  print list(edges)
         #  print '-----',filtered_edges
         if filtered_edges:
             g.add_edges_from(filtered_edges)  # Add edges from the combination of words co-occurred in the same sentence
             # Update edges's weight
-            for u, v in filtered_edges:
+            for u, v, _ in filtered_edges:
                 try:
                     g.edge[u][v]['weight'] += 1
                 except KeyError:
                     g.edge[u][v]['weight'] = 1
             maybe_print('Edges ' + str(g.edges()) + '\n', 3)
-        sen_count +=1  # Increase the sentence count index
+        sen_count += 1  # Increase the sentence count index
     if len(g.nodes()) == 0:
+        #raise ValueError("Generated graph is empty")
         return None
 
     maybe_print('Nodes ' + str(g.nodes()), 2)
@@ -738,32 +718,34 @@ def simple_normalize(cnt):
            (u"\u2011", "-")
     return reduce(lambda a, kv: a.replace(*kv), reps, cnt)
 
+
 # Extract a graph from a sentence
 # @param: a sentence, and filtering options
-# @output: a list of dependencies
+# @output: 1. a list of dependencies 2. a list of keys, 3. the sentence after grouped compounds/entities
 def dep_extract_from_sent(sentence,filter_opt):
     result = dep_parser.raw_parse(sentence)
     dependencies = result.next()
     raw_results = list(dependencies.triples())
     # print('Options: ',filter_opt)
     # Filter out by POS
-    prefered_pos = filter_opt['prefered_pos']
-    if type(prefered_pos) != list:  # take all POS
+    preferred_pos = filter_opt['preferred_pos']
+    if type(preferred_pos) != list:  # take all POS
         filter_pos_result = raw_results
     else:
-        # filter tripples whse beginning and ending tags are inside the list
-        filter_pos_result = [trip for trip in raw_results if (trip[0][1] in prefered_pos and trip[2][1] in prefered_pos)]
+        # filter triples whose beginning and ending tags are inside the list
+        filter_pos_result = [trip for trip in raw_results
+                             if (trip[0][1] in preferred_pos and trip[2][1] in preferred_pos)]
 
     # Filter by relationship
     # print filter_pos_result
-    prefered_rel = filter_opt['prefered_rel']
+    prefered_rel = filter_opt['preferred_rel']
     if type(prefered_rel) != list:  # take all POS
         filter_rel_result =  filter_pos_result
     else:
         # filter tripples that has relation in the list
         filter_rel_result = [trip for trip in raw_results if (trip[1] in prefered_rel)]
 
-    #print filter_rel_result
+    # print filter_rel_result
     # Merge compounds
     compound_merge = filter_opt['compound_merge']
     if compound_merge:
@@ -776,21 +758,27 @@ def dep_extract_from_sent(sentence,filter_opt):
                 replacements[tokens[i]] = tokens[i]+"_" + tokens[i+1]
                 replacements[tokens[i+1]] = tokens[i] + "_" + tokens[i + 1]
                 # Now do the replace
-                #print "found compound", tokens[i],tokens[i+1]
-        duplicate_indeces = {}
+                # print "found compound", tokens[i],tokens[i+1]
+        duplicate_indices = {}
         for i in xrange(0,len(filter_rel_result)):
             (s,s_tag),r,(t,t_tag) = filter_rel_result[i]
             if replacements.has_key(s):
                 filter_rel_result[i] = (replacements[s],s_tag),r,(t,t_tag)
             (s, s_tag), r, (t, t_tag) = filter_rel_result[i]  # Update in case 1st element changes
             if s == t:
-                duplicate_indeces.add(i)
+                duplicate_indices.add(i)
             if replacements.has_key(t):
                 filter_rel_result[i] = (s,s_tag),r,(replacements[t],t_tag)
-
+        new_sen = sentence  # new sentence contains grouped item with _ as connector
+        for key in replacements:
+            new_sen.replace(key,replacements[key])
         # now remove duplicate
-        filter_comp_result = [filter_rel_result[i] for i in xrange(len(filter_rel_result)) if i not in duplicate_indeces]
+        filter_comp_result = [filter_rel_result[i] for i in xrange(len(filter_rel_result)) if i not in duplicate_indices]
     else:
         filter_comp_result = filter_rel_result
+    keys = set()
+    for (s,_),_,(t,_) in filter_comp_result:
+        keys.add(t)
+        keys.add(s)
 
-    return filter_comp_result
+    return filter_comp_result,list(keys),new_sen
