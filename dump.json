@@ -1,86 +1,116 @@
 {
     "edges": [
         {
-            "from": "just~title~_~0x59a3fe49",
-            "id": "just~title~_~0x59a3fe49|once~title~_~0x59a3fe49",
-            "label": "advmod",
+            "from": "council~title~_~0x59a40104",
+            "id": "council~title~_~0x59a40104|votes~title~_~0x59a40104",
+            "label": "compound",
             "title": "freq: 1",
-            "to": "once~title~_~0x59a3fe49",
+            "to": "votes~title~_~0x59a40104",
             "value": 1
         },
         {
-            "from": "wheelie_bins~title~_~0x59a3fe49",
-            "id": "wheelie_bins~title~_~0x59a3fe49|collect~title~_~0x59a3fe49",
+            "from": "votes~title~_~0x59a40104",
+            "id": "votes~title~_~0x59a40104|bury~title~_~0x59a40104",
             "label": "dobj",
             "title": "freq: 1",
-            "to": "collect~title~_~0x59a3fe49",
+            "to": "bury~title~_~0x59a40104",
             "value": 1
         },
         {
-            "from": "once~title~_~0x59a3fe49",
-            "id": "once~title~_~0x59a3fe49|collect~title~_~0x59a3fe49",
-            "label": "advmod",
-            "title": "freq: 1",
-            "to": "collect~title~_~0x59a3fe49",
-            "value": 1
-        },
-        {
-            "from": "collect~title~_~0x59a3fe49",
-            "id": "collect~title~_~0x59a3fe49|bury_council_votes~title~_~0x59a3fe49",
+            "from": "bury~title~_~0x59a40104",
+            "id": "bury~title~_~0x59a40104|collect~title~_~0x59a40104",
             "label": "xcomp",
             "title": "freq: 1",
-            "to": "bury_council_votes~title~_~0x59a3fe49",
+            "to": "collect~title~_~0x59a40104",
             "value": 1
         },
         {
-            "from": "collect~title~_~0x59a3fe49",
-            "id": "collect~title~_~0x59a3fe49|weeks~title~_~0x59a3fe49",
+            "from": "just~title~_~0x59a40104",
+            "id": "just~title~_~0x59a40104|once~title~_~0x59a40104",
+            "label": "advmod",
+            "title": "freq: 1",
+            "to": "once~title~_~0x59a40104",
+            "value": 1
+        },
+        {
+            "from": "bins~title~_~0x59a40104",
+            "id": "bins~title~_~0x59a40104|collect~title~_~0x59a40104",
+            "label": "dobj",
+            "title": "freq: 1",
+            "to": "collect~title~_~0x59a40104",
+            "value": 1
+        },
+        {
+            "from": "collect~title~_~0x59a40104",
+            "id": "collect~title~_~0x59a40104|weeks~title~_~0x59a40104",
             "label": "nmod:tmod",
             "title": "freq: 1",
-            "to": "weeks~title~_~0x59a3fe49",
+            "to": "weeks~title~_~0x59a40104",
+            "value": 1
+        },
+        {
+            "from": "collect~title~_~0x59a40104",
+            "id": "collect~title~_~0x59a40104|once~title~_~0x59a40104",
+            "label": "advmod",
+            "title": "freq: 1",
+            "to": "once~title~_~0x59a40104",
             "value": 1
         }
     ],
     "nodes": [
         {
             "color": "lime",
-            "id": "just~title~_~0x59a3fe49",
+            "id": "council~title~_~0x59a40104",
+            "label": "council",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0}",
+            "value": 1
+        },
+        {
+            "color": "lime",
+            "id": "votes~title~_~0x59a40104",
+            "label": "votes",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0}",
+            "value": 1
+        },
+        {
+            "color": "lime",
+            "id": "bury~title~_~0x59a40104",
+            "label": "bury",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0}",
+            "value": 1
+        },
+        {
+            "color": "lime",
+            "id": "just~title~_~0x59a40104",
             "label": "just",
             "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0}",
             "value": 1
         },
         {
             "color": "lime",
-            "id": "wheelie_bins~title~_~0x59a3fe49",
-            "label": "wheelie_bins",
+            "id": "bins~title~_~0x59a40104",
+            "label": "bins",
             "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0}",
             "value": 1
         },
         {
             "color": "lime",
-            "id": "once~title~_~0x59a3fe49",
-            "label": "once",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0}",
-            "value": 1
-        },
-        {
-            "color": "lime",
-            "id": "collect~title~_~0x59a3fe49",
+            "id": "collect~title~_~0x59a40104",
             "label": "collect",
             "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0}",
             "value": 1
         },
         {
             "color": "lime",
-            "id": "weeks~title~_~0x59a3fe49",
-            "label": "weeks",
+            "id": "once~title~_~0x59a40104",
+            "label": "once",
             "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0}",
             "value": 1
         },
         {
             "color": "lime",
-            "id": "bury_council_votes~title~_~0x59a3fe49",
-            "label": "bury_council_votes",
+            "id": "weeks~title~_~0x59a40104",
+            "label": "weeks",
             "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0}",
             "value": 1
         }
@@ -104,6 +134,6 @@
                 "unification_mode": "contract"
             }
         },
-        "timestamp": "2017-08-28 13:28:09 "
+        "timestamp": "2017-08-28 13:39:48 "
     }
 }

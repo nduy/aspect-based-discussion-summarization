@@ -136,7 +136,31 @@ function draw() {
 			  from:   {enabled: false, scaleFactor:1, type:'arrow'}
 			},
 			color: {inherit: 'both'},
-			smooth: false
+			smooth: {
+			  enabled: true,
+			  type: "dynamic",
+			  roundness: 0.5
+			},
+			scaling:{
+			  min: 1,
+			  max: 10,
+			  label: {
+				enabled: true,
+				min: 4,
+				max: 20,
+				maxVisible: 20,
+				drawThreshold: 1
+			  },
+			  customScalingFunction: function (min,max,total,value) {
+				if (max === min) {
+				  return 0.5;
+				}
+				else {
+				  var scale = 1 / (max - min);
+				  return Math.max(0,(value - min)*scale);
+				}
+			  }
+			},
 	    },
 	    configure:function (option, path) {
 	      if (path.indexOf('smooth') !== -1 || option === 'smooth') {

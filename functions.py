@@ -721,10 +721,10 @@ def simple_normalize(cnt):
 # @param: a sentence, and filtering options
 # @output: 1. a list of dependencies 2. a list of keys, 3. the sentence after grouped compounds/entities
 def dep_extract_from_sent(sentence,filter_opt):
-    blob = TextBlob(sentence)
+    #blob = TextBlob(sentence)
     #print blob.noun_phrases
-    for phrase in blob.noun_phrases:
-        sentence = sentence.replace(phrase,phrase.replace(' ','_'))
+    #for phrase in blob.noun_phrases:
+    #    sentence = sentence.replace(phrase,phrase.replace(' ','_'))
     #print sentence
     result = dep_parser.raw_parse(sentence)
     dependencies = result.next()
