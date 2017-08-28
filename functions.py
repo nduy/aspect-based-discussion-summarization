@@ -31,7 +31,7 @@ from nltk.parse.stanford import StanfordDependencyParser
 lemmatizer = WordNetLemmatizer()
 
 # Stanford dependency tagger
-dep_parser = StanfordDependencyParser(model_path="/home/duy/stanford-parser-full-2017-06-09/models/edu/stanford/nlp/models/lexparser/wsjFactored.ser.gz")
+dep_parser = StanfordDependencyParser(model_path="./models/lexparser/englishPCFG.caseless.ser.gz")
 
 # Sentiment analyzer
 sid = SentimentIntensityAnalyzer()
@@ -286,9 +286,9 @@ def build_directed_graph_from_text(txt, threadid='_', comment_id='_'):
         # Assign id and label to the nodes before adding the graph
         assigned_nodes = [('{0}~{1}~{2}~{3}'.format(keys[i], threadid, comment_id, gen_mcs_only()),
                            {'label': keys[i]}) for i in xrange(0, len(keys))]
-        #print '---____----',assigned_nodes
+        # print '---____----',assigned_nodes
         g.add_nodes_from(assigned_nodes)  # Add nodes from filtered words
-        #print "wewewew ", g.nodes()
+        # print "wewewew ", g.nodes()
         # Update nodes's weight
         for node in assigned_nodes:
             try:  # Node has already existed
@@ -301,20 +301,16 @@ def build_directed_graph_from_text(txt, threadid='_', comment_id='_'):
                 else:
                     g.node[node[0]]['sentiment']['neu_count'] += 1
 
-            except KeyError: # New node
+            except KeyError:  # New node
                 g.node[node[0]]['weight'] = 1
                 g.node[node[0]]['thread_id'] = threadid
                 g.node[node[0]]['sentiment'] = {'pos_count': 1 if sen_score > 0 else 0, # Add sentiment score
                                                 'neg_count': 1 if sen_score < 0 else 0,
                                                 'neu_count': 1 if sen_score == 0 else 0}
-        #print "wewewew2 ", g.nodes(data=True)
         maybe_print('Sentence no ' + str(sen_count) + '\nNodes ' + str(g.nodes()), 3)
         sen_count += 1
-        #######################################################
-        #edges = combinations([i[0] for i in assigned_nodes], 2)
         word2id= dict(zip(keys, assigned_nodes))
-        print word2id
-        filtered_edges = [(word2id[s][0], word2id[t][0],{'label':r}) for (s,_),r,(t,_) in dependencies]
+        filtered_edges = [(word2id[s][0], word2id[t][0], {'label': r}) for (s, _), r, (t, _) in dependencies if s != t]
         #  print list(edges)
         #  print '-----',filtered_edges
         if filtered_edges:
@@ -328,11 +324,12 @@ def build_directed_graph_from_text(txt, threadid='_', comment_id='_'):
             maybe_print('Edges ' + str(g.edges()) + '\n', 3)
         sen_count += 1  # Increase the sentence count index
     if len(g.nodes()) == 0:
-        #raise ValueError("Generated graph is empty")
+        # raise ValueError("Generated graph is empty")
         return None
 
     maybe_print('Nodes ' + str(g.nodes()), 2)
     maybe_print('Edges ' + str(g.edges()) + '\n', 2)
+    #print g.edges()
     return g
 
 
@@ -439,7 +436,7 @@ def generate_json_from_graph(G):
     for node in G.nodes():
         # print G.node[node]
         # Go one by one
-        item = {}
+        item = dict()
         item['id'] = node
         if G.node[node]['weight']:
             w = G.node[node]['weight']
@@ -455,8 +452,8 @@ def generate_json_from_graph(G):
         #  print item
         result['nodes'].append(item)
 
-    for edge in G.edges():
-        item = {}
+    for edge in G.edges(data=True):
+        item = dict()
         item['id'] = edge[0]+'|'+edge[1]
         #  print "SSSSS",type(G.edges())
         if G.edge[edge[0]][edge[1]]['weight']:
@@ -467,6 +464,7 @@ def generate_json_from_graph(G):
         #    item['label'] = G.edge[edge[0]][edge[1]]['label']
         item['from'] = edge[0]
         item['to'] = edge[1]
+        item['label'] = edge[2]['label']
         result['edges'].append(item)
 
     return result
@@ -723,6 +721,11 @@ def simple_normalize(cnt):
 # @param: a sentence, and filtering options
 # @output: 1. a list of dependencies 2. a list of keys, 3. the sentence after grouped compounds/entities
 def dep_extract_from_sent(sentence,filter_opt):
+    blob = TextBlob(sentence)
+    #print blob.noun_phrases
+    for phrase in blob.noun_phrases:
+        sentence = sentence.replace(phrase,phrase.replace(' ','_'))
+    #print sentence
     result = dep_parser.raw_parse(sentence)
     dependencies = result.next()
     raw_results = list(dependencies.triples())
@@ -733,8 +736,10 @@ def dep_extract_from_sent(sentence,filter_opt):
         filter_pos_result = raw_results
     else:
         # filter triples whose beginning and ending tags are inside the list
+        #print raw_results
         filter_pos_result = [trip for trip in raw_results
-                             if (trip[0][1] in preferred_pos and trip[2][1] in preferred_pos)]
+                             if (trip[0][1] in preferred_pos and trip[2][1] in preferred_pos)
+                             or len(trip[0][0])>10 or len(trip[2][0])>10]  # keep potential phrases
 
     # Filter by relationship
     # print filter_pos_result
@@ -759,21 +764,19 @@ def dep_extract_from_sent(sentence,filter_opt):
                 replacements[tokens[i+1]] = tokens[i] + "_" + tokens[i + 1]
                 # Now do the replace
                 # print "found compound", tokens[i],tokens[i+1]
-        duplicate_indices = {}
         for i in xrange(0,len(filter_rel_result)):
             (s,s_tag),r,(t,t_tag) = filter_rel_result[i]
             if replacements.has_key(s):
                 filter_rel_result[i] = (replacements[s],s_tag),r,(t,t_tag)
             (s, s_tag), r, (t, t_tag) = filter_rel_result[i]  # Update in case 1st element changes
-            if s == t:
-                duplicate_indices.add(i)
             if replacements.has_key(t):
                 filter_rel_result[i] = (s,s_tag),r,(replacements[t],t_tag)
         new_sen = sentence  # new sentence contains grouped item with _ as connector
         for key in replacements:
             new_sen.replace(key,replacements[key])
         # now remove duplicate
-        filter_comp_result = [filter_rel_result[i] for i in xrange(len(filter_rel_result)) if i not in duplicate_indices]
+        filter_comp_result = [((s,s_tag),r,(t,t_tag)) for (s,s_tag),r,(t,t_tag) in filter_rel_result if
+                                (s != t)]
     else:
         filter_comp_result = filter_rel_result
     keys = set()

@@ -1,68 +1,87 @@
 {
     "edges": [
         {
-            "from": "Police~_~_~0x59a2d81f",
-            "id": "Police~_~_~0x59a2d81f|access~_~_~0x59a2d81f",
+            "from": "just~title~_~0x59a3fe49",
+            "id": "just~title~_~0x59a3fe49|once~title~_~0x59a3fe49",
+            "label": "advmod",
             "title": "freq: 1",
-            "to": "access~_~_~0x59a2d81f",
+            "to": "once~title~_~0x59a3fe49",
             "value": 1
         },
         {
-            "from": "help~_~_~0x59a2d81f",
-            "id": "help~_~_~0x59a2d81f|not~_~_~0x59a2d81f",
+            "from": "wheelie_bins~title~_~0x59a3fe49",
+            "id": "wheelie_bins~title~_~0x59a3fe49|collect~title~_~0x59a3fe49",
+            "label": "dobj",
             "title": "freq: 1",
-            "to": "not~_~_~0x59a2d81f",
+            "to": "collect~title~_~0x59a3fe49",
             "value": 1
         },
         {
-            "from": "help~_~_~0x59a2d81f",
-            "id": "help~_~_~0x59a2d81f|access~_~_~0x59a2d81f",
+            "from": "once~title~_~0x59a3fe49",
+            "id": "once~title~_~0x59a3fe49|collect~title~_~0x59a3fe49",
+            "label": "advmod",
             "title": "freq: 1",
-            "to": "access~_~_~0x59a2d81f",
+            "to": "collect~title~_~0x59a3fe49",
             "value": 1
         },
         {
-            "from": "records~_~_~0x59a2d81f",
-            "id": "records~_~_~0x59a2d81f|access~_~_~0x59a2d81f",
+            "from": "collect~title~_~0x59a3fe49",
+            "id": "collect~title~_~0x59a3fe49|bury_council_votes~title~_~0x59a3fe49",
+            "label": "xcomp",
             "title": "freq: 1",
-            "to": "access~_~_~0x59a2d81f",
+            "to": "bury_council_votes~title~_~0x59a3fe49",
+            "value": 1
+        },
+        {
+            "from": "collect~title~_~0x59a3fe49",
+            "id": "collect~title~_~0x59a3fe49|weeks~title~_~0x59a3fe49",
+            "label": "nmod:tmod",
+            "title": "freq: 1",
+            "to": "weeks~title~_~0x59a3fe49",
             "value": 1
         }
     ],
     "nodes": [
         {
-            "color": "red",
-            "id": "Police~_~_~0x59a2d81f",
-            "label": "Police",
-            "title": "*Freq: 1 <br> *Sen_Score: -1.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1}",
+            "color": "lime",
+            "id": "just~title~_~0x59a3fe49",
+            "label": "just",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0}",
             "value": 1
         },
         {
-            "color": "red",
-            "id": "help~_~_~0x59a2d81f",
-            "label": "help",
-            "title": "*Freq: 1 <br> *Sen_Score: -1.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1}",
+            "color": "lime",
+            "id": "wheelie_bins~title~_~0x59a3fe49",
+            "label": "wheelie_bins",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0}",
             "value": 1
         },
         {
-            "color": "red",
-            "id": "not~_~_~0x59a2d81f",
-            "label": "not",
-            "title": "*Freq: 1 <br> *Sen_Score: -1.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1}",
+            "color": "lime",
+            "id": "once~title~_~0x59a3fe49",
+            "label": "once",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0}",
             "value": 1
         },
         {
-            "color": "red",
-            "id": "records~_~_~0x59a2d81f",
-            "label": "records",
-            "title": "*Freq: 1 <br> *Sen_Score: -1.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1}",
+            "color": "lime",
+            "id": "collect~title~_~0x59a3fe49",
+            "label": "collect",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0}",
             "value": 1
         },
         {
-            "color": "red",
-            "id": "access~_~_~0x59a2d81f",
-            "label": "access",
-            "title": "*Freq: 1 <br> *Sen_Score: -1.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1}",
+            "color": "lime",
+            "id": "weeks~title~_~0x59a3fe49",
+            "label": "weeks",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0}",
+            "value": 1
+        },
+        {
+            "color": "lime",
+            "id": "bury_council_votes~title~_~0x59a3fe49",
+            "label": "bury_council_votes",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0}",
             "value": 1
         }
     ],
@@ -85,6 +104,6 @@
                 "unification_mode": "contract"
             }
         },
-        "timestamp": "2017-08-27 16:33:03 "
+        "timestamp": "2017-08-28 13:28:09 "
     }
 }

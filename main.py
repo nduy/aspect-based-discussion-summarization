@@ -5,10 +5,14 @@
     Created on Mon Jun 19 10:51:42 2017
     MAIN SUMMARIZATION BASELINE
 '''
-
 from functions import *
 from decoration import *
 import datetime
+
+# ------ Time recording
+import time
+start_time = time.time()
+#############################
 
 build_options = {
     'build_mode': 0,
@@ -40,10 +44,11 @@ dep_opt = {
 
 if __name__ == "__main__":
 
-    comments = read_comment_file("data/comments_article1.txt")
-    title, article = read_article_file("data/article1.txt")
-    g = build_directed_graph_from_text(txt=title)
-    print 'Nodes:', g.nodes(data=True), '\n Edges:', g.edges(data=True)
+
+    comments = read_comment_file("data/comments_article0.txt")
+    title, article = read_article_file("data/article0.txt")
+    g = build_directed_graph_from_text(txt=title.lower(), threadid='title')
+    # print 'Nodes:', g.nodes(data=True), '\n Edges:', g.edges(data=True)
 
     '''
     dataset = {'title': title,
@@ -61,7 +66,7 @@ if __name__ == "__main__":
     pruned_graph = prune_graph(asp_graph, prune_options)
     #print pruned_graph.edges()
     '''
-    pruned_graph = g #############################
+    pruned_graph = g
     sen_graph = compute_sentiment_score(pruned_graph)
     colored_graph = coloring_nodes(sen_graph)
     #for n in colored_graph.nodes():
@@ -78,7 +83,6 @@ if __name__ == "__main__":
     with open('dump.json', 'w') as outfile:
         json.dump(json_g, outfile, sort_keys=True, indent=4, separators=(',', ': '))
 
-
-    #print json.dumps(json_g, sort_keys=True, indent=4, separators=(',', ': '))
+    print("Execution time:  %s seconds" % (time.time() - start_time))
 
 
