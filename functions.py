@@ -9,6 +9,7 @@
 ######################################
 # IMPORT LIBRARY
 import csv
+import en
 import codecs
 import json
 from datetime import datetime
@@ -61,10 +62,10 @@ SENTIMENT_ANALYSIS_MODE = 'local'  # m
 #               - 1: Keyword match. unify keywords that are exactly the same into one node
 #               - 2: Semantic similarity
 # @return: One summarization aspect graph.
-def build_sum_graph(merging_mode, dataset, build_options):
-    maybe_print("Start building sum graph in mode {0}".format(merging_mode), 1)
+def build_sum_graph(dataset, build_options):
     # Read options
     MERGE_MODE = build_options['build_mode'] if build_options['build_mode'] else 0
+    maybe_print("Start building sum graph in mode {0}".format(MERGE_MODE), 1)
     SENTIMENT_ANALYSIS_MODE = build_options['sentiment_ana_mode'] if build_options['sentiment_ana_mode'] else 'global'
 
     if MERGE_MODE == 0:
@@ -79,12 +80,11 @@ def build_sum_graph(merging_mode, dataset, build_options):
         return g
     if MERGE_MODE == 1:
         g = build_mode_1(dataset['title'], dataset['article'], dataset['comments'])
-        # print g.edges()
+        print "!!!!!!!!!!!!!!!!!!!"
         #maybe_print("--> Graph BUILD in mode 1 completed.\n    Number of nodes: {0}\n    Number of edges: {1}"
         #            .format(len(g.nodes()), len(g.edges())), 1)
         # print "---", g.nodes()
-        #return g
-        print "j"
+        return g
 
 
 # Merging mode 0: Do nothing. Indeed, it just copy exactly all nodes and edges from the extracted keygraph.
@@ -126,7 +126,24 @@ def build_mode_0(thrds):
 # @output: The result graph
 def build_mode_1(title,article,thrds):
     rs = nx.Graph()
+    # First add the title as central node
+    rs.add_node('Central~title~_~{0}'.format(gen_mcs_only()),{"label": title[:9] + "...",
+                                                              "weight": 1,
+                                                              "sentiment": {'pos_count': 0,
+                                                                            'neu_count': 1,
+                                                                            'neg_count': 0}})
+    # Second work on the article
+    maybe_print(" - Building graph for the article",1)
+    article_graph = nx.Graph()
+    article_group_count = 0
+    for segment in texttiling_tokenize(article): # Run texttiling, then go to each segment
+        maybe_print(" - Building graph for segment {0}".format(article_group_count),2)
+        segment_graph = build_directed_graph_from_text(txt=segment, group_id="art."+str(article_group_count))
+        article_graph = nx.compose(article_graph, segment_graph)
+        article_group_count += 1
 
+    rs = nx.compose(rs, article_graph)
+    """
     for thrd in thrds:
         maybe_print(":: Building aspect graph for text {0}".format(thrd), 3)
         # Extract the graph
@@ -147,6 +164,7 @@ def build_mode_1(title,article,thrds):
         if sup_grs:
             rs.add_edges_from(flatten_list([sup_gr.edges(data=True) for sup_gr in sup_grs]))
             # print ooo
+    """
     return rs
 
 
@@ -172,7 +190,7 @@ def build_thread_graph(thrd):
 
 
 # Build a graph from a text ---- Initial implementation
-def build_graph_from_text(txt, threadid='_', comment_id='_'):
+def build_graph_from_text(txt, group_id='_', member_id='_'):
     maybe_print(u"Generating graph for text: {0}".format(txt), 3)
     sentences = sent_tokenize(txt.strip())  # sentence segmentation
     g = nx.Graph()
@@ -216,7 +234,7 @@ def build_graph_from_text(txt, threadid='_', comment_id='_'):
             sen_scores.append(sen_score)
 
         # Assign id and label to the nodes before adding the graph
-        assigned_nodes = [('{0}~{1}~{2}~{3}'.format(filtered_words[i], threadid, comment_id, gen_mcs_only()),
+        assigned_nodes = [('{0}~{1}~{2}~{3}'.format(filtered_words[i], group_id, member_id, gen_mcs_only()),
                            {'label': filtered_words[i]}) for i in xrange(0, len(filtered_words))]
         #  print '---____----',assigned_nodes
         g.add_nodes_from(assigned_nodes)  # Add nodes from filtered words
@@ -234,7 +252,7 @@ def build_graph_from_text(txt, threadid='_', comment_id='_'):
 
             except KeyError: # New node
                 g.node[node[0]]['weight'] = 1
-                g.node[node[0]]['thread_id'] = threadid
+                g.node[node[0]]['thread_id'] = group_id
                 g.node[node[0]]['sentiment'] = {'pos_count': 1 if sen_score > 0 else 0, # Add sentiment score
                                                 'neg_count': 1 if sen_score < 0 else 0,
                                                 'neu_count': 1 if sen_score == 0 else 0}
@@ -258,14 +276,14 @@ def build_graph_from_text(txt, threadid='_', comment_id='_'):
     if len(g.nodes()) == 0:
         return None
 
-    maybe_print('Nodes ' + str(g.nodes()), 2)
-    maybe_print('Edges ' + str(g.edges()) + '\n', 2)
+    maybe_print('Nodes ' + str(g.nodes()), 3)
+    maybe_print('Edges ' + str(g.edges()) + '\n', 3)
     return g
 
 
 # Build a graph from a text ---- Directional implementation
 # This function build a directed graph fom a piece of text
-def build_directed_graph_from_text(txt, threadid='_', comment_id='_'):
+def build_directed_graph_from_text(txt, group_id='_', member_id='_'):
     maybe_print(u"Generating directed graph for text: {0}".format(txt), 3)
     sentences = sent_tokenize(txt.strip())  # sentence segmentation
     g = nx.Graph()
@@ -284,7 +302,7 @@ def build_directed_graph_from_text(txt, threadid='_', comment_id='_'):
             sen_scores.append(sen_score)
 
         # Assign id and label to the nodes before adding the graph
-        assigned_nodes = [('{0}~{1}~{2}~{3}'.format(keys[i], threadid, comment_id, gen_mcs_only()),
+        assigned_nodes = [('{0}~{1}~{2}~{3}'.format(keys[i], group_id, member_id, gen_mcs_only()),
                            {'label': keys[i]}) for i in xrange(0, len(keys))]
         # print '---____----',assigned_nodes
         g.add_nodes_from(assigned_nodes)  # Add nodes from filtered words
@@ -303,7 +321,7 @@ def build_directed_graph_from_text(txt, threadid='_', comment_id='_'):
 
             except KeyError:  # New node
                 g.node[node[0]]['weight'] = 1
-                g.node[node[0]]['thread_id'] = threadid
+                g.node[node[0]]['thread_id'] = group_id
                 g.node[node[0]]['sentiment'] = {'pos_count': 1 if sen_score > 0 else 0, # Add sentiment score
                                                 'neg_count': 1 if sen_score < 0 else 0,
                                                 'neu_count': 1 if sen_score == 0 else 0}
@@ -327,9 +345,11 @@ def build_directed_graph_from_text(txt, threadid='_', comment_id='_'):
         # raise ValueError("Generated graph is empty")
         return None
 
-    maybe_print('Nodes ' + str(g.nodes()), 2)
-    maybe_print('Edges ' + str(g.edges()) + '\n', 2)
-    #print g.edges()
+    maybe_print('   + Graph for group {0} has {1} nodes and {2} edges '.format(group_id,
+                                                                               len(g.nodes()),
+                                                                               len(g.edges())), 2)
+    maybe_print('Nodes ' + str(g.nodes()), 3)
+    maybe_print('Edges ' + str(g.edges()) + '\n', 3)
     return g
 
 
@@ -359,7 +379,7 @@ def read_comment_file(data_file):
     except IOError:
         print "Unable to open {0}".format(data_file)
 
-    maybe_print(json.dumps(dataset, sort_keys=True, indent=4, separators=(',', ': ')), 2)
+    maybe_print(json.dumps(dataset, sort_keys=True, indent=4, separators=(',', ': ')), 3)
     return dataset
 
 
@@ -472,23 +492,22 @@ def generate_json_from_graph(G):
 
 # Pruning the graph according to restrictions in options
 def prune_graph(graph, options):
+    maybe_print("Start pruning aspect graph.",1)
     g = graph
     # Load options
     if not g or not options:
         return None
     # Set default values
     ENABLE_PRUNING = False
+    # Now read the options
+    ENABLE_PRUNING = options['enable_pruning']
+    if not ENABLE_PRUNING:
+        return g  # Skip the pruning, return original graph
+
     NUM_MIN_NODES = 20  # minimum number of node. If total number of nodes is  < this number, pruning will be skipped
     NUM_MIN_EDGES = 30  # minimum number of edge. The value could not more than (NUM_MIN_NODES)*(NUM_MIN_NODES-1).
     #                     If total number of edge is  < this number, pruning will be skipped
     REMOVE_ISOLATED_NODE = True #
-
-    #  For keyword matching and unification
-    ENABLE_UNIFY_MATCHED_KEYWORDS = True
-    INTRA_CLUSTER_UNIFY = True
-    INTER_CLUSTER_UNIFY = False
-    UNIFY_MODE = 'link' # Modes"# 'link': create a virtual link between the nodes
-                                # 'contract': Direct contract, sum weight
 
     NUM_MAX_NODES = 200  # maximum number of nodes to keep
     NUM_MAX_EDGES = 300  # maximum number of edge to keep.
@@ -497,12 +516,6 @@ def prune_graph(graph, options):
     NODE_FREQ_MIN = 1  # minimum frequency that a node is required to be. Being smaller, it will be eliminated.
     NODE_DEGREE_MIN = 1  # minimum degree that a node is required to have. Being smaller, it will be eliminated.
     MIN_WORD_LENGTH = 3  # Minimum number of character of a word, accepted to enter the graph
-
-
-    # Now read the options
-    ENABLE_PRUNING = options['enable_pruning']
-    if not ENABLE_PRUNING:
-        return None # Skip the pruning
 
     if 'num_min_nodes' in options:
         NUM_MIN_NODES = options['num_min_nodes']
@@ -527,16 +540,6 @@ def prune_graph(graph, options):
     if 'node_degree_min' in options:
         NODE_DEGREE_MIN = options['node_degree_min']
 
-    if 'unify_matched_keywords' in options:
-        try:
-            uop = options['unify_matched_keywords']
-            ENABLE_UNIFY_MATCHED_KEYWORDS = uop['enable'] if uop['enable'] else False
-            INTRA_CLUSTER_UNIFY = uop['intra_cluster_unify'] if uop['intra_cluster_unify'] else False
-            INTER_CLUSTER_UNIFY = uop['inter_cluster_unify'] if uop['inter_cluster_unify'] else False
-            UNIFY_MODE = uop['unification_mode'] if uop['unification_mode'] else 'link'
-        except:
-            raise ValueError, "Error while parsing matched words unification options."
-
     maybe_print("Start pruning the graph.", 1)
     # :: Perform pruning
     # Decide whether to skip the pruning because of the tiny size of graph
@@ -555,99 +558,6 @@ def prune_graph(graph, options):
     g.remove_nodes_from(to_remove_nodes)
     g.remove_edges_from(to_remove_edges)
 
-    # Merge sub graph with similar keyword -> Now just
-    if ENABLE_UNIFY_MATCHED_KEYWORDS:
-        matches = set([])
-        node_ids = g.nodes()
-        for i in xrange(0,len(node_ids)-1):
-            for j in xrange(i+1,len(node_ids)):
-                if g.node[node_ids[i]]['label'] == g.node[node_ids[j]]['label']: # two node have the same label
-                    matches.add((node_ids[i],node_ids[j]))
-        matches = list(matches)
-        if matches:
-            # Do the unification. INTRA unification must be carried out before INTER unification. Because the scope of
-            # the latter cover the former one
-            # Implementation of INTRA cluster unification
-            if INTRA_CLUSTER_UNIFY: # Unify the same  keywords in one cluster
-                if UNIFY_MODE == 'link':
-                    max_score,_ = get_max_value_attribute(g, 'weight') # Get the max weight of all nodes in graph
-                    print max_score
-                    # Now make the links
-                    print matches
-                    for node0,node1 in matches:
-                        if g.node[node0]['thread_id'] == g.node[node1]['thread_id']: # unify if in the same thread
-                            g.add_edge(node0, node1, {'weight': max_score, 'id': node0+'|'+node1})
-                elif UNIFY_MODE == 'contract':
-                    t_g = g
-                    while len(matches)> 0:
-                        node0 = matches[0][0]
-                        node1 = matches[0][1]
-                        if g.node[node0]['thread_id'] == g.node[node1]['thread_id']:
-                            # Sum up the weight of the two node
-                            sum_weight = g.node[node0]['weight'] + g.node[node1]['weight']
-                            t_g = nx.contracted_nodes(t_g,node0,node1)
-                            t_g.node[node0]['weight'] = sum_weight
-                            t_g.node[node0]['label'] = g.node[node0]['label']
-                            # Sum up the sentiment of the two nodes
-                            pos_count = g.node[node0]['sentiment']['pos_count'] \
-                                        + g.node[node1]['sentiment']['pos_count']
-                            neg_count = g.node[node0]['sentiment']['neg_count'] \
-                                        + g.node[node1]['sentiment']['neg_count']
-                            neu_count = g.node[node0]['sentiment']['neu_count'] \
-                                        + g.node[node1]['sentiment']['neu_count']
-                            t_g.node[node0]['sentiment'] = {'pos_count': pos_count,
-                                                            'neg_count': neg_count,
-                                                            'neu_count': neu_count
-                                                            }
-                            # Update the match lst
-                            for i in xrange(0, len(matches)): # now node1 disappear, the unified node holds node0 id
-                                m = node0 if matches[i][0] == node1 else matches[i][0]
-                                n = node0 if matches[i][1] == node1 else matches[i][1]
-                                matches[i] = (m, n)
-                        matches.pop(0)  # Remove first element
-                    g = t_g
-
-            # Implementation of INTER cluster unification
-            if INTER_CLUSTER_UNIFY:
-                if UNIFY_MODE == 'link':
-                    max_score,_ = get_max_value_attribute(g, 'weight') # Get the max weight of all nodes in graph
-                    print max_score
-                    # Now make the links
-                    print matches
-                    for node0,node1 in matches:
-                        g.add_edge(node0, node1, {'weight': max_score, 'id': node0+'|'+node1})
-                elif UNIFY_MODE == 'contract':
-                    t_g = g
-                    while len(matches) > 0:
-                        node0 = matches[0][0]
-                        node1 = matches[0][1]
-                        sum_weight = g.node[node0]['weight'] + g.node[node1]['weight']
-                        t_g = nx.contracted_nodes(t_g, node0, node1)
-                        t_g.node[node0]['weight'] = sum_weight
-                        t_g.node[node0]['label'] = g.node[node0]['label']
-                        # Sum up the weight of the two node
-                        sum_weight = g.node[node0]['weight'] + g.node[node1]['weight']
-                        t_g = nx.contracted_nodes(t_g, node0, node1)
-                        t_g.node[node0]['weight'] = sum_weight
-                        t_g.node[node0]['label'] = g.node[node0]['label']
-                        # Sum up the sentiment of the two nodes
-                        pos_count = g.node[node0]['sentiment']['pos_count'] \
-                                    + g.node[node1]['sentiment']['pos_count']
-                        neg_count = g.node[node0]['sentiment']['neg_count'] \
-                                    + g.node[node1]['sentiment']['neg_count']
-                        neu_count = g.node[node0]['sentiment']['neu_count'] \
-                                    + g.node[node1]['sentiment']['neu_count']
-                        t_g.node[node0]['sentiment'] = {'pos_count': pos_count,
-                                                        'neg_count': neg_count,
-                                                        'neu_count': neu_count
-                                                        }
-                        # Update the match lst
-                        matches.pop(0) # Remove first element
-                        for i in xrange(0, len(matches)): # since now node1 disappear, the unified node holds node0 id
-                            m = node0 if matches[i][0] == node1 else matches[i][0]
-                            n = node0 if matches[i][1] == node1 else matches[i][1]
-                            matches[i] = (m, n)
-                    g = t_g
 
     # Filter nodes by frequency
     to_remove_nodes = []
@@ -678,8 +588,9 @@ def prune_graph(graph, options):
 
     # :: Done pruning
     maybe_print("--> Graph PRUNNING completed.\n    Number of nodes: {0}\n    Number of edges: {1}"
-                .format(len(g.nodes()), len(g.edges())))
-
+                .format(len(g.nodes()), len(g.edges())),2)
+    maybe_print("--> {0} nodes removed. {1} edges removed.".format(len(g.nodes())-len(graph.nodes()),
+                                                                   len(g.edges()) - len(graph.edges())))
     return g
 
 
@@ -694,9 +605,9 @@ def compute_sentiment_score(g):
     tg_g = g # copy the graph
     for n in g.nodes():
         #print g.node[n]['sentiment']['pos_count'],g.node[n]['sentiment']['pos_count']
+        #print g.node[n],"\n"
         tg_g.node[n]['sentiment_score'] = float((g.node[n]['sentiment']['pos_count']
-                                                 - g.node[n]['sentiment']['neg_count']))\
-                                          /max_val
+                                                 - g.node[n]['sentiment']['neg_count'])) / max_val
     return tg_g
 
 
@@ -728,7 +639,8 @@ def dep_extract_from_sent(sentence,filter_opt):
     #print sentence
     result = dep_parser.raw_parse(sentence)
     dependencies = result.next()
-    raw_results = list(dependencies.triples())
+    raw_results = [((lemmatizer.lemmatize(s.lower()),s_tag),r,(lemmatizer.lemmatize(t.lower()),t_tag))
+                   for (s,s_tag),r,(t,t_tag) in list(dependencies.triples())]
     # print('Options: ',filter_opt)
     # Filter out by POS
     preferred_pos = filter_opt['preferred_pos']
@@ -738,8 +650,9 @@ def dep_extract_from_sent(sentence,filter_opt):
         # filter triples whose beginning and ending tags are inside the list
         #print raw_results
         filter_pos_result = [trip for trip in raw_results
-                             if (trip[0][1] in preferred_pos and trip[2][1] in preferred_pos)
-                             or len(trip[0][0])>10 or len(trip[2][0])>10]  # keep potential phrases
+                             if (trip[0][1] in preferred_pos or  len(trip[0][0])> 10) and
+                                (trip[2][1] in preferred_pos or len(trip[2][0])> 10)
+                             ]  # keep potential phrases
 
     # Filter by relationship
     # print filter_pos_result
@@ -754,8 +667,9 @@ def dep_extract_from_sent(sentence,filter_opt):
     # Merge compounds
     compound_merge = filter_opt['compound_merge']
     if compound_merge:
-        tokens = word_tokenize(sentence)
-        compounds = [(t,s) for (s,s_tag),r,(t,t_tag) in filter_rel_result if r == u'compound' and s_tag == t_tag]
+        tokens = [lemmatizer.lemmatize(w) for w in word_tokenize(sentence.lower())]
+        #compounds = [(t,s) for (s,s_tag),r,(t,t_tag) in filter_rel_result if r == u'compound' and s_tag == t_tag]
+        compounds = [(t, s) for (s, s_tag), r, (t, t_tag) in filter_rel_result if r == u'compound']
         # print "!!!!!!!!!", compounds
         replacements = dict()
         for i in xrange(0, len(tokens)-1):
@@ -779,9 +693,144 @@ def dep_extract_from_sent(sentence,filter_opt):
                                 (s != t)]
     else:
         filter_comp_result = filter_rel_result
-    keys = set()
-    for (s,_),_,(t,_) in filter_comp_result:
-        keys.add(t)
-        keys.add(s)
+    # Final refine
+    rs = [] # store the refined tuples
+    keys = set() # store the kewords
+    for (s, s_tag), r, (t, t_tag) in filter_comp_result:
 
-    return filter_comp_result,list(keys),new_sen
+        s_f = en.verb.infinitive(s) if en.verb.infinitive(s) else s
+        t_f = en.verb.infinitive(t) if en.verb.infinitive(t) else t
+        rs.append(((s_f, s_tag), r, (t_f, t_tag)))
+        keys.add(s_f)
+        keys.add(t_f)
+
+    return rs, list(keys), new_sen
+
+
+# Function to apply several unification methods
+# @param: g - the graph to be unified, uni_opi - unification options
+# @return: the unified graph
+def graph_unify(g=None,uni_opt=None):
+    maybe_print("Start graph Unification",2)
+    print uni_opt
+    if not uni_opt:
+        return g
+    rs = nx.Graph()
+    #  For keyword matching and unification
+    ENABLE_UNIFY_MATCHED_KEYWORDS = True
+    INTRA_CLUSTER_UNIFY = True
+    INTER_CLUSTER_UNIFY = False
+    UNIFY_MODE = 'link'  # Modes"# 'link': create a virtual link between the nodes
+    # 'contract': Direct contract, sum weight
+    if 'unify_matched_keywords' in uni_opt:
+        try:
+            uop = uni_opt['unify_matched_keywords']
+            ENABLE_UNIFY_MATCHED_KEYWORDS = uop['enable'] if uop['enable'] else False
+            INTRA_CLUSTER_UNIFY = uop['intra_cluster_unify'] if uop['intra_cluster_unify'] else False
+            INTER_CLUSTER_UNIFY = uop['inter_cluster_unify'] if uop['inter_cluster_unify'] else False
+            UNIFY_MODE = uop['unification_mode'] if uop['unification_mode'] else 'link'
+        except:
+            raise ValueError, "Error while parsing matched words unification options."
+
+    # Merge sub graph with similar keyword -> Now just
+    if ENABLE_UNIFY_MATCHED_KEYWORDS:
+        matches = set([])
+        node_ids = g.nodes()
+        for i in xrange(0,len(node_ids)-1):
+            for j in xrange(i+1,len(node_ids)):
+                if g.node[node_ids[i]]['label'] == g.node[node_ids[j]]['label']:  # two node have the same label
+                    matches.add((node_ids[i],node_ids[j]))
+        matches = list(matches)
+        if matches:
+            # Do the unification. INTRA unification must be carried out before INTER unification. Because the scope of
+            # the latter cover the former one
+            # Implementation of INTRA cluster unification
+            rs = g
+            if INTRA_CLUSTER_UNIFY: # Unify the same  keywords in one cluster
+                if UNIFY_MODE == 'link':
+
+                    max_score,_ = get_max_value_attribute(g, 'weight') # Get the max weight of all nodes in graph
+                    print max_score
+                    # Now make the links
+                    print matches
+                    for node0,node1 in matches:
+                        rs.add_edge(node0, node1, {
+                                                    'weight': max_score,
+                                                    'id': node0 + '|' + node1,
+                                                    'label': '_linked'
+                                                    })
+                else:
+                    if UNIFY_MODE == 'contract':
+                        while len(matches)> 0:
+                            node0 = matches[0][0]
+                            node1 = matches[0][1]
+                            if g.node[node0]['thread_id'] == g.node[node1]['thread_id']:
+                                # Sum up the weight of the two node
+                                sum_weight = g.node[node0]['weight'] + g.node[node1]['weight']
+                                rs = nx.contracted_nodes(rs,node0,node1)
+                                rs.node[node0]['weight'] = sum_weight
+                                rs.node[node0]['label'] = g.node[node0]['label']
+                                # Sum up the sentiment of the two nodes
+                                pos_count = g.node[node0]['sentiment']['pos_count'] \
+                                            + g.node[node1]['sentiment']['pos_count']
+                                neg_count = g.node[node0]['sentiment']['neg_count'] \
+                                            + g.node[node1]['sentiment']['neg_count']
+                                neu_count = g.node[node0]['sentiment']['neu_count'] \
+                                            + g.node[node1]['sentiment']['neu_count']
+                                rs.node[node0]['sentiment'] = {'pos_count': pos_count,
+                                                                'neg_count': neg_count,
+                                                                'neu_count': neu_count
+                                                                }
+                                # Update the match lst
+                                for i in xrange(0, len(matches)): # now node1 disappear, the unified node holds node0 id
+                                    m = node0 if matches[i][0] == node1 else matches[i][0]
+                                    n = node0 if matches[i][1] == node1 else matches[i][1]
+                                    matches[i] = (m, n)
+                            matches.pop(0)  # Remove first element
+
+            # Implementation of INTER cluster unification
+            if INTER_CLUSTER_UNIFY:
+                if UNIFY_MODE == 'link':
+                    max_score,_ = get_max_value_attribute(g, 'weight') # Get the max weight of all nodes in graph
+                    print max_score
+                    # Now make the links
+                    print matches
+                    for node0,node1 in matches:
+                        rs.add_edge(node0, node1, {
+                                                    'weight': max_score,
+                                                    'id': node0 + '|' + node1,
+                                                    'label': '_linked'
+                                                    })
+                elif UNIFY_MODE == 'contract':
+                    while len(matches) > 0:
+                        node0 = matches[0][0]
+                        node1 = matches[0][1]
+                        sum_weight = g.node[node0]['weight'] + g.node[node1]['weight']
+                        rs = nx.contracted_nodes(rs, node0, node1)
+                        rs.node[node0]['weight'] = sum_weight
+                        rs.node[node0]['label'] = g.node[node0]['label']
+                        # Sum up the weight of the two node
+                        sum_weight = g.node[node0]['weight'] + g.node[node1]['weight']
+                        rs = nx.contracted_nodes(rs, node0, node1)
+                        rs.node[node0]['weight'] = sum_weight
+                        rs.node[node0]['label'] = g.node[node0]['label']
+                        # Sum up the sentiment of the two nodes
+                        pos_count = g.node[node0]['sentiment']['pos_count'] \
+                                    + g.node[node1]['sentiment']['pos_count']
+                        neg_count = g.node[node0]['sentiment']['neg_count'] \
+                                    + g.node[node1]['sentiment']['neg_count']
+                        neu_count = g.node[node0]['sentiment']['neu_count'] \
+                                    + g.node[node1]['sentiment']['neu_count']
+                        rs.node[node0]['sentiment'] = {'pos_count': pos_count,
+                                                        'neg_count': neg_count,
+                                                        'neu_count': neu_count
+                                                        }
+                        # Update the match lst
+                        matches.pop(0) # Remove first element
+                        for i in xrange(0, len(matches)): # since now node1 disappear, the unified node holds node0 id
+                            m = node0 if matches[i][0] == node1 else matches[i][0]
+                            n = node0 if matches[i][1] == node1 else matches[i][1]
+                            matches[i] = (m, n)
+    maybe_print(" -> Unification complete! Number of nodes changed from {0} to {1}".format(len(g.nodes()),
+                                                                                           len(rs.nodes())), 2)
+    return rs

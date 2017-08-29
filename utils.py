@@ -8,6 +8,7 @@
 
 """
 
+from main import script_verbality
 from cucco import Cucco
 import re
 
@@ -19,10 +20,6 @@ normalizations = [
     ('replace_emails', {'replacement': ''}),
     'remove_extra_whitespaces',
 ]
-
-
-# Verbality: to print or not to print ################################################################################
-script_verbality= 1     # 0: silent, 1: print sometime, 2: print everything
 
 
 # Decide to print the print text or not according to the verbality
@@ -50,7 +47,7 @@ def flatten_list(l):
 # get maximum value of nodes regarding to an attribute
 # @param: the graph g, respect to attribute att
 # @output: the integer of maximum weight AND the id of node
-def get_max_value_attribute(g,att):
+def get_max_value_attribute(g, att):
     max_value = -1
     node_id = None
     for node in g.nodes():
@@ -60,7 +57,7 @@ def get_max_value_attribute(g,att):
                 max_value = val
                 node_id = node
         except:
-            raise ValueError,"Attribute " + att + "  not found for node " + node
+            raise ValueError, "Attribute " + att + "  not found for node " + node
     return max_value,node_id
 
 

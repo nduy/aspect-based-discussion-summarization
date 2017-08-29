@@ -7,20 +7,19 @@
     - Graph coloring before exporting json
 
 """
-
-import networkx as nx
-from utils import *
+import utils
 from colour import Color
 import numpy as np
 
-
 N_COLOR = 101  # number of color in range
+
+
 # Color graph
 def coloring_nodes(g):
     tg_g = g
     # get largest value of freq
-    max_sen,_ = get_max_value_attribute(g,'sentiment_score')
-    min_sen,_ = get_min_value_attribute(g,'sentiment_score')
+    max_sen,_ = utils.get_max_value_attribute(g, 'sentiment_score')
+    min_sen,_ = utils.get_min_value_attribute(g, 'sentiment_score')
     # print max_sen, min_sen
     # colors = list(Color("red").range_to(Color("green"), N_COLOR))
     colors = list(Color("#ff0000").range_to(Color("#0000ff"), N_COLOR))
