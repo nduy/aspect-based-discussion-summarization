@@ -303,14 +303,16 @@ def build_directed_graph_from_text(txt, group_id='_', member_id='_'):
 
         # Assign id and label to the nodes before adding the graph
         assigned_nodes = [('{0}~{1}~{2}~{3}'.format(keys[i], group_id, member_id, gen_mcs_only()),
-                           {'label': keys[i]}) for i in xrange(0, len(keys))]
+                           {'label': keys[i], 'weight':0}) for i in xrange(0, len(keys))]
         # print '---____----',assigned_nodes
         g.add_nodes_from(assigned_nodes)  # Add nodes from filtered words
         # print "wewewew ", g.nodes()
         # Update nodes's weight
         for node in assigned_nodes:
+            #print g.node[node[0]]
             try:  # Node has already existed
                 g.node[node[0]]['weight'] += 1
+                #print g.node[node[0]]
                 # Update sentiment score
                 if sen_score > 0:
                     g.node[node[0]]['sentiment']['pos_count'] += 1
@@ -604,8 +606,8 @@ def compute_sentiment_score(g):
     #print max_val
     tg_g = g # copy the graph
     for n in g.nodes():
-        #print g.node[n]['sentiment']['pos_count'],g.node[n]['sentiment']['pos_count']
-        #print g.node[n],"\n"
+        # print g.node[n]['sentiment']['pos_count'],g.node[n]['sentiment']['pos_count']
+        # print g.node[n],"\n"
         tg_g.node[n]['sentiment_score'] = float((g.node[n]['sentiment']['pos_count']
                                                  - g.node[n]['sentiment']['neg_count'])) / max_val
     return tg_g
@@ -668,7 +670,7 @@ def dep_extract_from_sent(sentence,filter_opt):
     compound_merge = filter_opt['compound_merge']
     if compound_merge:
         tokens = [lemmatizer.lemmatize(w) for w in word_tokenize(sentence.lower())]
-        #compounds = [(t,s) for (s,s_tag),r,(t,t_tag) in filter_rel_result if r == u'compound' and s_tag == t_tag]
+        # compounds = [(t,s) for (s,s_tag),r,(t,t_tag) in filter_rel_result if r == u'compound' and s_tag == t_tag]
         compounds = [(t, s) for (s, s_tag), r, (t, t_tag) in filter_rel_result if r == u'compound']
         # print "!!!!!!!!!", compounds
         replacements = dict()
@@ -782,7 +784,7 @@ def graph_unify(g=None, uni_opt=None):
 
             # Implementation of INTER cluster unification
             if INTER_CLUSTER_UNIFY:
-                print "2....", inter_match
+                # print "2....", inter_match
                 if UNIFY_MODE == 'link':
                     max_score,_ = get_max_value_attribute(g, 'weight') # Get the max weight of all nodes in graph
                     print max_score
@@ -798,38 +800,34 @@ def graph_unify(g=None, uni_opt=None):
                     while len(inter_match) > 0:
                         node0 = inter_match[0][0]
                         node1 = inter_match[0][1]
-                        sum_weight = g.node[node0]['weight'] + g.node[node1]['weight']
-                        #rs = nx.contracted_nodes(rs, node0, node1)
-                        #rs.node[node0]['weight'] = sum_weight
-                        #rs.node[node0]['label'] = g.node[node0]['label']
                         # Sum up the weight of the two node
-                        sum_weight = g.node[node0]['weight'] + g.node[node1]['weight']
-                        # print "---rrrrrrrrrrrrr",len(rs.nodes())
-                        rs = nx.contracted_nodes(rs, node0, node1)
-                        rs.node[node0]['weight'] = sum_weight
-                        rs.node[node0]['label'] = g.node[node0]['label']
+                        sum_weight = rs.node[node0]['weight'] +rs.node[node1]['weight']
+                        #print g.node[node0]['weight'], g.node[node1]['weight']
                         # Sum up the sentiment of the two nodes
-                        pos_count = g.node[node0]['sentiment']['pos_count'] \
-                                    + g.node[node1]['sentiment']['pos_count']
-                        neg_count = g.node[node0]['sentiment']['neg_count'] \
-                                    + g.node[node1]['sentiment']['neg_count']
+                        pos_count = rs.node[node0]['sentiment']['pos_count'] \
+                                    + rs.node[node1]['sentiment']['pos_count']
+                        neg_count = rs.node[node0]['sentiment']['neg_count'] \
+                                    + rs.node[node1]['sentiment']['neg_count']
                         neu_count = g.node[node0]['sentiment']['neu_count'] \
-                                    + g.node[node1]['sentiment']['neu_count']
+                                    + rs.node[node1]['sentiment']['neu_count']
                         rs.node[node0]['sentiment'] = {'pos_count': pos_count,
                                                        'neg_count': neg_count,
                                                        'neu_count': neu_count
-                                                        }
+                                                    }
+                        rs = nx.contracted_nodes(rs, node0, node1)
+                        rs.node[node0]['weight'] = sum_weight
+                        rs.node[node0]['label'] = rs.node[node0]['label']
                         # Update the match lst
                         inter_match.pop(0)  # Remove first element
 
-                        #for i in xrange(0, len(inter_match)): # since now node1 disappear, the unified node holds node0 id
+                        # for i in xrange(0, len(inter_match)): # since now node1 disappear, the unified node holds node0 id
                         #    m = node0 if inter_match[i][0] == node1 else inter_match[i][0]
                         #    n = node0 if inter_match[i][1] == node1 else inter_match[i][1]
                         #    inter_match[i] = (m, n)
 
             # Implementation of INTRA cluster unification
             if INTRA_CLUSTER_UNIFY:  # Unify the same  keywords in one cluster
-                print "1....", intra_match
+                # print "1....", intra_match
                 if UNIFY_MODE == 'link':
                     max_score,_ = get_max_value_attribute(g, 'weight')  # Get the max weight of all nodes in graph
                     print max_score
@@ -846,19 +844,19 @@ def graph_unify(g=None, uni_opt=None):
                         while len(intra_match) > 0:
                             node0 = intra_match[0][0]
                             node1 = intra_match[0][1]
-
                             # Sum up the weight of the two node
-                            sum_weight = g.node[node0]['weight'] + g.node[node1]['weight']
-                            rs = nx.contracted_nodes(rs,node0,node1)
-                            rs.node[node0]['weight'] = sum_weight
-                            rs.node[node0]['label'] = g.node[node0]['label']
+                            sum_weight = rs.node[node0]['weight'] + rs.node[node1]['weight']
+                            #print g.node[node0]['weight'], g.node[node1]['weight']
                             # Sum up the sentiment of the two nodes
-                            pos_count = g.node[node0]['sentiment']['pos_count'] \
-                                        + g.node[node1]['sentiment']['pos_count']
-                            neg_count = g.node[node0]['sentiment']['neg_count'] \
-                                        + g.node[node1]['sentiment']['neg_count']
+                            pos_count = rs.node[node0]['sentiment']['pos_count'] \
+                                        + rs.node[node1]['sentiment']['pos_count']
+                            neg_count = rs.node[node0]['sentiment']['neg_count'] \
+                                        + rs.node[node1]['sentiment']['neg_count']
                             neu_count = g.node[node0]['sentiment']['neu_count'] \
-                                        + g.node[node1]['sentiment']['neu_count']
+                                        + rs.node[node1]['sentiment']['neu_count']
+                            rs = nx.contracted_nodes(rs, node0, node1)
+                            rs.node[node0]['weight'] = sum_weight
+                            rs.node[node0]['label'] = rs.node[node0]['label']
                             rs.node[node0]['sentiment'] = {'pos_count': pos_count,
                                                            'neg_count': neg_count,
                                                            'neu_count': neu_count

@@ -38,7 +38,7 @@ uni_options = {
 }
 
 dep_opt = {
-    'preferred_pos': ['NNP', 'NN', 'NNS', 'VB', 'VBD', 'RB'], # preferred part-of-speech tags
+    'preferred_pos':  ['NNP', 'NN', 'NNS', 'VB', 'VBD', 'RB'], # preferred part-of-speech tags
     'preferred_rel': 'all',  # ['nsubk','nsubkpass','obj','iobj'] list of relation to remains
     'compound_merge': True
 
