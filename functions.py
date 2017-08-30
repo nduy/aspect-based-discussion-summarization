@@ -125,7 +125,7 @@ def build_mode_0(thrds):
 # @param: Target graph G and data threads to be merge thrds
 # @output: The result graph
 def build_mode_1(title,article,thrds):
-    rs = nx.Graph()
+    rs = nx.DiGraph()
     # First add the title as central node
     rs.add_node('Central~title~_~{0}'.format(gen_mcs_only()),{"label": title[:9] + "...",
                                                               "weight": 1,
@@ -134,7 +134,7 @@ def build_mode_1(title,article,thrds):
                                                                             'neg_count': 0}})
     # Second work on the article
     maybe_print(" - Building graph for the article",1)
-    article_graph = nx.Graph()
+    article_graph = nx.DiGraph()
     article_group_count = 0
     for segment in texttiling_tokenize(article): # Run texttiling, then go to each segment
         maybe_print(" - Building graph for segment {0}".format(article_group_count),2)
@@ -286,7 +286,7 @@ def build_graph_from_text(txt, group_id='_', member_id='_'):
 def build_directed_graph_from_text(txt, group_id='_', member_id='_'):
     maybe_print(u"Generating directed graph for text: {0}".format(txt), 3)
     sentences = sent_tokenize(txt.strip())  # sentence segmentation
-    g = nx.Graph()
+    g = nx.DiGraph()
     # Get nodes and edges from sentence
     sen_count = 0
     sen_scores = []
@@ -330,7 +330,7 @@ def build_directed_graph_from_text(txt, group_id='_', member_id='_'):
         maybe_print('Sentence no ' + str(sen_count) + '\nNodes ' + str(g.nodes()), 3)
         sen_count += 1
         word2id= dict(zip(keys, assigned_nodes))
-        filtered_edges = [(word2id[s][0], word2id[t][0], {'label': r}) for (s, _), r, (t, _) in dependencies if s != t]
+        filtered_edges = [(word2id[s][0], word2id[t][0], {'label': r, 'weight': 1}) for (s, _), r, (t, _) in dependencies if s != t]
         #  print list(edges)
         #  print '-----',filtered_edges
         if filtered_edges:
@@ -697,7 +697,7 @@ def dep_extract_from_sent(sentence,filter_opt):
         filter_comp_result = filter_rel_result
     # Final refine
     rs = [] # store the refined tuples
-    keys = set() # store the kewords
+    keys = set() # store the keywords
     for (s, s_tag), r, (t, t_tag) in filter_comp_result:
 
         s_f = en.verb.infinitive(s) if en.verb.infinitive(s) else s
@@ -717,7 +717,7 @@ def graph_unify(g=None, uni_opt=None):
     print uni_opt
     if not uni_opt:
         return g
-    rs = nx.Graph()
+    rs = nx.DiGraph()
     #  For keyword matching and unification
     ENABLE_UNIFY_MATCHED_KEYWORDS = True
     INTRA_CLUSTER_UNIFY = True
@@ -801,7 +801,7 @@ def graph_unify(g=None, uni_opt=None):
                         node0 = inter_match[0][0]
                         node1 = inter_match[0][1]
                         # Sum up the weight of the two node
-                        sum_weight = rs.node[node0]['weight'] +rs.node[node1]['weight']
+                        sum_weight = rs.node[node0]['weight'] + rs.node[node1]['weight']
                         #print g.node[node0]['weight'], g.node[node1]['weight']
                         # Sum up the sentiment of the two nodes
                         pos_count = rs.node[node0]['sentiment']['pos_count'] \
@@ -810,13 +810,33 @@ def graph_unify(g=None, uni_opt=None):
                                     + rs.node[node1]['sentiment']['neg_count']
                         neu_count = g.node[node0]['sentiment']['neu_count'] \
                                     + rs.node[node1]['sentiment']['neu_count']
-                        rs.node[node0]['sentiment'] = {'pos_count': pos_count,
-                                                       'neg_count': neg_count,
-                                                       'neu_count': neu_count
-                                                    }
+                        # Sum up the weight if two nodes has same neighbor
+                        share_neighbors = set(nx.all_neighbors(rs,node0)) \
+                                          | set(nx.all_neighbors(rs,node1))  # Find shared nodes
+                        add_up_weights = []
+                        if share_neighbors:
+                            #  print share_neighbors
+                            for n in share_neighbors:
+                                n0_n_weight = rs.edge[node0][n]['weight'] if rs.has_edge(node0,n) else None
+                                n_n0_weight = rs.edge[n][node0]['weight'] if rs.has_edge(n,node0) else None
+                                n1_n_weight = rs.edge[node1][n]['weight'] if rs.has_edge(node1,n) else None
+                                n_n1_weight = rs.edge[n][node1]['weight'] if rs.has_edge(n,node1) else None
+                                if n0_n_weight and n1_n_weight:
+                                    add_up_weights.append((node0,n, n0_n_weight+n1_n_weight))
+                                if n_n0_weight and n_n1_weight:
+                                    add_up_weights.append((n,node0, n_n0_weight+n_n1_weight))
+
                         rs = nx.contracted_nodes(rs, node0, node1)
                         rs.node[node0]['weight'] = sum_weight
                         rs.node[node0]['label'] = rs.node[node0]['label']
+                        rs.node[node0]['sentiment'] = {'pos_count': pos_count,
+                                                       'neg_count': neg_count,
+                                                       'neu_count': neu_count
+                                                       }
+                        # Update the weight of edges that has been added
+                        if add_up_weights:
+                            for s, t, sw in add_up_weights:
+                                rs.edge[s][t]['weight'] = sw
                         # Update the match lst
                         inter_match.pop(0)  # Remove first element
 
@@ -854,6 +874,22 @@ def graph_unify(g=None, uni_opt=None):
                                         + rs.node[node1]['sentiment']['neg_count']
                             neu_count = g.node[node0]['sentiment']['neu_count'] \
                                         + rs.node[node1]['sentiment']['neu_count']
+
+                            # Sum up the weight if two nodes has same neighbor
+                            share_neighbors = set(nx.all_neighbors(rs, node0)) \
+                                              | set(nx.all_neighbors(rs, node1))  # Find shared nodes
+                            add_up_weights = []
+                            if share_neighbors:
+                                #  print share_neighbors
+                                for n in share_neighbors:
+                                    n0_n_weight = rs.edge[node0][n]['weight'] if rs.has_edge(node0, n) else None
+                                    n_n0_weight = rs.edge[n][node0]['weight'] if rs.has_edge(n, node0) else None
+                                    n1_n_weight = rs.edge[node1][n]['weight'] if rs.has_edge(node1, n) else None
+                                    n_n1_weight = rs.edge[n][node1]['weight'] if rs.has_edge(n, node1) else None
+                                    if n0_n_weight and n1_n_weight:
+                                        add_up_weights.append((node0, n, n0_n_weight + n1_n_weight))
+                                    if n_n0_weight and n_n1_weight:
+                                        add_up_weights.append((n, node0, n_n0_weight + n_n1_weight))
                             rs = nx.contracted_nodes(rs, node0, node1)
                             rs.node[node0]['weight'] = sum_weight
                             rs.node[node0]['label'] = rs.node[node0]['label']
@@ -861,6 +897,10 @@ def graph_unify(g=None, uni_opt=None):
                                                            'neg_count': neg_count,
                                                            'neu_count': neu_count
                                                             }
+                            # Update the weight of edges that has been added
+                            if add_up_weights:
+                                for s, t, sw in add_up_weights:
+                                    rs.edge[s][t]['weight'] = sw
                             intra_match.pop(0)  # Remove first element
 
                             # Update the match lst
