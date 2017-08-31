@@ -34,7 +34,7 @@ uni_options = {
         'intra_cluster_unify': True,
         'inter_cluster_unify': True,
         'unification_mode': 'contract'  # modes: link, contract
-    },
+    }
 }
 
 dep_opt = {
@@ -63,10 +63,9 @@ if __name__ == "__main__":
     # print article
     maybe_print("Loaded data set! Number of conversation thread: {0}".format(len(dataset['title'])), 0)
 
-    asp_graph = build_sum_graph(dataset,build_options) # Build sum keyraph at mode 0
-    #Unify graph
-    unified_graph = graph_unify(asp_graph,uni_options)
-    pruned_graph = prune_graph(unified_graph, prune_options)
+    asp_graph = build_sum_graph(dataset,build_options,uni_options) # Build sum keyraph at mode 1
+
+    pruned_graph = prune_graph(asp_graph, prune_options)
     #print pruned_graph.edges()
 
     sen_graph = compute_sentiment_score(pruned_graph)

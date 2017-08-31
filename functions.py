@@ -124,7 +124,7 @@ def build_mode_0(thrds):
 # 4. Attach these extracted to the built graph
 # @param: Target graph G and data threads to be merge thrds
 # @output: The result graph
-def build_mode_1(title,article,thrds):
+def build_mode_1(title,article,thrds,uni_options):
     rs = nx.DiGraph()
     # First add the title as central node
     rs.add_node('Central~title~_~{0}'.format(gen_mcs_only()),{"label": title[:9] + "...",
@@ -142,7 +142,11 @@ def build_mode_1(title,article,thrds):
         article_graph = nx.compose(article_graph, segment_graph)
         article_group_count += 1
 
+    # Unify the article
+    article_graph = graph_unify(rs,uni_options)
     rs = nx.compose(rs, article_graph)
+
+
     """
     for thrd in thrds:
         maybe_print(":: Building aspect graph for text {0}".format(thrd), 3)
@@ -283,7 +287,7 @@ def build_graph_from_text(txt, group_id='_', member_id='_'):
 
 # Build a graph from a text ---- Directional implementation
 # This function build a directed graph fom a piece of text
-def build_directed_graph_from_text(txt, group_id='_', member_id='_'):
+def build_directed_graph_from_text(txt, group_id='', member_id=''):
     maybe_print(u"Generating directed graph for text: {0}".format(txt), 3)
     sentences = sent_tokenize(txt.strip())  # sentence segmentation
     g = nx.DiGraph()
@@ -714,7 +718,7 @@ def dep_extract_from_sent(sentence,filter_opt):
 # @return: the unified graph
 def graph_unify(g=None, uni_opt=None):
     maybe_print("Start graph Unification",2)
-    print uni_opt
+    # print uni_opt
     if not uni_opt:
         return g
     rs = nx.DiGraph()
@@ -786,10 +790,10 @@ def graph_unify(g=None, uni_opt=None):
             if INTER_CLUSTER_UNIFY:
                 # print "2....", inter_match
                 if UNIFY_MODE == 'link':
-                    max_score,_ = get_max_value_attribute(g, 'weight') # Get the max weight of all nodes in graph
+                    max_score,_ = get_max_value_attribute(g, 'weight')  # Get the max weight of all nodes in graph
                     print max_score
                     # Now make the links
-                    #print inter_match
+                    # print inter_match
                     for node0,node1 in inter_match:
                         rs.add_edge(node0, node1, {
                                                     'weight': max_score,
@@ -802,7 +806,7 @@ def graph_unify(g=None, uni_opt=None):
                         node1 = inter_match[0][1]
                         # Sum up the weight of the two node
                         sum_weight = rs.node[node0]['weight'] + rs.node[node1]['weight']
-                        #print g.node[node0]['weight'], g.node[node1]['weight']
+                        # print g.node[node0]['weight'], g.node[node1]['weight']
                         # Sum up the sentiment of the two nodes
                         pos_count = rs.node[node0]['sentiment']['pos_count'] \
                                     + rs.node[node1]['sentiment']['pos_count']
@@ -812,7 +816,7 @@ def graph_unify(g=None, uni_opt=None):
                                     + rs.node[node1]['sentiment']['neu_count']
                         # Sum up the weight if two nodes has same neighbor
                         share_neighbors = set(nx.all_neighbors(rs,node0)) \
-                                          | set(nx.all_neighbors(rs,node1))  # Find shared nodes
+                                          & set(nx.all_neighbors(rs,node1))  # Find shared nodes
                         add_up_weights = []
                         if share_neighbors:
                             #  print share_neighbors
@@ -877,7 +881,7 @@ def graph_unify(g=None, uni_opt=None):
 
                             # Sum up the weight if two nodes has same neighbor
                             share_neighbors = set(nx.all_neighbors(rs, node0)) \
-                                              | set(nx.all_neighbors(rs, node1))  # Find shared nodes
+                                              & set(nx.all_neighbors(rs, node1))  # Find shared nodes
                             add_up_weights = []
                             if share_neighbors:
                                 #  print share_neighbors
@@ -897,6 +901,8 @@ def graph_unify(g=None, uni_opt=None):
                                                            'neg_count': neg_count,
                                                            'neu_count': neu_count
                                                             }
+                    ###################################################################################
+                    #        rs.node[node0]['group_id'] = rs.node[node0]['group_id'] | rs.node[node1]['group_id']
                             # Update the weight of edges that has been added
                             if add_up_weights:
                                 for s, t, sw in add_up_weights:
