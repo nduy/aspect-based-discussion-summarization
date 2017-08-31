@@ -36,15 +36,11 @@ dep_parser = StanfordDependencyParser(model_path="./models/lexparser/englishPCFG
 
 # Sentiment analyzer
 sid = SentimentIntensityAnalyzer()
-
+# List of stopword
 stopwords = set(stopwords.words('english'))  # Add more stopword to ignore her
-
-
+# POS to keep (for build mode 1)
 preferredTags = {'NOUN', 'PROPN'}
-
-
-
-
+# Graph building mode
 BUILD_MODE = 0  # 0: Do nothing
 
 # Sentiment analysis mode:
@@ -69,8 +65,6 @@ def build_sum_graph(dataset):
     SENTIMENT_ANALYSIS_MODE = build_options['sentiment_ana_mode'] if build_options['sentiment_ana_mode'] else 'global'
 
     if MERGE_MODE == 0:
-        #  print build_mode_0(thrds)
-        #  print thrds
         threads = dataset['comments']
         g = build_mode_0(threads)
         #  print g.edges()
@@ -81,7 +75,7 @@ def build_sum_graph(dataset):
     if MERGE_MODE == 1:
         g = build_mode_1(dataset['title'], dataset['article'], dataset['comments'])
         print "!!!!!!!!!!!!!!!!!!!"
-        #maybe_print("--> Graph BUILD in mode 1 completed.\n    Number of nodes: {0}\n    Number of edges: {1}"
+        # maybe_print("--> Graph BUILD in mode 1 completed.\n    Number of nodes: {0}\n    Number of edges: {1}"
         #            .format(len(g.nodes()), len(g.edges())), 1)
         # print "---", g.nodes()
         return g
@@ -90,10 +84,10 @@ def build_sum_graph(dataset):
 # Merging mode 0: Do nothing. Indeed, it just copy exactly all nodes and edges from the extracted keygraph.
 # @param: Target graph G and data threads to be merge thrds
 # @output: The result graph
-def build_mode_0(thrds):
+def build_mode_0(threads):
     rs = nx.Graph()
 
-    for thrd in thrds:
+    for thrd in threads:
         maybe_print(":: Building aspect graph for text {0}".format(thrd), 3)
         # Extract the graph
         cen_gr, sup_grs = build_thread_graph(thrd)  # Extract central and supports
@@ -124,29 +118,29 @@ def build_mode_0(thrds):
 # 4. Attach these extracted to the built graph
 # @param: Target graph G and data threads to be merge thrds
 # @output: The result graph
-def build_mode_1(title,article,comments):
+def build_mode_1(title, article, comments):
     rs = nx.DiGraph()
     # First add the title as central node
-    rs.add_node('Central~title~_~{0}'.format(gen_mcs_only()),{"label": title[:9] + "...",
-                                                              "weight": 1,
-                                                              "group_id": ['central.group'],
-                                                              "sentiment": {'pos_count': 0,
-                                                                            'neu_count': 1,
-                                                                            'neg_count': 0}})
+    rs.add_node('Central~title~_~{0}'.format(gen_mcs_only()), {"label": title[:9] + "...",
+                                                               "weight": 1,
+                                                               "group_id": ['central.group'],
+                                                               "sentiment": {'pos_count': 0,
+                                                                             'neu_count': 1,
+                                                                             'neg_count': 0}})
 
     # Second work on the article
     maybe_print(" - Building graph for the article",1)
     article_graph = nx.DiGraph()
     article_group_count = 0
     for segment in texttiling_tokenize(article): # Run texttiling, then go to each segment
-        maybe_print(" - Building graph for segment {0}".format(article_group_count),2)
+        maybe_print(" - Building graph for segment {0}".format(article_group_count), 2)
         segment_graph = build_directed_graph_from_text(txt=segment, group_id="art."+str(article_group_count))
         article_graph = nx.compose(article_graph, segment_graph)
         article_group_count += 1
 
     # Unify the article
-    rs = nx.compose(rs,article_graph)
-    rs = graph_unify(rs,uni_options)
+    rs = nx.compose(rs, article_graph)
+    rs = graph_unify(rs, uni_options)
 
     maybe_print("Start building aspect graph for comments, add up to the article graph.",2)
     # Third work on the comments.
@@ -158,32 +152,10 @@ def build_mode_1(title,article,comments):
         for comment in comments:
             comment_id = comment['id']
             content = comment['content']
-            comment_graph = build_directed_graph_from_text(txt=content, group_id="com.",member_id=comment_id)
+            comment_graph = build_directed_graph_from_text(txt=content, group_id="com.", member_id=comment_id)
             if comment_graph:
                 rs = nx.compose(rs, comment_graph)
-    """
-    for thrd in thrds:
-        maybe_print(":: Building aspect graph for text {0}".format(thrd), 3)
-        # Extract the graph
-        cen_gr, sup_grs = build_thread_graph(thrd)  # Extract central and supports
-        maybe_print("---- Found {0} centroid and {1} valid support(s).\n".format(1 if cen_gr else 0, len(sup_grs)),
-                    3)
-        # Add the nodes
-        if cen_gr:
-            # print "--", len(cen_gr.nodes(data=True))
-            rs.add_nodes_from(cen_gr.nodes(data=True))
-        if sup_grs:
-            rs.add_nodes_from(flatten_list([sup_gr.nodes(data=True) for sup_gr in sup_grs]))
-        # Add the edges
-        if cen_gr:
-            # print "--", len(cen_gr.edges(data=True))
-            rs.add_edges_from(cen_gr.edges(data=True))
-            # print cen_gr.edges()
-        if sup_grs:
-            rs.add_edges_from(flatten_list([sup_gr.edges(data=True) for sup_gr in sup_grs]))
-            # print ooo
-    """
-    rs = graph_unify(rs,uni_options)
+    rs = graph_unify(rs, uni_options)
     return rs
 
 
@@ -227,7 +199,8 @@ def build_graph_from_text(txt, group_id='_', member_id='_'):
         pg_text = Text(sen)  # convert to pyglot
         try:
             n_ent = pg_text.entities
-        except:
+        except Exception:
+            maybe_print("No entity found!", 3)
             pass
 
         if n_ent > 0:
@@ -237,7 +210,7 @@ def build_graph_from_text(txt, group_id='_', member_id='_'):
         noun_phrases = tb_text.noun_phrases
 
         raw_text = sen
-        for item in (named_entities+noun_phrases): # group the words in noun phrase / NE into one big word
+        for item in (named_entities+noun_phrases):  # group the words in noun phrase / NE into one big word
             raw_text = raw_text.replace(item, item.replace(' ', '_'))
         # Convert to polygot format
         text = Text(raw_text, hint_language_code='en')
@@ -269,10 +242,10 @@ def build_graph_from_text(txt, group_id='_', member_id='_'):
                 else:
                     g.node[node[0]]['sentiment']['neu_count'] += 1
 
-            except KeyError: # New node
+            except KeyError:  # New node
                 g.node[node[0]]['weight'] = 1
                 g.node[node[0]]['group_id'] = group_id
-                g.node[node[0]]['sentiment'] = {'pos_count': 1 if sen_score > 0 else 0, # Add sentiment score
+                g.node[node[0]]['sentiment'] = {'pos_count': 1 if sen_score > 0 else 0,  # Add sentiment score
                                                 'neg_count': 1 if sen_score < 0 else 0,
                                                 'neu_count': 1 if sen_score == 0 else 0}
 
@@ -315,7 +288,7 @@ def build_directed_graph_from_text(txt, group_id='', member_id=''):
     if SENTIMENT_ANALYSIS_MODE == 'global':
         sen_scores = [sid.polarity_scores(txt)['compound'] for _ in xrange(0, len(sentences))]
     for sen in sentences:
-        dependencies,keys,new_sen = dep_extract_from_sent(sen,dep_opt)
+        dependencies, keys, new_sen = dep_extract_from_sent(sen, dep_opt)
         # Perform sentiment analysis for LOCAL mode
         sen_score = 0
         if SENTIMENT_ANALYSIS_MODE == 'local':
@@ -327,7 +300,6 @@ def build_directed_graph_from_text(txt, group_id='', member_id=''):
                            {'label': keys[i], 'weight':0}) for i in xrange(0, len(keys))]
         # print '---____----',assigned_nodes
         g.add_nodes_from(assigned_nodes)  # Add nodes from filtered words
-        # print "wewewew ", g.nodes()
         # Update nodes's weight
         for node in assigned_nodes:
             # print g.node[node[0]]
@@ -344,14 +316,15 @@ def build_directed_graph_from_text(txt, group_id='', member_id=''):
 
             except KeyError:  # New node
                 g.node[node[0]]['weight'] = 1
-                g.node[node[0]]['group_id'] = set([group_id])
-                g.node[node[0]]['sentiment'] = {'pos_count': 1 if sen_score > 0 else 0, # Add sentiment score
+                g.node[node[0]]['group_id'] = set(group_id)
+                g.node[node[0]]['sentiment'] = {'pos_count': 1 if sen_score > 0 else 0,  # Add sentiment score
                                                 'neg_count': 1 if sen_score < 0 else 0,
                                                 'neu_count': 1 if sen_score == 0 else 0}
         maybe_print('Sentence no ' + str(sen_count) + '\nNodes ' + str(g.nodes()), 3)
         sen_count += 1
-        word2id= dict(zip(keys, assigned_nodes))
-        filtered_edges = [(word2id[s][0], word2id[t][0], {'label': r, 'weight': 1}) for (s, _), r, (t, _) in dependencies if s != t]
+        word2id = dict(zip(keys, assigned_nodes))
+        filtered_edges = [(word2id[s][0], word2id[t][0], {'label': r,
+                                                          'weight': 1}) for (s, _), r, (t, _) in dependencies if s != t]
         #  print list(edges)
         #  print '-----',filtered_edges
         if filtered_edges:
@@ -368,9 +341,10 @@ def build_directed_graph_from_text(txt, group_id='', member_id=''):
         # raise ValueError("Generated graph is empty")
         return None
 
-    maybe_print('   + Graph for group {0} has {1} nodes and {2} edges '.format(group_id,
-                                                                               len(g.nodes()),
-                                                                               len(g.edges())), 2)
+    maybe_print('   + Graph for group {0}, member{1} has {2} nodes and {3} edges '.format(group_id,
+                                                                                          member_id,
+                                                                                          len(g.nodes()),
+                                                                                          len(g.edges())), 2)
     maybe_print('Nodes ' + str(g.nodes()), 3)
     maybe_print('Edges ' + str(g.edges()) + '\n', 3)
     return g
@@ -381,7 +355,7 @@ def build_directed_graph_from_text(txt, group_id='', member_id=''):
 # @return: data structure: [
 #   [{'id':'cluster_id', 'central_comment': 'abc', 'supports':[support comments]},
 #                       {}]
-def read_comment_file(data_file, read_as_threads = False):
+def read_comment_file(data_file, read_as_threads=False):
     dataset = None
     if read_as_threads:
         try:
@@ -393,7 +367,7 @@ def read_comment_file(data_file, read_as_threads = False):
                 for entry in reader:
                     #  print entry;
                     if entry[2] == u"":
-                        cluster_id = gen_mcs() + "^" + str(index+1);
+                        cluster_id = gen_mcs() + "^" + str(index+1)
                         dataset.append({'id': cluster_id, 'central': text_preprocessing(entry[6]), 'supports': []})
                         index += 1
                     else:
@@ -434,7 +408,7 @@ def read_article_file(data_file):
             for line in article_file:
                 if count != 0:
                     if line:
-                        sens = sent_tokenize(line.replace("\r",""))
+                        sens = sent_tokenize(line.replace("\r", ""))
                         if sens:
                             article.extend(sens)
                 else:  # the title line
@@ -482,34 +456,34 @@ def gen_mcs_only():
 
 
 # Generate the JSON code from the networkx graph structure and perform node coloring
-def generate_json_from_graph(G):
+def generate_json_from_graph(g):
     result = {'nodes': [],
               'edges': []
               }
-    if not G or len(G.nodes()) == 0:
+    if not g or len(g.nodes()) == 0:
         return None
 
-    for node in G.nodes():
+    for node in g.nodes():
         # Go one by one
         item = dict()
         item['id'] = node
-        if G.node[node]['weight']:
-            w = G.node[node]['weight']
+        if g.node[node]['weight']:
+            w = g.node[node]['weight']
             item['value'] = w
             item['title'] = "*Freq: " + str(w) \
-                            + " <br> *Sen_Score: " + str(round(G.node[node]['sentiment_score'], 4)) \
-                            + " <br> *Sentiment: " + json.dumps(G.node[node]['sentiment']) \
-                            + " <br> *Group_ids: " + ','.join(list(G.node[node]['group_id']))
+                            + " <br> *Sen_Score: " + str(round(g.node[node]['sentiment_score'], 4)) \
+                            + " <br> *Sentiment: " + json.dumps(g.node[node]['sentiment']) \
+                            + " <br> *Group_ids: " + ','.join(list(g.node[node]['group_id']))
 
-        if G.node[node]['label']:
-            item['label'] = G.node[node]['label']
-        if G.node[node]['color']:
-            item['color'] = str(G.node[node]['color'])
-        if 'central.group' in G.node[node]['group_id']:
+        if g.node[node]['label']:
+            item['label'] = g.node[node]['label']
+        if g.node[node]['color']:
+            item['color'] = str(g.node[node]['color'])
+        if 'central.group' in g.node[node]['group_id']:
             item['group'] = 'central'
         else:
             is_article_node = False
-            for group_id in G.node[node]['group_id']:
+            for group_id in g.node[node]['group_id']:
                 is_article_node = is_article_node or group_id[:3] == "art"
             if is_article_node:
                 item['group'] = 'article'
@@ -519,12 +493,11 @@ def generate_json_from_graph(G):
         #  print item
         result['nodes'].append(item)
 
-    for edge in G.edges(data=True):
+    for edge in g.edges(data=True):
         item = dict()
         item['id'] = edge[0]+'|'+edge[1]
-        #  print "SSSSS",type(G.edges())
-        if G.edge[edge[0]][edge[1]]['weight']:
-            w = G.edge[edge[0]][edge[1]]['weight']
+        if g.edge[edge[0]][edge[1]]['weight']:
+            w = g.edge[edge[0]][edge[1]]['weight']
             item['value'] = w
             item['title'] = "freq: " + str(w)
         #  if G.edge[edge[0]][edge[1]]['label']:
@@ -539,13 +512,12 @@ def generate_json_from_graph(G):
 
 # Pruning the graph according to restrictions in options
 def prune_graph(graph, options):
-    maybe_print("Start pruning aspect graph.",1)
+    maybe_print("Start pruning aspect graph.", 1)
     g = graph
     # Load options
     if not g or not options:
         return None
     # Set default values
-    ENABLE_PRUNING = False
     # Now read the options
     ENABLE_PRUNING = options['enable_pruning']
     if not ENABLE_PRUNING:
@@ -605,9 +577,7 @@ def prune_graph(graph, options):
     g.remove_nodes_from(to_remove_nodes)
     g.remove_edges_from(to_remove_edges)
 
-
     # Filter nodes by frequency
-    to_remove_nodes = []
     if NODE_FREQ_MIN > 1:
         to_remove_nodes = [n for n in g.nodes() if g.node[n]['weight']< NODE_FREQ_MIN]
         g.remove_nodes_from(to_remove_nodes)
@@ -622,7 +592,6 @@ def prune_graph(graph, options):
         g.remove_nodes_from(to_remove_nodes)
 
     # Remove isolated nodes
-    to_remove_nodes = []
     to_remove_edges = []
     if REMOVE_ISOLATED_NODE:
         degrees = nx.degree(g)
@@ -647,8 +616,8 @@ def prune_graph(graph, options):
 # @return: new graph with sentiment_score attached
 def compute_sentiment_score(g):
     # get the normalization constant
-    max_val,_ = get_max_value_attribute(g,'weight')
-    #print max_val
+    max_val, _ = get_max_value_attribute(g, 'weight')
+    # print max_val
     tg_g = g # copy the graph
     for n in g.nodes():
         # print g.node[n]['sentiment']['pos_count'],g.node[n]['sentiment']['pos_count']
@@ -678,7 +647,7 @@ def simple_normalize(cnt):
 # Extract a graph from a sentence
 # @param: a sentence, and filtering options
 # @output: 1. a list of dependencies 2. a list of keys, 3. the sentence after grouped compounds/entities
-def dep_extract_from_sent(sentence,filter_opt):
+def dep_extract_from_sent(sentence, filter_opt):
     # blob = TextBlob(sentence)
     # print blob.noun_phrases
     # for phrase in blob.noun_phrases:
@@ -686,8 +655,8 @@ def dep_extract_from_sent(sentence,filter_opt):
     #  print sentence
     result = dep_parser.raw_parse(sentence)
     dependencies = result.next()
-    raw_results = [((lemmatizer.lemmatize(s.lower()),s_tag),r,(lemmatizer.lemmatize(t.lower()),t_tag))
-                   for (s,s_tag),r,(t,t_tag) in list(dependencies.triples())]
+    raw_results = [((lemmatizer.lemmatize(s.lower()), s_tag), r, (lemmatizer.lemmatize(t.lower()), t_tag))
+                   for (s, s_tag), r, (t, t_tag) in list(dependencies.triples())]
     # print('Options: ',filter_opt)
     # Filter out by POS
     preferred_pos = filter_opt['preferred_pos']
@@ -697,20 +666,21 @@ def dep_extract_from_sent(sentence,filter_opt):
         # filter triples whose beginning and ending tags are inside the list
         # print raw_results
         filter_pos_result = [trip for trip in raw_results
-                             if (trip[0][1] in preferred_pos or  len(trip[0][0])> 10) and
-                                (trip[2][1] in preferred_pos or len(trip[2][0])> 10)
+                             if (trip[0][1] in preferred_pos or len(trip[0][0]) > 10) and
+                                (trip[2][1] in preferred_pos or len(trip[2][0]) > 10)
                              ]  # keep potential phrases
 
     # Filter by relationship
     # print filter_pos_result
-    prefered_rel = filter_opt['preferred_rel']
-    if type(prefered_rel) != list:  # take all POS
-        filter_rel_result =  filter_pos_result
+    preferred_rel = filter_opt['preferred_rel']
+    if type(preferred_rel) != list:  # take all POS
+        filter_rel_result = filter_pos_result
     else:
         # filter tripples that has relation in the list
-        filter_rel_result = [trip for trip in raw_results if (trip[1] in prefered_rel)]
+        filter_rel_result = [trip for trip in raw_results if (trip[1] in preferred_rel)]
 
     # print filter_rel_result
+    new_sen = sentence  # new sentence contains grouped item with _ as connector
     # Merge compounds
     compound_merge = filter_opt['compound_merge']
     if compound_merge:
@@ -720,7 +690,7 @@ def dep_extract_from_sent(sentence,filter_opt):
         # print "!!!!!!!!!", compounds
         replacements = dict()
         for i in xrange(0, len(tokens)-1):
-            if (tokens[i],tokens[i+1]) in compounds:
+            if (tokens[i], tokens[i+1]) in compounds:
                 replacements[tokens[i]] = tokens[i]+"_" + tokens[i+1]
                 replacements[tokens[i+1]] = tokens[i] + "_" + tokens[i + 1]
                 # Now do the replace
@@ -728,23 +698,21 @@ def dep_extract_from_sent(sentence,filter_opt):
         for i in xrange(0, len(filter_rel_result)):
             (s, s_tag), r, (t, t_tag) = filter_rel_result[i]
             if s in replacements:
-                filter_rel_result[i] = (replacements[s], s_tag), r , (t, t_tag)
+                filter_rel_result[i] = (replacements[s], s_tag), r, (t, t_tag)
             (s, s_tag), r, (t, t_tag) = filter_rel_result[i]  # Update in case 1st element changes
             if t in replacements:
                 filter_rel_result[i] = (s, s_tag), r, (replacements[t], t_tag)
-        new_sen = sentence  # new sentence contains grouped item with _ as connector
         for key in replacements:
-            new_sen.replace(key,replacements[key])
+            new_sen.replace(key, replacements[key])
         # now remove duplicate
-        filter_comp_result = [((s,s_tag),r,(t,t_tag)) for (s,s_tag),r,(t,t_tag) in filter_rel_result if
-                                (s != t)]
+        filter_comp_result = [((s, s_tag), r, (t, t_tag)) for (s, s_tag), r, (t, t_tag) in filter_rel_result
+                              if (s != t)]
     else:
         filter_comp_result = filter_rel_result
     # Final refine
-    rs = [] # store the refined tuples
-    keys = set() # store the keywords
+    rs = []  # store the refined tuples
+    keys = set()  # store the keywords
     for (s, s_tag), r, (t, t_tag) in filter_comp_result:
-
         s_f = en.verb.infinitive(s) if en.verb.infinitive(s) else s
         t_f = en.verb.infinitive(t) if en.verb.infinitive(t) else t
         rs.append(((s_f, s_tag), r, (t_f, t_tag)))
@@ -758,11 +726,10 @@ def dep_extract_from_sent(sentence,filter_opt):
 # @param: g - the graph to be unified, uni_opi - unification options
 # @return: the unified graph
 def graph_unify(g=None, uni_opt=None):
-    maybe_print("Start graph Unification",2)
+    maybe_print("Start graph Unification", 2)
     # print uni_opt
     if not uni_opt:
         return g
-    rs = nx.DiGraph()
     #  For keyword matching and unification
     ENABLE_UNIFY_MATCHED_KEYWORDS = True
     INTRA_CLUSTER_UNIFY = True
@@ -777,35 +744,34 @@ def graph_unify(g=None, uni_opt=None):
             INTER_CLUSTER_UNIFY = uop['inter_cluster_unify'] if uop['inter_cluster_unify'] else False
             UNIFY_MODE = uop['unification_mode'] if uop['unification_mode'] else 'link'
         except:
-            raise ValueError, "Error while parsing matched words unification options."
+            raise ValueError("Error while parsing matched words unification options.")
 
     # Merge sub graph with similar keyword -> Now just
     if ENABLE_UNIFY_MATCHED_KEYWORDS:
-        #for i in xrange(0,len(node_ids)-1):
+        # for i in xrange(0,len(node_ids)-1):
         #    for j in xrange(i+1,len(node_ids)):
         #        if g.node[node_ids[i]]['label'] == g.node[node_ids[j]]['label']:  # two node have the same label
         #            matches.add((node_ids[i],node_ids[j]))
-        #matches = list(matches)
+        # matches = list(matches)
         # Find matches
         match_dict = dict()
         for node in g.nodes(data=True):
-            #print "sasasa",match_dict
             node_id = node[0]
             label = node[1]['label']
-            #print "--------->", node_id, label
+            # print "--------->", node_id, label
             if label not in match_dict:
-                match_dict[label] = set([node_id])
+                match_dict[label] = set(node_id)
             else:  # Key already exists
-                #match_dict[label] = match_dict[label].add(node_id)
+                # match_dict[label] = match_dict[label].add(node_id)
                 match_dict[label].add(node_id)
-        #print match_dict
+        # print match_dict
         # Establish the match list
         matches = []
         for key in match_dict:
             ids = list(match_dict[key])
-            if len(ids)<2:
+            if len(ids) < 2:
                 continue  # Skip words appear once
-            for i in xrange(1,len(ids)):
+            for i in xrange(1, len(ids)):
                 matches.append((ids[0], ids[i]))
         del match_dict
         # print matches
@@ -816,11 +782,11 @@ def graph_unify(g=None, uni_opt=None):
             # 2. InterL set of node between groups
             intra_match = []
             inter_match = []
-            for n0,n1 in matches:
+            for n0, n1 in matches:
                 if g.node[n0]['group_id'] & g.node[n1]['group_id']:
-                    intra_match.append((n0,n1))
+                    intra_match.append((n0, n1))
                 else:
-                    inter_match.append((n0,n1))
+                    inter_match.append((n0, n1))
             del matches
             # intra_match = list(intra_match)
             # inter_match = list(inter_match)
@@ -831,11 +797,11 @@ def graph_unify(g=None, uni_opt=None):
             if INTER_CLUSTER_UNIFY:
                 # print "2....", inter_match
                 if UNIFY_MODE == 'link':
-                    max_score,_ = get_max_value_attribute(g, 'weight')  # Get the max weight of all nodes in graph
+                    max_score, _ = get_max_value_attribute(g, 'weight')  # Get the max weight of all nodes in graph
                     print max_score
                     # Now make the links
                     # print inter_match
-                    for node0,node1 in inter_match:
+                    for node0, node1 in inter_match:
                         rs.add_edge(node0, node1, {
                                                     'weight': max_score,
                                                     'id': node0 + '|' + node1,
@@ -849,27 +815,23 @@ def graph_unify(g=None, uni_opt=None):
                         sum_weight = rs.node[node0]['weight'] + rs.node[node1]['weight']
                         # print g.node[node0]['weight'], g.node[node1]['weight']
                         # Sum up the sentiment of the two nodes
-                        pos_count = rs.node[node0]['sentiment']['pos_count'] \
-                                    + rs.node[node1]['sentiment']['pos_count']
-                        neg_count = rs.node[node0]['sentiment']['neg_count'] \
-                                    + rs.node[node1]['sentiment']['neg_count']
-                        neu_count = g.node[node0]['sentiment']['neu_count'] \
-                                    + rs.node[node1]['sentiment']['neu_count']
+                        pos_count = rs.node[node0]['sentiment']['pos_count'] + rs.node[node1]['sentiment']['pos_count']
+                        neg_count = rs.node[node0]['sentiment']['neg_count'] + rs.node[node1]['sentiment']['neg_count']
+                        neu_count = g.node[node0]['sentiment']['neu_count'] + rs.node[node1]['sentiment']['neu_count']
                         # Sum up the weight if two nodes has same neighbor
-                        share_neighbors = set(nx.all_neighbors(rs,node0)) \
-                                          & set(nx.all_neighbors(rs,node1))  # Find shared nodes
+                        share_neighbors = set(nx.all_neighbors(rs, node0)) & set(nx.all_neighbors(rs, node1))
                         add_up_weights = []
                         if share_neighbors:
                             #  print share_neighbors
                             for n in share_neighbors:
-                                n0_n_weight = rs.edge[node0][n]['weight'] if rs.has_edge(node0,n) else None
-                                n_n0_weight = rs.edge[n][node0]['weight'] if rs.has_edge(n,node0) else None
-                                n1_n_weight = rs.edge[node1][n]['weight'] if rs.has_edge(node1,n) else None
-                                n_n1_weight = rs.edge[n][node1]['weight'] if rs.has_edge(n,node1) else None
+                                n0_n_weight = rs.edge[node0][n]['weight'] if rs.has_edge(node0, n) else None
+                                n_n0_weight = rs.edge[n][node0]['weight'] if rs.has_edge(n, node0) else None
+                                n1_n_weight = rs.edge[node1][n]['weight'] if rs.has_edge(node1, n) else None
+                                n_n1_weight = rs.edge[n][node1]['weight'] if rs.has_edge(n, node1) else None
                                 if n0_n_weight and n1_n_weight:
-                                    add_up_weights.append((node0,n, n0_n_weight+n1_n_weight))
+                                    add_up_weights.append((node0, n, n0_n_weight+n1_n_weight))
                                 if n_n0_weight and n_n1_weight:
-                                    add_up_weights.append((n,node0, n_n0_weight+n_n1_weight))
+                                    add_up_weights.append((n, node0, n_n0_weight+n_n1_weight))
                         group_id = rs.node[node0]['group_id'] | rs.node[node1]['group_id']
                         rs = nx.contracted_nodes(rs, node0, node1)
                         rs.node[node0]['weight'] = sum_weight
@@ -878,7 +840,6 @@ def graph_unify(g=None, uni_opt=None):
                                                        'neg_count': neg_count,
                                                        'neu_count': neu_count
                                                        }
-                        ###################################################################################
                         rs.node[node0]['group_id'] = group_id
                         # Update the weight of edges that has been added
                         if add_up_weights:
@@ -886,21 +847,15 @@ def graph_unify(g=None, uni_opt=None):
                                 rs.edge[s][t]['weight'] = sw
                         # Update the match lst
                         inter_match.pop(0)  # Remove first element
-
-                        # for i in xrange(0, len(inter_match)): # since now node1 disappear, the unified node holds node0 id
-                        #    m = node0 if inter_match[i][0] == node1 else inter_match[i][0]
-                        #    n = node0 if inter_match[i][1] == node1 else inter_match[i][1]
-                        #    inter_match[i] = (m, n)
-
             # Implementation of INTRA cluster unification
             if INTRA_CLUSTER_UNIFY:  # Unify the same  keywords in one cluster
                 # print "1....", intra_match
                 if UNIFY_MODE == 'link':
-                    max_score,_ = get_max_value_attribute(g, 'weight')  # Get the max weight of all nodes in graph
+                    max_score, _ = get_max_value_attribute(g, 'weight')  # Get the max weight of all nodes in graph
                     print max_score
                     # Now make the links
                     print matches
-                    for node0,node1 in intra_match:
+                    for node0, node1 in intra_match:
                         rs.add_edge(node0, node1, {
                                                     'weight': max_score,
                                                     'id': node0 + '|' + node1,
@@ -922,8 +877,7 @@ def graph_unify(g=None, uni_opt=None):
                                         + rs.node[node1]['sentiment']['neu_count']
 
                             # Sum up the weight if two nodes has same neighbor
-                            share_neighbors = set(nx.all_neighbors(rs, node0)) \
-                                              & set(nx.all_neighbors(rs, node1))  # Find shared nodes
+                            share_neighbors = set(nx.all_neighbors(rs, node0)) & set(nx.all_neighbors(rs, node1))
                             add_up_weights = []
                             if share_neighbors:
                                 #  print share_neighbors
@@ -949,12 +903,6 @@ def graph_unify(g=None, uni_opt=None):
                                 for s, t, sw in add_up_weights:
                                     rs.edge[s][t]['weight'] = sw
                             intra_match.pop(0)  # Remove first element
-
-                            # Update the match lst
-                            #for i in xrange(0, len(intra_match)): # now node1 disappear, the unified node holds node0 id
-                            #    m = node0 if intra_match[i][0] == node1 else intra_match[i][0]
-                            #    n = node0 if intra_match[i][1] == node1 else intra_match[i][1]
-                            #    intra_match[i] = (m, n)
     else:
         return g
     maybe_print(" -> Unification complete! Number of nodes changed from {0} to {1}".format(len(g.nodes()),
