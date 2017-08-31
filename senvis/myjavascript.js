@@ -113,7 +113,7 @@ function draw() {
 			tooltipDelay: 200
 		},
 	   nodes: {
-		shape: 'dot',
+		shape: 'square',
 		font: {
 				size: 28,
 				color: '#ffffff'
@@ -171,7 +171,15 @@ function draw() {
 	    groups: {
             central: {
                 color: {background:'red',border:'white'},
+                shape: 'star'
+            },
+            article: {
+                color: {background:'red',border:'white'},
                 shape: 'diamond'
+            },
+            comment: {
+            color: {background:'red',border:'white'},
+                shape: 'dot'
             }
         }
 		  
