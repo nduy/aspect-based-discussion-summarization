@@ -113,19 +113,19 @@ function draw() {
 			tooltipDelay: 200
 		},
 	   nodes: {
-			shape: 'dot',
-			font: {
-	                size: 28,
-	                color: '#ffffff'
-	            },
+		shape: 'dot',
+		font: {
+				size: 28,
+				color: '#ffffff'
+			},
 	     scaling: {
-			  min: 10,
-			  max: 30,
+			  min: 20,
+			  max: 40,
 			  label: {
-				min: 10,
-				max: 30,
+				min: 20,
+				max: 40,
 				drawThreshold: 12,
-				maxVisible: 20
+				maxVisible: 30
 			  }
 		  },  
 	    },
@@ -139,7 +139,7 @@ function draw() {
 			smooth: {
 			  enabled: true,
 			  type: "dynamic",
-			  roundness: 0.5
+			  roundness: 0.1
 			},
 			scaling:{
 			  min: 1,
@@ -148,7 +148,7 @@ function draw() {
 				enabled: true,
 				min: 4,
 				max: 20,
-				maxVisible: 20,
+				maxVisible: 10,
 				drawThreshold: 1
 			  },
 			  customScalingFunction: function (min,max,total,value) {
@@ -167,7 +167,13 @@ function draw() {
 	        return true;
 	      }
 	      return false;
-	    }
+	    },
+	    groups: {
+            central: {
+                color: {background:'red',border:'white'},
+                shape: 'diamond'
+            }
+        }
 		  
 	};	
 	
@@ -187,8 +193,7 @@ function draw() {
 	for (var nodeId in allNodes) {
      color_book[nodeId] = allNodes[nodeId].color;
    }
-	
-/*	network.on("click", function (params) {
+	/*	network.on("click", function (params) {
         params.event = "[original event]";
         //document.getElementById('eventSpan').innerHTML = '<h2>Click event:</h2>' + JSON.stringify(params, null, 4);
         console.log('click event, getNodeAt returns: ' + this.getNodeAt(params.pointer.DOM));
@@ -313,7 +318,8 @@ function saveNodeData(data, callback) {
 				"id": data.id,
 				"label": data.label,
 				"title": new_title,
-				"value": data.value
+				"value": data.value,
+				"group": data.group
 			};
 		}
 	allNodes[data.id]['color'] = clr;

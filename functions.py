@@ -24,8 +24,8 @@ from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from utils import *
 from main import dep_opt
 from nltk.parse.stanford import StanfordDependencyParser
-
-
+from main import uni_options
+from main import build_options
 ######################################
 # EXTRA DECLARATIONS
 # Lemmatizer
@@ -62,7 +62,7 @@ SENTIMENT_ANALYSIS_MODE = 'local'  # m
 #               - 1: Keyword match. unify keywords that are exactly the same into one node
 #               - 2: Semantic similarity
 # @return: One summarization aspect graph.
-def build_sum_graph(dataset, build_options):
+def build_sum_graph(dataset):
     # Read options
     MERGE_MODE = build_options['build_mode'] if build_options['build_mode'] else 0
     maybe_print("Start building sum graph in mode {0}".format(MERGE_MODE), 1)
@@ -124,14 +124,16 @@ def build_mode_0(thrds):
 # 4. Attach these extracted to the built graph
 # @param: Target graph G and data threads to be merge thrds
 # @output: The result graph
-def build_mode_1(title,article,thrds,uni_options):
+def build_mode_1(title,article,comments):
     rs = nx.DiGraph()
     # First add the title as central node
     rs.add_node('Central~title~_~{0}'.format(gen_mcs_only()),{"label": title[:9] + "...",
                                                               "weight": 1,
+                                                              "group_id": ['central.group'],
                                                               "sentiment": {'pos_count': 0,
                                                                             'neu_count': 1,
                                                                             'neg_count': 0}})
+
     # Second work on the article
     maybe_print(" - Building graph for the article",1)
     article_graph = nx.DiGraph()
@@ -143,10 +145,22 @@ def build_mode_1(title,article,thrds,uni_options):
         article_group_count += 1
 
     # Unify the article
-    article_graph = graph_unify(rs,uni_options)
-    rs = nx.compose(rs, article_graph)
+    rs = nx.compose(rs,article_graph)
+    rs = graph_unify(rs,uni_options)
 
-
+    maybe_print("Start building aspect graph for comments, add up to the article graph.",2)
+    # Third work on the comments.
+    # Check if we use thread structure or not
+    if build_options['use_thread_structure']:
+        raise RuntimeError("Thread structure usage in build mode 1 is not supported!")
+    else:
+        # data structure [{"id":"","content":""}]
+        for comment in comments:
+            comment_id = comment['id']
+            content = comment['content']
+            comment_graph = build_directed_graph_from_text(txt=content, group_id="com.",member_id=comment_id)
+            if comment_graph:
+                rs = nx.compose(rs, comment_graph)
     """
     for thrd in thrds:
         maybe_print(":: Building aspect graph for text {0}".format(thrd), 3)
@@ -169,6 +183,7 @@ def build_mode_1(title,article,thrds,uni_options):
             rs.add_edges_from(flatten_list([sup_gr.edges(data=True) for sup_gr in sup_grs]))
             # print ooo
     """
+    rs = graph_unify(rs,uni_options)
     return rs
 
 
@@ -285,6 +300,8 @@ def build_graph_from_text(txt, group_id='_', member_id='_'):
     return g
 
 
+# This function build a directed graph from a
+
 # Build a graph from a text ---- Directional implementation
 # This function build a directed graph fom a piece of text
 def build_directed_graph_from_text(txt, group_id='', member_id=''):
@@ -313,10 +330,10 @@ def build_directed_graph_from_text(txt, group_id='', member_id=''):
         # print "wewewew ", g.nodes()
         # Update nodes's weight
         for node in assigned_nodes:
-            #print g.node[node[0]]
+            # print g.node[node[0]]
             try:  # Node has already existed
                 g.node[node[0]]['weight'] += 1
-                #print g.node[node[0]]
+                # print g.node[node[0]]
                 # Update sentiment score
                 if sen_score > 0:
                     g.node[node[0]]['sentiment']['pos_count'] += 1
@@ -327,7 +344,7 @@ def build_directed_graph_from_text(txt, group_id='', member_id=''):
 
             except KeyError:  # New node
                 g.node[node[0]]['weight'] = 1
-                g.node[node[0]]['group_id'] = group_id
+                g.node[node[0]]['group_id'] = set([group_id])
                 g.node[node[0]]['sentiment'] = {'pos_count': 1 if sen_score > 0 else 0, # Add sentiment score
                                                 'neg_count': 1 if sen_score < 0 else 0,
                                                 'neu_count': 1 if sen_score == 0 else 0}
@@ -364,28 +381,41 @@ def build_directed_graph_from_text(txt, group_id='', member_id=''):
 # @return: data structure: [
 #   [{'id':'cluster_id', 'central_comment': 'abc', 'supports':[support comments]},
 #                       {}]
-def read_comment_file(data_file):
+def read_comment_file(data_file, read_as_threads = False):
     dataset = None
-    try:
-        with codecs.open(data_file, "rb", "utf8") as comment_file:
-            reader = unicode_csv_reader(comment_file, delimiter='	', quotechar='"')
-            dataset = []
-            index = -1;
-            count = 0;
-            for entry in reader:
-                #  print entry;
-                if entry[2] == u"":
-                    cluster_id = gen_mcs() + "^" + str(index+1);
-                    dataset.append({'id': cluster_id, 'central': text_preprocessing(entry[6]), 'supports': []})
-                    index += 1
-                else:
-                    if count > 0:
-                        dataset[index]['supports'].append(text_preprocessing(entry[6]))
-                count += 1
-    except IOError:
-        print "Unable to open {0}".format(data_file)
-
-    maybe_print(json.dumps(dataset, sort_keys=True, indent=4, separators=(',', ': ')), 3)
+    if read_as_threads:
+        try:
+            with codecs.open(data_file, "rb", "utf8") as comment_file:
+                reader = unicode_csv_reader(comment_file, delimiter='	', quotechar='"')
+                dataset = []
+                index = -1
+                count = 0
+                for entry in reader:
+                    #  print entry;
+                    if entry[2] == u"":
+                        cluster_id = gen_mcs() + "^" + str(index+1);
+                        dataset.append({'id': cluster_id, 'central': text_preprocessing(entry[6]), 'supports': []})
+                        index += 1
+                    else:
+                        if count > 0:
+                            dataset[index]['supports'].append(text_preprocessing(entry[6]))
+                    count += 1
+        except IOError:
+            print "Unable to open {0}".format(data_file)
+        maybe_print(json.dumps(dataset, sort_keys=True, indent=4, separators=(',', ': ')), 3)
+    else:
+        try:
+            with codecs.open(data_file, "rb", "utf8") as comment_file:
+                reader = unicode_csv_reader(comment_file, delimiter='	', quotechar='"')
+                dataset = []
+                count = 0
+                for entry in reader:
+                    sentence_id = gen_mcs() + "^" + str(count)
+                    dataset.append({'id': sentence_id, 'content': text_preprocessing(entry[6])})
+                    count += 1
+        except IOError:
+            print "Unable to open {0}".format(data_file)
+        maybe_print(json.dumps(dataset, sort_keys=True, indent=4, separators=(',', ': ')), 3)
     return dataset
 
 
@@ -460,7 +490,6 @@ def generate_json_from_graph(G):
         return None
 
     for node in G.nodes():
-        # print G.node[node]
         # Go one by one
         item = dict()
         item['id'] = node
@@ -469,12 +498,24 @@ def generate_json_from_graph(G):
             item['value'] = w
             item['title'] = "*Freq: " + str(w) \
                             + " <br> *Sen_Score: " + str(round(G.node[node]['sentiment_score'], 4)) \
-                            + " <br> *Sentiment: " + json.dumps(G.node[node]['sentiment'])
+                            + " <br> *Sentiment: " + json.dumps(G.node[node]['sentiment']) \
+                            + " <br> *Group_ids: " + ','.join(list(G.node[node]['group_id']))
 
         if G.node[node]['label']:
             item['label'] = G.node[node]['label']
         if G.node[node]['color']:
             item['color'] = str(G.node[node]['color'])
+        if 'central.group' in G.node[node]['group_id']:
+            item['group'] = 'central'
+        else:
+            is_article_node = False
+            for group_id in G.node[node]['group_id']:
+                is_article_node = is_article_node or group_id[:3] == "art"
+            if is_article_node:
+                item['group'] = 'article'
+            else:
+                item['group'] = 'comment'
+
         #  print item
         result['nodes'].append(item)
 
@@ -638,11 +679,11 @@ def simple_normalize(cnt):
 # @param: a sentence, and filtering options
 # @output: 1. a list of dependencies 2. a list of keys, 3. the sentence after grouped compounds/entities
 def dep_extract_from_sent(sentence,filter_opt):
-    #blob = TextBlob(sentence)
-    #print blob.noun_phrases
-    #for phrase in blob.noun_phrases:
+    # blob = TextBlob(sentence)
+    # print blob.noun_phrases
+    # for phrase in blob.noun_phrases:
     #    sentence = sentence.replace(phrase,phrase.replace(' ','_'))
-    #print sentence
+    #  print sentence
     result = dep_parser.raw_parse(sentence)
     dependencies = result.next()
     raw_results = [((lemmatizer.lemmatize(s.lower()),s_tag),r,(lemmatizer.lemmatize(t.lower()),t_tag))
@@ -654,7 +695,7 @@ def dep_extract_from_sent(sentence,filter_opt):
         filter_pos_result = raw_results
     else:
         # filter triples whose beginning and ending tags are inside the list
-        #print raw_results
+        # print raw_results
         filter_pos_result = [trip for trip in raw_results
                              if (trip[0][1] in preferred_pos or  len(trip[0][0])> 10) and
                                 (trip[2][1] in preferred_pos or len(trip[2][0])> 10)
@@ -684,13 +725,13 @@ def dep_extract_from_sent(sentence,filter_opt):
                 replacements[tokens[i+1]] = tokens[i] + "_" + tokens[i + 1]
                 # Now do the replace
                 # print "found compound", tokens[i],tokens[i+1]
-        for i in xrange(0,len(filter_rel_result)):
-            (s,s_tag),r,(t,t_tag) = filter_rel_result[i]
-            if replacements.has_key(s):
-                filter_rel_result[i] = (replacements[s],s_tag),r,(t,t_tag)
+        for i in xrange(0, len(filter_rel_result)):
+            (s, s_tag), r, (t, t_tag) = filter_rel_result[i]
+            if s in replacements:
+                filter_rel_result[i] = (replacements[s], s_tag), r , (t, t_tag)
             (s, s_tag), r, (t, t_tag) = filter_rel_result[i]  # Update in case 1st element changes
-            if replacements.has_key(t):
-                filter_rel_result[i] = (s,s_tag),r,(replacements[t],t_tag)
+            if t in replacements:
+                filter_rel_result[i] = (s, s_tag), r, (replacements[t], t_tag)
         new_sen = sentence  # new sentence contains grouped item with _ as connector
         for key in replacements:
             new_sen.replace(key,replacements[key])
@@ -776,7 +817,7 @@ def graph_unify(g=None, uni_opt=None):
             intra_match = []
             inter_match = []
             for n0,n1 in matches:
-                if g.node[n0]['group_id'] == g.node[n1]['group_id']:
+                if g.node[n0]['group_id'] & g.node[n1]['group_id']:
                     intra_match.append((n0,n1))
                 else:
                     inter_match.append((n0,n1))
@@ -829,7 +870,7 @@ def graph_unify(g=None, uni_opt=None):
                                     add_up_weights.append((node0,n, n0_n_weight+n1_n_weight))
                                 if n_n0_weight and n_n1_weight:
                                     add_up_weights.append((n,node0, n_n0_weight+n_n1_weight))
-
+                        group_id = rs.node[node0]['group_id'] | rs.node[node1]['group_id']
                         rs = nx.contracted_nodes(rs, node0, node1)
                         rs.node[node0]['weight'] = sum_weight
                         rs.node[node0]['label'] = rs.node[node0]['label']
@@ -837,6 +878,8 @@ def graph_unify(g=None, uni_opt=None):
                                                        'neg_count': neg_count,
                                                        'neu_count': neu_count
                                                        }
+                        ###################################################################################
+                        rs.node[node0]['group_id'] = group_id
                         # Update the weight of edges that has been added
                         if add_up_weights:
                             for s, t, sw in add_up_weights:
@@ -870,7 +913,6 @@ def graph_unify(g=None, uni_opt=None):
                             node1 = intra_match[0][1]
                             # Sum up the weight of the two node
                             sum_weight = rs.node[node0]['weight'] + rs.node[node1]['weight']
-                            #print g.node[node0]['weight'], g.node[node1]['weight']
                             # Sum up the sentiment of the two nodes
                             pos_count = rs.node[node0]['sentiment']['pos_count'] \
                                         + rs.node[node1]['sentiment']['pos_count']
@@ -894,6 +936,7 @@ def graph_unify(g=None, uni_opt=None):
                                         add_up_weights.append((node0, n, n0_n_weight + n1_n_weight))
                                     if n_n0_weight and n_n1_weight:
                                         add_up_weights.append((n, node0, n_n0_weight + n_n1_weight))
+
                             rs = nx.contracted_nodes(rs, node0, node1)
                             rs.node[node0]['weight'] = sum_weight
                             rs.node[node0]['label'] = rs.node[node0]['label']
@@ -901,8 +944,6 @@ def graph_unify(g=None, uni_opt=None):
                                                            'neg_count': neg_count,
                                                            'neu_count': neu_count
                                                             }
-                    ###################################################################################
-                    #        rs.node[node0]['group_id'] = rs.node[node0]['group_id'] | rs.node[node1]['group_id']
                             # Update the weight of edges that has been added
                             if add_up_weights:
                                 for s, t, sw in add_up_weights:
@@ -914,7 +955,8 @@ def graph_unify(g=None, uni_opt=None):
                             #    m = node0 if intra_match[i][0] == node1 else intra_match[i][0]
                             #    n = node0 if intra_match[i][1] == node1 else intra_match[i][1]
                             #    intra_match[i] = (m, n)
-
+    else:
+        return g
     maybe_print(" -> Unification complete! Number of nodes changed from {0} to {1}".format(len(g.nodes()),
                                                                                            len(rs.nodes())), 2)
     return rs

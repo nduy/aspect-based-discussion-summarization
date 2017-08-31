@@ -16,7 +16,9 @@ start_time = time.time()
 
 build_options = {
     'build_mode': 1,
-    'sentiment_ana_mode': 'global'  # 'global', 'local'
+    'sentiment_ana_mode': 'global',  # 'global', 'local'
+    'use_thread_structure': False   # if yes, the thread structure of comments will be used. Otherwise just treat them
+                                    # equally
 }
 
 prune_options = {
@@ -50,7 +52,7 @@ script_verbality = 2     # 0: silent, 1: print main info, 2: print some techs in
 
 
 if __name__ == "__main__":
-    comments = read_comment_file("data/comments_article0.txt")
+    comments = read_comment_file("data/comments_article0.txt", read_as_threads = False)
     title, article = read_article_file("data/article0.txt")
 
     #g = build_directed_graph_from_text(txt=title.lower(), threadid='title')
@@ -63,7 +65,7 @@ if __name__ == "__main__":
     # print article
     maybe_print("Loaded data set! Number of conversation thread: {0}".format(len(dataset['title'])), 0)
 
-    asp_graph = build_sum_graph(dataset,build_options,uni_options) # Build sum keyraph at mode 1
+    asp_graph = build_sum_graph(dataset) # Build sum keyraph at mode 1
 
     pruned_graph = prune_graph(asp_graph, prune_options)
     #print pruned_graph.edges()
