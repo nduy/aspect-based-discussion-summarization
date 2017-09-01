@@ -129,7 +129,7 @@ def build_mode_1(title, article, comments):
                                                                              'neg_count': 0}})
 
     # Second work on the article
-    maybe_print(" - Building graph for the article",1)
+    maybe_print("\nStart building aspect graph for the ARTICLE.", 2)
     article_graph = nx.DiGraph()
     article_group_count = 0
     for segment in texttiling_tokenize(article): # Run texttiling, then go to each segment
@@ -142,7 +142,7 @@ def build_mode_1(title, article, comments):
     rs = nx.compose(rs, article_graph)
     rs = graph_unify(rs, uni_options)
 
-    maybe_print("Start building aspect graph for comments, add up to the article graph.",2)
+    maybe_print("\nStart building aspect graph for COMMENTS, add up to the article graph.",2)
     # Third work on the comments.
     # Check if we use thread structure or not
     if build_options['use_thread_structure']:
@@ -316,7 +316,7 @@ def build_directed_graph_from_text(txt, group_id='', member_id=''):
 
             except KeyError:  # New node
                 g.node[node[0]]['weight'] = 1
-                g.node[node[0]]['group_id'] = set(group_id)
+                g.node[node[0]]['group_id'] = {group_id}  # it's a set
                 g.node[node[0]]['sentiment'] = {'pos_count': 1 if sen_score > 0 else 0,  # Add sentiment score
                                                 'neg_count': 1 if sen_score < 0 else 0,
                                                 'neu_count': 1 if sen_score == 0 else 0}
@@ -341,10 +341,8 @@ def build_directed_graph_from_text(txt, group_id='', member_id=''):
         # raise ValueError("Generated graph is empty")
         return None
 
-    maybe_print('   + Graph for group {0}, member{1} has {2} nodes and {3} edges '.format(group_id,
-                                                                                          member_id,
-                                                                                          len(g.nodes()),
-                                                                                          len(g.edges())), 2)
+    maybe_print('   + Graph for group: {0:5s} \t member: {1:15s} \t has {2:3d} nodes and {3:3d} edges '
+                .format(group_id,member_id,len(g.nodes()),len(g.edges())), 2)
     maybe_print('Nodes ' + str(g.nodes()), 3)
     maybe_print('Edges ' + str(g.edges()) + '\n', 3)
     return g
@@ -618,7 +616,7 @@ def compute_sentiment_score(g):
     # get the normalization constant
     max_val, _ = get_max_value_attribute(g, 'weight')
     # print max_val
-    tg_g = g # copy the graph
+    tg_g = g  # copy the graph
     for n in g.nodes():
         # print g.node[n]['sentiment']['pos_count'],g.node[n]['sentiment']['pos_count']
         # print g.node[n],"\n"
@@ -760,7 +758,7 @@ def graph_unify(g=None, uni_opt=None):
             label = node[1]['label']
             # print "--------->", node_id, label
             if label not in match_dict:
-                match_dict[label] = set(node_id)
+                match_dict[label] = set([node_id])
             else:  # Key already exists
                 # match_dict[label] = match_dict[label].add(node_id)
                 match_dict[label].add(node_id)
@@ -783,6 +781,7 @@ def graph_unify(g=None, uni_opt=None):
             intra_match = []
             inter_match = []
             for n0, n1 in matches:
+                # print n0, n1
                 if g.node[n0]['group_id'] & g.node[n1]['group_id']:
                     intra_match.append((n0, n1))
                 else:
