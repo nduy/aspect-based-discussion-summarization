@@ -138,7 +138,7 @@ def build_mode_1(title, article, comments):
     maybe_print("\nStart building aspect graph for the ARTICLE.", 2)
     article_graph = nx.DiGraph()
     article_group_count = 0
-    for segment in texttiling_tokenize(article): # Run texttiling, then go to each segment
+    for segment in texttiling_tokenize(article):  # Run texttiling, then go to each segment
         maybe_print(" - Building graph for segment {0}".format(article_group_count), 2)
         segment_graph = build_directed_graph_from_text(txt=segment, group_id="art."+str(article_group_count))
         article_graph = nx.compose(article_graph, segment_graph)
@@ -904,14 +904,14 @@ def read_article_file(data_file):
                     count += 1
                     continue
                 else:
-                    if line != u"\r\n":
-                        article.append('\n')
-                    #else:
+                    if line == u"\r\n":
+                        article[-1] = article[-1] + u"\n"
+                        article.append(u'\r\n')
+                    else:
                         sens = sent_tokenize(line.replace(u"\r\n", u''))
                         if sens:
                             article.extend(sens)
 
-                #article.append(line)
     except IOError:
         print "Unable to open {0}".format(data_file)
     return title, article
