@@ -18,7 +18,7 @@ if __name__ == "__main__":
 
     # comments = read_comment_file("data/comments_article0_clipped.txt", read_as_threads=False)
     # title, article = read_article_file("data/article0_clipped.txt")
-    comments = read_comment_file("data/comments_article0_clipped.txt", read_as_threads=False)
+    comments = read_comment_file("data/comments_article0.txt", read_as_threads=False)
     title, article = read_article_file("data/article0.txt")
 
     # g = build_directed_graph_from_text(txt=title.lower(), threadid='title')

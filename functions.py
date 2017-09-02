@@ -904,11 +904,11 @@ def read_article_file(data_file):
                     count += 1
                     continue
                 else:
-                    if line == u"\r\n":
-                        article[-1] = article[-1] + u"\n"
-                        article.append(u'\r\n')
+                    if not line.strip():
+                        article[-1] = article[-1] + " \t\n"
+                        article.append(u'*break_me*')
                     else:
-                        sens = sent_tokenize(line.replace(u"\r\n", u''))
+                        sens = sent_tokenize(line.replace(u"\r\n", u""))
                         if sens:
                             article.extend(sens)
 

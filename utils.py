@@ -129,7 +129,16 @@ def simple_normalize(cnt):
 # @param: a list, each element is a sentence the document
 # @return: a list, each element is group of sentence concatenated to form a paragraph.
 def texttiling_tokenize(sentence_list):
+    # doc = ""
+    #for sen in sentence_list:
+    #    if sen == '\r\n':
+    #        doc = doc + u"\u2029"
+    #    else:
+    #        doc = doc + u" " + sen
+    # print sentence_list
     doc = ' '.join(sentence_list)
+    doc = doc.replace(u"*break_me*",u" \t\n")
+    # print doc
     tt = texttiling.TextTilingTokenizer()
     segmented_text = tt.tokenize(doc)
     return [simple_normalize(para.strip()) for para in segmented_text if para.strip()]
