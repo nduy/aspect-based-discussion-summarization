@@ -895,18 +895,23 @@ def read_article_file(data_file):
     title = None
     article = None
     try:
-        with codecs.open(data_file, "rb", "utf8") as article_file:
+        with codecs.open(data_file, "rb", encoding='utf-8') as article_file:
             count = 0
             article = []
             for line in article_file:
-                if count != 0:
-                    if line:
-                        sens = sent_tokenize(line.replace("\r", ""))
+                if count == 0:
+                    title = line
+                    count += 1
+                    continue
+                else:
+                    if line != u"\r\n":
+                        article.append('\n')
+                    #else:
+                        sens = sent_tokenize(line.replace(u"\r\n", u''))
                         if sens:
                             article.extend(sens)
-                else:  # the title line
-                    title = line
-                count += 1
+
+                #article.append(line)
     except IOError:
         print "Unable to open {0}".format(data_file)
     return title, article
