@@ -14,10 +14,11 @@ import time
 start_time = time.time()
 #############################
 if __name__ == "__main__":
+
     # comments = read_comment_file("data/comments_article0_clipped.txt", read_as_threads=False)
     # title, article = read_article_file("data/article0_clipped.txt")
-    comments = read_comment_file("data/comments_article0.txt", read_as_threads=False)
-    title, article = read_article_file("data/article0.txt")
+    comments = read_comment_file("data/comments_article0_clipped.txt", read_as_threads=False)
+    title, article = read_article_file("data/article0_clipped.txt")
 
     # g = build_directed_graph_from_text(txt=title.lower(), threadid='title')
     # print 'Nodes:', g.nodes(data=True), '\n Edges:', g.edges(data=True)
@@ -41,22 +42,22 @@ if __name__ == "__main__":
     with open('tmp/pruned_graph.adjlist', 'wb+') as handle:
         # pickle.dump(pruned_graph, handle, protocol=pickle.HIGHEST_PROTOCOL)
         nx.write_adjlist(pruned_graph, handle)
-    # pruned_graph = nx.read_adjlist('tmp/pruned_graph.adjlist', create_using=nx.DiGraph())
 
+    # pruned_graph = nx.read_adjlist('tmp/pruned_graph.adjlist', create_using=nx.DiGraph())
     # Compute sentiment scores, then serialize
     sen_graph = compute_sentiment_score(pruned_graph)
     with open('tmp/sen_graph.adjlist', 'wb+') as handle:
         # pickle.dump(sen_graph, handle, protocol=pickle.HIGHEST_PROTOCOL)
         nx.write_adjlist(sen_graph, handle)
-    # sen_graph = nx.read_adjlist('tmp/sen_graph.adjlist', create_using=nx.DiGraph())
 
+    # sen_graph = nx.read_adjlist('tmp/sen_graph.adjlist', create_using=nx.DiGraph())
     # Coloring the graph by sentiment, then serialize
     colored_graph = coloring_nodes(sen_graph)
     with open('tmp/colored_graph.adjlist', 'wb+') as handle:
         # pickle.dump(colored_graph, handle, protocol=pickle.HIGHEST_PROTOCOL)
         nx.write_adjlist(colored_graph, handle)
-    # colored_graph = nx.read_adjlist('tmp/colored_graph.adjlist', create_using=nx.DiGraph())
 
+    # colored_graph = nx.read_adjlist('tmp/colored_graph.adjlist', create_using=nx.DiGraph())
     json_g = None
     if colored_graph.nodes():
         json_g = generate_json_from_graph(colored_graph)

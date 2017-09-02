@@ -8,7 +8,7 @@
 
 """
 import utils
-from colour import Color
+#from colour import Color
 import numpy as np
 
 N_COLOR = 101  # number of color in range
@@ -22,7 +22,9 @@ def coloring_nodes(g):
     min_sen,_ = utils.get_min_value_attribute(g, 'sentiment_score')
     # print max_sen, min_sen
     # colors = list(Color("red").range_to(Color("green"), N_COLOR))
-    colors = list(Color("#ff0000").range_to(Color("#0000ff"), N_COLOR))
+    # colors = list(Color("#ff0000").range_to(Color("#0000ff"), N_COLOR))
+    colors = calculate_gradient((255, 0, 0),(255,255,0), N_COLOR)
+
     # print colors
     #  print colors
     marks = np.linspace(min_sen,max_sen,N_COLOR+1)
@@ -39,3 +41,21 @@ def coloring_nodes(g):
             tg_g.node[n]['color'] = colors[int(N_COLOR/2)]
     # print tg_g.nodes(data=True)
     return tg_g
+
+
+def calculate_gradient(startcolor, endcolor, rows):
+    gradient = []
+    sr, sg, sb = startcolor
+    dr = (endcolor[0] - sr)/(rows-1)
+    dg = (endcolor[1] - sg)/(rows-1)
+    db = (endcolor[2] - sb)/(rows-1)
+    cr, cg, cb = sr, sg, sb
+    for r in range(rows):
+        gradient.append((cr,cg,cb))
+        cr += dr
+        cg += dg
+        cb += db
+        cr = max(min(cr,255),0)
+        cg = max(min(cg,255),0)
+        cb = max(min(cb,255),0)
+    return ['#%02x%02x%02x' % co for co in gradient]

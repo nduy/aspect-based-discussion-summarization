@@ -1,3038 +1,710 @@
 {
     "edges": [
         {
-            "from": "tray~com.~0x558265ea16eb2^29~0x59a9bfe9",
-            "id": "tray~com.~0x558265ea16eb2^29~0x59a9bfe9|pack~com.~0x558265ea19b57^76~0x59a9c0f3",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "pack~com.~0x558265ea19b57^76~0x59a9c0f3",
-            "value": 2
-        },
-        {
-            "from": "stuff~com.~0x558265ea15c2e^7~0x59a9bf75",
-            "id": "stuff~com.~0x558265ea15c2e^7~0x59a9bf75|garden_waste~com.~0x558265ea16d17^27~0x59a9bfba",
-            "label": "conj",
-            "title": "freq: 2",
-            "to": "garden_waste~com.~0x558265ea16d17^27~0x59a9bfba",
-            "value": 2
-        },
-        {
-            "from": "stuff~com.~0x558265ea15c2e^7~0x59a9bf75",
-            "id": "stuff~com.~0x558265ea15c2e^7~0x59a9bf75|food_waste~com.~0x558265ea16b3e^25~0x59a9c020",
-            "label": "nsubj",
-            "title": "freq: 2",
-            "to": "food_waste~com.~0x558265ea16b3e^25~0x59a9c020",
-            "value": 2
-        },
-        {
-            "from": "stuff~com.~0x558265ea15c2e^7~0x59a9bf75",
-            "id": "stuff~com.~0x558265ea15c2e^7~0x59a9bf75|apple_core~com.~0x558265ea16eb2^29~0x59a9bfad",
+            "from": "glass/plastic~com.~0x558333c608d67^13~0x59aa9751",
+            "id": "glass/plastic~com.~0x558333c608d67^13~0x59aa9751|collection~com.~0x558333c60947f^21~0x59aa974c",
             "label": "dep",
             "title": "freq: 2",
-            "to": "apple_core~com.~0x558265ea16eb2^29~0x59a9bfad",
+            "to": "collection~com.~0x558333c60947f^21~0x59aa974c",
             "value": 2
         },
         {
-            "from": "stuff~com.~0x558265ea15c2e^7~0x59a9bf75",
-            "id": "stuff~com.~0x558265ea15c2e^7~0x59a9bf75|garden~com.~0x558265ea17136^31~0x59a9c06c",
+            "from": "waste~com.~0x558333c608bb7^11~0x59aa9743",
+            "id": "waste~com.~0x558333c608bb7^11~0x59aa9743|kitchen~com.~0x558333c608bb7^11~0x59aa9743",
+            "label": "compound",
+            "title": "freq: 2",
+            "to": "kitchen~com.~0x558333c608bb7^11~0x59aa9743",
+            "value": 2
+        },
+        {
+            "from": "trouble~com.~0x558333c6085f1^2~0x59aa970c",
+            "id": "trouble~com.~0x558333c6085f1^2~0x59aa970c|rat~com.~0x558333c60851e^1~0x59aa970c",
             "label": "nmod",
             "title": "freq: 2",
-            "to": "garden~com.~0x558265ea17136^31~0x59a9c06c",
+            "to": "rat~com.~0x558333c60851e^1~0x59aa970c",
             "value": 2
         },
         {
-            "from": "cut_compost~com.~0x558265ea160d1^13~0x59a9bfa8",
-            "id": "cut_compost~com.~0x558265ea160d1^13~0x59a9bfa8|lawn_cut~com.~0x558265ea160d1^13~0x59a9bfa8",
+            "from": "lot~com.~0x558333c609770^25~0x59aa9765",
+            "id": "lot~com.~0x558333c609770^25~0x59aa9765|bin~com.~0x558333c6092c1^17~0x59aa973d",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "bin~com.~0x558333c6092c1^17~0x59aa973d",
+            "value": 2
+        },
+        {
+            "from": "lot~com.~0x558333c609770^25~0x59aa9765",
+            "id": "lot~com.~0x558333c609770^25~0x59aa9765|package~com.~0x558333c609770^25~0x59aa9765",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "package~com.~0x558333c609770^25~0x59aa9765",
+            "value": 2
+        },
+        {
+            "from": "lot~com.~0x558333c609770^25~0x59aa9765",
+            "id": "lot~com.~0x558333c609770^25~0x59aa9765|nappy~com.~0x558333c608fa8^15~0x59aa974f",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "nappy~com.~0x558333c608fa8^15~0x59aa974f",
+            "value": 2
+        },
+        {
+            "from": "people~com.~0x558333c608d67^13~0x59aa9751",
+            "id": "people~com.~0x558333c608d67^13~0x59aa9751|glass/plastic~com.~0x558333c608d67^13~0x59aa9751",
+            "label": "amod",
+            "title": "freq: 2",
+            "to": "glass/plastic~com.~0x558333c608d67^13~0x59aa9751",
+            "value": 2
+        },
+        {
+            "from": "people~com.~0x558333c608d67^13~0x59aa9751",
+            "id": "people~com.~0x558333c608d67^13~0x59aa9751|compost_bin~com.~0x558333c608d67^13~0x59aa9751",
+            "label": "dep",
+            "title": "freq: 2",
+            "to": "compost_bin~com.~0x558333c608d67^13~0x59aa9751",
+            "value": 2
+        },
+        {
+            "from": "waste_charge~com.~0x558333c608d67^13~0x59aa9751",
+            "id": "waste_charge~com.~0x558333c608d67^13~0x59aa9751|kitchen_waste~com.~0x558333c608d67^13~0x59aa9751",
+            "label": "compound",
+            "title": "freq: 2",
+            "to": "kitchen_waste~com.~0x558333c608d67^13~0x59aa9751",
+            "value": 2
+        },
+        {
+            "from": "rat~com.~0x558333c60851e^1~0x59aa970c",
+            "id": "rat~com.~0x558333c60851e^1~0x59aa970c|vermin~com.~0x558333c6091c8^16~0x59aa971f",
             "label": "conj",
             "title": "freq: 4",
-            "to": "lawn_cut~com.~0x558265ea160d1^13~0x59a9bfa8",
+            "to": "vermin~com.~0x558333c6091c8^16~0x59aa971f",
             "value": 4
         },
         {
-            "from": "cut_compost~com.~0x558265ea160d1^13~0x59a9bfa8",
-            "id": "cut_compost~com.~0x558265ea160d1^13~0x59a9bfa8|winter~com.~0x558265ea1989b^71~0x59a9c0e6",
-            "label": "dep",
+            "from": "rat~com.~0x558333c60851e^1~0x59aa970c",
+            "id": "rat~com.~0x558333c60851e^1~0x59aa970c|fox~com.~0x558333c6085f1^2~0x59aa970c",
+            "label": "conj",
             "title": "freq: 2",
-            "to": "winter~com.~0x558265ea1989b^71~0x59a9c0e6",
+            "to": "fox~com.~0x558333c6085f1^2~0x59aa970c",
             "value": 2
         },
         {
-            "from": "disposable~com.~0x558265ea19119^61~0x59a9c0df",
-            "id": "disposable~com.~0x558265ea19119^61~0x59a9c0df|child~com.~0x558265ea19119^61~0x59a9c0df",
+            "from": "week~com.~0x558333c608fa8^15~0x59aa973d",
+            "id": "week~com.~0x558333c608fa8^15~0x59aa973d|food/garden_waste~com.~0x558333c608fa8^15~0x59aa973d",
             "label": "nmod",
             "title": "freq: 2",
-            "to": "child~com.~0x558265ea19119^61~0x59a9c0df",
+            "to": "food/garden_waste~com.~0x558333c608fa8^15~0x59aa973d",
             "value": 2
         },
         {
-            "from": "garden~com.~0x558265ea17136^31~0x59a9c06c",
-            "id": "garden~com.~0x558265ea17136^31~0x59a9c06c|sort~com.~0x558265ea16eb2^29~0x59a9bfe9",
+            "from": "bit~com.~0x558333c609770^25~0x59aa9765",
+            "id": "bit~com.~0x558333c609770^25~0x59aa9765|package~com.~0x558333c609770^25~0x59aa9765",
             "label": "nmod",
             "title": "freq: 2",
-            "to": "sort~com.~0x558265ea16eb2^29~0x59a9bfe9",
+            "to": "package~com.~0x558333c609770^25~0x59aa9765",
             "value": 2
         },
         {
-            "from": "garden~com.~0x558265ea17136^31~0x59a9c06c",
-            "id": "garden~com.~0x558265ea17136^31~0x59a9c06c|matter~com.~0x558265ea19dc2^78~0x59a9c085",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "matter~com.~0x558265ea19dc2^78~0x59a9c085",
-            "value": 2
-        },
-        {
-            "from": "lot~com.~0x558265ea1a439^85~0x59a9c0ee",
-            "id": "lot~com.~0x558265ea1a439^85~0x59a9c0ee|waste~com.~0x558265ea1708b^30~0x59a9bfb1",
-            "label": "nmod",
-            "title": "freq: 6",
-            "to": "waste~com.~0x558265ea1708b^30~0x59a9bfb1",
-            "value": 6
-        },
-        {
-            "from": "lot~com.~0x558265ea1a439^85~0x59a9c0ee",
-            "id": "lot~com.~0x558265ea1a439^85~0x59a9c0ee|nappy~com.~0x558265ea17446^33~0x59a9c04a",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "nappy~com.~0x558265ea17446^33~0x59a9c04a",
-            "value": 2
-        },
-        {
-            "from": "lot~com.~0x558265ea1a439^85~0x59a9c0ee",
-            "id": "lot~com.~0x558265ea1a439^85~0x59a9c0ee|package~com.~0x558265ea17136^31~0x59a9bfec",
-            "label": "nmod",
-            "title": "freq: 6",
-            "to": "package~com.~0x558265ea17136^31~0x59a9bfec",
-            "value": 6
-        },
-        {
-            "from": "lot~com.~0x558265ea1a439^85~0x59a9c0ee",
-            "id": "lot~com.~0x558265ea1a439^85~0x59a9c0ee|waste_aside~com.~0x558265ea1a439^85~0x59a9c0ee",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "waste_aside~com.~0x558265ea1a439^85~0x59a9c0ee",
-            "value": 2
-        },
-        {
-            "from": "lot~com.~0x558265ea1a439^85~0x59a9c0ee",
-            "id": "lot~com.~0x558265ea1a439^85~0x59a9c0ee|bin~com.~0x558265ea16b3e^25~0x59a9c020",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "bin~com.~0x558265ea16b3e^25~0x59a9c020",
-            "value": 2
-        },
-        {
-            "from": "lot~com.~0x558265ea1a439^85~0x59a9c0ee",
-            "id": "lot~com.~0x558265ea1a439^85~0x59a9c0ee|mess~com.~0x558265ea181f8^47~0x59a9c01b",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "mess~com.~0x558265ea181f8^47~0x59a9c01b",
-            "value": 2
-        },
-        {
-            "from": "lot~com.~0x558265ea1a439^85~0x59a9c0ee",
-            "id": "lot~com.~0x558265ea1a439^85~0x59a9c0ee|liner~com.~0x558265ea1a358^84~0x59a9c047",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "liner~com.~0x558265ea1a358^84~0x59a9c047",
-            "value": 2
-        },
-        {
-            "from": "lot~com.~0x558265ea1a439^85~0x59a9c0ee",
-            "id": "lot~com.~0x558265ea1a439^85~0x59a9c0ee|house~com.~0x558265ea17ed7^46~0x59a9c0a6",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "house~com.~0x558265ea17ed7^46~0x59a9c0a6",
-            "value": 2
-        },
-        {
-            "from": "lot~com.~0x558265ea1a439^85~0x59a9c0ee",
-            "id": "lot~com.~0x558265ea1a439^85~0x59a9c0ee|people~com.~0x558265ea160d1^13~0x59a9bfce",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "people~com.~0x558265ea160d1^13~0x59a9bfce",
-            "value": 2
-        },
-        {
-            "from": "space~com.~0x558265ea160d1^13~0x59a9bfce",
-            "id": "space~com.~0x558265ea160d1^13~0x59a9bfce|bin~com.~0x558265ea16b3e^25~0x59a9c020",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "bin~com.~0x558265ea16b3e^25~0x59a9c020",
-            "value": 2
-        },
-        {
-            "from": "space~com.~0x558265ea160d1^13~0x59a9bfce",
-            "id": "space~com.~0x558265ea160d1^13~0x59a9bfce|compost_bin~com.~0x558265ea160d1^13~0x59a9bfce",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "compost_bin~com.~0x558265ea160d1^13~0x59a9bfce",
-            "value": 2
-        },
-        {
-            "from": "flat~com.~0x558265ea15b1f^5~0x59a9bf77",
-            "id": "flat~com.~0x558265ea15b1f^5~0x59a9bf77|adult~com.~0x558265ea16954^23~0x59a9bfee",
-            "label": "appos",
-            "title": "freq: 2",
-            "to": "adult~com.~0x558265ea16954^23~0x59a9bfee",
-            "value": 2
-        },
-        {
-            "from": "point~com.~0x558265ea17446^33~0x59a9c0a6",
-            "id": "point~com.~0x558265ea17446^33~0x59a9c0a6|life~com.~0x558265ea19dc2^78~0x59a9c085",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "life~com.~0x558265ea19dc2^78~0x59a9c085",
-            "value": 2
-        },
-        {
-            "from": "interest~com.~0x558265ea17ed7^46~0x59a9c07b",
-            "id": "interest~com.~0x558265ea17ed7^46~0x59a9c07b|fox~com.~0x558265ea17ed7^46~0x59a9c07b",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "fox~com.~0x558265ea17ed7^46~0x59a9c07b",
-            "value": 2
-        },
-        {
-            "from": "end~com.~0x558265ea160d1^13~0x59a9bfce",
-            "id": "end~com.~0x558265ea160d1^13~0x59a9bfce|leaf_fall~com.~0x558265ea160d1^13~0x59a9bfce",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "leaf_fall~com.~0x558265ea160d1^13~0x59a9bfce",
-            "value": 2
-        },
-        {
-            "from": "matter~com.~0x558265ea19dc2^78~0x59a9c085",
-            "id": "matter~com.~0x558265ea19dc2^78~0x59a9c085|people~com.~0x558265ea160d1^13~0x59a9bfce",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "people~com.~0x558265ea160d1^13~0x59a9bfce",
-            "value": 2
-        },
-        {
-            "from": "matter~com.~0x558265ea19dc2^78~0x59a9c085",
-            "id": "matter~com.~0x558265ea19dc2^78~0x59a9c085|life~com.~0x558265ea19dc2^78~0x59a9c085",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "life~com.~0x558265ea19dc2^78~0x59a9c085",
-            "value": 2
-        },
-        {
-            "from": "fortnightly~com.~0x558265ea1a4f9^86~0x59a9c0f8",
-            "id": "fortnightly~com.~0x558265ea1a4f9^86~0x59a9c0f8|collection~com.~0x558265ea17941^36~0x59a9bfc1",
-            "label": "dobj",
-            "title": "freq: 2",
-            "to": "collection~com.~0x558265ea17941^36~0x59a9bfc1",
-            "value": 2
-        },
-        {
-            "from": "fortnightly~com.~0x558265ea1a4f9^86~0x59a9c0f8",
-            "id": "fortnightly~com.~0x558265ea1a4f9^86~0x59a9c0f8|couple~com.~0x558265ea1a4f9^86~0x59a9c0f8",
-            "label": "advmod",
-            "title": "freq: 2",
-            "to": "couple~com.~0x558265ea1a4f9^86~0x59a9c0f8",
-            "value": 2
-        },
-        {
-            "from": "couple~com.~0x558265ea1a4f9^86~0x59a9c0f8",
-            "id": "couple~com.~0x558265ea1a4f9^86~0x59a9c0f8|year~com.~0x558265ea160d1^13~0x59a9bfce",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "year~com.~0x558265ea160d1^13~0x59a9bfce",
-            "value": 2
-        },
-        {
-            "from": "couple~com.~0x558265ea1a4f9^86~0x59a9c0f8",
-            "id": "couple~com.~0x558265ea1a4f9^86~0x59a9c0f8|month~com.~0x558265ea17136^31~0x59a9c013",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "month~com.~0x558265ea17136^31~0x59a9c013",
-            "value": 2
-        },
-        {
-            "from": "collection_schedule~com.~0x558265ea16384^15~0x59a9bf94",
-            "id": "collection_schedule~com.~0x558265ea16384^15~0x59a9bf94|week~com.~0x558265ea18f52^59~0x59a9c021",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "week~com.~0x558265ea18f52^59~0x59a9c021",
-            "value": 2
-        },
-        {
-            "from": "collection_schedule~com.~0x558265ea16384^15~0x59a9bf94",
-            "id": "collection_schedule~com.~0x558265ea16384^15~0x59a9bf94|grey_bin~com.~0x558265ea16384^15~0x59a9bfa1",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "grey_bin~com.~0x558265ea16384^15~0x59a9bfa1",
-            "value": 2
-        },
-        {
-            "from": "ivan_lewis~art.2~~0x59a9bf18",
-            "id": "ivan_lewis~art.2~~0x59a9bf18|labour~art.4~~0x59a9bf2f",
+            "from": "town_hall~art.4~~0x59aa96fe",
+            "id": "town_hall~art.4~~0x59aa96fe|bury~art.1~~0x59aa96e5",
             "label": "compound",
             "title": "freq: 2",
-            "to": "labour~art.4~~0x59a9bf2f",
+            "to": "bury~art.1~~0x59aa96e5",
             "value": 2
         },
         {
-            "from": "kitchen~com.~0x558265ea15f32^11~0x59a9bfa1",
-            "id": "kitchen~com.~0x558265ea15f32^11~0x59a9bfa1|garden~com.~0x558265ea17136^31~0x59a9c06c",
+            "from": "compost_bin~com.~0x558333c608d67^13~0x59aa9751",
+            "id": "compost_bin~com.~0x558333c608d67^13~0x59aa9751|kitchen_waste~com.~0x558333c608d67^13~0x59aa9751",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "kitchen_waste~com.~0x558333c608d67^13~0x59aa9751",
+            "value": 2
+        },
+        {
+            "from": "compost_bin~com.~0x558333c608d67^13~0x59aa9751",
+            "id": "compost_bin~com.~0x558333c608d67^13~0x59aa9751|end~com.~0x558333c608d67^13~0x59aa9747",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "end~com.~0x558333c608d67^13~0x59aa9747",
+            "value": 2
+        },
+        {
+            "from": "grey_bin~com.~0x558333c608fa8^15~0x59aa9745",
+            "id": "grey_bin~com.~0x558333c608fa8^15~0x59aa9745|week~com.~0x558333c608fa8^15~0x59aa973d",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "week~com.~0x558333c608fa8^15~0x59aa973d",
+            "value": 2
+        },
+        {
+            "from": "fox~com.~0x558333c6085f1^2~0x59aa970c",
+            "id": "fox~com.~0x558333c6085f1^2~0x59aa970c|vermin~com.~0x558333c6091c8^16~0x59aa971f",
             "label": "conj",
             "title": "freq: 2",
-            "to": "garden~com.~0x558265ea17136^31~0x59a9c06c",
+            "to": "vermin~com.~0x558333c6091c8^16~0x59aa971f",
             "value": 2
         },
         {
-            "from": "stalk~com.~0x558265ea16eb2^29~0x59a9bfad",
-            "id": "stalk~com.~0x558265ea16eb2^29~0x59a9bfad|vegetable~com.~0x558265ea16eb2^29~0x59a9bfad",
+            "from": "end~com.~0x558333c608d67^13~0x59aa9747",
+            "id": "end~com.~0x558333c608d67^13~0x59aa9747|leaf_fall~com.~0x558333c608d67^13~0x59aa9751",
             "label": "nmod",
             "title": "freq: 2",
-            "to": "vegetable~com.~0x558265ea16eb2^29~0x59a9bfad",
+            "to": "leaf_fall~com.~0x558333c608d67^13~0x59aa9751",
             "value": 2
         },
         {
-            "from": "solution~com.~0x558265ea16384^15~0x59a9bfe1",
-            "id": "solution~com.~0x558265ea16384^15~0x59a9bfe1|problem~com.~0x558265ea17446^33~0x59a9c09e",
-            "label": "nmod",
+            "from": "leaf_fall~com.~0x558333c608d67^13~0x59aa9751",
+            "id": "leaf_fall~com.~0x558333c608d67^13~0x59aa9751|year~art.3~~0x59aa96f7",
+            "label": "compound",
             "title": "freq: 2",
-            "to": "problem~com.~0x558265ea17446^33~0x59a9c09e",
+            "to": "year~art.3~~0x59aa96f7",
             "value": 2
         },
         {
-            "from": "winter~com.~0x558265ea1989b^71~0x59a9c0e6",
-            "id": "winter~com.~0x558265ea1989b^71~0x59a9c0e6|garden_waste~com.~0x558265ea16d17^27~0x59a9bfba",
+            "from": "cut_compost~com.~0x558333c608d67^13~0x59aa9747",
+            "id": "cut_compost~com.~0x558333c608d67^13~0x59aa9747|lawn_cut~com.~0x558333c608d67^13~0x59aa9747",
             "label": "conj",
-            "title": "freq: 2",
-            "to": "garden_waste~com.~0x558265ea16d17^27~0x59a9bfba",
-            "value": 2
-        },
-        {
-            "from": "nappy~com.~0x558265ea17446^33~0x59a9c04a",
-            "id": "nappy~com.~0x558265ea17446^33~0x59a9c04a|bin~com.~0x558265ea16b3e^25~0x59a9c020",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "bin~com.~0x558265ea16b3e^25~0x59a9c020",
-            "value": 2
-        },
-        {
-            "from": "nappy~com.~0x558265ea17446^33~0x59a9c04a",
-            "id": "nappy~com.~0x558265ea17446^33~0x59a9c04a|waste_aside~com.~0x558265ea1a439^85~0x59a9c0ee",
-            "label": "conj",
-            "title": "freq: 2",
-            "to": "waste_aside~com.~0x558265ea1a439^85~0x59a9c0ee",
-            "value": 2
-        },
-        {
-            "from": "nappy~com.~0x558265ea17446^33~0x59a9c04a",
-            "id": "nappy~com.~0x558265ea17446^33~0x59a9c04a|website~com.~0x558265ea1847b^51~0x59a9c0a3",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "website~com.~0x558265ea1847b^51~0x59a9c0a3",
-            "value": 2
-        },
-        {
-            "from": "package~com.~0x558265ea17136^31~0x59a9bfec",
-            "id": "package~com.~0x558265ea17136^31~0x59a9bfec|non-recyclable~com.~0x558265ea1ad77^100~0x59a9c06b",
-            "label": "amod",
-            "title": "freq: 2",
-            "to": "non-recyclable~com.~0x558265ea1ad77^100~0x59a9c06b",
-            "value": 2
-        },
-        {
-            "from": "grey_bin~com.~0x558265ea16384^15~0x59a9bfa1",
-            "id": "grey_bin~com.~0x558265ea16384^15~0x59a9bfa1|week~com.~0x558265ea18f52^59~0x59a9c021",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "week~com.~0x558265ea18f52^59~0x59a9c021",
-            "value": 2
-        },
-        {
-            "from": "problem~com.~0x558265ea17446^33~0x59a9c09e",
-            "id": "problem~com.~0x558265ea17446^33~0x59a9c09e|bin_space~art.7~~0x59a9bf4c",
-            "label": "nsubj",
-            "title": "freq: 2",
-            "to": "bin_space~art.7~~0x59a9bf4c",
-            "value": 2
-        },
-        {
-            "from": "problem~com.~0x558265ea17446^33~0x59a9c09e",
-            "id": "problem~com.~0x558265ea17446^33~0x59a9c09e|adult~com.~0x558265ea16954^23~0x59a9bfee",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "adult~com.~0x558265ea16954^23~0x59a9bfee",
-            "value": 2
-        },
-        {
-            "from": "problem~com.~0x558265ea17446^33~0x59a9c09e",
-            "id": "problem~com.~0x558265ea17446^33~0x59a9c09e|bag~com.~0x558265ea17ab8^37~0x59a9bfe5",
-            "label": "dep",
-            "title": "freq: 2",
-            "to": "bag~com.~0x558265ea17ab8^37~0x59a9bfe5",
-            "value": 2
-        },
-        {
-            "from": "leftover_food~com.~0x558265ea165c3^16~0x59a9bf87",
-            "id": "leftover_food~com.~0x558265ea165c3^16~0x59a9bf87|waste_packaging~com.~0x558265ea165c3^16~0x59a9bf87",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "waste_packaging~com.~0x558265ea165c3^16~0x59a9bf87",
-            "value": 2
-        },
-        {
-            "from": "crop~com.~0x558265ea17ed7^46~0x59a9c07b",
-            "id": "crop~com.~0x558265ea17ed7^46~0x59a9c07b|interest~com.~0x558265ea17ed7^46~0x59a9c07b",
-            "label": "conj",
-            "title": "freq: 2",
-            "to": "interest~com.~0x558265ea17ed7^46~0x59a9c07b",
-            "value": 2
-        },
-        {
-            "from": "impact~art.5~~0x59a9bf3e",
-            "id": "impact~art.5~~0x59a9bf3e|vermin~com.~0x558265ea15cf7^8~0x59a9bf6c",
-            "label": "nmod",
             "title": "freq: 4",
-            "to": "vermin~com.~0x558265ea15cf7^8~0x59a9bf6c",
+            "to": "lawn_cut~com.~0x558333c608d67^13~0x59aa9747",
             "value": 4
         },
         {
-            "from": "impact~art.5~~0x59a9bf3e",
-            "id": "impact~art.5~~0x59a9bf3e|environmental~com.~0x558265ea19aa5^75~0x59a9c0dc",
-            "label": "amod",
-            "title": "freq: 2",
-            "to": "environmental~com.~0x558265ea19aa5^75~0x59a9c0dc",
-            "value": 2
-        },
-        {
-            "from": "trouble~com.~0x558265ea16384^15~0x59a9bfb0",
-            "id": "trouble~com.~0x558265ea16384^15~0x59a9bfb0|household~com.~0x558265ea16384^15~0x59a9bfb0",
+            "from": "lawn_cut~com.~0x558333c608d67^13~0x59aa9747",
+            "id": "lawn_cut~com.~0x558333c608d67^13~0x59aa9747|year~art.3~~0x59aa96f7",
             "label": "nmod",
             "title": "freq: 2",
-            "to": "household~com.~0x558265ea16384^15~0x59a9bfb0",
+            "to": "year~art.3~~0x59aa96f7",
             "value": 2
         },
         {
-            "from": "trouble~com.~0x558265ea16384^15~0x59a9bfb0",
-            "id": "trouble~com.~0x558265ea16384^15~0x59a9bfb0|rat~com.~0x558265ea158e0^1~0x59a9bf68",
+            "from": "cut~art.2~~0x59aa96f5",
+            "id": "cut~art.2~~0x59aa96f5|year~art.3~~0x59aa96f7",
             "label": "nmod",
             "title": "freq: 2",
-            "to": "rat~com.~0x558265ea158e0^1~0x59a9bf68",
+            "to": "year~art.3~~0x59aa96f7",
             "value": 2
         },
         {
-            "from": "bag~com.~0x558265ea17ab8^37~0x59a9bfe5",
-            "id": "bag~com.~0x558265ea17ab8^37~0x59a9bfe5|week~com.~0x558265ea18f52^59~0x59a9c021",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "week~com.~0x558265ea18f52^59~0x59a9c021",
-            "value": 2
-        },
-        {
-            "from": "bag~com.~0x558265ea17ab8^37~0x59a9bfe5",
-            "id": "bag~com.~0x558265ea17ab8^37~0x59a9bfe5|compostable~com.~0x558265ea17ed7^46~0x59a9c071",
-            "label": "amod",
-            "title": "freq: 2",
-            "to": "compostable~com.~0x558265ea17ed7^46~0x59a9c071",
-            "value": 2
-        },
-        {
-            "from": "collection_scheme~com.~0x558265ea1a598^87~0x59a9c0ff",
-            "id": "collection_scheme~com.~0x558265ea1a598^87~0x59a9c0ff|fortnightly~com.~0x558265ea1a4f9^86~0x59a9c0f8",
-            "label": "amod",
-            "title": "freq: 2",
-            "to": "fortnightly~com.~0x558265ea1a4f9^86~0x59a9c0f8",
-            "value": 2
-        },
-        {
-            "from": "change~com.~0x558265ea16384^15~0x59a9bfa1",
-            "id": "change~com.~0x558265ea16384^15~0x59a9bfa1|bin_space~art.7~~0x59a9bf4c",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "bin_space~art.7~~0x59a9bf4c",
-            "value": 2
-        },
-        {
-            "from": "change~com.~0x558265ea16384^15~0x59a9bfa1",
-            "id": "change~com.~0x558265ea16384^15~0x59a9bfa1|collection_schedule~com.~0x558265ea16384^15~0x59a9bf94",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "collection_schedule~com.~0x558265ea16384^15~0x59a9bf94",
-            "value": 2
-        },
-        {
-            "from": "collection_process~com.~0x558265ea1708b^30~0x59a9bfb1",
-            "id": "collection_process~com.~0x558265ea1708b^30~0x59a9bfb1|waste~com.~0x558265ea1708b^30~0x59a9bfb1",
+            "from": "serving_flat~com.~0x558333c608aac^10~0x59aa9731",
+            "id": "serving_flat~com.~0x558333c608aac^10~0x59aa9731|bin~com.~0x558333c6092c1^17~0x59aa973d",
             "label": "compound",
             "title": "freq: 2",
-            "to": "waste~com.~0x558265ea1708b^30~0x59a9bfb1",
+            "to": "bin~com.~0x558333c6092c1^17~0x59aa973d",
             "value": 2
         },
         {
-            "from": "collection_process~com.~0x558265ea1708b^30~0x59a9bfb1",
-            "id": "collection_process~com.~0x558265ea1708b^30~0x59a9bfb1|food~com.~0x558265ea16d17^27~0x59a9bfba",
-            "label": "compound",
-            "title": "freq: 2",
-            "to": "food~com.~0x558265ea16d17^27~0x59a9bfba",
-            "value": 2
-        },
-        {
-            "from": "success~com.~0x558265ea1a598^87~0x59a9c0ff",
-            "id": "success~com.~0x558265ea1a598^87~0x59a9c0ff|collection_scheme~com.~0x558265ea1a598^87~0x59a9c0ff",
-            "label": "nsubj",
-            "title": "freq: 2",
-            "to": "collection_scheme~com.~0x558265ea1a598^87~0x59a9c0ff",
-            "value": 2
-        },
-        {
-            "from": "size~com.~0x558265ea1a0b1^80~0x59a9c011",
-            "id": "size~com.~0x558265ea1a0b1^80~0x59a9c011|councillor~art.5~~0x59a9bf3e",
+            "from": "empty~com.~0x558333c608aac^10~0x59aa9731",
+            "id": "empty~com.~0x558333c608aac^10~0x59aa9731|bin~com.~0x558333c6092c1^17~0x59aa973d",
             "label": "nmod",
             "title": "freq: 2",
-            "to": "councillor~art.5~~0x59a9bf3e",
+            "to": "bin~com.~0x558333c6092c1^17~0x59aa973d",
             "value": 2
         },
         {
-            "from": "size~com.~0x558265ea1a0b1^80~0x59a9c011",
-            "id": "size~com.~0x558265ea1a0b1^80~0x59a9c011|garden~com.~0x558265ea17136^31~0x59a9c06c",
+            "from": "empty~com.~0x558333c608aac^10~0x59aa9731",
+            "id": "empty~com.~0x558333c608aac^10~0x59aa9731|serving_flat~com.~0x558333c608aac^10~0x59aa9731",
             "label": "nmod",
             "title": "freq: 2",
-            "to": "garden~com.~0x558265ea17136^31~0x59a9c06c",
+            "to": "serving_flat~com.~0x558333c608aac^10~0x59aa9731",
             "value": 2
         },
         {
-            "from": "enthusiasm~com.~0x558265ea17ed7^46~0x59a9c020",
-            "id": "enthusiasm~com.~0x558265ea17ed7^46~0x59a9c020|green~com.~0x558265ea17ed7^46~0x59a9c020",
+            "from": "smell~com.~0x558333c6091c8^16~0x59aa9731",
+            "id": "smell~com.~0x558333c6091c8^16~0x59aa9731|nappy~com.~0x558333c608fa8^15~0x59aa974f",
             "label": "nmod",
             "title": "freq: 2",
-            "to": "green~com.~0x558265ea17ed7^46~0x59a9c020",
+            "to": "nappy~com.~0x558333c608fa8^15~0x59aa974f",
             "value": 2
         },
         {
-            "from": "week~com.~0x558265ea18f52^59~0x59a9c021",
-            "id": "week~com.~0x558265ea18f52^59~0x59a9c021|recycling_bin~art.7~~0x59a9bf4c",
-            "label": "nsubj",
-            "title": "freq: 2",
-            "to": "recycling_bin~art.7~~0x59a9bf4c",
-            "value": 2
-        },
-        {
-            "from": "week~com.~0x558265ea18f52^59~0x59a9c021",
-            "id": "week~com.~0x558265ea18f52^59~0x59a9c021|bin~com.~0x558265ea16b3e^25~0x59a9c020",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "bin~com.~0x558265ea16b3e^25~0x59a9c020",
-            "value": 2
-        },
-        {
-            "from": "week~com.~0x558265ea18f52^59~0x59a9c021",
-            "id": "week~com.~0x558265ea18f52^59~0x59a9c021|household~com.~0x558265ea16384^15~0x59a9bfb0",
-            "label": "dep",
-            "title": "freq: 4",
-            "to": "household~com.~0x558265ea16384^15~0x59a9bfb0",
-            "value": 4
-        },
-        {
-            "from": "week~com.~0x558265ea18f52^59~0x59a9c021",
-            "id": "week~com.~0x558265ea18f52^59~0x59a9c021|volume~com.~0x558265ea17446^33~0x59a9c09e",
-            "label": "nsubj",
-            "title": "freq: 2",
-            "to": "volume~com.~0x558265ea17446^33~0x59a9c09e",
-            "value": 2
-        },
-        {
-            "from": "week~com.~0x558265ea18f52^59~0x59a9c021",
-            "id": "week~com.~0x558265ea18f52^59~0x59a9c021|food/garden_waste~com.~0x558265ea16384^15~0x59a9bf94",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "food/garden_waste~com.~0x558265ea16384^15~0x59a9bf94",
-            "value": 2
-        },
-        {
-            "from": "waste_reycling~com.~0x558265ea1a68e^88~0x59a9c0a2",
-            "id": "waste_reycling~com.~0x558265ea1a68e^88~0x59a9c0a2|food~com.~0x558265ea16d17^27~0x59a9bfba",
-            "label": "compound",
-            "title": "freq: 2",
-            "to": "food~com.~0x558265ea16d17^27~0x59a9bfba",
-            "value": 2
-        },
-        {
-            "from": "clothe~com.~0x558265ea19b57^76~0x59a9c0f3",
-            "id": "clothe~com.~0x558265ea19b57^76~0x59a9c0f3|bed~com.~0x558265ea19dc2^78~0x59a9c05f",
+            "from": "smell~com.~0x558333c6091c8^16~0x59aa9731",
+            "id": "smell~com.~0x558333c6091c8^16~0x59aa9731|leftover_food~com.~0x558333c6091c8^16~0x59aa9731",
             "label": "conj",
             "title": "freq: 2",
-            "to": "bed~com.~0x558265ea19dc2^78~0x59a9c05f",
+            "to": "leftover_food~com.~0x558333c6091c8^16~0x59aa9731",
             "value": 2
         },
         {
-            "from": "reusables~com.~0x558265ea19119^61~0x59a9c0df",
-            "id": "reusables~com.~0x558265ea19119^61~0x59a9c0df|disposable~com.~0x558265ea19119^61~0x59a9c0df",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "disposable~com.~0x558265ea19119^61~0x59a9c0df",
-            "value": 2
-        },
-        {
-            "from": "susan_southworth~art.5~~0x59a9bf3e",
-            "id": "susan_southworth~art.5~~0x59a9bf3e|councillor~art.5~~0x59a9bf3e",
-            "label": "compound",
-            "title": "freq: 2",
-            "to": "councillor~art.5~~0x59a9bf3e",
-            "value": 2
-        },
-        {
-            "from": "susan_southworth~art.5~~0x59a9bf3e",
-            "id": "susan_southworth~art.5~~0x59a9bf3e|labour~art.4~~0x59a9bf2f",
-            "label": "appos",
-            "title": "freq: 2",
-            "to": "labour~art.4~~0x59a9bf2f",
-            "value": 2
-        },
-        {
-            "from": "apple_core~com.~0x558265ea16eb2^29~0x59a9bfad",
-            "id": "apple_core~com.~0x558265ea16eb2^29~0x59a9bfad|sort~com.~0x558265ea16eb2^29~0x59a9bfe9",
-            "label": "appos",
-            "title": "freq: 2",
-            "to": "sort~com.~0x558265ea16eb2^29~0x59a9bfe9",
-            "value": 2
-        },
-        {
-            "from": "apple_core~com.~0x558265ea16eb2^29~0x59a9bfad",
-            "id": "apple_core~com.~0x558265ea16eb2^29~0x59a9bfad|stalk~com.~0x558265ea16eb2^29~0x59a9bfad",
-            "label": "appos",
-            "title": "freq: 2",
-            "to": "stalk~com.~0x558265ea16eb2^29~0x59a9bfad",
-            "value": 2
-        },
-        {
-            "from": "empty~art.2~~0x59a9bf12",
-            "id": "empty~art.2~~0x59a9bf12|bin~com.~0x558265ea16b3e^25~0x59a9c020",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "bin~com.~0x558265ea16b3e^25~0x59a9c020",
-            "value": 2
-        },
-        {
-            "from": "empty~art.2~~0x59a9bf12",
-            "id": "empty~art.2~~0x59a9bf12|serving_flat~com.~0x558265ea15e26^10~0x59a9bf88",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "serving_flat~com.~0x558265ea15e26^10~0x59a9bf88",
-            "value": 2
-        },
-        {
-            "from": "bins-glass/plastic~com.~0x558265ea1600b^12~0x59a9bf7a",
-            "id": "bins-glass/plastic~com.~0x558265ea1600b^12~0x59a9bf7a|paper~com.~0x558265ea1600b^12~0x59a9bf7a",
+            "from": "bins-glass/plastic~com.~0x558333c608ca3^12~0x59aa9723",
+            "id": "bins-glass/plastic~com.~0x558333c608ca3^12~0x59aa9723|paper~com.~0x558333c608ca3^12~0x59aa9723",
             "label": "conj",
             "title": "freq: 2",
-            "to": "paper~com.~0x558265ea1600b^12~0x59a9bf7a",
+            "to": "paper~com.~0x558333c608ca3^12~0x59aa9723",
             "value": 2
         },
         {
-            "from": "bins-glass/plastic~com.~0x558265ea1600b^12~0x59a9bf7a",
-            "id": "bins-glass/plastic~com.~0x558265ea1600b^12~0x59a9bf7a|black~com.~0x558265ea1600b^12~0x59a9bf7a",
+            "from": "row~com.~0x558333c6092c1^17~0x59aa973d",
+            "id": "row~com.~0x558333c6092c1^17~0x59aa973d|terrace~com.~0x558333c6092c1^17~0x59aa973d",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "terrace~com.~0x558333c6092c1^17~0x59aa973d",
+            "value": 2
+        },
+        {
+            "from": "bin~com.~0x558333c6092c1^17~0x59aa973d",
+            "id": "bin~com.~0x558333c6092c1^17~0x59aa973d|food_waste~com.~0x558333c609770^25~0x59aa9765",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "food_waste~com.~0x558333c609770^25~0x59aa9765",
+            "value": 2
+        },
+        {
+            "from": "bin~com.~0x558333c6092c1^17~0x59aa973d",
+            "id": "bin~com.~0x558333c6092c1^17~0x59aa973d|waste~com.~0x558333c608bb7^11~0x59aa9743",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "waste~com.~0x558333c608bb7^11~0x59aa9743",
+            "value": 2
+        },
+        {
+            "from": "bin~com.~0x558333c6092c1^17~0x59aa973d",
+            "id": "bin~com.~0x558333c6092c1^17~0x59aa973d|paper~com.~0x558333c608ca3^12~0x59aa9723",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "paper~com.~0x558333c608ca3^12~0x59aa9723",
+            "value": 2
+        },
+        {
+            "from": "bin~com.~0x558333c6092c1^17~0x59aa973d",
+            "id": "bin~com.~0x558333c6092c1^17~0x59aa973d|family~com.~0x558333c609770^25~0x59aa975e",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "family~com.~0x558333c609770^25~0x59aa975e",
+            "value": 2
+        },
+        {
+            "from": "bin~com.~0x558333c6092c1^17~0x59aa973d",
+            "id": "bin~com.~0x558333c6092c1^17~0x59aa973d|bit~com.~0x558333c609770^25~0x59aa9765",
             "label": "conj",
             "title": "freq: 2",
-            "to": "black~com.~0x558265ea1600b^12~0x59a9bf7a",
+            "to": "bit~com.~0x558333c609770^25~0x59aa9765",
             "value": 2
         },
         {
-            "from": "family~art.6~~0x59a9bf44",
-            "id": "family~art.6~~0x59a9bf44|waste~com.~0x558265ea1708b^30~0x59a9bfb1",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "waste~com.~0x558265ea1708b^30~0x59a9bfb1",
-            "value": 2
-        },
-        {
-            "from": "family~art.6~~0x59a9bf44",
-            "id": "family~art.6~~0x59a9bf44|nappy~com.~0x558265ea17446^33~0x59a9c04a",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "nappy~com.~0x558265ea17446^33~0x59a9c04a",
-            "value": 2
-        },
-        {
-            "from": "complaint~com.~0x558265ea181f8^47~0x59a9c01b",
-            "id": "complaint~com.~0x558265ea181f8^47~0x59a9c01b|bin_collection~com.~0x558265ea18aca^57~0x59a9c091",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "bin_collection~com.~0x558265ea18aca^57~0x59a9c091",
-            "value": 2
-        },
-        {
-            "from": "fox~com.~0x558265ea17ed7^46~0x59a9c07b",
-            "id": "fox~com.~0x558265ea17ed7^46~0x59a9c07b|vermin~com.~0x558265ea15cf7^8~0x59a9bf6c",
+            "from": "glass_bottle~com.~0x558333c608fa8^15~0x59aa9754",
+            "id": "glass_bottle~com.~0x558333c608fa8^15~0x59aa9754|paper~com.~0x558333c608ca3^12~0x59aa9723",
             "label": "conj",
             "title": "freq: 2",
-            "to": "vermin~com.~0x558265ea15cf7^8~0x59a9bf6c",
+            "to": "paper~com.~0x558333c608ca3^12~0x59aa9723",
             "value": 2
         },
         {
-            "from": "row~com.~0x558265ea166a3^17~0x59a9bf95",
-            "id": "row~com.~0x558265ea166a3^17~0x59a9bf95|terrace~com.~0x558265ea166a3^17~0x59a9bf95",
+            "from": "leftover_food~com.~0x558333c6091c8^16~0x59aa9731",
+            "id": "leftover_food~com.~0x558333c6091c8^16~0x59aa9731|waste_packaging~com.~0x558333c6091c8^16~0x59aa9731",
             "label": "nmod",
             "title": "freq: 2",
-            "to": "terrace~com.~0x558265ea166a3^17~0x59a9bf95",
+            "to": "waste_packaging~com.~0x558333c6091c8^16~0x59aa9731",
             "value": 2
         },
         {
-            "from": "concern~com.~0x558265ea183d2^50~0x59a9bfe4",
-            "id": "concern~com.~0x558265ea183d2^50~0x59a9bfe4|week~com.~0x558265ea18f52^59~0x59a9c021",
-            "label": "nsubj",
-            "title": "freq: 2",
-            "to": "week~com.~0x558265ea18f52^59~0x59a9c021",
-            "value": 2
-        },
-        {
-            "from": "concern~com.~0x558265ea183d2^50~0x59a9bfe4",
-            "id": "concern~com.~0x558265ea183d2^50~0x59a9bfe4|bin_collection~com.~0x558265ea18aca^57~0x59a9c091",
+            "from": "terrace~com.~0x558333c6092c1^17~0x59aa973d",
+            "id": "terrace~com.~0x558333c6092c1^17~0x59aa973d|bin~com.~0x558333c6092c1^17~0x59aa973d",
             "label": "nmod",
             "title": "freq: 2",
-            "to": "bin_collection~com.~0x558265ea18aca^57~0x59a9c091",
+            "to": "bin~com.~0x558333c6092c1^17~0x59aa973d",
             "value": 2
         },
         {
-            "from": "tony_isherwood~art.7~~0x59a9bf4a",
-            "id": "tony_isherwood~art.7~~0x59a9bf4a|cabinet_member~art.7~~0x59a9bf4a",
-            "label": "appos",
-            "title": "freq: 2",
-            "to": "cabinet_member~art.7~~0x59a9bf4a",
-            "value": 2
-        },
-        {
-            "from": "tony_isherwood~art.7~~0x59a9bf4a",
-            "id": "tony_isherwood~art.7~~0x59a9bf4a|councillor~art.5~~0x59a9bf3e",
-            "label": "compound",
-            "title": "freq: 2",
-            "to": "councillor~art.5~~0x59a9bf3e",
-            "value": 2
-        },
-        {
-            "from": "lawn_cut~com.~0x558265ea160d1^13~0x59a9bfa8",
-            "id": "lawn_cut~com.~0x558265ea160d1^13~0x59a9bfa8|year~com.~0x558265ea160d1^13~0x59a9bfce",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "year~com.~0x558265ea160d1^13~0x59a9bfce",
-            "value": 2
-        },
-        {
-            "from": "back~com.~0x558265ea18dc4^58~0x59a9c02c",
-            "id": "back~com.~0x558265ea18dc4^58~0x59a9c02c|garden~com.~0x558265ea17136^31~0x59a9c06c",
+            "from": "packaging_fox~com.~0x558333c608981^8~0x59aa9710",
+            "id": "packaging_fox~com.~0x558333c608981^8~0x59aa9710|vermin~com.~0x558333c6091c8^16~0x59aa971f",
             "label": "conj",
             "title": "freq: 2",
-            "to": "garden~com.~0x558265ea17136^31~0x59a9c06c",
+            "to": "vermin~com.~0x558333c6091c8^16~0x59aa971f",
             "value": 2
         },
         {
-            "from": "councillor~art.5~~0x59a9bf3e",
-            "id": "councillor~art.5~~0x59a9bf3e|bury~art.2~~0x59a9bf21",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "bury~art.2~~0x59a9bf21",
-            "value": 2
-        },
-        {
-            "from": "waste_packaging~com.~0x558265ea165c3^16~0x59a9bf87",
-            "id": "waste_packaging~com.~0x558265ea165c3^16~0x59a9bf87|example~art.5~~0x59a9bf3a",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "example~art.5~~0x59a9bf3a",
-            "value": 2
-        },
-        {
-            "from": "bill~art.5~~0x59a9bf3a",
-            "id": "bill~art.5~~0x59a9bf3a|example~art.5~~0x59a9bf3a",
-            "label": "compound",
-            "title": "freq: 2",
-            "to": "example~art.5~~0x59a9bf3a",
-            "value": 2
-        },
-        {
-            "from": "range~com.~0x558265ea17941^36~0x59a9bfc1",
-            "id": "range~com.~0x558265ea17941^36~0x59a9bfc1|reason~com.~0x558265ea17941^36~0x59a9bfcf",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "reason~com.~0x558265ea17941^36~0x59a9bfcf",
-            "value": 2
-        },
-        {
-            "from": "garden_waste~com.~0x558265ea16d17^27~0x59a9bfba",
-            "id": "garden_waste~com.~0x558265ea16d17^27~0x59a9bfba|compost~com.~0x558265ea16d17^27~0x59a9bfba",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "compost~com.~0x558265ea16d17^27~0x59a9bfba",
-            "value": 2
-        },
-        {
-            "from": "garden_waste~com.~0x558265ea16d17^27~0x59a9bfba",
-            "id": "garden_waste~com.~0x558265ea16d17^27~0x59a9bfba|food_waste~com.~0x558265ea16b3e^25~0x59a9c020",
-            "label": "compound",
-            "title": "freq: 2",
-            "to": "food_waste~com.~0x558265ea16b3e^25~0x59a9c020",
-            "value": 2
-        },
-        {
-            "from": "garden_waste~com.~0x558265ea16d17^27~0x59a9bfba",
-            "id": "garden_waste~com.~0x558265ea16d17^27~0x59a9bfba|food~com.~0x558265ea16d17^27~0x59a9bfba",
-            "label": "compound",
-            "title": "freq: 2",
-            "to": "food~com.~0x558265ea16d17^27~0x59a9bfba",
-            "value": 2
-        },
-        {
-            "from": "glass_bottle~com.~0x558265ea16384^15~0x59a9bfce",
-            "id": "glass_bottle~com.~0x558265ea16384^15~0x59a9bfce|cardboard~com.~0x558265ea16384^15~0x59a9bfce",
+            "from": "packaging_fox~com.~0x558333c608981^8~0x59aa9710",
+            "id": "packaging_fox~com.~0x558333c608981^8~0x59aa9710|rat~com.~0x558333c60851e^1~0x59aa970c",
             "label": "conj",
             "title": "freq: 2",
-            "to": "cardboard~com.~0x558265ea16384^15~0x59a9bfce",
+            "to": "rat~com.~0x558333c60851e^1~0x59aa970c",
             "value": 2
         },
         {
-            "from": "glass_bottle~com.~0x558265ea16384^15~0x59a9bfce",
-            "id": "glass_bottle~com.~0x558265ea16384^15~0x59a9bfce|paper~com.~0x558265ea1600b^12~0x59a9bf7a",
-            "label": "conj",
-            "title": "freq: 2",
-            "to": "paper~com.~0x558265ea1600b^12~0x59a9bf7a",
-            "value": 2
-        },
-        {
-            "from": "packaging_fox~com.~0x558265ea15cf7^8~0x59a9bf6c",
-            "id": "packaging_fox~com.~0x558265ea15cf7^8~0x59a9bf6c|vermin~com.~0x558265ea15cf7^8~0x59a9bf6c",
-            "label": "conj",
-            "title": "freq: 2",
-            "to": "vermin~com.~0x558265ea15cf7^8~0x59a9bf6c",
-            "value": 2
-        },
-        {
-            "from": "packaging_fox~com.~0x558265ea15cf7^8~0x59a9bf6c",
-            "id": "packaging_fox~com.~0x558265ea15cf7^8~0x59a9bf6c|rat~com.~0x558265ea158e0^1~0x59a9bf68",
-            "label": "conj",
-            "title": "freq: 2",
-            "to": "rat~com.~0x558265ea158e0^1~0x59a9bf68",
-            "value": 2
-        },
-        {
-            "from": "smell~art.5~~0x59a9bf3e",
-            "id": "smell~art.5~~0x59a9bf3e|nappy~com.~0x558265ea17446^33~0x59a9c04a",
+            "from": "collection_schedule~com.~0x558333c608fa8^15~0x59aa9745",
+            "id": "collection_schedule~com.~0x558333c608fa8^15~0x59aa9745|week~com.~0x558333c608fa8^15~0x59aa973d",
             "label": "nmod",
             "title": "freq: 2",
-            "to": "nappy~com.~0x558265ea17446^33~0x59a9c04a",
+            "to": "week~com.~0x558333c608fa8^15~0x59aa973d",
             "value": 2
         },
         {
-            "from": "smell~art.5~~0x59a9bf3e",
-            "id": "smell~art.5~~0x59a9bf3e|leftover_food~com.~0x558265ea165c3^16~0x59a9bf87",
-            "label": "conj",
+            "from": "collection_schedule~com.~0x558333c608fa8^15~0x59aa9745",
+            "id": "collection_schedule~com.~0x558333c608fa8^15~0x59aa9745|grey_bin~com.~0x558333c608fa8^15~0x59aa9745",
+            "label": "nmod",
             "title": "freq: 2",
-            "to": "leftover_food~com.~0x558265ea165c3^16~0x59a9bf87",
+            "to": "grey_bin~com.~0x558333c608fa8^15~0x59aa9745",
             "value": 2
         },
         {
-            "from": "fault~com.~0x558265ea19dc2^78~0x59a9c075",
-            "id": "fault~com.~0x558265ea19dc2^78~0x59a9c075|government~art.2~~0x59a9bf1c",
+            "from": "budget~art.3~~0x59aa96f7",
+            "id": "budget~art.3~~0x59aa96f7|council~art.3~~0x59aa96f7",
             "label": "nmod:poss",
             "title": "freq: 2",
-            "to": "government~art.2~~0x59a9bf1c",
+            "to": "council~art.3~~0x59aa96f7",
             "value": 2
         },
         {
-            "from": "fault~com.~0x558265ea19dc2^78~0x59a9c075",
-            "id": "fault~com.~0x558265ea19dc2^78~0x59a9c075|point~com.~0x558265ea17446^33~0x59a9c0a6",
-            "label": "advmod",
-            "title": "freq: 2",
-            "to": "point~com.~0x558265ea17446^33~0x59a9c0a6",
-            "value": 2
-        },
-        {
-            "from": "waste_bin~com.~0x558265ea18f52^59~0x59a9c021",
-            "id": "waste_bin~com.~0x558265ea18f52^59~0x59a9c021|black~com.~0x558265ea1600b^12~0x59a9bf7a",
-            "label": "compound",
-            "title": "freq: 4",
-            "to": "black~com.~0x558265ea1600b^12~0x59a9bf7a",
-            "value": 4
-        },
-        {
-            "from": "waste~com.~0x558265ea1708b^30~0x59a9bfb1",
-            "id": "waste~com.~0x558265ea1708b^30~0x59a9bfb1|week~com.~0x558265ea18f52^59~0x59a9c021",
-            "label": "dep",
-            "title": "freq: 3",
-            "to": "week~com.~0x558265ea18f52^59~0x59a9c021",
-            "value": 3
-        },
-        {
-            "from": "waste~com.~0x558265ea1708b^30~0x59a9bfb1",
-            "id": "waste~com.~0x558265ea1708b^30~0x59a9bfb1|food~com.~0x558265ea16d17^27~0x59a9bfba",
-            "label": "compound",
-            "title": "freq: 2",
-            "to": "food~com.~0x558265ea16d17^27~0x59a9bfba",
-            "value": 2
-        },
-        {
-            "from": "waste~com.~0x558265ea1708b^30~0x59a9bfb1",
-            "id": "waste~com.~0x558265ea1708b^30~0x59a9bfb1|bin~com.~0x558265ea16b3e^25~0x59a9c020",
+            "from": "budget~art.3~~0x59aa96f7",
+            "id": "budget~art.3~~0x59aa96f7|year~art.3~~0x59aa96f7",
             "label": "nmod",
             "title": "freq: 2",
-            "to": "bin~com.~0x558265ea16b3e^25~0x59a9c020",
+            "to": "year~art.3~~0x59aa96f7",
             "value": 2
-        },
-        {
-            "from": "waste~com.~0x558265ea1708b^30~0x59a9bfb1",
-            "id": "waste~com.~0x558265ea1708b^30~0x59a9bfb1|kitchen~com.~0x558265ea15f32^11~0x59a9bfa1",
-            "label": "compound",
-            "title": "freq: 2",
-            "to": "kitchen~com.~0x558265ea15f32^11~0x59a9bfa1",
-            "value": 2
-        },
-        {
-            "from": "waste~com.~0x558265ea1708b^30~0x59a9bfb1",
-            "id": "waste~com.~0x558265ea1708b^30~0x59a9bfb1|liner~com.~0x558265ea1a358^84~0x59a9c047",
-            "label": "dep",
-            "title": "freq: 2",
-            "to": "liner~com.~0x558265ea1a358^84~0x59a9c047",
-            "value": 2
-        },
-        {
-            "from": "amount~com.~0x558265ea16eb2^29~0x59a9bff5",
-            "id": "amount~com.~0x558265ea16eb2^29~0x59a9bff5|waste~com.~0x558265ea1708b^30~0x59a9bfb1",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "waste~com.~0x558265ea1708b^30~0x59a9bfb1",
-            "value": 2
-        },
-        {
-            "from": "amount~com.~0x558265ea16eb2^29~0x59a9bff5",
-            "id": "amount~com.~0x558265ea16eb2^29~0x59a9bff5|package~com.~0x558265ea17136^31~0x59a9bfec",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "package~com.~0x558265ea17136^31~0x59a9bfec",
-            "value": 2
-        },
-        {
-            "from": "kitchen_waste~com.~0x558265ea160d1^13~0x59a9bfce",
-            "id": "kitchen_waste~com.~0x558265ea160d1^13~0x59a9bfce|stuff~com.~0x558265ea15c2e^7~0x59a9bf75",
-            "label": "conj",
-            "title": "freq: 2",
-            "to": "stuff~com.~0x558265ea15c2e^7~0x59a9bf75",
-            "value": 2
-        },
-        {
-            "from": "kitchen_waste~com.~0x558265ea160d1^13~0x59a9bfce",
-            "id": "kitchen_waste~com.~0x558265ea160d1^13~0x59a9bfce|vegetable~com.~0x558265ea16eb2^29~0x59a9bfad",
-            "label": "compound",
-            "title": "freq: 2",
-            "to": "vegetable~com.~0x558265ea16eb2^29~0x59a9bfad",
-            "value": 2
-        },
-        {
-            "from": "people~com.~0x558265ea160d1^13~0x59a9bfce",
-            "id": "people~com.~0x558265ea160d1^13~0x59a9bfce|baby~com.~0x558265ea17446^33~0x59a9c062",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "baby~com.~0x558265ea17446^33~0x59a9c062",
-            "value": 2
-        },
-        {
-            "from": "people~com.~0x558265ea160d1^13~0x59a9bfce",
-            "id": "people~com.~0x558265ea160d1^13~0x59a9bfce|glass/plastic~com.~0x558265ea160d1^13~0x59a9bfce",
-            "label": "amod",
-            "title": "freq: 2",
-            "to": "glass/plastic~com.~0x558265ea160d1^13~0x59a9bfce",
-            "value": 2
-        },
-        {
-            "from": "people~com.~0x558265ea160d1^13~0x59a9bfce",
-            "id": "people~com.~0x558265ea160d1^13~0x59a9bfce|house~com.~0x558265ea17ed7^46~0x59a9c0a6",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "house~com.~0x558265ea17ed7^46~0x59a9c0a6",
-            "value": 2
-        },
-        {
-            "from": "people~com.~0x558265ea160d1^13~0x59a9bfce",
-            "id": "people~com.~0x558265ea160d1^13~0x59a9bfce|point~com.~0x558265ea17446^33~0x59a9c0a6",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "point~com.~0x558265ea17446^33~0x59a9c0a6",
-            "value": 2
-        },
-        {
-            "from": "people~com.~0x558265ea160d1^13~0x59a9bfce",
-            "id": "people~com.~0x558265ea160d1^13~0x59a9bfce|compost_bin~com.~0x558265ea160d1^13~0x59a9bfce",
-            "label": "dep",
-            "title": "freq: 2",
-            "to": "compost_bin~com.~0x558265ea160d1^13~0x59a9bfce",
-            "value": 2
-        },
-        {
-            "from": "leaf_fall~com.~0x558265ea160d1^13~0x59a9bfce",
-            "id": "leaf_fall~com.~0x558265ea160d1^13~0x59a9bfce|year~com.~0x558265ea160d1^13~0x59a9bfce",
-            "label": "compound",
-            "title": "freq: 2",
-            "to": "year~com.~0x558265ea160d1^13~0x59a9bfce",
-            "value": 2
-        },
-        {
-            "from": "disdain~com.~0x558265ea1a598^87~0x59a9c0ff",
-            "id": "disdain~com.~0x558265ea1a598^87~0x59a9c0ff|success~com.~0x558265ea1a598^87~0x59a9c0ff",
-            "label": "dep",
-            "title": "freq: 2",
-            "to": "success~com.~0x558265ea1a598^87~0x59a9c0ff",
-            "value": 2
-        },
-        {
-            "from": "recycle~com.~0x558265ea181f8^47~0x59a9c00c",
-            "id": "recycle~com.~0x558265ea181f8^47~0x59a9c00c|e.g.~com.~0x558265ea17ed7^46~0x59a9c071",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "e.g.~com.~0x558265ea17ed7^46~0x59a9c071",
-            "value": 2
-        },
-        {
-            "from": "recycle~com.~0x558265ea181f8^47~0x59a9c00c",
-            "id": "recycle~com.~0x558265ea181f8^47~0x59a9c00c|compostable~com.~0x558265ea17ed7^46~0x59a9c071",
-            "label": "amod",
-            "title": "freq: 2",
-            "to": "compostable~com.~0x558265ea17ed7^46~0x59a9c071",
-            "value": 2
-        },
-        {
-            "from": "line~com.~0x558265ea16eb2^29~0x59a9bfe9",
-            "id": "line~com.~0x558265ea16eb2^29~0x59a9bfe9|box~com.~0x558265ea16eb2^29~0x59a9bfe9",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "box~com.~0x558265ea16eb2^29~0x59a9bfe9",
-            "value": 2
-        },
-        {
-            "from": "vermin~com.~0x558265ea15cf7^8~0x59a9bf6c",
-            "id": "vermin~com.~0x558265ea15cf7^8~0x59a9bf6c|smell~art.5~~0x59a9bf3e",
-            "label": "conj",
-            "title": "freq: 2",
-            "to": "smell~art.5~~0x59a9bf3e",
-            "value": 2
-        },
-        {
-            "from": "vermin~com.~0x558265ea15cf7^8~0x59a9bf6c",
-            "id": "vermin~com.~0x558265ea15cf7^8~0x59a9bf6c|fly-tipping~art.5~~0x59a9bf3e",
-            "label": "conj",
-            "title": "freq: 2",
-            "to": "fly-tipping~art.5~~0x59a9bf3e",
-            "value": 2
-        },
-        {
-            "from": "cabinet_member~art.7~~0x59a9bf4a",
-            "id": "cabinet_member~art.7~~0x59a9bf4a|environment~art.7~~0x59a9bf4a",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "environment~art.7~~0x59a9bf4a",
-            "value": 2
-        },
-        {
-            "from": "terrace~com.~0x558265ea166a3^17~0x59a9bf95",
-            "id": "terrace~com.~0x558265ea166a3^17~0x59a9bf95|bin~com.~0x558265ea16b3e^25~0x59a9c020",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "bin~com.~0x558265ea16b3e^25~0x59a9c020",
-            "value": 2
-        },
-        {
-            "from": "waste_aside~com.~0x558265ea1a439^85~0x59a9c0ee",
-            "id": "waste_aside~com.~0x558265ea1a439^85~0x59a9c0ee|type~com.~0x558265ea17446^33~0x59a9c09e",
-            "label": "compound",
-            "title": "freq: 2",
-            "to": "type~com.~0x558265ea17446^33~0x59a9c09e",
-            "value": 2
-        },
-        {
-            "from": "waste_aside~com.~0x558265ea1a439^85~0x59a9c0ee",
-            "id": "waste_aside~com.~0x558265ea1a439^85~0x59a9c0ee|nappy~com.~0x558265ea17446^33~0x59a9c04a",
-            "label": "dep",
-            "title": "freq: 2",
-            "to": "nappy~com.~0x558265ea17446^33~0x59a9c04a",
-            "value": 2
-        },
-        {
-            "from": "waste_aside~com.~0x558265ea1a439^85~0x59a9c0ee",
-            "id": "waste_aside~com.~0x558265ea1a439^85~0x59a9c0ee|black~com.~0x558265ea1600b^12~0x59a9bf7a",
-            "label": "compound",
-            "title": "freq: 2",
-            "to": "black~com.~0x558265ea1600b^12~0x59a9bf7a",
-            "value": 2
-        },
-        {
-            "from": "part~com.~0x558265ea1a2b3^83~0x59a9c0ea",
-            "id": "part~com.~0x558265ea1a2b3^83~0x59a9c0ea|solution~com.~0x558265ea16384^15~0x59a9bfe1",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "solution~com.~0x558265ea16384^15~0x59a9bfe1",
-            "value": 2
-        },
-        {
-            "from": "part~com.~0x558265ea1a2b3^83~0x59a9c0ea",
-            "id": "part~com.~0x558265ea1a2b3^83~0x59a9c0ea|rule~com.~0x558265ea1a2b3^83~0x59a9c0ea",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "rule~com.~0x558265ea1a2b3^83~0x59a9c0ea",
-            "value": 2
-        },
-        {
-            "from": "compost_bin~com.~0x558265ea160d1^13~0x59a9bfce",
-            "id": "compost_bin~com.~0x558265ea160d1^13~0x59a9bfce|garden~com.~0x558265ea17136^31~0x59a9c06c",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "garden~com.~0x558265ea17136^31~0x59a9c06c",
-            "value": 2
-        },
-        {
-            "from": "compost_bin~com.~0x558265ea160d1^13~0x59a9bfce",
-            "id": "compost_bin~com.~0x558265ea160d1^13~0x59a9bfce|end~com.~0x558265ea160d1^13~0x59a9bfce",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "end~com.~0x558265ea160d1^13~0x59a9bfce",
-            "value": 2
-        },
-        {
-            "from": "compost_bin~com.~0x558265ea160d1^13~0x59a9bfce",
-            "id": "compost_bin~com.~0x558265ea160d1^13~0x59a9bfce|kitchen_waste~com.~0x558265ea160d1^13~0x59a9bfce",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "kitchen_waste~com.~0x558265ea160d1^13~0x59a9bfce",
-            "value": 2
-        },
-        {
-            "from": "cut~art.2~~0x59a9bf16",
-            "id": "cut~art.2~~0x59a9bf16|year~com.~0x558265ea160d1^13~0x59a9bfce",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "year~com.~0x558265ea160d1^13~0x59a9bfce",
-            "value": 2
-        },
-        {
-            "from": "expenditure~com.~0x558265ea18581^52~0x59a9bfe2",
-            "id": "expenditure~com.~0x558265ea18581^52~0x59a9bfe2|disposable~com.~0x558265ea19119^61~0x59a9c0df",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "disposable~com.~0x558265ea19119^61~0x59a9c0df",
-            "value": 2
-        },
-        {
-            "from": "expenditure~com.~0x558265ea18581^52~0x59a9bfe2",
-            "id": "expenditure~com.~0x558265ea18581^52~0x59a9bfe2|reusables~com.~0x558265ea19119^61~0x59a9c0df",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "reusables~com.~0x558265ea19119^61~0x59a9c0df",
-            "value": 2
-        },
-        {
-            "from": "adult~com.~0x558265ea16954^23~0x59a9bfee",
-            "id": "adult~com.~0x558265ea16954^23~0x59a9bfee|household~com.~0x558265ea16384^15~0x59a9bfb0",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "household~com.~0x558265ea16384^15~0x59a9bfb0",
-            "value": 2
-        },
-        {
-            "from": "adult~com.~0x558265ea16954^23~0x59a9bfee",
-            "id": "adult~com.~0x558265ea16954^23~0x59a9bfee|baby~com.~0x558265ea17446^33~0x59a9c062",
-            "label": "appos",
-            "title": "freq: 2",
-            "to": "baby~com.~0x558265ea17446^33~0x59a9c062",
-            "value": 2
-        },
-        {
-            "from": "adult~com.~0x558265ea16954^23~0x59a9bfee",
-            "id": "adult~com.~0x558265ea16954^23~0x59a9bfee|child~com.~0x558265ea19119^61~0x59a9c0df",
-            "label": "conj",
-            "title": "freq: 2",
-            "to": "child~com.~0x558265ea19119^61~0x59a9c0df",
-            "value": 2
-        },
-        {
-            "from": "treatment~art.7~~0x59a9bf4e",
-            "id": "treatment~art.7~~0x59a9bf4e|waste~com.~0x558265ea1708b^30~0x59a9bfb1",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "waste~com.~0x558265ea1708b^30~0x59a9bfb1",
-            "value": 2
-        },
-        {
-            "from": "pack~com.~0x558265ea19b57^76~0x59a9c0f3",
-            "id": "pack~com.~0x558265ea19b57^76~0x59a9c0f3|glass~art.2~~0x59a9bf11",
-            "label": "dep",
-            "title": "freq: 2",
-            "to": "glass~art.2~~0x59a9bf11",
-            "value": 2
-        },
-        {
-            "from": "pack~com.~0x558265ea19b57^76~0x59a9c0f3",
-            "id": "pack~com.~0x558265ea19b57^76~0x59a9c0f3|cardboard~com.~0x558265ea16384^15~0x59a9bfce",
-            "label": "dep",
-            "title": "freq: 2",
-            "to": "cardboard~com.~0x558265ea16384^15~0x59a9bfce",
-            "value": 2
-        },
-        {
-            "from": "pack~com.~0x558265ea19b57^76~0x59a9c0f3",
-            "id": "pack~com.~0x558265ea19b57^76~0x59a9c0f3|paper~com.~0x558265ea1600b^12~0x59a9bf7a",
-            "label": "dep",
-            "title": "freq: 2",
-            "to": "paper~com.~0x558265ea1600b^12~0x59a9bf7a",
-            "value": 2
-        },
-        {
-            "from": "bin_space~art.7~~0x59a9bf4c",
-            "id": "bin_space~art.7~~0x59a9bf4c|recycling_bin~art.7~~0x59a9bf4c",
-            "label": "compound",
-            "title": "freq: 2",
-            "to": "recycling_bin~art.7~~0x59a9bf4c",
-            "value": 2
-        },
-        {
-            "from": "bin_space~art.7~~0x59a9bf4c",
-            "id": "bin_space~art.7~~0x59a9bf4c|grey_bin~com.~0x558265ea16384^15~0x59a9bfa1",
-            "label": "compound",
-            "title": "freq: 2",
-            "to": "grey_bin~com.~0x558265ea16384^15~0x59a9bfa1",
-            "value": 2
-        },
-        {
-            "from": "meat~com.~0x558265ea16eb2^29~0x59a9bfe9",
-            "id": "meat~com.~0x558265ea16eb2^29~0x59a9bfe9|line~com.~0x558265ea16eb2^29~0x59a9bfe9",
-            "label": "appos",
-            "title": "freq: 2",
-            "to": "line~com.~0x558265ea16eb2^29~0x59a9bfe9",
-            "value": 2
-        },
-        {
-            "from": "meat~com.~0x558265ea16eb2^29~0x59a9bfe9",
-            "id": "meat~com.~0x558265ea16eb2^29~0x59a9bfe9|bag~com.~0x558265ea17ab8^37~0x59a9bfe5",
-            "label": "conj",
-            "title": "freq: 2",
-            "to": "bag~com.~0x558265ea17ab8^37~0x59a9bfe5",
-            "value": 2
-        },
-        {
-            "from": "meat~com.~0x558265ea16eb2^29~0x59a9bfe9",
-            "id": "meat~com.~0x558265ea16eb2^29~0x59a9bfe9|tray~com.~0x558265ea16eb2^29~0x59a9bfe9",
-            "label": "appos",
-            "title": "freq: 2",
-            "to": "tray~com.~0x558265ea16eb2^29~0x59a9bfe9",
-            "value": 2
-        },
-        {
-            "from": "meat~com.~0x558265ea16eb2^29~0x59a9bfe9",
-            "id": "meat~com.~0x558265ea16eb2^29~0x59a9bfe9|tube~com.~0x558265ea16eb2^29~0x59a9bfe9",
-            "label": "appos",
-            "title": "freq: 2",
-            "to": "tube~com.~0x558265ea16eb2^29~0x59a9bfe9",
-            "value": 2
-        },
-        {
-            "from": "meat~com.~0x558265ea16eb2^29~0x59a9bfe9",
-            "id": "meat~com.~0x558265ea16eb2^29~0x59a9bfe9|sort~com.~0x558265ea16eb2^29~0x59a9bfe9",
-            "label": "appos",
-            "title": "freq: 2",
-            "to": "sort~com.~0x558265ea16eb2^29~0x59a9bfe9",
-            "value": 2
-        },
-        {
-            "from": "service~com.~0x558265ea19dc2^78~0x59a9c085",
-            "id": "service~com.~0x558265ea19dc2^78~0x59a9c085|matter~com.~0x558265ea19dc2^78~0x59a9c085",
-            "label": "acl:relcl",
-            "title": "freq: 2",
-            "to": "matter~com.~0x558265ea19dc2^78~0x59a9c085",
-            "value": 2
-        },
-        {
-            "from": "bin~com.~0x558265ea16b3e^25~0x59a9c020",
-            "id": "bin~com.~0x558265ea16b3e^25~0x59a9c020|waste~com.~0x558265ea1708b^30~0x59a9bfb1",
-            "label": "conj",
-            "title": "freq: 5",
-            "to": "waste~com.~0x558265ea1708b^30~0x59a9bfb1",
-            "value": 5
-        },
-        {
-            "from": "bin~com.~0x558265ea16b3e^25~0x59a9c020",
-            "id": "bin~com.~0x558265ea16b3e^25~0x59a9c020|winter~com.~0x558265ea1989b^71~0x59a9c0e6",
-            "label": "dep",
-            "title": "freq: 2",
-            "to": "winter~com.~0x558265ea1989b^71~0x59a9c0e6",
-            "value": 2
-        },
-        {
-            "from": "bin~com.~0x558265ea16b3e^25~0x59a9c020",
-            "id": "bin~com.~0x558265ea16b3e^25~0x59a9c020|paper~com.~0x558265ea1600b^12~0x59a9bf7a",
-            "label": "compound",
-            "title": "freq: 6",
-            "to": "paper~com.~0x558265ea1600b^12~0x59a9bf7a",
-            "value": 6
-        },
-        {
-            "from": "bin~com.~0x558265ea16b3e^25~0x59a9c020",
-            "id": "bin~com.~0x558265ea16b3e^25~0x59a9c020|bit~com.~0x558265ea16eb2^29~0x59a9c001",
-            "label": "conj",
-            "title": "freq: 4",
-            "to": "bit~com.~0x558265ea16eb2^29~0x59a9c001",
-            "value": 4
-        },
-        {
-            "from": "bin~com.~0x558265ea16b3e^25~0x59a9c020",
-            "id": "bin~com.~0x558265ea16b3e^25~0x59a9c020|problem~com.~0x558265ea17446^33~0x59a9c09e",
-            "label": "appos",
-            "title": "freq: 2",
-            "to": "problem~com.~0x558265ea17446^33~0x59a9c09e",
-            "value": 2
-        },
-        {
-            "from": "bin~com.~0x558265ea16b3e^25~0x59a9c020",
-            "id": "bin~com.~0x558265ea16b3e^25~0x59a9c020|wood~com.~0x558265ea1772a^35~0x59a9c088",
-            "label": "dep",
-            "title": "freq: 2",
-            "to": "wood~com.~0x558265ea1772a^35~0x59a9c088",
-            "value": 2
-        },
-        {
-            "from": "bin~com.~0x558265ea16b3e^25~0x59a9c020",
-            "id": "bin~com.~0x558265ea16b3e^25~0x59a9c020|reason~com.~0x558265ea17941^36~0x59a9bfcf",
-            "label": "acl:relcl",
-            "title": "freq: 2",
-            "to": "reason~com.~0x558265ea17941^36~0x59a9bfcf",
-            "value": 2
-        },
-        {
-            "from": "bin~com.~0x558265ea16b3e^25~0x59a9c020",
-            "id": "bin~com.~0x558265ea16b3e^25~0x59a9c020|family~art.6~~0x59a9bf44",
-            "label": "dep",
-            "title": "freq: 4",
-            "to": "family~art.6~~0x59a9bf44",
-            "value": 4
-        },
-        {
-            "from": "bin~com.~0x558265ea16b3e^25~0x59a9c020",
-            "id": "bin~com.~0x558265ea16b3e^25~0x59a9c020|food_waste~com.~0x558265ea16b3e^25~0x59a9c020",
-            "label": "nmod",
-            "title": "freq: 4",
-            "to": "food_waste~com.~0x558265ea16b3e^25~0x59a9c020",
-            "value": 4
-        },
-        {
-            "from": "budget~art.2~~0x59a9bf18",
-            "id": "budget~art.2~~0x59a9bf18|year~com.~0x558265ea160d1^13~0x59a9bfce",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "year~com.~0x558265ea160d1^13~0x59a9bfce",
-            "value": 2
-        },
-        {
-            "from": "budget~art.2~~0x59a9bf18",
-            "id": "budget~art.2~~0x59a9bf18|council~art.2~~0x59a9bf18",
-            "label": "nmod:poss",
-            "title": "freq: 2",
-            "to": "council~art.2~~0x59a9bf18",
-            "value": 2
-        },
-        {
-            "from": "paper~com.~0x558265ea1600b^12~0x59a9bf7a",
-            "id": "paper~com.~0x558265ea1600b^12~0x59a9bf7a|glass~art.2~~0x59a9bf11",
-            "label": "conj",
-            "title": "freq: 4",
-            "to": "glass~art.2~~0x59a9bf11",
-            "value": 4
-        },
-        {
-            "from": "council_service~com.~0x558265ea17ed7^46~0x59a9c020",
-            "id": "council_service~com.~0x558265ea17ed7^46~0x59a9c020|park~com.~0x558265ea17ed7^46~0x59a9c020",
-            "label": "conj",
-            "title": "freq: 2",
-            "to": "park~com.~0x558265ea17ed7^46~0x59a9c020",
-            "value": 2
-        },
-        {
-            "from": "council_service~com.~0x558265ea17ed7^46~0x59a9c020",
-            "id": "council_service~com.~0x558265ea17ed7^46~0x59a9c020|reduction~com.~0x558265ea18aca^57~0x59a9c091",
-            "label": "conj",
-            "title": "freq: 3",
-            "to": "reduction~com.~0x558265ea18aca^57~0x59a9c091",
-            "value": 3
-        },
-        {
-            "from": "council_service~com.~0x558265ea17ed7^46~0x59a9c020",
-            "id": "council_service~com.~0x558265ea17ed7^46~0x59a9c020|enthusiasm~com.~0x558265ea17ed7^46~0x59a9c020",
-            "label": "conj",
-            "title": "freq: 2",
-            "to": "enthusiasm~com.~0x558265ea17ed7^46~0x59a9c020",
-            "value": 2
-        },
-        {
-            "from": "cardboard~com.~0x558265ea16384^15~0x59a9bfce",
-            "id": "cardboard~com.~0x558265ea16384^15~0x59a9bfce|bin~com.~0x558265ea16b3e^25~0x59a9c020",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "bin~com.~0x558265ea16b3e^25~0x59a9c020",
-            "value": 2
-        },
-        {
-            "from": "serving_flat~com.~0x558265ea15e26^10~0x59a9bf88",
-            "id": "serving_flat~com.~0x558265ea15e26^10~0x59a9bf88|bin~com.~0x558265ea16b3e^25~0x59a9c020",
-            "label": "compound",
-            "title": "freq: 2",
-            "to": "bin~com.~0x558265ea16b3e^25~0x59a9c020",
-            "value": 2
-        },
-        {
-            "from": "type~com.~0x558265ea17446^33~0x59a9c09e",
-            "id": "type~com.~0x558265ea17446^33~0x59a9c09e|waste~com.~0x558265ea1708b^30~0x59a9bfb1",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "waste~com.~0x558265ea1708b^30~0x59a9bfb1",
-            "value": 2
-        },
-        {
-            "from": "type~com.~0x558265ea17446^33~0x59a9c09e",
-            "id": "type~com.~0x558265ea17446^33~0x59a9c09e|bins-glass/plastic~com.~0x558265ea1600b^12~0x59a9bf7a",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "bins-glass/plastic~com.~0x558265ea1600b^12~0x59a9bf7a",
-            "value": 2
-        },
-        {
-            "from": "twin~com.~0x558265ea16de0^28~0x59a9bfa3",
-            "id": "twin~com.~0x558265ea16de0^28~0x59a9bfa3|nappy~com.~0x558265ea17446^33~0x59a9c04a",
-            "label": "nmod",
-            "title": "freq: 6",
-            "to": "nappy~com.~0x558265ea17446^33~0x59a9c04a",
-            "value": 6
-        },
-        {
-            "from": "food~com.~0x558265ea16d17^27~0x59a9bfba",
-            "id": "food~com.~0x558265ea16d17^27~0x59a9bfba|garden_waste~com.~0x558265ea16d17^27~0x59a9bfba",
-            "label": "conj",
-            "title": "freq: 2",
-            "to": "garden_waste~com.~0x558265ea16d17^27~0x59a9bfba",
-            "value": 2
-        },
-        {
-            "from": "food~com.~0x558265ea16d17^27~0x59a9bfba",
-            "id": "food~com.~0x558265ea16d17^27~0x59a9bfba|garden~com.~0x558265ea17136^31~0x59a9c06c",
-            "label": "conj",
-            "title": "freq: 2",
-            "to": "garden~com.~0x558265ea17136^31~0x59a9c06c",
-            "value": 2
-        },
-        {
-            "from": "wheelie_bin~com.~0x558265ea18818^55~0x59a9c0bf",
-            "id": "wheelie_bin~com.~0x558265ea18818^55~0x59a9c0bf|week~com.~0x558265ea18f52^59~0x59a9c021",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "week~com.~0x558265ea18f52^59~0x59a9c021",
-            "value": 2
-        },
-        {
-            "from": "wheelie_bin~com.~0x558265ea18818^55~0x59a9c0bf",
-            "id": "wheelie_bin~com.~0x558265ea18818^55~0x59a9c0bf|black~com.~0x558265ea1600b^12~0x59a9bf7a",
-            "label": "compound",
-            "title": "freq: 4",
-            "to": "black~com.~0x558265ea1600b^12~0x59a9bf7a",
-            "value": 4
-        },
-        {
-            "from": "town_hall~art.2~~0x59a9bf21",
-            "id": "town_hall~art.2~~0x59a9bf21|bury~art.2~~0x59a9bf21",
-            "label": "compound",
-            "title": "freq: 2",
-            "to": "bury~art.2~~0x59a9bf21",
-            "value": 2
-        },
-        {
-            "from": "labour_idea~com.~0x558265ea1626b^14~0x59a9bf78",
-            "id": "labour_idea~com.~0x558265ea1626b^14~0x59a9bf78|month~com.~0x558265ea17136^31~0x59a9c013",
-            "label": "conj",
-            "title": "freq: 2",
-            "to": "month~com.~0x558265ea17136^31~0x59a9c013",
-            "value": 2
-        },
-        {
-            "from": "baby~com.~0x558265ea17446^33~0x59a9c062",
-            "id": "baby~com.~0x558265ea17446^33~0x59a9c062|disposable~com.~0x558265ea19119^61~0x59a9c0df",
-            "label": "conj",
-            "title": "freq: 2",
-            "to": "disposable~com.~0x558265ea19119^61~0x59a9c0df",
-            "value": 2
-        },
-        {
-            "from": "baby~com.~0x558265ea17446^33~0x59a9c062",
-            "id": "baby~com.~0x558265ea17446^33~0x59a9c062|nappy~com.~0x558265ea17446^33~0x59a9c04a",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "nappy~com.~0x558265ea17446^33~0x59a9c04a",
-            "value": 2
-        },
-        {
-            "from": "baby~com.~0x558265ea17446^33~0x59a9c062",
-            "id": "baby~com.~0x558265ea17446^33~0x59a9c062|dog~com.~0x558265ea17446^33~0x59a9c062",
-            "label": "appos",
-            "title": "freq: 2",
-            "to": "dog~com.~0x558265ea17446^33~0x59a9c062",
-            "value": 2
-        },
-        {
-            "from": "gain~com.~0x558265ea192e0^62~0x59a9bfee",
-            "id": "gain~com.~0x558265ea192e0^62~0x59a9bfee|price~com.~0x558265ea192e0^62~0x59a9bfee",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "price~com.~0x558265ea192e0^62~0x59a9bfee",
-            "value": 2
-        },
-        {
-            "from": "gain~com.~0x558265ea192e0^62~0x59a9bfee",
-            "id": "gain~com.~0x558265ea192e0^62~0x59a9bfee|environmental~com.~0x558265ea19aa5^75~0x59a9c0dc",
-            "label": "amod",
-            "title": "freq: 2",
-            "to": "environmental~com.~0x558265ea19aa5^75~0x59a9c0dc",
-            "value": 2
-        },
-        {
-            "from": "bit~com.~0x558265ea16eb2^29~0x59a9c001",
-            "id": "bit~com.~0x558265ea16eb2^29~0x59a9c001|waste~com.~0x558265ea1708b^30~0x59a9bfb1",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "waste~com.~0x558265ea1708b^30~0x59a9bfb1",
-            "value": 2
-        },
-        {
-            "from": "bit~com.~0x558265ea16eb2^29~0x59a9c001",
-            "id": "bit~com.~0x558265ea16eb2^29~0x59a9c001|food~com.~0x558265ea16d17^27~0x59a9bfba",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "food~com.~0x558265ea16d17^27~0x59a9bfba",
-            "value": 2
-        },
-        {
-            "from": "bit~com.~0x558265ea16eb2^29~0x59a9c001",
-            "id": "bit~com.~0x558265ea16eb2^29~0x59a9c001|package~com.~0x558265ea17136^31~0x59a9bfec",
-            "label": "nmod",
-            "title": "freq: 4",
-            "to": "package~com.~0x558265ea17136^31~0x59a9bfec",
-            "value": 4
-        },
-        {
-            "from": "bit~com.~0x558265ea16eb2^29~0x59a9c001",
-            "id": "bit~com.~0x558265ea16eb2^29~0x59a9c001|lot~com.~0x558265ea1a439^85~0x59a9c0ee",
-            "label": "nsubj",
-            "title": "freq: 2",
-            "to": "lot~com.~0x558265ea1a439^85~0x59a9c0ee",
-            "value": 2
-        },
-        {
-            "from": "rubbish~com.~0x558265ea1ad77^100~0x59a9c06b",
-            "id": "rubbish~com.~0x558265ea1ad77^100~0x59a9c06b|non-recyclable~com.~0x558265ea1ad77^100~0x59a9c06b",
-            "label": "amod",
-            "title": "freq: 2",
-            "to": "non-recyclable~com.~0x558265ea1ad77^100~0x59a9c06b",
-            "value": 2
-        },
-        {
-            "from": "rubbish~com.~0x558265ea1ad77^100~0x59a9c06b",
-            "id": "rubbish~com.~0x558265ea1ad77^100~0x59a9c06b|week~com.~0x558265ea18f52^59~0x59a9c021",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "week~com.~0x558265ea18f52^59~0x59a9c021",
-            "value": 2
-        },
-        {
-            "from": "poo~com.~0x558265ea1772a^35~0x59a9c088",
-            "id": "poo~com.~0x558265ea1772a^35~0x59a9c088|bin~com.~0x558265ea16b3e^25~0x59a9c020",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "bin~com.~0x558265ea16b3e^25~0x59a9c020",
-            "value": 2
-        },
-        {
-            "from": "poo~com.~0x558265ea1772a^35~0x59a9c088",
-            "id": "poo~com.~0x558265ea1772a^35~0x59a9c088|dog~com.~0x558265ea17446^33~0x59a9c062",
-            "label": "nmod:poss",
-            "title": "freq: 2",
-            "to": "dog~com.~0x558265ea17446^33~0x59a9c062",
-            "value": 2
-        },
-        {
-            "from": "road~com.~0x558265ea19dc2^78~0x59a9c05f",
-            "id": "road~com.~0x558265ea19dc2^78~0x59a9c05f|bed~com.~0x558265ea19dc2^78~0x59a9c05f",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "bed~com.~0x558265ea19dc2^78~0x59a9c05f",
-            "value": 2
-        },
-        {
-            "from": "borough~art.5~~0x59a9bf42",
-            "id": "borough~art.5~~0x59a9bf42|green~com.~0x558265ea17ed7^46~0x59a9c020",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "green~com.~0x558265ea17ed7^46~0x59a9c020",
-            "value": 2
-        },
-        {
-            "from": "mess~com.~0x558265ea181f8^47~0x59a9c01b",
-            "id": "mess~com.~0x558265ea181f8^47~0x59a9c01b|complaint~com.~0x558265ea181f8^47~0x59a9c01b",
-            "label": "conj",
-            "title": "freq: 2",
-            "to": "complaint~com.~0x558265ea181f8^47~0x59a9c01b",
-            "value": 2
-        },
-        {
-            "from": "collection~com.~0x558265ea17941^36~0x59a9bfc1",
-            "id": "collection~com.~0x558265ea17941^36~0x59a9bfc1|fortnightly~com.~0x558265ea1a4f9^86~0x59a9c0f8",
-            "label": "amod",
-            "title": "freq: 18",
-            "to": "fortnightly~com.~0x558265ea1a4f9^86~0x59a9c0f8",
-            "value": 18
-        },
-        {
-            "from": "collection~com.~0x558265ea17941^36~0x59a9bfc1",
-            "id": "collection~com.~0x558265ea17941^36~0x59a9bfc1|waste~com.~0x558265ea1708b^30~0x59a9bfb1",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "waste~com.~0x558265ea1708b^30~0x59a9bfb1",
-            "value": 2
-        },
-        {
-            "from": "collection~com.~0x558265ea17941^36~0x59a9bfc1",
-            "id": "collection~com.~0x558265ea17941^36~0x59a9bfc1|bag~com.~0x558265ea17ab8^37~0x59a9bfe5",
-            "label": "compound",
-            "title": "freq: 2",
-            "to": "bag~com.~0x558265ea17ab8^37~0x59a9bfe5",
-            "value": 2
-        },
-        {
-            "from": "collection~com.~0x558265ea17941^36~0x59a9bfc1",
-            "id": "collection~com.~0x558265ea17941^36~0x59a9bfc1|garden~com.~0x558265ea17136^31~0x59a9c06c",
-            "label": "dep",
-            "title": "freq: 2",
-            "to": "garden~com.~0x558265ea17136^31~0x59a9c06c",
-            "value": 2
-        },
-        {
-            "from": "collection~com.~0x558265ea17941^36~0x59a9bfc1",
-            "id": "collection~com.~0x558265ea17941^36~0x59a9bfc1|type~com.~0x558265ea17446^33~0x59a9c09e",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "type~com.~0x558265ea17446^33~0x59a9c09e",
-            "value": 2
-        },
-        {
-            "from": "collection~com.~0x558265ea17941^36~0x59a9bfc1",
-            "id": "collection~com.~0x558265ea17941^36~0x59a9bfc1|recycle~com.~0x558265ea181f8^47~0x59a9c00c",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "recycle~com.~0x558265ea181f8^47~0x59a9c00c",
-            "value": 2
-        },
-        {
-            "from": "right~com.~0x558265ea192e0^62~0x59a9bfee",
-            "id": "right~com.~0x558265ea192e0^62~0x59a9bfee|gain~com.~0x558265ea192e0^62~0x59a9bfee",
-            "label": "appos",
-            "title": "freq: 2",
-            "to": "gain~com.~0x558265ea192e0^62~0x59a9bfee",
-            "value": 2
-        },
-        {
-            "from": "rat~com.~0x558265ea158e0^1~0x59a9bf68",
-            "id": "rat~com.~0x558265ea158e0^1~0x59a9bf68|vermin~com.~0x558265ea15cf7^8~0x59a9bf6c",
-            "label": "conj",
-            "title": "freq: 4",
-            "to": "vermin~com.~0x558265ea15cf7^8~0x59a9bf6c",
-            "value": 4
-        },
-        {
-            "from": "rat~com.~0x558265ea158e0^1~0x59a9bf68",
-            "id": "rat~com.~0x558265ea158e0^1~0x59a9bf68|size~com.~0x558265ea1a0b1^80~0x59a9c011",
-            "label": "dep",
-            "title": "freq: 6",
-            "to": "size~com.~0x558265ea1a0b1^80~0x59a9c011",
-            "value": 6
-        },
-        {
-            "from": "rat~com.~0x558265ea158e0^1~0x59a9bf68",
-            "id": "rat~com.~0x558265ea158e0^1~0x59a9bf68|fox~com.~0x558265ea17ed7^46~0x59a9c07b",
-            "label": "conj",
-            "title": "freq: 2",
-            "to": "fox~com.~0x558265ea17ed7^46~0x59a9c07b",
-            "value": 2
-        },
-        {
-            "from": "reduction~com.~0x558265ea18aca^57~0x59a9c091",
-            "id": "reduction~com.~0x558265ea18aca^57~0x59a9c091|council_service~com.~0x558265ea17ed7^46~0x59a9c020",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "council_service~com.~0x558265ea17ed7^46~0x59a9c020",
-            "value": 2
-        },
-        {
-            "from": "reduction~com.~0x558265ea18aca^57~0x59a9c091",
-            "id": "reduction~com.~0x558265ea18aca^57~0x59a9c091|bin_collection~com.~0x558265ea18aca^57~0x59a9c091",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "bin_collection~com.~0x558265ea18aca^57~0x59a9c091",
-            "value": 2
-        },
-        {
-            "from": "reduction~com.~0x558265ea18aca^57~0x59a9c091",
-            "id": "reduction~com.~0x558265ea18aca^57~0x59a9c091|support~com.~0x558265ea17ed7^46~0x59a9c020",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "support~com.~0x558265ea17ed7^46~0x59a9c020",
-            "value": 2
-        },
-        {
-            "from": "wood~com.~0x558265ea1772a^35~0x59a9c088",
-            "id": "wood~com.~0x558265ea1772a^35~0x59a9c088|battery~com.~0x558265ea1772a^35~0x59a9c088",
-            "label": "appos",
-            "title": "freq: 2",
-            "to": "battery~com.~0x558265ea1772a^35~0x59a9c088",
-            "value": 2
-        },
-        {
-            "from": "provision~com.~0x558265ea1a2b3^83~0x59a9c0ea",
-            "id": "provision~com.~0x558265ea1a2b3^83~0x59a9c0ea|waste~com.~0x558265ea1708b^30~0x59a9bfb1",
-            "label": "dep",
-            "title": "freq: 2",
-            "to": "waste~com.~0x558265ea1708b^30~0x59a9bfb1",
-            "value": 2
-        },
-        {
-            "from": "provision~com.~0x558265ea1a2b3^83~0x59a9c0ea",
-            "id": "provision~com.~0x558265ea1a2b3^83~0x59a9c0ea|people~com.~0x558265ea160d1^13~0x59a9bfce",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "people~com.~0x558265ea160d1^13~0x59a9bfce",
-            "value": 2
-        },
-        {
-            "from": "volume~com.~0x558265ea17446^33~0x59a9c09e",
-            "id": "volume~com.~0x558265ea17446^33~0x59a9c09e|type~com.~0x558265ea17446^33~0x59a9c09e",
-            "label": "conj",
-            "title": "freq: 2",
-            "to": "type~com.~0x558265ea17446^33~0x59a9c09e",
-            "value": 2
-        },
-        {
-            "from": "volume~com.~0x558265ea17446^33~0x59a9c09e",
-            "id": "volume~com.~0x558265ea17446^33~0x59a9c09e|waste~com.~0x558265ea1708b^30~0x59a9bfb1",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "waste~com.~0x558265ea1708b^30~0x59a9bfb1",
-            "value": 2
-        },
-        {
-            "from": "responsible~com.~0x558265ea19dc2^78~0x59a9c085",
-            "id": "responsible~com.~0x558265ea19dc2^78~0x59a9c085|service~com.~0x558265ea19dc2^78~0x59a9c085",
-            "label": "dep",
-            "title": "freq: 2",
-            "to": "service~com.~0x558265ea19dc2^78~0x59a9c085",
-            "value": 2
-        },
-        {
-            "from": "food_waste~com.~0x558265ea16b3e^25~0x59a9c020",
-            "id": "food_waste~com.~0x558265ea16b3e^25~0x59a9c020|item~com.~0x558265ea19b57^76~0x59a9c0f3",
-            "label": "appos",
-            "title": "freq: 2",
-            "to": "item~com.~0x558265ea19b57^76~0x59a9c0f3",
-            "value": 2
-        },
-        {
-            "from": "food_waste~com.~0x558265ea16b3e^25~0x59a9c020",
-            "id": "food_waste~com.~0x558265ea16b3e^25~0x59a9c020|battery~com.~0x558265ea1772a^35~0x59a9c088",
-            "label": "appos",
-            "title": "freq: 2",
-            "to": "battery~com.~0x558265ea1772a^35~0x59a9c088",
-            "value": 2
-        },
-        {
-            "from": "food_waste~com.~0x558265ea16b3e^25~0x59a9c020",
-            "id": "food_waste~com.~0x558265ea16b3e^25~0x59a9c020|clothe~com.~0x558265ea19b57^76~0x59a9c0f3",
-            "label": "appos",
-            "title": "freq: 2",
-            "to": "clothe~com.~0x558265ea19b57^76~0x59a9c0f3",
-            "value": 2
-        },
-        {
-            "from": "food_waste~com.~0x558265ea16b3e^25~0x59a9c020",
-            "id": "food_waste~com.~0x558265ea16b3e^25~0x59a9c020|pack~com.~0x558265ea19b57^76~0x59a9c0f3",
-            "label": "appos",
-            "title": "freq: 2",
-            "to": "pack~com.~0x558265ea19b57^76~0x59a9c0f3",
-            "value": 2
-        },
-        {
-            "from": "waste_charge~com.~0x558265ea160d1^13~0x59a9bfce",
-            "id": "waste_charge~com.~0x558265ea160d1^13~0x59a9bfce|kitchen_waste~com.~0x558265ea160d1^13~0x59a9bfce",
-            "label": "compound",
-            "title": "freq: 2",
-            "to": "kitchen_waste~com.~0x558265ea160d1^13~0x59a9bfce",
-            "value": 2
-        },
-        {
-            "from": "waste_charge~com.~0x558265ea160d1^13~0x59a9bfce",
-            "id": "waste_charge~com.~0x558265ea160d1^13~0x59a9bfce|compostable~com.~0x558265ea17ed7^46~0x59a9c071",
-            "label": "amod",
-            "title": "freq: 2",
-            "to": "compostable~com.~0x558265ea17ed7^46~0x59a9c071",
-            "value": 2
-        },
-        {
-            "from": "glass/plastic~com.~0x558265ea160d1^13~0x59a9bfce",
-            "id": "glass/plastic~com.~0x558265ea160d1^13~0x59a9bfce|collection~com.~0x558265ea17941^36~0x59a9bfc1",
-            "label": "dep",
-            "title": "freq: 2",
-            "to": "collection~com.~0x558265ea17941^36~0x59a9bfc1",
-            "value": 2
-        },
-        {
-            "from": "resident~com.~0x558265ea168f5^22~0x59a9bf88",
-            "id": "resident~com.~0x558265ea168f5^22~0x59a9bf88|borough~art.5~~0x59a9bf42",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "borough~art.5~~0x59a9bf42",
-            "value": 2
-        },
-        {
-            "from": "resident~com.~0x558265ea168f5^22~0x59a9bf88",
-            "id": "resident~com.~0x558265ea168f5^22~0x59a9bf88|lot~com.~0x558265ea1a439^85~0x59a9c0ee",
-            "label": "nmod",
-            "title": "freq: 4",
-            "to": "lot~com.~0x558265ea1a439^85~0x59a9c0ee",
-            "value": 4
         }
     ],
     "nodes": [
         {
-            "color": "lime",
-            "group": "article",
-            "id": "bury~art.2~~0x59a9bf21",
-            "label": "bury",
-            "title": "*Freq: 3 <br> *Sen_Score: 0.0952 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.8,art.1,art.2",
-            "value": 3
-        },
-        {
-            "color": "#003dff",
+            "color": "#ff8600",
             "group": "comment",
-            "id": "tray~com.~0x558265ea16eb2^29~0x59a9bfe9",
-            "label": "tray",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0476 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
+            "id": "glass/plastic~com.~0x558333c608d67^13~0x59aa9751",
+            "label": "glass/plastic",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.125 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
             "value": 1
         },
         {
-            "color": "cyan",
+            "color": "#ffa800",
             "group": "comment",
-            "id": "stuff~com.~0x558265ea15c2e^7~0x59a9bf75",
-            "label": "stuff",
-            "title": "*Freq: 4 <br> *Sen_Score: -0.0952 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 3} <br> *Group_ids: com.",
-            "value": 4
-        },
-        {
-            "color": "#00b8ff",
-            "group": "comment",
-            "id": "cut_compost~com.~0x558265ea160d1^13~0x59a9bfa8",
-            "label": "cut_compost",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#007aff",
-            "group": "comment",
-            "id": "child~com.~0x558265ea19119^61~0x59a9c0df",
-            "label": "child",
-            "title": "*Freq: 3 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 3
-        },
-        {
-            "color": "#007aff",
-            "group": "comment",
-            "id": "disposable~com.~0x558265ea19119^61~0x59a9c0df",
-            "label": "disposable",
-            "title": "*Freq: 3 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 3
-        },
-        {
-            "color": "cyan",
-            "group": "comment",
-            "id": "garden~com.~0x558265ea17136^31~0x59a9c06c",
-            "label": "garden",
-            "title": "*Freq: 6 <br> *Sen_Score: -0.0952 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 3} <br> *Group_ids: com.",
-            "value": 6
-        },
-        {
-            "color": "#00ffc2",
-            "group": "article",
-            "id": "labour~art.4~~0x59a9bf2f",
-            "label": "labour",
-            "title": "*Freq: 3 <br> *Sen_Score: -0.1429 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 3} <br> *Group_ids: art.4,art.5,art.2",
-            "value": 3
-        },
-        {
-            "color": "#3dff00",
-            "group": "article",
-            "id": "lot~com.~0x558265ea1a439^85~0x59a9c0ee",
-            "label": "lot",
-            "title": "*Freq: 14 <br> *Sen_Score: -0.3333 <br> *Sentiment: {\"pos_count\": 3, \"neu_count\": 1, \"neg_count\": 10} <br> *Group_ids: art.7,com.",
-            "value": 14
-        },
-        {
-            "color": "#00b8ff",
-            "group": "comment",
-            "id": "space~com.~0x558265ea160d1^13~0x59a9bfce",
-            "label": "space",
-            "title": "*Freq: 2 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 2
-        },
-        {
-            "color": "#007aff",
-            "group": "comment",
-            "id": "life~com.~0x558265ea19dc2^78~0x59a9c085",
-            "label": "life",
+            "id": "family~com.~0x558333c609770^25~0x59aa975e",
+            "label": "family",
             "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
             "value": 2
         },
         {
-            "color": "#00b8ff",
+            "color": "#ff8600",
             "group": "comment",
-            "id": "flat~com.~0x558265ea15b1f^5~0x59a9bf77",
-            "label": "flat",
-            "title": "*Freq: 2 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 2
-        },
-        {
-            "color": "#003dff",
-            "group": "comment",
-            "id": "point~com.~0x558265ea17446^33~0x59a9c0a6",
-            "label": "point",
-            "title": "*Freq: 3 <br> *Sen_Score: 0.0476 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 3
-        },
-        {
-            "color": "#007aff",
-            "group": "comment",
-            "id": "kitchen_waste~com.~0x558265ea160d1^13~0x59a9bfce",
-            "label": "kitchen_waste",
-            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 2
-        },
-        {
-            "color": "cyan",
-            "group": "comment",
-            "id": "end~com.~0x558265ea160d1^13~0x59a9bfce",
-            "label": "end",
-            "title": "*Freq: 2 <br> *Sen_Score: -0.0952 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: com.",
-            "value": 2
-        },
-        {
-            "color": "cyan",
-            "group": "comment",
-            "id": "matter~com.~0x558265ea19dc2^78~0x59a9c085",
-            "label": "matter",
-            "title": "*Freq: 2 <br> *Sen_Score: -0.0952 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: com.",
-            "value": 2
-        },
-        {
-            "color": "#00ff3d",
-            "group": "comment",
-            "id": "fortnightly~com.~0x558265ea1a4f9^86~0x59a9c0f8",
-            "label": "fortnightly",
-            "title": "*Freq: 11 <br> *Sen_Score: -0.2381 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 6} <br> *Group_ids: com.",
-            "value": 11
-        },
-        {
-            "color": "#007aff",
-            "group": "comment",
-            "id": "couple~com.~0x558265ea1a4f9^86~0x59a9c0f8",
-            "label": "couple",
-            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 2, \"neg_count\": 0} <br> *Group_ids: com.",
-            "value": 2
-        },
-        {
-            "color": "#007aff",
-            "group": "comment",
-            "id": "collection_schedule~com.~0x558265ea16384^15~0x59a9bf94",
-            "label": "collection_schedule",
-            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 2
-        },
-        {
-            "color": "#003dff",
-            "group": "comment",
-            "id": "tube~com.~0x558265ea16eb2^29~0x59a9bfe9",
-            "label": "tube",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0476 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
+            "id": "waste~com.~0x558333c608bb7^11~0x59aa9743",
+            "label": "waste",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.125 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
             "value": 1
         },
         {
-            "color": "#003dff",
+            "color": "#ff8600",
             "group": "comment",
-            "id": "dog~com.~0x558265ea17446^33~0x59a9c062",
-            "label": "dog",
-            "title": "*Freq: 2 <br> *Sen_Score: 0.0476 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: com.",
-            "value": 2
-        },
-        {
-            "color": "#00b8ff",
-            "group": "article",
-            "id": "ivan_lewis~art.2~~0x59a9bf18",
-            "label": "ivan_lewis",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.2",
+            "id": "waste_packaging~com.~0x558333c6091c8^16~0x59aa9731",
+            "label": "waste_packaging",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.125 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
             "value": 1
         },
         {
-            "color": "cyan",
+            "color": "#ffa800",
             "group": "comment",
-            "id": "kitchen~com.~0x558265ea15f32^11~0x59a9bfa1",
-            "label": "kitchen",
-            "title": "*Freq: 2 <br> *Sen_Score: -0.0952 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: com.",
-            "value": 2
-        },
-        {
-            "color": "#00b8ff",
-            "group": "comment",
-            "id": "stalk~com.~0x558265ea16eb2^29~0x59a9bfad",
-            "label": "stalk",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#007aff",
-            "group": "comment",
-            "id": "solution~com.~0x558265ea16384^15~0x59a9bfe1",
-            "label": "solution",
-            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 2
-        },
-        {
-            "color": "#00ffc2",
-            "group": "comment",
-            "id": "winter~com.~0x558265ea1989b^71~0x59a9c0e6",
-            "label": "winter",
-            "title": "*Freq: 3 <br> *Sen_Score: -0.1429 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 3} <br> *Group_ids: com.",
-            "value": 3
-        },
-        {
-            "color": "#c2ff00",
-            "group": "article",
-            "id": "nappy~com.~0x558265ea17446^33~0x59a9c04a",
-            "label": "nappy",
-            "title": "*Freq: 12 <br> *Sen_Score: -0.4286 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 10} <br> *Group_ids: art.6,com.",
-            "value": 12
-        },
-        {
-            "color": "cyan",
-            "group": "comment",
-            "id": "package~com.~0x558265ea17136^31~0x59a9bfec",
-            "label": "package",
-            "title": "*Freq: 4 <br> *Sen_Score: -0.0952 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 2} <br> *Group_ids: com.",
-            "value": 4
-        },
-        {
-            "color": "#007aff",
-            "group": "article",
-            "id": "grey_bin~com.~0x558265ea16384^15~0x59a9bfa1",
-            "label": "grey_bin",
-            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.7,com.",
-            "value": 2
-        },
-        {
-            "color": "cyan",
-            "group": "comment",
-            "id": "house~com.~0x558265ea17ed7^46~0x59a9c0a6",
-            "label": "house",
-            "title": "*Freq: 3 <br> *Sen_Score: -0.0952 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 2} <br> *Group_ids: com.",
-            "value": 3
-        },
-        {
-            "color": "#00ffc2",
-            "group": "article",
-            "id": "problem~com.~0x558265ea17446^33~0x59a9c09e",
-            "label": "problem",
-            "title": "*Freq: 5 <br> *Sen_Score: -0.1429 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 4} <br> *Group_ids: art.5,com.",
-            "value": 5
-        },
-        {
-            "color": "#003dff",
-            "group": "comment",
-            "id": "park~com.~0x558265ea17ed7^46~0x59a9c020",
-            "label": "park",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0476 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#00b8ff",
-            "group": "comment",
-            "id": "leftover_food~com.~0x558265ea165c3^16~0x59a9bf87",
-            "label": "leftover_food",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#00b8ff",
-            "group": "comment",
-            "id": "terrace~com.~0x558265ea166a3^17~0x59a9bf95",
-            "label": "terrace",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#003dff",
-            "group": "article",
-            "id": "impact~art.5~~0x59a9bf3e",
-            "label": "impact",
-            "title": "*Freq: 3 <br> *Sen_Score: 0.0476 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.5,com.",
-            "value": 3
-        },
-        {
-            "color": "#007aff",
-            "group": "comment",
-            "id": "battery~com.~0x558265ea1772a^35~0x59a9c088",
-            "label": "battery",
-            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 2
-        },
-        {
-            "color": "#003dff",
-            "group": "comment",
-            "id": "success~com.~0x558265ea1a598^87~0x59a9c0ff",
-            "label": "success",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0476 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#007aff",
-            "group": "comment",
-            "id": "trouble~com.~0x558265ea16384^15~0x59a9bfb0",
+            "id": "trouble~com.~0x558333c6085f1^2~0x59aa970c",
             "label": "trouble",
             "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
             "value": 2
         },
         {
-            "color": "lime",
+            "color": "#ff8600",
+            "group": "comment",
+            "id": "lot~com.~0x558333c609770^25~0x59aa9765",
+            "label": "lot",
+            "title": "*Freq: 3 <br> *Sen_Score: -0.125 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: com.",
+            "value": 3
+        },
+        {
+            "color": "#ffa800",
             "group": "article",
-            "id": "green~com.~0x558265ea17ed7^46~0x59a9c020",
-            "label": "green",
-            "title": "*Freq: 2 <br> *Sen_Score: 0.0952 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.5,com.",
+            "id": "town_hall~art.4~~0x59aa96fe",
+            "label": "town_hall",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.4",
+            "value": 1
+        },
+        {
+            "color": "#ff6400",
+            "group": "article",
+            "id": "bury~art.1~~0x59aa96e5",
+            "label": "bury",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.125 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.4,art.1",
             "value": 2
         },
         {
-            "color": "#00b8ff",
+            "color": "#ff6400",
             "group": "comment",
-            "id": "bag~com.~0x558265ea17ab8^37~0x59a9bfe5",
-            "label": "bag",
-            "title": "*Freq: 4 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: com.",
-            "value": 4
-        },
-        {
-            "color": "#003dff",
-            "group": "comment",
-            "id": "collection_scheme~com.~0x558265ea1a598^87~0x59a9c0ff",
-            "label": "collection_scheme",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0476 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#007aff",
-            "group": "article",
-            "id": "change~com.~0x558265ea16384^15~0x59a9bfa1",
-            "label": "change",
-            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.7,com.",
+            "id": "people~com.~0x558333c608d67^13~0x59aa9751",
+            "label": "people",
+            "title": "*Freq: 2 <br> *Sen_Score: -0.25 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: com.",
             "value": 2
         },
         {
-            "color": "cyan",
-            "group": "article",
-            "id": "household~com.~0x558265ea16384^15~0x59a9bfb0",
-            "label": "household",
-            "title": "*Freq: 4 <br> *Sen_Score: -0.0952 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 3} <br> *Group_ids: art.5,com.",
+            "color": "#ff8600",
+            "group": "comment",
+            "id": "waste_charge~com.~0x558333c608d67^13~0x59aa9751",
+            "label": "waste_charge",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.125 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 1
+        },
+        {
+            "color": "#ff6400",
+            "group": "comment",
+            "id": "rat~com.~0x558333c60851e^1~0x59aa970c",
+            "label": "rat",
+            "title": "*Freq: 4 <br> *Sen_Score: -0.25 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: com.",
             "value": 4
         },
         {
-            "color": "#00b8ff",
+            "color": "#ff8600",
             "group": "comment",
-            "id": "collection_process~com.~0x558265ea1708b^30~0x59a9bfb1",
-            "label": "collection_process",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#00b8ff",
-            "group": "comment",
-            "id": "size~com.~0x558265ea1a0b1^80~0x59a9c011",
-            "label": "size",
-            "title": "*Freq: 5 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 5
-        },
-        {
-            "color": "#003dff",
-            "group": "comment",
-            "id": "enthusiasm~com.~0x558265ea17ed7^46~0x59a9c020",
-            "label": "enthusiasm",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0476 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#85ff00",
-            "group": "comment",
-            "id": "week~com.~0x558265ea18f52^59~0x59a9c021",
+            "id": "week~com.~0x558333c608fa8^15~0x59aa973d",
             "label": "week",
-            "title": "*Freq: 13 <br> *Sen_Score: -0.381 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 9} <br> *Group_ids: com.",
-            "value": 13
-        },
-        {
-            "color": "#00b8ff",
-            "group": "comment",
-            "id": "waste_reycling~com.~0x558265ea1a68e^88~0x59a9c0a2",
-            "label": "waste_reycling",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "cyan",
-            "group": "comment",
-            "id": "clothe~com.~0x558265ea19b57^76~0x59a9c0f3",
-            "label": "clothe",
-            "title": "*Freq: 2 <br> *Sen_Score: -0.0952 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: com.",
-            "value": 2
-        },
-        {
-            "color": "#007aff",
-            "group": "comment",
-            "id": "reusables~com.~0x558265ea19119^61~0x59a9c0df",
-            "label": "reusables",
-            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 2
-        },
-        {
-            "color": "#007aff",
-            "group": "comment",
-            "id": "month~com.~0x558265ea17136^31~0x59a9c013",
-            "label": "month",
-            "title": "*Freq: 3 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 1} <br> *Group_ids: com.",
+            "title": "*Freq: 3 <br> *Sen_Score: -0.125 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: com.",
             "value": 3
         },
         {
-            "color": "#00b8ff",
-            "group": "article",
-            "id": "susan_southworth~art.5~~0x59a9bf3e",
-            "label": "susan_southworth",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.5",
-            "value": 1
-        },
-        {
-            "color": "#00b8ff",
+            "color": "#ff8600",
             "group": "comment",
-            "id": "apple_core~com.~0x558265ea16eb2^29~0x59a9bfad",
-            "label": "apple_core",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "id": "bit~com.~0x558333c609770^25~0x59aa9765",
+            "label": "bit",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.125 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
             "value": 1
         },
         {
-            "color": "cyan",
-            "group": "article",
-            "id": "empty~art.2~~0x59a9bf12",
-            "label": "empty",
-            "title": "*Freq: 2 <br> *Sen_Score: -0.0952 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: art.2,com.",
+            "color": "#ff6400",
+            "group": "comment",
+            "id": "food_waste~com.~0x558333c609770^25~0x59aa9765",
+            "label": "food_waste",
+            "title": "*Freq: 2 <br> *Sen_Score: -0.25 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: com.",
             "value": 2
         },
         {
-            "color": "#00b8ff",
-            "group": "comment",
-            "id": "bins-glass/plastic~com.~0x558265ea1600b^12~0x59a9bf7a",
-            "label": "bins-glass/plastic",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#007aff",
-            "group": "comment",
-            "id": "sort~com.~0x558265ea16eb2^29~0x59a9bfe9",
-            "label": "sort",
-            "title": "*Freq: 3 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 1} <br> *Group_ids: com.",
+            "color": "#ffa800",
+            "group": "article",
+            "id": "paper~com.~0x558333c608ca3^12~0x59aa9723",
+            "label": "paper",
+            "title": "*Freq: 3 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.2,com.",
             "value": 3
         },
         {
-            "color": "#00ffc2",
+            "color": "#ff8600",
+            "group": "comment",
+            "id": "compost_bin~com.~0x558333c608d67^13~0x59aa9751",
+            "label": "compost_bin",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.125 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 1
+        },
+        {
+            "color": "#ff6400",
+            "group": "comment",
+            "id": "grey_bin~com.~0x558333c608fa8^15~0x59aa9745",
+            "label": "grey_bin",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.125 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
+            "value": 1
+        },
+        {
+            "color": "#ff2000",
             "group": "article",
-            "id": "family~art.6~~0x59a9bf44",
-            "label": "family",
-            "title": "*Freq: 5 <br> *Sen_Score: -0.1429 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 4} <br> *Group_ids: art.6,com.",
+            "id": "year~art.3~~0x59aa96f7",
+            "label": "year",
+            "title": "*Freq: 4 <br> *Sen_Score: -0.5 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 4} <br> *Group_ids: com.,art.2,art.3",
+            "value": 4
+        },
+        {
+            "color": "#ffa800",
+            "group": "article",
+            "id": "fox~com.~0x558333c6085f1^2~0x59aa970c",
+            "label": "fox",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.0,com.",
+            "value": 2
+        },
+        {
+            "color": "#ff8600",
+            "group": "comment",
+            "id": "food/garden_waste~com.~0x558333c608fa8^15~0x59aa973d",
+            "label": "food/garden_waste",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.125 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 1
+        },
+        {
+            "color": "#ff6400",
+            "group": "comment",
+            "id": "end~com.~0x558333c608d67^13~0x59aa9747",
+            "label": "end",
+            "title": "*Freq: 2 <br> *Sen_Score: -0.25 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: com.",
+            "value": 2
+        },
+        {
+            "color": "#ff8600",
+            "group": "comment",
+            "id": "leaf_fall~com.~0x558333c608d67^13~0x59aa9751",
+            "label": "leaf_fall",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.125 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 1
+        },
+        {
+            "color": "#ff8600",
+            "group": "comment",
+            "id": "cut_compost~com.~0x558333c608d67^13~0x59aa9747",
+            "label": "cut_compost",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.125 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 1
+        },
+        {
+            "color": "#ff8600",
+            "group": "comment",
+            "id": "lawn_cut~com.~0x558333c608d67^13~0x59aa9747",
+            "label": "lawn_cut",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.125 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 1
+        },
+        {
+            "color": "#ff4200",
+            "group": "article",
+            "id": "cut~art.2~~0x59aa96f5",
+            "label": "cut",
+            "title": "*Freq: 3 <br> *Sen_Score: -0.375 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 3} <br> *Group_ids: art.2,art.3",
+            "value": 3
+        },
+        {
+            "color": "#ff6400",
+            "group": "comment",
+            "id": "nappy~com.~0x558333c608fa8^15~0x59aa974f",
+            "label": "nappy",
+            "title": "*Freq: 2 <br> *Sen_Score: -0.25 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: com.",
+            "value": 2
+        },
+        {
+            "color": "#ff8600",
+            "group": "comment",
+            "id": "serving_flat~com.~0x558333c608aac^10~0x59aa9731",
+            "label": "serving_flat",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.125 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 1
+        },
+        {
+            "color": "#ff6400",
+            "group": "article",
+            "id": "vermin~com.~0x558333c6091c8^16~0x59aa971f",
+            "label": "vermin",
+            "title": "*Freq: 5 <br> *Sen_Score: 0.125 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 1, \"neg_count\": 1} <br> *Group_ids: art.0,com.",
             "value": 5
         },
         {
-            "color": "cyan",
+            "color": "#ff6400",
             "group": "article",
-            "id": "complaint~com.~0x558265ea181f8^47~0x59a9c01b",
-            "label": "complaint",
-            "title": "*Freq: 2 <br> *Sen_Score: -0.0952 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: art.2,com.",
+            "id": "empty~com.~0x558333c608aac^10~0x59aa9731",
+            "label": "empty",
+            "title": "*Freq: 2 <br> *Sen_Score: -0.25 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: art.2,com.",
             "value": 2
         },
         {
-            "color": "#003dff",
-            "group": "article",
-            "id": "fox~com.~0x558265ea17ed7^46~0x59a9c07b",
-            "label": "fox",
-            "title": "*Freq: 3 <br> *Sen_Score: 0.0476 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.0,com.",
-            "value": 3
-        },
-        {
-            "color": "#003dff",
+            "color": "#ff8600",
             "group": "comment",
-            "id": "box~com.~0x558265ea16eb2^29~0x59a9bfe9",
-            "label": "box",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0476 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
+            "id": "package~com.~0x558333c609770^25~0x59aa9765",
+            "label": "package",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.125 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
             "value": 1
         },
         {
-            "color": "cyan",
+            "color": "#ff8600",
             "group": "comment",
-            "id": "compost~com.~0x558265ea16d17^27~0x59a9bfba",
-            "label": "compost",
-            "title": "*Freq: 2 <br> *Sen_Score: -0.0952 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: com.",
-            "value": 2
+            "id": "bins-glass/plastic~com.~0x558333c608ca3^12~0x59aa9723",
+            "label": "bins-glass/plastic",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.125 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 1
         },
         {
-            "color": "#00b8ff",
+            "color": "#ff8600",
             "group": "comment",
-            "id": "row~com.~0x558265ea166a3^17~0x59a9bf95",
+            "id": "smell~com.~0x558333c6091c8^16~0x59aa9731",
+            "label": "smell",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.125 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 1
+        },
+        {
+            "color": "#ff8600",
+            "group": "comment",
+            "id": "kitchen~com.~0x558333c608bb7^11~0x59aa9743",
+            "label": "kitchen",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.125 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 1
+        },
+        {
+            "color": "#ff8600",
+            "group": "comment",
+            "id": "row~com.~0x558333c6092c1^17~0x59aa973d",
             "label": "row",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.125 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
             "value": 1
         },
         {
-            "color": "#00b8ff",
-            "group": "comment",
-            "id": "item~com.~0x558265ea19b57^76~0x59a9c0f3",
-            "label": "item",
-            "title": "*Freq: 2 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 2
-        },
-        {
-            "color": "#007aff",
-            "group": "comment",
-            "id": "concern~com.~0x558265ea183d2^50~0x59a9bfe4",
-            "label": "concern",
-            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 2
-        },
-        {
-            "color": "#007aff",
-            "group": "comment",
-            "id": "non-recyclable~com.~0x558265ea1ad77^100~0x59a9c06b",
-            "label": "non-recyclable",
-            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 2, \"neg_count\": 0} <br> *Group_ids: com.",
-            "value": 2
-        },
-        {
-            "color": "#00b8ff",
+            "color": "#ff0000",
             "group": "article",
-            "id": "tony_isherwood~art.7~~0x59a9bf4a",
-            "label": "tony_isherwood",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.7",
-            "value": 1
+            "id": "bin~com.~0x558333c6092c1^17~0x59aa973d",
+            "label": "bin",
+            "title": "*Freq: 8 <br> *Sen_Score: -0.625 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 6} <br> *Group_ids: art.2,com.",
+            "value": 8
         },
         {
-            "color": "#00b8ff",
+            "color": "#ff6400",
             "group": "comment",
-            "id": "lawn_cut~com.~0x558265ea160d1^13~0x59a9bfa8",
-            "label": "lawn_cut",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#00b8ff",
-            "group": "comment",
-            "id": "back~com.~0x558265ea18dc4^58~0x59a9c02c",
-            "label": "back",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#003dff",
-            "group": "article",
-            "id": "councillor~art.5~~0x59a9bf3e",
-            "label": "councillor",
-            "title": "*Freq: 6 <br> *Sen_Score: 0.0476 <br> *Sentiment: {\"pos_count\": 3, \"neu_count\": 1, \"neg_count\": 2} <br> *Group_ids: art.5,art.7,art.8,art.1,com.",
-            "value": 6
-        },
-        {
-            "color": "#00b8ff",
-            "group": "comment",
-            "id": "waste_packaging~com.~0x558265ea165c3^16~0x59a9bf87",
-            "label": "waste_packaging",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#003dff",
-            "group": "article",
-            "id": "bill~art.5~~0x59a9bf3a",
-            "label": "bill",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0476 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.5",
-            "value": 1
-        },
-        {
-            "color": "#003dff",
-            "group": "comment",
-            "id": "range~com.~0x558265ea17941^36~0x59a9bfc1",
-            "label": "range",
-            "title": "*Freq: 3 <br> *Sen_Score: 0.0476 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 3
-        },
-        {
-            "color": "#00ffc2",
-            "group": "comment",
-            "id": "garden_waste~com.~0x558265ea16d17^27~0x59a9bfba",
-            "label": "garden_waste",
-            "title": "*Freq: 3 <br> *Sen_Score: -0.1429 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 3} <br> *Group_ids: com.",
-            "value": 3
-        },
-        {
-            "color": "#003dff",
-            "group": "comment",
-            "id": "glass_bottle~com.~0x558265ea16384^15~0x59a9bfce",
+            "id": "glass_bottle~com.~0x558333c608fa8^15~0x59aa9754",
             "label": "glass_bottle",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0476 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.125 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
             "value": 1
         },
         {
-            "color": "#00b8ff",
+            "color": "#ff8600",
             "group": "comment",
-            "id": "fault~com.~0x558265ea19dc2^78~0x59a9c075",
-            "label": "fault",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "id": "leftover_food~com.~0x558333c6091c8^16~0x59aa9731",
+            "label": "leftover_food",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.125 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
             "value": 1
         },
         {
-            "color": "#007aff",
+            "color": "#ffa800",
+            "group": "article",
+            "id": "council~art.3~~0x59aa96f7",
+            "label": "council",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.1,art.3",
+            "value": 2
+        },
+        {
+            "color": "#ff8600",
             "group": "comment",
-            "id": "packaging_fox~com.~0x558265ea15cf7^8~0x59a9bf6c",
+            "id": "terrace~com.~0x558333c6092c1^17~0x59aa973d",
+            "label": "terrace",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.125 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 1
+        },
+        {
+            "color": "#ffa800",
+            "group": "comment",
+            "id": "packaging_fox~com.~0x558333c608981^8~0x59aa9710",
             "label": "packaging_fox",
             "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: com.",
             "value": 1
         },
         {
-            "color": "cyan",
-            "group": "article",
-            "id": "smell~art.5~~0x59a9bf3e",
-            "label": "smell",
-            "title": "*Freq: 2 <br> *Sen_Score: -0.0952 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: art.5,com.",
-            "value": 2
-        },
-        {
-            "color": "#003dff",
+            "color": "#ffa800",
             "group": "comment",
-            "id": "price~com.~0x558265ea192e0^62~0x59a9bfee",
-            "label": "price",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0476 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#00b8ff",
-            "group": "comment",
-            "id": "rule~com.~0x558265ea1a2b3^83~0x59a9c0ea",
-            "label": "rule",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#003dff",
-            "group": "comment",
-            "id": "crop~com.~0x558265ea17ed7^46~0x59a9c07b",
-            "label": "crop",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0476 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#00ffc2",
-            "group": "comment",
-            "id": "waste_bin~com.~0x558265ea18f52^59~0x59a9c021",
-            "label": "waste_bin",
-            "title": "*Freq: 3 <br> *Sen_Score: -0.1429 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 3} <br> *Group_ids: com.",
-            "value": 3
-        },
-        {
-            "color": "#007aff",
-            "group": "article",
-            "id": "bin_collection~com.~0x558265ea18aca^57~0x59a9c091",
-            "label": "bin_collection",
-            "title": "*Freq: 3 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 1} <br> *Group_ids: art.2,com.",
-            "value": 3
-        },
-        {
-            "color": "red",
-            "group": "article",
-            "id": "waste~com.~0x558265ea1708b^30~0x59a9bfb1",
-            "label": "waste",
-            "title": "*Freq: 16 <br> *Sen_Score: -0.6667 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 15} <br> *Group_ids: art.6,art.7,com.",
-            "value": 16
-        },
-        {
-            "color": "#00b8ff",
-            "group": "comment",
-            "id": "amount~com.~0x558265ea16eb2^29~0x59a9bff5",
-            "label": "amount",
-            "title": "*Freq: 2 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 2
-        },
-        {
-            "color": "#003dff",
-            "group": "comment",
-            "id": "interest~com.~0x558265ea17ed7^46~0x59a9c07b",
-            "label": "interest",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0476 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#00ff85",
-            "group": "comment",
-            "id": "people~com.~0x558265ea160d1^13~0x59a9bfce",
-            "label": "people",
-            "title": "*Freq: 8 <br> *Sen_Score: -0.1905 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 0, \"neg_count\": 6} <br> *Group_ids: com.",
-            "value": 8
-        },
-        {
-            "color": "#00b8ff",
-            "group": "comment",
-            "id": "leaf_fall~com.~0x558265ea160d1^13~0x59a9bfce",
-            "label": "leaf_fall",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#00b8ff",
-            "group": "article",
-            "id": "environment~art.7~~0x59a9bf4a",
-            "label": "environment",
-            "title": "*Freq: 2 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 1} <br> *Group_ids: art.7,com.",
-            "value": 2
-        },
-        {
-            "color": "#003dff",
-            "group": "comment",
-            "id": "disdain~com.~0x558265ea1a598^87~0x59a9c0ff",
-            "label": "disdain",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0476 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#007aff",
-            "group": "comment",
-            "id": "recycle~com.~0x558265ea181f8^47~0x59a9c00c",
-            "label": "recycle",
-            "title": "*Freq: 4 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 2, \"neg_count\": 0} <br> *Group_ids: com.",
-            "value": 4
-        },
-        {
-            "color": "#003dff",
-            "group": "comment",
-            "id": "line~com.~0x558265ea16eb2^29~0x59a9bfe9",
-            "label": "line",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0476 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#007aff",
-            "group": "article",
-            "id": "vermin~com.~0x558265ea15cf7^8~0x59a9bf6c",
-            "label": "vermin",
-            "title": "*Freq: 6 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 1, \"neg_count\": 2} <br> *Group_ids: art.5,art.0,com.",
-            "value": 6
-        },
-        {
-            "color": "#00b8ff",
-            "group": "article",
-            "id": "cabinet_member~art.7~~0x59a9bf4a",
-            "label": "cabinet_member",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.7",
-            "value": 1
-        },
-        {
-            "color": "#003dff",
-            "group": "comment",
-            "id": "waste_aside~com.~0x558265ea1a439^85~0x59a9c0ee",
-            "label": "waste_aside",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0476 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#007aff",
-            "group": "comment",
-            "id": "vegetable~com.~0x558265ea16eb2^29~0x59a9bfad",
-            "label": "vegetable",
+            "id": "collection_schedule~com.~0x558333c608fa8^15~0x59aa9745",
+            "label": "collection_schedule",
             "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
             "value": 2
         },
         {
-            "color": "#003dff",
-            "group": "article",
-            "id": "part~com.~0x558265ea1a2b3^83~0x59a9c0ea",
-            "label": "part",
-            "title": "*Freq: 3 <br> *Sen_Score: 0.0476 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.2,com.",
-            "value": 3
-        },
-        {
-            "color": "#007aff",
+            "color": "#ff6400",
             "group": "comment",
-            "id": "compost_bin~com.~0x558265ea160d1^13~0x59a9bfce",
-            "label": "compost_bin",
-            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 2
-        },
-        {
-            "color": "#00ffc2",
-            "group": "article",
-            "id": "cut~art.2~~0x59a9bf16",
-            "label": "cut",
-            "title": "*Freq: 3 <br> *Sen_Score: -0.1429 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 3} <br> *Group_ids: art.2",
-            "value": 3
-        },
-        {
-            "color": "#00b8ff",
-            "group": "comment",
-            "id": "expenditure~com.~0x558265ea18581^52~0x59a9bfe2",
-            "label": "expenditure",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#00b8ff",
-            "group": "article",
-            "id": "adult~com.~0x558265ea16954^23~0x59a9bfee",
-            "label": "adult",
-            "title": "*Freq: 4 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 2, \"neg_count\": 1} <br> *Group_ids: art.5,com.",
-            "value": 4
-        },
-        {
-            "color": "#007aff",
-            "group": "comment",
-            "id": "bed~com.~0x558265ea19dc2^78~0x59a9c05f",
-            "label": "bed",
-            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 2
-        },
-        {
-            "color": "#00b8ff",
-            "group": "article",
-            "id": "treatment~art.7~~0x59a9bf4e",
-            "label": "treatment",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.7",
-            "value": 1
-        },
-        {
-            "color": "#007aff",
-            "group": "comment",
-            "id": "pack~com.~0x558265ea19b57^76~0x59a9c0f3",
-            "label": "pack",
-            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 2
-        },
-        {
-            "color": "cyan",
-            "group": "article",
-            "id": "bin_space~art.7~~0x59a9bf4c",
-            "label": "bin_space",
-            "title": "*Freq: 2 <br> *Sen_Score: -0.0952 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: art.5,art.7",
-            "value": 2
-        },
-        {
-            "color": "#003dff",
-            "group": "comment",
-            "id": "meat~com.~0x558265ea16eb2^29~0x59a9bfe9",
-            "label": "meat",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0476 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#00b8ff",
-            "group": "article",
-            "id": "recycling_bin~art.7~~0x59a9bf4c",
-            "label": "recycling_bin",
-            "title": "*Freq: 2 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 1} <br> *Group_ids: art.7,com.",
-            "value": 2
-        },
-        {
-            "color": "#007aff",
-            "group": "article",
-            "id": "example~art.5~~0x59a9bf3a",
-            "label": "example",
-            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.5,com.",
-            "value": 2
-        },
-        {
-            "color": "#00b8ff",
-            "group": "comment",
-            "id": "service~com.~0x558265ea19dc2^78~0x59a9c085",
-            "label": "service",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#ffb800",
-            "group": "article",
-            "id": "bin~com.~0x558265ea16b3e^25~0x59a9c020",
-            "label": "bin",
-            "title": "*Freq: 21 <br> *Sen_Score: -0.5238 <br> *Sentiment: {\"pos_count\": 3, \"neu_count\": 0, \"neg_count\": 14} <br> *Group_ids: art.7,art.2,com.",
-            "value": 21
-        },
-        {
-            "color": "#00b8ff",
-            "group": "article",
-            "id": "budget~art.2~~0x59a9bf18",
-            "label": "budget",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.2",
-            "value": 1
-        },
-        {
-            "color": "#00b8ff",
-            "group": "comment",
-            "id": "website~com.~0x558265ea1847b^51~0x59a9c0a3",
-            "label": "website",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#007aff",
-            "group": "article",
-            "id": "paper~com.~0x558265ea1600b^12~0x59a9bf7a",
-            "label": "paper",
-            "title": "*Freq: 6 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: art.2,com.",
-            "value": 6
-        },
-        {
-            "color": "#003dff",
-            "group": "comment",
-            "id": "council_service~com.~0x558265ea17ed7^46~0x59a9c020",
-            "label": "council_service",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0476 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#00b8ff",
-            "group": "comment",
-            "id": "cardboard~com.~0x558265ea16384^15~0x59a9bfce",
-            "label": "cardboard",
-            "title": "*Freq: 3 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: com.",
-            "value": 3
-        },
-        {
-            "color": "#00b8ff",
-            "group": "comment",
-            "id": "serving_flat~com.~0x558265ea15e26^10~0x59a9bf88",
-            "label": "serving_flat",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "cyan",
-            "group": "article",
-            "id": "type~com.~0x558265ea17446^33~0x59a9c09e",
-            "label": "type",
-            "title": "*Freq: 4 <br> *Sen_Score: -0.0952 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 3} <br> *Group_ids: art.7,com.",
-            "value": 4
-        },
-        {
-            "color": "#00ffc2",
-            "group": "comment",
-            "id": "twin~com.~0x558265ea16de0^28~0x59a9bfa3",
-            "label": "twin",
-            "title": "*Freq: 3 <br> *Sen_Score: -0.1429 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 3} <br> *Group_ids: com.",
-            "value": 3
-        },
-        {
-            "color": "lime",
-            "group": "comment",
-            "id": "environmental~com.~0x558265ea19aa5^75~0x59a9c0dc",
-            "label": "environmental",
-            "title": "*Freq: 6 <br> *Sen_Score: 0.0952 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: com.",
-            "value": 6
-        },
-        {
-            "color": "cyan",
-            "group": "article",
-            "id": "council~art.2~~0x59a9bf18",
-            "label": "council",
-            "title": "*Freq: 4 <br> *Sen_Score: -0.0952 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 3} <br> *Group_ids: art.0,art.2,com.",
-            "value": 4
-        },
-        {
-            "color": "#007aff",
-            "group": "comment",
-            "id": "reason~com.~0x558265ea17941^36~0x59a9bfcf",
-            "label": "reason",
-            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 2
-        },
-        {
-            "color": "#00ff3d",
-            "group": "comment",
-            "id": "food~com.~0x558265ea16d17^27~0x59a9bfba",
-            "label": "food",
-            "title": "*Freq: 5 <br> *Sen_Score: -0.2381 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 5} <br> *Group_ids: com.",
-            "value": 5
-        },
-        {
-            "color": "#00ffc2",
-            "group": "comment",
-            "id": "black~com.~0x558265ea1600b^12~0x59a9bf7a",
-            "label": "black",
-            "title": "*Freq: 6 <br> *Sen_Score: -0.1429 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 4} <br> *Group_ids: com.",
-            "value": 6
-        },
-        {
-            "color": "cyan",
-            "group": "comment",
-            "id": "wheelie_bin~com.~0x558265ea18818^55~0x59a9c0bf",
-            "label": "wheelie_bin",
-            "title": "*Freq: 3 <br> *Sen_Score: -0.0952 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: com.",
-            "value": 3
-        },
-        {
-            "color": "#007aff",
-            "group": "article",
-            "id": "town_hall~art.2~~0x59a9bf21",
-            "label": "town_hall",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.2",
-            "value": 1
-        },
-        {
-            "color": "#00b8ff",
-            "group": "comment",
-            "id": "labour_idea~com.~0x558265ea1626b^14~0x59a9bf78",
-            "label": "labour_idea",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#00b8ff",
-            "group": "comment",
-            "id": "baby~com.~0x558265ea17446^33~0x59a9c062",
-            "label": "baby",
-            "title": "*Freq: 5 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 2} <br> *Group_ids: com.",
-            "value": 5
-        },
-        {
-            "color": "#00b8ff",
-            "group": "comment",
-            "id": "food/garden_waste~com.~0x558265ea16384^15~0x59a9bf94",
-            "label": "food/garden_waste",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "lime",
-            "group": "comment",
-            "id": "gain~com.~0x558265ea192e0^62~0x59a9bfee",
-            "label": "gain",
-            "title": "*Freq: 2 <br> *Sen_Score: 0.0952 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
-            "value": 2
-        },
-        {
-            "color": "cyan",
-            "group": "article",
-            "id": "government~art.2~~0x59a9bf1c",
-            "label": "government",
-            "title": "*Freq: 2 <br> *Sen_Score: -0.0952 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: art.2,com.",
-            "value": 2
-        },
-        {
-            "color": "#00b8ff",
-            "group": "comment",
-            "id": "bit~com.~0x558265ea16eb2^29~0x59a9c001",
-            "label": "bit",
-            "title": "*Freq: 6 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 1, \"neg_count\": 3} <br> *Group_ids: com.",
-            "value": 6
-        },
-        {
-            "color": "#007aff",
-            "group": "comment",
-            "id": "liner~com.~0x558265ea1a358^84~0x59a9c047",
-            "label": "liner",
-            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 2
-        },
-        {
-            "color": "#007aff",
-            "group": "article",
-            "id": "rubbish~com.~0x558265ea1ad77^100~0x59a9c06b",
-            "label": "rubbish",
-            "title": "*Freq: 3 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 1} <br> *Group_ids: art.5,com.",
-            "value": 3
-        },
-        {
-            "color": "#00b8ff",
-            "group": "article",
-            "id": "glass~art.2~~0x59a9bf11",
-            "label": "glass",
-            "title": "*Freq: 3 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 2, \"neg_count\": 1} <br> *Group_ids: art.2,com.",
-            "value": 3
-        },
-        {
-            "color": "cyan",
-            "group": "comment",
-            "id": "compostable~com.~0x558265ea17ed7^46~0x59a9c071",
-            "label": "compostable",
-            "title": "*Freq: 3 <br> *Sen_Score: -0.0952 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 2} <br> *Group_ids: com.",
-            "value": 3
-        },
-        {
-            "color": "#003dff",
-            "group": "comment",
-            "id": "poo~com.~0x558265ea1772a^35~0x59a9c088",
-            "label": "poo",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0476 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#003dff",
-            "group": "comment",
-            "id": "road~com.~0x558265ea19dc2^78~0x59a9c05f",
-            "label": "road",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0476 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#007aff",
-            "group": "article",
-            "id": "borough~art.5~~0x59a9bf42",
-            "label": "borough",
-            "title": "*Freq: 3 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 1} <br> *Group_ids: art.5,com.",
-            "value": 3
-        },
-        {
-            "color": "#00b8ff",
-            "group": "comment",
-            "id": "mess~com.~0x558265ea181f8^47~0x59a9c01b",
-            "label": "mess",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "yellow",
-            "group": "article",
-            "id": "collection~com.~0x558265ea17941^36~0x59a9bfc1",
+            "id": "collection~com.~0x558333c60947f^21~0x59aa974c",
             "label": "collection",
-            "title": "*Freq: 14 <br> *Sen_Score: -0.4762 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 10} <br> *Group_ids: art.7,com.",
-            "value": 14
-        },
-        {
-            "color": "#00b8ff",
-            "group": "article",
-            "id": "right~com.~0x558265ea192e0^62~0x59a9bfee",
-            "label": "right",
-            "title": "*Freq: 3 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: com.,art.3",
+            "title": "*Freq: 3 <br> *Sen_Score: -0.25 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: com.",
             "value": 3
         },
         {
-            "color": "cyan",
+            "color": "#ff8600",
             "group": "comment",
-            "id": "rat~com.~0x558265ea158e0^1~0x59a9bf68",
-            "label": "rat",
-            "title": "*Freq: 7 <br> *Sen_Score: -0.0952 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 2} <br> *Group_ids: com.",
-            "value": 7
-        },
-        {
-            "color": "#003dff",
-            "group": "comment",
-            "id": "reduction~com.~0x558265ea18aca^57~0x59a9c091",
-            "label": "reduction",
-            "title": "*Freq: 2 <br> *Sen_Score: 0.0476 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: com.",
-            "value": 2
-        },
-        {
-            "color": "#00b8ff",
-            "group": "comment",
-            "id": "e.g.~com.~0x558265ea17ed7^46~0x59a9c071",
-            "label": "e.g.",
-            "title": "*Freq: 2 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 2
-        },
-        {
-            "color": "#003dff",
-            "group": "comment",
-            "id": "wood~com.~0x558265ea1772a^35~0x59a9c088",
-            "label": "wood",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0476 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
+            "id": "kitchen_waste~com.~0x558333c608d67^13~0x59aa9751",
+            "label": "kitchen_waste",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.125 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
             "value": 1
         },
         {
-            "color": "#007aff",
+            "color": "#ff8600",
             "group": "article",
-            "id": "fly-tipping~art.5~~0x59a9bf3e",
-            "label": "fly-tipping",
-            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.5,art.0",
-            "value": 2
-        },
-        {
-            "color": "#003dff",
-            "group": "comment",
-            "id": "support~com.~0x558265ea17ed7^46~0x59a9c020",
-            "label": "support",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0476 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
+            "id": "budget~art.3~~0x59aa96f7",
+            "label": "budget",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.125 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
             "value": 1
-        },
-        {
-            "color": "#00b8ff",
-            "group": "comment",
-            "id": "provision~com.~0x558265ea1a2b3^83~0x59a9c0ea",
-            "label": "provision",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#00b8ff",
-            "group": "comment",
-            "id": "volume~com.~0x558265ea17446^33~0x59a9c09e",
-            "label": "volume",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "lime",
-            "group": "article",
-            "id": "year~com.~0x558265ea160d1^13~0x59a9bfce",
-            "label": "year",
-            "title": "*Freq: 7 <br> *Sen_Score: -0.2857 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 6} <br> *Group_ids: art.2,com.",
-            "value": 7
-        },
-        {
-            "color": "#00b8ff",
-            "group": "comment",
-            "id": "responsible~com.~0x558265ea19dc2^78~0x59a9c085",
-            "label": "responsible",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#00ff3d",
-            "group": "comment",
-            "id": "food_waste~com.~0x558265ea16b3e^25~0x59a9c020",
-            "label": "food_waste",
-            "title": "*Freq: 5 <br> *Sen_Score: -0.2381 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 5} <br> *Group_ids: com.",
-            "value": 5
-        },
-        {
-            "color": "#00b8ff",
-            "group": "comment",
-            "id": "waste_charge~com.~0x558265ea160d1^13~0x59a9bfce",
-            "label": "waste_charge",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#00b8ff",
-            "group": "comment",
-            "id": "glass/plastic~com.~0x558265ea160d1^13~0x59a9bfce",
-            "label": "glass/plastic",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0476 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "cyan",
-            "group": "comment",
-            "id": "resident~com.~0x558265ea168f5^22~0x59a9bf88",
-            "label": "resident",
-            "title": "*Freq: 3 <br> *Sen_Score: -0.0952 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 2} <br> *Group_ids: com.",
-            "value": 3
         }
     ],
     "options": {
@@ -3050,6 +722,6 @@
             "node_freq_min": 1,
             "remove_isolated_node": true
         },
-        "timestamp": "2017-09-01 22:20:35 "
+        "timestamp": "2017-09-02 13:35:03 "
     }
 }
