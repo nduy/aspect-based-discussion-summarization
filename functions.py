@@ -8,24 +8,28 @@
 
 ######################################
 # IMPORT LIBRARY
-import csv
+
 import en
 import codecs
 import json
-from datetime import datetime
+import csv
 import networkx as nx
 from textblob import TextBlob
-from nltk.tokenize import sent_tokenize, texttiling, word_tokenize
+from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk.corpus import stopwords
 from itertools import combinations
 from polyglot.text import Text
 from nltk.stem import WordNetLemmatizer
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from utils import *
-from main import dep_opt
 from nltk.parse.stanford import StanfordDependencyParser
-from main import uni_options
-from main import build_options
+from config import prune_options
+from config import uni_options
+from config import build_options
+from config import dep_opt
+import threading
+
+
 ######################################
 # EXTRA DECLARATIONS
 # Lemmatizer
@@ -47,6 +51,8 @@ BUILD_MODE = 0  # 0: Do nothing
 #   'global': use TextBlob sentiment analysis to analyse the whole comment. 'local': perform at the sentence level
 SENTIMENT_ANALYSIS_MODE = 'local'  # m
 
+# Read number of computational threads will be used during the extraction
+N_THREADS = 10
 
 ######################################
 # FUNCTIONS
@@ -69,7 +75,7 @@ def build_sum_graph(dataset):
         g = build_mode_0(threads)
         #  print g.edges()
         maybe_print("--> Graph BUILD in mode 0 completed.\n    Number of nodes: {0}\n    Number of edges: {1}"
-                     .format(len(g.nodes()), len(g.edges())), 1)
+                    .format(len(g.nodes()), len(g.edges())), 1)
         #  print "---", g.nodes()
         return g
     if MERGE_MODE == 1:
@@ -148,13 +154,36 @@ def build_mode_1(title, article, comments):
     if build_options['use_thread_structure']:
         raise RuntimeError("Thread structure usage in build mode 1 is not supported!")
     else:
-        # data structure [{"id":"","content":""}]
-        for comment in comments:
-            comment_id = comment['id']
-            content = comment['content']
-            comment_graph = build_directed_graph_from_text(txt=content, group_id="com.", member_id=comment_id)
-            if comment_graph:
-                rs = nx.compose(rs, comment_graph)
+        count = 0
+        data_chunks = [[] for _ in xrange(0,N_THREADS)]
+        while count < len(comments):
+            data_chunks[count % N_THREADS].append(comments[count])
+            count += 1
+        # initialize th threads
+        threads = []
+        results = [[] for _ in xrange(0,N_THREADS)]
+        for i in xrange(0,N_THREADS):
+            thread = DirGraphExtractor("Thread "+ str(i), data_chunks[i], results[i])
+            thread.start()
+            threads.append(thread)
+
+        for thread in threads:
+            thread.join()
+
+        print "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+
+        for i in xrange(0,N_THREADS):
+            for th_rs in results[i]:
+                if th_rs:
+                    rs = nx.compose(rs, th_rs)
+
+        #for comment in comments:
+        #    comment_id = comment['member_id']
+        #    group_id = comment['group_id']
+        #    content = comment['content']
+        #    comment_graph = build_directed_graph_from_text(txt=content, group_id=group_id, member_id=comment_id)
+        #    if comment_graph:
+        #        rs = nx.compose(rs, comment_graph)
     rs = graph_unify(rs, uni_options)
     return rs
 
@@ -348,109 +377,28 @@ def build_directed_graph_from_text(txt, group_id='', member_id=''):
     return g
 
 
-# Read a data file, cluster threads of discussion
-# @param: path to the data file
-# @return: data structure: [
-#   [{'id':'cluster_id', 'central_comment': 'abc', 'supports':[support comments]},
-#                       {}]
-def read_comment_file(data_file, read_as_threads=False):
-    dataset = None
-    if read_as_threads:
-        try:
-            with codecs.open(data_file, "rb", "utf8") as comment_file:
-                reader = unicode_csv_reader(comment_file, delimiter='	', quotechar='"')
-                dataset = []
-                index = -1
-                count = 0
-                for entry in reader:
-                    #  print entry;
-                    if entry[2] == u"":
-                        cluster_id = gen_mcs() + "^" + str(index+1)
-                        dataset.append({'id': cluster_id, 'central': text_preprocessing(entry[6]), 'supports': []})
-                        index += 1
-                    else:
-                        if count > 0:
-                            dataset[index]['supports'].append(text_preprocessing(entry[6]))
-                    count += 1
-        except IOError:
-            print "Unable to open {0}".format(data_file)
-        maybe_print(json.dumps(dataset, sort_keys=True, indent=4, separators=(',', ': ')), 3)
-    else:
-        try:
-            with codecs.open(data_file, "rb", "utf8") as comment_file:
-                reader = unicode_csv_reader(comment_file, delimiter='	', quotechar='"')
-                dataset = []
-                count = 0
-                for entry in reader:
-                    sentence_id = gen_mcs() + "^" + str(count)
-                    dataset.append({'id': sentence_id, 'content': text_preprocessing(entry[6])})
-                    count += 1
-        except IOError:
-            print "Unable to open {0}".format(data_file)
-        maybe_print(json.dumps(dataset, sort_keys=True, indent=4, separators=(',', ': ')), 3)
-    return dataset
+# Declaration for graph extractor in order to run mulithreading
+class DirGraphExtractor (threading.Thread):
+    name = 'unnamed'
+    data = []
+    result = []
 
+    def __init__(self, name, data,result):
+        threading.Thread.__init__(self)
+        self.name = name
+        self.data = data
+        self.result = result
 
-# Read the ARTICLE file
-# @param: path to the data file
-# @return: a pair of
-#  1. title sentence
-#  2. a list, each element is a sentence
-def read_article_file(data_file):
-    title = None
-    article = None
-    try:
-        with codecs.open(data_file, "rb", "utf8") as article_file:
-            count = 0
-            article = []
-            for line in article_file:
-                if count != 0:
-                    if line:
-                        sens = sent_tokenize(line.replace("\r", ""))
-                        if sens:
-                            article.extend(sens)
-                else:  # the title line
-                    title = line
-                count += 1
-    except IOError:
-        print "Unable to open {0}".format(data_file)
-    return title, article
-
-
-# Segmentize the sentences
-# @param: a list, each element is a sentence the document
-# @return: a list, each element is group of sentence concatenated to form a paragraph.
-def texttiling_tokenize(sentence_list):
-    doc = ' '.join(sentence_list)
-    tt = texttiling.TextTilingTokenizer()
-    segmented_text = tt.tokenize(doc)
-    return [simple_normalize(para.strip()) for para in segmented_text if para.strip()]
-
-
-#  Read unicode csv file, ignore unencodable characters
-def unicode_csv_reader(unicode_csv_data, dialect=csv.excel, **kwargs):
-    # csv.py doesn't do Unicode; encode temporarily as UTF-8:
-    csv_reader = csv.reader(utf_8_encoder(unicode_csv_data),
-                            dialect=dialect, **kwargs)
-    for row in csv_reader:
-        # decode UTF-8 back to Unicode, cell by cell:
-        yield [unicode(cell, 'utf-8') for cell in row]
-
-
-# Support function for reading unicode characters
-def utf_8_encoder(unicode_csv_data):
-    for line in unicode_csv_data:
-        yield line.encode('utf-8', 'ignore')
-
-
-# Generate the code representing current time in second-microsecond
-def gen_mcs():
-    return hex(int(datetime.now().strftime("%s%f")))
-
-
-# Generate the identical code representing current micro-second
-def gen_mcs_only():
-    return hex(int(datetime.now().strftime("%s")))
+    def run(self):
+        print "Starting extractor {0} with {1} data records".format(self.name, len(self.data))
+        for record in self.data:
+            txt = record['content'] if record['content'] else ""
+            group = record['group_id'] if record['group_id'] else ""
+            member = record['member_id'] if record['member_id'] else ""
+            g = build_directed_graph_from_text(txt=txt, group_id=group, member_id=member)
+            if g:
+                self.result.append(g)
+        print "Exiting extractor {0}".format(self.name)
 
 
 # Generate the JSON code from the networkx graph structure and perform node coloring
@@ -509,8 +457,9 @@ def generate_json_from_graph(g):
 
 
 # Pruning the graph according to restrictions in options
-def prune_graph(graph, options):
+def prune_graph(graph):
     maybe_print("Start pruning aspect graph.", 1)
+    options = prune_options
     g = graph
     # Load options
     if not g or not options:
@@ -623,23 +572,6 @@ def compute_sentiment_score(g):
         tg_g.node[n]['sentiment_score'] = float((g.node[n]['sentiment']['pos_count']
                                                  - g.node[n]['sentiment']['neg_count'])) / max_val
     return tg_g
-
-
-# Function to perform simple rule-based normalization the text
-# @param: a string, should be in unicode
-# @return: the normalized string
-def simple_normalize(cnt):
-    reps = ('\n', ''), \
-           ('            ', ''), \
-           ("\n \n", ""), \
-           (u"\u201c", "\""), \
-           (u"\u201d", "\""), \
-           (u"\u2019", "\'"), \
-           (u"\u2018", "\'"), \
-           (u"\u2013", "-"), \
-           (u"\u2014", "-"), \
-           (u"\u2011", "-")
-    return reduce(lambda a, kv: a.replace(*kv), reps, cnt)
 
 
 # Extract a graph from a sentence
@@ -907,3 +839,84 @@ def graph_unify(g=None, uni_opt=None):
     maybe_print(" -> Unification complete! Number of nodes changed from {0} to {1}".format(len(g.nodes()),
                                                                                            len(rs.nodes())), 2)
     return rs
+
+
+# Read a data file, cluster threads of discussion
+# @param: path to the data file
+# @return: data structure: [
+#   [{'id':'cluster_id', 'central_comment': 'abc', 'supports':[support comments]},
+#                       {}]
+def read_comment_file(data_file, read_as_threads=False):
+    dataset = None
+    if read_as_threads:
+        try:
+            with codecs.open(data_file, "rb", "utf8") as comment_file:
+                reader = unicode_csv_reader(comment_file, delimiter='	', quotechar='"')
+                dataset = []
+                index = -1
+                count = 0
+                for entry in reader:
+                    #  print entry;
+                    if entry[2] == u"":
+                        cluster_id = gen_mcs() + "^" + str(index+1)
+                        dataset.append({'id': cluster_id, 'central': text_preprocessing(entry[6]), 'supports': []})
+                        index += 1
+                    else:
+                        if count > 0:
+                            dataset[index]['supports'].append(text_preprocessing(entry[6]))
+                    count += 1
+        except IOError:
+            print "Unable to open {0}".format(data_file)
+        maybe_print(json.dumps(dataset, sort_keys=True, indent=4, separators=(',', ': ')), 3)
+    else:
+        try:
+            with codecs.open(data_file, "rb", "utf8") as comment_file:
+                reader = unicode_csv_reader(comment_file, delimiter='	', quotechar='"')
+                dataset = []
+                count = 0
+                for entry in reader:
+                    sentence_id = gen_mcs() + "^" + str(count)
+                    dataset.append({'member_id': sentence_id,
+                                    'group_id': 'com.',
+                                    'content': text_preprocessing(entry[6])})
+                    count += 1
+        except IOError:
+            print "Unable to open {0}".format(data_file)
+        maybe_print(json.dumps(dataset, sort_keys=True, indent=4, separators=(',', ': ')), 3)
+    return dataset
+
+
+# Read the ARTICLE file
+# @param: path to the data file
+# @return: a pair of
+#  1. title sentence
+#  2. a list, each element is a sentence
+def read_article_file(data_file):
+    title = None
+    article = None
+    try:
+        with codecs.open(data_file, "rb", "utf8") as article_file:
+            count = 0
+            article = []
+            for line in article_file:
+                if count != 0:
+                    if line:
+                        sens = sent_tokenize(line.replace("\r", ""))
+                        if sens:
+                            article.extend(sens)
+                else:  # the title line
+                    title = line
+                count += 1
+    except IOError:
+        print "Unable to open {0}".format(data_file)
+    return title, article
+
+
+#  Read unicode csv file, ignore unencodable characters
+def unicode_csv_reader(unicode_csv_data, dialect=csv.excel, **kwargs):
+    # csv.py doesn't do Unicode; encode temporarily as UTF-8:
+    csv_reader = csv.reader(utf_8_encoder(unicode_csv_data),
+                            dialect=dialect, **kwargs)
+    for row in csv_reader:
+        # decode UTF-8 back to Unicode, cell by cell:
+        yield [unicode(cell, 'utf-8') for cell in row]
