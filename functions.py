@@ -13,6 +13,7 @@ import en
 import codecs
 import json
 import csv
+import itertools
 import networkx as nx
 from textblob import TextBlob
 from nltk.tokenize import sent_tokenize, word_tokenize
@@ -43,7 +44,7 @@ sid = SentimentIntensityAnalyzer()
 # List of stopword
 stopwords = set(stopwords.words('english'))  # Add more stopword to ignore her
 # POS to keep (for build mode 1)
-preferredTags = {'NOUN', 'PROPN'}
+preferredTags = {'NOUN', 'PROPN'}  # use in build mode 1 only
 # Graph building mode
 BUILD_MODE = 0  # 0: Do nothing
 
@@ -52,10 +53,12 @@ BUILD_MODE = 0  # 0: Do nothing
 SENTIMENT_ANALYSIS_MODE = 'local'  # m
 
 # Read number of computational threads will be used during the extraction
-N_THREADS = 10
+N_THREADS = 2
+
 
 ######################################
 # FUNCTIONS
+
 
 # Build a aspect graph from inpData.
 # @params: threads - discussion threads. Structure array of {id: "id", :"content", supports:[]}.
@@ -595,13 +598,13 @@ def dep_extract_from_sent(sentence, filter_opt):
     else:
         # filter triples whose beginning and ending tags are inside the list
         # print raw_results
+        # print filter_pos_result
         filter_pos_result = [trip for trip in raw_results
                              if (trip[0][1] in preferred_pos or len(trip[0][0]) > 10) and
                                 (trip[2][1] in preferred_pos or len(trip[2][0]) > 10)
                              ]  # keep potential phrases
 
     # Filter by relationship
-    # print filter_pos_result
     preferred_rel = filter_opt['preferred_rel']
     if type(preferred_rel) != list:  # take all POS
         filter_rel_result = filter_pos_result
@@ -609,14 +612,54 @@ def dep_extract_from_sent(sentence, filter_opt):
         # filter tripples that has relation in the list
         filter_rel_result = [trip for trip in raw_results if (trip[1] in preferred_rel)]
 
-    # print filter_rel_result
+    # Custom node contract
+    if dep_opt['custom_nodes_contract']:
+        to_replace_keys = dict()
+        for (s, s_tag), r, (t, t_tag) in filter_rel_result:
+            item = {'from_pos': s_tag, 'to_pos': t_tag, 'rel_name': r}
+            if item in dep_opt['custom_nodes_contract']['rule_set']:
+                keyword = t + '_' + s
+                to_replace_keys[s] = keyword
+                to_replace_keys[t] = keyword
+        contracted_nodes_result = set()
+        key_set = set()  # Save the set of words, so we can use it for further
+        edge_set = set() # Save all the edges
+        for (s, s_tag), r, (t, t_tag) in filter_rel_result:
+            item = (to_replace_keys[s] if s in to_replace_keys else s, s_tag), \
+                   r, \
+                   (to_replace_keys[t] if t in to_replace_keys else t, t_tag)
+            key_set.add(item[0][0])
+            key_set.add(item[2][0])
+            edge_set.add((item[0][0],item[2][0]))
+            contracted_nodes_result.add(item)
+
+        del to_replace_keys
+        contracted_nodes_result = list(contracted_nodes_result)
+    else:
+        contracted_nodes_result = filter_rel_result
+
+    # Custom edge contract
+    # Extract all existing tuples
+    if dep_opt['custom_nodes_contract']:
+        for node in key_set:
+            # get a the list of nodes that it connected to
+            neighbors = [((s, s_tag), r, (t, t_tag)) for (s, s_tag), r, (t, t_tag)  in contracted_nodes_result
+                            if s == node or t == node]
+            permutations = itertools.permutations(neighbors,2)
+            if permutations:
+                for rel1,rel2 in permutations:
+                    rel_name1 = rel1(1)
+                    rel_name2 = rel2(1)
+                {'rel_name1': u'nsubj', 'rel_name1': u'left', 'rel_name2': u'dobj', 'rel_name1': u'right',
+                 'n_pos': u'BVZ', 'rs_label': u'{n_label}', 'rs_direction': u'right'}
+
+    # Compound merge
     new_sen = sentence  # new sentence contains grouped item with _ as connector
     # Merge compounds
     compound_merge = filter_opt['compound_merge']
     if compound_merge:
         tokens = [lemmatizer.lemmatize(w) for w in word_tokenize(sentence.lower())]
-        # compounds = [(t,s) for (s,s_tag),r,(t,t_tag) in filter_rel_result if r == u'compound' and s_tag == t_tag]
-        compounds = [(t, s) for (s, s_tag), r, (t, t_tag) in filter_rel_result if r == u'compound']
+        compounds = [(t, s) for (s, s_tag), r, (t, t_tag) in contracted_nodes_result if r == u'compound']
         # print "!!!!!!!!!", compounds
         replacements = dict()
         for i in xrange(0, len(tokens)-1):
@@ -625,20 +668,20 @@ def dep_extract_from_sent(sentence, filter_opt):
                 replacements[tokens[i+1]] = tokens[i] + "_" + tokens[i + 1]
                 # Now do the replace
                 # print "found compound", tokens[i],tokens[i+1]
-        for i in xrange(0, len(filter_rel_result)):
-            (s, s_tag), r, (t, t_tag) = filter_rel_result[i]
+        for i in xrange(0, len(contracted_nodes_result)):
+            (s, s_tag), r, (t, t_tag) = contracted_nodes_result[i]
             if s in replacements:
-                filter_rel_result[i] = (replacements[s], s_tag), r, (t, t_tag)
-            (s, s_tag), r, (t, t_tag) = filter_rel_result[i]  # Update in case 1st element changes
+                contracted_nodes_result[i] = (replacements[s], s_tag), r, (t, t_tag)
+            (s, s_tag), r, (t, t_tag) = contracted_nodes_result[i]  # Update in case 1st element changes
             if t in replacements:
-                filter_rel_result[i] = (s, s_tag), r, (replacements[t], t_tag)
+                contracted_nodes_result[i] = (s, s_tag), r, (replacements[t], t_tag)
         for key in replacements:
             new_sen.replace(key, replacements[key])
         # now remove duplicate
-        filter_comp_result = [((s, s_tag), r, (t, t_tag)) for (s, s_tag), r, (t, t_tag) in filter_rel_result
+        filter_comp_result = [((s, s_tag), r, (t, t_tag)) for (s, s_tag), r, (t, t_tag) in contracted_nodes_result
                               if (s != t)]
     else:
-        filter_comp_result = filter_rel_result
+        filter_comp_result = contracted_nodes_result
     # Final refine
     rs = []  # store the refined tuples
     keys = set()  # store the keywords
@@ -648,6 +691,7 @@ def dep_extract_from_sent(sentence, filter_opt):
         rs.append(((s_f, s_tag), r, (t_f, t_tag)))
         keys.add(s_f)
         keys.add(t_f)
+
 
     return rs, list(keys), new_sen
 
@@ -925,3 +969,5 @@ def unicode_csv_reader(unicode_csv_data, dialect=csv.excel, **kwargs):
     for row in csv_reader:
         # decode UTF-8 back to Unicode, cell by cell:
         yield [unicode(cell, 'utf-8') for cell in row]
+
+

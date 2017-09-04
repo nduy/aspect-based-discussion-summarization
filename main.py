@@ -18,8 +18,8 @@ if __name__ == "__main__":
 
     # comments = read_comment_file("data/comments_article0_clipped.txt", read_as_threads=False)
     # title, article = read_article_file("data/article0_clipped.txt")
-    comments = read_comment_file("data/comments_article0.txt", read_as_threads=False)
-    title, article = read_article_file("data/article0.txt")
+    comments = read_comment_file("data/comments_article0_clipped.txt", read_as_threads=False)
+    title, article = read_article_file("data/article0_clipped.txt")
 
     # g = build_directed_graph_from_text(txt=title.lower(), threadid='title')
     # print 'Nodes:', g.nodes(data=True), '\n Edges:', g.edges(data=True)
@@ -33,27 +33,26 @@ if __name__ == "__main__":
 
     # Build aspect graph, then serialize
     asp_graph = build_sum_graph(dataset)  # Build sum keygraph at mode 1
-    with open('tmp/asp_graph.adjlist', 'wb+') as handle:
-        handle.write(json.dumps(json_graph.node_link_data(asp_graph)))
+    # with open('tmp/asp_graph.json', 'wb+') as handle:
+    #    handle.write(json.dumps(json_graph.node_link_data(asp_graph)))
         # nx.write_adjlist(asp_graph, handle)
-
 
     # Prune the graph, then serialize
     pruned_graph = prune_graph(asp_graph)
-    with open('tmp/pruned_graph.adjlist', 'wb+') as handle:
-        handle.write(json.dumps(json_graph.node_link_data(pruned_graph)))
+    # with open('tmp/pruned_graph.json', 'wb+') as handle:
+    #    handle.write(json.dumps(json_graph.node_link_data(pruned_graph)))
         # nx.write_adjlist(pruned_graph, handle)
 
     # Compute sentiment scores, then serialize
     sen_graph = compute_sentiment_score(pruned_graph)
-    with open('tmp/sen_graph.adjlist', 'wb+') as handle:
-        handle.write(json.dumps(json_graph.node_link_data(sen_graph)))
+    # with open('tmp/sen_graph.json', 'wb+') as handle:
+    #    handle.write(json.dumps(json_graph.node_link_data(sen_graph)))
         # nx.write_adjlist(sen_graph, handle)
 
     # Coloring the graph by sentiment, then serialize
     colored_graph = coloring_nodes(sen_graph)
-    with open('tmp/colored_graph.adjlist', 'wb+') as handle:
-        handle.write(json.dumps(json_graph.node_link_data(colored_graph)))
+    # with open('tmp/colored_graph.json', 'wb+') as handle:
+    #    handle.write(json.dumps(json_graph.node_link_data(colored_graph)))
         # nx.write_adjlist(colored_graph, handle)
 
     json_g = None
