@@ -585,7 +585,7 @@ def dep_extract_from_sent(sentence, filter_opt):
     # print blob.noun_phrases
     # for phrase in blob.noun_phrases:
     #    sentence = sentence.replace(phrase,phrase.replace(' ','_'))
-    #  print sentence
+    # print sentence
     result = dep_parser.raw_parse(sentence)
     dependencies = result.next()
     raw_results = [((lemmatizer.lemmatize(s.lower()), s_tag), r, (lemmatizer.lemmatize(t.lower()), t_tag))
@@ -613,7 +613,7 @@ def dep_extract_from_sent(sentence, filter_opt):
         filter_rel_result = [trip for trip in raw_results if (trip[1] in preferred_rel)]
 
     # Custom node contract
-    if dep_opt['custom_nodes_contract']:
+    if dep_opt['custom_nodes_contract'] and dep_opt['custom_nodes_contract']['enable']:
         to_replace_keys = dict()
         for (s, s_tag), r, (t, t_tag) in filter_rel_result:
             item = {'from_pos': s_tag, 'to_pos': t_tag, 'rel_name': r}
@@ -628,8 +628,8 @@ def dep_extract_from_sent(sentence, filter_opt):
             item = (to_replace_keys[s] if s in to_replace_keys else s, s_tag), \
                    r, \
                    (to_replace_keys[t] if t in to_replace_keys else t, t_tag)
-            key_set.add(item[0][0])
-            key_set.add(item[2][0])
+            key_set.add((item[0][0], s_tag))
+            key_set.add((item[2][0], t_tag))
             edge_set.add((item[0][0],item[2][0]))
             contracted_nodes_result.add(item)
 
@@ -640,26 +640,59 @@ def dep_extract_from_sent(sentence, filter_opt):
 
     # Custom edge contract
     # Extract all existing tuples
-    if dep_opt['custom_nodes_contract']:
-        for node in key_set:
+    contracted_edges_result = None
+    if dep_opt['custom_edges_contract'] and dep_opt['custom_edges_contract']['enable']:
+        to_add_rels = set()
+        to_remove_rels = set()
+        for node,tag in key_set:
             # get a the list of nodes that it connected to
-            neighbors = [((s, s_tag), r, (t, t_tag)) for (s, s_tag), r, (t, t_tag)  in contracted_nodes_result
-                            if s == node or t == node]
-            permutations = itertools.permutations(neighbors,2)
+            # print node
+            neighbors = [((s, s_tag), r, (t, t_tag), u'out' if s == node else u'in')
+                         for (s, s_tag), r, (t, t_tag) in contracted_nodes_result
+                         if s == node or t == node]
+            permutations = list(itertools.permutations(neighbors,2))
+            # print permutations
             if permutations:
                 for rel1,rel2 in permutations:
-                    rel_name1 = rel1(1)
-                    rel_name2 = rel2(1)
-                {'rel_name1': u'nsubj', 'rel_name1': u'left', 'rel_name2': u'dobj', 'rel_name1': u'right',
-                 'n_pos': u'BVZ', 'rs_label': u'{n_label}', 'rs_direction': u'right'}
-
+                    # print "@@@@@",rel1, rel2
+                    # Now search in the rule set to see if there is any match to the current node
+                    for r in dep_opt['custom_edges_contract']['rule_set']:
+                        # print r
+                        # print r['rel_name1'], rel1[1], r['rel_direction1'], rel1[3], r['rel_name2'], rel2[1], r['rel_direction2'], rel1[3], r['n_pos'], tag
+                        if r['rel_name1'] == rel1[1] and r['rel_direction1'] == rel1[3] and r['rel_name2'] == rel2[1] \
+                           and r['rel_direction2'] == rel1[3] and r['n_pos'] == tag:  # Matched
+                            rs_label = r['rs_label'].replace(u'{n_label}', node)
+                            rs_label = lemmatizer.lemmatize(rs_label).upper()
+                            # print rel1, rel2
+                            if r['rs_direction'] == u'left-to-right':
+                                to_add_rels.add((rel1[2] if rel1[3] == u'out' else rel1[0],
+                                                 rs_label,
+                                                 rel2[2] if rel2[3] == u'out' else rel2[0]))
+                            else:
+                                to_add_rels.add((rel2[2] if rel2[3] == u'out' else rel2[0],
+                                                 rs_label,
+                                                 rel1[2] if rel1[3] == u'out' else rel1[0]))
+                            # print '!@$@!!!!!!!!!!!!!!!!!!!!!!!!'
+                            to_remove_rels.add(rel1[:3])  # Mark these relationship to remove
+                            to_remove_rels.add(rel2[:3])
+                # Now remove the contracted relationships
+                # print '[org]',contracted_nodes_result
+                # print '[rmv]', to_remove_rels
+                # print '[add]',to_add_rels
+                contracted_edges_result = list((set(contracted_nodes_result) - to_remove_rels) | to_add_rels)
+                # print '[rs]', contracted_edges_result
+        if len(to_add_rels) > 0:
+            maybe_print("   + Contracted {0} ed-n-ed using rules for sentence \"{1}\""
+                        .format(len(to_add_rels),sentence[:50]),2)
+    if not contracted_edges_result: contracted_edges_result = contracted_nodes_result
+    # print '[rs2]', contracted_edges_result
     # Compound merge
     new_sen = sentence  # new sentence contains grouped item with _ as connector
     # Merge compounds
     compound_merge = filter_opt['compound_merge']
     if compound_merge:
         tokens = [lemmatizer.lemmatize(w) for w in word_tokenize(sentence.lower())]
-        compounds = [(t, s) for (s, s_tag), r, (t, t_tag) in contracted_nodes_result if r == u'compound']
+        compounds = [(t, s) for (s, s_tag), r, (t, t_tag) in contracted_edges_result if r == u'compound']
         # print "!!!!!!!!!", compounds
         replacements = dict()
         for i in xrange(0, len(tokens)-1):
@@ -668,20 +701,20 @@ def dep_extract_from_sent(sentence, filter_opt):
                 replacements[tokens[i+1]] = tokens[i] + "_" + tokens[i + 1]
                 # Now do the replace
                 # print "found compound", tokens[i],tokens[i+1]
-        for i in xrange(0, len(contracted_nodes_result)):
-            (s, s_tag), r, (t, t_tag) = contracted_nodes_result[i]
+        for i in xrange(0, len(contracted_edges_result)):
+            (s, s_tag), r, (t, t_tag) = contracted_edges_result[i]
             if s in replacements:
-                contracted_nodes_result[i] = (replacements[s], s_tag), r, (t, t_tag)
-            (s, s_tag), r, (t, t_tag) = contracted_nodes_result[i]  # Update in case 1st element changes
+                contracted_edges_result[i] = (replacements[s], s_tag), r, (t, t_tag)
+            (s, s_tag), r, (t, t_tag) = contracted_edges_result[i]  # Update in case 1st element changes
             if t in replacements:
-                contracted_nodes_result[i] = (s, s_tag), r, (replacements[t], t_tag)
+                contracted_edges_result[i] = (s, s_tag), r, (replacements[t], t_tag)
         for key in replacements:
             new_sen.replace(key, replacements[key])
         # now remove duplicate
-        filter_comp_result = [((s, s_tag), r, (t, t_tag)) for (s, s_tag), r, (t, t_tag) in contracted_nodes_result
+        filter_comp_result = [((s, s_tag), r, (t, t_tag)) for (s, s_tag), r, (t, t_tag) in contracted_edges_result
                               if (s != t)]
     else:
-        filter_comp_result = contracted_nodes_result
+        filter_comp_result = contracted_edges_result
     # Final refine
     rs = []  # store the refined tuples
     keys = set()  # store the keywords

@@ -9,7 +9,7 @@ build_options = {
 
 # Options for prunning the graph
 prune_options = {
-    'enable_pruning': True,
+    'enable_pruning': False,
     'min_word_length': 2,
     'remove_isolated_node': True,
     'node_freq_min': 1,
@@ -20,7 +20,7 @@ prune_options = {
 # options for dependency parsing.
 dep_opt = {
     # preferred_pos': ['NN', 'NNS', 'NNP', 'NNPS', 'VB', 'VBD', 'VBG', 'VBN', 'VBP', 'VBZ'],
-    'preferred_pos': [u'NN', u'NNS', u'NNP', u'NNPS', u'JJ'],
+    'preferred_pos': [u'NN', u'NNS', u'NNP', u'NNPS', u'JJ', u'VB', u'VBD', u'VBG', u'VBN', u'VBP', u'VBZ'],
     'preferred_rel': 'all',  # ['nsubk','nsubkpass','obj','iobj'] list of relation to remains
     'compound_merge': True,  # Merge
     # for each SENTENCE, we group those nodes  whose satisfy the pattern: from_pos --rel_name--> to_pos
@@ -44,8 +44,18 @@ dep_opt = {
     'custom_edges_contract': {
         'enable': True,
         'rule_set': [
-            {'rel_name1': u'nsubj', 'rel_name1': u'left', 'rel_name2': u'dobj', 'rel_name1': u'right',
-             'n_pos': u'BVZ', 'rs_label': u'{n_label}', 'rs_direction': u'right'} # <-nsub-[VBZ]-dobj->
+            {'rel_name1': u'nsubj', 'rel_direction1': u'out', 'rel_name2': u'dobj', 'rel_direction2': u'out',
+             'n_pos': u'VB', 'rs_label': u'{n_label}', 'rs_direction': u'left-to-right'}, # <-nsub-[VBZ]-dobj->
+            {'rel_name1': u'nsubj', 'rel_direction1': u'out', 'rel_name2': u'dobj', 'rel_direction2': u'out',
+             'n_pos': u'VBD', 'rs_label': u'{n_label}', 'rs_direction': u'left-to-right'}, # <-nsub-[VBD]-dobj->
+            {'rel_name1': u'nsubj', 'rel_direction1': u'out', 'rel_name2': u'dobj', 'rel_direction2': u'out',
+             'n_pos': u'VBG', 'rs_label': u'{n_label}', 'rs_direction': u'left-to-right'},  # <-nsub-[VBZ]-dobj->
+            {'rel_name1': u'nsubj', 'rel_direction1': u'out', 'rel_name2': u'dobj', 'rel_direction2': u'out',
+             'n_pos': u'VBN', 'rs_label': u'{n_label}', 'rs_direction': u'left-to-right'},  # <-nsub-[VBD]-dobj->
+            {'rel_name1': u'nsubj', 'rel_direction1': u'out', 'rel_name2': u'dobj', 'rel_direction2': u'out',
+             'n_pos': u'VBP', 'rs_label': u'{n_label}', 'rs_direction': u'left-to-right'},  # <-nsub-[VBZ]-dobj->
+            {'rel_name1': u'nsubj', 'rel_direction1': u'out', 'rel_name2': u'dobj', 'rel_direction2': u'out',
+             'n_pos': u'VBZ', 'rs_label': u'{n_label}', 'rs_direction': u'left-to-right'}  # <-nsub-[VBD]-dobj->
         ]
     }
 

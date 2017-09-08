@@ -1,1021 +1,2549 @@
 {
     "edges": [
         {
-            "from": "christmas~com.~0x5585efbf15236^14~0x59ad7522",
-            "id": "christmas~com.~0x5585efbf15236^14~0x59ad7522|brained_idea~com.~0x5585efbf15236^14~0x59ad7522",
-            "label": "acl:relcl",
+            "from": "people~art.2~~0x59b29340",
+            "id": "people~art.2~~0x59b29340|petition~art.2~~0x59b29340",
+            "label": "SIGNED",
             "title": "freq: 2",
-            "to": "brained_idea~com.~0x5585efbf15236^14~0x59ad7522",
+            "to": "petition~art.2~~0x59b29340",
             "value": 2
         },
         {
-            "from": "end~com.~0x5585efbf150b6^13~0x59ad7530",
-            "id": "end~com.~0x5585efbf150b6^13~0x59ad7530|leaf_fall~com.~0x5585efbf150b6^13~0x59ad7537",
-            "label": "nmod",
+            "from": "waste_management~art.3~~0x59b29352",
+            "id": "waste_management~art.3~~0x59b29352|lie~art.3~~0x59b29352",
+            "label": "acl",
             "title": "freq: 2",
-            "to": "leaf_fall~com.~0x5585efbf150b6^13~0x59ad7537",
+            "to": "lie~art.3~~0x59b29352",
             "value": 2
         },
         {
-            "from": "fox~art.0~~0x59ad74d9",
-            "id": "fox~art.0~~0x59ad74d9|vermin~com.~0x5585efbf1531a^15~0x59ad753f",
+            "from": "recycle~art.3~~0x59b29349",
+            "id": "recycle~art.3~~0x59b29349|be~art.2~~0x59b29340",
+            "label": "auxpass",
+            "title": "freq: 2",
+            "to": "be~art.2~~0x59b29340",
+            "value": 2
+        },
+        {
+            "from": "bury~art.3~~0x59b29349",
+            "id": "bury~art.3~~0x59b29349|save~art.3~~0x59b2934b",
             "label": "conj",
             "title": "freq: 2",
-            "to": "vermin~com.~0x5585efbf1531a^15~0x59ad753f",
+            "to": "save~art.3~~0x59b2934b",
             "value": 2
         },
         {
-            "from": "first_cut~com.~0x5585efbf150b6^13~0x59ad7530",
-            "id": "first_cut~com.~0x5585efbf150b6^13~0x59ad7530|year~art.2~~0x59ad74f6",
+            "from": "bury~art.3~~0x59b29349",
+            "id": "bury~art.3~~0x59b29349|waste_borough~art.3~~0x59b29349",
             "label": "nmod",
             "title": "freq: 2",
-            "to": "year~art.2~~0x59ad74f6",
+            "to": "waste_borough~art.3~~0x59b29349",
             "value": 2
         },
         {
-            "from": "first_cut~com.~0x5585efbf150b6^13~0x59ad7530",
-            "id": "first_cut~com.~0x5585efbf150b6^13~0x59ad7530|lawn~com.~0x5585efbf150b6^13~0x59ad7530",
-            "label": "compound",
-            "title": "freq: 2",
-            "to": "lawn~com.~0x5585efbf150b6^13~0x59ad7530",
-            "value": 2
-        },
-        {
-            "from": "packaging_fox~com.~0x5585efbf14a01^8~0x59ad7512",
-            "id": "packaging_fox~com.~0x5585efbf14a01^8~0x59ad7512|rat~com.~0x5585efbf15604^16~0x59ad7529",
+            "from": "bury~art.3~~0x59b29349",
+            "id": "bury~art.3~~0x59b29349|boost~art.3~~0x59b29349",
             "label": "conj",
             "title": "freq: 2",
-            "to": "rat~com.~0x5585efbf15604^16~0x59ad7529",
+            "to": "boost~art.3~~0x59b29349",
             "value": 2
         },
         {
-            "from": "packaging_fox~com.~0x5585efbf14a01^8~0x59ad7512",
-            "id": "packaging_fox~com.~0x5585efbf14a01^8~0x59ad7512|such~com.~0x5585efbf14a01^8~0x59ad7512",
-            "label": "case",
-            "title": "freq: 2",
-            "to": "such~com.~0x5585efbf14a01^8~0x59ad7512",
-            "value": 2
-        },
-        {
-            "from": "packaging_fox~com.~0x5585efbf14a01^8~0x59ad7512",
-            "id": "packaging_fox~com.~0x5585efbf14a01^8~0x59ad7512|other_vermin~com.~0x5585efbf145f6^1~0x59ad7506",
-            "label": "conj",
-            "title": "freq: 2",
-            "to": "other_vermin~com.~0x5585efbf145f6^1~0x59ad7506",
-            "value": 2
-        },
-        {
-            "from": "desperate_measure~art.2~~0x59ad74f6",
-            "id": "desperate_measure~art.2~~0x59ad74f6|cut~art.2~~0x59ad74f6",
-            "label": "compound",
-            "title": "freq: 2",
-            "to": "cut~art.2~~0x59ad74f6",
-            "value": 2
-        },
-        {
-            "from": "compost~com.~0x5585efbf1493b^7~0x59ad7519",
-            "id": "compost~com.~0x5585efbf1493b^7~0x59ad7519|lawn~com.~0x5585efbf150b6^13~0x59ad7530",
-            "label": "compound",
-            "title": "freq: 2",
-            "to": "lawn~com.~0x5585efbf150b6^13~0x59ad7530",
-            "value": 2
-        },
-        {
-            "from": "compost~com.~0x5585efbf1493b^7~0x59ad7519",
-            "id": "compost~com.~0x5585efbf1493b^7~0x59ad7519|first_cut~com.~0x5585efbf150b6^13~0x59ad7530",
-            "label": "conj",
-            "title": "freq: 3",
-            "to": "first_cut~com.~0x5585efbf150b6^13~0x59ad7530",
-            "value": 3
-        },
-        {
-            "from": "trouble~com.~0x5585efbf1469f^2~0x59ad7509",
-            "id": "trouble~com.~0x5585efbf1469f^2~0x59ad7509|household~art.2~~0x59ad74ec",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "household~art.2~~0x59ad74ec",
-            "value": 2
-        },
-        {
-            "from": "trouble~com.~0x5585efbf1469f^2~0x59ad7509",
-            "id": "trouble~com.~0x5585efbf1469f^2~0x59ad7509|rat~com.~0x5585efbf15604^16~0x59ad7529",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "rat~com.~0x5585efbf15604^16~0x59ad7529",
-            "value": 2
-        },
-        {
-            "from": "row~com.~0x5585efbf156f8^17~0x59ad754a",
-            "id": "row~com.~0x5585efbf156f8^17~0x59ad754a|front~com.~0x5585efbf156f8^17~0x59ad754a",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "front~com.~0x5585efbf156f8^17~0x59ad754a",
-            "value": 2
-        },
-        {
-            "from": "row~com.~0x5585efbf156f8^17~0x59ad754a",
-            "id": "row~com.~0x5585efbf156f8^17~0x59ad754a|terrace~com.~0x5585efbf156f8^17~0x59ad754a",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "terrace~com.~0x5585efbf156f8^17~0x59ad754a",
-            "value": 2
-        },
-        {
-            "from": "ivan_lewis~art.3~~0x59ad74f9",
-            "id": "ivan_lewis~art.3~~0x59ad74f9|labour~com.~0x5585efbf15236^14~0x59ad7522",
-            "label": "compound",
-            "title": "freq: 2",
-            "to": "labour~com.~0x5585efbf15236^14~0x59ad7522",
-            "value": 2
-        },
-        {
-            "from": "rubbish~com.~0x5585efbf15236^14~0x59ad7524",
-            "id": "rubbish~com.~0x5585efbf15236^14~0x59ad7524|christmas~com.~0x5585efbf15236^14~0x59ad7522",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "christmas~com.~0x5585efbf15236^14~0x59ad7522",
-            "value": 2
-        },
-        {
-            "from": "budget~art.3~~0x59ad74f9",
-            "id": "budget~art.3~~0x59ad74f9|year~art.2~~0x59ad74f6",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "year~art.2~~0x59ad74f6",
-            "value": 2
-        },
-        {
-            "from": "budget~art.3~~0x59ad74f9",
-            "id": "budget~art.3~~0x59ad74f9|council~art.1~~0x59ad74df",
-            "label": "nmod:poss",
-            "title": "freq: 2",
-            "to": "council~art.1~~0x59ad74df",
-            "value": 2
-        },
-        {
-            "from": "people~com.~0x5585efbf14f0a^11~0x59ad7529",
-            "id": "people~com.~0x5585efbf14f0a^11~0x59ad7529|glass/plastic~com.~0x5585efbf150b6^13~0x59ad7537",
+            "from": "decision~art.3~~0x59b2934d",
+            "id": "decision~art.3~~0x59b2934d|difficult~com.~0x558ad163de894^1~0x59b2935b",
             "label": "amod",
-            "title": "freq: 2",
-            "to": "glass/plastic~com.~0x5585efbf150b6^13~0x59ad7537",
-            "value": 2
-        },
-        {
-            "from": "people~com.~0x5585efbf14f0a^11~0x59ad7529",
-            "id": "people~com.~0x5585efbf14f0a^11~0x59ad7529|compost_bin~com.~0x5585efbf150b6^13~0x59ad7537",
-            "label": "dep",
-            "title": "freq: 2",
-            "to": "compost_bin~com.~0x5585efbf150b6^13~0x59ad7537",
-            "value": 2
-        },
-        {
-            "from": "bins-glass/plastic~com.~0x5585efbf14ff4^12~0x59ad751f",
-            "id": "bins-glass/plastic~com.~0x5585efbf14ff4^12~0x59ad751f|black~com.~0x5585efbf14ff4^12~0x59ad751f",
-            "label": "conj",
-            "title": "freq: 2",
-            "to": "black~com.~0x5585efbf14ff4^12~0x59ad751f",
-            "value": 2
-        },
-        {
-            "from": "bins-glass/plastic~com.~0x5585efbf14ff4^12~0x59ad751f",
-            "id": "bins-glass/plastic~com.~0x5585efbf14ff4^12~0x59ad751f|paper~com.~0x5585efbf14ff4^12~0x59ad751f",
-            "label": "conj",
-            "title": "freq: 2",
-            "to": "paper~com.~0x5585efbf14ff4^12~0x59ad751f",
-            "value": 2
-        },
-        {
-            "from": "week~com.~0x5585efbf1531a^15~0x59ad7542",
-            "id": "week~com.~0x5585efbf1531a^15~0x59ad7542|food/garden_waste~com.~0x5585efbf1531a^15~0x59ad753c",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "food/garden_waste~com.~0x5585efbf1531a^15~0x59ad753c",
-            "value": 2
-        },
-        {
-            "from": "bin~art.2~~0x59ad74ee",
-            "id": "bin~art.2~~0x59ad74ee|compost~com.~0x5585efbf1493b^7~0x59ad7519",
-            "label": "amod",
-            "title": "freq: 2",
-            "to": "compost~com.~0x5585efbf1493b^7~0x59ad7519",
-            "value": 2
-        },
-        {
-            "from": "bin~art.2~~0x59ad74ee",
-            "id": "bin~art.2~~0x59ad74ee|waste~com.~0x5585efbf14f0a^11~0x59ad7529",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "waste~com.~0x5585efbf14f0a^11~0x59ad7529",
-            "value": 2
-        },
-        {
-            "from": "bin~art.2~~0x59ad74ee",
-            "id": "bin~art.2~~0x59ad74ee|communal~com.~0x5585efbf14ddb^10~0x59ad7518",
-            "label": "amod",
-            "title": "freq: 2",
-            "to": "communal~com.~0x5585efbf14ddb^10~0x59ad7518",
-            "value": 2
-        },
-        {
-            "from": "bin~art.2~~0x59ad74ee",
-            "id": "bin~art.2~~0x59ad74ee|paper~com.~0x5585efbf14ff4^12~0x59ad751f",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "paper~com.~0x5585efbf14ff4^12~0x59ad751f",
-            "value": 2
-        },
-        {
-            "from": "bin~art.2~~0x59ad74ee",
-            "id": "bin~art.2~~0x59ad74ee|empty~com.~0x5585efbf14ddb^10~0x59ad7518",
-            "label": "amod",
-            "title": "freq: 2",
-            "to": "empty~com.~0x5585efbf14ddb^10~0x59ad7518",
-            "value": 2
-        },
-        {
-            "from": "bin~art.2~~0x59ad74ee",
-            "id": "bin~art.2~~0x59ad74ee|food_waste~com.~0x5585efbf15c0c^25~0x59ad7568",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "food_waste~com.~0x5585efbf15c0c^25~0x59ad7568",
-            "value": 2
-        },
-        {
-            "from": "bin~art.2~~0x59ad74ee",
-            "id": "bin~art.2~~0x59ad74ee|green~art.2~~0x59ad74ee",
-            "label": "amod",
-            "title": "freq: 2",
-            "to": "green~art.2~~0x59ad74ee",
-            "value": 2
-        },
-        {
-            "from": "bin~art.2~~0x59ad74ee",
-            "id": "bin~art.2~~0x59ad74ee|odd_bit~com.~0x5585efbf15c0c^25~0x59ad7568",
-            "label": "conj",
-            "title": "freq: 2",
-            "to": "odd_bit~com.~0x5585efbf15c0c^25~0x59ad7568",
-            "value": 2
-        },
-        {
-            "from": "leftover_food~com.~0x5585efbf15604^16~0x59ad752c",
-            "id": "leftover_food~com.~0x5585efbf15604^16~0x59ad752c|waste_packaging~com.~0x5585efbf15604^16~0x59ad752c",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "waste_packaging~com.~0x5585efbf15604^16~0x59ad752c",
-            "value": 2
-        },
-        {
-            "from": "grey_bin~com.~0x5585efbf1531a^15~0x59ad753f",
-            "id": "grey_bin~com.~0x5585efbf1531a^15~0x59ad753f|week~com.~0x5585efbf1531a^15~0x59ad7542",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "week~com.~0x5585efbf1531a^15~0x59ad7542",
-            "value": 2
-        },
-        {
-            "from": "close~com.~0x5585efbf1531a^15~0x59ad7540",
-            "id": "close~com.~0x5585efbf1531a^15~0x59ad7540|bin~art.2~~0x59ad74ee",
-            "label": "nsubj",
-            "title": "freq: 2",
-            "to": "bin~art.2~~0x59ad74ee",
-            "value": 2
-        },
-        {
-            "from": "smell~com.~0x5585efbf15604^16~0x59ad752c",
-            "id": "smell~com.~0x5585efbf15604^16~0x59ad752c|nappy~com.~0x5585efbf1531a^15~0x59ad7540",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "nappy~com.~0x5585efbf1531a^15~0x59ad7540",
-            "value": 2
-        },
-        {
-            "from": "smell~com.~0x5585efbf15604^16~0x59ad752c",
-            "id": "smell~com.~0x5585efbf15604^16~0x59ad752c|leftover_food~com.~0x5585efbf15604^16~0x59ad752c",
-            "label": "conj",
-            "title": "freq: 2",
-            "to": "leftover_food~com.~0x5585efbf15604^16~0x59ad752c",
-            "value": 2
-        },
-        {
-            "from": "town_hall~art.4~~0x59ad7503",
-            "id": "town_hall~art.4~~0x59ad7503|bury~art.1~~0x59ad74e1",
-            "label": "compound",
-            "title": "freq: 2",
-            "to": "bury~art.1~~0x59ad74e1",
-            "value": 2
-        },
-        {
-            "from": "glass_bottle~com.~0x5585efbf1531a^15~0x59ad7544",
-            "id": "glass_bottle~com.~0x5585efbf1531a^15~0x59ad7544|paper~com.~0x5585efbf14ff4^12~0x59ad751f",
-            "label": "conj",
-            "title": "freq: 2",
-            "to": "paper~com.~0x5585efbf14ff4^12~0x59ad751f",
-            "value": 2
-        },
-        {
-            "from": "collection_schedule~com.~0x5585efbf1531a^15~0x59ad753c",
-            "id": "collection_schedule~com.~0x5585efbf1531a^15~0x59ad753c|week~com.~0x5585efbf1531a^15~0x59ad7542",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "week~com.~0x5585efbf1531a^15~0x59ad7542",
-            "value": 2
-        },
-        {
-            "from": "collection_schedule~com.~0x5585efbf1531a^15~0x59ad753c",
-            "id": "collection_schedule~com.~0x5585efbf1531a^15~0x59ad753c|grey_bin~com.~0x5585efbf1531a^15~0x59ad753f",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "grey_bin~com.~0x5585efbf1531a^15~0x59ad753f",
-            "value": 2
-        },
-        {
-            "from": "brained_idea~com.~0x5585efbf15236^14~0x59ad7522",
-            "id": "brained_idea~com.~0x5585efbf15236^14~0x59ad7522|labour~com.~0x5585efbf15236^14~0x59ad7522",
-            "label": "compound",
-            "title": "freq: 2",
-            "to": "labour~com.~0x5585efbf15236^14~0x59ad7522",
-            "value": 2
-        },
-        {
-            "from": "waste~com.~0x5585efbf14f0a^11~0x59ad7529",
-            "id": "waste~com.~0x5585efbf14f0a^11~0x59ad7529|kitchen~com.~0x5585efbf14f0a^11~0x59ad7529",
-            "label": "compound",
-            "title": "freq: 2",
-            "to": "kitchen~com.~0x5585efbf14f0a^11~0x59ad7529",
-            "value": 2
-        },
-        {
-            "from": "line_service~art.3~~0x59ad74fc",
-            "id": "line_service~art.3~~0x59ad74fc|front~com.~0x5585efbf156f8^17~0x59ad754a",
-            "label": "amod",
-            "title": "freq: 2",
-            "to": "front~com.~0x5585efbf156f8^17~0x59ad754a",
-            "value": 2
-        },
-        {
-            "from": "line_service~art.3~~0x59ad74fc",
-            "id": "line_service~art.3~~0x59ad74fc|many~art.2~~0x59ad74f6",
-            "label": "amod",
-            "title": "freq: 2",
-            "to": "many~art.2~~0x59ad74f6",
-            "value": 2
-        },
-        {
-            "from": "terrace~com.~0x5585efbf156f8^17~0x59ad754a",
-            "id": "terrace~com.~0x5585efbf156f8^17~0x59ad754a|bin~art.2~~0x59ad74ee",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "bin~art.2~~0x59ad74ee",
-            "value": 2
-        },
-        {
-            "from": "empty~com.~0x5585efbf14ddb^10~0x59ad7518",
-            "id": "empty~com.~0x5585efbf14ddb^10~0x59ad7518|bin~art.2~~0x59ad74ee",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "bin~art.2~~0x59ad74ee",
-            "value": 2
-        },
-        {
-            "from": "empty~com.~0x5585efbf14ddb^10~0x59ad7518",
-            "id": "empty~com.~0x5585efbf14ddb^10~0x59ad7518|serving_flat~com.~0x5585efbf14ddb^10~0x59ad7518",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "serving_flat~com.~0x5585efbf14ddb^10~0x59ad7518",
-            "value": 2
-        },
-        {
-            "from": "cut~art.2~~0x59ad74f6",
-            "id": "cut~art.2~~0x59ad74f6|year~art.2~~0x59ad74f6",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "year~art.2~~0x59ad74f6",
-            "value": 2
-        },
-        {
-            "from": "rat~com.~0x5585efbf15604^16~0x59ad7529",
-            "id": "rat~com.~0x5585efbf15604^16~0x59ad7529|fox~art.0~~0x59ad74d9",
-            "label": "conj",
-            "title": "freq: 2",
-            "to": "fox~art.0~~0x59ad74d9",
-            "value": 2
-        },
-        {
-            "from": "rat~com.~0x5585efbf15604^16~0x59ad7529",
-            "id": "rat~com.~0x5585efbf15604^16~0x59ad7529|other_vermin~com.~0x5585efbf145f6^1~0x59ad7506",
-            "label": "conj",
             "title": "freq: 4",
-            "to": "other_vermin~com.~0x5585efbf145f6^1~0x59ad7506",
+            "to": "difficult~com.~0x558ad163de894^1~0x59b2935b",
             "value": 4
         },
         {
-            "from": "collection~com.~0x5585efbf15236^14~0x59ad7522",
-            "id": "collection~com.~0x5585efbf15236^14~0x59ad7522|rubbish~com.~0x5585efbf15236^14~0x59ad7524",
-            "label": "amod",
+            "from": "fear~art.0~~0x59b29334",
+            "id": "fear~art.0~~0x59b29334|local~art.3~~0x59b2934d",
+            "label": "nsubj",
             "title": "freq: 2",
-            "to": "rubbish~com.~0x5585efbf15236^14~0x59ad7524",
+            "to": "local~art.3~~0x59b2934d",
             "value": 2
         },
         {
-            "from": "serving_flat~com.~0x5585efbf14ddb^10~0x59ad7518",
-            "id": "serving_flat~com.~0x5585efbf14ddb^10~0x59ad7518|communal~com.~0x5585efbf14ddb^10~0x59ad7518",
-            "label": "amod",
+            "from": "fear~art.0~~0x59b29334",
+            "id": "fear~art.0~~0x59b29334|lead~art.4~~0x59b29354",
+            "label": "ccomp",
             "title": "freq: 2",
-            "to": "communal~com.~0x5585efbf14ddb^10~0x59ad7518",
+            "to": "lead~art.4~~0x59b29354",
             "value": 2
         },
         {
-            "from": "serving_flat~com.~0x5585efbf14ddb^10~0x59ad7518",
-            "id": "serving_flat~com.~0x5585efbf14ddb^10~0x59ad7518|bin~art.2~~0x59ad74ee",
+            "from": "fear~art.0~~0x59b29334",
+            "id": "fear~art.0~~0x59b29334|insist~art.0~~0x59b29334",
+            "label": "conj",
+            "title": "freq: 2",
+            "to": "insist~art.0~~0x59b29334",
+            "value": 2
+        },
+        {
+            "from": "fear~art.0~~0x59b29334",
+            "id": "fear~art.0~~0x59b29334|fly~art.1~~0x59b2933b",
+            "label": "acl:relcl",
+            "title": "freq: 2",
+            "to": "fly~art.1~~0x59b2933b",
+            "value": 2
+        },
+        {
+            "from": "week~art.2~~0x59b29345",
+            "id": "week~art.2~~0x59b29345|monthly~art.2~~0x59b29345",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "monthly~art.2~~0x59b29345",
+            "value": 2
+        },
+        {
+            "from": "make~art.0~~0x59b29334",
+            "id": "make~art.0~~0x59b29334|cut~art.0~~0x59b29335",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "cut~art.0~~0x59b29335",
+            "value": 2
+        },
+        {
+            "from": "make~art.0~~0x59b29334",
+            "id": "make~art.0~~0x59b29334|fund~com.~0x558ad163de894^1~0x59b2935b",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "fund~com.~0x558ad163de894^1~0x59b2935b",
+            "value": 2
+        },
+        {
+            "from": "make~art.0~~0x59b29334",
+            "id": "make~art.0~~0x59b29334|friendly_borough~art.0~~0x59b29334",
+            "label": "dobj",
+            "title": "freq: 2",
+            "to": "friendly_borough~art.0~~0x59b29334",
+            "value": 2
+        },
+        {
+            "from": "make~art.0~~0x59b29334",
+            "id": "make~art.0~~0x59b29334|impose~art.3~~0x59b2934d",
+            "label": "advcl",
+            "title": "freq: 2",
+            "to": "impose~art.3~~0x59b2934d",
+            "value": 2
+        },
+        {
+            "from": "make~art.0~~0x59b29334",
+            "id": "make~art.0~~0x59b29334|be~art.2~~0x59b29340",
+            "label": "auxpass",
+            "title": "freq: 4",
+            "to": "be~art.2~~0x59b29340",
+            "value": 4
+        },
+        {
+            "from": "friendly_borough~art.0~~0x59b29334",
+            "id": "friendly_borough~art.0~~0x59b29334|environmentally~art.0~~0x59b29334",
+            "label": "advmod",
+            "title": "freq: 2",
+            "to": "environmentally~art.0~~0x59b29334",
+            "value": 2
+        },
+        {
+            "from": "complain~art.3~~0x59b29352",
+            "id": "complain~art.3~~0x59b29352|receive~art.3~~0x59b29352",
+            "label": "ccomp",
+            "title": "freq: 2",
+            "to": "receive~art.3~~0x59b29352",
+            "value": 2
+        },
+        {
+            "from": "complain~art.3~~0x59b29352",
+            "id": "complain~art.3~~0x59b29352|mp~art.3~~0x59b29352",
+            "label": "nsubj",
+            "title": "freq: 2",
+            "to": "mp~art.3~~0x59b29352",
+            "value": 2
+        },
+        {
+            "from": "responsibility~art.3~~0x59b29352",
+            "id": "responsibility~art.3~~0x59b29352|waste_management~art.3~~0x59b29352",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "waste_management~art.3~~0x59b29352",
+            "value": 2
+        },
+        {
+            "from": "save~art.3~~0x59b2934b",
+            "id": "save~art.3~~0x59b2934b|landfill_fee~art.3~~0x59b29349",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "landfill_fee~art.3~~0x59b29349",
+            "value": 2
+        },
+        {
+            "from": "save~art.3~~0x59b2934b",
+            "id": "save~art.3~~0x59b2934b|spend~art.1~~0x59b2933e",
+            "label": "ccomp",
+            "title": "freq: 2",
+            "to": "spend~art.1~~0x59b2933e",
+            "value": 2
+        },
+        {
+            "from": "save~art.3~~0x59b2934b",
+            "id": "save~art.3~~0x59b2934b|money~art.3~~0x59b29349",
+            "label": "dobj",
+            "title": "freq: 4",
+            "to": "money~art.3~~0x59b29349",
+            "value": 4
+        },
+        {
+            "from": "seem~com.~0x558ad163de894^1~0x59b2935b",
+            "id": "seem~com.~0x558ad163de894^1~0x59b2935b|think~com.~0x558ad163de894^1~0x59b2935b",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "think~com.~0x558ad163de894^1~0x59b2935b",
+            "value": 2
+        },
+        {
+            "from": "seem~com.~0x558ad163de894^1~0x59b2935b",
+            "id": "seem~com.~0x558ad163de894^1~0x59b2935b|idea~com.~0x558ad163de894^1~0x59b2935b",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "idea~com.~0x558ad163de894^1~0x59b2935b",
+            "value": 2
+        },
+        {
+            "from": "accuse~art.1~~0x59b2933d",
+            "id": "accuse~art.1~~0x59b2933d|scaremongering~art.1~~0x59b2933d",
+            "label": "advcl",
+            "title": "freq: 2",
+            "to": "scaremongering~art.1~~0x59b2933d",
+            "value": 2
+        },
+        {
+            "from": "accuse~art.1~~0x59b2933d",
+            "id": "accuse~art.1~~0x59b2933d|warn~art.1~~0x59b2933d",
+            "label": "advcl",
+            "title": "freq: 2",
+            "to": "warn~art.1~~0x59b2933d",
+            "value": 2
+        },
+        {
+            "from": "green~art.2~~0x59b29345",
+            "id": "green~art.2~~0x59b29345|blue~art.2~~0x59b29345",
+            "label": "conj",
+            "title": "freq: 2",
+            "to": "blue~art.2~~0x59b29345",
+            "value": 2
+        },
+        {
+            "from": "warn~art.1~~0x59b2933d",
+            "id": "warn~art.1~~0x59b2933d|pile~art.1~~0x59b2933d",
+            "label": "ccomp",
+            "title": "freq: 2",
+            "to": "pile~art.1~~0x59b2933d",
+            "value": 2
+        },
+        {
+            "from": "current_collection~art.1~~0x59b29339",
+            "id": "current_collection~art.1~~0x59b29339|fortnightly~art.1~~0x59b29339",
             "label": "compound",
             "title": "freq: 2",
-            "to": "bin~art.2~~0x59ad74ee",
+            "to": "fortnightly~art.1~~0x59b29339",
             "value": 2
         },
         {
-            "from": "facility~com.~0x5585efbf14ddb^10~0x59ad751b",
-            "id": "facility~com.~0x5585efbf14ddb^10~0x59ad751b|communal~com.~0x5585efbf14ddb^10~0x59ad7518",
-            "label": "amod",
-            "title": "freq: 2",
-            "to": "communal~com.~0x5585efbf14ddb^10~0x59ad7518",
-            "value": 2
-        },
-        {
-            "from": "odd_bit~com.~0x5585efbf15c0c^25~0x59ad7568",
-            "id": "odd_bit~com.~0x5585efbf15c0c^25~0x59ad7568|unrecyclable_packaging~com.~0x5585efbf15c0c^25~0x59ad7568",
+            "from": "complaint~art.3~~0x59b29352",
+            "id": "complaint~art.3~~0x59b29352|bin_collection~art.3~~0x59b29352",
             "label": "nmod",
             "title": "freq: 2",
-            "to": "unrecyclable_packaging~com.~0x5585efbf15c0c^25~0x59ad7568",
+            "to": "bin_collection~art.3~~0x59b29352",
             "value": 2
         },
         {
-            "from": "leaf_fall~com.~0x5585efbf150b6^13~0x59ad7537",
-            "id": "leaf_fall~com.~0x5585efbf150b6^13~0x59ad7537|year~art.2~~0x59ad74f6",
+            "from": "rubbish~art.1~~0x59b2933d",
+            "id": "rubbish~art.1~~0x59b2933d|collect~art.4~~0x59b29354",
+            "label": "amod",
+            "title": "freq: 2",
+            "to": "collect~art.4~~0x59b29354",
+            "value": 2
+        },
+        {
+            "from": "oppose~art.2~~0x59b29340",
+            "id": "oppose~art.2~~0x59b29340|new_initiative~art.2~~0x59b29340",
+            "label": "dobj",
+            "title": "freq: 2",
+            "to": "new_initiative~art.2~~0x59b29340",
+            "value": 2
+        },
+        {
+            "from": "cut~art.0~~0x59b29335",
+            "id": "cut~art.0~~0x59b29335|impose~art.3~~0x59b2934d",
+            "label": "acl",
+            "title": "freq: 2",
+            "to": "impose~art.3~~0x59b2934d",
+            "value": 2
+        },
+        {
+            "from": "cut~art.0~~0x59b29335",
+            "id": "cut~art.0~~0x59b29335|year~art.4~~0x59b29354",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "year~art.4~~0x59b29354",
+            "value": 2
+        },
+        {
+            "from": "strategy~art.3~~0x59b29349",
+            "id": "strategy~art.3~~0x59b29349|turn~art.3~~0x59b29349",
+            "label": "acl",
+            "title": "freq: 2",
+            "to": "turn~art.3~~0x59b29349",
+            "value": 2
+        },
+        {
+            "from": "fly~art.1~~0x59b2933b",
+            "id": "fly~art.1~~0x59b2933b|increase~art.1~~0x59b2933b",
+            "label": "ccomp",
+            "title": "freq: 2",
+            "to": "increase~art.1~~0x59b2933b",
+            "value": 2
+        },
+        {
+            "from": "vote~art.4~~0x59b29354",
+            "id": "vote~art.4~~0x59b29354|start~art.4~~0x59b29354",
+            "label": "xcomp",
+            "title": "freq: 2",
+            "to": "start~art.4~~0x59b29354",
+            "value": 2
+        },
+        {
+            "from": "vote~art.4~~0x59b29354",
+            "id": "vote~art.4~~0x59b29354|year~art.4~~0x59b29354",
+            "label": "nmod:tmod",
+            "title": "freq: 2",
+            "to": "year~art.4~~0x59b29354",
+            "value": 2
+        },
+        {
+            "from": "vote~art.4~~0x59b29354",
+            "id": "vote~art.4~~0x59b29354|motion~art.1~~0x59b2933d",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "motion~art.1~~0x59b2933d",
+            "value": 2
+        },
+        {
+            "from": "vote~art.4~~0x59b29354",
+            "id": "vote~art.4~~0x59b29354|week~art.2~~0x59b29345",
+            "label": "nmod:tmod",
+            "title": "freq: 2",
+            "to": "week~art.2~~0x59b29345",
+            "value": 2
+        },
+        {
+            "from": "vote~art.4~~0x59b29354",
+            "id": "vote~art.4~~0x59b29354|lead~art.4~~0x59b29354",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "lead~art.4~~0x59b29354",
+            "value": 2
+        },
+        {
+            "from": "vote~art.4~~0x59b29354",
+            "id": "vote~art.4~~0x59b29354|gwynedd_council~art.4~~0x59b29354",
+            "label": "nsubj",
+            "title": "freq: 2",
+            "to": "gwynedd_council~art.4~~0x59b29354",
+            "value": 2
+        },
+        {
+            "from": "fox~art.0~~0x59b29334",
+            "id": "fox~art.0~~0x59b29334|vermin~art.1~~0x59b2933d",
+            "label": "conj",
+            "title": "freq: 2",
+            "to": "vermin~art.1~~0x59b2933d",
+            "value": 2
+        },
+        {
+            "from": "coalition~art.3~~0x59b2934d",
+            "id": "coalition~art.3~~0x59b2934d|effective_cut~art.3~~0x59b2934d",
+            "label": "IMPOSED",
+            "title": "freq: 2",
+            "to": "effective_cut~art.3~~0x59b2934d",
+            "value": 2
+        },
+        {
+            "from": "argue~art.1~~0x59b2933e",
+            "id": "argue~art.1~~0x59b2933e|save~art.3~~0x59b2934b",
+            "label": "ccomp",
+            "title": "freq: 2",
+            "to": "save~art.3~~0x59b2934b",
+            "value": 2
+        },
+        {
+            "from": "feel~art.3~~0x59b2934b",
+            "id": "feel~art.3~~0x59b2934b|desperate_measure~art.3~~0x59b2934b",
+            "label": "ccomp",
+            "title": "freq: 2",
+            "to": "desperate_measure~art.3~~0x59b2934b",
+            "value": 2
+        },
+        {
+            "from": "feel~art.3~~0x59b2934b",
+            "id": "feel~art.3~~0x59b2934b|resident~art.3~~0x59b2934b",
+            "label": "nsubj",
+            "title": "freq: 2",
+            "to": "resident~art.3~~0x59b2934b",
+            "value": 2
+        },
+        {
+            "from": "bin~art.2~~0x59b29345",
+            "id": "bin~art.2~~0x59b29345|serve~art.2~~0x59b29347",
+            "label": "acl",
+            "title": "freq: 2",
+            "to": "serve~art.2~~0x59b29347",
+            "value": 2
+        },
+        {
+            "from": "bin~art.2~~0x59b29345",
+            "id": "bin~art.2~~0x59b29345|grey~art.2~~0x59b29342",
+            "label": "amod",
+            "title": "freq: 2",
+            "to": "grey~art.2~~0x59b29342",
+            "value": 2
+        },
+        {
+            "from": "bin~art.2~~0x59b29345",
+            "id": "bin~art.2~~0x59b29345|wheelie~art.1~~0x59b29339",
+            "label": "amod",
+            "title": "freq: 2",
+            "to": "wheelie~art.1~~0x59b29339",
+            "value": 2
+        },
+        {
+            "from": "bin~art.2~~0x59b29345",
+            "id": "bin~art.2~~0x59b29345|paper~art.2~~0x59b29345",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "paper~art.2~~0x59b29345",
+            "value": 2
+        },
+        {
+            "from": "bin~art.2~~0x59b29345",
+            "id": "bin~art.2~~0x59b29345|colour~art.2~~0x59b29345",
+            "label": "amod",
+            "title": "freq: 2",
+            "to": "colour~art.2~~0x59b29345",
+            "value": 2
+        },
+        {
+            "from": "bin~art.2~~0x59b29345",
+            "id": "bin~art.2~~0x59b29345|used~art.2~~0x59b29342",
+            "label": "acl",
+            "title": "freq: 2",
+            "to": "used~art.2~~0x59b29342",
+            "value": 2
+        },
+        {
+            "from": "bin~art.2~~0x59b29345",
+            "id": "bin~art.2~~0x59b29345|green~art.2~~0x59b29345",
+            "label": "amod",
+            "title": "freq: 2",
+            "to": "green~art.2~~0x59b29345",
+            "value": 2
+        },
+        {
+            "from": "bin~art.2~~0x59b29345",
+            "id": "bin~art.2~~0x59b29345|communal~art.2~~0x59b29347",
+            "label": "amod",
+            "title": "freq: 2",
+            "to": "communal~art.2~~0x59b29347",
+            "value": 2
+        },
+        {
+            "from": "rat~com.~0x558ad163de894^1~0x59b29359",
+            "id": "rat~com.~0x558ad163de894^1~0x59b29359|other_vermin~com.~0x558ad163de894^1~0x59b29359",
+            "label": "conj",
+            "title": "freq: 2",
+            "to": "other_vermin~com.~0x558ad163de894^1~0x59b29359",
+            "value": 2
+        },
+        {
+            "from": "affect~art.2~~0x59b29342",
+            "id": "affect~art.2~~0x59b29342|bin~art.2~~0x59b29345",
+            "label": "dobj",
+            "title": "freq: 2",
+            "to": "bin~art.2~~0x59b29345",
+            "value": 2
+        },
+        {
+            "from": "pile~art.1~~0x59b2933d",
+            "id": "pile~art.1~~0x59b2933d|rubbish~art.1~~0x59b2933d",
+            "label": "nsubj",
+            "title": "freq: 2",
+            "to": "rubbish~art.1~~0x59b2933d",
+            "value": 2
+        },
+        {
+            "from": "pile~art.1~~0x59b2933d",
+            "id": "pile~art.1~~0x59b2933d|attract~com.~0x558ad163de894^1~0x59b29359",
+            "label": "conj",
+            "title": "freq: 2",
+            "to": "attract~com.~0x558ad163de894^1~0x59b29359",
+            "value": 2
+        },
+        {
+            "from": "con/dem_government~art.3~~0x59b29350",
+            "id": "con/dem_government~art.3~~0x59b29350|bury_council~art.3~~0x59b29350",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "bury_council~art.3~~0x59b29350",
+            "value": 2
+        },
+        {
+            "from": "receive~art.3~~0x59b29352",
+            "id": "receive~art.3~~0x59b29352|other_issue~art.3~~0x59b29352",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "other_issue~art.3~~0x59b29352",
+            "value": 2
+        },
+        {
+            "from": "receive~art.3~~0x59b29352",
+            "id": "receive~art.3~~0x59b29352|responsibility~art.3~~0x59b29352",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "responsibility~art.3~~0x59b29352",
+            "value": 2
+        },
+        {
+            "from": "receive~art.3~~0x59b29352",
+            "id": "receive~art.3~~0x59b29352|complaint~art.3~~0x59b29352",
+            "label": "dobj",
+            "title": "freq: 2",
+            "to": "complaint~art.3~~0x59b29352",
+            "value": 2
+        },
+        {
+            "from": "introduce~art.2~~0x59b29340",
+            "id": "introduce~art.2~~0x59b29340|october~art.2~~0x59b29340",
+            "label": "nmod:tmod",
+            "title": "freq: 2",
+            "to": "october~art.2~~0x59b29340",
+            "value": 2
+        },
+        {
+            "from": "introduce~art.2~~0x59b29340",
+            "id": "introduce~art.2~~0x59b29340|be~art.2~~0x59b29340",
+            "label": "auxpass",
+            "title": "freq: 2",
+            "to": "be~art.2~~0x59b29340",
+            "value": 2
+        },
+        {
+            "from": "councillor~art.1~~0x59b2933b",
+            "id": "councillor~art.1~~0x59b2933b|opponent~art.1~~0x59b2933d",
+            "label": "ACCUSED",
+            "title": "freq: 2",
+            "to": "opponent~art.1~~0x59b2933d",
+            "value": 2
+        },
+        {
+            "from": "councillor~art.1~~0x59b2933b",
+            "id": "councillor~art.1~~0x59b2933b|bury~art.3~~0x59b29349",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "bury~art.3~~0x59b29349",
+            "value": 2
+        },
+        {
+            "from": "councillor~art.1~~0x59b2933b",
+            "id": "councillor~art.1~~0x59b2933b|vote~art.4~~0x59b29354",
+            "label": "ccomp",
+            "title": "freq: 2",
+            "to": "vote~art.4~~0x59b29354",
+            "value": 2
+        },
+        {
+            "from": "first~art.1~~0x59b29339",
+            "id": "first~art.1~~0x59b29339|start~art.4~~0x59b29354",
+            "label": "acl",
+            "title": "freq: 2",
+            "to": "start~art.4~~0x59b29354",
+            "value": 2
+        },
+        {
+            "from": "first~art.1~~0x59b29339",
+            "id": "first~art.1~~0x59b29339|england~art.1~~0x59b29339",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "england~art.1~~0x59b29339",
+            "value": 2
+        },
+        {
+            "from": "first~art.1~~0x59b29339",
+            "id": "first~art.1~~0x59b29339|be~art.2~~0x59b29340",
+            "label": "cop",
+            "title": "freq: 2",
+            "to": "be~art.2~~0x59b29340",
+            "value": 2
+        },
+        {
+            "from": "speak~art.4~~0x59b29356",
+            "id": "speak~art.4~~0x59b29356|night~art.4~~0x59b29356",
+            "label": "nmod:tmod",
+            "title": "freq: 2",
+            "to": "night~art.4~~0x59b29356",
+            "value": 2
+        },
+        {
+            "from": "speak~art.4~~0x59b29356",
+            "id": "speak~art.4~~0x59b29356|member~art.4~~0x59b29356",
+            "label": "nsubj",
+            "title": "freq: 2",
+            "to": "member~art.4~~0x59b29356",
+            "value": 2
+        },
+        {
+            "from": "speak~art.4~~0x59b29356",
+            "id": "speak~art.4~~0x59b29356|meet~art.4~~0x59b29356",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "meet~art.4~~0x59b29356",
+            "value": 2
+        },
+        {
+            "from": "speak~art.4~~0x59b29356",
+            "id": "speak~art.4~~0x59b29356|wednesday~art.1~~0x59b2933b",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "wednesday~art.1~~0x59b2933b",
+            "value": 2
+        },
+        {
+            "from": "speak~art.4~~0x59b29356",
+            "id": "speak~art.4~~0x59b29356|decision~art.3~~0x59b2934d",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "decision~art.3~~0x59b2934d",
+            "value": 2
+        },
+        {
+            "from": "effective_cut~art.3~~0x59b2934d",
+            "id": "effective_cut~art.3~~0x59b2934d|%~art.3~~0x59b2934d",
+            "label": "amod",
+            "title": "freq: 2",
+            "to": "%~art.3~~0x59b2934d",
+            "value": 2
+        },
+        {
+            "from": "empty~art.2~~0x59b29347",
+            "id": "empty~art.2~~0x59b29347|bin~art.2~~0x59b29345",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "bin~art.2~~0x59b29345",
+            "value": 2
+        },
+        {
+            "from": "resident~art.3~~0x59b2934b",
+            "id": "resident~art.3~~0x59b2934b|many~art.3~~0x59b29350",
+            "label": "amod",
+            "title": "freq: 2",
+            "to": "many~art.3~~0x59b29350",
+            "value": 2
+        },
+        {
+            "from": "spend~art.1~~0x59b2933e",
+            "id": "spend~art.1~~0x59b2933e|worker~art.1~~0x59b2933e",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "worker~art.1~~0x59b2933e",
+            "value": 2
+        },
+        {
+            "from": "spend~art.1~~0x59b2933e",
+            "id": "spend~art.1~~0x59b2933e|be~art.2~~0x59b29340",
+            "label": "auxpass",
+            "title": "freq: 2",
+            "to": "be~art.2~~0x59b29340",
+            "value": 2
+        },
+        {
+            "from": "paper~art.2~~0x59b29345",
+            "id": "paper~art.2~~0x59b29345|glass~art.2~~0x59b29345",
+            "label": "conj",
+            "title": "freq: 2",
+            "to": "glass~art.2~~0x59b29345",
+            "value": 2
+        },
+        {
+            "from": "paper~art.2~~0x59b29345",
+            "id": "paper~art.2~~0x59b29345|plastic~art.2~~0x59b29345",
+            "label": "conj",
+            "title": "freq: 2",
+            "to": "plastic~art.2~~0x59b29345",
+            "value": 2
+        },
+        {
+            "from": "be~art.2~~0x59b29340",
+            "id": "be~art.2~~0x59b29340|council~art.0~~0x59b29334",
+            "label": "nsubj",
+            "title": "freq: 2",
+            "to": "council~art.0~~0x59b29334",
+            "value": 2
+        },
+        {
+            "from": "be~art.2~~0x59b29340",
+            "id": "be~art.2~~0x59b29340|first~art.1~~0x59b29339",
+            "label": "xcomp",
+            "title": "freq: 2",
+            "to": "first~art.1~~0x59b29339",
+            "value": 2
+        },
+        {
+            "from": "know~com.~0x558ad163de894^1~0x59b2935b",
+            "id": "know~com.~0x558ad163de894^1~0x59b2935b|have~com.~0x558ad163de894^1~0x59b2935b",
+            "label": "ccomp",
+            "title": "freq: 2",
+            "to": "have~com.~0x558ad163de894^1~0x59b2935b",
+            "value": 2
+        },
+        {
+            "from": "know~com.~0x558ad163de894^1~0x59b2935b",
+            "id": "know~com.~0x558ad163de894^1~0x59b2935b|seem~com.~0x558ad163de894^1~0x59b2935b",
+            "label": "conj",
+            "title": "freq: 2",
+            "to": "seem~com.~0x558ad163de894^1~0x59b2935b",
+            "value": 2
+        },
+        {
+            "from": "used~art.2~~0x59b29342",
+            "id": "used~art.2~~0x59b29342|general_waste~art.2~~0x59b29342",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "general_waste~art.2~~0x59b29342",
+            "value": 2
+        },
+        {
+            "from": "serve~art.2~~0x59b29347",
+            "id": "serve~art.2~~0x59b29347|flat~art.2~~0x59b29347",
+            "label": "dobj",
+            "title": "freq: 2",
+            "to": "flat~art.2~~0x59b29347",
+            "value": 2
+        },
+        {
+            "from": "impose~art.3~~0x59b2934d",
+            "id": "impose~art.3~~0x59b2934d|have~com.~0x558ad163de894^1~0x59b2935b",
+            "label": "aux",
+            "title": "freq: 2",
+            "to": "have~com.~0x558ad163de894^1~0x59b2935b",
+            "value": 2
+        },
+        {
+            "from": "impose~art.3~~0x59b2934d",
+            "id": "impose~art.3~~0x59b2934d|be~art.2~~0x59b29340",
+            "label": "auxpass",
+            "title": "freq: 2",
+            "to": "be~art.2~~0x59b29340",
+            "value": 2
+        },
+        {
+            "from": "impose~art.3~~0x59b2934d",
+            "id": "impose~art.3~~0x59b2934d|con/dem_government~art.3~~0x59b29350",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "con/dem_government~art.3~~0x59b29350",
+            "value": 2
+        },
+        {
+            "from": "impose~art.3~~0x59b2934d",
+            "id": "impose~art.3~~0x59b2934d|budget~art.3~~0x59b2934d",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "budget~art.3~~0x59b2934d",
+            "value": 2
+        },
+        {
+            "from": "boost~art.3~~0x59b29349",
+            "id": "boost~art.3~~0x59b29349|recycle~art.3~~0x59b29349",
+            "label": "dobj",
+            "title": "freq: 2",
+            "to": "recycle~art.3~~0x59b29349",
+            "value": 2
+        },
+        {
+            "from": "local_government~art.3~~0x59b29352",
+            "id": "local_government~art.3~~0x59b29352|parliament~art.3~~0x59b29352",
+            "label": "conj",
+            "title": "freq: 2",
+            "to": "parliament~art.3~~0x59b29352",
+            "value": 2
+        },
+        {
+            "from": "increase~art.1~~0x59b2933b",
+            "id": "increase~art.1~~0x59b2933b|tip~art.1~~0x59b2933b",
+            "label": "nsubj",
+            "title": "freq: 2",
+            "to": "tip~art.1~~0x59b2933b",
+            "value": 2
+        },
+        {
+            "from": "increase~art.1~~0x59b2933b",
+            "id": "increase~art.1~~0x59b2933b|fly-tipping~art.0~~0x59b29334",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "fly-tipping~art.0~~0x59b29334",
+            "value": 2
+        },
+        {
+            "from": "change~art.2~~0x59b29347",
+            "id": "change~art.2~~0x59b29347|empty~art.2~~0x59b29347",
+            "label": "nsubj",
+            "title": "freq: 2",
+            "to": "empty~art.2~~0x59b29347",
+            "value": 2
+        },
+        {
+            "from": "say~art.3~~0x59b2934d",
+            "id": "say~art.3~~0x59b2934d|have~com.~0x558ad163de894^1~0x59b2935b",
+            "label": "ccomp",
+            "title": "freq: 2",
+            "to": "have~com.~0x558ad163de894^1~0x59b2935b",
+            "value": 2
+        },
+        {
+            "from": "say~art.3~~0x59b2934d",
+            "id": "say~art.3~~0x59b2934d|blog~art.3~~0x59b29350",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "blog~art.3~~0x59b29350",
+            "value": 2
+        },
+        {
+            "from": "say~art.3~~0x59b2934d",
+            "id": "say~art.3~~0x59b2934d|unprecedented~art.3~~0x59b29350",
+            "label": "ccomp",
+            "title": "freq: 2",
+            "to": "unprecedented~art.3~~0x59b29350",
+            "value": 2
+        },
+        {
+            "from": "say~art.3~~0x59b2934d",
+            "id": "say~art.3~~0x59b2934d|ivan_lewis~art.3~~0x59b2934d",
+            "label": "nsubj",
+            "title": "freq: 2",
+            "to": "ivan_lewis~art.3~~0x59b2934d",
+            "value": 2
+        },
+        {
+            "from": "budget~art.3~~0x59b2934d",
+            "id": "budget~art.3~~0x59b2934d|council~art.0~~0x59b29334",
+            "label": "nmod:poss",
+            "title": "freq: 2",
+            "to": "council~art.0~~0x59b29334",
+            "value": 2
+        },
+        {
+            "from": "budget~art.3~~0x59b2934d",
+            "id": "budget~art.3~~0x59b2934d|year~art.4~~0x59b29354",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "year~art.4~~0x59b29354",
+            "value": 2
+        },
+        {
+            "from": "mean~art.3~~0x59b29350",
+            "id": "mean~art.3~~0x59b29350|risk~art.3~~0x59b29350",
+            "label": "ccomp",
+            "title": "freq: 2",
+            "to": "risk~art.3~~0x59b29350",
+            "value": 2
+        },
+        {
+            "from": "petition~art.2~~0x59b29340",
+            "id": "petition~art.2~~0x59b29340|oppose~art.2~~0x59b29340",
+            "label": "acl",
+            "title": "freq: 2",
+            "to": "oppose~art.2~~0x59b29340",
+            "value": 2
+        },
+        {
+            "from": "part~art.3~~0x59b29349",
+            "id": "part~art.3~~0x59b29349|move~art.3~~0x59b29349",
+            "label": "nsubj",
+            "title": "freq: 2",
+            "to": "move~art.3~~0x59b29349",
+            "value": 2
+        },
+        {
+            "from": "part~art.3~~0x59b29349",
+            "id": "part~art.3~~0x59b29349|be~art.2~~0x59b29340",
+            "label": "cop",
+            "title": "freq: 2",
+            "to": "be~art.2~~0x59b29340",
+            "value": 2
+        },
+        {
+            "from": "part~art.3~~0x59b29349",
+            "id": "part~art.3~~0x59b29349|strategy~art.3~~0x59b29349",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "strategy~art.3~~0x59b29349",
+            "value": 2
+        },
+        {
+            "from": "claim~art.3~~0x59b29349",
+            "id": "claim~art.3~~0x59b29349|part~art.3~~0x59b29349",
+            "label": "ccomp",
+            "title": "freq: 2",
+            "to": "part~art.3~~0x59b29349",
+            "value": 2
+        },
+        {
+            "from": "claim~art.3~~0x59b29349",
+            "id": "claim~art.3~~0x59b29349|labour-run_council~art.3~~0x59b29349",
+            "label": "nsubj",
+            "title": "freq: 2",
+            "to": "labour-run_council~art.3~~0x59b29349",
+            "value": 2
+        },
+        {
+            "from": "risk~art.3~~0x59b29350",
+            "id": "risk~art.3~~0x59b29350|be~art.2~~0x59b29340",
+            "label": "cop",
+            "title": "freq: 2",
+            "to": "be~art.2~~0x59b29340",
+            "value": 2
+        },
+        {
+            "from": "risk~art.3~~0x59b29350",
+            "id": "risk~art.3~~0x59b29350|line_service~art.3~~0x59b29350",
+            "label": "nsubj",
+            "title": "freq: 2",
+            "to": "line_service~art.3~~0x59b29350",
+            "value": 2
+        },
+        {
+            "from": "gwynedd_council~art.4~~0x59b29354",
+            "id": "gwynedd_council~art.4~~0x59b29354|wale~art.4~~0x59b29354",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "wale~art.4~~0x59b29354",
+            "value": 2
+        },
+        {
+            "from": "falkirk~art.4~~0x59b29354",
+            "id": "falkirk~art.4~~0x59b29354|scotland~art.4~~0x59b29354",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "scotland~art.4~~0x59b29354",
+            "value": 2
+        },
+        {
+            "from": "line_service~art.3~~0x59b29350",
+            "id": "line_service~art.3~~0x59b29350|many~art.3~~0x59b29350",
+            "label": "amod",
+            "title": "freq: 2",
+            "to": "many~art.3~~0x59b29350",
+            "value": 2
+        },
+        {
+            "from": "line_service~art.3~~0x59b29350",
+            "id": "line_service~art.3~~0x59b29350|front~art.3~~0x59b29350",
+            "label": "amod",
+            "title": "freq: 2",
+            "to": "front~art.3~~0x59b29350",
+            "value": 2
+        },
+        {
+            "from": "worker~art.1~~0x59b2933e",
+            "id": "worker~art.1~~0x59b2933e|social~art.1~~0x59b2933e",
+            "label": "amod",
+            "title": "freq: 2",
+            "to": "social~art.1~~0x59b2933e",
+            "value": 2
+        },
+        {
+            "from": "new_initiative~art.2~~0x59b29340",
+            "id": "new_initiative~art.2~~0x59b29340|introduce~art.2~~0x59b29340",
+            "label": "acl:relcl",
+            "title": "freq: 2",
+            "to": "introduce~art.2~~0x59b29340",
+            "value": 2
+        },
+        {
+            "from": "town_hall~art.4~~0x59b29356",
+            "id": "town_hall~art.4~~0x59b29356|bury~art.3~~0x59b29349",
             "label": "compound",
             "title": "freq: 2",
-            "to": "year~art.2~~0x59ad74f6",
+            "to": "bury~art.3~~0x59b29349",
             "value": 2
         },
         {
-            "from": "resident~com.~0x5585efbf1596b^22~0x59ad7538",
-            "id": "resident~com.~0x5585efbf1596b^22~0x59ad7538|many~art.2~~0x59ad74f6",
+            "from": "scrap~art.1~~0x59b29339",
+            "id": "scrap~art.1~~0x59b29339|current_collection~art.1~~0x59b29339",
+            "label": "dobj",
+            "title": "freq: 2",
+            "to": "current_collection~art.1~~0x59b29339",
+            "value": 2
+        },
+        {
+            "from": "pass~art.1~~0x59b2933b",
+            "id": "pass~art.1~~0x59b2933b|fear~art.0~~0x59b29334",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "fear~art.0~~0x59b29334",
+            "value": 2
+        },
+        {
+            "from": "pass~art.1~~0x59b2933b",
+            "id": "pass~art.1~~0x59b2933b|night~art.4~~0x59b29356",
+            "label": "nmod:tmod",
+            "title": "freq: 2",
+            "to": "night~art.4~~0x59b29356",
+            "value": 2
+        },
+        {
+            "from": "pass~art.1~~0x59b2933b",
+            "id": "pass~art.1~~0x59b2933b|wa~art.1~~0x59b2933b",
+            "label": "auxpass",
+            "title": "freq: 2",
+            "to": "wa~art.1~~0x59b2933b",
+            "value": 2
+        },
+        {
+            "from": "pass~art.1~~0x59b2933b",
+            "id": "pass~art.1~~0x59b2933b|unanimously~art.1~~0x59b2933b",
+            "label": "advmod",
+            "title": "freq: 2",
+            "to": "unanimously~art.1~~0x59b2933b",
+            "value": 2
+        },
+        {
+            "from": "pass~art.1~~0x59b2933b",
+            "id": "pass~art.1~~0x59b2933b|controversial_decision~art.1~~0x59b2933b",
+            "label": "nsubjpass",
+            "title": "freq: 2",
+            "to": "controversial_decision~art.1~~0x59b2933b",
+            "value": 2
+        },
+        {
+            "from": "pass~art.1~~0x59b2933b",
+            "id": "pass~art.1~~0x59b2933b|councillor~art.1~~0x59b2933b",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "councillor~art.1~~0x59b2933b",
+            "value": 2
+        },
+        {
+            "from": "pass~art.1~~0x59b2933b",
+            "id": "pass~art.1~~0x59b2933b|wednesday~art.1~~0x59b2933b",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "wednesday~art.1~~0x59b2933b",
+            "value": 2
+        },
+        {
+            "from": "start~art.4~~0x59b29354",
+            "id": "start~art.4~~0x59b29354|scrap~art.1~~0x59b29339",
+            "label": "advcl",
+            "title": "freq: 2",
+            "to": "scrap~art.1~~0x59b29339",
+            "value": 2
+        },
+        {
+            "from": "start~art.4~~0x59b29354",
+            "id": "start~art.4~~0x59b29354|collect~art.4~~0x59b29354",
+            "label": "xcomp",
+            "title": "freq: 2",
+            "to": "collect~art.4~~0x59b29354",
+            "value": 2
+        },
+        {
+            "from": "start~art.4~~0x59b29354",
+            "id": "start~art.4~~0x59b29354|week~art.2~~0x59b29345",
+            "label": "nmod:tmod",
+            "title": "freq: 2",
+            "to": "week~art.2~~0x59b29345",
+            "value": 2
+        },
+        {
+            "from": "start~art.4~~0x59b29354",
+            "id": "start~art.4~~0x59b29354|rubbish~art.1~~0x59b2933d",
+            "label": "dobj",
+            "title": "freq: 2",
+            "to": "rubbish~art.1~~0x59b2933d",
+            "value": 2
+        },
+        {
+            "from": "insist~art.0~~0x59b29334",
+            "id": "insist~art.0~~0x59b29334|council~art.0~~0x59b29334",
+            "label": "nsubj",
+            "title": "freq: 2",
+            "to": "council~art.0~~0x59b29334",
+            "value": 2
+        },
+        {
+            "from": "insist~art.0~~0x59b29334",
+            "id": "insist~art.0~~0x59b29334|make~art.0~~0x59b29334",
+            "label": "ccomp",
+            "title": "freq: 2",
+            "to": "make~art.0~~0x59b29334",
+            "value": 2
+        },
+        {
+            "from": "lie~art.3~~0x59b29352",
+            "id": "lie~art.3~~0x59b29352|local_government~art.3~~0x59b29352",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "local_government~art.3~~0x59b29352",
+            "value": 2
+        },
+        {
+            "from": "see~com.~0x558ad163de894^1~0x59b29359",
+            "id": "see~com.~0x558ad163de894^1~0x59b29359|attract~com.~0x558ad163de894^1~0x59b29359",
+            "label": "ccomp",
+            "title": "freq: 2",
+            "to": "attract~com.~0x558ad163de894^1~0x59b29359",
+            "value": 2
+        },
+        {
+            "from": "ivan_lewis~art.3~~0x59b2934d",
+            "id": "ivan_lewis~art.3~~0x59b2934d|local~art.3~~0x59b2934d",
             "label": "amod",
             "title": "freq: 2",
-            "to": "many~art.2~~0x59ad74f6",
+            "to": "local~art.3~~0x59b2934d",
             "value": 2
         },
         {
-            "from": "resident~com.~0x5585efbf1596b^22~0x59ad7538",
-            "id": "resident~com.~0x5585efbf1596b^22~0x59ad7538|borough~com.~0x5585efbf1596b^22~0x59ad7538",
-            "label": "nmod",
+            "from": "ivan_lewis~art.3~~0x59b2934d",
+            "id": "ivan_lewis~art.3~~0x59b2934d|labour~art.3~~0x59b2934d",
+            "label": "compound",
             "title": "freq: 2",
-            "to": "borough~com.~0x5585efbf1596b^22~0x59ad7538",
+            "to": "labour~art.3~~0x59b2934d",
             "value": 2
         },
         {
-            "from": "compost_bin~com.~0x5585efbf150b6^13~0x59ad7537",
-            "id": "compost_bin~com.~0x5585efbf150b6^13~0x59ad7537|kitchen_waste~com.~0x5585efbf150b6^13~0x59ad7537",
-            "label": "nmod",
+            "from": "ivan_lewis~art.3~~0x59b2934d",
+            "id": "ivan_lewis~art.3~~0x59b2934d|mp~art.3~~0x59b29352",
+            "label": "compound",
             "title": "freq: 2",
-            "to": "kitchen_waste~com.~0x5585efbf150b6^13~0x59ad7537",
+            "to": "mp~art.3~~0x59b29352",
             "value": 2
         },
         {
-            "from": "compost_bin~com.~0x5585efbf150b6^13~0x59ad7537",
-            "id": "compost_bin~com.~0x5585efbf150b6^13~0x59ad7537|end~com.~0x5585efbf150b6^13~0x59ad7530",
-            "label": "nmod",
+            "from": "turn~art.3~~0x59b29349",
+            "id": "turn~art.3~~0x59b29349|bury~art.3~~0x59b29349",
+            "label": "dep",
             "title": "freq: 2",
-            "to": "end~com.~0x5585efbf150b6^13~0x59ad7530",
+            "to": "bury~art.3~~0x59b29349",
             "value": 2
         },
         {
-            "from": "compost_bin~com.~0x5585efbf150b6^13~0x59ad7537",
-            "id": "compost_bin~com.~0x5585efbf150b6^13~0x59ad7537|black~com.~0x5585efbf14ff4^12~0x59ad751f",
+            "from": "year~art.4~~0x59b29354",
+            "id": "year~art.4~~0x59b29354|next~art.3~~0x59b2934b",
             "label": "amod",
             "title": "freq: 2",
-            "to": "black~com.~0x5585efbf14ff4^12~0x59ad751f",
+            "to": "next~art.3~~0x59b2934b",
             "value": 2
         },
         {
-            "from": "lot~com.~0x5585efbf15c0c^25~0x59ad7568",
-            "id": "lot~com.~0x5585efbf15c0c^25~0x59ad7568|unrecyclable_packaging~com.~0x5585efbf15c0c^25~0x59ad7568",
-            "label": "nmod",
+            "from": "collect~art.4~~0x59b29354",
+            "id": "collect~art.4~~0x59b29354|bin~art.2~~0x59b29345",
+            "label": "nsubjpass",
+            "title": "freq: 4",
+            "to": "bin~art.2~~0x59b29345",
+            "value": 4
+        },
+        {
+            "from": "collect~art.4~~0x59b29354",
+            "id": "collect~art.4~~0x59b29354|week~art.2~~0x59b29345",
+            "label": "dobj",
             "title": "freq: 2",
-            "to": "unrecyclable_packaging~com.~0x5585efbf15c0c^25~0x59ad7568",
+            "to": "week~art.2~~0x59b29345",
             "value": 2
         },
         {
-            "from": "lot~com.~0x5585efbf15c0c^25~0x59ad7568",
-            "id": "lot~com.~0x5585efbf15c0c^25~0x59ad7568|nappy~com.~0x5585efbf1531a^15~0x59ad7540",
-            "label": "nmod",
+            "from": "collect~art.4~~0x59b29354",
+            "id": "collect~art.4~~0x59b29354|be~art.2~~0x59b29340",
+            "label": "auxpass",
             "title": "freq: 2",
-            "to": "nappy~com.~0x5585efbf1531a^15~0x59ad7540",
+            "to": "be~art.2~~0x59b29340",
             "value": 2
         },
         {
-            "from": "lot~com.~0x5585efbf15c0c^25~0x59ad7568",
-            "id": "lot~com.~0x5585efbf15c0c^25~0x59ad7568|bin~art.2~~0x59ad74ee",
+            "from": "desperate_measure~art.3~~0x59b2934b",
+            "id": "desperate_measure~art.3~~0x59b2934b|cut~art.0~~0x59b29335",
+            "label": "compound",
+            "title": "freq: 2",
+            "to": "cut~art.0~~0x59b29335",
+            "value": 2
+        },
+        {
+            "from": "desperate_measure~art.3~~0x59b2934b",
+            "id": "desperate_measure~art.3~~0x59b2934b|cost~art.3~~0x59b2934b",
+            "label": "compound",
+            "title": "freq: 4",
+            "to": "cost~art.3~~0x59b2934b",
+            "value": 4
+        },
+        {
+            "from": "desperate_measure~art.3~~0x59b2934b",
+            "id": "desperate_measure~art.3~~0x59b2934b|be~art.2~~0x59b29340",
+            "label": "cop",
+            "title": "freq: 4",
+            "to": "be~art.2~~0x59b29340",
+            "value": 4
+        },
+        {
+            "from": "desperate_measure~art.3~~0x59b2934b",
+            "id": "desperate_measure~art.3~~0x59b2934b|save~art.3~~0x59b2934b",
+            "label": "amod",
+            "title": "freq: 2",
+            "to": "save~art.3~~0x59b2934b",
+            "value": 2
+        },
+        {
+            "from": "desperate_measure~art.3~~0x59b2934b",
+            "id": "desperate_measure~art.3~~0x59b2934b|tell~art.3~~0x59b2934b",
+            "label": "advcl",
+            "title": "freq: 2",
+            "to": "tell~art.3~~0x59b2934b",
+            "value": 2
+        },
+        {
+            "from": "have~com.~0x558ad163de894^1~0x59b2935b",
+            "id": "have~com.~0x558ad163de894^1~0x59b2935b|make~art.0~~0x59b29334",
+            "label": "xcomp",
+            "title": "freq: 4",
+            "to": "make~art.0~~0x59b29334",
+            "value": 4
+        },
+        {
+            "from": "have~com.~0x558ad163de894^1~0x59b2935b",
+            "id": "have~com.~0x558ad163de894^1~0x59b2935b|decision~art.3~~0x59b2934d",
+            "label": "nsubj",
+            "title": "freq: 4",
+            "to": "decision~art.3~~0x59b2934d",
+            "value": 4
+        },
+        {
+            "from": "car~art.0~~0x59b29330",
+            "id": "car~art.0~~0x59b29330|accident~art.0~~0x59b29330",
+            "label": "CAUSE",
+            "title": "freq: 2",
+            "to": "accident~art.0~~0x59b29330",
+            "value": 2
+        },
+        {
+            "from": "lyndsay_warner~art.0~~0x59b29337",
+            "id": "lyndsay_warner~art.0~~0x59b29337|controversial_decision~art.1~~0x59b2933b",
             "label": "nmod",
             "title": "freq: 2",
-            "to": "bin~art.2~~0x59ad74ee",
+            "to": "controversial_decision~art.1~~0x59b2933b",
+            "value": 2
+        },
+        {
+            "from": "general_waste~art.2~~0x59b29342",
+            "id": "general_waste~art.2~~0x59b29342|household~art.2~~0x59b29342",
+            "label": "compound",
+            "title": "freq: 2",
+            "to": "household~art.2~~0x59b29342",
+            "value": 2
+        },
+        {
+            "from": "general_waste~art.2~~0x59b29342",
+            "id": "general_waste~art.2~~0x59b29342|recycle~art.3~~0x59b29349",
+            "label": "acl:relcl",
+            "title": "freq: 2",
+            "to": "recycle~art.3~~0x59b29349",
+            "value": 2
+        },
+        {
+            "from": "lead~art.4~~0x59b29354",
+            "id": "lead~art.4~~0x59b29354|increase~art.1~~0x59b2933b",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "increase~art.1~~0x59b2933b",
+            "value": 2
+        },
+        {
+            "from": "lead~art.4~~0x59b29354",
+            "id": "lead~art.4~~0x59b29354|attract~com.~0x558ad163de894^1~0x59b29359",
+            "label": "conj",
+            "title": "freq: 2",
+            "to": "attract~com.~0x558ad163de894^1~0x59b29359",
+            "value": 2
+        },
+        {
+            "from": "lead~art.4~~0x59b29354",
+            "id": "lead~art.4~~0x59b29354|new_move~art.0~~0x59b29334",
+            "label": "nsubj",
+            "title": "freq: 2",
+            "to": "new_move~art.0~~0x59b29334",
+            "value": 2
+        },
+        {
+            "from": "lead~art.4~~0x59b29354",
+            "id": "lead~art.4~~0x59b29354|falkirk~art.4~~0x59b29354",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "falkirk~art.4~~0x59b29354",
+            "value": 2
+        },
+        {
+            "from": "lead~art.4~~0x59b29354",
+            "id": "lead~art.4~~0x59b29354|follow~art.4~~0x59b29354",
+            "label": "case",
+            "title": "freq: 2",
+            "to": "follow~art.4~~0x59b29354",
+            "value": 2
+        },
+        {
+            "from": "unprecedented~art.3~~0x59b29350",
+            "id": "unprecedented~art.3~~0x59b29350|mean~art.3~~0x59b29350",
+            "label": "conj",
+            "title": "freq: 2",
+            "to": "mean~art.3~~0x59b29350",
+            "value": 2
+        },
+        {
+            "from": "unprecedented~art.3~~0x59b29350",
+            "id": "unprecedented~art.3~~0x59b29350|cut~art.0~~0x59b29335",
+            "label": "nsubj",
+            "title": "freq: 2",
+            "to": "cut~art.0~~0x59b29335",
+            "value": 2
+        },
+        {
+            "from": "unprecedented~art.3~~0x59b29350",
+            "id": "unprecedented~art.3~~0x59b29350|be~art.2~~0x59b29340",
+            "label": "cop",
+            "title": "freq: 2",
+            "to": "be~art.2~~0x59b29340",
+            "value": 2
+        },
+        {
+            "from": "meet~art.4~~0x59b29356",
+            "id": "meet~art.4~~0x59b29356|town_hall~art.4~~0x59b29356",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "town_hall~art.4~~0x59b29356",
+            "value": 2
+        },
+        {
+            "from": "tell~art.3~~0x59b2934b",
+            "id": "tell~art.3~~0x59b2934b|make~art.0~~0x59b29334",
+            "label": "xcomp",
+            "title": "freq: 2",
+            "to": "make~art.0~~0x59b29334",
+            "value": 2
+        },
+        {
+            "from": "tell~art.3~~0x59b2934b",
+            "id": "tell~art.3~~0x59b2934b|wa~art.1~~0x59b2933b",
+            "label": "auxpass",
+            "title": "freq: 2",
+            "to": "wa~art.1~~0x59b2933b",
+            "value": 2
+        },
+        {
+            "from": "tell~art.3~~0x59b2934b",
+            "id": "tell~art.3~~0x59b2934b|town_hall~art.4~~0x59b29356",
+            "label": "nsubjpass",
+            "title": "freq: 2",
+            "to": "town_hall~art.4~~0x59b29356",
+            "value": 2
+        },
+        {
+            "from": "council~art.0~~0x59b29334",
+            "id": "council~art.0~~0x59b29334|manchester~art.1~~0x59b29339",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "manchester~art.1~~0x59b29339",
+            "value": 2
+        },
+        {
+            "from": "member~art.4~~0x59b29356",
+            "id": "member~art.4~~0x59b29356|public~art.4~~0x59b29356",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "public~art.4~~0x59b29356",
+            "value": 2
+        },
+        {
+            "from": "attract~com.~0x558ad163de894^1~0x59b29359",
+            "id": "attract~com.~0x558ad163de894^1~0x59b29359|vermin~art.1~~0x59b2933d",
+            "label": "dobj",
+            "title": "freq: 2",
+            "to": "vermin~art.1~~0x59b2933d",
+            "value": 2
+        },
+        {
+            "from": "attract~com.~0x558ad163de894^1~0x59b29359",
+            "id": "attract~com.~0x558ad163de894^1~0x59b29359|rat~com.~0x558ad163de894^1~0x59b29359",
+            "label": "dobj",
+            "title": "freq: 2",
+            "to": "rat~com.~0x558ad163de894^1~0x59b29359",
+            "value": 2
+        },
+        {
+            "from": "attract~com.~0x558ad163de894^1~0x59b29359",
+            "id": "attract~com.~0x558ad163de894^1~0x59b29359|fox~art.0~~0x59b29334",
+            "label": "dobj",
+            "title": "freq: 2",
+            "to": "fox~art.0~~0x59b29334",
             "value": 2
         }
     ],
     "nodes": [
         {
-            "color": "#ff7200",
-            "group": "comment",
-            "id": "christmas~com.~0x5585efbf15236^14~0x59ad7522",
-            "label": "christmas",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#ff5600",
-            "group": "comment",
-            "id": "end~com.~0x5585efbf150b6^13~0x59ad7530",
-            "label": "end",
-            "title": "*Freq: 2 <br> *Sen_Score: -0.1538 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: com.",
-            "value": 2
-        },
-        {
-            "color": "#ff5600",
+            "color": "#ff3200",
             "group": "article",
-            "id": "communal~com.~0x5585efbf14ddb^10~0x59ad7518",
-            "label": "communal",
-            "title": "*Freq: 3 <br> *Sen_Score: -0.1538 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 2} <br> *Group_ids: art.2,com.",
-            "value": 3
-        },
-        {
-            "color": "#ff7200",
-            "group": "comment",
-            "id": "first_cut~com.~0x5585efbf150b6^13~0x59ad7530",
-            "label": "first_cut",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#ff5600",
-            "group": "article",
-            "id": "desperate_measure~art.2~~0x59ad74f6",
-            "label": "desperate_measure",
-            "title": "*Freq: 2 <br> *Sen_Score: -0.1538 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: art.0,art.2",
-            "value": 2
-        },
-        {
-            "color": "#ff7200",
-            "group": "comment",
-            "id": "food/garden_waste~com.~0x5585efbf1531a^15~0x59ad753c",
-            "label": "food/garden_waste",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#ff3800",
-            "group": "comment",
-            "id": "compost~com.~0x5585efbf1493b^7~0x59ad7519",
-            "label": "compost",
-            "title": "*Freq: 3 <br> *Sen_Score: -0.2308 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 3} <br> *Group_ids: com.",
-            "value": 3
-        },
-        {
-            "color": "#ff9000",
-            "group": "comment",
-            "id": "trouble~com.~0x5585efbf1469f^2~0x59ad7509",
-            "label": "trouble",
-            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 2
-        },
-        {
-            "color": "#ff9000",
-            "group": "comment",
-            "id": "collection_schedule~com.~0x5585efbf1531a^15~0x59ad753c",
-            "label": "collection_schedule",
-            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 2
-        },
-        {
-            "color": "#ff5600",
-            "group": "article",
-            "id": "labour~com.~0x5585efbf15236^14~0x59ad7522",
-            "label": "labour",
-            "title": "*Freq: 2 <br> *Sen_Score: -0.1538 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: art.3,com.",
-            "value": 2
-        },
-        {
-            "color": "#ff7200",
-            "group": "article",
-            "id": "ivan_lewis~art.3~~0x59ad74f9",
-            "label": "ivan_lewis",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
-            "value": 1
-        },
-        {
-            "color": "#ff3800",
-            "group": "comment",
-            "id": "rubbish~com.~0x5585efbf15236^14~0x59ad7524",
-            "label": "rubbish",
-            "title": "*Freq: 3 <br> *Sen_Score: -0.2308 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 3} <br> *Group_ids: com.",
-            "value": 3
-        },
-        {
-            "color": "#ff7200",
-            "group": "article",
-            "id": "budget~art.3~~0x59ad74f9",
-            "label": "budget",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
-            "value": 1
-        },
-        {
-            "color": "#ff7200",
-            "group": "comment",
-            "id": "kitchen~com.~0x5585efbf14f0a^11~0x59ad7529",
-            "label": "kitchen",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#ff7200",
-            "group": "comment",
-            "id": "nappy~com.~0x5585efbf1531a^15~0x59ad7540",
-            "label": "nappy",
-            "title": "*Freq: 4 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: com.",
-            "value": 4
-        },
-        {
-            "color": "#ff9000",
-            "group": "article",
-            "id": "household~art.2~~0x59ad74ec",
-            "label": "household",
-            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.2,com.",
-            "value": 2
-        },
-        {
-            "color": "#ff7200",
-            "group": "comment",
-            "id": "glass/plastic~com.~0x5585efbf150b6^13~0x59ad7537",
-            "label": "glass/plastic",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#ff5600",
-            "group": "article",
-            "id": "front~com.~0x5585efbf156f8^17~0x59ad754a",
-            "label": "front",
-            "title": "*Freq: 2 <br> *Sen_Score: -0.1538 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: com.,art.3",
-            "value": 2
-        },
-        {
-            "color": "#ff1c00",
-            "group": "article",
-            "id": "year~art.2~~0x59ad74f6",
-            "label": "year",
-            "title": "*Freq: 4 <br> *Sen_Score: -0.3077 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 4} <br> *Group_ids: com.,art.2,art.3",
-            "value": 4
-        },
-        {
-            "color": "#ff7200",
-            "group": "comment",
-            "id": "bins-glass/plastic~com.~0x5585efbf14ff4^12~0x59ad751f",
-            "label": "bins-glass/plastic",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#ff7200",
-            "group": "article",
-            "id": "week~com.~0x5585efbf1531a^15~0x59ad7542",
-            "label": "week",
-            "title": "*Freq: 4 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: art.2,com.",
-            "value": 4
-        },
-        {
-            "color": "#ff0000",
-            "group": "article",
-            "id": "bin~art.2~~0x59ad74ee",
-            "label": "bin",
-            "title": "*Freq: 13 <br> *Sen_Score: -0.3846 <br> *Sentiment: {\"pos_count\": 3, \"neu_count\": 1, \"neg_count\": 8} <br> *Group_ids: art.1,art.2,com.",
-            "value": 13
-        },
-        {
-            "color": "#ff7200",
-            "group": "comment",
-            "id": "such~com.~0x5585efbf14a01^8~0x59ad7512",
-            "label": "such",
-            "title": "*Freq: 2 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 2
-        },
-        {
-            "color": "#ff7200",
-            "group": "comment",
-            "id": "leftover_food~com.~0x5585efbf15604^16~0x59ad752c",
-            "label": "leftover_food",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#ffac00",
-            "group": "comment",
-            "id": "grey_bin~com.~0x5585efbf1531a^15~0x59ad753f",
-            "label": "grey_bin",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0769 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#ff7200",
-            "group": "comment",
-            "id": "lawn~com.~0x5585efbf150b6^13~0x59ad7530",
-            "label": "lawn",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#ffac00",
-            "group": "comment",
-            "id": "close~com.~0x5585efbf1531a^15~0x59ad7540",
-            "label": "close",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0769 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#ff9000",
-            "group": "article",
-            "id": "green~art.2~~0x59ad74ee",
-            "label": "green",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.2",
-            "value": 1
-        },
-        {
-            "color": "#ff7200",
-            "group": "comment",
-            "id": "smell~com.~0x5585efbf15604^16~0x59ad752c",
-            "label": "smell",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#ff9000",
-            "group": "article",
-            "id": "town_hall~art.4~~0x59ad7503",
-            "label": "town_hall",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.4",
-            "value": 1
-        },
-        {
-            "color": "#ffac00",
-            "group": "comment",
-            "id": "glass_bottle~com.~0x5585efbf1531a^15~0x59ad7544",
-            "label": "glass_bottle",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0769 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
+            "id": "accident~art.0~~0x59b29330",
+            "label": "accident",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.0",
             "value": 1
         },
         {
             "color": "#ff6400",
             "group": "article",
-            "id": "vermin~com.~0x5585efbf1531a^15~0x59ad753f",
+            "id": "people~art.2~~0x59b29340",
+            "label": "people",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.2",
+            "value": 1
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "waste_management~art.3~~0x59b29352",
+            "label": "waste_management",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
+            "value": 1
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "other_issue~art.3~~0x59b29352",
+            "label": "other_issue",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
+            "value": 1
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "labour~art.3~~0x59b2934d",
+            "label": "labour",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
+            "value": 1
+        },
+        {
+            "color": "#ff6400",
+            "group": "article",
+            "id": "recycle~art.3~~0x59b29349",
+            "label": "recycle",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.2,art.3",
+            "value": 2
+        },
+        {
+            "color": "#ff6400",
+            "group": "article",
+            "id": "bury~art.3~~0x59b29349",
+            "label": "bury",
+            "title": "*Freq: 3 <br> *Sen_Score: 0.1818 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.4,art.1,art.3",
+            "value": 3
+        },
+        {
+            "color": "#ff6400",
+            "group": "article",
+            "id": "decision~art.3~~0x59b2934d",
+            "label": "decision",
+            "title": "*Freq: 3 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 1} <br> *Group_ids: art.4,art.3,com.",
+            "value": 3
+        },
+        {
+            "color": "#ff6400",
+            "group": "article",
+            "id": "fear~art.0~~0x59b29334",
+            "label": "fear",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.1818 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.0,art.1",
+            "value": 2
+        },
+        {
+            "color": "#ff9600",
+            "group": "article",
+            "id": "week~art.2~~0x59b29345",
+            "label": "week",
+            "title": "*Freq: 3 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.4,art.1,art.2",
+            "value": 3
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "front~art.3~~0x59b29350",
+            "label": "front",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
+            "value": 1
+        },
+        {
+            "color": "#ff6400",
+            "group": "article",
+            "id": "make~art.0~~0x59b29334",
+            "label": "make",
+            "title": "*Freq: 4 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: art.3,art.0,com.",
+            "value": 4
+        },
+        {
+            "color": "#ff6400",
+            "group": "article",
+            "id": "follow~art.4~~0x59b29354",
+            "label": "follow",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.4",
+            "value": 1
+        },
+        {
+            "color": "#ff9600",
+            "group": "article",
+            "id": "friendly_borough~art.0~~0x59b29334",
+            "label": "friendly_borough",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.0",
+            "value": 1
+        },
+        {
+            "color": "#ff6400",
+            "group": "article",
+            "id": "difficult~com.~0x558ad163de894^1~0x59b2935b",
+            "label": "difficult",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3,com.",
+            "value": 2
+        },
+        {
+            "color": "#ff9600",
+            "group": "article",
+            "id": "fly-tipping~art.0~~0x59b29334",
+            "label": "fly-tipping",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.0",
+            "value": 1
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "complain~art.3~~0x59b29352",
+            "label": "complain",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
+            "value": 1
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "responsibility~art.3~~0x59b29352",
+            "label": "responsibility",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
+            "value": 1
+        },
+        {
+            "color": "#ff9600",
+            "group": "article",
+            "id": "environmentally~art.0~~0x59b29334",
+            "label": "environmentally",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.0",
+            "value": 1
+        },
+        {
+            "color": "#ff9600",
+            "group": "article",
+            "id": "save~art.3~~0x59b2934b",
+            "label": "save",
+            "title": "*Freq: 3 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.1,art.3",
+            "value": 3
+        },
+        {
+            "color": "#ff9600",
+            "group": "article",
+            "id": "england~art.1~~0x59b29339",
+            "label": "england",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.1",
+            "value": 1
+        },
+        {
+            "color": "#ff6400",
+            "group": "article",
+            "id": "vermin~art.1~~0x59b2933d",
             "label": "vermin",
-            "title": "*Freq: 2 <br> *Sen_Score: 0.1538 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.0,com.",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.0,art.1",
             "value": 2
         },
         {
-            "color": "#ff7200",
+            "color": "#ff9600",
             "group": "comment",
-            "id": "kitchen_waste~com.~0x5585efbf150b6^13~0x59ad7537",
-            "label": "kitchen_waste",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "id": "seem~com.~0x558ad163de894^1~0x59b2935b",
+            "label": "seem",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
             "value": 1
         },
         {
-            "color": "#ff7200",
+            "color": "#ff3200",
+            "group": "article",
+            "id": "flat~art.2~~0x59b29347",
+            "label": "flat",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.2",
+            "value": 1
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "accuse~art.1~~0x59b2933d",
+            "label": "accuse",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.1",
+            "value": 1
+        },
+        {
+            "color": "#ff6400",
+            "group": "article",
+            "id": "green~art.2~~0x59b29345",
+            "label": "green",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.2",
+            "value": 1
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "warn~art.1~~0x59b2933d",
+            "label": "warn",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.1",
+            "value": 1
+        },
+        {
+            "color": "#ff9600",
+            "group": "article",
+            "id": "current_collection~art.1~~0x59b29339",
+            "label": "current_collection",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.1",
+            "value": 1
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "complaint~art.3~~0x59b29352",
+            "label": "complaint",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
+            "value": 1
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "rubbish~art.1~~0x59b2933d",
+            "label": "rubbish",
+            "title": "*Freq: 2 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 1} <br> *Group_ids: art.4,art.1",
+            "value": 2
+        },
+        {
+            "color": "#ff6400",
+            "group": "article",
+            "id": "oppose~art.2~~0x59b29340",
+            "label": "oppose",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.2",
+            "value": 1
+        },
+        {
+            "color": "#ff0000",
+            "group": "article",
+            "id": "cut~art.0~~0x59b29335",
+            "label": "cut",
+            "title": "*Freq: 4 <br> *Sen_Score: -0.1818 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 3} <br> *Group_ids: com.,art.0,art.3",
+            "value": 4
+        },
+        {
+            "color": "#ff9600",
             "group": "comment",
-            "id": "other_vermin~com.~0x5585efbf145f6^1~0x59ad7506",
+            "id": "think~com.~0x558ad163de894^1~0x59b2935b",
+            "label": "think",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
+            "value": 1
+        },
+        {
+            "color": "#ff6400",
+            "group": "article",
+            "id": "controversial_decision~art.1~~0x59b2933b",
+            "label": "controversial_decision",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.0,art.1",
+            "value": 2
+        },
+        {
+            "color": "#ff9600",
+            "group": "article",
+            "id": "strategy~art.3~~0x59b29349",
+            "label": "strategy",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.3",
+            "value": 1
+        },
+        {
+            "color": "#ff3200",
+            "group": "comment",
+            "id": "other_vermin~com.~0x558ad163de894^1~0x59b29359",
             "label": "other_vermin",
-            "title": "*Freq: 3 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 3
-        },
-        {
-            "color": "#ff7200",
-            "group": "article",
-            "id": "resident~com.~0x5585efbf1596b^22~0x59ad7538",
-            "label": "resident",
-            "title": "*Freq: 2 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 1} <br> *Group_ids: art.2,com.",
-            "value": 2
-        },
-        {
-            "color": "#ff5600",
-            "group": "comment",
-            "id": "borough~com.~0x5585efbf1596b^22~0x59ad7538",
-            "label": "borough",
-            "title": "*Freq: 3 <br> *Sen_Score: -0.1538 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 2} <br> *Group_ids: com.",
-            "value": 3
-        },
-        {
-            "color": "#ff7200",
-            "group": "comment",
-            "id": "brained_idea~com.~0x5585efbf15236^14~0x59ad7522",
-            "label": "brained_idea",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
             "value": 1
         },
         {
-            "color": "#ff5600",
-            "group": "comment",
-            "id": "waste~com.~0x5585efbf14f0a^11~0x59ad7529",
-            "label": "waste",
-            "title": "*Freq: 2 <br> *Sen_Score: -0.1538 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: com.",
+            "color": "#ff9600",
+            "group": "article",
+            "id": "fly~art.1~~0x59b2933b",
+            "label": "fly",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.1",
+            "value": 1
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "vote~art.4~~0x59b29354",
+            "label": "vote",
+            "title": "*Freq: 2 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 1} <br> *Group_ids: art.4,art.1",
             "value": 2
         },
         {
-            "color": "#ff9000",
+            "color": "#ff6400",
             "group": "article",
-            "id": "council~art.1~~0x59ad74df",
-            "label": "council",
+            "id": "glass~art.2~~0x59b29345",
+            "label": "glass",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.2",
+            "value": 1
+        },
+        {
+            "color": "#ff9600",
+            "group": "article",
+            "id": "fox~art.0~~0x59b29334",
+            "label": "fox",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.0",
+            "value": 1
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "coalition~art.3~~0x59b2934d",
+            "label": "coalition",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
+            "value": 1
+        },
+        {
+            "color": "#ff9600",
+            "group": "article",
+            "id": "argue~art.1~~0x59b2933e",
+            "label": "argue",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.1",
+            "value": 1
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "feel~art.3~~0x59b2934b",
+            "label": "feel",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
+            "value": 1
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "bin~art.2~~0x59b29345",
+            "label": "bin",
+            "title": "*Freq: 4 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 2} <br> *Group_ids: art.1,art.2",
+            "value": 4
+        },
+        {
+            "color": "#ff3200",
+            "group": "comment",
+            "id": "rat~com.~0x558ad163de894^1~0x59b29359",
+            "label": "rat",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 1
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "affect~art.2~~0x59b29342",
+            "label": "affect",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.2",
+            "value": 1
+        },
+        {
+            "color": "#ff9600",
+            "group": "comment",
+            "id": "idea~com.~0x558ad163de894^1~0x59b2935b",
+            "label": "idea",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
+            "value": 1
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "pile~art.1~~0x59b2933d",
+            "label": "pile",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.1",
+            "value": 1
+        },
+        {
+            "color": "#ff9600",
+            "group": "article",
+            "id": "unanimously~art.1~~0x59b2933b",
+            "label": "unanimously",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.1",
+            "value": 1
+        },
+        {
+            "color": "#ff9600",
+            "group": "article",
+            "id": "labour-run_council~art.3~~0x59b29349",
+            "label": "labour-run_council",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.3",
+            "value": 1
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "con/dem_government~art.3~~0x59b29350",
+            "label": "con/dem_government",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
+            "value": 1
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "next~art.3~~0x59b2934b",
+            "label": "next",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
+            "value": 1
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "receive~art.3~~0x59b29352",
+            "label": "receive",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
+            "value": 1
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "opponent~art.1~~0x59b2933d",
+            "label": "opponent",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.1",
+            "value": 1
+        },
+        {
+            "color": "#ff9600",
+            "group": "article",
+            "id": "waste_borough~art.3~~0x59b29349",
+            "label": "waste_borough",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.3",
+            "value": 1
+        },
+        {
+            "color": "#ff0000",
+            "group": "article",
+            "id": "mp~art.3~~0x59b29352",
+            "label": "mp",
+            "title": "*Freq: 2 <br> *Sen_Score: -0.1818 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: art.3",
+            "value": 2
+        },
+        {
+            "color": "#ff6400",
+            "group": "article",
+            "id": "introduce~art.2~~0x59b29340",
+            "label": "introduce",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.2",
+            "value": 1
+        },
+        {
+            "color": "#ff6400",
+            "group": "article",
+            "id": "october~art.2~~0x59b29340",
+            "label": "october",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.2",
+            "value": 1
+        },
+        {
+            "color": "#ff0000",
+            "group": "article",
+            "id": "cost~art.3~~0x59b2934b",
+            "label": "cost",
+            "title": "*Freq: 2 <br> *Sen_Score: -0.1818 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: art.0,art.3",
+            "value": 2
+        },
+        {
+            "color": "#ff6400",
+            "group": "article",
+            "id": "councillor~art.1~~0x59b2933b",
+            "label": "councillor",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.1",
+            "value": 2
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "%~art.3~~0x59b2934d",
+            "label": "%",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
+            "value": 1
+        },
+        {
+            "color": "#ff9600",
+            "group": "article",
+            "id": "first~art.1~~0x59b29339",
+            "label": "first",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.1",
+            "value": 1
+        },
+        {
+            "color": "#ff6400",
+            "group": "article",
+            "id": "speak~art.4~~0x59b29356",
+            "label": "speak",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.4",
+            "value": 1
+        },
+        {
+            "color": "#ff6400",
+            "group": "article",
+            "id": "wale~art.4~~0x59b29354",
+            "label": "wale",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.4",
+            "value": 1
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "effective_cut~art.3~~0x59b2934d",
+            "label": "effective_cut",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
+            "value": 1
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "empty~art.2~~0x59b29347",
+            "label": "empty",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.2",
+            "value": 1
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "resident~art.3~~0x59b2934b",
+            "label": "resident",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
+            "value": 1
+        },
+        {
+            "color": "#ff9600",
+            "group": "article",
+            "id": "spend~art.1~~0x59b2933e",
+            "label": "spend",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.1",
+            "value": 1
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "parliament~art.3~~0x59b29352",
+            "label": "parliament",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
+            "value": 1
+        },
+        {
+            "color": "#ff6400",
+            "group": "article",
+            "id": "paper~art.2~~0x59b29345",
+            "label": "paper",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.2",
+            "value": 1
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "motion~art.1~~0x59b2933d",
+            "label": "motion",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.1",
+            "value": 1
+        },
+        {
+            "color": "#ff6400",
+            "group": "article",
+            "id": "plastic~art.2~~0x59b29345",
+            "label": "plastic",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.2",
+            "value": 1
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "be~art.2~~0x59b29340",
+            "label": "be",
+            "title": "*Freq: 11 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 4, \"neu_count\": 1, \"neg_count\": 5} <br> *Group_ids: com.,art.0,art.1,art.2,art.3",
+            "value": 11
+        },
+        {
+            "color": "#ff9600",
+            "group": "comment",
+            "id": "know~com.~0x558ad163de894^1~0x59b2935b",
+            "label": "know",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
+            "value": 1
+        },
+        {
+            "color": "#ff9600",
+            "group": "article",
+            "id": "tip~art.1~~0x59b2933b",
+            "label": "tip",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.1",
+            "value": 1
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "communal~art.2~~0x59b29347",
+            "label": "communal",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.2",
+            "value": 1
+        },
+        {
+            "color": "#ff9600",
+            "group": "article",
+            "id": "night~art.4~~0x59b29356",
+            "label": "night",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.4,art.1",
+            "value": 2
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "used~art.2~~0x59b29342",
+            "label": "used",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.2",
+            "value": 1
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "serve~art.2~~0x59b29347",
+            "label": "serve",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.2",
+            "value": 1
+        },
+        {
+            "color": "#ff0000",
+            "group": "article",
+            "id": "impose~art.3~~0x59b2934d",
+            "label": "impose",
+            "title": "*Freq: 2 <br> *Sen_Score: -0.1818 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: art.3",
+            "value": 2
+        },
+        {
+            "color": "#ff9600",
+            "group": "article",
+            "id": "wheelie~art.1~~0x59b29339",
+            "label": "wheelie",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.1",
+            "value": 1
+        },
+        {
+            "color": "#ff9600",
+            "group": "article",
+            "id": "move~art.3~~0x59b29349",
+            "label": "move",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.3",
+            "value": 1
+        },
+        {
+            "color": "#ff9600",
+            "group": "article",
+            "id": "boost~art.3~~0x59b29349",
+            "label": "boost",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.3",
+            "value": 1
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "local_government~art.3~~0x59b29352",
+            "label": "local_government",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
+            "value": 1
+        },
+        {
+            "color": "#ff6400",
+            "group": "article",
+            "id": "increase~art.1~~0x59b2933b",
+            "label": "increase",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.1818 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.0,art.1",
+            "value": 2
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "bury_council~art.3~~0x59b29350",
+            "label": "bury_council",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
+            "value": 1
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "change~art.2~~0x59b29347",
+            "label": "change",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.2",
+            "value": 1
+        },
+        {
+            "color": "#ff0000",
+            "group": "article",
+            "id": "say~art.3~~0x59b2934d",
+            "label": "say",
+            "title": "*Freq: 2 <br> *Sen_Score: -0.1818 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: art.3",
+            "value": 2
+        },
+        {
+            "color": "#ff9600",
+            "group": "article",
+            "id": "landfill_fee~art.3~~0x59b29349",
+            "label": "landfill_fee",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.3",
+            "value": 1
+        },
+        {
+            "color": "#ff6400",
+            "group": "central",
+            "id": "Central~title~_~0x59b2932d",
+            "label": "Rubbish? ...",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: central.group",
+            "value": 1
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "budget~art.3~~0x59b2934d",
+            "label": "budget",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
+            "value": 1
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "mean~art.3~~0x59b29350",
+            "label": "mean",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
+            "value": 1
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "scaremongering~art.1~~0x59b2933d",
+            "label": "scaremongering",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.1",
+            "value": 1
+        },
+        {
+            "color": "#ff6400",
+            "group": "article",
+            "id": "petition~art.2~~0x59b29340",
+            "label": "petition",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.2",
+            "value": 1
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "grey~art.2~~0x59b29342",
+            "label": "grey",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.2",
+            "value": 1
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "bin_collection~art.3~~0x59b29352",
+            "label": "bin_collection",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
+            "value": 1
+        },
+        {
+            "color": "#ff9600",
+            "group": "article",
+            "id": "wednesday~art.1~~0x59b2933b",
+            "label": "wednesday",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.4,art.1",
+            "value": 2
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "blog~art.3~~0x59b29350",
+            "label": "blog",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
+            "value": 1
+        },
+        {
+            "color": "#ff9600",
+            "group": "article",
+            "id": "new_move~art.0~~0x59b29334",
+            "label": "new_move",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.0",
+            "value": 1
+        },
+        {
+            "color": "#ff6400",
+            "group": "article",
+            "id": "colour~art.2~~0x59b29345",
+            "label": "colour",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.2",
+            "value": 1
+        },
+        {
+            "color": "#ff9600",
+            "group": "article",
+            "id": "part~art.3~~0x59b29349",
+            "label": "part",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.3",
+            "value": 1
+        },
+        {
+            "color": "#ff9600",
+            "group": "article",
+            "id": "claim~art.3~~0x59b29349",
+            "label": "claim",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.3",
+            "value": 1
+        },
+        {
+            "color": "#ff6400",
+            "group": "article",
+            "id": "public~art.4~~0x59b29356",
+            "label": "public",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.4",
+            "value": 1
+        },
+        {
+            "color": "#ff0000",
+            "group": "article",
+            "id": "many~art.3~~0x59b29350",
+            "label": "many",
+            "title": "*Freq: 2 <br> *Sen_Score: -0.1818 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: art.3",
+            "value": 2
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "risk~art.3~~0x59b29350",
+            "label": "risk",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
+            "value": 1
+        },
+        {
+            "color": "#ff6400",
+            "group": "article",
+            "id": "gwynedd_council~art.4~~0x59b29354",
+            "label": "gwynedd_council",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.4",
+            "value": 1
+        },
+        {
+            "color": "#ff6400",
+            "group": "article",
+            "id": "falkirk~art.4~~0x59b29354",
+            "label": "falkirk",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.4",
+            "value": 1
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "line_service~art.3~~0x59b29350",
+            "label": "line_service",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
+            "value": 1
+        },
+        {
+            "color": "#ff9600",
+            "group": "article",
+            "id": "worker~art.1~~0x59b2933e",
+            "label": "worker",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.1",
+            "value": 1
+        },
+        {
+            "color": "#ff6400",
+            "group": "article",
+            "id": "new_initiative~art.2~~0x59b29340",
+            "label": "new_initiative",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.2",
+            "value": 1
+        },
+        {
+            "color": "#ff9600",
+            "group": "comment",
+            "id": "fund~com.~0x558ad163de894^1~0x59b2935b",
+            "label": "fund",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
+            "value": 1
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "town_hall~art.4~~0x59b29356",
+            "label": "town_hall",
+            "title": "*Freq: 2 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 1} <br> *Group_ids: art.4,art.3",
+            "value": 2
+        },
+        {
+            "color": "#ff9600",
+            "group": "article",
+            "id": "scrap~art.1~~0x59b29339",
+            "label": "scrap",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.1",
+            "value": 1
+        },
+        {
+            "color": "#ff9600",
+            "group": "article",
+            "id": "social~art.1~~0x59b2933e",
+            "label": "social",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.1",
+            "value": 1
+        },
+        {
+            "color": "#ff9600",
+            "group": "article",
+            "id": "pass~art.1~~0x59b2933b",
+            "label": "pass",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.1",
+            "value": 1
+        },
+        {
+            "color": "#ff9600",
+            "group": "article",
+            "id": "start~art.4~~0x59b29354",
+            "label": "start",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.4,art.1",
+            "value": 2
+        },
+        {
+            "color": "#ff9600",
+            "group": "article",
+            "id": "insist~art.0~~0x59b29334",
+            "label": "insist",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.0",
+            "value": 1
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "lie~art.3~~0x59b29352",
+            "label": "lie",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
+            "value": 1
+        },
+        {
+            "color": "#ff3200",
+            "group": "comment",
+            "id": "see~com.~0x558ad163de894^1~0x59b29359",
+            "label": "see",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 1
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "ivan_lewis~art.3~~0x59b2934d",
+            "label": "ivan_lewis",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
+            "value": 1
+        },
+        {
+            "color": "#ff9600",
+            "group": "article",
+            "id": "turn~art.3~~0x59b29349",
+            "label": "turn",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.3",
+            "value": 1
+        },
+        {
+            "color": "#ff6400",
+            "group": "article",
+            "id": "local~art.3~~0x59b2934d",
+            "label": "local",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.0,art.3",
+            "value": 2
+        },
+        {
+            "color": "#ff0000",
+            "group": "article",
+            "id": "year~art.4~~0x59b29354",
+            "label": "year",
+            "title": "*Freq: 3 <br> *Sen_Score: -0.1818 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 2} <br> *Group_ids: art.4,art.3",
+            "value": 3
+        },
+        {
+            "color": "#ff9600",
+            "group": "article",
+            "id": "collect~art.4~~0x59b29354",
+            "label": "collect",
+            "title": "*Freq: 3 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 2, \"neg_count\": 0} <br> *Group_ids: art.4,art.1,art.2",
+            "value": 3
+        },
+        {
+            "color": "#ff6400",
+            "group": "article",
+            "id": "scotland~art.4~~0x59b29354",
+            "label": "scotland",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.4",
+            "value": 1
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "household~art.2~~0x59b29342",
+            "label": "household",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.2",
+            "value": 1
+        },
+        {
+            "color": "#ff9600",
+            "group": "article",
+            "id": "manchester~art.1~~0x59b29339",
+            "label": "manchester",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.1",
+            "value": 1
+        },
+        {
+            "color": "#ff6400",
+            "group": "article",
+            "id": "blue~art.2~~0x59b29345",
+            "label": "blue",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.2",
+            "value": 1
+        },
+        {
+            "color": "#ff0000",
+            "group": "article",
+            "id": "desperate_measure~art.3~~0x59b2934b",
+            "label": "desperate_measure",
+            "title": "*Freq: 2 <br> *Sen_Score: -0.1818 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: art.0,art.3",
+            "value": 2
+        },
+        {
+            "color": "#ff9600",
+            "group": "article",
+            "id": "fortnightly~art.1~~0x59b29339",
+            "label": "fortnightly",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.1",
+            "value": 1
+        },
+        {
+            "color": "#ff6400",
+            "group": "article",
+            "id": "have~com.~0x558ad163de894^1~0x59b2935b",
+            "label": "have",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.,art.3",
+            "value": 2
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "car~art.0~~0x59b29330",
+            "label": "car",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.0",
+            "value": 1
+        },
+        {
+            "color": "#ff6400",
+            "group": "article",
+            "id": "money~art.3~~0x59b29349",
+            "label": "money",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.1818 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.1,art.3",
+            "value": 2
+        },
+        {
+            "color": "#ff6400",
+            "group": "article",
+            "id": "monthly~art.2~~0x59b29345",
+            "label": "monthly",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.2",
+            "value": 1
+        },
+        {
+            "color": "#ff6400",
+            "group": "article",
+            "id": "wa~art.1~~0x59b2933b",
+            "label": "wa",
             "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.1,art.3",
             "value": 2
         },
         {
-            "color": "#ff7200",
+            "color": "#ff3200",
             "group": "article",
-            "id": "line_service~art.3~~0x59ad74fc",
-            "label": "line_service",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
+            "id": "lyndsay_warner~art.0~~0x59b29337",
+            "label": "lyndsay_warner",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.0",
             "value": 1
         },
         {
-            "color": "#ff7200",
-            "group": "comment",
-            "id": "terrace~com.~0x5585efbf156f8^17~0x59ad754a",
-            "label": "terrace",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "color": "#ff3200",
+            "group": "article",
+            "id": "general_waste~art.2~~0x59b29342",
+            "label": "general_waste",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.2",
             "value": 1
         },
         {
-            "color": "#ff3800",
+            "color": "#ff9600",
             "group": "article",
-            "id": "empty~com.~0x5585efbf14ddb^10~0x59ad7518",
-            "label": "empty",
-            "title": "*Freq: 3 <br> *Sen_Score: -0.2308 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 3} <br> *Group_ids: art.2,com.",
+            "id": "lead~art.4~~0x59b29354",
+            "label": "lead",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.4,art.0",
+            "value": 2
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "unprecedented~art.3~~0x59b29350",
+            "label": "unprecedented",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
+            "value": 1
+        },
+        {
+            "color": "#ff6400",
+            "group": "article",
+            "id": "meet~art.4~~0x59b29356",
+            "label": "meet",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.4",
+            "value": 1
+        },
+        {
+            "color": "#ff3200",
+            "group": "article",
+            "id": "tell~art.3~~0x59b2934b",
+            "label": "tell",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
+            "value": 1
+        },
+        {
+            "color": "#ff9600",
+            "group": "article",
+            "id": "council~art.0~~0x59b29334",
+            "label": "council",
+            "title": "*Freq: 3 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.0,art.1,art.3",
             "value": 3
         },
         {
-            "color": "#ff9000",
-            "group": "comment",
-            "id": "packaging_fox~com.~0x5585efbf14a01^8~0x59ad7512",
-            "label": "packaging_fox",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#ff7200",
-            "group": "comment",
-            "id": "unrecyclable_packaging~com.~0x5585efbf15c0c^25~0x59ad7568",
-            "label": "unrecyclable_packaging",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#ff3800",
+            "color": "#ff6400",
             "group": "article",
-            "id": "cut~art.2~~0x59ad74f6",
-            "label": "cut",
-            "title": "*Freq: 3 <br> *Sen_Score: -0.2308 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 3} <br> *Group_ids: art.0,art.2,art.3",
-            "value": 3
-        },
-        {
-            "color": "#ff5600",
-            "group": "comment",
-            "id": "rat~com.~0x5585efbf15604^16~0x59ad7529",
-            "label": "rat",
-            "title": "*Freq: 4 <br> *Sen_Score: -0.1538 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 2} <br> *Group_ids: com.",
-            "value": 4
-        },
-        {
-            "color": "#ff9000",
-            "group": "comment",
-            "id": "collection~com.~0x5585efbf15236^14~0x59ad7522",
-            "label": "collection",
-            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 2
-        },
-        {
-            "color": "#ff7200",
-            "group": "comment",
-            "id": "serving_flat~com.~0x5585efbf14ddb^10~0x59ad7518",
-            "label": "serving_flat",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "id": "member~art.4~~0x59b29356",
+            "label": "member",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.4",
             "value": 1
         },
         {
-            "color": "#ff5600",
-            "group": "comment",
-            "id": "food_waste~com.~0x5585efbf15c0c^25~0x59ad7568",
-            "label": "food_waste",
-            "title": "*Freq: 2 <br> *Sen_Score: -0.1538 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: com.",
-            "value": 2
-        },
-        {
-            "color": "#ff9000",
-            "group": "comment",
-            "id": "facility~com.~0x5585efbf14ddb^10~0x59ad751b",
-            "label": "facility",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#ff7200",
-            "group": "comment",
-            "id": "odd_bit~com.~0x5585efbf15c0c^25~0x59ad7568",
-            "label": "odd_bit",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#ff5600",
-            "group": "comment",
-            "id": "black~com.~0x5585efbf14ff4^12~0x59ad751f",
-            "label": "black",
-            "title": "*Freq: 2 <br> *Sen_Score: -0.1538 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: com.",
-            "value": 2
-        },
-        {
-            "color": "#ff9000",
+            "color": "#ff3200",
             "group": "article",
-            "id": "fox~art.0~~0x59ad74d9",
-            "label": "fox",
-            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.0,com.",
-            "value": 2
-        },
-        {
-            "color": "#ff9000",
-            "group": "article",
-            "id": "paper~com.~0x5585efbf14ff4^12~0x59ad751f",
-            "label": "paper",
-            "title": "*Freq: 3 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.2,com.",
-            "value": 3
-        },
-        {
-            "color": "#ff7200",
-            "group": "comment",
-            "id": "leaf_fall~com.~0x5585efbf150b6^13~0x59ad7537",
-            "label": "leaf_fall",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#ffac00",
-            "group": "article",
-            "id": "bury~art.1~~0x59ad74e1",
-            "label": "bury",
-            "title": "*Freq: 2 <br> *Sen_Score: 0.0769 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.4,art.1",
-            "value": 2
-        },
-        {
-            "color": "#ff7200",
-            "group": "comment",
-            "id": "row~com.~0x5585efbf156f8^17~0x59ad754a",
-            "label": "row",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#ff5600",
-            "group": "comment",
-            "id": "people~com.~0x5585efbf14f0a^11~0x59ad7529",
-            "label": "people",
-            "title": "*Freq: 2 <br> *Sen_Score: -0.1538 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: com.",
-            "value": 2
-        },
-        {
-            "color": "#ff7200",
-            "group": "comment",
-            "id": "waste_packaging~com.~0x5585efbf15604^16~0x59ad752c",
-            "label": "waste_packaging",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#ff5600",
-            "group": "article",
-            "id": "many~art.2~~0x59ad74f6",
-            "label": "many",
-            "title": "*Freq: 2 <br> *Sen_Score: -0.1538 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: art.2,art.3",
-            "value": 2
-        },
-        {
-            "color": "#ff7200",
-            "group": "comment",
-            "id": "compost_bin~com.~0x5585efbf150b6^13~0x59ad7537",
-            "label": "compost_bin",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#ff7200",
-            "group": "comment",
-            "id": "lot~com.~0x5585efbf15c0c^25~0x59ad7568",
-            "label": "lot",
-            "title": "*Freq: 3 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: com.",
+            "id": "attract~com.~0x558ad163de894^1~0x59b29359",
+            "label": "attract",
+            "title": "*Freq: 3 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: art.0,art.1,com.",
             "value": 3
         }
     ],
@@ -1028,12 +2556,12 @@
         },
         "pruning_option": {
             "edge_freq_min": 1,
-            "enable_pruning": true,
+            "enable_pruning": false,
             "min_word_length": 2,
             "node_degree_min": 2,
             "node_freq_min": 1,
             "remove_isolated_node": true
         },
-        "timestamp": "2017-09-04 17:46:49 "
+        "timestamp": "2017-09-08 14:55:55 "
     }
 }
