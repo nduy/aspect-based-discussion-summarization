@@ -1,3 +1,11 @@
+#!/usr/bin/python -tt
+# -*- coding: utf-8 -*-
+"""
+    Author: Nguyen Duc Duy - UNITN
+    Created on Mon Jun 19 10:51:42 2017
+    CONFIGURATION
+"""
+
 # General graph building setup
 build_options = {
     'build_mode': 1,
@@ -78,3 +86,5 @@ uni_options = {
         'unification_mode': 'contract'  # modes: link, contract
     }
 }
+
+replace_pattern = {u"<blockquote>":u"",u"</blockquote>":u"",u"$":u"DOLLAR",u"¢":u"CENT",u"£":u"POUND",u"¤":u"CURRENCY",u"¥":u"YEN",u"֏":u"ARMENIAN_DRAM",u"؋":u"AFGHANI",u"৳":u"BENGALI_RUPEE",u"૱":u"GUJARATI_RUPEE",u"௹":u"TAMIL_RUPEE",u"฿":u"THAI_CURRENCY_SYMBOL_BAHT",u"៛":u"KHMER_CURRENCY_SYMBOL_RIEL",u"₠":u"EURO-CURRENCY",u"₡":u"COLON",u"₢":u"CRUZEIRO",u"₣":u"FRENCH_FRANC",u"₤":u"LIRA",u"₥":u"MILL",u"₦":u"NAIRA",u"₧":u"PESETA",u"₨":u"RUPEE",u"₩":u"WON",u"₪":u"NEW_SHEQEL",u"₫":u"DONG",u"€":u"EURO",u"₭":u"KIP",u"₮":u"TUGRIK",u"₯":u"DRACHMA",u"₰":u"GERMAN_PENNY",u"₱":u"PESO",u"₲":u"GUARANI",u"₳":u"AUSTRAL",u"₴":u"HRYVNIA",u"₵":u"CEDI",u"₶":u"LIVRE_TOURNOIS",u"₷":u"SPESMILO",u"₸":u"TENGE",u"₹":u"INDIAN_RUPEE",u"₺":u"TURKISH_LIRA",u"₻":u"NORDIC_MARK",u"₼":u"MANAT",u"元":u"CJK_UNIFIED_IDEOGRAPH-5143",u"圓":u"CJK_UNIFIED_IDEOGRAPH-5713",u"﷼":u"RIAL",u"﹩":u"SMALL_DOLLAR",u"＄":u"FULLWIDTH_DOLLAR",u"￠":u"FULLWIDTH_CENT",u"￡":u"FULLWIDTH_POUND",u"￥":u"FULLWIDTH_YEN",u"￦":u"FULLWIDTH_WON"}

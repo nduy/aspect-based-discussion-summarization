@@ -14,6 +14,7 @@ from datetime import datetime
 from nltk.tokenize import texttiling
 import re
 from config import script_verbality
+from config import replace_pattern
 
 # Normalization and cleaning engine
 cucco = Cucco()
@@ -150,9 +151,21 @@ def utf_8_encoder(unicode_csv_data):
         yield line.encode('utf-8', 'ignore')
 
 
+# Multiple replace in string
+
+def replace_all(repls, str):
+    # return re.sub('|'.join(repls.keys()), lambda k: repls[k.group(0)], str)
+    return re.sub('|'.join(re.escape(key) for key in repls.keys()),
+                  lambda k: repls[k.group(0)], str)
+# Usage:
+#text =  "i like apples, but pears scare me"
+#print replace_all({"apple": "pear", "pear": "apple"}, text)
+
 # Clean up the text, and get rig of unnecessary characters
 def text_preprocessing(rawText):
+    # print  replace_pattern
     txt = cucco.normalize(rawText, normalizations)
     txt = re.sub('<a.*>.*?</a>', '', txt)
-    txt = txt.replace('<blockquote>', '').replace('</blockquote>', '')
+    txt = replace_all(replace_pattern,txt)
+    # print rawText,"!HU!!NK>!N!NB!bbbbbb", txt
     return txt;

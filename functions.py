@@ -688,7 +688,7 @@ def dep_extract_from_sent(sentence, filter_opt):
                 contracted_edges_result = list((set(contracted_nodes_result) - to_remove_rels) | to_add_rels)
                 # print '[rs]', contracted_edges_result
         if len(to_add_rels) > 0:
-            maybe_print("   + Contracted {0} ed-n-ed using rules for sentence \"{1}...\""
+            maybe_print(u"   + Contracted {0} ed-n-ed using rules for sentence \"{1}...\""
                         .format(len(to_add_rels),sentence[:50]),2)
     if not contracted_edges_result: contracted_edges_result = contracted_nodes_result
     # print '[rs2]', contracted_edges_result
@@ -1005,7 +1005,8 @@ def read_article_file(data_file):
                         article[-1] = article[-1] + " \t\n"
                         article.append(u'*break_me*')
                     else:
-                        sens = sent_tokenize(line.replace(u"\r\n", u""))
+                        sens = [text_preprocessing(s) for s in sent_tokenize(line.replace(u"\r\n", u""))]
+                        # print sens
                         if sens:
                             article.extend(sens)
 
