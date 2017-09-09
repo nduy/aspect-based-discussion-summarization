@@ -9,12 +9,18 @@ build_options = {
 
 # Options for prunning the graph
 prune_options = {
-    'enable_pruning': False,
-    'min_word_length': 2,
-    'remove_isolated_node': True,
-    'node_freq_min': 1,
-    'edge_freq_min': 1,
-    'node_degree_min': 2
+    'enable_prunning': True,            # Enable/Disable prunning
+    'min_word_length': 2,               # Minimum length of node label
+    'remove_isolated_node': True,       # Remove not whose degree is 0
+    'node_freq_min': 2,                 # Minimum frequency of node
+    'edge_freq_min': 1,                 # Minimum frequency of edge
+    'node_degree_min': 2,               # Minimum degree of node, this override the remove_isolated_node
+    'regex_pattern': '[a-z\/]+[-_]?',   # Regular expression pattern to keep
+    # A while list of words to keep no mater how bad it is
+    'white_node_labels': [],
+    # A black list of words to be killed no mater how good it is
+    'black_node_labels': [u"wa",u"a",u"about",u"above",u"across",u"after",u"afterwards",u"again",u"against",u"all",u"almost",u"alone",u"along",u"already",u"also",u"although",u"always",u"am",u"among",u"amongst",u"amoungst",u"an",u"and",u"another",u"any",u"anyhow",u"anyone",u"anything",u"anyway",u"anywhere",u"are",u"around",u"as",u"at",u"be",u"became",u"because",u"been",u"before",u"beforehand",u"behind",u"being",u"below",u"beside",u"besides",u"between",u"beyond",u"both",u"but",u"by",u"can",u"cannot",u"could",u"dare",u"despite",u"did",u"do",u"does",u"done",u"down",u"during",u"each",u"eg",u"either",u"else",u"elsewhere",u"enough",u"etc",u"even",u"ever",u"every",u"everyone",u"everything",u"everywhere",u"except",u"few",u"first",u"for",u"former",u"formerly",u"from",u"further",u"furthermore",u"had",u"has",u"have",u"he",u"hence",u"her",u"here",u"hereabouts",u"hereafter",u"hereby",u"herein",u"hereinafter",u"heretofore",u"hereunder",u"hereupon",u"herewith",u"hers",u"herself",u"him",u"himself",u"his",u"how",u"however",u"i",u"ie",u"if",u"in",u"indeed",u"inside",u"instead",u"into",u"is",u"it",u"its",u"itself",u"last",u"latter",u"latterly",u"least",u"less",u"lot",u"lots",u"many",u"may",u"me",u"meanwhile",u"might",u"mine",u"more",u"moreover",u"most",u"mostly",u"much",u"must",u"my",u"myself",u"namely",u"near",u"need",u"neither",u"never",u"nevertheless",u"next",u"no",u"nobody",u"none",u"noone",u"nor",u"not",u"nothing",u"now",u"nowhere",u"of",u"off",u"often",u"oftentimes",u"on",u"once",u"one",u"only",u"onto",u"or",u"other",u"others",u"otherwise",u"ought",u"our",u"ours",u"ourselves",u"out",u"outside",u"over",u"per",u"perhaps",u"rather",u"re",u"same",u"second",u"several",u"shall",u"she",u"should",u"since",u"so",u"some",u"somehow",u"someone",u"something",u"sometime",u"sometimes",u"somewhat",u"somewhere",u"still",u"such",u"than",u"that",u"the",u"their",u"theirs",u"them",u"themselves",u"then",u"thence",u"there",u"thereabouts",u"thereafter",u"thereby",u"therefore",u"therein",u"thereof",u"thereon",u"thereupon",u"these",u"they",u"third",u"this",u"those",u"though",u"through",u"throughout",u"thru",u"thus",u"to",u"together",u"too",u"top",u"toward",u"towards",u"under",u"until",u"up",u"upon",u"us",u"used",u"very",u"via",u"was",u"we",u"well",u"were",u"what",u"whatever",u"when",u"whence",u"whenever",u"where",u"whereafter",u"whereas",u"whereby",u"wherein",u"whereupon",u"wherever",u"whether",u"which",u"while",u"whither",u"who",u"whoever",u"whole",u"whom",u"whose",u"why",u"whyever",u"will",u"with",u"within",u"without",u"would",u"yes",u"yet",u"you",u"your",u"yours",u"yourself",u"yourselves"]
+
 }
 
 # options for dependency parsing.

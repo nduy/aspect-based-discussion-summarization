@@ -13,7 +13,9 @@ import en
 import codecs
 import json
 import csv
+import re
 import itertools
+import threading
 import networkx as nx
 from textblob import TextBlob
 from nltk.tokenize import sent_tokenize, word_tokenize
@@ -28,7 +30,6 @@ from config import prune_options
 from config import uni_options
 from config import build_options
 from config import dep_opt
-import threading
 
 
 ######################################
@@ -469,22 +470,25 @@ def prune_graph(graph):
         return None
     # Set default values
     # Now read the options
-    ENABLE_PRUNING = options['enable_pruning']
+    ENABLE_PRUNING = options['enable_prunning']
     if not ENABLE_PRUNING:
         return g  # Skip the pruning, return original graph
 
-    NUM_MIN_NODES = 20  # minimum number of node. If total number of nodes is  < this number, pruning will be skipped
-    NUM_MIN_EDGES = 30  # minimum number of edge. The value could not more than (NUM_MIN_NODES)*(NUM_MIN_NODES-1).
-    #                     If total number of edge is  < this number, pruning will be skipped
+    NUM_MIN_NODES = 20      # minimum number of node. If total number of nodes is  < this number, pruning will be skipped
+    NUM_MIN_EDGES = 30      # minimum number of edge. The value could not more than (NUM_MIN_NODES)*(NUM_MIN_NODES-1).
+    #                       If total number of edge is  < this number, pruning will be skipped
     REMOVE_ISOLATED_NODE = True #
 
-    NUM_MAX_NODES = 200  # maximum number of nodes to keep
-    NUM_MAX_EDGES = 300  # maximum number of edge to keep.
-    #                      The value could not more than (NUM_MAX_NODES)*(NUM_MAX_NODES-1)
-    EDGE_FREQ_MIN = 1  # minimum frequency that an edge is required to be. Being smaller, it will be eliminated.
-    NODE_FREQ_MIN = 1  # minimum frequency that a node is required to be. Being smaller, it will be eliminated.
-    NODE_DEGREE_MIN = 1  # minimum degree that a node is required to have. Being smaller, it will be eliminated.
-    MIN_WORD_LENGTH = 3  # Minimum number of character of a word, accepted to enter the graph
+    NUM_MAX_NODES = 200     # maximum number of nodes to keep
+    NUM_MAX_EDGES = 300     # maximum number of edge to keep.
+    #                       The value could not more than (NUM_MAX_NODES)*(NUM_MAX_NODES-1)
+    EDGE_FREQ_MIN = 1       # minimum frequency that an edge is required to be. Being smaller, it will be eliminated.
+    NODE_FREQ_MIN = 1       # minimum frequency that a node is required to be. Being smaller, it will be eliminated.
+    NODE_DEGREE_MIN = 1     # minimum degree that a node is required to have. Being smaller, it will be eliminated.
+    MIN_WORD_LENGTH = 3     # Minimum number of character of a word, accepted to enter the graph
+    RE_PATTERN = '.+'       # Regular expression pattern to filter out the node label
+    WHITE_NODES_LIST = []   # While list of words to be kept
+    BLACK_NODE_LIST = []    # Black list of words to be destroyed
 
     if 'num_min_nodes' in options:
         NUM_MIN_NODES = options['num_min_nodes']
@@ -509,6 +513,15 @@ def prune_graph(graph):
     if 'node_degree_min' in options:
         NODE_DEGREE_MIN = options['node_degree_min']
 
+    if 'regex_pattern' in options:
+        RE_PATTERN = options['regex_pattern']
+
+    if 'white_node_labels' in options:
+        WHITE_NODES_LIST = set(options['white_node_labels'])
+
+    if 'black_node_labels' in options:
+        BLACK_NODE_LIST = set(options['black_node_labels'])
+
     maybe_print("Start pruning the graph.", 1)
     # :: Perform pruning
     # Decide whether to skip the pruning because of the tiny size of graph
@@ -519,7 +532,12 @@ def prune_graph(graph):
     to_remove_nodes = []
     to_remove_edges = []
     for node in g.nodes():
-        if len(g.node[node]['label']) < MIN_WORD_LENGTH:
+        node_label = g.node[node]['label']
+        if node_label in WHITE_NODES_LIST:
+            continue
+        elif node_label in BLACK_NODE_LIST:
+            to_remove_nodes.append(node)
+        elif len(node_label) < MIN_WORD_LENGTH or not re.match(RE_PATTERN,g.node[node]['label']):
             to_remove_nodes.append(node)
     for edge in g.edges():
         if (edge[0] in to_remove_nodes) or (edge[1] in to_remove_nodes):
@@ -529,7 +547,8 @@ def prune_graph(graph):
 
     # Filter nodes by frequency
     if NODE_FREQ_MIN > 1:
-        to_remove_nodes = [n for n in g.nodes() if g.node[n]['weight']< NODE_FREQ_MIN]
+        to_remove_nodes = [n for n in g.nodes()
+                           if g.node[n]['weight'] < NODE_FREQ_MIN and g.node[n]['label'] not in WHITE_NODES_LIST]
         g.remove_nodes_from(to_remove_nodes)
 
     if EDGE_FREQ_MIN > 1:
@@ -538,14 +557,15 @@ def prune_graph(graph):
 
     # Filter nodes by degree
     if NODE_DEGREE_MIN > 1:
-        to_remove_nodes = [n for n in g.nodes() if g.degree(n) < NODE_DEGREE_MIN]
+        to_remove_nodes = [n for n in g.nodes()
+                           if g.degree(n) < NODE_DEGREE_MIN and g.node[n]['label'] not in WHITE_NODES_LIST]
         g.remove_nodes_from(to_remove_nodes)
 
     # Remove isolated nodes
     to_remove_edges = []
     if REMOVE_ISOLATED_NODE:
         degrees = nx.degree(g)
-        to_remove_nodes = [i for i in degrees if degrees[i] == 0]
+        to_remove_nodes = [i for i in degrees if degrees[i] == 0 and g.node[i]['label'] not in WHITE_NODES_LIST]
         for edge in g.edges():
             if (edge[0] in to_remove_nodes) or (edge[1] in to_remove_nodes):
                 to_remove_edges.append(edge)
@@ -555,8 +575,8 @@ def prune_graph(graph):
     # :: Done pruning
     maybe_print("--> Graph PRUNNING completed.\n    Number of nodes: {0}\n    Number of edges: {1}"
                 .format(len(g.nodes()), len(g.edges())),2)
-    maybe_print("--> {0} nodes removed. {1} edges removed.".format(len(g.nodes())-len(graph.nodes()),
-                                                                   len(g.edges()) - len(graph.edges())))
+    maybe_print("--> {0} nodes removed. {1} edges removed.".format(str(len(graph.nodes()) - len(g.nodes())),
+                                                                   str(len(graph.edges()) - len(g.edges()))),2)
     return g
 
 
@@ -590,24 +610,10 @@ def dep_extract_from_sent(sentence, filter_opt):
     dependencies = result.next()
     raw_results = [((lemmatizer.lemmatize(s.lower()), s_tag), r, (lemmatizer.lemmatize(t.lower()), t_tag))
                    for (s, s_tag), r, (t, t_tag) in list(dependencies.triples())]
-    # print('Options: ',filter_opt)
-    # Filter out by POS
-    preferred_pos = filter_opt['preferred_pos']
-    if type(preferred_pos) != list:  # take all POS
-        filter_pos_result = raw_results
-    else:
-        # filter triples whose beginning and ending tags are inside the list
-        # print raw_results
-        # print filter_pos_result
-        filter_pos_result = [trip for trip in raw_results
-                             if (trip[0][1] in preferred_pos or len(trip[0][0]) > 10) and
-                                (trip[2][1] in preferred_pos or len(trip[2][0]) > 10)
-                             ]  # keep potential phrases
-
-    # Filter by relationship
+    #  Filter by relationship
     preferred_rel = filter_opt['preferred_rel']
     if type(preferred_rel) != list:  # take all POS
-        filter_rel_result = filter_pos_result
+        filter_rel_result = raw_results
     else:
         # filter tripples that has relation in the list
         filter_rel_result = [trip for trip in raw_results if (trip[1] in preferred_rel)]
@@ -661,8 +667,8 @@ def dep_extract_from_sent(sentence, filter_opt):
                         # print r['rel_name1'], rel1[1], r['rel_direction1'], rel1[3], r['rel_name2'], rel2[1], r['rel_direction2'], rel1[3], r['n_pos'], tag
                         if r['rel_name1'] == rel1[1] and r['rel_direction1'] == rel1[3] and r['rel_name2'] == rel2[1] \
                            and r['rel_direction2'] == rel1[3] and r['n_pos'] == tag:  # Matched
-                            rs_label = r['rs_label'].replace(u'{n_label}', node)
-                            rs_label = lemmatizer.lemmatize(rs_label).upper()
+                            rs_label = r['rs_label'].replace(u'{n_label}', en.verb.infinitive(node))
+                            rs_label = rs_label.upper()
                             # print rel1, rel2
                             if r['rs_direction'] == u'left-to-right':
                                 to_add_rels.add((rel1[2] if rel1[3] == u'out' else rel1[0],
@@ -682,7 +688,7 @@ def dep_extract_from_sent(sentence, filter_opt):
                 contracted_edges_result = list((set(contracted_nodes_result) - to_remove_rels) | to_add_rels)
                 # print '[rs]', contracted_edges_result
         if len(to_add_rels) > 0:
-            maybe_print("   + Contracted {0} ed-n-ed using rules for sentence \"{1}\""
+            maybe_print("   + Contracted {0} ed-n-ed using rules for sentence \"{1}...\""
                         .format(len(to_add_rels),sentence[:50]),2)
     if not contracted_edges_result: contracted_edges_result = contracted_nodes_result
     # print '[rs2]', contracted_edges_result
@@ -715,10 +721,24 @@ def dep_extract_from_sent(sentence, filter_opt):
                               if (s != t)]
     else:
         filter_comp_result = contracted_edges_result
+
+    # Filter out by POS
+    preferred_pos = filter_opt['preferred_pos']
+    if type(preferred_pos) != list:  # take all POS
+        filter_pos_result = contracted_edges_result
+    else:
+        # filter triples whose beginning and ending tags are inside the list
+        # print raw_results
+        # print filter_pos_result
+        filter_pos_result = [trip for trip in contracted_edges_result
+                             if (trip[0][1] in preferred_pos or len(trip[0][0]) > 10) and
+                                (trip[2][1] in preferred_pos or len(trip[2][0]) > 10)
+                             ]  # keep potential phrases
+
     # Final refine
     rs = []  # store the refined tuples
     keys = set()  # store the keywords
-    for (s, s_tag), r, (t, t_tag) in filter_comp_result:
+    for (s, s_tag), r, (t, t_tag) in filter_pos_result:
         s_f = en.verb.infinitive(s) if en.verb.infinitive(s) else s
         t_f = en.verb.infinitive(t) if en.verb.infinitive(t) else t
         rs.append(((s_f, s_tag), r, (t_f, t_tag)))

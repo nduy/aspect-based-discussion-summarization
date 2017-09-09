@@ -1,1875 +1,867 @@
 {
     "edges": [
         {
-            "from": "people~art.2~~0x59b29340",
-            "id": "people~art.2~~0x59b29340|petition~art.2~~0x59b29340",
-            "label": "SIGNED",
+            "from": "narrow~com.~0x558c401f0f854^9~0x59b4140b",
+            "id": "narrow~com.~0x558c401f0f854^9~0x59b4140b|expand~com.~0x558c401f0f8e4^10~0x59b413fd",
+            "label": "csubj",
             "title": "freq: 2",
-            "to": "petition~art.2~~0x59b29340",
+            "to": "expand~com.~0x558c401f0f8e4^10~0x59b413fd",
             "value": 2
         },
         {
-            "from": "waste_management~art.3~~0x59b29352",
-            "id": "waste_management~art.3~~0x59b29352|lie~art.3~~0x59b29352",
-            "label": "acl",
+            "from": "narrow~com.~0x558c401f0f854^9~0x59b4140b",
+            "id": "narrow~com.~0x558c401f0f854^9~0x59b4140b|awareness.it~com.~0x558c401f0f8e4^10~0x59b413fd",
+            "label": "nsubj",
             "title": "freq: 2",
-            "to": "lie~art.3~~0x59b29352",
+            "to": "awareness.it~com.~0x558c401f0f8e4^10~0x59b413fd",
             "value": 2
         },
         {
-            "from": "recycle~art.3~~0x59b29349",
-            "id": "recycle~art.3~~0x59b29349|be~art.2~~0x59b29340",
-            "label": "auxpass",
-            "title": "freq: 2",
-            "to": "be~art.2~~0x59b29340",
-            "value": 2
-        },
-        {
-            "from": "bury~art.3~~0x59b29349",
-            "id": "bury~art.3~~0x59b29349|save~art.3~~0x59b2934b",
+            "from": "rat~com.~0x558c401f0f34e^1~0x59b413ea",
+            "id": "rat~com.~0x558c401f0f34e^1~0x59b413ea|fox~art.0~~0x59b413c0",
             "label": "conj",
             "title": "freq: 2",
-            "to": "save~art.3~~0x59b2934b",
+            "to": "fox~art.0~~0x59b413c0",
             "value": 2
         },
         {
-            "from": "bury~art.3~~0x59b29349",
-            "id": "bury~art.3~~0x59b29349|waste_borough~art.3~~0x59b29349",
+            "from": "move~art.3~~0x59b413d8",
+            "id": "move~art.3~~0x59b413d8|expect~com.~0x558c401f0fcff^14~0x59b41409",
+            "label": "ccomp",
+            "title": "freq: 2",
+            "to": "expect~com.~0x558c401f0fcff^14~0x59b41409",
+            "value": 2
+        },
+        {
+            "from": "provide~com.~0x558c401f0fada^12~0x59b41406",
+            "id": "provide~com.~0x558c401f0fada^12~0x59b41406|bin~com.~0x558c401f0f9fe^11~0x59b41412",
+            "label": "dobj",
+            "title": "freq: 2",
+            "to": "bin~com.~0x558c401f0f9fe^11~0x59b41412",
+            "value": 2
+        },
+        {
+            "from": "provide~com.~0x558c401f0fada^12~0x59b41406",
+            "id": "provide~com.~0x558c401f0fada^12~0x59b41406|cut~art.3~~0x59b413da",
+            "label": "advcl",
+            "title": "freq: 2",
+            "to": "cut~art.3~~0x59b413da",
+            "value": 2
+        },
+        {
+            "from": "lead~art.4~~0x59b413e5",
+            "id": "lead~art.4~~0x59b413e5|attract~com.~0x558c401f0f34e^1~0x59b413ea",
+            "label": "conj",
+            "title": "freq: 2",
+            "to": "attract~com.~0x558c401f0f34e^1~0x59b413ea",
+            "value": 2
+        },
+        {
+            "from": "empty~com.~0x558c401f10597^25~0x59b4144d",
+            "id": "empty~com.~0x558c401f10597^25~0x59b4144d|bin~com.~0x558c401f0f9fe^11~0x59b41412",
             "label": "nmod",
             "title": "freq: 2",
-            "to": "waste_borough~art.3~~0x59b29349",
+            "to": "bin~com.~0x558c401f0f9fe^11~0x59b41412",
             "value": 2
         },
         {
-            "from": "bury~art.3~~0x59b29349",
-            "id": "bury~art.3~~0x59b29349|boost~art.3~~0x59b29349",
-            "label": "conj",
+            "from": "empty~com.~0x558c401f10597^25~0x59b4144d",
+            "id": "empty~com.~0x558c401f10597^25~0x59b4144d|year~art.3~~0x59b413dd",
+            "label": "nmod:tmod",
             "title": "freq: 2",
-            "to": "boost~art.3~~0x59b29349",
+            "to": "year~art.3~~0x59b413dd",
             "value": 2
         },
         {
-            "from": "decision~art.3~~0x59b2934d",
-            "id": "decision~art.3~~0x59b2934d|difficult~com.~0x558ad163de894^1~0x59b2935b",
-            "label": "amod",
+            "from": "relate~com.~0x558c401f0fff3^16~0x59b41416",
+            "id": "relate~com.~0x558c401f0fff3^16~0x59b41416|thing~com.~0x558c401f0fff3^16~0x59b41416",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "thing~com.~0x558c401f0fff3^16~0x59b41416",
+            "value": 2
+        },
+        {
+            "from": "change~com.~0x558c401f0fdd2^15~0x59b4142e",
+            "id": "change~com.~0x558c401f0fdd2^15~0x59b4142e|empty~com.~0x558c401f10597^25~0x59b4144d",
+            "label": "nsubj",
             "title": "freq: 4",
-            "to": "difficult~com.~0x558ad163de894^1~0x59b2935b",
+            "to": "empty~com.~0x558c401f10597^25~0x59b4144d",
             "value": 4
         },
         {
-            "from": "fear~art.0~~0x59b29334",
-            "id": "fear~art.0~~0x59b29334|local~art.3~~0x59b2934d",
-            "label": "nsubj",
-            "title": "freq: 2",
-            "to": "local~art.3~~0x59b2934d",
-            "value": 2
-        },
-        {
-            "from": "fear~art.0~~0x59b29334",
-            "id": "fear~art.0~~0x59b29334|lead~art.4~~0x59b29354",
-            "label": "ccomp",
-            "title": "freq: 2",
-            "to": "lead~art.4~~0x59b29354",
-            "value": 2
-        },
-        {
-            "from": "fear~art.0~~0x59b29334",
-            "id": "fear~art.0~~0x59b29334|insist~art.0~~0x59b29334",
-            "label": "conj",
-            "title": "freq: 2",
-            "to": "insist~art.0~~0x59b29334",
-            "value": 2
-        },
-        {
-            "from": "fear~art.0~~0x59b29334",
-            "id": "fear~art.0~~0x59b29334|fly~art.1~~0x59b2933b",
-            "label": "acl:relcl",
-            "title": "freq: 2",
-            "to": "fly~art.1~~0x59b2933b",
-            "value": 2
-        },
-        {
-            "from": "week~art.2~~0x59b29345",
-            "id": "week~art.2~~0x59b29345|monthly~art.2~~0x59b29345",
+            "from": "change~com.~0x558c401f0fdd2^15~0x59b4142e",
+            "id": "change~com.~0x558c401f0fdd2^15~0x59b4142e|collection_schedule~com.~0x558c401f0fdd2^15~0x59b41426",
             "label": "nmod",
             "title": "freq: 2",
-            "to": "monthly~art.2~~0x59b29345",
+            "to": "collection_schedule~com.~0x558c401f0fdd2^15~0x59b41426",
             "value": 2
         },
         {
-            "from": "make~art.0~~0x59b29334",
-            "id": "make~art.0~~0x59b29334|cut~art.0~~0x59b29335",
+            "from": "collection_schedule~com.~0x558c401f0fdd2^15~0x59b41426",
+            "id": "collection_schedule~com.~0x558c401f0fdd2^15~0x59b41426|grey_bin~com.~0x558c401f0fdd2^15~0x59b41426",
             "label": "nmod",
             "title": "freq: 2",
-            "to": "cut~art.0~~0x59b29335",
+            "to": "grey_bin~com.~0x558c401f0fdd2^15~0x59b41426",
             "value": 2
         },
         {
-            "from": "make~art.0~~0x59b29334",
-            "id": "make~art.0~~0x59b29334|fund~com.~0x558ad163de894^1~0x59b2935b",
+            "from": "collection_schedule~com.~0x558c401f0fdd2^15~0x59b41426",
+            "id": "collection_schedule~com.~0x558c401f0fdd2^15~0x59b41426|week~com.~0x558c401f0fdd2^15~0x59b41426",
             "label": "nmod",
             "title": "freq: 2",
-            "to": "fund~com.~0x558ad163de894^1~0x59b2935b",
+            "to": "week~com.~0x558c401f0fdd2^15~0x59b41426",
             "value": 2
         },
         {
-            "from": "make~art.0~~0x59b29334",
-            "id": "make~art.0~~0x59b29334|friendly_borough~art.0~~0x59b29334",
-            "label": "dobj",
+            "from": "seem~com.~0x558c401f1039b^23~0x59b41443",
+            "id": "seem~com.~0x558c401f1039b^23~0x59b41443|think~com.~0x558c401f1039b^23~0x59b4143a",
+            "label": "nmod",
             "title": "freq: 2",
-            "to": "friendly_borough~art.0~~0x59b29334",
+            "to": "think~com.~0x558c401f1039b^23~0x59b4143a",
             "value": 2
         },
         {
-            "from": "make~art.0~~0x59b29334",
-            "id": "make~art.0~~0x59b29334|impose~art.3~~0x59b2934d",
+            "from": "seem~com.~0x558c401f1039b^23~0x59b41443",
+            "id": "seem~com.~0x558c401f1039b^23~0x59b41443|hold~com.~0x558c401f1039b^23~0x59b41443",
             "label": "advcl",
             "title": "freq: 2",
-            "to": "impose~art.3~~0x59b2934d",
+            "to": "hold~com.~0x558c401f1039b^23~0x59b41443",
             "value": 2
         },
         {
-            "from": "make~art.0~~0x59b29334",
-            "id": "make~art.0~~0x59b29334|be~art.2~~0x59b29340",
-            "label": "auxpass",
+            "from": "collect~art.1~~0x59b413c6",
+            "id": "collect~art.1~~0x59b413c6|bin~com.~0x558c401f0f9fe^11~0x59b41412",
+            "label": "nsubjpass",
             "title": "freq: 4",
-            "to": "be~art.2~~0x59b29340",
+            "to": "bin~com.~0x558c401f0f9fe^11~0x59b41412",
             "value": 4
         },
         {
-            "from": "friendly_borough~art.0~~0x59b29334",
-            "id": "friendly_borough~art.0~~0x59b29334|environmentally~art.0~~0x59b29334",
-            "label": "advmod",
-            "title": "freq: 2",
-            "to": "environmentally~art.0~~0x59b29334",
-            "value": 2
-        },
-        {
-            "from": "complain~art.3~~0x59b29352",
-            "id": "complain~art.3~~0x59b29352|receive~art.3~~0x59b29352",
-            "label": "ccomp",
-            "title": "freq: 2",
-            "to": "receive~art.3~~0x59b29352",
-            "value": 2
-        },
-        {
-            "from": "complain~art.3~~0x59b29352",
-            "id": "complain~art.3~~0x59b29352|mp~art.3~~0x59b29352",
-            "label": "nsubj",
-            "title": "freq: 2",
-            "to": "mp~art.3~~0x59b29352",
-            "value": 2
-        },
-        {
-            "from": "responsibility~art.3~~0x59b29352",
-            "id": "responsibility~art.3~~0x59b29352|waste_management~art.3~~0x59b29352",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "waste_management~art.3~~0x59b29352",
-            "value": 2
-        },
-        {
-            "from": "save~art.3~~0x59b2934b",
-            "id": "save~art.3~~0x59b2934b|landfill_fee~art.3~~0x59b29349",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "landfill_fee~art.3~~0x59b29349",
-            "value": 2
-        },
-        {
-            "from": "save~art.3~~0x59b2934b",
-            "id": "save~art.3~~0x59b2934b|spend~art.1~~0x59b2933e",
-            "label": "ccomp",
-            "title": "freq: 2",
-            "to": "spend~art.1~~0x59b2933e",
-            "value": 2
-        },
-        {
-            "from": "save~art.3~~0x59b2934b",
-            "id": "save~art.3~~0x59b2934b|money~art.3~~0x59b29349",
-            "label": "dobj",
-            "title": "freq: 4",
-            "to": "money~art.3~~0x59b29349",
-            "value": 4
-        },
-        {
-            "from": "seem~com.~0x558ad163de894^1~0x59b2935b",
-            "id": "seem~com.~0x558ad163de894^1~0x59b2935b|think~com.~0x558ad163de894^1~0x59b2935b",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "think~com.~0x558ad163de894^1~0x59b2935b",
-            "value": 2
-        },
-        {
-            "from": "seem~com.~0x558ad163de894^1~0x59b2935b",
-            "id": "seem~com.~0x558ad163de894^1~0x59b2935b|idea~com.~0x558ad163de894^1~0x59b2935b",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "idea~com.~0x558ad163de894^1~0x59b2935b",
-            "value": 2
-        },
-        {
-            "from": "accuse~art.1~~0x59b2933d",
-            "id": "accuse~art.1~~0x59b2933d|scaremongering~art.1~~0x59b2933d",
-            "label": "advcl",
-            "title": "freq: 2",
-            "to": "scaremongering~art.1~~0x59b2933d",
-            "value": 2
-        },
-        {
-            "from": "accuse~art.1~~0x59b2933d",
-            "id": "accuse~art.1~~0x59b2933d|warn~art.1~~0x59b2933d",
-            "label": "advcl",
-            "title": "freq: 2",
-            "to": "warn~art.1~~0x59b2933d",
-            "value": 2
-        },
-        {
-            "from": "green~art.2~~0x59b29345",
-            "id": "green~art.2~~0x59b29345|blue~art.2~~0x59b29345",
-            "label": "conj",
-            "title": "freq: 2",
-            "to": "blue~art.2~~0x59b29345",
-            "value": 2
-        },
-        {
-            "from": "warn~art.1~~0x59b2933d",
-            "id": "warn~art.1~~0x59b2933d|pile~art.1~~0x59b2933d",
-            "label": "ccomp",
-            "title": "freq: 2",
-            "to": "pile~art.1~~0x59b2933d",
-            "value": 2
-        },
-        {
-            "from": "current_collection~art.1~~0x59b29339",
-            "id": "current_collection~art.1~~0x59b29339|fortnightly~art.1~~0x59b29339",
-            "label": "compound",
-            "title": "freq: 2",
-            "to": "fortnightly~art.1~~0x59b29339",
-            "value": 2
-        },
-        {
-            "from": "complaint~art.3~~0x59b29352",
-            "id": "complaint~art.3~~0x59b29352|bin_collection~art.3~~0x59b29352",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "bin_collection~art.3~~0x59b29352",
-            "value": 2
-        },
-        {
-            "from": "rubbish~art.1~~0x59b2933d",
-            "id": "rubbish~art.1~~0x59b2933d|collect~art.4~~0x59b29354",
-            "label": "amod",
-            "title": "freq: 2",
-            "to": "collect~art.4~~0x59b29354",
-            "value": 2
-        },
-        {
-            "from": "oppose~art.2~~0x59b29340",
-            "id": "oppose~art.2~~0x59b29340|new_initiative~art.2~~0x59b29340",
-            "label": "dobj",
-            "title": "freq: 2",
-            "to": "new_initiative~art.2~~0x59b29340",
-            "value": 2
-        },
-        {
-            "from": "cut~art.0~~0x59b29335",
-            "id": "cut~art.0~~0x59b29335|impose~art.3~~0x59b2934d",
-            "label": "acl",
-            "title": "freq: 2",
-            "to": "impose~art.3~~0x59b2934d",
-            "value": 2
-        },
-        {
-            "from": "cut~art.0~~0x59b29335",
-            "id": "cut~art.0~~0x59b29335|year~art.4~~0x59b29354",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "year~art.4~~0x59b29354",
-            "value": 2
-        },
-        {
-            "from": "strategy~art.3~~0x59b29349",
-            "id": "strategy~art.3~~0x59b29349|turn~art.3~~0x59b29349",
-            "label": "acl",
-            "title": "freq: 2",
-            "to": "turn~art.3~~0x59b29349",
-            "value": 2
-        },
-        {
-            "from": "fly~art.1~~0x59b2933b",
-            "id": "fly~art.1~~0x59b2933b|increase~art.1~~0x59b2933b",
-            "label": "ccomp",
-            "title": "freq: 2",
-            "to": "increase~art.1~~0x59b2933b",
-            "value": 2
-        },
-        {
-            "from": "vote~art.4~~0x59b29354",
-            "id": "vote~art.4~~0x59b29354|start~art.4~~0x59b29354",
-            "label": "xcomp",
-            "title": "freq: 2",
-            "to": "start~art.4~~0x59b29354",
-            "value": 2
-        },
-        {
-            "from": "vote~art.4~~0x59b29354",
-            "id": "vote~art.4~~0x59b29354|year~art.4~~0x59b29354",
-            "label": "nmod:tmod",
-            "title": "freq: 2",
-            "to": "year~art.4~~0x59b29354",
-            "value": 2
-        },
-        {
-            "from": "vote~art.4~~0x59b29354",
-            "id": "vote~art.4~~0x59b29354|motion~art.1~~0x59b2933d",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "motion~art.1~~0x59b2933d",
-            "value": 2
-        },
-        {
-            "from": "vote~art.4~~0x59b29354",
-            "id": "vote~art.4~~0x59b29354|week~art.2~~0x59b29345",
-            "label": "nmod:tmod",
-            "title": "freq: 2",
-            "to": "week~art.2~~0x59b29345",
-            "value": 2
-        },
-        {
-            "from": "vote~art.4~~0x59b29354",
-            "id": "vote~art.4~~0x59b29354|lead~art.4~~0x59b29354",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "lead~art.4~~0x59b29354",
-            "value": 2
-        },
-        {
-            "from": "vote~art.4~~0x59b29354",
-            "id": "vote~art.4~~0x59b29354|gwynedd_council~art.4~~0x59b29354",
-            "label": "nsubj",
-            "title": "freq: 2",
-            "to": "gwynedd_council~art.4~~0x59b29354",
-            "value": 2
-        },
-        {
-            "from": "fox~art.0~~0x59b29334",
-            "id": "fox~art.0~~0x59b29334|vermin~art.1~~0x59b2933d",
-            "label": "conj",
-            "title": "freq: 2",
-            "to": "vermin~art.1~~0x59b2933d",
-            "value": 2
-        },
-        {
-            "from": "coalition~art.3~~0x59b2934d",
-            "id": "coalition~art.3~~0x59b2934d|effective_cut~art.3~~0x59b2934d",
-            "label": "IMPOSED",
-            "title": "freq: 2",
-            "to": "effective_cut~art.3~~0x59b2934d",
-            "value": 2
-        },
-        {
-            "from": "argue~art.1~~0x59b2933e",
-            "id": "argue~art.1~~0x59b2933e|save~art.3~~0x59b2934b",
-            "label": "ccomp",
-            "title": "freq: 2",
-            "to": "save~art.3~~0x59b2934b",
-            "value": 2
-        },
-        {
-            "from": "feel~art.3~~0x59b2934b",
-            "id": "feel~art.3~~0x59b2934b|desperate_measure~art.3~~0x59b2934b",
-            "label": "ccomp",
-            "title": "freq: 2",
-            "to": "desperate_measure~art.3~~0x59b2934b",
-            "value": 2
-        },
-        {
-            "from": "feel~art.3~~0x59b2934b",
-            "id": "feel~art.3~~0x59b2934b|resident~art.3~~0x59b2934b",
-            "label": "nsubj",
-            "title": "freq: 2",
-            "to": "resident~art.3~~0x59b2934b",
-            "value": 2
-        },
-        {
-            "from": "bin~art.2~~0x59b29345",
-            "id": "bin~art.2~~0x59b29345|serve~art.2~~0x59b29347",
-            "label": "acl",
-            "title": "freq: 2",
-            "to": "serve~art.2~~0x59b29347",
-            "value": 2
-        },
-        {
-            "from": "bin~art.2~~0x59b29345",
-            "id": "bin~art.2~~0x59b29345|grey~art.2~~0x59b29342",
-            "label": "amod",
-            "title": "freq: 2",
-            "to": "grey~art.2~~0x59b29342",
-            "value": 2
-        },
-        {
-            "from": "bin~art.2~~0x59b29345",
-            "id": "bin~art.2~~0x59b29345|wheelie~art.1~~0x59b29339",
-            "label": "amod",
-            "title": "freq: 2",
-            "to": "wheelie~art.1~~0x59b29339",
-            "value": 2
-        },
-        {
-            "from": "bin~art.2~~0x59b29345",
-            "id": "bin~art.2~~0x59b29345|paper~art.2~~0x59b29345",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "paper~art.2~~0x59b29345",
-            "value": 2
-        },
-        {
-            "from": "bin~art.2~~0x59b29345",
-            "id": "bin~art.2~~0x59b29345|colour~art.2~~0x59b29345",
-            "label": "amod",
-            "title": "freq: 2",
-            "to": "colour~art.2~~0x59b29345",
-            "value": 2
-        },
-        {
-            "from": "bin~art.2~~0x59b29345",
-            "id": "bin~art.2~~0x59b29345|used~art.2~~0x59b29342",
-            "label": "acl",
-            "title": "freq: 2",
-            "to": "used~art.2~~0x59b29342",
-            "value": 2
-        },
-        {
-            "from": "bin~art.2~~0x59b29345",
-            "id": "bin~art.2~~0x59b29345|green~art.2~~0x59b29345",
-            "label": "amod",
-            "title": "freq: 2",
-            "to": "green~art.2~~0x59b29345",
-            "value": 2
-        },
-        {
-            "from": "bin~art.2~~0x59b29345",
-            "id": "bin~art.2~~0x59b29345|communal~art.2~~0x59b29347",
-            "label": "amod",
-            "title": "freq: 2",
-            "to": "communal~art.2~~0x59b29347",
-            "value": 2
-        },
-        {
-            "from": "rat~com.~0x558ad163de894^1~0x59b29359",
-            "id": "rat~com.~0x558ad163de894^1~0x59b29359|other_vermin~com.~0x558ad163de894^1~0x59b29359",
-            "label": "conj",
-            "title": "freq: 2",
-            "to": "other_vermin~com.~0x558ad163de894^1~0x59b29359",
-            "value": 2
-        },
-        {
-            "from": "affect~art.2~~0x59b29342",
-            "id": "affect~art.2~~0x59b29342|bin~art.2~~0x59b29345",
-            "label": "dobj",
-            "title": "freq: 2",
-            "to": "bin~art.2~~0x59b29345",
-            "value": 2
-        },
-        {
-            "from": "pile~art.1~~0x59b2933d",
-            "id": "pile~art.1~~0x59b2933d|rubbish~art.1~~0x59b2933d",
-            "label": "nsubj",
-            "title": "freq: 2",
-            "to": "rubbish~art.1~~0x59b2933d",
-            "value": 2
-        },
-        {
-            "from": "pile~art.1~~0x59b2933d",
-            "id": "pile~art.1~~0x59b2933d|attract~com.~0x558ad163de894^1~0x59b29359",
-            "label": "conj",
-            "title": "freq: 2",
-            "to": "attract~com.~0x558ad163de894^1~0x59b29359",
-            "value": 2
-        },
-        {
-            "from": "con/dem_government~art.3~~0x59b29350",
-            "id": "con/dem_government~art.3~~0x59b29350|bury_council~art.3~~0x59b29350",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "bury_council~art.3~~0x59b29350",
-            "value": 2
-        },
-        {
-            "from": "receive~art.3~~0x59b29352",
-            "id": "receive~art.3~~0x59b29352|other_issue~art.3~~0x59b29352",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "other_issue~art.3~~0x59b29352",
-            "value": 2
-        },
-        {
-            "from": "receive~art.3~~0x59b29352",
-            "id": "receive~art.3~~0x59b29352|responsibility~art.3~~0x59b29352",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "responsibility~art.3~~0x59b29352",
-            "value": 2
-        },
-        {
-            "from": "receive~art.3~~0x59b29352",
-            "id": "receive~art.3~~0x59b29352|complaint~art.3~~0x59b29352",
-            "label": "dobj",
-            "title": "freq: 2",
-            "to": "complaint~art.3~~0x59b29352",
-            "value": 2
-        },
-        {
-            "from": "introduce~art.2~~0x59b29340",
-            "id": "introduce~art.2~~0x59b29340|october~art.2~~0x59b29340",
-            "label": "nmod:tmod",
-            "title": "freq: 2",
-            "to": "october~art.2~~0x59b29340",
-            "value": 2
-        },
-        {
-            "from": "introduce~art.2~~0x59b29340",
-            "id": "introduce~art.2~~0x59b29340|be~art.2~~0x59b29340",
-            "label": "auxpass",
-            "title": "freq: 2",
-            "to": "be~art.2~~0x59b29340",
-            "value": 2
-        },
-        {
-            "from": "councillor~art.1~~0x59b2933b",
-            "id": "councillor~art.1~~0x59b2933b|opponent~art.1~~0x59b2933d",
-            "label": "ACCUSED",
-            "title": "freq: 2",
-            "to": "opponent~art.1~~0x59b2933d",
-            "value": 2
-        },
-        {
-            "from": "councillor~art.1~~0x59b2933b",
-            "id": "councillor~art.1~~0x59b2933b|bury~art.3~~0x59b29349",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "bury~art.3~~0x59b29349",
-            "value": 2
-        },
-        {
-            "from": "councillor~art.1~~0x59b2933b",
-            "id": "councillor~art.1~~0x59b2933b|vote~art.4~~0x59b29354",
-            "label": "ccomp",
-            "title": "freq: 2",
-            "to": "vote~art.4~~0x59b29354",
-            "value": 2
-        },
-        {
-            "from": "first~art.1~~0x59b29339",
-            "id": "first~art.1~~0x59b29339|start~art.4~~0x59b29354",
-            "label": "acl",
-            "title": "freq: 2",
-            "to": "start~art.4~~0x59b29354",
-            "value": 2
-        },
-        {
-            "from": "first~art.1~~0x59b29339",
-            "id": "first~art.1~~0x59b29339|england~art.1~~0x59b29339",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "england~art.1~~0x59b29339",
-            "value": 2
-        },
-        {
-            "from": "first~art.1~~0x59b29339",
-            "id": "first~art.1~~0x59b29339|be~art.2~~0x59b29340",
-            "label": "cop",
-            "title": "freq: 2",
-            "to": "be~art.2~~0x59b29340",
-            "value": 2
-        },
-        {
-            "from": "speak~art.4~~0x59b29356",
-            "id": "speak~art.4~~0x59b29356|night~art.4~~0x59b29356",
-            "label": "nmod:tmod",
-            "title": "freq: 2",
-            "to": "night~art.4~~0x59b29356",
-            "value": 2
-        },
-        {
-            "from": "speak~art.4~~0x59b29356",
-            "id": "speak~art.4~~0x59b29356|member~art.4~~0x59b29356",
-            "label": "nsubj",
-            "title": "freq: 2",
-            "to": "member~art.4~~0x59b29356",
-            "value": 2
-        },
-        {
-            "from": "speak~art.4~~0x59b29356",
-            "id": "speak~art.4~~0x59b29356|meet~art.4~~0x59b29356",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "meet~art.4~~0x59b29356",
-            "value": 2
-        },
-        {
-            "from": "speak~art.4~~0x59b29356",
-            "id": "speak~art.4~~0x59b29356|wednesday~art.1~~0x59b2933b",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "wednesday~art.1~~0x59b2933b",
-            "value": 2
-        },
-        {
-            "from": "speak~art.4~~0x59b29356",
-            "id": "speak~art.4~~0x59b29356|decision~art.3~~0x59b2934d",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "decision~art.3~~0x59b2934d",
-            "value": 2
-        },
-        {
-            "from": "effective_cut~art.3~~0x59b2934d",
-            "id": "effective_cut~art.3~~0x59b2934d|%~art.3~~0x59b2934d",
-            "label": "amod",
-            "title": "freq: 2",
-            "to": "%~art.3~~0x59b2934d",
-            "value": 2
-        },
-        {
-            "from": "empty~art.2~~0x59b29347",
-            "id": "empty~art.2~~0x59b29347|bin~art.2~~0x59b29345",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "bin~art.2~~0x59b29345",
-            "value": 2
-        },
-        {
-            "from": "resident~art.3~~0x59b2934b",
-            "id": "resident~art.3~~0x59b2934b|many~art.3~~0x59b29350",
-            "label": "amod",
-            "title": "freq: 2",
-            "to": "many~art.3~~0x59b29350",
-            "value": 2
-        },
-        {
-            "from": "spend~art.1~~0x59b2933e",
-            "id": "spend~art.1~~0x59b2933e|worker~art.1~~0x59b2933e",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "worker~art.1~~0x59b2933e",
-            "value": 2
-        },
-        {
-            "from": "spend~art.1~~0x59b2933e",
-            "id": "spend~art.1~~0x59b2933e|be~art.2~~0x59b29340",
-            "label": "auxpass",
-            "title": "freq: 2",
-            "to": "be~art.2~~0x59b29340",
-            "value": 2
-        },
-        {
-            "from": "paper~art.2~~0x59b29345",
-            "id": "paper~art.2~~0x59b29345|glass~art.2~~0x59b29345",
-            "label": "conj",
-            "title": "freq: 2",
-            "to": "glass~art.2~~0x59b29345",
-            "value": 2
-        },
-        {
-            "from": "paper~art.2~~0x59b29345",
-            "id": "paper~art.2~~0x59b29345|plastic~art.2~~0x59b29345",
-            "label": "conj",
-            "title": "freq: 2",
-            "to": "plastic~art.2~~0x59b29345",
-            "value": 2
-        },
-        {
-            "from": "be~art.2~~0x59b29340",
-            "id": "be~art.2~~0x59b29340|council~art.0~~0x59b29334",
-            "label": "nsubj",
-            "title": "freq: 2",
-            "to": "council~art.0~~0x59b29334",
-            "value": 2
-        },
-        {
-            "from": "be~art.2~~0x59b29340",
-            "id": "be~art.2~~0x59b29340|first~art.1~~0x59b29339",
-            "label": "xcomp",
-            "title": "freq: 2",
-            "to": "first~art.1~~0x59b29339",
-            "value": 2
-        },
-        {
-            "from": "know~com.~0x558ad163de894^1~0x59b2935b",
-            "id": "know~com.~0x558ad163de894^1~0x59b2935b|have~com.~0x558ad163de894^1~0x59b2935b",
-            "label": "ccomp",
-            "title": "freq: 2",
-            "to": "have~com.~0x558ad163de894^1~0x59b2935b",
-            "value": 2
-        },
-        {
-            "from": "know~com.~0x558ad163de894^1~0x59b2935b",
-            "id": "know~com.~0x558ad163de894^1~0x59b2935b|seem~com.~0x558ad163de894^1~0x59b2935b",
-            "label": "conj",
-            "title": "freq: 2",
-            "to": "seem~com.~0x558ad163de894^1~0x59b2935b",
-            "value": 2
-        },
-        {
-            "from": "used~art.2~~0x59b29342",
-            "id": "used~art.2~~0x59b29342|general_waste~art.2~~0x59b29342",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "general_waste~art.2~~0x59b29342",
-            "value": 2
-        },
-        {
-            "from": "serve~art.2~~0x59b29347",
-            "id": "serve~art.2~~0x59b29347|flat~art.2~~0x59b29347",
-            "label": "dobj",
-            "title": "freq: 2",
-            "to": "flat~art.2~~0x59b29347",
-            "value": 2
-        },
-        {
-            "from": "impose~art.3~~0x59b2934d",
-            "id": "impose~art.3~~0x59b2934d|have~com.~0x558ad163de894^1~0x59b2935b",
-            "label": "aux",
-            "title": "freq: 2",
-            "to": "have~com.~0x558ad163de894^1~0x59b2935b",
-            "value": 2
-        },
-        {
-            "from": "impose~art.3~~0x59b2934d",
-            "id": "impose~art.3~~0x59b2934d|be~art.2~~0x59b29340",
-            "label": "auxpass",
-            "title": "freq: 2",
-            "to": "be~art.2~~0x59b29340",
-            "value": 2
-        },
-        {
-            "from": "impose~art.3~~0x59b2934d",
-            "id": "impose~art.3~~0x59b2934d|con/dem_government~art.3~~0x59b29350",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "con/dem_government~art.3~~0x59b29350",
-            "value": 2
-        },
-        {
-            "from": "impose~art.3~~0x59b2934d",
-            "id": "impose~art.3~~0x59b2934d|budget~art.3~~0x59b2934d",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "budget~art.3~~0x59b2934d",
-            "value": 2
-        },
-        {
-            "from": "boost~art.3~~0x59b29349",
-            "id": "boost~art.3~~0x59b29349|recycle~art.3~~0x59b29349",
-            "label": "dobj",
-            "title": "freq: 2",
-            "to": "recycle~art.3~~0x59b29349",
-            "value": 2
-        },
-        {
-            "from": "local_government~art.3~~0x59b29352",
-            "id": "local_government~art.3~~0x59b29352|parliament~art.3~~0x59b29352",
-            "label": "conj",
-            "title": "freq: 2",
-            "to": "parliament~art.3~~0x59b29352",
-            "value": 2
-        },
-        {
-            "from": "increase~art.1~~0x59b2933b",
-            "id": "increase~art.1~~0x59b2933b|tip~art.1~~0x59b2933b",
-            "label": "nsubj",
-            "title": "freq: 2",
-            "to": "tip~art.1~~0x59b2933b",
-            "value": 2
-        },
-        {
-            "from": "increase~art.1~~0x59b2933b",
-            "id": "increase~art.1~~0x59b2933b|fly-tipping~art.0~~0x59b29334",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "fly-tipping~art.0~~0x59b29334",
-            "value": 2
-        },
-        {
-            "from": "change~art.2~~0x59b29347",
-            "id": "change~art.2~~0x59b29347|empty~art.2~~0x59b29347",
-            "label": "nsubj",
-            "title": "freq: 2",
-            "to": "empty~art.2~~0x59b29347",
-            "value": 2
-        },
-        {
-            "from": "say~art.3~~0x59b2934d",
-            "id": "say~art.3~~0x59b2934d|have~com.~0x558ad163de894^1~0x59b2935b",
-            "label": "ccomp",
-            "title": "freq: 2",
-            "to": "have~com.~0x558ad163de894^1~0x59b2935b",
-            "value": 2
-        },
-        {
-            "from": "say~art.3~~0x59b2934d",
-            "id": "say~art.3~~0x59b2934d|blog~art.3~~0x59b29350",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "blog~art.3~~0x59b29350",
-            "value": 2
-        },
-        {
-            "from": "say~art.3~~0x59b2934d",
-            "id": "say~art.3~~0x59b2934d|unprecedented~art.3~~0x59b29350",
-            "label": "ccomp",
-            "title": "freq: 2",
-            "to": "unprecedented~art.3~~0x59b29350",
-            "value": 2
-        },
-        {
-            "from": "say~art.3~~0x59b2934d",
-            "id": "say~art.3~~0x59b2934d|ivan_lewis~art.3~~0x59b2934d",
-            "label": "nsubj",
-            "title": "freq: 2",
-            "to": "ivan_lewis~art.3~~0x59b2934d",
-            "value": 2
-        },
-        {
-            "from": "budget~art.3~~0x59b2934d",
-            "id": "budget~art.3~~0x59b2934d|council~art.0~~0x59b29334",
-            "label": "nmod:poss",
-            "title": "freq: 2",
-            "to": "council~art.0~~0x59b29334",
-            "value": 2
-        },
-        {
-            "from": "budget~art.3~~0x59b2934d",
-            "id": "budget~art.3~~0x59b2934d|year~art.4~~0x59b29354",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "year~art.4~~0x59b29354",
-            "value": 2
-        },
-        {
-            "from": "mean~art.3~~0x59b29350",
-            "id": "mean~art.3~~0x59b29350|risk~art.3~~0x59b29350",
-            "label": "ccomp",
-            "title": "freq: 2",
-            "to": "risk~art.3~~0x59b29350",
-            "value": 2
-        },
-        {
-            "from": "petition~art.2~~0x59b29340",
-            "id": "petition~art.2~~0x59b29340|oppose~art.2~~0x59b29340",
-            "label": "acl",
-            "title": "freq: 2",
-            "to": "oppose~art.2~~0x59b29340",
-            "value": 2
-        },
-        {
-            "from": "part~art.3~~0x59b29349",
-            "id": "part~art.3~~0x59b29349|move~art.3~~0x59b29349",
-            "label": "nsubj",
-            "title": "freq: 2",
-            "to": "move~art.3~~0x59b29349",
-            "value": 2
-        },
-        {
-            "from": "part~art.3~~0x59b29349",
-            "id": "part~art.3~~0x59b29349|be~art.2~~0x59b29340",
-            "label": "cop",
-            "title": "freq: 2",
-            "to": "be~art.2~~0x59b29340",
-            "value": 2
-        },
-        {
-            "from": "part~art.3~~0x59b29349",
-            "id": "part~art.3~~0x59b29349|strategy~art.3~~0x59b29349",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "strategy~art.3~~0x59b29349",
-            "value": 2
-        },
-        {
-            "from": "claim~art.3~~0x59b29349",
-            "id": "claim~art.3~~0x59b29349|part~art.3~~0x59b29349",
-            "label": "ccomp",
-            "title": "freq: 2",
-            "to": "part~art.3~~0x59b29349",
-            "value": 2
-        },
-        {
-            "from": "claim~art.3~~0x59b29349",
-            "id": "claim~art.3~~0x59b29349|labour-run_council~art.3~~0x59b29349",
-            "label": "nsubj",
-            "title": "freq: 2",
-            "to": "labour-run_council~art.3~~0x59b29349",
-            "value": 2
-        },
-        {
-            "from": "risk~art.3~~0x59b29350",
-            "id": "risk~art.3~~0x59b29350|be~art.2~~0x59b29340",
-            "label": "cop",
-            "title": "freq: 2",
-            "to": "be~art.2~~0x59b29340",
-            "value": 2
-        },
-        {
-            "from": "risk~art.3~~0x59b29350",
-            "id": "risk~art.3~~0x59b29350|line_service~art.3~~0x59b29350",
-            "label": "nsubj",
-            "title": "freq: 2",
-            "to": "line_service~art.3~~0x59b29350",
-            "value": 2
-        },
-        {
-            "from": "gwynedd_council~art.4~~0x59b29354",
-            "id": "gwynedd_council~art.4~~0x59b29354|wale~art.4~~0x59b29354",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "wale~art.4~~0x59b29354",
-            "value": 2
-        },
-        {
-            "from": "falkirk~art.4~~0x59b29354",
-            "id": "falkirk~art.4~~0x59b29354|scotland~art.4~~0x59b29354",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "scotland~art.4~~0x59b29354",
-            "value": 2
-        },
-        {
-            "from": "line_service~art.3~~0x59b29350",
-            "id": "line_service~art.3~~0x59b29350|many~art.3~~0x59b29350",
-            "label": "amod",
-            "title": "freq: 2",
-            "to": "many~art.3~~0x59b29350",
-            "value": 2
-        },
-        {
-            "from": "line_service~art.3~~0x59b29350",
-            "id": "line_service~art.3~~0x59b29350|front~art.3~~0x59b29350",
-            "label": "amod",
-            "title": "freq: 2",
-            "to": "front~art.3~~0x59b29350",
-            "value": 2
-        },
-        {
-            "from": "worker~art.1~~0x59b2933e",
-            "id": "worker~art.1~~0x59b2933e|social~art.1~~0x59b2933e",
-            "label": "amod",
-            "title": "freq: 2",
-            "to": "social~art.1~~0x59b2933e",
-            "value": 2
-        },
-        {
-            "from": "new_initiative~art.2~~0x59b29340",
-            "id": "new_initiative~art.2~~0x59b29340|introduce~art.2~~0x59b29340",
-            "label": "acl:relcl",
-            "title": "freq: 2",
-            "to": "introduce~art.2~~0x59b29340",
-            "value": 2
-        },
-        {
-            "from": "town_hall~art.4~~0x59b29356",
-            "id": "town_hall~art.4~~0x59b29356|bury~art.3~~0x59b29349",
-            "label": "compound",
-            "title": "freq: 2",
-            "to": "bury~art.3~~0x59b29349",
-            "value": 2
-        },
-        {
-            "from": "scrap~art.1~~0x59b29339",
-            "id": "scrap~art.1~~0x59b29339|current_collection~art.1~~0x59b29339",
-            "label": "dobj",
-            "title": "freq: 2",
-            "to": "current_collection~art.1~~0x59b29339",
-            "value": 2
-        },
-        {
-            "from": "pass~art.1~~0x59b2933b",
-            "id": "pass~art.1~~0x59b2933b|fear~art.0~~0x59b29334",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "fear~art.0~~0x59b29334",
-            "value": 2
-        },
-        {
-            "from": "pass~art.1~~0x59b2933b",
-            "id": "pass~art.1~~0x59b2933b|night~art.4~~0x59b29356",
-            "label": "nmod:tmod",
-            "title": "freq: 2",
-            "to": "night~art.4~~0x59b29356",
-            "value": 2
-        },
-        {
-            "from": "pass~art.1~~0x59b2933b",
-            "id": "pass~art.1~~0x59b2933b|wa~art.1~~0x59b2933b",
-            "label": "auxpass",
-            "title": "freq: 2",
-            "to": "wa~art.1~~0x59b2933b",
-            "value": 2
-        },
-        {
-            "from": "pass~art.1~~0x59b2933b",
-            "id": "pass~art.1~~0x59b2933b|unanimously~art.1~~0x59b2933b",
-            "label": "advmod",
-            "title": "freq: 2",
-            "to": "unanimously~art.1~~0x59b2933b",
-            "value": 2
-        },
-        {
-            "from": "pass~art.1~~0x59b2933b",
-            "id": "pass~art.1~~0x59b2933b|controversial_decision~art.1~~0x59b2933b",
+            "from": "collect~art.1~~0x59b413c6",
+            "id": "collect~art.1~~0x59b413c6|food_waste~com.~0x558c401f10597^25~0x59b4144c",
             "label": "nsubjpass",
             "title": "freq: 2",
-            "to": "controversial_decision~art.1~~0x59b2933b",
+            "to": "food_waste~com.~0x558c401f10597^25~0x59b4144c",
             "value": 2
         },
         {
-            "from": "pass~art.1~~0x59b2933b",
-            "id": "pass~art.1~~0x59b2933b|councillor~art.1~~0x59b2933b",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "councillor~art.1~~0x59b2933b",
-            "value": 2
-        },
-        {
-            "from": "pass~art.1~~0x59b2933b",
-            "id": "pass~art.1~~0x59b2933b|wednesday~art.1~~0x59b2933b",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "wednesday~art.1~~0x59b2933b",
-            "value": 2
-        },
-        {
-            "from": "start~art.4~~0x59b29354",
-            "id": "start~art.4~~0x59b29354|scrap~art.1~~0x59b29339",
-            "label": "advcl",
-            "title": "freq: 2",
-            "to": "scrap~art.1~~0x59b29339",
-            "value": 2
-        },
-        {
-            "from": "start~art.4~~0x59b29354",
-            "id": "start~art.4~~0x59b29354|collect~art.4~~0x59b29354",
-            "label": "xcomp",
-            "title": "freq: 2",
-            "to": "collect~art.4~~0x59b29354",
-            "value": 2
-        },
-        {
-            "from": "start~art.4~~0x59b29354",
-            "id": "start~art.4~~0x59b29354|week~art.2~~0x59b29345",
-            "label": "nmod:tmod",
-            "title": "freq: 2",
-            "to": "week~art.2~~0x59b29345",
-            "value": 2
-        },
-        {
-            "from": "start~art.4~~0x59b29354",
-            "id": "start~art.4~~0x59b29354|rubbish~art.1~~0x59b2933d",
+            "from": "collect~art.1~~0x59b413c6",
+            "id": "collect~art.1~~0x59b413c6|week~com.~0x558c401f0fdd2^15~0x59b41426",
             "label": "dobj",
             "title": "freq: 2",
-            "to": "rubbish~art.1~~0x59b2933d",
+            "to": "week~com.~0x558c401f0fdd2^15~0x59b41426",
             "value": 2
         },
         {
-            "from": "insist~art.0~~0x59b29334",
-            "id": "insist~art.0~~0x59b29334|council~art.0~~0x59b29334",
-            "label": "nsubj",
+            "from": "make~com.~0x558c401f1014b^18~0x59b4141a",
+            "id": "make~com.~0x558c401f1014b^18~0x59b4141a|impose~art.3~~0x59b413dd",
+            "label": "advcl",
             "title": "freq: 2",
-            "to": "council~art.0~~0x59b29334",
+            "to": "impose~art.3~~0x59b413dd",
             "value": 2
         },
         {
-            "from": "insist~art.0~~0x59b29334",
-            "id": "insist~art.0~~0x59b29334|make~art.0~~0x59b29334",
-            "label": "ccomp",
-            "title": "freq: 2",
-            "to": "make~art.0~~0x59b29334",
-            "value": 2
-        },
-        {
-            "from": "lie~art.3~~0x59b29352",
-            "id": "lie~art.3~~0x59b29352|local_government~art.3~~0x59b29352",
+            "from": "make~com.~0x558c401f1014b^18~0x59b4141a",
+            "id": "make~com.~0x558c401f1014b^18~0x59b4141a|cut~art.3~~0x59b413da",
             "label": "nmod",
             "title": "freq: 2",
-            "to": "local_government~art.3~~0x59b29352",
+            "to": "cut~art.3~~0x59b413da",
             "value": 2
         },
         {
-            "from": "see~com.~0x558ad163de894^1~0x59b29359",
-            "id": "see~com.~0x558ad163de894^1~0x59b29359|attract~com.~0x558ad163de894^1~0x59b29359",
-            "label": "ccomp",
+            "from": "put~com.~0x558c401f0f8e4^10~0x59b413fd",
+            "id": "put~com.~0x558c401f0f8e4^10~0x59b413fd|rubbish~com.~0x558c401f0f5ec^5~0x59b413fe",
+            "label": "dobj",
+            "title": "freq: 6",
+            "to": "rubbish~com.~0x558c401f0f5ec^5~0x59b413fe",
+            "value": 6
+        },
+        {
+            "from": "put~com.~0x558c401f0f8e4^10~0x59b413fd",
+            "id": "put~com.~0x558c401f0f8e4^10~0x59b413fd|go~com.~0x558c401f0fb92^13~0x59b41420",
+            "label": "csubj",
             "title": "freq: 2",
-            "to": "attract~com.~0x558ad163de894^1~0x59b29359",
+            "to": "go~com.~0x558c401f0fb92^13~0x59b41420",
             "value": 2
         },
         {
-            "from": "ivan_lewis~art.3~~0x59b2934d",
-            "id": "ivan_lewis~art.3~~0x59b2934d|local~art.3~~0x59b2934d",
-            "label": "amod",
-            "title": "freq: 2",
-            "to": "local~art.3~~0x59b2934d",
-            "value": 2
-        },
-        {
-            "from": "ivan_lewis~art.3~~0x59b2934d",
-            "id": "ivan_lewis~art.3~~0x59b2934d|labour~art.3~~0x59b2934d",
-            "label": "compound",
-            "title": "freq: 2",
-            "to": "labour~art.3~~0x59b2934d",
-            "value": 2
-        },
-        {
-            "from": "ivan_lewis~art.3~~0x59b2934d",
-            "id": "ivan_lewis~art.3~~0x59b2934d|mp~art.3~~0x59b29352",
-            "label": "compound",
-            "title": "freq: 2",
-            "to": "mp~art.3~~0x59b29352",
-            "value": 2
-        },
-        {
-            "from": "turn~art.3~~0x59b29349",
-            "id": "turn~art.3~~0x59b29349|bury~art.3~~0x59b29349",
+            "from": "put~com.~0x558c401f0f8e4^10~0x59b413fd",
+            "id": "put~com.~0x558c401f0f8e4^10~0x59b413fd|expand~com.~0x558c401f0f8e4^10~0x59b413fd",
             "label": "dep",
             "title": "freq: 2",
-            "to": "bury~art.3~~0x59b29349",
+            "to": "expand~com.~0x558c401f0f8e4^10~0x59b413fd",
             "value": 2
         },
         {
-            "from": "year~art.4~~0x59b29354",
-            "id": "year~art.4~~0x59b29354|next~art.3~~0x59b2934b",
-            "label": "amod",
+            "from": "tell~com.~0x558c401f0f57b^4~0x59b413f1",
+            "id": "tell~com.~0x558c401f0f57b^4~0x59b413f1|make~com.~0x558c401f1014b^18~0x59b4141a",
+            "label": "xcomp",
             "title": "freq: 2",
-            "to": "next~art.3~~0x59b2934b",
+            "to": "make~com.~0x558c401f1014b^18~0x59b4141a",
             "value": 2
         },
         {
-            "from": "collect~art.4~~0x59b29354",
-            "id": "collect~art.4~~0x59b29354|bin~art.2~~0x59b29345",
-            "label": "nsubjpass",
-            "title": "freq: 4",
-            "to": "bin~art.2~~0x59b29345",
-            "value": 4
+            "from": "tell~com.~0x558c401f0f57b^4~0x59b413f1",
+            "id": "tell~com.~0x558c401f0f57b^4~0x59b413f1|people~art.2~~0x59b413d0",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "people~art.2~~0x59b413d0",
+            "value": 2
         },
         {
-            "from": "collect~art.4~~0x59b29354",
-            "id": "collect~art.4~~0x59b29354|week~art.2~~0x59b29345",
+            "from": "tell~com.~0x558c401f0f57b^4~0x59b413f1",
+            "id": "tell~com.~0x558c401f0f57b^4~0x59b413f1|town_hall~art.4~~0x59b413e7",
+            "label": "nsubjpass",
+            "title": "freq: 2",
+            "to": "town_hall~art.4~~0x59b413e7",
+            "value": 2
+        },
+        {
+            "from": "look~com.~0x558c401f0fff3^16~0x59b41411",
+            "id": "look~com.~0x558c401f0fff3^16~0x59b41411|package~com.~0x558c401f0fff3^16~0x59b41411",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "package~com.~0x558c401f0fff3^16~0x59b41411",
+            "value": 2
+        },
+        {
+            "from": "flat~com.~0x558c401f0f8e4^10~0x59b413fd",
+            "id": "flat~com.~0x558c401f0f8e4^10~0x59b413fd|shed~com.~0x558c401f0f5ec^5~0x59b413fe",
+            "label": "HAVE",
+            "title": "freq: 6",
+            "to": "shed~com.~0x558c401f0f5ec^5~0x59b413fe",
+            "value": 6
+        },
+        {
+            "from": "fear~art.0~~0x59b413c0",
+            "id": "fear~art.0~~0x59b413c0|lead~art.4~~0x59b413e5",
+            "label": "ccomp",
+            "title": "freq: 2",
+            "to": "lead~art.4~~0x59b413e5",
+            "value": 2
+        },
+        {
+            "from": "compost~com.~0x558c401f0f41a^2~0x59b413ed",
+            "id": "compost~com.~0x558c401f0f41a^2~0x59b413ed|bin~com.~0x558c401f0f9fe^11~0x59b41412",
             "label": "dobj",
             "title": "freq: 2",
-            "to": "week~art.2~~0x59b29345",
+            "to": "bin~com.~0x558c401f0f9fe^11~0x59b41412",
             "value": 2
         },
         {
-            "from": "collect~art.4~~0x59b29354",
-            "id": "collect~art.4~~0x59b29354|be~art.2~~0x59b29340",
-            "label": "auxpass",
-            "title": "freq: 2",
-            "to": "be~art.2~~0x59b29340",
-            "value": 2
-        },
-        {
-            "from": "desperate_measure~art.3~~0x59b2934b",
-            "id": "desperate_measure~art.3~~0x59b2934b|cut~art.0~~0x59b29335",
-            "label": "compound",
-            "title": "freq: 2",
-            "to": "cut~art.0~~0x59b29335",
-            "value": 2
-        },
-        {
-            "from": "desperate_measure~art.3~~0x59b2934b",
-            "id": "desperate_measure~art.3~~0x59b2934b|cost~art.3~~0x59b2934b",
-            "label": "compound",
-            "title": "freq: 4",
-            "to": "cost~art.3~~0x59b2934b",
-            "value": 4
-        },
-        {
-            "from": "desperate_measure~art.3~~0x59b2934b",
-            "id": "desperate_measure~art.3~~0x59b2934b|be~art.2~~0x59b29340",
-            "label": "cop",
-            "title": "freq: 4",
-            "to": "be~art.2~~0x59b29340",
-            "value": 4
-        },
-        {
-            "from": "desperate_measure~art.3~~0x59b2934b",
-            "id": "desperate_measure~art.3~~0x59b2934b|save~art.3~~0x59b2934b",
-            "label": "amod",
-            "title": "freq: 2",
-            "to": "save~art.3~~0x59b2934b",
-            "value": 2
-        },
-        {
-            "from": "desperate_measure~art.3~~0x59b2934b",
-            "id": "desperate_measure~art.3~~0x59b2934b|tell~art.3~~0x59b2934b",
+            "from": "compost~com.~0x558c401f0f41a^2~0x59b413ed",
+            "id": "compost~com.~0x558c401f0f41a^2~0x59b413ed|package~com.~0x558c401f0fff3^16~0x59b41411",
             "label": "advcl",
             "title": "freq: 2",
-            "to": "tell~art.3~~0x59b2934b",
+            "to": "package~com.~0x558c401f0fff3^16~0x59b41411",
             "value": 2
         },
         {
-            "from": "have~com.~0x558ad163de894^1~0x59b2935b",
-            "id": "have~com.~0x558ad163de894^1~0x59b2935b|make~art.0~~0x59b29334",
-            "label": "xcomp",
-            "title": "freq: 4",
-            "to": "make~art.0~~0x59b29334",
-            "value": 4
-        },
-        {
-            "from": "have~com.~0x558ad163de894^1~0x59b2935b",
-            "id": "have~com.~0x558ad163de894^1~0x59b2935b|decision~art.3~~0x59b2934d",
-            "label": "nsubj",
-            "title": "freq: 4",
-            "to": "decision~art.3~~0x59b2934d",
-            "value": 4
-        },
-        {
-            "from": "car~art.0~~0x59b29330",
-            "id": "car~art.0~~0x59b29330|accident~art.0~~0x59b29330",
-            "label": "CAUSE",
-            "title": "freq: 2",
-            "to": "accident~art.0~~0x59b29330",
-            "value": 2
-        },
-        {
-            "from": "lyndsay_warner~art.0~~0x59b29337",
-            "id": "lyndsay_warner~art.0~~0x59b29337|controversial_decision~art.1~~0x59b2933b",
-            "label": "nmod",
-            "title": "freq: 2",
-            "to": "controversial_decision~art.1~~0x59b2933b",
-            "value": 2
-        },
-        {
-            "from": "general_waste~art.2~~0x59b29342",
-            "id": "general_waste~art.2~~0x59b29342|household~art.2~~0x59b29342",
+            "from": "town_hall~art.4~~0x59b413e7",
+            "id": "town_hall~art.4~~0x59b413e7|bury~art.4~~0x59b413e7",
             "label": "compound",
             "title": "freq: 2",
-            "to": "household~art.2~~0x59b29342",
+            "to": "bury~art.4~~0x59b413e7",
             "value": 2
         },
         {
-            "from": "general_waste~art.2~~0x59b29342",
-            "id": "general_waste~art.2~~0x59b29342|recycle~art.3~~0x59b29349",
-            "label": "acl:relcl",
+            "from": "place~com.~0x558c401f100cd^17~0x59b41430",
+            "id": "place~com.~0x558c401f100cd^17~0x59b41430|put~com.~0x558c401f0f8e4^10~0x59b413fd",
+            "label": "acl",
             "title": "freq: 2",
-            "to": "recycle~art.3~~0x59b29349",
+            "to": "put~com.~0x558c401f0f8e4^10~0x59b413fd",
             "value": 2
         },
         {
-            "from": "lead~art.4~~0x59b29354",
-            "id": "lead~art.4~~0x59b29354|increase~art.1~~0x59b2933b",
+            "from": "grey_bin~com.~0x558c401f0fdd2^15~0x59b41426",
+            "id": "grey_bin~com.~0x558c401f0fdd2^15~0x59b41426|week~com.~0x558c401f0fdd2^15~0x59b41426",
             "label": "nmod",
             "title": "freq: 2",
-            "to": "increase~art.1~~0x59b2933b",
+            "to": "week~com.~0x558c401f0fdd2^15~0x59b41426",
             "value": 2
         },
         {
-            "from": "lead~art.4~~0x59b29354",
-            "id": "lead~art.4~~0x59b29354|attract~com.~0x558ad163de894^1~0x59b29359",
-            "label": "conj",
-            "title": "freq: 2",
-            "to": "attract~com.~0x558ad163de894^1~0x59b29359",
-            "value": 2
-        },
-        {
-            "from": "lead~art.4~~0x59b29354",
-            "id": "lead~art.4~~0x59b29354|new_move~art.0~~0x59b29334",
-            "label": "nsubj",
-            "title": "freq: 2",
-            "to": "new_move~art.0~~0x59b29334",
-            "value": 2
-        },
-        {
-            "from": "lead~art.4~~0x59b29354",
-            "id": "lead~art.4~~0x59b29354|falkirk~art.4~~0x59b29354",
+            "from": "live~com.~0x558c401f10597^25~0x59b41448",
+            "id": "live~com.~0x558c401f10597^25~0x59b41448|flat~com.~0x558c401f0f8e4^10~0x59b413fd",
             "label": "nmod",
             "title": "freq: 2",
-            "to": "falkirk~art.4~~0x59b29354",
+            "to": "flat~com.~0x558c401f0f8e4^10~0x59b413fd",
             "value": 2
         },
         {
-            "from": "lead~art.4~~0x59b29354",
-            "id": "lead~art.4~~0x59b29354|follow~art.4~~0x59b29354",
-            "label": "case",
+            "from": "live~com.~0x558c401f10597^25~0x59b41448",
+            "id": "live~com.~0x558c401f10597^25~0x59b41448|go~com.~0x558c401f0fb92^13~0x59b41420",
+            "label": "parataxis",
             "title": "freq: 2",
-            "to": "follow~art.4~~0x59b29354",
+            "to": "go~com.~0x558c401f0fb92^13~0x59b41420",
             "value": 2
         },
         {
-            "from": "unprecedented~art.3~~0x59b29350",
-            "id": "unprecedented~art.3~~0x59b29350|mean~art.3~~0x59b29350",
-            "label": "conj",
-            "title": "freq: 2",
-            "to": "mean~art.3~~0x59b29350",
-            "value": 2
-        },
-        {
-            "from": "unprecedented~art.3~~0x59b29350",
-            "id": "unprecedented~art.3~~0x59b29350|cut~art.0~~0x59b29335",
-            "label": "nsubj",
-            "title": "freq: 2",
-            "to": "cut~art.0~~0x59b29335",
-            "value": 2
-        },
-        {
-            "from": "unprecedented~art.3~~0x59b29350",
-            "id": "unprecedented~art.3~~0x59b29350|be~art.2~~0x59b29340",
-            "label": "cop",
-            "title": "freq: 2",
-            "to": "be~art.2~~0x59b29340",
-            "value": 2
-        },
-        {
-            "from": "meet~art.4~~0x59b29356",
-            "id": "meet~art.4~~0x59b29356|town_hall~art.4~~0x59b29356",
+            "from": "councillor~art.1~~0x59b413cb",
+            "id": "councillor~art.1~~0x59b413cb|bury~art.4~~0x59b413e7",
             "label": "nmod",
             "title": "freq: 2",
-            "to": "town_hall~art.4~~0x59b29356",
+            "to": "bury~art.4~~0x59b413e7",
             "value": 2
         },
         {
-            "from": "tell~art.3~~0x59b2934b",
-            "id": "tell~art.3~~0x59b2934b|make~art.0~~0x59b29334",
+            "from": "councillor~art.1~~0x59b413cb",
+            "id": "councillor~art.1~~0x59b413cb|vote~com.~0x558c401f102a6^21~0x59b41439",
+            "label": "ccomp",
+            "title": "freq: 2",
+            "to": "vote~com.~0x558c401f102a6^21~0x59b41439",
+            "value": 2
+        },
+        {
+            "from": "cut~art.3~~0x59b413da",
+            "id": "cut~art.3~~0x59b413da|impose~art.3~~0x59b413dd",
+            "label": "acl",
+            "title": "freq: 2",
+            "to": "impose~art.3~~0x59b413dd",
+            "value": 2
+        },
+        {
+            "from": "cut~art.3~~0x59b413da",
+            "id": "cut~art.3~~0x59b413da|year~art.3~~0x59b413dd",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "year~art.3~~0x59b413dd",
+            "value": 2
+        },
+        {
+            "from": "vote~com.~0x558c401f102a6^21~0x59b41439",
+            "id": "vote~com.~0x558c401f102a6^21~0x59b41439|start~art.1~~0x59b413c6",
             "label": "xcomp",
             "title": "freq: 2",
-            "to": "make~art.0~~0x59b29334",
+            "to": "start~art.1~~0x59b413c6",
             "value": 2
         },
         {
-            "from": "tell~art.3~~0x59b2934b",
-            "id": "tell~art.3~~0x59b2934b|wa~art.1~~0x59b2933b",
-            "label": "auxpass",
+            "from": "vote~com.~0x558c401f102a6^21~0x59b41439",
+            "id": "vote~com.~0x558c401f102a6^21~0x59b41439|week~com.~0x558c401f0fdd2^15~0x59b41426",
+            "label": "nmod:tmod",
             "title": "freq: 2",
-            "to": "wa~art.1~~0x59b2933b",
+            "to": "week~com.~0x558c401f0fdd2^15~0x59b41426",
             "value": 2
         },
         {
-            "from": "tell~art.3~~0x59b2934b",
-            "id": "tell~art.3~~0x59b2934b|town_hall~art.4~~0x59b29356",
-            "label": "nsubjpass",
+            "from": "vote~com.~0x558c401f102a6^21~0x59b41439",
+            "id": "vote~com.~0x558c401f102a6^21~0x59b41439|year~art.3~~0x59b413dd",
+            "label": "nmod:tmod",
             "title": "freq: 2",
-            "to": "town_hall~art.4~~0x59b29356",
+            "to": "year~art.3~~0x59b413dd",
             "value": 2
         },
         {
-            "from": "council~art.0~~0x59b29334",
-            "id": "council~art.0~~0x59b29334|manchester~art.1~~0x59b29339",
+            "from": "vote~com.~0x558c401f102a6^21~0x59b41439",
+            "id": "vote~com.~0x558c401f102a6^21~0x59b41439|lead~art.4~~0x59b413e5",
             "label": "nmod",
             "title": "freq: 2",
-            "to": "manchester~art.1~~0x59b29339",
+            "to": "lead~art.4~~0x59b413e5",
             "value": 2
         },
         {
-            "from": "member~art.4~~0x59b29356",
-            "id": "member~art.4~~0x59b29356|public~art.4~~0x59b29356",
+            "from": "expect~com.~0x558c401f0fcff^14~0x59b41409",
+            "id": "expect~com.~0x558c401f0fcff^14~0x59b41409|bury~art.4~~0x59b413e7",
+            "label": "xcomp",
+            "title": "freq: 2",
+            "to": "bury~art.4~~0x59b413e7",
+            "value": 2
+        },
+        {
+            "from": "trouble~com.~0x558c401f0fdd2^15~0x59b41428",
+            "id": "trouble~com.~0x558c401f0fdd2^15~0x59b41428|rat~com.~0x558c401f0f34e^1~0x59b413ea",
             "label": "nmod",
             "title": "freq: 2",
-            "to": "public~art.4~~0x59b29356",
+            "to": "rat~com.~0x558c401f0f34e^1~0x59b413ea",
             "value": 2
         },
         {
-            "from": "attract~com.~0x558ad163de894^1~0x59b29359",
-            "id": "attract~com.~0x558ad163de894^1~0x59b29359|vermin~art.1~~0x59b2933d",
-            "label": "dobj",
+            "from": "fox~art.0~~0x59b413c0",
+            "id": "fox~art.0~~0x59b413c0|vermin~com.~0x558c401f0fdd2^15~0x59b41426",
+            "label": "conj",
             "title": "freq: 2",
-            "to": "vermin~art.1~~0x59b2933d",
+            "to": "vermin~com.~0x558c401f0fdd2^15~0x59b41426",
             "value": 2
         },
         {
-            "from": "attract~com.~0x558ad163de894^1~0x59b29359",
-            "id": "attract~com.~0x558ad163de894^1~0x59b29359|rat~com.~0x558ad163de894^1~0x59b29359",
-            "label": "dobj",
+            "from": "rubbish~com.~0x558c401f0f5ec^5~0x59b413fe",
+            "id": "rubbish~com.~0x558c401f0f5ec^5~0x59b413fe|collect~art.1~~0x59b413c6",
+            "label": "amod",
             "title": "freq: 2",
-            "to": "rat~com.~0x558ad163de894^1~0x59b29359",
+            "to": "collect~art.1~~0x59b413c6",
             "value": 2
         },
         {
-            "from": "attract~com.~0x558ad163de894^1~0x59b29359",
-            "id": "attract~com.~0x558ad163de894^1~0x59b29359|fox~art.0~~0x59b29334",
+            "from": "close~com.~0x558c401f0fdd2^15~0x59b41428",
+            "id": "close~com.~0x558c401f0fdd2^15~0x59b41428|bin~com.~0x558c401f0f9fe^11~0x59b41412",
+            "label": "nsubj",
+            "title": "freq: 2",
+            "to": "bin~com.~0x558c401f0f9fe^11~0x59b41412",
+            "value": 2
+        },
+        {
+            "from": "bin~com.~0x558c401f0f9fe^11~0x59b41412",
+            "id": "bin~com.~0x558c401f0f9fe^11~0x59b41412|compost~com.~0x558c401f0f41a^2~0x59b413ed",
+            "label": "amod",
+            "title": "freq: 2",
+            "to": "compost~com.~0x558c401f0f41a^2~0x59b413ed",
+            "value": 2
+        },
+        {
+            "from": "bin~com.~0x558c401f0f9fe^11~0x59b41412",
+            "id": "bin~com.~0x558c401f0f9fe^11~0x59b41412|food_waste~com.~0x558c401f10597^25~0x59b4144c",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "food_waste~com.~0x558c401f10597^25~0x59b4144c",
+            "value": 2
+        },
+        {
+            "from": "bin~com.~0x558c401f0f9fe^11~0x59b41412",
+            "id": "bin~com.~0x558c401f0f9fe^11~0x59b41412|collect~art.1~~0x59b413c6",
+            "label": "acl",
+            "title": "freq: 2",
+            "to": "collect~art.1~~0x59b413c6",
+            "value": 2
+        },
+        {
+            "from": "bin~com.~0x558c401f0f9fe^11~0x59b41412",
+            "id": "bin~com.~0x558c401f0f9fe^11~0x59b41412|empty~com.~0x558c401f10597^25~0x59b4144d",
+            "label": "amod",
+            "title": "freq: 2",
+            "to": "empty~com.~0x558c401f10597^25~0x59b4144d",
+            "value": 2
+        },
+        {
+            "from": "go~com.~0x558c401f0fb92^13~0x59b41420",
+            "id": "go~com.~0x558c401f0fb92^13~0x59b41420|people~art.2~~0x59b413d0",
+            "label": "dep",
+            "title": "freq: 3",
+            "to": "people~art.2~~0x59b413d0",
+            "value": 3
+        },
+        {
+            "from": "go~com.~0x558c401f0fb92^13~0x59b41420",
+            "id": "go~com.~0x558c401f0fb92^13~0x59b41420|rat~com.~0x558c401f0f34e^1~0x59b413ea",
+            "label": "nsubj",
+            "title": "freq: 2",
+            "to": "rat~com.~0x558c401f0f34e^1~0x59b413ea",
+            "value": 2
+        },
+        {
+            "from": "go~com.~0x558c401f0fb92^13~0x59b41420",
+            "id": "go~com.~0x558c401f0fb92^13~0x59b41420|bin~com.~0x558c401f0f9fe^11~0x59b41412",
+            "label": "nsubj",
+            "title": "freq: 2",
+            "to": "bin~com.~0x558c401f0f9fe^11~0x59b41412",
+            "value": 2
+        },
+        {
+            "from": "go~com.~0x558c401f0fb92^13~0x59b41420",
+            "id": "go~com.~0x558c401f0fb92^13~0x59b41420|provide~com.~0x558c401f0fada^12~0x59b41406",
+            "label": "xcomp",
+            "title": "freq: 2",
+            "to": "provide~com.~0x558c401f0fada^12~0x59b41406",
+            "value": 2
+        },
+        {
+            "from": "go~com.~0x558c401f0fb92^13~0x59b41420",
+            "id": "go~com.~0x558c401f0fb92^13~0x59b41420|stuff~com.~0x558c401f0f6f7^7~0x59b41405",
+            "label": "nsubj",
+            "title": "freq: 2",
+            "to": "stuff~com.~0x558c401f0f6f7^7~0x59b41405",
+            "value": 2
+        },
+        {
+            "from": "go~com.~0x558c401f0fb92^13~0x59b41420",
+            "id": "go~com.~0x558c401f0fb92^13~0x59b41420|look~com.~0x558c401f0fff3^16~0x59b41411",
+            "label": "xcomp",
+            "title": "freq: 4",
+            "to": "look~com.~0x558c401f0fff3^16~0x59b41411",
+            "value": 4
+        },
+        {
+            "from": "expand~com.~0x558c401f0f8e4^10~0x59b413fd",
+            "id": "expand~com.~0x558c401f0f8e4^10~0x59b413fd|narrow~com.~0x558c401f0f854^9~0x59b4140b",
+            "label": "ccomp",
+            "title": "freq: 2",
+            "to": "narrow~com.~0x558c401f0f854^9~0x59b4140b",
+            "value": 2
+        },
+        {
+            "from": "expand~com.~0x558c401f0f8e4^10~0x59b413fd",
+            "id": "expand~com.~0x558c401f0f8e4^10~0x59b413fd|awareness.it~com.~0x558c401f0f8e4^10~0x59b413fd",
             "label": "dobj",
             "title": "freq: 2",
-            "to": "fox~art.0~~0x59b29334",
+            "to": "awareness.it~com.~0x558c401f0f8e4^10~0x59b413fd",
             "value": 2
+        },
+        {
+            "from": "desperate_measure~art.3~~0x59b413da",
+            "id": "desperate_measure~art.3~~0x59b413da|save~art.3~~0x59b413da",
+            "label": "amod",
+            "title": "freq: 2",
+            "to": "save~art.3~~0x59b413da",
+            "value": 2
+        },
+        {
+            "from": "desperate_measure~art.3~~0x59b413da",
+            "id": "desperate_measure~art.3~~0x59b413da|tell~com.~0x558c401f0f57b^4~0x59b413f1",
+            "label": "advcl",
+            "title": "freq: 2",
+            "to": "tell~com.~0x558c401f0f57b^4~0x59b413f1",
+            "value": 2
+        },
+        {
+            "from": "desperate_measure~art.3~~0x59b413da",
+            "id": "desperate_measure~art.3~~0x59b413da|cut~art.3~~0x59b413da",
+            "label": "compound",
+            "title": "freq: 2",
+            "to": "cut~art.3~~0x59b413da",
+            "value": 2
+        },
+        {
+            "from": "shed~com.~0x558c401f0f5ec^5~0x59b413fe",
+            "id": "shed~com.~0x558c401f0f5ec^5~0x59b413fe|put~com.~0x558c401f0f8e4^10~0x59b413fd",
+            "label": "acl",
+            "title": "freq: 4",
+            "to": "put~com.~0x558c401f0f8e4^10~0x59b413fd",
+            "value": 4
+        },
+        {
+            "from": "bury~art.4~~0x59b413e7",
+            "id": "bury~art.4~~0x59b413e7|save~art.3~~0x59b413da",
+            "label": "conj",
+            "title": "freq: 2",
+            "to": "save~art.3~~0x59b413da",
+            "value": 2
+        },
+        {
+            "from": "package~com.~0x558c401f0fff3^16~0x59b41411",
+            "id": "package~com.~0x558c401f0fff3^16~0x59b41411|thing~com.~0x558c401f0fff3^16~0x59b41416",
+            "label": "HOLD",
+            "title": "freq: 2",
+            "to": "thing~com.~0x558c401f0fff3^16~0x59b41416",
+            "value": 2
+        },
+        {
+            "from": "start~art.1~~0x59b413c6",
+            "id": "start~art.1~~0x59b413c6|rubbish~com.~0x558c401f0f5ec^5~0x59b413fe",
+            "label": "dobj",
+            "title": "freq: 2",
+            "to": "rubbish~com.~0x558c401f0f5ec^5~0x59b413fe",
+            "value": 2
+        },
+        {
+            "from": "start~art.1~~0x59b413c6",
+            "id": "start~art.1~~0x59b413c6|collect~art.1~~0x59b413c6",
+            "label": "xcomp",
+            "title": "freq: 2",
+            "to": "collect~art.1~~0x59b413c6",
+            "value": 2
+        },
+        {
+            "from": "start~art.1~~0x59b413c6",
+            "id": "start~art.1~~0x59b413c6|week~com.~0x558c401f0fdd2^15~0x59b41426",
+            "label": "nmod:tmod",
+            "title": "freq: 2",
+            "to": "week~com.~0x558c401f0fdd2^15~0x59b41426",
+            "value": 2
+        },
+        {
+            "from": "attract~com.~0x558c401f0f34e^1~0x59b413ea",
+            "id": "attract~com.~0x558c401f0f34e^1~0x59b413ea|vermin~com.~0x558c401f0fdd2^15~0x59b41426",
+            "label": "dobj",
+            "title": "freq: 2",
+            "to": "vermin~com.~0x558c401f0fdd2^15~0x59b41426",
+            "value": 2
+        },
+        {
+            "from": "attract~com.~0x558c401f0f34e^1~0x59b413ea",
+            "id": "attract~com.~0x558c401f0f34e^1~0x59b413ea|fox~art.0~~0x59b413c0",
+            "label": "dobj",
+            "title": "freq: 2",
+            "to": "fox~art.0~~0x59b413c0",
+            "value": 2
+        },
+        {
+            "from": "people~art.2~~0x59b413d0",
+            "id": "people~art.2~~0x59b413d0|live~com.~0x558c401f10597^25~0x59b41448",
+            "label": "acl:relcl",
+            "title": "freq: 2",
+            "to": "live~com.~0x558c401f10597^25~0x59b41448",
+            "value": 2
+        },
+        {
+            "from": "people~art.2~~0x59b413d0",
+            "id": "people~art.2~~0x59b413d0|vote~com.~0x558c401f102a6^21~0x59b41439",
+            "label": "DO",
+            "title": "freq: 2",
+            "to": "vote~com.~0x558c401f102a6^21~0x59b41439",
+            "value": 2
+        },
+        {
+            "from": "people~art.2~~0x59b413d0",
+            "id": "people~art.2~~0x59b413d0|pay~com.~0x558c401f0f6f7^7~0x59b41408",
+            "label": "acl:relcl",
+            "title": "freq: 2",
+            "to": "pay~com.~0x558c401f0f6f7^7~0x59b41408",
+            "value": 2
+        },
+        {
+            "from": "appreciate~com.~0x558c401f0fff3^16~0x59b41416",
+            "id": "appreciate~com.~0x558c401f0fff3^16~0x59b41416|close~com.~0x558c401f0fdd2^15~0x59b41428",
+            "label": "conj",
+            "title": "freq: 2",
+            "to": "close~com.~0x558c401f0fdd2^15~0x59b41428",
+            "value": 2
+        },
+        {
+            "from": "appreciate~com.~0x558c401f0fff3^16~0x59b41416",
+            "id": "appreciate~com.~0x558c401f0fff3^16~0x59b41416|trouble~com.~0x558c401f0fdd2^15~0x59b41428",
+            "label": "advcl",
+            "title": "freq: 2",
+            "to": "trouble~com.~0x558c401f0fdd2^15~0x59b41428",
+            "value": 2
+        },
+        {
+            "from": "appreciate~com.~0x558c401f0fff3^16~0x59b41416",
+            "id": "appreciate~com.~0x558c401f0fff3^16~0x59b41416|relate~com.~0x558c401f0fff3^16~0x59b41416",
+            "label": "advcl",
+            "title": "freq: 2",
+            "to": "relate~com.~0x558c401f0fff3^16~0x59b41416",
+            "value": 2
+        },
+        {
+            "from": "stuff~com.~0x558c401f0f6f7^7~0x59b41405",
+            "id": "stuff~com.~0x558c401f0f6f7^7~0x59b41405|compost~com.~0x558c401f0f41a^2~0x59b413ed",
+            "label": "acl:relcl",
+            "title": "freq: 4",
+            "to": "compost~com.~0x558c401f0f41a^2~0x59b413ed",
+            "value": 4
         }
     ],
     "nodes": [
         {
-            "color": "#ff3200",
+            "color": "#ffb000",
             "group": "article",
-            "id": "accident~art.0~~0x59b29330",
-            "label": "accident",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.0",
-            "value": 1
-        },
-        {
-            "color": "#ff6400",
-            "group": "article",
-            "id": "people~art.2~~0x59b29340",
-            "label": "people",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.2",
-            "value": 1
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "waste_management~art.3~~0x59b29352",
-            "label": "waste_management",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
-            "value": 1
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "other_issue~art.3~~0x59b29352",
-            "label": "other_issue",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
-            "value": 1
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "labour~art.3~~0x59b2934d",
-            "label": "labour",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
-            "value": 1
-        },
-        {
-            "color": "#ff6400",
-            "group": "article",
-            "id": "recycle~art.3~~0x59b29349",
-            "label": "recycle",
-            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.2,art.3",
-            "value": 2
-        },
-        {
-            "color": "#ff6400",
-            "group": "article",
-            "id": "bury~art.3~~0x59b29349",
-            "label": "bury",
-            "title": "*Freq: 3 <br> *Sen_Score: 0.1818 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.4,art.1,art.3",
-            "value": 3
-        },
-        {
-            "color": "#ff6400",
-            "group": "article",
-            "id": "decision~art.3~~0x59b2934d",
-            "label": "decision",
-            "title": "*Freq: 3 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 1} <br> *Group_ids: art.4,art.3,com.",
-            "value": 3
-        },
-        {
-            "color": "#ff6400",
-            "group": "article",
-            "id": "fear~art.0~~0x59b29334",
-            "label": "fear",
-            "title": "*Freq: 2 <br> *Sen_Score: 0.1818 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.0,art.1",
-            "value": 2
-        },
-        {
-            "color": "#ff9600",
-            "group": "article",
-            "id": "week~art.2~~0x59b29345",
-            "label": "week",
-            "title": "*Freq: 3 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.4,art.1,art.2",
-            "value": 3
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "front~art.3~~0x59b29350",
-            "label": "front",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
-            "value": 1
-        },
-        {
-            "color": "#ff6400",
-            "group": "article",
-            "id": "make~art.0~~0x59b29334",
-            "label": "make",
-            "title": "*Freq: 4 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: art.3,art.0,com.",
-            "value": 4
-        },
-        {
-            "color": "#ff6400",
-            "group": "article",
-            "id": "follow~art.4~~0x59b29354",
-            "label": "follow",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.4",
-            "value": 1
-        },
-        {
-            "color": "#ff9600",
-            "group": "article",
-            "id": "friendly_borough~art.0~~0x59b29334",
-            "label": "friendly_borough",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.0",
-            "value": 1
-        },
-        {
-            "color": "#ff6400",
-            "group": "article",
-            "id": "difficult~com.~0x558ad163de894^1~0x59b2935b",
-            "label": "difficult",
-            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3,com.",
-            "value": 2
-        },
-        {
-            "color": "#ff9600",
-            "group": "article",
-            "id": "fly-tipping~art.0~~0x59b29334",
-            "label": "fly-tipping",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.0",
-            "value": 1
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "complain~art.3~~0x59b29352",
-            "label": "complain",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
-            "value": 1
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "responsibility~art.3~~0x59b29352",
-            "label": "responsibility",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
-            "value": 1
-        },
-        {
-            "color": "#ff9600",
-            "group": "article",
-            "id": "environmentally~art.0~~0x59b29334",
-            "label": "environmentally",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.0",
-            "value": 1
-        },
-        {
-            "color": "#ff9600",
-            "group": "article",
-            "id": "save~art.3~~0x59b2934b",
+            "id": "save~art.3~~0x59b413da",
             "label": "save",
-            "title": "*Freq: 3 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.1,art.3",
+            "title": "*Freq: 3 <br> *Sen_Score: 0.0625 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.1,art.3",
             "value": 3
         },
         {
-            "color": "#ff9600",
-            "group": "article",
-            "id": "england~art.1~~0x59b29339",
-            "label": "england",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.1",
-            "value": 1
-        },
-        {
             "color": "#ff6400",
-            "group": "article",
-            "id": "vermin~art.1~~0x59b2933d",
-            "label": "vermin",
-            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.0,art.1",
-            "value": 2
-        },
-        {
-            "color": "#ff9600",
             "group": "comment",
-            "id": "seem~com.~0x558ad163de894^1~0x59b2935b",
-            "label": "seem",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "flat~art.2~~0x59b29347",
-            "label": "flat",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.2",
-            "value": 1
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "accuse~art.1~~0x59b2933d",
-            "label": "accuse",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.1",
-            "value": 1
-        },
-        {
-            "color": "#ff6400",
-            "group": "article",
-            "id": "green~art.2~~0x59b29345",
-            "label": "green",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.2",
-            "value": 1
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "warn~art.1~~0x59b2933d",
-            "label": "warn",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.1",
-            "value": 1
-        },
-        {
-            "color": "#ff9600",
-            "group": "article",
-            "id": "current_collection~art.1~~0x59b29339",
-            "label": "current_collection",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.1",
-            "value": 1
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "complaint~art.3~~0x59b29352",
-            "label": "complaint",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
-            "value": 1
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "rubbish~art.1~~0x59b2933d",
-            "label": "rubbish",
-            "title": "*Freq: 2 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 1} <br> *Group_ids: art.4,art.1",
+            "id": "narrow~com.~0x558c401f0f854^9~0x59b4140b",
+            "label": "narrow",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.125 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
             "value": 2
         },
         {
             "color": "#ff6400",
-            "group": "article",
-            "id": "oppose~art.2~~0x59b29340",
-            "label": "oppose",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.2",
-            "value": 1
-        },
-        {
-            "color": "#ff0000",
-            "group": "article",
-            "id": "cut~art.0~~0x59b29335",
-            "label": "cut",
-            "title": "*Freq: 4 <br> *Sen_Score: -0.1818 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 3} <br> *Group_ids: com.,art.0,art.3",
-            "value": 4
-        },
-        {
-            "color": "#ff9600",
             "group": "comment",
-            "id": "think~com.~0x558ad163de894^1~0x59b2935b",
-            "label": "think",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#ff6400",
-            "group": "article",
-            "id": "controversial_decision~art.1~~0x59b2933b",
-            "label": "controversial_decision",
-            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.0,art.1",
-            "value": 2
-        },
-        {
-            "color": "#ff9600",
-            "group": "article",
-            "id": "strategy~art.3~~0x59b29349",
-            "label": "strategy",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.3",
-            "value": 1
-        },
-        {
-            "color": "#ff3200",
-            "group": "comment",
-            "id": "other_vermin~com.~0x558ad163de894^1~0x59b29359",
-            "label": "other_vermin",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#ff9600",
-            "group": "article",
-            "id": "fly~art.1~~0x59b2933b",
-            "label": "fly",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.1",
-            "value": 1
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "vote~art.4~~0x59b29354",
-            "label": "vote",
-            "title": "*Freq: 2 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 1} <br> *Group_ids: art.4,art.1",
-            "value": 2
-        },
-        {
-            "color": "#ff6400",
-            "group": "article",
-            "id": "glass~art.2~~0x59b29345",
-            "label": "glass",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.2",
-            "value": 1
-        },
-        {
-            "color": "#ff9600",
-            "group": "article",
-            "id": "fox~art.0~~0x59b29334",
-            "label": "fox",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.0",
-            "value": 1
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "coalition~art.3~~0x59b2934d",
-            "label": "coalition",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
-            "value": 1
-        },
-        {
-            "color": "#ff9600",
-            "group": "article",
-            "id": "argue~art.1~~0x59b2933e",
-            "label": "argue",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.1",
-            "value": 1
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "feel~art.3~~0x59b2934b",
-            "label": "feel",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
-            "value": 1
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "bin~art.2~~0x59b29345",
-            "label": "bin",
-            "title": "*Freq: 4 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 2} <br> *Group_ids: art.1,art.2",
-            "value": 4
-        },
-        {
-            "color": "#ff3200",
-            "group": "comment",
-            "id": "rat~com.~0x558ad163de894^1~0x59b29359",
+            "id": "rat~com.~0x558c401f0f34e^1~0x59b413ea",
             "label": "rat",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 1
+            "title": "*Freq: 4 <br> *Sen_Score: -0.125 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 2} <br> *Group_ids: com.",
+            "value": 4
+        },
+        {
+            "color": "#ffb000",
+            "group": "article",
+            "id": "move~art.3~~0x59b413d8",
+            "label": "move",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.0625 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: com.,art.3",
+            "value": 2
+        },
+        {
+            "color": "#ff6400",
+            "group": "comment",
+            "id": "provide~com.~0x558c401f0fada^12~0x59b41406",
+            "label": "provide",
+            "title": "*Freq: 2 <br> *Sen_Score: -0.125 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: com.",
+            "value": 2
+        },
+        {
+            "color": "#ff6400",
+            "group": "comment",
+            "id": "think~com.~0x558c401f1039b^23~0x59b4143a",
+            "label": "think",
+            "title": "*Freq: 4 <br> *Sen_Score: 0.125 <br> *Sentiment: {\"pos_count\": 3, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 4
+        },
+        {
+            "color": "#ffb000",
+            "group": "article",
+            "id": "lead~art.4~~0x59b413e5",
+            "label": "lead",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.0625 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.4,art.0",
+            "value": 2
         },
         {
             "color": "#ff3200",
             "group": "article",
-            "id": "affect~art.2~~0x59b29342",
-            "label": "affect",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.2",
-            "value": 1
+            "id": "empty~com.~0x558c401f10597^25~0x59b4144d",
+            "label": "empty",
+            "title": "*Freq: 4 <br> *Sen_Score: -0.25 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 4} <br> *Group_ids: art.2,com.",
+            "value": 4
         },
         {
             "color": "#ff9600",
             "group": "comment",
-            "id": "idea~com.~0x558ad163de894^1~0x59b2935b",
-            "label": "idea",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "pile~art.1~~0x59b2933d",
-            "label": "pile",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.1",
-            "value": 1
+            "id": "relate~com.~0x558c401f0fff3^16~0x59b41416",
+            "label": "relate",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 2
         },
         {
             "color": "#ff9600",
             "group": "article",
-            "id": "unanimously~art.1~~0x59b2933b",
-            "label": "unanimously",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.1",
-            "value": 1
+            "id": "change~com.~0x558c401f0fdd2^15~0x59b4142e",
+            "label": "change",
+            "title": "*Freq: 4 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: art.2,com.",
+            "value": 4
         },
         {
             "color": "#ff9600",
-            "group": "article",
-            "id": "labour-run_council~art.3~~0x59b29349",
-            "label": "labour-run_council",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.3",
-            "value": 1
+            "group": "comment",
+            "id": "collection_schedule~com.~0x558c401f0fdd2^15~0x59b41426",
+            "label": "collection_schedule",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 2
         },
         {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "con/dem_government~art.3~~0x59b29350",
-            "label": "con/dem_government",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
-            "value": 1
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "next~art.3~~0x59b2934b",
-            "label": "next",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
-            "value": 1
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "receive~art.3~~0x59b29352",
-            "label": "receive",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
-            "value": 1
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "opponent~art.1~~0x59b2933d",
-            "label": "opponent",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.1",
-            "value": 1
-        },
-        {
-            "color": "#ff9600",
-            "group": "article",
-            "id": "waste_borough~art.3~~0x59b29349",
-            "label": "waste_borough",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.3",
-            "value": 1
-        },
-        {
-            "color": "#ff0000",
-            "group": "article",
-            "id": "mp~art.3~~0x59b29352",
-            "label": "mp",
-            "title": "*Freq: 2 <br> *Sen_Score: -0.1818 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: art.3",
+            "color": "#ffb000",
+            "group": "comment",
+            "id": "seem~com.~0x558c401f1039b^23~0x59b41443",
+            "label": "seem",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.0625 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: com.",
             "value": 2
         },
         {
             "color": "#ff6400",
             "group": "article",
-            "id": "introduce~art.2~~0x59b29340",
-            "label": "introduce",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.2",
-            "value": 1
+            "id": "collect~art.1~~0x59b413c6",
+            "label": "collect",
+            "title": "*Freq: 6 <br> *Sen_Score: -0.125 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 3} <br> *Group_ids: art.4,art.1,art.2,com.",
+            "value": 6
+        },
+        {
+            "color": "#ff9600",
+            "group": "article",
+            "id": "make~com.~0x558c401f1014b^18~0x59b4141a",
+            "label": "make",
+            "title": "*Freq: 6 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 3, \"neu_count\": 0, \"neg_count\": 3} <br> *Group_ids: com.,art.0,art.3",
+            "value": 6
+        },
+        {
+            "color": "#ffb000",
+            "group": "comment",
+            "id": "put~com.~0x558c401f0f8e4^10~0x59b413fd",
+            "label": "put",
+            "title": "*Freq: 6 <br> *Sen_Score: 0.0625 <br> *Sentiment: {\"pos_count\": 3, \"neu_count\": 1, \"neg_count\": 2} <br> *Group_ids: com.",
+            "value": 6
         },
         {
             "color": "#ff6400",
             "group": "article",
-            "id": "october~art.2~~0x59b29340",
-            "label": "october",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.2",
-            "value": 1
+            "id": "tell~com.~0x558c401f0f57b^4~0x59b413f1",
+            "label": "tell",
+            "title": "*Freq: 2 <br> *Sen_Score: -0.125 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: art.3,com.",
+            "value": 2
+        },
+        {
+            "color": "#ff9600",
+            "group": "comment",
+            "id": "look~com.~0x558c401f0fff3^16~0x59b41411",
+            "label": "look",
+            "title": "*Freq: 3 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 2, \"neg_count\": 0} <br> *Group_ids: com.",
+            "value": 3
+        },
+        {
+            "color": "#ff7e00",
+            "group": "article",
+            "id": "flat~com.~0x558c401f0f8e4^10~0x59b413fd",
+            "label": "flat",
+            "title": "*Freq: 6 <br> *Sen_Score: -0.0625 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 0, \"neg_count\": 3} <br> *Group_ids: art.2,com.",
+            "value": 6
+        },
+        {
+            "color": "#ff6400",
+            "group": "article",
+            "id": "fear~art.0~~0x59b413c0",
+            "label": "fear",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.125 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.0,art.1",
+            "value": 2
         },
         {
             "color": "#ff0000",
+            "group": "comment",
+            "id": "compost~com.~0x558c401f0f41a^2~0x59b413ed",
+            "label": "compost",
+            "title": "*Freq: 7 <br> *Sen_Score: -0.375 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 6} <br> *Group_ids: com.",
+            "value": 7
+        },
+        {
+            "color": "#ff3200",
             "group": "article",
-            "id": "cost~art.3~~0x59b2934b",
-            "label": "cost",
-            "title": "*Freq: 2 <br> *Sen_Score: -0.1818 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: art.0,art.3",
+            "id": "year~art.3~~0x59b413dd",
+            "label": "year",
+            "title": "*Freq: 5 <br> *Sen_Score: -0.25 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 4} <br> *Group_ids: art.4,com.,art.3",
+            "value": 5
+        },
+        {
+            "color": "#ff7e00",
+            "group": "article",
+            "id": "town_hall~art.4~~0x59b413e7",
+            "label": "town_hall",
+            "title": "*Freq: 2 <br> *Sen_Score: -0.0625 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 1} <br> *Group_ids: art.4,art.3",
             "value": 2
         },
         {
             "color": "#ff6400",
+            "group": "comment",
+            "id": "place~com.~0x558c401f100cd^17~0x59b41430",
+            "label": "place",
+            "title": "*Freq: 2 <br> *Sen_Score: -0.125 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: com.",
+            "value": 2
+        },
+        {
+            "color": "#ff9600",
+            "group": "comment",
+            "id": "grey_bin~com.~0x558c401f0fdd2^15~0x59b41426",
+            "label": "grey_bin",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 2
+        },
+        {
+            "color": "#ff7e00",
             "group": "article",
-            "id": "councillor~art.1~~0x59b2933b",
+            "id": "week~com.~0x558c401f0fdd2^15~0x59b41426",
+            "label": "week",
+            "title": "*Freq: 7 <br> *Sen_Score: -0.0625 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 0, \"neg_count\": 3} <br> *Group_ids: art.4,art.1,art.2,com.",
+            "value": 7
+        },
+        {
+            "color": "#ffb000",
+            "group": "comment",
+            "id": "hold~com.~0x558c401f1039b^23~0x59b41443",
+            "label": "hold",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.0625 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: com.",
+            "value": 2
+        },
+        {
+            "color": "#ff9600",
+            "group": "comment",
+            "id": "live~com.~0x558c401f10597^25~0x59b41448",
+            "label": "live",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 2
+        },
+        {
+            "color": "#ff9600",
+            "group": "article",
+            "id": "councillor~art.1~~0x59b413cb",
             "label": "councillor",
             "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.1",
             "value": 2
@@ -1877,674 +869,202 @@
         {
             "color": "#ff3200",
             "group": "article",
-            "id": "%~art.3~~0x59b2934d",
-            "label": "%",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
-            "value": 1
-        },
-        {
-            "color": "#ff9600",
-            "group": "article",
-            "id": "first~art.1~~0x59b29339",
-            "label": "first",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.1",
-            "value": 1
+            "id": "cut~art.3~~0x59b413da",
+            "label": "cut",
+            "title": "*Freq: 6 <br> *Sen_Score: -0.25 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 5} <br> *Group_ids: art.3,art.0,com.",
+            "value": 6
         },
         {
             "color": "#ff6400",
             "group": "article",
-            "id": "speak~art.4~~0x59b29356",
-            "label": "speak",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.4",
-            "value": 1
+            "id": "vote~com.~0x558c401f102a6^21~0x59b41439",
+            "label": "vote",
+            "title": "*Freq: 4 <br> *Sen_Score: -0.125 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 2} <br> *Group_ids: art.4,art.1,com.",
+            "value": 4
+        },
+        {
+            "color": "#ff7e00",
+            "group": "comment",
+            "id": "expect~com.~0x558c401f0fcff^14~0x59b41409",
+            "label": "expect",
+            "title": "*Freq: 2 <br> *Sen_Score: -0.0625 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 2
         },
         {
             "color": "#ff6400",
-            "group": "article",
-            "id": "wale~art.4~~0x59b29354",
-            "label": "wale",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.4",
-            "value": 1
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "effective_cut~art.3~~0x59b2934d",
-            "label": "effective_cut",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
-            "value": 1
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "empty~art.2~~0x59b29347",
-            "label": "empty",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.2",
-            "value": 1
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "resident~art.3~~0x59b2934b",
-            "label": "resident",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
-            "value": 1
-        },
-        {
-            "color": "#ff9600",
-            "group": "article",
-            "id": "spend~art.1~~0x59b2933e",
-            "label": "spend",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.1",
-            "value": 1
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "parliament~art.3~~0x59b29352",
-            "label": "parliament",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
-            "value": 1
-        },
-        {
-            "color": "#ff6400",
-            "group": "article",
-            "id": "paper~art.2~~0x59b29345",
-            "label": "paper",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.2",
-            "value": 1
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "motion~art.1~~0x59b2933d",
-            "label": "motion",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.1",
-            "value": 1
-        },
-        {
-            "color": "#ff6400",
-            "group": "article",
-            "id": "plastic~art.2~~0x59b29345",
-            "label": "plastic",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.2",
-            "value": 1
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "be~art.2~~0x59b29340",
-            "label": "be",
-            "title": "*Freq: 11 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 4, \"neu_count\": 1, \"neg_count\": 5} <br> *Group_ids: com.,art.0,art.1,art.2,art.3",
-            "value": 11
+            "group": "comment",
+            "id": "awareness.it~com.~0x558c401f0f8e4^10~0x59b413fd",
+            "label": "awareness.it",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.125 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
+            "value": 2
         },
         {
             "color": "#ff9600",
             "group": "comment",
-            "id": "know~com.~0x558ad163de894^1~0x59b2935b",
-            "label": "know",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#ff9600",
-            "group": "article",
-            "id": "tip~art.1~~0x59b2933b",
-            "label": "tip",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.1",
-            "value": 1
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "communal~art.2~~0x59b29347",
-            "label": "communal",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.2",
-            "value": 1
-        },
-        {
-            "color": "#ff9600",
-            "group": "article",
-            "id": "night~art.4~~0x59b29356",
-            "label": "night",
-            "title": "*Freq: 2 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.4,art.1",
-            "value": 2
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "used~art.2~~0x59b29342",
-            "label": "used",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.2",
-            "value": 1
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "serve~art.2~~0x59b29347",
-            "label": "serve",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.2",
-            "value": 1
-        },
-        {
-            "color": "#ff0000",
-            "group": "article",
-            "id": "impose~art.3~~0x59b2934d",
-            "label": "impose",
-            "title": "*Freq: 2 <br> *Sen_Score: -0.1818 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: art.3",
+            "id": "trouble~com.~0x558c401f0fdd2^15~0x59b41428",
+            "label": "trouble",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
             "value": 2
         },
         {
             "color": "#ff9600",
             "group": "article",
-            "id": "wheelie~art.1~~0x59b29339",
-            "label": "wheelie",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.1",
-            "value": 1
-        },
-        {
-            "color": "#ff9600",
-            "group": "article",
-            "id": "move~art.3~~0x59b29349",
-            "label": "move",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.3",
-            "value": 1
-        },
-        {
-            "color": "#ff9600",
-            "group": "article",
-            "id": "boost~art.3~~0x59b29349",
-            "label": "boost",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.3",
-            "value": 1
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "local_government~art.3~~0x59b29352",
-            "label": "local_government",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
-            "value": 1
-        },
-        {
-            "color": "#ff6400",
-            "group": "article",
-            "id": "increase~art.1~~0x59b2933b",
-            "label": "increase",
-            "title": "*Freq: 2 <br> *Sen_Score: 0.1818 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.0,art.1",
+            "id": "fox~art.0~~0x59b413c0",
+            "label": "fox",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.0,com.",
             "value": 2
         },
         {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "bury_council~art.3~~0x59b29350",
-            "label": "bury_council",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
-            "value": 1
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "change~art.2~~0x59b29347",
-            "label": "change",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.2",
-            "value": 1
-        },
-        {
-            "color": "#ff0000",
-            "group": "article",
-            "id": "say~art.3~~0x59b2934d",
-            "label": "say",
-            "title": "*Freq: 2 <br> *Sen_Score: -0.1818 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: art.3",
-            "value": 2
-        },
-        {
-            "color": "#ff9600",
-            "group": "article",
-            "id": "landfill_fee~art.3~~0x59b29349",
-            "label": "landfill_fee",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.3",
-            "value": 1
-        },
-        {
-            "color": "#ff6400",
-            "group": "central",
-            "id": "Central~title~_~0x59b2932d",
-            "label": "Rubbish? ...",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: central.group",
-            "value": 1
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "budget~art.3~~0x59b2934d",
-            "label": "budget",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
-            "value": 1
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "mean~art.3~~0x59b29350",
-            "label": "mean",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
-            "value": 1
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "scaremongering~art.1~~0x59b2933d",
-            "label": "scaremongering",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.1",
-            "value": 1
-        },
-        {
             "color": "#ff6400",
             "group": "article",
-            "id": "petition~art.2~~0x59b29340",
-            "label": "petition",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.2",
-            "value": 1
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "grey~art.2~~0x59b29342",
-            "label": "grey",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.2",
-            "value": 1
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "bin_collection~art.3~~0x59b29352",
-            "label": "bin_collection",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
-            "value": 1
-        },
-        {
-            "color": "#ff9600",
-            "group": "article",
-            "id": "wednesday~art.1~~0x59b2933b",
-            "label": "wednesday",
-            "title": "*Freq: 2 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.4,art.1",
-            "value": 2
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "blog~art.3~~0x59b29350",
-            "label": "blog",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
-            "value": 1
-        },
-        {
-            "color": "#ff9600",
-            "group": "article",
-            "id": "new_move~art.0~~0x59b29334",
-            "label": "new_move",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.0",
-            "value": 1
-        },
-        {
-            "color": "#ff6400",
-            "group": "article",
-            "id": "colour~art.2~~0x59b29345",
-            "label": "colour",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.2",
-            "value": 1
-        },
-        {
-            "color": "#ff9600",
-            "group": "article",
-            "id": "part~art.3~~0x59b29349",
-            "label": "part",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.3",
-            "value": 1
-        },
-        {
-            "color": "#ff9600",
-            "group": "article",
-            "id": "claim~art.3~~0x59b29349",
-            "label": "claim",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.3",
-            "value": 1
-        },
-        {
-            "color": "#ff6400",
-            "group": "article",
-            "id": "public~art.4~~0x59b29356",
-            "label": "public",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.4",
-            "value": 1
-        },
-        {
-            "color": "#ff0000",
-            "group": "article",
-            "id": "many~art.3~~0x59b29350",
-            "label": "many",
-            "title": "*Freq: 2 <br> *Sen_Score: -0.1818 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: art.3",
-            "value": 2
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "risk~art.3~~0x59b29350",
-            "label": "risk",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
-            "value": 1
-        },
-        {
-            "color": "#ff6400",
-            "group": "article",
-            "id": "gwynedd_council~art.4~~0x59b29354",
-            "label": "gwynedd_council",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.4",
-            "value": 1
-        },
-        {
-            "color": "#ff6400",
-            "group": "article",
-            "id": "falkirk~art.4~~0x59b29354",
-            "label": "falkirk",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.4",
-            "value": 1
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "line_service~art.3~~0x59b29350",
-            "label": "line_service",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
-            "value": 1
-        },
-        {
-            "color": "#ff9600",
-            "group": "article",
-            "id": "worker~art.1~~0x59b2933e",
-            "label": "worker",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.1",
-            "value": 1
-        },
-        {
-            "color": "#ff6400",
-            "group": "article",
-            "id": "new_initiative~art.2~~0x59b29340",
-            "label": "new_initiative",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.2",
-            "value": 1
+            "id": "rubbish~com.~0x558c401f0f5ec^5~0x59b413fe",
+            "label": "rubbish",
+            "title": "*Freq: 8 <br> *Sen_Score: -0.125 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 1, \"neg_count\": 4} <br> *Group_ids: art.4,art.1,com.",
+            "value": 8
         },
         {
             "color": "#ff9600",
             "group": "comment",
-            "id": "fund~com.~0x558ad163de894^1~0x59b2935b",
-            "label": "fund",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "town_hall~art.4~~0x59b29356",
-            "label": "town_hall",
-            "title": "*Freq: 2 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 1} <br> *Group_ids: art.4,art.3",
+            "id": "close~com.~0x558c401f0fdd2^15~0x59b41428",
+            "label": "close",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
             "value": 2
         },
         {
-            "color": "#ff9600",
-            "group": "article",
-            "id": "scrap~art.1~~0x59b29339",
-            "label": "scrap",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.1",
-            "value": 1
-        },
-        {
-            "color": "#ff9600",
-            "group": "article",
-            "id": "social~art.1~~0x59b2933e",
-            "label": "social",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.1",
-            "value": 1
-        },
-        {
-            "color": "#ff9600",
-            "group": "article",
-            "id": "pass~art.1~~0x59b2933b",
-            "label": "pass",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.1",
-            "value": 1
-        },
-        {
-            "color": "#ff9600",
-            "group": "article",
-            "id": "start~art.4~~0x59b29354",
-            "label": "start",
-            "title": "*Freq: 2 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.4,art.1",
-            "value": 2
-        },
-        {
-            "color": "#ff9600",
-            "group": "article",
-            "id": "insist~art.0~~0x59b29334",
-            "label": "insist",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.0",
-            "value": 1
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "lie~art.3~~0x59b29352",
-            "label": "lie",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
-            "value": 1
-        },
-        {
-            "color": "#ff3200",
+            "color": "#ff4a00",
             "group": "comment",
-            "id": "see~com.~0x558ad163de894^1~0x59b29359",
-            "label": "see",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
-            "value": 1
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "ivan_lewis~art.3~~0x59b2934d",
-            "label": "ivan_lewis",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
-            "value": 1
-        },
-        {
-            "color": "#ff9600",
-            "group": "article",
-            "id": "turn~art.3~~0x59b29349",
-            "label": "turn",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.3",
-            "value": 1
-        },
-        {
-            "color": "#ff6400",
-            "group": "article",
-            "id": "local~art.3~~0x59b2934d",
-            "label": "local",
-            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.0,art.3",
-            "value": 2
-        },
-        {
-            "color": "#ff0000",
-            "group": "article",
-            "id": "year~art.4~~0x59b29354",
-            "label": "year",
-            "title": "*Freq: 3 <br> *Sen_Score: -0.1818 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 2} <br> *Group_ids: art.4,art.3",
+            "id": "food_waste~com.~0x558c401f10597^25~0x59b4144c",
+            "label": "food_waste",
+            "title": "*Freq: 3 <br> *Sen_Score: -0.1875 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 3} <br> *Group_ids: com.",
             "value": 3
         },
         {
-            "color": "#ff9600",
-            "group": "article",
-            "id": "collect~art.4~~0x59b29354",
-            "label": "collect",
-            "title": "*Freq: 3 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 2, \"neg_count\": 0} <br> *Group_ids: art.4,art.1,art.2",
-            "value": 3
-        },
-        {
-            "color": "#ff6400",
-            "group": "article",
-            "id": "scotland~art.4~~0x59b29354",
-            "label": "scotland",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.4",
-            "value": 1
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "household~art.2~~0x59b29342",
-            "label": "household",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.2",
-            "value": 1
-        },
-        {
-            "color": "#ff9600",
-            "group": "article",
-            "id": "manchester~art.1~~0x59b29339",
-            "label": "manchester",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.1",
-            "value": 1
-        },
-        {
-            "color": "#ff6400",
-            "group": "article",
-            "id": "blue~art.2~~0x59b29345",
-            "label": "blue",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.2",
-            "value": 1
-        },
-        {
             "color": "#ff0000",
             "group": "article",
-            "id": "desperate_measure~art.3~~0x59b2934b",
+            "id": "bin~com.~0x558c401f0f9fe^11~0x59b41412",
+            "label": "bin",
+            "title": "*Freq: 16 <br> *Sen_Score: -0.375 <br> *Sentiment: {\"pos_count\": 4, \"neu_count\": 0, \"neg_count\": 10} <br> *Group_ids: art.1,art.2,com.",
+            "value": 16
+        },
+        {
+            "color": "#ff6400",
+            "group": "comment",
+            "id": "go~com.~0x558c401f0fb92^13~0x59b41420",
+            "label": "go",
+            "title": "*Freq: 6 <br> *Sen_Score: -0.125 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 3} <br> *Group_ids: com.",
+            "value": 6
+        },
+        {
+            "color": "#ff6400",
+            "group": "comment",
+            "id": "expand~com.~0x558c401f0f8e4^10~0x59b413fd",
+            "label": "expand",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.125 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
+            "value": 2
+        },
+        {
+            "color": "#ff6400",
+            "group": "article",
+            "id": "desperate_measure~art.3~~0x59b413da",
             "label": "desperate_measure",
-            "title": "*Freq: 2 <br> *Sen_Score: -0.1818 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: art.0,art.3",
-            "value": 2
-        },
-        {
-            "color": "#ff9600",
-            "group": "article",
-            "id": "fortnightly~art.1~~0x59b29339",
-            "label": "fortnightly",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.1",
-            "value": 1
-        },
-        {
-            "color": "#ff6400",
-            "group": "article",
-            "id": "have~com.~0x558ad163de894^1~0x59b2935b",
-            "label": "have",
-            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.,art.3",
-            "value": 2
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "car~art.0~~0x59b29330",
-            "label": "car",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.0",
-            "value": 1
-        },
-        {
-            "color": "#ff6400",
-            "group": "article",
-            "id": "money~art.3~~0x59b29349",
-            "label": "money",
-            "title": "*Freq: 2 <br> *Sen_Score: 0.1818 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.1,art.3",
+            "title": "*Freq: 2 <br> *Sen_Score: -0.125 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: art.0,art.3",
             "value": 2
         },
         {
             "color": "#ff6400",
-            "group": "article",
-            "id": "monthly~art.2~~0x59b29345",
-            "label": "monthly",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.2",
-            "value": 1
-        },
-        {
-            "color": "#ff6400",
-            "group": "article",
-            "id": "wa~art.1~~0x59b2933b",
-            "label": "wa",
-            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.1,art.3",
-            "value": 2
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "lyndsay_warner~art.0~~0x59b29337",
-            "label": "lyndsay_warner",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.0",
-            "value": 1
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "general_waste~art.2~~0x59b29342",
-            "label": "general_waste",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.2",
-            "value": 1
-        },
-        {
-            "color": "#ff9600",
-            "group": "article",
-            "id": "lead~art.4~~0x59b29354",
-            "label": "lead",
-            "title": "*Freq: 2 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.4,art.0",
-            "value": 2
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "unprecedented~art.3~~0x59b29350",
-            "label": "unprecedented",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
-            "value": 1
-        },
-        {
-            "color": "#ff6400",
-            "group": "article",
-            "id": "meet~art.4~~0x59b29356",
-            "label": "meet",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.4",
-            "value": 1
-        },
-        {
-            "color": "#ff3200",
-            "group": "article",
-            "id": "tell~art.3~~0x59b2934b",
-            "label": "tell",
-            "title": "*Freq: 1 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
-            "value": 1
-        },
-        {
-            "color": "#ff9600",
-            "group": "article",
-            "id": "council~art.0~~0x59b29334",
-            "label": "council",
-            "title": "*Freq: 3 <br> *Sen_Score: 0.0909 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.0,art.1,art.3",
+            "group": "comment",
+            "id": "shed~com.~0x558c401f0f5ec^5~0x59b413fe",
+            "label": "shed",
+            "title": "*Freq: 3 <br> *Sen_Score: 0.125 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: com.",
             "value": 3
         },
         {
-            "color": "#ff6400",
+            "color": "#ffb000",
             "group": "article",
-            "id": "member~art.4~~0x59b29356",
-            "label": "member",
-            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.4",
-            "value": 1
+            "id": "vermin~com.~0x558c401f0fdd2^15~0x59b41426",
+            "label": "vermin",
+            "title": "*Freq: 3 <br> *Sen_Score: 0.0625 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.0,art.1,com.",
+            "value": 3
         },
         {
-            "color": "#ff3200",
+            "color": "#ff9600",
             "group": "article",
-            "id": "attract~com.~0x558ad163de894^1~0x59b29359",
+            "id": "bury~art.4~~0x59b413e7",
+            "label": "bury",
+            "title": "*Freq: 5 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 1, \"neg_count\": 2} <br> *Group_ids: art.4,art.3,art.1,com.",
+            "value": 5
+        },
+        {
+            "color": "#ff9600",
+            "group": "comment",
+            "id": "package~com.~0x558c401f0fff3^16~0x59b41411",
+            "label": "package",
+            "title": "*Freq: 3 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 3
+        },
+        {
+            "color": "#ffb000",
+            "group": "article",
+            "id": "start~art.1~~0x59b413c6",
+            "label": "start",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.0625 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.4,art.1",
+            "value": 2
+        },
+        {
+            "color": "#ff7e00",
+            "group": "article",
+            "id": "attract~com.~0x558c401f0f34e^1~0x59b413ea",
             "label": "attract",
-            "title": "*Freq: 3 <br> *Sen_Score: -0.0909 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: art.0,art.1,com.",
+            "title": "*Freq: 3 <br> *Sen_Score: -0.0625 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: art.0,art.1,com.",
             "value": 3
+        },
+        {
+            "color": "#ff4a00",
+            "group": "comment",
+            "id": "pay~com.~0x558c401f0f6f7^7~0x59b41408",
+            "label": "pay",
+            "title": "*Freq: 4 <br> *Sen_Score: -0.1875 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 3} <br> *Group_ids: com.",
+            "value": 4
+        },
+        {
+            "color": "#ff6400",
+            "group": "article",
+            "id": "impose~art.3~~0x59b413dd",
+            "label": "impose",
+            "title": "*Freq: 2 <br> *Sen_Score: -0.125 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: art.3",
+            "value": 2
+        },
+        {
+            "color": "#ff4a00",
+            "group": "article",
+            "id": "people~art.2~~0x59b413d0",
+            "label": "people",
+            "title": "*Freq: 5 <br> *Sen_Score: -0.1875 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 3} <br> *Group_ids: art.2,com.",
+            "value": 5
+        },
+        {
+            "color": "#ff6400",
+            "group": "comment",
+            "id": "appreciate~com.~0x558c401f0fff3^16~0x59b41416",
+            "label": "appreciate",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.125 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
+            "value": 2
+        },
+        {
+            "color": "#ff7e00",
+            "group": "comment",
+            "id": "stuff~com.~0x558c401f0f6f7^7~0x59b41405",
+            "label": "stuff",
+            "title": "*Freq: 2 <br> *Sen_Score: -0.0625 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 2
+        },
+        {
+            "color": "#ff6400",
+            "group": "comment",
+            "id": "thing~com.~0x558c401f0fff3^16~0x59b41416",
+            "label": "thing",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.125 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
+            "value": 2
         }
     ],
     "options": {
@@ -2555,13 +1075,295 @@
             "use_thread_structure": false
         },
         "pruning_option": {
+            "black_node_labels": [
+                "wa",
+                "a",
+                "about",
+                "above",
+                "across",
+                "after",
+                "afterwards",
+                "again",
+                "against",
+                "all",
+                "almost",
+                "alone",
+                "along",
+                "already",
+                "also",
+                "although",
+                "always",
+                "am",
+                "among",
+                "amongst",
+                "amoungst",
+                "an",
+                "and",
+                "another",
+                "any",
+                "anyhow",
+                "anyone",
+                "anything",
+                "anyway",
+                "anywhere",
+                "are",
+                "around",
+                "as",
+                "at",
+                "be",
+                "became",
+                "because",
+                "been",
+                "before",
+                "beforehand",
+                "behind",
+                "being",
+                "below",
+                "beside",
+                "besides",
+                "between",
+                "beyond",
+                "both",
+                "but",
+                "by",
+                "can",
+                "cannot",
+                "could",
+                "dare",
+                "despite",
+                "did",
+                "do",
+                "does",
+                "done",
+                "down",
+                "during",
+                "each",
+                "eg",
+                "either",
+                "else",
+                "elsewhere",
+                "enough",
+                "etc",
+                "even",
+                "ever",
+                "every",
+                "everyone",
+                "everything",
+                "everywhere",
+                "except",
+                "few",
+                "first",
+                "for",
+                "former",
+                "formerly",
+                "from",
+                "further",
+                "furthermore",
+                "had",
+                "has",
+                "have",
+                "he",
+                "hence",
+                "her",
+                "here",
+                "hereabouts",
+                "hereafter",
+                "hereby",
+                "herein",
+                "hereinafter",
+                "heretofore",
+                "hereunder",
+                "hereupon",
+                "herewith",
+                "hers",
+                "herself",
+                "him",
+                "himself",
+                "his",
+                "how",
+                "however",
+                "i",
+                "ie",
+                "if",
+                "in",
+                "indeed",
+                "inside",
+                "instead",
+                "into",
+                "is",
+                "it",
+                "its",
+                "itself",
+                "last",
+                "latter",
+                "latterly",
+                "least",
+                "less",
+                "lot",
+                "lots",
+                "many",
+                "may",
+                "me",
+                "meanwhile",
+                "might",
+                "mine",
+                "more",
+                "moreover",
+                "most",
+                "mostly",
+                "much",
+                "must",
+                "my",
+                "myself",
+                "namely",
+                "near",
+                "need",
+                "neither",
+                "never",
+                "nevertheless",
+                "next",
+                "no",
+                "nobody",
+                "none",
+                "noone",
+                "nor",
+                "not",
+                "nothing",
+                "now",
+                "nowhere",
+                "of",
+                "off",
+                "often",
+                "oftentimes",
+                "on",
+                "once",
+                "one",
+                "only",
+                "onto",
+                "or",
+                "other",
+                "others",
+                "otherwise",
+                "ought",
+                "our",
+                "ours",
+                "ourselves",
+                "out",
+                "outside",
+                "over",
+                "per",
+                "perhaps",
+                "rather",
+                "re",
+                "same",
+                "second",
+                "several",
+                "shall",
+                "she",
+                "should",
+                "since",
+                "so",
+                "some",
+                "somehow",
+                "someone",
+                "something",
+                "sometime",
+                "sometimes",
+                "somewhat",
+                "somewhere",
+                "still",
+                "such",
+                "than",
+                "that",
+                "the",
+                "their",
+                "theirs",
+                "them",
+                "themselves",
+                "then",
+                "thence",
+                "there",
+                "thereabouts",
+                "thereafter",
+                "thereby",
+                "therefore",
+                "therein",
+                "thereof",
+                "thereon",
+                "thereupon",
+                "these",
+                "they",
+                "third",
+                "this",
+                "those",
+                "though",
+                "through",
+                "throughout",
+                "thru",
+                "thus",
+                "to",
+                "together",
+                "too",
+                "top",
+                "toward",
+                "towards",
+                "under",
+                "until",
+                "up",
+                "upon",
+                "us",
+                "used",
+                "very",
+                "via",
+                "was",
+                "we",
+                "well",
+                "were",
+                "what",
+                "whatever",
+                "when",
+                "whence",
+                "whenever",
+                "where",
+                "whereafter",
+                "whereas",
+                "whereby",
+                "wherein",
+                "whereupon",
+                "wherever",
+                "whether",
+                "which",
+                "while",
+                "whither",
+                "who",
+                "whoever",
+                "whole",
+                "whom",
+                "whose",
+                "why",
+                "whyever",
+                "will",
+                "with",
+                "within",
+                "without",
+                "would",
+                "yes",
+                "yet",
+                "you",
+                "your",
+                "yours",
+                "yourself",
+                "yourselves"
+            ],
             "edge_freq_min": 1,
-            "enable_pruning": false,
+            "enable_prunning": true,
             "min_word_length": 2,
             "node_degree_min": 2,
-            "node_freq_min": 1,
-            "remove_isolated_node": true
+            "node_freq_min": 2,
+            "regex_pattern": "[a-z\\/]+[-_]?",
+            "remove_isolated_node": true,
+            "white_node_labels": []
         },
-        "timestamp": "2017-09-08 14:55:55 "
+        "timestamp": "2017-09-09 18:18:26 "
     }
 }

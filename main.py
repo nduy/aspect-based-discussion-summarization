@@ -8,7 +8,6 @@
 
 from functions import *
 from decoration import *
-from networkx.readwrite import json_graph
 import json
 # ------ Time recording
 import time
@@ -18,8 +17,8 @@ if __name__ == "__main__":
 
     # comments = read_comment_file("data/comments_article0_clipped.txt", read_as_threads=False)
     # title, article = read_article_file("data/article0_clipped.txt")
-    comments = read_comment_file("data/comments_article0_clipped2.txt", read_as_threads=False)
-    title, article = read_article_file("data/article0_clipped.txt")
+    comments = read_comment_file("data/comments_article0.txt", read_as_threads=False)
+    title, article = read_article_file("data/article0.txt")
 
     # g = build_directed_graph_from_text(txt=title.lower(), threadid='title')
     # print 'Nodes:', g.nodes(data=True), '\n Edges:', g.edges(data=True)
