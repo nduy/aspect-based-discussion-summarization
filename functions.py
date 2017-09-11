@@ -472,7 +472,7 @@ def prune_graph(graph):
     # Now read the options
     ENABLE_PRUNING = options['enable_prunning']
     if not ENABLE_PRUNING:
-        return g  # Skip the pruning, return original graph
+        return graph  # Skip the pruning, return original graph
 
     NUM_MIN_NODES = 20      # minimum number of node. If total number of nodes is  < this number, pruning will be skipped
     NUM_MIN_EDGES = 30      # minimum number of edge. The value could not more than (NUM_MIN_NODES)*(NUM_MIN_NODES-1).
@@ -622,24 +622,30 @@ def dep_extract_from_sent(sentence, filter_opt):
     if dep_opt['custom_nodes_contract'] and dep_opt['custom_nodes_contract']['enable']:
         to_replace_keys = dict()
         for (s, s_tag), r, (t, t_tag) in filter_rel_result:
-            item = {'from_pos': s_tag, 'to_pos': t_tag, 'rel_name': r}
-            if item in dep_opt['custom_nodes_contract']['rule_set']:
-                keyword = t + '_' + s
-                to_replace_keys[s] = keyword
-                to_replace_keys[t] = keyword
+            for rule in dep_opt['custom_nodes_contract']['rule_set']:
+                if rule['from_pos'] == s_tag and rule['to_pos']== t_tag and rule['rel_name']==r:
+                    keyword = t + '_' + s
+                    pos = rule['rs_pos']
+                    to_replace_keys[s] = {'key': keyword, 'tag': pos}
+                    to_replace_keys[t] = {'key': keyword, 'tag': pos}
+                    break
         contracted_nodes_result = set()
-        key_set = set()  # Save the set of words, so we can use it for further
-        edge_set = set() # Save all the edges
+        key_set = set()   # Save the set of words, so we can use it for further
+        edge_set = set()  # Save all the edges
         for (s, s_tag), r, (t, t_tag) in filter_rel_result:
-            item = (to_replace_keys[s] if s in to_replace_keys else s, s_tag), \
+            item = (to_replace_keys[s]['key'] if s in to_replace_keys else s,
+                    to_replace_keys[s]['tag'] if s in to_replace_keys else s_tag), \
                    r, \
-                   (to_replace_keys[t] if t in to_replace_keys else t, t_tag)
-            key_set.add((item[0][0], s_tag))
-            key_set.add((item[2][0], t_tag))
-            edge_set.add((item[0][0],item[2][0]))
-            contracted_nodes_result.add(item)
+                   (to_replace_keys[t]['key'] if t in to_replace_keys else t,
+                    to_replace_keys[t]['tag'] if t in to_replace_keys else t_tag)
+            if item[0][0] != item[2][0]:
+                key_set.add((item[0][0], s_tag))
+                key_set.add((item[2][0], t_tag))
+                edge_set.add((item[0][0],item[2][0]))
+                contracted_nodes_result.add(item)
 
         del to_replace_keys
+        # print contracted_nodes_result
         contracted_nodes_result = list(contracted_nodes_result)
     else:
         contracted_nodes_result = filter_rel_result
@@ -690,7 +696,10 @@ def dep_extract_from_sent(sentence, filter_opt):
         if len(to_add_rels) > 0:
             maybe_print(u"   + Contracted {0} ed-n-ed using rules for sentence \"{1}...\""
                         .format(len(to_add_rels),sentence[:50]),2)
-    if not contracted_edges_result: contracted_edges_result = contracted_nodes_result
+            # print "asdsad", contracted_edges_result  ######################################################
+
+    if not contracted_edges_result:
+        contracted_edges_result = contracted_nodes_result
     # print '[rs2]', contracted_edges_result
     # Compound merge
     new_sen = sentence  # new sentence contains grouped item with _ as connector
@@ -753,10 +762,12 @@ def dep_extract_from_sent(sentence, filter_opt):
 # @param: g - the graph to be unified, uni_opi - unification options
 # @return: the unified graph
 def graph_unify(g=None, uni_opt=None):
+    # print g.edges(data=True)
     maybe_print("Start graph Unification", 2)
     # print uni_opt
     if not uni_opt:
         return g
+    # print uni_opt
     #  For keyword matching and unification
     ENABLE_UNIFY_MATCHED_KEYWORDS = True
     INTRA_CLUSTER_UNIFY = True
@@ -775,6 +786,7 @@ def graph_unify(g=None, uni_opt=None):
 
     # Merge sub graph with similar keyword -> Now just
     if ENABLE_UNIFY_MATCHED_KEYWORDS:
+        # print "!!#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$44"
         # for i in xrange(0,len(node_ids)-1):
         #    for j in xrange(i+1,len(node_ids)):
         #        if g.node[node_ids[i]]['label'] == g.node[node_ids[j]]['label']:  # two node have the same label
@@ -857,9 +869,14 @@ def graph_unify(g=None, uni_opt=None):
                                 n1_n_weight = rs.edge[node1][n]['weight'] if rs.has_edge(node1, n) else None
                                 n_n1_weight = rs.edge[n][node1]['weight'] if rs.has_edge(n, node1) else None
                                 if n0_n_weight and n1_n_weight:
-                                    add_up_weights.append((node0, n, n0_n_weight+n1_n_weight))
+                                    # print rs.edge[node0][n]['label'], rs.edge[node1][n]['label']
+                                    label = unicode.join(u',',[rs.edge[node0][n]['label'], rs.edge[node1][n]['label']])
+                                    #     rs.edge[node0][n]['label'] + u',' + rs.edge[node1][n]['weight']
+                                    add_up_weights.append((node0, n, n0_n_weight+n1_n_weight, label))
                                 if n_n0_weight and n_n1_weight:
-                                    add_up_weights.append((n, node0, n_n0_weight+n_n1_weight))
+                                    # label = rs.edge[n][node0]['label'] + u"," + rs.edge[n][node1]['weight']
+                                    label = unicode.join(u',', [rs.edge[n][node0]['label'], rs.edge[n][node1]['label']])
+                                    add_up_weights.append((n, node0, n_n0_weight+n_n1_weight, label))
                         group_id = rs.node[node0]['group_id'] | rs.node[node1]['group_id']
                         rs = nx.contracted_nodes(rs, node0, node1)
                         rs.node[node0]['weight'] = sum_weight
@@ -871,8 +888,9 @@ def graph_unify(g=None, uni_opt=None):
                         rs.node[node0]['group_id'] = group_id
                         # Update the weight of edges that has been added
                         if add_up_weights:
-                            for s, t, sw in add_up_weights:
+                            for s, t, sw, lb in add_up_weights:
                                 rs.edge[s][t]['weight'] = sw
+                                rs.edge[s][t]['label'] = lb
                         # Update the match lst
                         inter_match.pop(0)  # Remove first element
             # Implementation of INTRA cluster unification
@@ -915,9 +933,15 @@ def graph_unify(g=None, uni_opt=None):
                                     n1_n_weight = rs.edge[node1][n]['weight'] if rs.has_edge(node1, n) else None
                                     n_n1_weight = rs.edge[n][node1]['weight'] if rs.has_edge(n, node1) else None
                                     if n0_n_weight and n1_n_weight:
-                                        add_up_weights.append((node0, n, n0_n_weight + n1_n_weight))
+                                        # label = rs.edge[node0][n]['label'] + u"," + rs.edge[node1][n]['weight']
+                                        label = unicode.join(u',',
+                                                             [rs.edge[node0][n]['label'], rs.edge[node1][n]['label']])
+                                        add_up_weights.append((node0, n, n0_n_weight + n1_n_weight,label))
                                     if n_n0_weight and n_n1_weight:
-                                        add_up_weights.append((n, node0, n_n0_weight + n_n1_weight))
+                                        # label = rs.edge[n][node0]['label'] + u"," + rs.edge[n][node1]['weight']
+                                        label = unicode.join(u',',
+                                                             [rs.edge[n][node0]['label'], rs.edge[n][node1]['label']])
+                                        add_up_weights.append((n, node0, n_n0_weight + n_n1_weight,label))
 
                             rs = nx.contracted_nodes(rs, node0, node1)
                             rs.node[node0]['weight'] = sum_weight
@@ -928,8 +952,9 @@ def graph_unify(g=None, uni_opt=None):
                                                             }
                             # Update the weight of edges that has been added
                             if add_up_weights:
-                                for s, t, sw in add_up_weights:
+                                for s, t, sw, lb in add_up_weights:
                                     rs.edge[s][t]['weight'] = sw
+                                    rs.edge[s][t]['label'] = lb
                             intra_match.pop(0)  # Remove first element
     else:
         return g

@@ -43,7 +43,7 @@ dep_opt = {
     'custom_nodes_contract': {
         'enable': True,
         'rule_set': [
-            {'from_pos': u'NN', 'to_pos': u'JJ', 'rel_name': u'amod'}
+            {'from_pos': u'NN', 'to_pos': u'JJ', 'rel_name': u'amod', 'rs_pos': u'NN'}
         ],
     },
     # for each SENTENCE, we group those edges whose satisfy the pattern: <--rel_name1--> n_pos <--rel_name2-->
