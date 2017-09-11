@@ -87,7 +87,7 @@ div.outerBorder {
 	width:1.7vw;
 	height: 70vh;
 	background: red; /* For browsers that do not support gradients */
-	background: linear-gradient(red, #ff0a00, #ff1500, #ff1f00, #ff2900, #ff3400, #ff3e00, #ff4800, #ff5200, #ff5d00, #ff6700, #ff7100, #ff7c00, #ff8600, #ff9000, #ff9b00, orange, #ffaf00, #ffb900, #ffc400, #ffce00, #ffd800, #ffe300, #ffed00, #fff700, #fcff00, #f2ff00, #e8ff00, #deff00, #d3ff00, #c9ff00, #bfff00, #b4ff00, #af0, #a0ff00, #95ff00, #8bff00, #81ff00, #76ff00, #6cff00, #62ff00, #58ff00, #4dff00, #43ff00, #39ff00, #2eff00, #24ff00, #1aff00, #0fff00, #05ff00, #00ff05, #00ff0f, #00ff1a, #00ff24, #00ff2e, #00ff39, #00ff43, #00ff4d, #00ff58, #00ff62, #00ff6c, #00ff76, #00ff81, #00ff8b, #00ff95, #00ffa0, #0fa, #00ffb4, #00ffbf, #00ffc9, #00ffd3, #00ffde, #00ffe8, #00fff2, #00fffc, #00f7ff, #00edff, #00e3ff, #00d8ff, #00ceff, #00c4ff, #00b9ff, #00afff, #00a5ff, #009bff, #0090ff, #0086ff, #007cff, #0071ff, #0067ff, #005dff, #0052ff, #0048ff, #003eff, #0034ff, #0029ff, #001fff, #0015ff, #000aff, blue); /* Standard syntax */
+	background: linear-gradient(yellow,red); /* Standard syntax */
 	text-align: center;
 	vertical-align: middle;
 	margin:auto;

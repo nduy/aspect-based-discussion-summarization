@@ -15,9 +15,18 @@ from nltk.tokenize import texttiling
 import re
 from config import script_verbality
 from config import replace_pattern
+import jsonrpc
+from simplejson import loads
+from nltk.tokenize import sent_tokenize
+from nltk.tokenize import word_tokenize
+import warnings
 
 # Normalization and cleaning engine
 cucco = Cucco()
+
+# Connect to core nLP server
+server = jsonrpc.ServerProxy(jsonrpc.JsonRpc20(),jsonrpc.TransportTcpIp(addr=("127.0.0.1", 8080)))
+
 normalizations = [
     'remove_accent_marks',
     ('replace_urls', {'replacement': ''}),
@@ -168,4 +177,38 @@ def text_preprocessing(rawText):
     txt = re.sub('<a.*>.*?</a>', '', txt)
     txt = replace_all(replace_pattern,txt)
     # print rawText,"!HU!!NK>!N!NB!bbbbbb", txt
-    return txt;
+    return txt
+
+
+# Refine a sentence by replacing its reference be the referee word/phrase
+# @param: a sentence
+# @return: refined sentence
+def coreference_refine(text):
+    tokens = [[tok for tok in word_tokenize(sen)] for sen in sent_tokenize(text)]
+    rs_tks = tokens
+    try:
+        parse_rs = loads(server.parse(text))
+    except Exception:
+        warnings.warn("Can't parse sentence {0}...".format(text[:30]), UserWarning)
+    parse_rs = None
+
+    # print parse_rs
+    if not parse_rs or 'coref' not in parse_rs:
+        return text
+    for group in parse_rs['coref']:
+        for s, t in group:
+            if len(s[0]) < 10 and len(t[0]) < 10:
+                # print s, t
+                # Remove the reference
+                for i in xrange(s[3], s[4]):
+                    rs_tks[s[1]].pop(i)
+                # Add the referee
+                starting_pos = s[2]
+                for i in xrange(t[3], t[4]):
+                    rs_tks[s[1]].insert(starting_pos, tokens[t[1]][i])
+                    starting_pos += 1
+    rs = u" ".join([u" ".join(s_list) for s_list in rs_tks])
+    if rs:
+        return rs
+    else:
+        return text

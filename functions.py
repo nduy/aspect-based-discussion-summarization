@@ -180,6 +180,7 @@ def build_mode_1(title, article, comments):
             for th_rs in results[i]:
                 if th_rs:
                     rs = nx.compose(rs, th_rs)
+                    print 'Thread ', i, th_rs.edges(data=True)
 
         #for comment in comments:
         #    comment_id = comment['member_id']
@@ -188,7 +189,9 @@ def build_mode_1(title, article, comments):
         #    comment_graph = build_directed_graph_from_text(txt=content, group_id=group_id, member_id=comment_id)
         #    if comment_graph:
         #        rs = nx.compose(rs, comment_graph)
+    # print 'Composed: ', rs.edges(data=True)
     rs = graph_unify(rs, uni_options)
+    # print 'Unified: ', rs.edges(data=True)
     return rs
 
 
@@ -312,7 +315,9 @@ def build_graph_from_text(txt, group_id='_', member_id='_'):
 # This function build a directed graph fom a piece of text
 def build_directed_graph_from_text(txt, group_id='', member_id=''):
     maybe_print(u"Generating directed graph for text: {0}".format(txt), 3)
-    sentences = sent_tokenize(txt.strip())  # sentence segmentation
+    # First do the co-reference refine
+    corefered_txt = coreference_refine(txt)
+    sentences = sent_tokenize(corefered_txt.strip())  # sentence segmentation
     g = nx.DiGraph()
     # Get nodes and edges from sentence
     sen_count = 0
@@ -443,7 +448,7 @@ def generate_json_from_graph(g):
         #  print item
         result['nodes'].append(item)
 
-    for edge in g.edges(data=True):
+    for edge in g.edges(data=True): # edge is a tuple (source,target,data)
         item = dict()
         item['id'] = edge[0]+'|'+edge[1]
         if g.edge[edge[0]][edge[1]]['weight']:
@@ -670,7 +675,6 @@ def dep_extract_from_sent(sentence, filter_opt):
                     # Now search in the rule set to see if there is any match to the current node
                     for r in dep_opt['custom_edges_contract']['rule_set']:
                         # print r
-                        # print r['rel_name1'], rel1[1], r['rel_direction1'], rel1[3], r['rel_name2'], rel2[1], r['rel_direction2'], rel1[3], r['n_pos'], tag
                         if r['rel_name1'] == rel1[1] and r['rel_direction1'] == rel1[3] and r['rel_name2'] == rel2[1] \
                            and r['rel_direction2'] == rel1[3] and r['n_pos'] == tag:  # Matched
                             rs_label = r['rs_label'].replace(u'{n_label}', en.verb.infinitive(node))
@@ -694,8 +698,8 @@ def dep_extract_from_sent(sentence, filter_opt):
                 contracted_edges_result = list((set(contracted_nodes_result) - to_remove_rels) | to_add_rels)
                 # print '[rs]', contracted_edges_result
         if len(to_add_rels) > 0:
-            maybe_print(u"   + Contracted {0} ed-n-ed using rules for sentence \"{1}...\""
-                        .format(len(to_add_rels),sentence[:50]),2)
+            maybe_print(u"   + Contracted {0} ed-n-ed using rules for sentence \"{1}...\": {2}"
+                        .format(len(to_add_rels),sentence[:50], str(to_add_rels)),2)
             # print "asdsad", contracted_edges_result  ######################################################
 
     if not contracted_edges_result:
