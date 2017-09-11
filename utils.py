@@ -186,27 +186,50 @@ def text_preprocessing(rawText):
 def coreference_refine(text):
     tokens = [[tok for tok in word_tokenize(sen)] for sen in sent_tokenize(text)]
     rs_tks = tokens
+    parse_rs = None
     try:
         parse_rs = loads(server.parse(text))
     except Exception:
         warnings.warn("Can't parse sentence {0}...".format(text[:30]), UserWarning)
-    parse_rs = None
-
     # print parse_rs
     if not parse_rs or 'coref' not in parse_rs:
         return text
     for group in parse_rs['coref']:
         for s, t in group:
-            if len(s[0]) < 10 and len(t[0]) < 10:
-                # print s, t
+            if len(s[0]) < 50 and len(t[0]) < 50:
+                # calculate size differences:
+                diff = (s[4] - s[3]) - (t[4] - t[3])
                 # Remove the reference
                 for i in xrange(s[3], s[4]):
                     rs_tks[s[1]].pop(i)
-                # Add the referee
-                starting_pos = s[2]
-                for i in xrange(t[3], t[4]):
-                    rs_tks[s[1]].insert(starting_pos, tokens[t[1]][i])
-                    starting_pos += 1
+                if diff == 0:
+                    # Add the refereee
+                    starting_pos = s[3]
+                    for i in xrange(t[3], t[4]):
+                        rs_tks[s[1]].insert(starting_pos, tokens[t[1]][i])
+                        starting_pos += 1
+                elif diff > 0:  # to-be-replace is greater than to replace
+                    # Add the refereee
+                    starting_pos = s[3]
+                    for i in xrange(t[3], t[4] + diff):
+                        if i >= t[4]:
+                            rs_tks[s[1]].insert(starting_pos, u"")
+                        else:
+                            rs_tks[s[1]].insert(starting_pos, tokens[t[1]][i])
+                            starting_pos += 1
+                else:  # to-be-replace is greater than to replace
+                    # Add the refereee
+                    starting_pos = s[3]
+                    for i in xrange(t[3], t[4] + diff):
+                        if i == t[4] + diff -1:
+                            item = u""
+                            for j in xrange(i, t[4]):
+                                item = item + u" " + tokens[t[1]][j]
+                            item = item[1:]
+                            rs_tks[s[1]].insert(starting_pos, item)
+                        else:
+                            rs_tks[s[1]].insert(starting_pos, tokens[t[1]][i])
+                            starting_pos += 1
     rs = u" ".join([u" ".join(s_list) for s_list in rs_tks])
     if rs:
         return rs

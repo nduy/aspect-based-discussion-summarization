@@ -180,7 +180,7 @@ def build_mode_1(title, article, comments):
             for th_rs in results[i]:
                 if th_rs:
                     rs = nx.compose(rs, th_rs)
-                    print 'Thread ', i, th_rs.edges(data=True)
+                    # print 'Thread ', i, th_rs.edges(data=True)
 
         #for comment in comments:
         #    comment_id = comment['member_id']
