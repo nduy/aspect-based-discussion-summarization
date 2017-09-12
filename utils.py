@@ -301,7 +301,7 @@ def generate_json_from_graph(g):
         item['from'] = edge[0]
         item['to'] = edge[1]
         counts = Counter([e.strip() for e in edge[2]['label'].split(',')]).most_common()
-        item['label'] = ', '.join([l+str(c) for l,c in counts])
+        item['label'] = ', '.join([l+'^'+str(c) for l,c in counts])
         result['edges'].append(item)
 
     return result

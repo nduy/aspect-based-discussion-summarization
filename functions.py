@@ -362,17 +362,19 @@ def build_directed_graph_from_text(txt, group_id='', member_id=''):
         sen_count += 1
         word2id = dict(zip(keys, assigned_nodes))
         filtered_edges = [(word2id[s][0], word2id[t][0], {'label': r,
-                                                          'weight': 1}) for (s, _), r, (t, _) in dependencies if s != t]
+                                                          'weight': 1}) for (s, _), r, (t, _) in dependencies if s != t and r]
         #  print list(edges)
         #  print '-----',filtered_edges
         if filtered_edges:
             g.add_edges_from(filtered_edges)  # Add edges from the combination of words co-occurred in the same sentence
             # Update edges's weight
-            for u, v, _ in filtered_edges:
+            for u, v, r in filtered_edges:
                 try:
                     g.edge[u][v]['weight'] += 1
+                    g.edge[u][v]['label'] = u'{0},{1}'.format(g.get_edge_data(u,v)['label'], r['label'])
                 except KeyError:
                     g.edge[u][v]['weight'] = 1
+                    g.edge[u][v]['label'] = r['label']
             maybe_print('Edges ' + str(g.edges()) + '\n', 3)
         sen_count += 1  # Increase the sentence count index
     if len(g.nodes()) == 0:
