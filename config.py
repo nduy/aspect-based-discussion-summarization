@@ -12,7 +12,7 @@ build_options = {
     'sentiment_ana_mode': 'global',  # 'global', 'local'
     'use_thread_structure': False,   # if yes, the thread structure of comments will be used. Otherwise just treat them
                                      # equally
-    'n_thread': 5  # number of thread for Multithreading
+    'n_thread': 10  # number of thread for Multithreading
 }
 
 # Options for prunning the graph

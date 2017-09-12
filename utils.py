@@ -19,7 +19,8 @@ import jsonrpc
 from simplejson import loads
 from nltk.tokenize import sent_tokenize
 from nltk.tokenize import word_tokenize
-import warnings
+import json
+from collections import Counter
 
 # Normalization and cleaning engine
 cucco = Cucco()
@@ -174,9 +175,10 @@ def replace_all(repls, str):
 def text_preprocessing(rawText):
     # print  replace_pattern
     txt = cucco.normalize(rawText, normalizations)
-    txt = re.sub('<a.*>.*?</a>', '', txt)
+    txt = re.sub('<\D*>.*?<\D*>', '', txt)
+    m = re.search(r"[a-z]([.,;:<>()+])[A-Z]", txt) # Fix space missing typo
+    txt = txt[:m.start()+2] + u" " + txt[m.end()-1:] if m else txt
     txt = replace_all(replace_pattern,txt)
-    # print rawText,"!HU!!NK>!N!NB!bbbbbb", txt
     return txt
 
 
@@ -184,54 +186,122 @@ def text_preprocessing(rawText):
 # @param: a sentence
 # @return: refined sentence
 def coreference_refine(text):
+    if not text.strip():
+        return text
     tokens = [[tok for tok in word_tokenize(sen)] for sen in sent_tokenize(text)]
     rs_tks = tokens
     parse_rs = None
     try:
         parse_rs = loads(server.parse(text))
     except Exception:
-        warnings.warn("Can't parse sentence {0}...".format(text[:30]), UserWarning)
+        maybe_print("[W] Can't parse sentence \"{0}...\"".format(text[:30]), 2)
     # print parse_rs
-    if not parse_rs or 'coref' not in parse_rs:
-        return text
-    for group in parse_rs['coref']:
-        for s, t in group:
-            if len(s[0]) < 50 and len(t[0]) < 50:
-                # calculate size differences:
-                diff = (s[4] - s[3]) - (t[4] - t[3])
-                # Remove the reference
-                for i in xrange(s[3], s[4]):
-                    rs_tks[s[1]].pop(i)
-                if diff == 0:
-                    # Add the refereee
-                    starting_pos = s[3]
-                    for i in xrange(t[3], t[4]):
-                        rs_tks[s[1]].insert(starting_pos, tokens[t[1]][i])
-                        starting_pos += 1
-                elif diff > 0:  # to-be-replace is greater than to replace
-                    # Add the refereee
-                    starting_pos = s[3]
-                    for i in xrange(t[3], t[4] + diff):
-                        if i >= t[4]:
+    try:
+        if not parse_rs or 'coref' not in parse_rs:
+            return text
+        for group in parse_rs['coref']:
+            for s, t in group:
+                # print len(rs_tks[s[1]])
+                if s[0] and t[0] and len(s[0]) < 50 and len(t[0]) < 50:
+                    # calculate size differences:
+                    diff = (s[4] - s[3]) - (t[4] - t[3])
+                    # Remove the reference
+                    # print rs_tks[s[1]], s[3], s[4]
+                    for i in xrange(s[3], s[4]):
+                        rs_tks[s[1]].pop(s[3])
+                    if diff == 0:
+                        # Add the referee
+                        starting_pos = s[3]
+                        for i in xrange(t[3], t[4]):
+                            rs_tks[s[1]].insert(starting_pos, tokens[t[1]][i])
+                            starting_pos += 1
+                    elif diff > 0:  # to-be-replace is greater than to replace
+                        # Add the referee
+                        starting_pos = s[3]
+                        for i in xrange(t[3], t[4]):
+                            #if i >= t[4]:
+                            #    rs_tks[s[1]].insert(starting_pos, u"")
+                            #else:
+                            rs_tks[s[1]].insert(starting_pos, tokens[t[1]][i])
+                            starting_pos += 1
+                        for i in xrange(0,diff):
                             rs_tks[s[1]].insert(starting_pos, u"")
-                        else:
-                            rs_tks[s[1]].insert(starting_pos, tokens[t[1]][i])
                             starting_pos += 1
-                else:  # to-be-replace is greater than to replace
-                    # Add the refereee
-                    starting_pos = s[3]
-                    for i in xrange(t[3], t[4] + diff):
-                        if i == t[4] + diff -1:
-                            item = u""
-                            for j in xrange(i, t[4]):
-                                item = item + u" " + tokens[t[1]][j]
-                            item = item[1:]
-                            rs_tks[s[1]].insert(starting_pos, item)
-                        else:
-                            rs_tks[s[1]].insert(starting_pos, tokens[t[1]][i])
-                            starting_pos += 1
-    rs = u" ".join([u" ".join(s_list) for s_list in rs_tks])
-    if rs:
-        return rs
-    else:
+                    else:  # to-be-replace is greater than to replace
+                        # Add the referee
+                        starting_pos = s[3]
+                        for i in xrange(t[3], t[4] + diff):
+                            if i == t[4] + diff -1:
+                                item = u""
+                                for j in xrange(i, t[4]):
+                                    item = item + u" " + tokens[t[1]][j]
+                                item = item[1:]
+                                rs_tks[s[1]].insert(starting_pos, item)
+                            else:
+                                rs_tks[s[1]].insert(starting_pos, tokens[t[1]][i])
+                                starting_pos += 1
+                # print len(rs_tks[s[1]])
+        rs = u" ".join([u" ".join(s_list) for s_list in rs_tks])
+        if rs:
+            return rs
+        else:
+            return text
+    except Exception:
+        maybe_print("[W] --> unable to extract co-reference for sentence: \"{0}...\"".format(text[:30]), 2)
         return text
+
+
+# Generate the JSON code from the networkx graph structure and perform node coloring
+def generate_json_from_graph(g):
+    result = {'nodes': [],
+              'edges': []
+              }
+    if not g or len(g.nodes()) == 0:
+        return None
+
+    for node in g.nodes():
+        # Go one by one
+        item = dict()
+        item['id'] = node
+        if g.node[node]['weight']:
+            w = g.node[node]['weight']
+            item['value'] = w
+            item['title'] = "*Freq: " + str(w) \
+                            + " <br> *Sen_Score: " + str(round(g.node[node]['sentiment_score'], 4)) \
+                            + " <br> *Sentiment: " + json.dumps(g.node[node]['sentiment']) \
+                            + " <br> *Group_ids: " + ','.join(list(g.node[node]['group_id']))
+
+        if g.node[node]['label']:
+            item['label'] = g.node[node]['label']
+        if g.node[node]['color']:
+            item['color'] = str(g.node[node]['color'])
+        if 'central.group' in g.node[node]['group_id']:
+            item['group'] = 'central'
+        else:
+            is_article_node = False
+            for group_id in g.node[node]['group_id']:
+                is_article_node = is_article_node or group_id[:3] == "art"
+            if is_article_node:
+                item['group'] = 'article'
+            else:
+                item['group'] = 'comment'
+
+        #  print item
+        result['nodes'].append(item)
+
+    for edge in g.edges(data=True): # edge is a tuple (source,target,data)
+        item = dict()
+        item['id'] = edge[0]+'|'+edge[1]
+        if g.edge[edge[0]][edge[1]]['weight']:
+            w = g.edge[edge[0]][edge[1]]['weight']
+            item['value'] = w
+            item['title'] = "freq: " + str(w)
+        #  if G.edge[edge[0]][edge[1]]['label']:
+        #    item['label'] = G.edge[edge[0]][edge[1]]['label']
+        item['from'] = edge[0]
+        item['to'] = edge[1]
+        counts = Counter([e.strip() for e in edge[2]['label'].split(',')]).most_common()
+        item['label'] = ', '.join([l+str(c) for l,c in counts])
+        result['edges'].append(item)
+
+    return result

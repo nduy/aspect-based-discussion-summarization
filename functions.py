@@ -410,61 +410,6 @@ class DirGraphExtractor (threading.Thread):
         print "Exiting extractor {0}".format(self.name)
 
 
-# Generate the JSON code from the networkx graph structure and perform node coloring
-def generate_json_from_graph(g):
-    result = {'nodes': [],
-              'edges': []
-              }
-    if not g or len(g.nodes()) == 0:
-        return None
-
-    for node in g.nodes():
-        # Go one by one
-        item = dict()
-        item['id'] = node
-        if g.node[node]['weight']:
-            w = g.node[node]['weight']
-            item['value'] = w
-            item['title'] = "*Freq: " + str(w) \
-                            + " <br> *Sen_Score: " + str(round(g.node[node]['sentiment_score'], 4)) \
-                            + " <br> *Sentiment: " + json.dumps(g.node[node]['sentiment']) \
-                            + " <br> *Group_ids: " + ','.join(list(g.node[node]['group_id']))
-
-        if g.node[node]['label']:
-            item['label'] = g.node[node]['label']
-        if g.node[node]['color']:
-            item['color'] = str(g.node[node]['color'])
-        if 'central.group' in g.node[node]['group_id']:
-            item['group'] = 'central'
-        else:
-            is_article_node = False
-            for group_id in g.node[node]['group_id']:
-                is_article_node = is_article_node or group_id[:3] == "art"
-            if is_article_node:
-                item['group'] = 'article'
-            else:
-                item['group'] = 'comment'
-
-        #  print item
-        result['nodes'].append(item)
-
-    for edge in g.edges(data=True): # edge is a tuple (source,target,data)
-        item = dict()
-        item['id'] = edge[0]+'|'+edge[1]
-        if g.edge[edge[0]][edge[1]]['weight']:
-            w = g.edge[edge[0]][edge[1]]['weight']
-            item['value'] = w
-            item['title'] = "freq: " + str(w)
-        #  if G.edge[edge[0]][edge[1]]['label']:
-        #    item['label'] = G.edge[edge[0]][edge[1]]['label']
-        item['from'] = edge[0]
-        item['to'] = edge[1]
-        item['label'] = edge[2]['label']
-        result['edges'].append(item)
-
-    return result
-
-
 # Pruning the graph according to restrictions in options
 def prune_graph(graph):
     maybe_print("Start pruning aspect graph.", 1)
@@ -477,6 +422,7 @@ def prune_graph(graph):
     # Now read the options
     ENABLE_PRUNING = options['enable_prunning']
     if not ENABLE_PRUNING:
+        maybe_print("--> Pruning skipped.", 1)
         return graph  # Skip the pruning, return original graph
 
     NUM_MIN_NODES = 20      # minimum number of node. If total number of nodes is  < this number, pruning will be skipped
@@ -580,8 +526,8 @@ def prune_graph(graph):
     # :: Done pruning
     maybe_print("--> Graph PRUNNING completed.\n    Number of nodes: {0}\n    Number of edges: {1}"
                 .format(len(g.nodes()), len(g.edges())),2)
-    maybe_print("--> {0} nodes removed. {1} edges removed.".format(str(len(graph.nodes()) - len(g.nodes())),
-                                                                   str(len(graph.edges()) - len(g.edges()))),2)
+    maybe_print("--> {0} nodes removed. {1} edges removed.".format(len(graph.nodes()) - len(g.nodes()),
+                                                                   len(graph.edges()) - len(g.edges())),2)
     return g
 
 
@@ -699,7 +645,8 @@ def dep_extract_from_sent(sentence, filter_opt):
                 # print '[rs]', contracted_edges_result
         if len(to_add_rels) > 0:
             maybe_print(u"   + Contracted {0} ed-n-ed using rules for sentence \"{1}...\": {2}"
-                        .format(len(to_add_rels),sentence[:50], str(to_add_rels)),2)
+                        .format(len(to_add_rels),sentence[:50], str(['{0}--{1}->{2}'.format(s,r,t)
+                                                                     for (s,_),r,(t,_) in to_add_rels])),2)
             # print "asdsad", contracted_edges_result  ######################################################
 
     if not contracted_edges_result:
