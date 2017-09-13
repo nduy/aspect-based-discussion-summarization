@@ -289,7 +289,7 @@ def generate_json_from_graph(g):
         #  print item
         result['nodes'].append(item)
 
-    for edge in g.edges(data=True): # edge is a tuple (source,target,data)
+    for edge in g.edges(data=True):  # edge is a tuple (source,target,data)
         item = dict()
         item['id'] = edge[0]+'|'+edge[1]
         if g.edge[edge[0]][edge[1]]['weight']:

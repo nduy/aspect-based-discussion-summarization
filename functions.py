@@ -559,10 +559,21 @@ def dep_extract_from_sent(sentence, filter_opt):
     # for phrase in blob.noun_phrases:
     #    sentence = sentence.replace(phrase,phrase.replace(' ','_'))
     # print sentence
+    '''
     result = dep_parser.raw_parse(sentence)
     dependencies = result.next()
     raw_results = [((lemmatizer.lemmatize(s.lower()), s_tag), r, (lemmatizer.lemmatize(t.lower()), t_tag))
                    for (s, s_tag), r, (t, t_tag) in list(dependencies.triples())]
+    '''
+    parse_result = loads(server.parse(sentence))
+    pos_dict = dict()
+    for e in re.findall('\(([A-Z]{1,4}\s[\w]+)\)', parse_result['parsetree']): # build look up word-postag dictionary
+        v = e.split()
+        pos_dict[v[1]] = v[0]
+
+    raw_results = [((lemmatizer.lemmatize(s.lower()), pos_dict[s]), r, (lemmatizer.lemmatize(t.lower()), pos_dict[t]))
+                   for (r,s,t) in list(parse_result['dependencies']) if r != u'ROOT']
+
     #  Filter by relationship
     preferred_rel = filter_opt['preferred_rel']
     if type(preferred_rel) != list:  # take all POS
