@@ -11,26 +11,22 @@
 
 import en
 import codecs
-import json
 import csv
-import re
 import itertools
 import threading
+import time
 import networkx as nx
 from textblob import TextBlob
-from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk.corpus import stopwords
 from itertools import combinations
 from polyglot.text import Text
 from nltk.stem import WordNetLemmatizer
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from utils import *
-from nltk.parse.stanford import StanfordDependencyParser
 from config import prune_options
 from config import uni_options
 from config import build_options
 from config import dep_opt
-
 
 ######################################
 # EXTRA DECLARATIONS
@@ -38,8 +34,10 @@ from config import dep_opt
 lemmatizer = WordNetLemmatizer()
 
 # Stanford dependency tagger
-dep_parser = StanfordDependencyParser(model_path="./models/lexparser/englishPCFG.caseless.ser.gz")
+# dep_parser = StanfordDependencyParser(model_path="./models/lexparser/englishPCFG.caseless.ser.gz")
 
+# dependency parsing server
+# dep_server = jsonrpc.ServerProxy(jsonrpc.JsonRpc20(),jsonrpc.TransportTcpIp(addr=("127.0.0.1", 8080)))
 # Sentiment analyzer
 sid = SentimentIntensityAnalyzer()
 # List of stopword
@@ -56,6 +54,8 @@ SENTIMENT_ANALYSIS_MODE = 'local'  # m
 # Read number of computational threads will be used during the extraction
 N_THREADS = 2
 
+# a lock for controlling server request on Multi threading
+threadLock = threading.Lock()
 
 ######################################
 # FUNCTIONS
@@ -71,7 +71,10 @@ N_THREADS = 2
 def build_sum_graph(dataset):
     # Read options
     MERGE_MODE = build_options['build_mode'] if build_options['build_mode'] else 0
+    global N_THREADS
+    N_THREADS = build_options['n_thread'] if build_options['n_thread'] else 1
     maybe_print("Start building sum graph in mode {0}".format(MERGE_MODE), 1)
+    global SENTIMENT_ANALYSIS_MODE
     SENTIMENT_ANALYSIS_MODE = build_options['sentiment_ana_mode'] if build_options['sentiment_ana_mode'] else 'global'
 
     if MERGE_MODE == 0:
@@ -84,7 +87,7 @@ def build_sum_graph(dataset):
         return g
     if MERGE_MODE == 1:
         g = build_mode_1(dataset['title'], dataset['article'], dataset['comments'])
-        print "!!!!!!!!!!!!!!!!!!!"
+        print "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
         # maybe_print("--> Graph BUILD in mode 1 completed.\n    Number of nodes: {0}\n    Number of edges: {1}"
         #            .format(len(g.nodes()), len(g.edges())), 1)
         # print "---", g.nodes()
@@ -136,7 +139,8 @@ def build_mode_1(title, article, comments):
                                                                "group_id": ['central.group'],
                                                                "sentiment": {'pos_count': 0,
                                                                              'neu_count': 1,
-                                                                             'neg_count': 0}})
+                                                                             'neg_count': 0}
+                                                               })
 
     # Second work on the article
     maybe_print("\nStart building aspect graph for the ARTICLE.", 2)
@@ -144,7 +148,8 @@ def build_mode_1(title, article, comments):
     article_group_count = 0
     for segment in texttiling_tokenize(article):  # Run texttiling, then go to each segment
         maybe_print(" - Building graph for segment {0}".format(article_group_count), 2)
-        segment_graph = build_directed_graph_from_text(txt=segment, group_id="art."+str(article_group_count))
+        segment_graph = build_directed_graph_from_text(txt=segment,
+                                                       group_id="art."+str(article_group_count))
         article_graph = nx.compose(article_graph, segment_graph)
         article_group_count += 1
 
@@ -152,11 +157,15 @@ def build_mode_1(title, article, comments):
     rs = nx.compose(rs, article_graph)
     rs = graph_unify(rs, uni_options)
 
+    # threadLock.release()  # Release the lock that may be used while extracting graph for article
+    global server
+    server = jsonrpc.ServerProxy(jsonrpc.JsonRpc20(), jsonrpc.TransportTcpIp(addr=("127.0.0.1", 8080)))
+
     maybe_print("\nStart building aspect graph for COMMENTS, add up to the article graph.",2)
     # Third work on the comments.
     # Check if we use thread structure or not
     if build_options['use_thread_structure']:
-        raise RuntimeError("Thread structure usage in build mode 1 is not supported!")
+        raise RuntimeError("Thread structure usage in build mode 1 is NOT supported!")
     else:
         count = 0
         data_chunks = [[] for _ in xrange(0,N_THREADS)]
@@ -393,8 +402,9 @@ class DirGraphExtractor (threading.Thread):
     name = 'unnamed'
     data = []
     result = []
+    dep_parser = None
 
-    def __init__(self, name, data,result):
+    def __init__(self, name, data, result):
         threading.Thread.__init__(self)
         self.name = name
         self.data = data
@@ -427,7 +437,7 @@ def prune_graph(graph):
         maybe_print("--> Pruning skipped.", 1)
         return graph  # Skip the pruning, return original graph
 
-    NUM_MIN_NODES = 20      # minimum number of node. If total number of nodes is  < this number, pruning will be skipped
+    NUM_MIN_NODES = 20      # minimum number of node. If total number of nodes is < this number, pruning will be skipped
     NUM_MIN_EDGES = 30      # minimum number of edge. The value could not more than (NUM_MIN_NODES)*(NUM_MIN_NODES-1).
     #                       If total number of edge is  < this number, pruning will be skipped
     REMOVE_ISOLATED_NODE = True #
@@ -565,14 +575,36 @@ def dep_extract_from_sent(sentence, filter_opt):
     raw_results = [((lemmatizer.lemmatize(s.lower()), s_tag), r, (lemmatizer.lemmatize(t.lower()), t_tag))
                    for (s, s_tag), r, (t, t_tag) in list(dependencies.triples())]
     '''
-    parse_result = loads(server.parse(sentence))
+    parse_result = None
+    try:
+        threadLock.acquire()
+        r = server.parse(sentence)
+        threadLock.release()
+        parse_result = loads(r)
+    except Exception as detail:
+        cut = min(30,len(sentence))
+        maybe_print('[W] Unable to parse sentence for dependencies: {0}.'.format(sentence[:cut]),2)
+        maybe_print('    --> Error: {0}'.format(detail), 2)
+        threadLock.release()
+        return [],[],u""
     pos_dict = dict()
-    for e in re.findall('\(([A-Z]{1,4}\s[\w]+)\)', parse_result['parsetree']): # build look up word-postag dictionary
+    # build look up word-postag dictionary
+    for e in re.findall('\(([A-Z]{1,4}\s[\w\d\'_-]+)\)', parse_result[u'sentences'][0][u'parsetree']):
         v = e.split()
         pos_dict[v[1]] = v[0]
 
-    raw_results = [((lemmatizer.lemmatize(s.lower()), pos_dict[s]), r, (lemmatizer.lemmatize(t.lower()), pos_dict[t]))
-                   for (r,s,t) in list(parse_result['dependencies']) if r != u'ROOT']
+    # Get the parsing result and save them a tripples
+    raw_results = []
+    # print parse_result[u'sentences'][0][u'dependencies']
+    for e in parse_result[u'sentences'][0][u'dependencies']:
+        r = e[0]
+        s = e[1]
+        t = e[2]
+        if r not in [u'root',u'punct'] and s in pos_dict and t in pos_dict and len(s)>1 and len(t)>1:
+
+            raw_results.append(((lemmatizer.lemmatize(s.lower()), pos_dict[s]),
+                                r,
+                                (lemmatizer.lemmatize(t.lower()), pos_dict[t])))
 
     #  Filter by relationship
     preferred_rel = filter_opt['preferred_rel']
@@ -635,18 +667,53 @@ def dep_extract_from_sent(sentence, filter_opt):
                     for r in dep_opt['custom_edges_contract']['rule_set']:
                         # print r
                         if r['rel_name1'] == rel1[1] and r['rel_direction1'] == rel1[3] and r['rel_name2'] == rel2[1] \
-                           and r['rel_direction2'] == rel1[3] and r['n_pos'] == tag:  # Matched
-                            rs_label = r['rs_label'].replace(u'{n_label}', en.verb.infinitive(node))
+                           and r['rel_direction2'] == rel2[3] and r['n_pos'] == tag:  # Matched
+                            node1 = rel1[2][0] if rel1[3] == u'out' else rel1[0][0]
+                            node3 = rel2[2][0] if rel2[3] == u'out' else rel2[0][0]
+                            rs_label = r['rs_label'].replace(u'{n_label}', en.verb.infinitive(node))\
+                                                    .replace(u'{l_label}', en.verb.infinitive(node1)) \
+                                                    .replace(u'{r_label}', en.verb.infinitive(node3))
                             rs_label = rs_label.upper()
                             # print rel1, rel2
+                            # Define new nodes
+                            if r['nodes_label']==u'1-2':
+                                to_add_rels.add((rel1[2] if rel1[3] == u'out' else rel1[0],
+                                                 rs_label,
+                                                 (node,tag)
+                                                 ))
+                            elif r['nodes_label']==u'2-1':
+                                to_add_rels.add(((node,tag),
+                                                rs_label,
+                                                rel1[2] if rel1[3] == u'out' else rel1[0]))
+                            elif r['nodes_label']==u'2-3':
+                                to_add_rels.add(((node,tag),
+                                                rs_label,
+                                                rel2[2] if rel2[3] == u'out' else rel2[0]))
+                            elif r['nodes_label'] == u'3-2':
+                                to_add_rels.add((rel2[2] if rel2[3] == u'out' else rel2[0],
+                                                rs_label,
+                                                (node, tag)
+                                                ))
+                            elif r['nodes_label'] == u'1-3':
+                                to_add_rels.add((rel1[2] if rel1[3] == u'out' else rel1[0],
+                                                rs_label,
+                                                rel2[2] if rel2[3] == u'out' else rel2[0]))
+                            elif ['nodes_label'] == u'3-1':
+                                to_add_rels.add((rel2[2] if rel2[3] == u'out' else rel2[0],
+                                                rs_label,
+                                                rel2[2] if rel2[3] == u'out' else rel2[0]))
+                            else:
+                                raise ValueError("[E] Invalid node label definition: ")
+                            '''
                             if r['rs_direction'] == u'left-to-right':
                                 to_add_rels.add((rel1[2] if rel1[3] == u'out' else rel1[0],
                                                  rs_label,
                                                  rel2[2] if rel2[3] == u'out' else rel2[0]))
-                            else:
+                            else:  # right to left
                                 to_add_rels.add((rel2[2] if rel2[3] == u'out' else rel2[0],
                                                  rs_label,
                                                  rel1[2] if rel1[3] == u'out' else rel1[0]))
+                            '''
                             # print '!@$@!!!!!!!!!!!!!!!!!!!!!!!!'
                             to_remove_rels.add(rel1[:3])  # Mark these relationship to remove
                             to_remove_rels.add(rel2[:3])
@@ -1014,3 +1081,76 @@ def unicode_csv_reader(unicode_csv_data, dialect=csv.excel, **kwargs):
         yield [unicode(cell, 'utf-8') for cell in row]
 
 
+# Refine a sentence by replacing its reference be the referee word/phrase
+# @param: a sentence
+# @return: refined sentence
+def coreference_refine(text):
+    if not text.strip():
+        return text
+    tokens = [[tok for tok in word_tokenize(sen)] for sen in sent_tokenize(text)]
+    rs_tks = tokens
+    parse_rs = None
+    try:
+        # parse = server.parse(text)
+        threadLock.acquire()
+        parse_rs = loads(server.parse(text))
+        threadLock.release()
+        # parse_rs = loads(parse)
+    except Exception as detail:
+        maybe_print("[W] Can't parse sentence this sentence for coreference \"{0}...\"\n --> Error: {1}"
+                    .format(text[:min(30,len(text))],detail), 2)
+        threadLock.release()
+    try:
+        if not parse_rs or 'coref' not in parse_rs:
+            return text
+        for group in parse_rs['coref']:
+            for s, t in group:
+                # print len(rs_tks[s[1]])
+                if s[0] and t[0] and len(s[0]) < 50 and len(t[0]) < 50:
+                    # calculate size differences:
+                    diff = (s[4] - s[3]) - (t[4] - t[3])
+                    # Remove the reference
+                    # print rs_tks[s[1]], s[3], s[4]
+                    for i in xrange(s[3], s[4]):
+                        rs_tks[s[1]].pop(s[3])
+                    if diff == 0:
+                        # Add the referee
+                        starting_pos = s[3]
+                        for i in xrange(t[3], t[4]):
+                            rs_tks[s[1]].insert(starting_pos, tokens[t[1]][i])
+                            starting_pos += 1
+                    elif diff > 0:  # to-be-replace is greater than to replace
+                        # Add the referee
+                        starting_pos = s[3]
+                        for i in xrange(t[3], t[4]):
+                            #if i >= t[4]:
+                            #    rs_tks[s[1]].insert(starting_pos, u"")
+                            #else:
+                            rs_tks[s[1]].insert(starting_pos, tokens[t[1]][i])
+                            starting_pos += 1
+                        for i in xrange(0,diff):
+                            rs_tks[s[1]].insert(starting_pos, u"")
+                            starting_pos += 1
+                    else:  # to-be-replace is greater than to replace
+                        # Add the referee
+                        starting_pos = s[3]
+                        for i in xrange(t[3], t[4] + diff):
+                            if i == t[4] + diff -1:
+                                item = u""
+                                for j in xrange(i, t[4]):
+                                    item = item + u" " + tokens[t[1]][j]
+                                item = item[1:]
+                                rs_tks[s[1]].insert(starting_pos, item)
+                            else:
+                                rs_tks[s[1]].insert(starting_pos, tokens[t[1]][i])
+                                starting_pos += 1
+                # print len(rs_tks[s[1]])
+        rs = u" ".join([u" ".join(s_list) for s_list in rs_tks])
+        if rs:
+            return rs
+        else:
+            return text
+    except Exception as detail:
+        maybe_print("[W] --> unable to extract co-reference for sentence: \"{0}...\"\n     --> Error: {1}"
+                    .format(text[:min(30,len(text))],detail), 2)
+        return text

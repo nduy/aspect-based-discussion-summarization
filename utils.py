@@ -28,6 +28,7 @@ cucco = Cucco()
 # Connect to core nLP server
 server = jsonrpc.ServerProxy(jsonrpc.JsonRpc20(),jsonrpc.TransportTcpIp(addr=("127.0.0.1", 8080)))
 
+
 normalizations = [
     'remove_accent_marks',
     ('replace_urls', {'replacement': ''}),
@@ -41,10 +42,10 @@ normalizations = [
 #   0: always print
 #   1: sometime print
 #   2: rarely print
-def maybe_print(text, command_verbality=1):
+def maybe_print(text, command_verbality=1, alias=""):
     if script_verbality > 0:
         if script_verbality >= command_verbality:
-            print text
+            print '[{0}] {1}'.format(alias,text)
 
 
 # flattening list of sublist into a single list
@@ -180,75 +181,6 @@ def text_preprocessing(rawText):
     txt = txt[:m.start()+2] + u" " + txt[m.end()-1:] if m else txt
     txt = replace_all(replace_pattern,txt)
     return txt
-
-
-# Refine a sentence by replacing its reference be the referee word/phrase
-# @param: a sentence
-# @return: refined sentence
-def coreference_refine(text):
-    if not text.strip():
-        return text
-    tokens = [[tok for tok in word_tokenize(sen)] for sen in sent_tokenize(text)]
-    rs_tks = tokens
-    parse_rs = None
-    try:
-        parse_rs = loads(server.parse(text))
-    except Exception:
-        maybe_print("[W] Can't parse sentence \"{0}...\"".format(text[:30]), 2)
-    # print parse_rs
-    try:
-        if not parse_rs or 'coref' not in parse_rs:
-            return text
-        for group in parse_rs['coref']:
-            for s, t in group:
-                # print len(rs_tks[s[1]])
-                if s[0] and t[0] and len(s[0]) < 50 and len(t[0]) < 50:
-                    # calculate size differences:
-                    diff = (s[4] - s[3]) - (t[4] - t[3])
-                    # Remove the reference
-                    # print rs_tks[s[1]], s[3], s[4]
-                    for i in xrange(s[3], s[4]):
-                        rs_tks[s[1]].pop(s[3])
-                    if diff == 0:
-                        # Add the referee
-                        starting_pos = s[3]
-                        for i in xrange(t[3], t[4]):
-                            rs_tks[s[1]].insert(starting_pos, tokens[t[1]][i])
-                            starting_pos += 1
-                    elif diff > 0:  # to-be-replace is greater than to replace
-                        # Add the referee
-                        starting_pos = s[3]
-                        for i in xrange(t[3], t[4]):
-                            #if i >= t[4]:
-                            #    rs_tks[s[1]].insert(starting_pos, u"")
-                            #else:
-                            rs_tks[s[1]].insert(starting_pos, tokens[t[1]][i])
-                            starting_pos += 1
-                        for i in xrange(0,diff):
-                            rs_tks[s[1]].insert(starting_pos, u"")
-                            starting_pos += 1
-                    else:  # to-be-replace is greater than to replace
-                        # Add the referee
-                        starting_pos = s[3]
-                        for i in xrange(t[3], t[4] + diff):
-                            if i == t[4] + diff -1:
-                                item = u""
-                                for j in xrange(i, t[4]):
-                                    item = item + u" " + tokens[t[1]][j]
-                                item = item[1:]
-                                rs_tks[s[1]].insert(starting_pos, item)
-                            else:
-                                rs_tks[s[1]].insert(starting_pos, tokens[t[1]][i])
-                                starting_pos += 1
-                # print len(rs_tks[s[1]])
-        rs = u" ".join([u" ".join(s_list) for s_list in rs_tks])
-        if rs:
-            return rs
-        else:
-            return text
-    except Exception:
-        maybe_print("[W] --> unable to extract co-reference for sentence: \"{0}...\"".format(text[:30]), 2)
-        return text
 
 
 # Generate the JSON code from the networkx graph structure and perform node coloring
