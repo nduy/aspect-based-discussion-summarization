@@ -224,16 +224,20 @@ def generate_json_from_graph(g):
     for edge in g.edges(data=True):  # edge is a tuple (source,target,data)
         item = dict()
         item['id'] = edge[0]+'|'+edge[1]
+        label_counts = Counter([e.strip() for e in edge[2]['label'].split(',')])
+
         if g.edge[edge[0]][edge[1]]['weight']:
             w = g.edge[edge[0]][edge[1]]['weight']
             item['value'] = w
-            item['title'] = "freq: " + str(w)
+            item['title'] = "*Freq: {0}\n*Labels:{1}".format(w, '<br>  -'.join([l+'^'+str(c)
+                                                                                for l,c in label_counts.most_common()]))
         #  if G.edge[edge[0]][edge[1]]['label']:
         #    item['label'] = G.edge[edge[0]][edge[1]]['label']
         item['from'] = edge[0]
         item['to'] = edge[1]
-        counts = Counter([e.strip() for e in edge[2]['label'].split(',')]).most_common()
-        item['label'] = ', '.join([l+'^'+str(c) for l,c in counts])
+
+        item['label'] = label_counts.most_common(1)[0][0] # Get the label of the mmost common relationship
+
         result['edges'].append(item)
 
     return result

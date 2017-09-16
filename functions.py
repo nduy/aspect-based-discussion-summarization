@@ -319,7 +319,6 @@ def build_graph_from_text(txt, group_id='_', member_id='_'):
 
 
 # This function build a directed graph from a
-
 # Build a graph from a text ---- Directional implementation
 # This function build a directed graph fom a piece of text
 def build_directed_graph_from_text(txt, group_id='', member_id=''):
@@ -425,6 +424,8 @@ class DirGraphExtractor (threading.Thread):
 # Pruning the graph according to restrictions in options
 def prune_graph(graph):
     maybe_print("Start pruning aspect graph.", 1)
+    ori_nnode = graph.number_of_nodes()
+    ori_nedge = graph.number_of_edges()
     options = prune_options
     g = graph
     # Load options
@@ -452,6 +453,7 @@ def prune_graph(graph):
     RE_PATTERN = '.+'       # Regular expression pattern to filter out the node label
     WHITE_NODES_LIST = []   # While list of words to be kept
     BLACK_NODE_LIST = []    # Black list of words to be destroyed
+    BLACK_DEPENDENCIES = [] # Black list of dependency to be destroyed
 
     if 'num_min_nodes' in options:
         NUM_MIN_NODES = options['num_min_nodes']
@@ -484,6 +486,10 @@ def prune_graph(graph):
 
     if 'black_node_labels' in options:
         BLACK_NODE_LIST = set(options['black_node_labels'])
+
+    if 'black_dependencies' in options:
+        BLACK_DEPENDENCIES = set(options['black_dependencies'])
+
 
     maybe_print("Start pruning the graph.", 1)
     # :: Perform pruning
@@ -529,8 +535,8 @@ def prune_graph(graph):
     if REMOVE_ISOLATED_NODE:
         degrees = nx.degree(g)
         to_remove_nodes = [i for i in degrees if degrees[i] == 0 and g.node[i]['label'] not in WHITE_NODES_LIST]
-        for edge in g.edges():
-            if (edge[0] in to_remove_nodes) or (edge[1] in to_remove_nodes):
+        for edge in g.edges(data=True):
+            if (edge[0] in to_remove_nodes) or (edge[1] in to_remove_nodes) or (edge[2]['label'] in BLACK_DEPENDENCIES):
                 to_remove_edges.append(edge)
         g.remove_nodes_from(to_remove_nodes)
         g.remove_edges_from(to_remove_edges)
@@ -538,8 +544,8 @@ def prune_graph(graph):
     # :: Done pruning
     maybe_print("--> Graph PRUNNING completed.\n    Number of nodes: {0}\n    Number of edges: {1}"
                 .format(len(g.nodes()), len(g.edges())),2)
-    maybe_print("--> {0} nodes removed. {1} edges removed.".format(len(graph.nodes()) - len(g.nodes()),
-                                                                   len(graph.edges()) - len(g.edges())),2)
+    maybe_print("--> {0} nodes removed. {1} edges removed.".format(ori_nnode - g.number_of_nodes(),
+                                                                   ori_nedge - g.number_of_edges()),2)
     return g
 
 
@@ -563,11 +569,12 @@ def compute_sentiment_score(g):
 # Extract a graph from a sentence
 # @param: a sentence, and filtering options
 # @output: 1. a list of dependencies 2. a list of keys, 3. the sentence after grouped compounds/entities
-def dep_extract_from_sent(sentence, filter_opt):
-    # blob = TextBlob(sentence)
+def dep_extract_from_sent(sent, filter_opt):
+    sentence = sent
+    blob = TextBlob(sentence)
     # print blob.noun_phrases
-    # for phrase in blob.noun_phrases:
-    #    sentence = sentence.replace(phrase,phrase.replace(' ','_'))
+    for phrase in blob.noun_phrases:
+        sentence = sentence.replace(phrase,phrase.replace(u' ',u'_'))
     # print sentence
     '''
     result = dep_parser.raw_parse(sentence)
@@ -597,7 +604,7 @@ def dep_extract_from_sent(sentence, filter_opt):
     raw_results = []
     # print parse_result[u'sentences'][0][u'dependencies']
     for e in parse_result[u'sentences'][0][u'dependencies']:
-        r = e[0]
+        r = e[0].split(u":")[0]
         s = e[1]
         t = e[2]
         if r not in [u'root',u'punct'] and s in pos_dict and t in pos_dict and len(s)>1 and len(t)>1:
@@ -619,8 +626,8 @@ def dep_extract_from_sent(sentence, filter_opt):
         to_replace_keys = dict()
         for (s, s_tag), r, (t, t_tag) in filter_rel_result:
             for rule in dep_opt['custom_nodes_contract']['rule_set']:
-                if rule['from_pos'] == s_tag and rule['to_pos']== t_tag and rule['rel_name']==r:
-                    keyword = t + '_' + s
+                if rule['from_pos'] == s_tag and rule['to_pos'] == t_tag and rule['rel_name'] == r:
+                    keyword = t + u'_' + s if rule['rs_direction'] == u'1-2' else s + u'_' + t
                     pos = rule['rs_pos']
                     to_replace_keys[s] = {'key': keyword, 'tag': pos}
                     to_replace_keys[t] = {'key': keyword, 'tag': pos}
@@ -670,6 +677,9 @@ def dep_extract_from_sent(sentence, filter_opt):
                            and r['rel_direction2'] == rel2[3] and r['n_pos'] == tag:  # Matched
                             node1 = rel1[2][0] if rel1[3] == u'out' else rel1[0][0]
                             node3 = rel2[2][0] if rel2[3] == u'out' else rel2[0][0]
+                            if node1 == node3:  # skip duplicate label
+                                continue
+
                             rs_label = r['rs_label'].replace(u'{n_label}', en.verb.infinitive(node))\
                                                     .replace(u'{l_label}', en.verb.infinitive(node1)) \
                                                     .replace(u'{r_label}', en.verb.infinitive(node3))
@@ -698,7 +708,7 @@ def dep_extract_from_sent(sentence, filter_opt):
                                 to_add_rels.add((rel1[2] if rel1[3] == u'out' else rel1[0],
                                                 rs_label,
                                                 rel2[2] if rel2[3] == u'out' else rel2[0]))
-                            elif ['nodes_label'] == u'3-1':
+                            elif r['nodes_label'] == u'3-1':
                                 to_add_rels.add((rel2[2] if rel2[3] == u'out' else rel2[0],
                                                 rs_label,
                                                 rel2[2] if rel2[3] == u'out' else rel2[0]))
