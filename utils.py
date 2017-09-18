@@ -195,14 +195,17 @@ def generate_json_from_graph(g):
         # Go one by one
         item = dict()
         item['id'] = node
+        cluster_id = g.node[node]['cluster_id'] if 'cluster_id' in g.node[node] else 'unknown'
         if g.node[node]['weight']:
             w = g.node[node]['weight']
             item['value'] = w
             item['title'] = "*Freq: " + str(w) \
                             + " <br> *Sen_Score: " + str(round(g.node[node]['sentiment_score'], 4)) \
                             + " <br> *Sentiment: " + json.dumps(g.node[node]['sentiment']) \
-                            + " <br> *Group_ids: " + ','.join(list(g.node[node]['group_id']))
-
+                            + " <br> *POS: " + ','.join(list(g.node[node]['pos'])) \
+                            + " <br> *Group_ids: " + ','.join(list(g.node[node]['group_id'])) \
+                            + " <br> *Cluster_ids: " + cluster_id
+            item['cid'] = cluster_id
         if g.node[node]['label']:
             item['label'] = g.node[node]['label']
         if g.node[node]['color']:
@@ -229,7 +232,7 @@ def generate_json_from_graph(g):
         if g.edge[edge[0]][edge[1]]['weight']:
             w = g.edge[edge[0]][edge[1]]['weight']
             item['value'] = w
-            item['title'] = "*Freq: {0}\n*Labels:{1}".format(w, '<br>  -'.join([l+'^'+str(c)
+            item['title'] = "*Freq: {0} <br>*Labels:{1}".format(w, '<br>  -'.join([l+'^'+str(c)
                                                                                 for l,c in label_counts.most_common()]))
         #  if G.edge[edge[0]][edge[1]]['label']:
         #    item['label'] = G.edge[edge[0]][edge[1]]['label']
@@ -241,3 +244,10 @@ def generate_json_from_graph(g):
         result['edges'].append(item)
 
     return result
+
+
+# Check if all element of set x is in set y
+def all_x_is_in_y(setx=set(),sety=set()):
+    if len(setx-sety) > 0:
+        return False
+    return True

@@ -135,6 +135,7 @@ def build_mode_1(title, article, comments):
     rs = nx.DiGraph()
     # First add the title as central node
     rs.add_node('Central~title~_~{0}'.format(gen_mcs_only()), {"label": title[:9] + "...",
+                                                               "pos": u"TOPIC",
                                                                "weight": 1,
                                                                "group_id": ['central.group'],
                                                                "sentiment": {'pos_count': 0,
@@ -342,8 +343,8 @@ def build_directed_graph_from_text(txt, group_id='', member_id=''):
             sen_scores.append(sen_score)
 
         # Assign id and label to the nodes before adding the graph
-        assigned_nodes = [('{0}~{1}~{2}~{3}'.format(keys[i], group_id, member_id, gen_mcs_only()),
-                           {'label': keys[i], 'weight':0}) for i in xrange(0, len(keys))]
+        assigned_nodes = [('{0}~{1}~{2}~{3}'.format(keys[i][0], group_id, member_id, gen_mcs_only()),
+                           {'label': keys[i][0], 'pos': set([keys[i][1]]), 'weight':0}) for i in xrange(0, len(keys))]
         # print '---____----',assigned_nodes
         g.add_nodes_from(assigned_nodes)  # Add nodes from filtered words
         # Update nodes's weight
@@ -368,7 +369,7 @@ def build_directed_graph_from_text(txt, group_id='', member_id=''):
                                                 'neu_count': 1 if sen_score == 0 else 0}
         maybe_print('Sentence no ' + str(sen_count) + '\nNodes ' + str(g.nodes()), 3)
         sen_count += 1
-        word2id = dict(zip(keys, assigned_nodes))
+        word2id = dict(zip([k for k,_ in keys], assigned_nodes))
         filtered_edges = [(word2id[s][0], word2id[t][0], {'label': r,
                                                           'weight': 1}) for (s, _), r, (t, _) in dependencies if s != t and r]
         #  print list(edges)
@@ -454,6 +455,7 @@ def prune_graph(graph):
     WHITE_NODES_LIST = []   # While list of words to be kept
     BLACK_NODE_LIST = []    # Black list of words to be destroyed
     BLACK_DEPENDENCIES = [] # Black list of dependency to be destroyed
+    BLACK_POS = []          # Black list of part-of-speech to be destroyed
 
     if 'num_min_nodes' in options:
         NUM_MIN_NODES = options['num_min_nodes']
@@ -490,6 +492,8 @@ def prune_graph(graph):
     if 'black_dependencies' in options:
         BLACK_DEPENDENCIES = set(options['black_dependencies'])
 
+    if 'black_pos' in options:
+        BLACK_POS= set(options['black_pos'])
 
     maybe_print("Start pruning the graph.", 1)
     # :: Perform pruning
@@ -500,14 +504,20 @@ def prune_graph(graph):
     # Remove short words
     to_remove_nodes = []
     to_remove_edges = []
-    for node in g.nodes():
-        node_label = g.node[node]['label']
+    for node, data in g.nodes(data=True):
+        # print data
+        node_label = data['label']
+        node_pos = data['pos']
+        if data['group_id'] == ['central.group']:
+            continue  # Ignore the central node
         if node_label in WHITE_NODES_LIST:
             continue
         elif node_label in BLACK_NODE_LIST:
             to_remove_nodes.append(node)
-        elif len(node_label) < MIN_WORD_LENGTH or not re.match(RE_PATTERN,g.node[node]['label']):
-            to_remove_nodes.append(node)
+        elif all_x_is_in_y(setx=node_pos, sety=BLACK_POS) \
+                or len(node_label) < MIN_WORD_LENGTH \
+                or not re.match(RE_PATTERN,data['label']):
+            to_remove_nodes.append(node)  # mark the node as to be removed
     for edge in g.edges():
         if (edge[0] in to_remove_nodes) or (edge[1] in to_remove_nodes):
             to_remove_edges.append(edge)
@@ -623,11 +633,12 @@ def dep_extract_from_sent(sent, filter_opt):
 
     # Custom node contract
     if dep_opt['custom_nodes_contract'] and dep_opt['custom_nodes_contract']['enable']:
+        # FIRST ROUND
         to_replace_keys = dict()
         for (s, s_tag), r, (t, t_tag) in filter_rel_result:
             for rule in dep_opt['custom_nodes_contract']['rule_set']:
                 if rule['from_pos'] == s_tag and rule['to_pos'] == t_tag and rule['rel_name'] == r:
-                    keyword = t + u'_' + s if rule['rs_direction'] == u'1-2' else s + u'_' + t
+                    keyword = s + u'_' + t if rule['rs_direction'] == u'1-2' else t + u'_' + s
                     pos = rule['rs_pos']
                     to_replace_keys[s] = {'key': keyword, 'tag': pos}
                     to_replace_keys[t] = {'key': keyword, 'tag': pos}
@@ -646,12 +657,42 @@ def dep_extract_from_sent(sent, filter_opt):
                 key_set.add((item[2][0], t_tag))
                 edge_set.add((item[0][0],item[2][0]))
                 contracted_nodes_result.add(item)
-
         del to_replace_keys
         # print contracted_nodes_result
         contracted_nodes_result = list(contracted_nodes_result)
+        # SECOND ROUND
+        to_replace_keys = dict()
+        for (s, s_tag), r, (t, t_tag) in contracted_nodes_result:
+            for rule in dep_opt['custom_nodes_contract']['rule_set']:
+                if rule['from_pos'] == s_tag and rule['to_pos'] == t_tag and rule['rel_name'] == r:
+                    keyword = s + u'_' + t if rule['rs_direction'] == u'1-2' else t + u'_' + s
+                    pos = rule['rs_pos']
+                    to_replace_keys[s] = {'key': keyword, 'tag': pos}
+                    to_replace_keys[t] = {'key': keyword, 'tag': pos}
+                    break
+        contracted_nodes_result_2 = set()
+        key_set = set()   # Save the set of words, so we can use it for further
+        edge_set = set()  # Save all the edges
+        for (s, s_tag), r, (t, t_tag) in filter_rel_result:
+            item = (to_replace_keys[s]['key'] if s in to_replace_keys else s,
+                    to_replace_keys[s]['tag'] if s in to_replace_keys else s_tag), \
+                   r, \
+                   (to_replace_keys[t]['key'] if t in to_replace_keys else t,
+                    to_replace_keys[t]['tag'] if t in to_replace_keys else t_tag)
+            if item[0][0] != item[2][0]:
+                key_set.add((item[0][0], s_tag))
+                key_set.add((item[2][0], t_tag))
+                edge_set.add((item[0][0],item[2][0]))
+                contracted_nodes_result_2.add(item)
+        del to_replace_keys
+        contracted_nodes_result_2 = list(contracted_nodes_result_2)
+        # Assign back to the original variable
+        contracted_nodes_result = contracted_nodes_result_2
     else:
         contracted_nodes_result = filter_rel_result
+
+
+
 
     # Custom edge contract
     # Extract all existing tuples
@@ -714,16 +755,6 @@ def dep_extract_from_sent(sent, filter_opt):
                                                 rel2[2] if rel2[3] == u'out' else rel2[0]))
                             else:
                                 raise ValueError("[E] Invalid node label definition: ")
-                            '''
-                            if r['rs_direction'] == u'left-to-right':
-                                to_add_rels.add((rel1[2] if rel1[3] == u'out' else rel1[0],
-                                                 rs_label,
-                                                 rel2[2] if rel2[3] == u'out' else rel2[0]))
-                            else:  # right to left
-                                to_add_rels.add((rel2[2] if rel2[3] == u'out' else rel2[0],
-                                                 rs_label,
-                                                 rel1[2] if rel1[3] == u'out' else rel1[0]))
-                            '''
                             # print '!@$@!!!!!!!!!!!!!!!!!!!!!!!!'
                             to_remove_rels.add(rel1[:3])  # Mark these relationship to remove
                             to_remove_rels.add(rel2[:3])
@@ -792,8 +823,8 @@ def dep_extract_from_sent(sent, filter_opt):
         s_f = en.verb.infinitive(s) if en.verb.infinitive(s) else s
         t_f = en.verb.infinitive(t) if en.verb.infinitive(t) else t
         rs.append(((s_f, s_tag), r, (t_f, t_tag)))
-        keys.add(s_f)
-        keys.add(t_f)
+        keys.add((s_f,s_tag))
+        keys.add((t_f,t_tag))
 
 
     return rs, list(keys), new_sen
@@ -919,6 +950,7 @@ def graph_unify(g=None, uni_opt=None):
                                     label = unicode.join(u',', [rs.edge[n][node0]['label'], rs.edge[n][node1]['label']])
                                     add_up_weights.append((n, node0, n_n0_weight+n_n1_weight, label))
                         group_id = rs.node[node0]['group_id'] | rs.node[node1]['group_id']
+                        pos = rs.node[node0]['pos'] | rs.node[node1]['pos']
                         rs = nx.contracted_nodes(rs, node0, node1)
                         rs.node[node0]['weight'] = sum_weight
                         rs.node[node0]['label'] = rs.node[node0]['label']
@@ -927,6 +959,7 @@ def graph_unify(g=None, uni_opt=None):
                                                        'neu_count': neu_count
                                                        }
                         rs.node[node0]['group_id'] = group_id
+                        rs.node[node0]['pos'] = pos
                         # Update the weight of edges that has been added
                         if add_up_weights:
                             for s, t, sw, lb in add_up_weights:
@@ -983,7 +1016,8 @@ def graph_unify(g=None, uni_opt=None):
                                         label = unicode.join(u',',
                                                              [rs.edge[n][node0]['label'], rs.edge[n][node1]['label']])
                                         add_up_weights.append((n, node0, n_n0_weight + n_n1_weight,label))
-
+                            group_id = rs.node[node0]['group_id'] | rs.node[node1]['group_id']
+                            pos = rs.node[node0]['pos'] | rs.node[node1]['pos']
                             rs = nx.contracted_nodes(rs, node0, node1)
                             rs.node[node0]['weight'] = sum_weight
                             rs.node[node0]['label'] = rs.node[node0]['label']
@@ -991,6 +1025,8 @@ def graph_unify(g=None, uni_opt=None):
                                                            'neg_count': neg_count,
                                                            'neu_count': neu_count
                                                             }
+                            rs.node[node0]['group_id'] = group_id
+                            rs.node[node0]['pos'] = pos
                             # Update the weight of edges that has been added
                             if add_up_weights:
                                 for s, t, sw, lb in add_up_weights:
