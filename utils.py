@@ -229,13 +229,13 @@ def generate_json_from_graph(g):
         item['id'] = edge[0]+'|'+edge[1]
         label_counts = Counter([e.strip() for e in edge[2]['label'].split(',')])
 
-        if g.edge[edge[0]][edge[1]]['weight']:
-            w = g.edge[edge[0]][edge[1]]['weight']
+        if g[edge[0]][edge[1]]['weight']:
+            w = g[edge[0]][edge[1]]['weight']
             item['value'] = w
             item['title'] = "*Freq: {0} <br>*Labels:{1}".format(w, '<br>  -'.join([l+'^'+str(c)
                                                                                 for l,c in label_counts.most_common()]))
-        #  if G.edge[edge[0]][edge[1]]['label']:
-        #    item['label'] = G.edge[edge[0]][edge[1]]['label']
+        #  if G[edge[0]][edge[1]]['label']:
+        #    item['label'] = G[edge[0]][edge[1]]['label']
         item['from'] = edge[0]
         item['to'] = edge[1]
 

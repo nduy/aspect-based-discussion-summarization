@@ -544,7 +544,7 @@ def prune_graph(graph):
     to_remove_edges = []
     if REMOVE_ISOLATED_NODE:
         degrees = nx.degree(g)
-        to_remove_nodes = [i for i in degrees if degrees[i] == 0 and g.node[i]['label'] not in WHITE_NODES_LIST]
+        to_remove_nodes = [_id for _id,_deg in degrees if _deg == 0 and g.node[_id]['label'] not in WHITE_NODES_LIST]
         for edge in g.edges(data=True):
             if (edge[0] in to_remove_nodes) or (edge[1] in to_remove_nodes) or (edge[2]['label'] in BLACK_DEPENDENCIES):
                 to_remove_edges.append(edge)

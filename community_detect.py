@@ -12,8 +12,28 @@ from networkx.algorithms import community
 pruned_graph = nx.read_gpickle("tmp/pruned_graph.gpickle")
 dir_graph = pruned_graph.to_undirected()
 
-communities_generator = community.girvan_newman(pruned_graph)
-
+############## girvan_newman method
+communities_generator = community.girvan_newman(dir_graph)
+communities_generator = community.girvan_newman(Gc)
 top_level_communities = next(communities_generator)
 
 next_level_communities = next(communities_generator)
+sorted(map(sorted, next_level_communities))
+
+
+############## Kernighan–Lin algorithm
+section1,section2 = community.kernighan_lin_bisection(dir_graph)
+section1,section2 = community.kernighan_lin_bisection(Gc)
+subgraph1 = dir_graph.subgraph(list(section1))
+subgraph2 = dir_graph.subgraph(list(section2))
+community.kernighan_lin_bisection(subgraph1)
+community.kernighan_lin_bisection(subgraph2)
+
+#############33 Fluid Communities
+Gc = max(nx.connected_component_subgraphs(dir_graph), key=len)
+list(community.asyn_fluidc(Gc,6))
+list(community.asyn_fluidc(Gc,4))
+
+############   K-Clique
+list(community.k_clique_communities(Gc, 6))
+
