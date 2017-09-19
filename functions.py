@@ -134,14 +134,14 @@ def build_mode_0(threads):
 def build_mode_1(title, article, comments):
     rs = nx.DiGraph()
     # First add the title as central node
-    rs.add_node('Central~title~_~{0}'.format(gen_mcs_only()), {"label": title[:9] + "...",
-                                                               "pos": u"TOPIC",
-                                                               "weight": 1,
-                                                               "group_id": ['central.group'],
-                                                               "sentiment": {'pos_count': 0,
-                                                                             'neu_count': 1,
+    rs.add_node('Central~title~_~{0}'.format(gen_mcs_only()), label = title[:9] + "...",
+                                                              pos = u"TOPIC",
+                                                              weight = 1,
+                                                              group_id = ['central.group'],
+                                                              sentiment= {'pos_count': 0,
+                                                                           'neu_count': 1,
                                                                              'neg_count': 0}
-                                                               })
+                                                               )
 
     # Second work on the article
     maybe_print("\nStart building aspect graph for the ARTICLE.", 2)
@@ -306,9 +306,9 @@ def build_graph_from_text(txt, group_id='_', member_id='_'):
             # Update edges's weight
             for u, v in filtered_edges:
                 try:
-                    g.edge[u][v]['weight'] += 1
+                    g[u][v]['weight'] += 1
                 except KeyError:
-                    g.edge[u][v]['weight'] = 1
+                    g[u][v]['weight'] = 1
             maybe_print('Edges ' + str(g.edges()) + '\n', 3)
         sen_count += 1  # Increase the sentence count index
     if len(g.nodes()) == 0:
@@ -379,11 +379,11 @@ def build_directed_graph_from_text(txt, group_id='', member_id=''):
             # Update edges's weight
             for u, v, r in filtered_edges:
                 try:
-                    g.edge[u][v]['weight'] += 1
-                    g.edge[u][v]['label'] = u'{0},{1}'.format(g.get_edge_data(u,v)['label'], r['label'])
+                    g[u][v]['weight'] += 1
+                    g[u][v]['label'] = u'{0},{1}'.format(g.get_edge_data(u,v)['label'], r['label'])
                 except KeyError:
-                    g.edge[u][v]['weight'] = 1
-                    g.edge[u][v]['label'] = r['label']
+                    g[u][v]['weight'] = 1
+                    g[u][v]['label'] = r['label']
             maybe_print('Edges ' + str(g.edges()) + '\n', 3)
         sen_count += 1  # Increase the sentence count index
     if len(g.nodes()) == 0:
@@ -531,7 +531,7 @@ def prune_graph(graph):
         g.remove_nodes_from(to_remove_nodes)
 
     if EDGE_FREQ_MIN > 1:
-        to_remove_edges = [(s, t) for (s, t) in g.edges() if g.edge[s][t]['weight'] < EDGE_FREQ_MIN]
+        to_remove_edges = [(s, t) for (s, t) in g.edges() if g[s][t]['weight'] < EDGE_FREQ_MIN]
         g.remove_edges_from(to_remove_edges)
 
     # Filter nodes by degree
@@ -936,18 +936,18 @@ def graph_unify(g=None, uni_opt=None):
                         if share_neighbors:
                             #  print share_neighbors
                             for n in share_neighbors:
-                                n0_n_weight = rs.edge[node0][n]['weight'] if rs.has_edge(node0, n) else None
-                                n_n0_weight = rs.edge[n][node0]['weight'] if rs.has_edge(n, node0) else None
-                                n1_n_weight = rs.edge[node1][n]['weight'] if rs.has_edge(node1, n) else None
-                                n_n1_weight = rs.edge[n][node1]['weight'] if rs.has_edge(n, node1) else None
+                                n0_n_weight = rs[node0][n]['weight'] if rs.has_edge(node0, n) else None
+                                n_n0_weight = rs[n][node0]['weight'] if rs.has_edge(n, node0) else None
+                                n1_n_weight = rs[node1][n]['weight'] if rs.has_edge(node1, n) else None
+                                n_n1_weight = rs[n][node1]['weight'] if rs.has_edge(n, node1) else None
                                 if n0_n_weight and n1_n_weight:
-                                    # print rs.edge[node0][n]['label'], rs.edge[node1][n]['label']
-                                    label = unicode.join(u',',[rs.edge[node0][n]['label'], rs.edge[node1][n]['label']])
-                                    #     rs.edge[node0][n]['label'] + u',' + rs.edge[node1][n]['weight']
+                                    # print rs[node0][n]['label'], rs[node1][n]['label']
+                                    label = unicode.join(u',',[rs[node0][n]['label'], rs[node1][n]['label']])
+                                    #     rs[node0][n]['label'] + u',' + rs[node1][n]['weight']
                                     add_up_weights.append((node0, n, n0_n_weight+n1_n_weight, label))
                                 if n_n0_weight and n_n1_weight:
-                                    # label = rs.edge[n][node0]['label'] + u"," + rs.edge[n][node1]['weight']
-                                    label = unicode.join(u',', [rs.edge[n][node0]['label'], rs.edge[n][node1]['label']])
+                                    # label = rs[n][node0]['label'] + u"," + rs[n][node1]['weight']
+                                    label = unicode.join(u',', [rs[n][node0]['label'], rs[n][node1]['label']])
                                     add_up_weights.append((n, node0, n_n0_weight+n_n1_weight, label))
                         group_id = rs.node[node0]['group_id'] | rs.node[node1]['group_id']
                         pos = rs.node[node0]['pos'] | rs.node[node1]['pos']
@@ -963,8 +963,8 @@ def graph_unify(g=None, uni_opt=None):
                         # Update the weight of edges that has been added
                         if add_up_weights:
                             for s, t, sw, lb in add_up_weights:
-                                rs.edge[s][t]['weight'] = sw
-                                rs.edge[s][t]['label'] = lb
+                                rs[s][t]['weight'] = sw
+                                rs[s][t]['label'] = lb
                         # Update the match lst
                         inter_match.pop(0)  # Remove first element
             # Implementation of INTRA cluster unification
@@ -1002,19 +1002,19 @@ def graph_unify(g=None, uni_opt=None):
                             if share_neighbors:
                                 #  print share_neighbors
                                 for n in share_neighbors:
-                                    n0_n_weight = rs.edge[node0][n]['weight'] if rs.has_edge(node0, n) else None
-                                    n_n0_weight = rs.edge[n][node0]['weight'] if rs.has_edge(n, node0) else None
-                                    n1_n_weight = rs.edge[node1][n]['weight'] if rs.has_edge(node1, n) else None
-                                    n_n1_weight = rs.edge[n][node1]['weight'] if rs.has_edge(n, node1) else None
+                                    n0_n_weight = rs[node0][n]['weight'] if rs.has_edge(node0, n) else None
+                                    n_n0_weight = rs[n][node0]['weight'] if rs.has_edge(n, node0) else None
+                                    n1_n_weight = rs[node1][n]['weight'] if rs.has_edge(node1, n) else None
+                                    n_n1_weight = rs[n][node1]['weight'] if rs.has_edge(n, node1) else None
                                     if n0_n_weight and n1_n_weight:
-                                        # label = rs.edge[node0][n]['label'] + u"," + rs.edge[node1][n]['weight']
+                                        # label = rs[node0][n]['label'] + u"," + rs[node1][n]['weight']
                                         label = unicode.join(u',',
-                                                             [rs.edge[node0][n]['label'], rs.edge[node1][n]['label']])
+                                                             [rs[node0][n]['label'], rs[node1][n]['label']])
                                         add_up_weights.append((node0, n, n0_n_weight + n1_n_weight,label))
                                     if n_n0_weight and n_n1_weight:
-                                        # label = rs.edge[n][node0]['label'] + u"," + rs.edge[n][node1]['weight']
+                                        # label = rs[n][node0]['label'] + u"," + rs[n][node1]['weight']
                                         label = unicode.join(u',',
-                                                             [rs.edge[n][node0]['label'], rs.edge[n][node1]['label']])
+                                                             [rs[n][node0]['label'], rs[n][node1]['label']])
                                         add_up_weights.append((n, node0, n_n0_weight + n_n1_weight,label))
                             group_id = rs.node[node0]['group_id'] | rs.node[node1]['group_id']
                             pos = rs.node[node0]['pos'] | rs.node[node1]['pos']
@@ -1030,8 +1030,8 @@ def graph_unify(g=None, uni_opt=None):
                             # Update the weight of edges that has been added
                             if add_up_weights:
                                 for s, t, sw, lb in add_up_weights:
-                                    rs.edge[s][t]['weight'] = sw
-                                    rs.edge[s][t]['label'] = lb
+                                    rs[s][t]['weight'] = sw
+                                    rs[s][t]['label'] = lb
                             intra_match.pop(0)  # Remove first element
     else:
         return g
