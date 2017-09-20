@@ -16,9 +16,9 @@ import re
 from config import script_verbality
 from config import replace_pattern
 import jsonrpc
-from glove import Glove
 import json
 from collections import Counter
+from scipy.spatial.distance import cosine
 
 # Normalization and cleaning engine
 cucco = Cucco()
@@ -231,7 +231,7 @@ def generate_json_from_graph(g):
             w = g[edge[0]][edge[1]]['weight']
             item['value'] = w
             item['title'] = "*Freq: {0} <br>*Labels: <br>{1}".format(w, '<br>  -'.join([l+'^'+str(c)
-                                                                                for l,c in label_counts.most_common()]))
+                                                            for l,c in label_counts.most_common()]))
         #  if G[edge[0]][edge[1]]['label']:
         #    item['label'] = G[edge[0]][edge[1]]['label']
         item['from'] = edge[0]
@@ -250,10 +250,11 @@ def all_x_is_in_y(setx=set(),sety=set()):
         return False
     return True
 
+
 # Implement the cosine similarity calculating using stanford Glove
 def cosine_similarity(word1,word2,model):
     w1=word1
-    w2=word1
+    w2=word2
     if word1 not in model.dictionary:
         w1 = word1.split(u'_')[-1]  # get the last element after splitting compound
         if w1 not in model.dictionary:
@@ -263,6 +264,6 @@ def cosine_similarity(word1,word2,model):
         if w2 not in model.dictionary:
             return 0
     try:
-        return 1 - (model.word_vectors[model.dictionary[w1]],model.word_vectors[model.dictionary[w2]])
-    except:  # key does
+        return 1 - cosine(model.word_vectors[model.dictionary[w1]],model.word_vectors[model.dictionary[w2]])
+    except Exception as ex:  # key does
         return 0.0

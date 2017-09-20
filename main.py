@@ -14,8 +14,8 @@ import time
 
 start_time = time.time()
 if __name__ == "__main__":
-    comments = read_comment_file("data/comments_article0.txt", read_as_threads=False)
-    title, article = read_article_file("data/article0.txt")
+    comments = read_comment_file("data/comments_article0_clipped.txt", read_as_threads=False)
+    title, article = read_article_file("data/article0_clipped.txt")
 
     dataset = {'title': title,
                'article': article,
@@ -30,14 +30,17 @@ if __name__ == "__main__":
     # Prune the graph, then serialize
     pruned_graph = prune_graph(asp_graph)
     nx.write_gpickle(pruned_graph, "tmp/pruned_graph.gpickle")
+    del asp_graph
 
     # Compute sentiment scores, then serialize
     sen_graph = compute_sentiment_score(pruned_graph)
     nx.write_gpickle(sen_graph, "tmp/sen_graph.gpickle")
+    del pruned_graph
 
     # Coloring the graph by sentiment, then serialize
     colored_graph = coloring_nodes(sen_graph)
     nx.write_gpickle(sen_graph, "tmp/colored_graph.gpickle")
+    del sen_graph
 
     json_g = None
     if colored_graph.nodes():

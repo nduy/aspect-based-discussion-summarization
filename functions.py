@@ -30,6 +30,7 @@ from config import dep_opt
 from nltk.tokenize import word_tokenize
 from nltk.tokenize import sent_tokenize
 from simplejson import loads
+from glove import Glove
 
 ######################################
 # EXTRA DECLARATIONS
@@ -165,8 +166,8 @@ def build_mode_1(title, article, comments):
     rs = graph_unify(rs, uni_options)
 
     # threadLock.release()  # Release the lock that may be used while extracting graph for article
-    global server
-    server = jsonrpc.ServerProxy(jsonrpc.JsonRpc20(), jsonrpc.TransportTcpIp(addr=("127.0.0.1", 8080)))
+    # global server
+    # server = jsonrpc.ServerProxy(jsonrpc.JsonRpc20(), jsonrpc.TransportTcpIp(addr=("127.0.0.1", 8080)))
 
     maybe_print("\nStart building aspect graph for COMMENTS, add up to the article graph.",2)
     # Third work on the comments.
@@ -870,8 +871,9 @@ def graph_unify(g=None, uni_opt=None):
             ENABLE_UNIFY_BY_SIMILARITY = uop['enable'] if uop['enable'] else False
             MINIMUM_THRESHOLD = uop['threshold'] if uop['threshold'] else 0.9
             GLOVE_MODEL_FILE = uop['glove_model_file'] if uop['glove_model_file'] else '../models/glove.6B.200d.txt'
-        except:
+        except Exception as inst:
             raise ValueError("Error while parsing semantic similarity words unification options.")
+            print inst
 
     # Merge sub graph with similar keyword -> Now just
     if ENABLE_UNIFY_MATCHED_KEYWORDS:
@@ -1045,22 +1047,24 @@ def graph_unify(g=None, uni_opt=None):
                                     rs[s][t]['label'] = lb
                             intra_match.pop(0)  # Remove first element
         maybe_print(" - Finished unification by matched keywords", 2, "")
-        maybe_print(" -> Unification by mathced keywords complete! "
+        maybe_print(" -> Unification by matched keywords complete! "
                     "Number of nodes changed from {0} to {1}".format(len(g.nodes()), len(rs.nodes())), 2)
     else:
         rs = g
 
     # END UNIFY BY SEMANTIC SIMILARITY KEYWORDS
+    # print "ENABLE_UNIFY_BY_SIMILARITY",ENABLE_UNIFY_BY_SIMILARITY
     if ENABLE_UNIFY_BY_SIMILARITY:
         maybe_print(" - Start unification by matched keywords", 2, "")
         maybe_print("   + Loading model from " + GLOVE_MODEL_FILE, 2, "")
         try:
             global glove_model
-            glove_model = Glove.load_stanford('GLOVE_MODEL_FILE')
+            glove_model = Glove.load_stanford(GLOVE_MODEL_FILE)
             maybe_print("   + Model loading completed1", 2, "")
-        except Exception:
+        except Exception as inst:
             maybe_print("   + Error while loading model from {0}. "
                         "Semantic similarity node merging SKIPPED! ".format(GLOVE_MODEL_FILE), 2, "E")
+            print inst
             return rs
         rs_semantic = rs  # clone the network before modifying
         # First determine pairs of node that similar to each other
@@ -1071,8 +1075,10 @@ def graph_unify(g=None, uni_opt=None):
                         and (n1,n2) not in to_contract_pairs and (n2,n1) not in to_contract_pairs \
                         and cosine_similarity(d1['label'], d2['label'], glove_model) >= MINIMUM_THRESHOLD:
                     to_contract_pairs.add((n1,n2))
+        maybe_print("  -> Found {0} pairs whose similarity greater or equal threshold {1}."
+                    .format(len(to_contract_pairs), MINIMUM_THRESHOLD))
+        print to_contract_pairs
         # Now perform the contraction
-
         while len(to_contract_pairs) > 0:
             node0 = list(to_contract_pairs)[0][0]
             node1 = list(to_contract_pairs)[0][1]
@@ -1126,13 +1132,11 @@ def graph_unify(g=None, uni_opt=None):
 
         maybe_print(" - Finished unification by semantic similarity fo  keywords", 2, "")
         maybe_print(" -> Unification by semantic similarity  complete! "
-                    "Number of nodes changed from {0} to {1}".format(len(rs.nodes()), len(rs_semantic.nodes())), 2)
+                    "Totally, Number of nodes changed from {0} to {1}"
+                    .format(len(g.nodes()), len(rs_semantic.nodes())), 2)
         return rs_semantic
     else:
         return rs
-
-
-
 
 
 # Read a data file, cluster threads of discussion
