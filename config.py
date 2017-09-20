@@ -15,7 +15,6 @@ build_options = {
     'n_thread': 10  # number of thread for Multithreading
 }
 
-
 # Options for prunning the graph
 prune_options = {
     'enable_prunning': True,            # Enable/Disable prunning
@@ -38,11 +37,16 @@ prune_options = {
 script_verbality = 2     # 0: silent, 1: print main info, 2: print some techs info, 3. print debugging info
 
 uni_options = {
-    'unify_matched_keywords': {
+    'unify_matched_keywords': {         # Merely merge keywords that are completely matched together
         'enable': True,
         'intra_cluster_unify': True,
         'inter_cluster_unify': True,
         'unification_mode': 'contract'  # modes: link, contract
+    },
+    'unify_semantic_similarity': {
+        'enable': True,
+        'threshold': 0.9,   # Those nodes whose similarity greater than this threshold will be unified
+        'glove_model_file': '../models/glove.6B.200d.txt'
     }
 }
 

@@ -34,8 +34,8 @@
 			    <option value="pt-br">Português</option>
 			    <option value="ru">Русский </option>
 			  </select>
+			  <input type="button" onclick="clusterByCid()" value="Cluster nodes by topics" id="clusterButton"> 
 			</p>
-			
 			<div id="node-popUp">
 			  <span id="node-operation">node</span> <br>
 			  <table style="margin:auto;">

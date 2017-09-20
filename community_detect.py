@@ -9,6 +9,17 @@
 import networkx as nx
 from networkx.algorithms import community
 
+import argparse
+
+graph = None
+
+parser = argparse.ArgumentParser(description='Load a file, perform community detection.')
+parser.add_argument('-f', action='store', dest='graph', help='Input graph')
+
+if __name__ == "__main__":
+    print parser.parse_args()
+
+'''
 pruned_graph = nx.read_gpickle("tmp/pruned_graph.gpickle")
 dir_graph = pruned_graph.to_undirected()
 
@@ -36,4 +47,4 @@ list(community.asyn_fluidc(Gc,4))
 
 ############   K-Clique
 list(community.k_clique_communities(Gc, 6))
-
+'''

@@ -221,3 +221,37 @@ table.legend_table {
   background: url(img/lang.png) 90% / 13% no-repeat #eee;
   font-family: Sans-serif, serif;
 }
+
+#clusterButton{
+  margin: 1px;
+  border: 1px solid #111;
+  background: transparent;
+  width: 170px;
+  padding: 4px 31px 4px 4px;
+  font-size: 11px;
+  border: 1px solid #ccc;
+  height: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(img/cluster.png) 90% / 10% no-repeat #eee;
+  font-family: Sans-serif, serif;
+  color: #fff;
+  background-color: #6496c8;
+  text-shadow: -1px 1px #417cb8;
+  border: none;
+  border-radius: 2px;
+  margin-left: 5vw;
+}
+
+#clusterButton:hover,
+	section.flat button.hover {
+	  background-color: #346392;
+	  text-shadow: -1px 1px #27496d;
+	}
+
+#clusterButton:active,
+#clusterButton.active {
+	  background-color: #27496d;
+	  text-shadow: -1px 1px #193047;
+	}

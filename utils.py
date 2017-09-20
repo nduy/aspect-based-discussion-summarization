@@ -16,9 +16,7 @@ import re
 from config import script_verbality
 from config import replace_pattern
 import jsonrpc
-from simplejson import loads
-from nltk.tokenize import sent_tokenize
-from nltk.tokenize import word_tokenize
+from glove import Glove
 import json
 from collections import Counter
 
@@ -232,7 +230,7 @@ def generate_json_from_graph(g):
         if g[edge[0]][edge[1]]['weight']:
             w = g[edge[0]][edge[1]]['weight']
             item['value'] = w
-            item['title'] = "*Freq: {0} <br>*Labels:{1}".format(w, '<br>  -'.join([l+'^'+str(c)
+            item['title'] = "*Freq: {0} <br>*Labels: <br>{1}".format(w, '<br>  -'.join([l+'^'+str(c)
                                                                                 for l,c in label_counts.most_common()]))
         #  if G[edge[0]][edge[1]]['label']:
         #    item['label'] = G[edge[0]][edge[1]]['label']
@@ -251,3 +249,20 @@ def all_x_is_in_y(setx=set(),sety=set()):
     if len(setx-sety) > 0:
         return False
     return True
+
+# Implement the cosine similarity calculating using stanford Glove
+def cosine_similarity(word1,word2,model):
+    w1=word1
+    w2=word1
+    if word1 not in model.dictionary:
+        w1 = word1.split(u'_')[-1]  # get the last element after splitting compound
+        if w1 not in model.dictionary:
+            return 0
+    if word2 not in model.dictionary:
+        w2 = word2.split(u'_')[-1]  # get the last element after splitting compound
+        if w2 not in model.dictionary:
+            return 0
+    try:
+        return 1 - (model.word_vectors[model.dictionary[w1]],model.word_vectors[model.dictionary[w2]])
+    except:  # key does
+        return 0.0

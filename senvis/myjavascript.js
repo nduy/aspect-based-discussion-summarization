@@ -3,6 +3,7 @@ var dataset_options = {};
 var nodesDataset = new vis.DataSet(dataset_options); 
 var edgesDataset = new vis.DataSet(dataset_options);
 var network = null;
+var data = null;
 var allNodes;
 var allEdges;
 var highlightActive = false;
@@ -55,7 +56,7 @@ function draw() {
 	//Option for graph
 	var options = {
 	   autoResize: true,
-		height: '100%',
+	   height: '100%',
 	   width: '100%',
 	   locale: document.getElementById('locale').value,
 	   manipulation: {
@@ -185,7 +186,7 @@ function draw() {
 		  
 	};	
 	
-	var data = {
+	data = {
 	  nodes: nodesDataset,
 	  edges: edgesDataset
 		}; 
@@ -200,7 +201,15 @@ function draw() {
 	color_book = {};
 	for (var nodeId in allNodes) {
      color_book[nodeId] = allNodes[nodeId].color;
-   }
+	}
+     network.on("selectNode", function(params) {
+      if (params.nodes.length == 1) {
+          if (network.isCluster(params.nodes[0]) == true) {
+              network.openCluster(params.nodes[0]);
+          }
+      }
+	});
+	
 	/*	network.on("click", function (params) {
         params.event = "[original event]";
         //document.getElementById('eventSpan').innerHTML = '<h2>Click event:</h2>' + JSON.stringify(params, null, 4);
@@ -417,28 +426,39 @@ function neighbourhoodHighlight(params) {
 
    // all second degree nodes get a different color and their label back
    for (i = 0; i < allConnectedNodes.length; i++) {
-     allNodes[allConnectedNodes[i]].color = 'rgba(150,150,150,0.75)';
-     if (allNodes[allConnectedNodes[i]].hiddenLabel !== undefined) {
-       allNodes[allConnectedNodes[i]].label = allNodes[allConnectedNodes[i]].hiddenLabel;
-       allNodes[allConnectedNodes[i]].hiddenLabel = undefined;
-     }
+	 if (allNodes[allConnectedNodes[i]] !== undefined) {
+		if (allNodes[allConnectedNodes[i]].color !== undefined) {
+			allNodes[allConnectedNodes[i]].color = 'rgba(150,150,150,0.75)';
+		}
+		if (allNodes[allConnectedNodes[i]].hiddenLabel !== undefined) {
+			allNodes[allConnectedNodes[i]].label = allNodes[allConnectedNodes[i]].hiddenLabel;
+			allNodes[allConnectedNodes[i]].hiddenLabel = undefined;
+		}
+	}
+		   
+		 
    }
 
    // all first degree nodes get their own color and their label back
    for (i = 0; i < connectedNodes.length; i++) {
-     allNodes[connectedNodes[i]].color = color_book[connectedNodes[i]];
-     if (allNodes[connectedNodes[i]].hiddenLabel !== undefined) {
-       allNodes[connectedNodes[i]].label = allNodes[connectedNodes[i]].hiddenLabel;
-       allNodes[connectedNodes[i]].hiddenLabel = undefined;
-     }
+     if (allNodes[connectedNodes[i]] !== undefined){
+		 allNodes[connectedNodes[i]].color = color_book[connectedNodes[i]];
+		 if (allNodes[connectedNodes[i]].hiddenLabel !== undefined) {
+		   allNodes[connectedNodes[i]].label = allNodes[connectedNodes[i]].hiddenLabel;
+		   allNodes[connectedNodes[i]].hiddenLabel = undefined;
+		 }
+	 }
    }
 
    // the main node gets its own color and its label back.
-   allNodes[selectedNode].color = color_book[selectedNode];
-   if (allNodes[selectedNode].hiddenLabel !== undefined) {
-     allNodes[selectedNode].label = allNodes[selectedNode].hiddenLabel;
-     allNodes[selectedNode].hiddenLabel = undefined;
+   if (allNodes[selectedNode] !== undefined){
+		allNodes[selectedNode].color = color_book[selectedNode];
+	    if (allNodes[selectedNode].hiddenLabel !== undefined) {
+		 allNodes[selectedNode].label = allNodes[selectedNode].hiddenLabel;
+		 allNodes[selectedNode].hiddenLabel = undefined;
+	    }
    }
+   
  }
  else if (highlightActive === true) {
    // reset all nodes
@@ -502,8 +522,52 @@ function color2hex(rgb){
   ("0" + parseInt(rgb[3],10).toString(16)).slice(-2) : ori;
 }
 
-
+function clusterByCid() {
+  network.setData(data);
+  var cluster_ids = new Set();
+  var group_members = {}
+  for (key in allNodes){
+	  item = allNodes[key];
+	  if (item.cid){
+	  	  cluster_ids.add(item.cid);
+	  	  if (group_members[item.cid] === undefined){  // the cluster id wasn't there before
+			  group_members[item.cid] = [item.label];
+		  } else {
+			  group_members[item.cid].push(item.label)
+		  }
+			
+	  }
+  }
+  // console.log(cluster_ids);
+  // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
+  var clusterOptionsByData;
+  for (let cid of cluster_ids.values()){
+  // for (var i = 0; i < cluster_ids.length; i++) {
+	  // var cid = cluster_ids[i];
+	  clusterOptionsByData = {
+		  joinCondition: function (childOptions) {
+			  return childOptions.cid == cid; // the color is fully defined in the node.
+		  },
+		  processProperties: function (clusterOptions, childNodes, childEdges) {
+			  var totalMass = 0;
+			  for (var i = 0; i < childNodes.length; i++) {
+				  totalMass += childNodes[i].mass;
+			  }
+			  clusterOptions.mass = totalMass;
+			  return clusterOptions;
+		  },
+		  clusterNodeProperties: {id: 'cluster:' + cid.toString(), 
+			  borderWidth: 1, shape: 'box', 
+			  label:'Group:' + cid.toString(),
+			  title: 'Nodes: <br> - ' + group_members[cid].join('<br> - ')
+			  }
+	  };  
+	  network.cluster(clusterOptionsByData);
+  }
+}
 
 $(document).ready(function () {
 	drawFromJS();
 });
+
+

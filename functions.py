@@ -27,6 +27,9 @@ from config import prune_options
 from config import uni_options
 from config import build_options
 from config import dep_opt
+from nltk.tokenize import word_tokenize
+from nltk.tokenize import sent_tokenize
+from simplejson import loads
 
 ######################################
 # EXTRA DECLARATIONS
@@ -56,6 +59,9 @@ N_THREADS = 2
 
 # a lock for controlling server request on Multi threading
 threadLock = threading.Lock()
+
+# Model for cosine similarity computation on glove
+glove_model = None
 
 ######################################
 # FUNCTIONS
@@ -846,6 +852,9 @@ def graph_unify(g=None, uni_opt=None):
     INTER_CLUSTER_UNIFY = False
     UNIFY_MODE = 'link'  # Modes"# 'link': create a virtual link between the nodes
     # 'contract': Direct contract, sum weight
+    ENABLE_UNIFY_BY_SIMILARITY = True
+    MINIMUM_THRESHOLD = 0.9
+    GLOVE_MODEL_FILE = '../models/glove.6B.200d.txt'
     if 'unify_matched_keywords' in uni_opt:
         try:
             uop = uni_opt['unify_matched_keywords']
@@ -855,16 +864,18 @@ def graph_unify(g=None, uni_opt=None):
             UNIFY_MODE = uop['unification_mode'] if uop['unification_mode'] else 'link'
         except:
             raise ValueError("Error while parsing matched words unification options.")
+    if 'unify_semantic_similarity' in uni_opt:
+        try:
+            uop = uni_opt['unify_semantic_similarity']
+            ENABLE_UNIFY_BY_SIMILARITY = uop['enable'] if uop['enable'] else False
+            MINIMUM_THRESHOLD = uop['threshold'] if uop['threshold'] else 0.9
+            GLOVE_MODEL_FILE = uop['glove_model_file'] if uop['glove_model_file'] else '../models/glove.6B.200d.txt'
+        except:
+            raise ValueError("Error while parsing semantic similarity words unification options.")
 
     # Merge sub graph with similar keyword -> Now just
     if ENABLE_UNIFY_MATCHED_KEYWORDS:
-        # print "!!#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$44"
-        # for i in xrange(0,len(node_ids)-1):
-        #    for j in xrange(i+1,len(node_ids)):
-        #        if g.node[node_ids[i]]['label'] == g.node[node_ids[j]]['label']:  # two node have the same label
-        #            matches.add((node_ids[i],node_ids[j]))
-        # matches = list(matches)
-        # Find matches
+        maybe_print(" - Start unification by matched keywords",2,"")
         match_dict = dict()
         for node in g.nodes(data=True):
             node_id = node[0]
@@ -1033,11 +1044,95 @@ def graph_unify(g=None, uni_opt=None):
                                     rs[s][t]['weight'] = sw
                                     rs[s][t]['label'] = lb
                             intra_match.pop(0)  # Remove first element
+        maybe_print(" - Finished unification by matched keywords", 2, "")
+        maybe_print(" -> Unification by mathced keywords complete! "
+                    "Number of nodes changed from {0} to {1}".format(len(g.nodes()), len(rs.nodes())), 2)
     else:
-        return g
-    maybe_print(" -> Unification complete! Number of nodes changed from {0} to {1}".format(len(g.nodes()),
-                                                                                           len(rs.nodes())), 2)
-    return rs
+        rs = g
+
+    # END UNIFY BY SEMANTIC SIMILARITY KEYWORDS
+    if ENABLE_UNIFY_BY_SIMILARITY:
+        maybe_print(" - Start unification by matched keywords", 2, "")
+        maybe_print("   + Loading model from " + GLOVE_MODEL_FILE, 2, "")
+        try:
+            global glove_model
+            glove_model = Glove.load_stanford('GLOVE_MODEL_FILE')
+            maybe_print("   + Model loading completed1", 2, "")
+        except Exception:
+            maybe_print("   + Error while loading model from {0}. "
+                        "Semantic similarity node merging SKIPPED! ".format(GLOVE_MODEL_FILE), 2, "E")
+            return rs
+        rs_semantic = rs  # clone the network before modifying
+        # First determine pairs of node that similar to each other
+        to_contract_pairs = set()
+        for n1, d1 in rs.nodes(data=True):
+            for n2, d2 in rs.nodes(data=True):
+                if d1['label'] != d1['label'] \
+                        and (n1,n2) not in to_contract_pairs and (n2,n1) not in to_contract_pairs \
+                        and cosine_similarity(d1['label'], d2['label'], glove_model) >= MINIMUM_THRESHOLD:
+                    to_contract_pairs.add((n1,n2))
+        # Now perform the contraction
+
+        while len(to_contract_pairs) > 0:
+            node0 = list(to_contract_pairs)[0][0]
+            node1 = list(to_contract_pairs)[0][1]
+            # Sum up the weight of the two node
+            sum_weight = rs_semantic.node[node0]['weight'] + rs_semantic.node[node1]['weight']
+            # print g.node[node0]['weight'], g.node[node1]['weight']
+            # Sum up the sentiment of the two nodes
+            pos_count = rs_semantic.node[node0]['sentiment']['pos_count'] + rs_semantic.node[node1]['sentiment'][
+                'pos_count']
+            neg_count = rs_semantic.node[node0]['sentiment']['neg_count'] + rs_semantic.node[node1]['sentiment'][
+                'neg_count']
+            neu_count = rs_semantic.node[node0]['sentiment']['neu_count'] + rs_semantic.node[node1]['sentiment'][
+                'neu_count']
+            # Sum up the weight if two nodes has same neighbor
+            share_neighbors = set(nx.all_neighbors(rs_semantic, node0)) & set(nx.all_neighbors(rs_semantic, node1))
+            add_up_weights = []
+            if share_neighbors:
+                #  print share_neighbors
+                for n in share_neighbors:
+                    n0_n_weight = rs_semantic[node0][n]['weight'] if rs_semantic.has_edge(node0, n) else None
+                    n_n0_weight = rs_semantic[n][node0]['weight'] if rs_semantic.has_edge(n, node0) else None
+                    n1_n_weight = rs_semantic[node1][n]['weight'] if rs_semantic.has_edge(node1, n) else None
+                    n_n1_weight = rs_semantic[n][node1]['weight'] if rs_semantic.has_edge(n, node1) else None
+                    if n0_n_weight and n1_n_weight:
+                        # print rs[node0][n]['label'], rs[node1][n]['label']
+                        label = unicode.join(u',', [rs_semantic[node0][n]['label'], rs_semantic[node1][n]['label']])
+                        #     rs[node0][n]['label'] + u',' + rs[node1][n]['weight']
+                        add_up_weights.append((node0, n, n0_n_weight + n1_n_weight, label))
+                    if n_n0_weight and n_n1_weight:
+                        # label = rs[n][node0]['label'] + u"," + rs[n][node1]['weight']
+                        label = unicode.join(u',', [rs_semantic[n][node0]['label'], rs_semantic[n][node1]['label']])
+                        add_up_weights.append((n, node0, n_n0_weight + n_n1_weight, label))
+            group_id = rs_semantic.node[node0]['group_id'] | rs_semantic.node[node1]['group_id']
+            pos = rs_semantic.node[node0]['pos'] | rs_semantic.node[node1]['pos']
+            rs_semantic = nx.contracted_nodes(rs_semantic, node0, node1)
+            rs_semantic.node[node0]['weight'] = sum_weight
+            rs_semantic.node[node0]['label'] = rs_semantic.node[node0]['label']
+            rs_semantic.node[node0]['sentiment'] = {'pos_count': pos_count,
+                                                    'neg_count': neg_count,
+                                                    'neu_count': neu_count
+                                                    }
+            rs_semantic.node[node0]['group_id'] = group_id
+            rs_semantic.node[node0]['pos'] = pos
+            # Update the weight of edges that has been added
+            if add_up_weights:
+                for s, t, sw, lb in add_up_weights:
+                    rs_semantic[s][t]['weight'] = sw
+                    rs_semantic[s][t]['label'] = lb
+            # Update the match lst
+            to_contract_pairs.pop(0)  # Remove first element
+
+        maybe_print(" - Finished unification by semantic similarity fo  keywords", 2, "")
+        maybe_print(" -> Unification by semantic similarity  complete! "
+                    "Number of nodes changed from {0} to {1}".format(len(rs.nodes()), len(rs_semantic.nodes())), 2)
+        return rs_semantic
+    else:
+        return rs
+
+
+
 
 
 # Read a data file, cluster threads of discussion
