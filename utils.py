@@ -197,16 +197,16 @@ def generate_json_from_graph(g):
         # print 'HISTORY', g.node[node]['history'], ' type: ', type(g.node[node]['history'])
         if g.node[node]['weight']:
             w = g.node[node]['weight']
-            print type(g.node[node]['history']), g.node[node]['history']
+            # print type(g.node[node]['history']), g.node[node]['history']
             item['value'] = w
-            item['title'] = + u"*NodeID: " + node \
-                            + u"*Freq: " + str(w) \
+            item['title'] = u"*NodeID: " + node \
+                            + u" <br> *Freq: " + str(w) \
                             + u" <br> *Sen_Score: " + str(round(g.node[node]['sentiment_score'], 4)) \
                             + u" <br> *Sentiment: " + json.dumps(g.node[node]['sentiment']) \
                             + u" <br> *POS: " + ','.join(list(g.node[node]['pos'])) \
                             + u" <br> *Group_ids: " + ','.join(list(g.node[node]['group_id'])) \
                             + u" <br> *Cluster_ids: " + cluster_id \
-                            + (u" <br> *History: {0}".format(str(g.node[node]['history'])))
+                            + u" <br> *History: {0}".format(str(g.node[node]['history']))
             item['cid'] = cluster_id
         if g.node[node]['label']:
             item['label'] = g.node[node]['label']

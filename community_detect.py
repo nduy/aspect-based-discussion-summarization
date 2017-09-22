@@ -10,8 +10,12 @@ import networkx as nx
 from networkx.algorithms import community
 from utils import *
 
+sample_community_names = [u'α',u'β',u'γ',u'δ',u'ε',u'ζ',u'η',u'θ',u'ι',u'κ',u'λ',u'μ',
+                           u'ν',u'ξ',u'ο',u'π',u'ρ',u'σ',u'τ',u'υ',u'φ',u'χ',u'ψ',u'ω']
 
-def detect_communities(g = None, comm_opt=None):
+
+def detect_communities(g=None, comm_opt=None):
+    maybe_print("Detecting communities.", 2, 'i')
     ENABLE_DETECTION = False
     ALGORITHM = 'fluid'
     graph = g
@@ -27,16 +31,34 @@ def detect_communities(g = None, comm_opt=None):
         raise ValueError("Invalid community detection options.")
     else:
         ENABLE_DETECTION = comm_opt['enable_community_detection'] if 'enable_community_detection' in comm_opt else False
-        ALGORITHM = comm_opt['algorithm'] if 'algorithm' in comm_opt else 'fluid_communities'
+        ALGORITHM = comm_opt['method']['algorithm'] if 'algorithm' in comm_opt else 'fluid_communities'
     # Convert it to undirected graph
     undir_graph = graph.to_undirected()
 
     if not undir_graph:
         raise ValueError("Unable to perform community detection! Perhaps due to the malformed graph.")
-
-    if ALGORITHM == "fluid_communities":
-
-
+    if ENABLE_DETECTION:
+        try:
+            if ALGORITHM == "fluid_communities":
+                # get the largest messy graph
+                # Get number of communities to be detected
+                n_com = comm_opt['method']['n_communities'] if 'n_communities' in comm_opt['method'] else 4
+                gc = max(nx.connected_component_subgraphs(undir_graph), key=len)
+                # list of list. Each sublist contain ID of nodes in the same community
+                communities = list(community.asyn_fluidc(gc, n_com))
+                com_index = -1
+                for com in communities:
+                    com_index += 1
+                    for node_id in com:
+                        graph.node[node_id]['cluster_id'] = sample_community_names[com_index]
+                return graph
+        except Exception as inst:
+            maybe_print(" Error while running algorithm {0} to detect communities. Error name: {1}. "
+                        "Perhaps incorrect algorithm name of parameters. Community detection is skipped and community label"
+                        " for all nodes is set to be \'unknown\'.".format(ALGORITHM,inst), 2, 'E')
+            return g
+    else:
+        return g
 '''
 import argparse
 

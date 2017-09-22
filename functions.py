@@ -146,8 +146,10 @@ def build_mode_1(title, article, comments):
                                                               group_id = ['central.group'],
                                                               sentiment= {'pos_count': 0,
                                                                            'neu_count': 1,
-                                                                             'neg_count': 0}
-                                                               )
+                                                                             'neg_count': 0},
+                                                              history = u"",
+                                                              cluster_id = u"central"
+                                                            )
 
     # Second work on the article
     maybe_print("Start building aspect graph for the ARTICLE.", 2,'i')
@@ -448,7 +450,7 @@ def prune_graph(graph):
     NUM_MIN_NODES = 20      # minimum number of node. If total number of nodes is < this number, pruning will be skipped
     NUM_MIN_EDGES = 30      # minimum number of edge. The value could not more than (NUM_MIN_NODES)*(NUM_MIN_NODES-1).
     #                       If total number of edge is  < this number, pruning will be skipped
-    REMOVE_ISOLATED_NODE = True #
+    REMOVE_ISOLATED_NODE = True  #
 
     NUM_MAX_NODES = 200     # maximum number of nodes to keep
     NUM_MAX_EDGES = 300     # maximum number of edge to keep.
@@ -505,7 +507,7 @@ def prune_graph(graph):
     if 'remove_rings' in options:
         REMOVE_RING= options['remove_rings']
 
-    maybe_print("Start pruning the graph.", 1)
+    maybe_print("Start pruning the graph.", 2)
     # :: Perform pruning
     # Decide whether to skip the pruning because of the tiny size of graph
     if len(g.nodes()) < NUM_MIN_NODES or len(g.edges()) < NUM_MIN_EDGES:
@@ -522,14 +524,14 @@ def prune_graph(graph):
             continue  # Ignore the central node
         if node_label in WHITE_NODES_LIST:
             continue
-        elif node_label in BLACK_NODE_LIST:
+        if node_label in BLACK_NODE_LIST:
             to_remove_nodes.append(node)
         elif all_x_is_in_y(setx=node_pos, sety=BLACK_POS) \
                 or len(node_label) < MIN_WORD_LENGTH \
                 or not re.match(RE_PATTERN,data['label']):
             to_remove_nodes.append(node)  # mark the node as to be removed
     for edge in g.edges():
-        if (edge[0] == edge[1] if REMOVE_RING else True) or edge[0] in to_remove_nodes or edge[1] in to_remove_nodes:
+        if (edge[0] == edge[1] if REMOVE_RING else False) or edge[0] in to_remove_nodes or edge[1] in to_remove_nodes:
             to_remove_edges.append(edge)
     g.remove_nodes_from(to_remove_nodes)
     g.remove_edges_from(to_remove_edges)
@@ -816,12 +818,12 @@ def dep_extract_from_sent(sent, filter_opt):
     # Filter out by POS
     preferred_pos = filter_opt['preferred_pos']
     if type(preferred_pos) != list:  # take all POS
-        filter_pos_result = contracted_edges_result
+        filter_pos_result = filter_comp_result
     else:
         # filter triples whose beginning and ending tags are inside the list
         # print raw_results
         # print filter_pos_result
-        filter_pos_result = [trip for trip in contracted_edges_result
+        filter_pos_result = [trip for trip in filter_comp_result
                              if (trip[0][1] in preferred_pos or len(trip[0][0]) > 10) and
                                 (trip[2][1] in preferred_pos or len(trip[2][0]) > 10)
                              ]  # keep potential phrases
@@ -835,8 +837,6 @@ def dep_extract_from_sent(sent, filter_opt):
         rs.append(((s_f, s_tag), r, (t_f, t_tag)))
         keys.add((s_f,s_tag))
         keys.add((t_f,t_tag))
-
-
     return rs, list(keys), new_sen
 
 
@@ -1284,7 +1284,7 @@ def unicode_csv_reader(unicode_csv_data, dialect=csv.excel, **kwargs):
 def coreference_refine(text):
     if not text.strip():
         return text
-    tokens = [[tok for tok in StanfordTokenizer().tokenize(sen)] for sen in sent_tokenize(text)]
+    tokens = [[tok for tok in StanfordTokenizer().tokenize(sen.strip())] for sen in sent_tokenize(text)]
     rs_tks = tokens
     parse_rs = None
     try:

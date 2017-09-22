@@ -411,7 +411,7 @@ function neighbourhoodHighlight(params) {
      allNodes[nodeId].color = 'rgba(200,200,200,0.5)';
      if (allNodes[nodeId].hiddenLabel === undefined) {
        allNodes[nodeId].hiddenLabel = allNodes[nodeId].label;
-       allNodes[nodeId].label = undefined;
+       // allNodes[nodeId].label = undefined; /////////////////////  [W]
      }
    }
    var connectedNodes = network.getConnectedNodes(selectedNode);
@@ -528,17 +528,19 @@ function clusterByCid() {
   var group_members = {}
   for (key in allNodes){
 	  item = allNodes[key];
-	  if (item.cid){
+	  console.log(item);
+	  if (item.cid != undefined){
 	  	  cluster_ids.add(item.cid);
-	  	  if (group_members[item.cid] === undefined){  // the cluster id wasn't there before
+	  	  if (!(item.cid in group_members)){  // the cluster id wasn't there before
 			  group_members[item.cid] = [item.label];
 		  } else {
-			  group_members[item.cid].push(item.label)
+			  group_members[item.cid].push(item.label);
 		  }
 			
 	  }
   }
-  // console.log(cluster_ids);
+  
+  console.log(group_members);
   // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
   var clusterOptionsByData;
   for (let cid of cluster_ids.values()){

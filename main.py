@@ -8,8 +8,10 @@
 
 from functions import *
 from decoration import *
-import datetime
-import json
+from datetime import datetime as dt
+from datetime import timedelta as td
+from config import *
+from community_detect import *
 # ------ Time recording
 import time
 
@@ -27,28 +29,38 @@ if __name__ == "__main__":
     # Build aspect graph, then serialize
     asp_graph = build_sum_graph(dataset)  # Build sum keygraph at mode 1
     nx.write_gpickle(asp_graph, "tmp/asp_graph.gpickle")
-
-    # Prune the graph, then serialize
-    pruned_graph = prune_graph(asp_graph)
-    nx.write_gpickle(pruned_graph, "tmp/pruned_graph.gpickle")
-    del asp_graph
+    print("[i] Elapsed time:  {0} seconds".format(str(td(seconds=(time.time() - start_time)))))
 
     # Compute sentiment scores, then serialize
-    sen_graph = compute_sentiment_score(pruned_graph)
+    sen_graph = compute_sentiment_score(asp_graph)
     nx.write_gpickle(sen_graph, "tmp/sen_graph.gpickle")
-    del pruned_graph
+    del asp_graph
+    print("[i] Elapsed time:  {0} seconds".format(str(td(seconds=(time.time() - start_time)))))
 
     # Coloring the graph by sentiment, then serialize
     colored_graph = coloring_nodes(sen_graph)
     nx.write_gpickle(sen_graph, "tmp/colored_graph.gpickle")
     del sen_graph
+    print("[i] Elapsed time:  {0} seconds".format(str(td(seconds=(time.time() - start_time)))))
+
+    # Prune the graph, then serialize
+    pruned_graph = prune_graph(colored_graph)
+    nx.write_gpickle(pruned_graph, "tmp/pruned_graph.gpickle")
+    del colored_graph
+    print("[i] Elapsed time:  {0} seconds".format(str(td(seconds=(time.time() - start_time)))))
+
+    # Compute sentiment scores, then serialize
+    com_graph = detect_communities(pruned_graph, community_detect_options)
+    nx.write_gpickle(com_graph, "tmp/com_graph.gpickle")
+    del pruned_graph
+    print("[i] Elapsed time:  {0} seconds".format(str(td(seconds=(time.time() - start_time)))))
 
     json_g = None
-    if colored_graph.nodes():
-        json_g = generate_json_from_graph(colored_graph)
+    if com_graph.nodes():
+        json_g = generate_json_from_graph(com_graph)
         # Add build options
         json_g['options'] = {
-            'timestamp': datetime.now().strftime("%Y-%m-%d %H:%M:%S %Z"),
+            'timestamp': dt.now().strftime("%Y-%m-%d %H:%M:%S %Z"),
             'build_option': build_options,
             'pruning_option': prune_options,
             'unification_option': uni_options
@@ -56,4 +68,4 @@ if __name__ == "__main__":
     with open('result.json', 'w') as outfile:
         json.dump(json_g, outfile, sort_keys=True, indent=4, separators=(',', ': '))
 
-    print("Execution time:  {0} seconds".format(datetime.timedelta(seconds=(time.time() - start_time))))
+    print("Execution time:  {0} seconds".format(str(td(seconds=(time.time() - start_time)))))
