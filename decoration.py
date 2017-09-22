@@ -8,7 +8,7 @@
 
 """
 import utils
-#from colour import Color
+# from colour import Color
 import numpy as np
 
 N_COLOR = 101  # number of color in range

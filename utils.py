@@ -8,7 +8,7 @@
 
 """
 
-
+from __future__ import unicode_literals
 from cucco import Cucco
 from datetime import datetime
 from nltk.tokenize import texttiling
@@ -40,7 +40,7 @@ normalizations = [
 #   0: always print
 #   1: sometime print
 #   2: rarely print
-def maybe_print(text, command_verbality=1, alias=""):
+def maybe_print(text, command_verbality=1, alias=" "):
     if script_verbality > 0:
         if script_verbality >= command_verbality:
             print '[{0}] {1}'.format(alias,text)
@@ -69,7 +69,7 @@ def get_max_value_attribute(g, att):
             if val > max_value:
                 max_value = val
                 node_id = node
-        except:
+        except Exception:
             raise ValueError, "Attribute " + att + "  not found for node " + node
     return max_value, node_id
 
@@ -194,15 +194,19 @@ def generate_json_from_graph(g):
         item = dict()
         item['id'] = node
         cluster_id = g.node[node]['cluster_id'] if 'cluster_id' in g.node[node] else 'unknown'
+        # print 'HISTORY', g.node[node]['history'], ' type: ', type(g.node[node]['history'])
         if g.node[node]['weight']:
             w = g.node[node]['weight']
+            print type(g.node[node]['history']), g.node[node]['history']
             item['value'] = w
-            item['title'] = "*Freq: " + str(w) \
-                            + " <br> *Sen_Score: " + str(round(g.node[node]['sentiment_score'], 4)) \
-                            + " <br> *Sentiment: " + json.dumps(g.node[node]['sentiment']) \
-                            + " <br> *POS: " + ','.join(list(g.node[node]['pos'])) \
-                            + " <br> *Group_ids: " + ','.join(list(g.node[node]['group_id'])) \
-                            + " <br> *Cluster_ids: " + cluster_id
+            item['title'] = + u"*NodeID: " + node \
+                            + u"*Freq: " + str(w) \
+                            + u" <br> *Sen_Score: " + str(round(g.node[node]['sentiment_score'], 4)) \
+                            + u" <br> *Sentiment: " + json.dumps(g.node[node]['sentiment']) \
+                            + u" <br> *POS: " + ','.join(list(g.node[node]['pos'])) \
+                            + u" <br> *Group_ids: " + ','.join(list(g.node[node]['group_id'])) \
+                            + u" <br> *Cluster_ids: " + cluster_id \
+                            + (u" <br> *History: {0}".format(str(g.node[node]['history'])))
             item['cid'] = cluster_id
         if g.node[node]['label']:
             item['label'] = g.node[node]['label']
@@ -253,17 +257,27 @@ def all_x_is_in_y(setx=set(),sety=set()):
 
 # Implement the cosine similarity calculating using stanford Glove
 def cosine_similarity(word1,word2,model):
-    w1=word1
-    w2=word2
     if word1 not in model.dictionary:
-        w1 = word1.split(u'_')[-1]  # get the last element after splitting compound
-        if w1 not in model.dictionary:
+        ws = [w for w in word1.split(u'_') if w in model.dictionary]
+        if not ws:
             return 0
+        elif len(ws) > 1:  # there are at least 2 elements of the list is in dictionary
+            # Simple composition by summing the vector
+            v1 = model.word_vectors[model.dictionary[ws[-1]]] + model.word_vectors[model.dictionary[ws[-2]]]
+        else:  # has 1 element that is in the dictionary
+            v1 = model.word_vectors[model.dictionary[ws[0]]]
+
     if word2 not in model.dictionary:
-        w2 = word2.split(u'_')[-1]  # get the last element after splitting compound
-        if w2 not in model.dictionary:
+        ws = [w for w in word2.split(u'_') if w in model.dictionary]
+        if not ws:
             return 0
+        elif len(ws) > 1:  # there are at least 2 elements of the list is in dictionary
+            # Simple composition by summing the vector
+            v2 = model.word_vectors[model.dictionary[ws[-1]]] + model.word_vectors[model.dictionary[ws[-2]]]
+        else:  # has 1 element that is in the dictionary
+            v2 = model.word_vectors[model.dictionary[ws[0]]]
+
     try:
-        return 1 - cosine(model.word_vectors[model.dictionary[w1]],model.word_vectors[model.dictionary[w2]])
+        return 1 - cosine(v1,v2)
     except Exception as ex:  # key does
         return 0.0

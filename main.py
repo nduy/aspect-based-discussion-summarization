@@ -8,14 +8,15 @@
 
 from functions import *
 from decoration import *
+import datetime
 import json
 # ------ Time recording
 import time
 
 start_time = time.time()
 if __name__ == "__main__":
-    comments = read_comment_file("data/comments_article0_clipped.txt", read_as_threads=False)
-    title, article = read_article_file("data/article0_clipped.txt")
+    comments = read_comment_file("data/comments_article0.txt", read_as_threads=False)
+    title, article = read_article_file("data/article0.txt")
 
     dataset = {'title': title,
                'article': article,
@@ -55,4 +56,4 @@ if __name__ == "__main__":
     with open('result.json', 'w') as outfile:
         json.dump(json_g, outfile, sort_keys=True, indent=4, separators=(',', ': '))
 
-    print("Execution time:  %s seconds" % (time.time() - start_time))
+    print("Execution time:  {0} seconds".format(datetime.timedelta(seconds=(time.time() - start_time))))

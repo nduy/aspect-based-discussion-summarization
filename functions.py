@@ -14,7 +14,6 @@ import codecs
 import csv
 import itertools
 import threading
-import time
 import networkx as nx
 from textblob import TextBlob
 from nltk.corpus import stopwords
@@ -27,7 +26,7 @@ from config import prune_options
 from config import uni_options
 from config import build_options
 from config import dep_opt
-from nltk.tokenize import word_tokenize
+from nltk.tokenize import StanfordTokenizer
 from nltk.tokenize import sent_tokenize
 from simplejson import loads
 from glove import Glove
@@ -151,7 +150,7 @@ def build_mode_1(title, article, comments):
                                                                )
 
     # Second work on the article
-    maybe_print("\nStart building aspect graph for the ARTICLE.", 2)
+    maybe_print("Start building aspect graph for the ARTICLE.", 2,'i')
     article_graph = nx.DiGraph()
     article_group_count = 0
     for segment in texttiling_tokenize(article):  # Run texttiling, then go to each segment
@@ -351,7 +350,7 @@ def build_directed_graph_from_text(txt, group_id='', member_id=''):
 
         # Assign id and label to the nodes before adding the graph
         assigned_nodes = [('{0}~{1}~{2}~{3}'.format(keys[i][0], group_id, member_id, gen_mcs_only()),
-                           {'label': keys[i][0], 'pos': set([keys[i][1]]), 'weight':0}) for i in xrange(0, len(keys))]
+                           {'label': keys[i][0], 'pos': set([keys[i][1]]), 'weight':0, 'history':''}) for i in xrange(0, len(keys))]
         # print '---____----',assigned_nodes
         g.add_nodes_from(assigned_nodes)  # Add nodes from filtered words
         # Update nodes's weight
@@ -418,7 +417,7 @@ class DirGraphExtractor (threading.Thread):
         self.result = result
 
     def run(self):
-        print "Starting extractor {0} with {1} data records".format(self.name, len(self.data))
+        maybe_print("Starting extractor {0} with {1} data records".format(self.name, len(self.data)), 2, 'i')
         for record in self.data:
             txt = record['content'] if record['content'] else ""
             group = record['group_id'] if record['group_id'] else ""
@@ -426,7 +425,7 @@ class DirGraphExtractor (threading.Thread):
             g = build_directed_graph_from_text(txt=txt, group_id=group, member_id=member)
             if g:
                 self.result.append(g)
-        print "Exiting extractor {0}".format(self.name)
+        maybe_print("Exiting extractor {0}".format(self.name), 2, 'i')
 
 
 # Pruning the graph according to restrictions in options
@@ -463,6 +462,7 @@ def prune_graph(graph):
     BLACK_NODE_LIST = []    # Black list of words to be destroyed
     BLACK_DEPENDENCIES = [] # Black list of dependency to be destroyed
     BLACK_POS = []          # Black list of part-of-speech to be destroyed
+    REMOVE_RING = True       # Remove edges that connect a node to itself
 
     if 'num_min_nodes' in options:
         NUM_MIN_NODES = options['num_min_nodes']
@@ -502,6 +502,9 @@ def prune_graph(graph):
     if 'black_pos' in options:
         BLACK_POS= set(options['black_pos'])
 
+    if 'remove_rings' in options:
+        REMOVE_RING= options['remove_rings']
+
     maybe_print("Start pruning the graph.", 1)
     # :: Perform pruning
     # Decide whether to skip the pruning because of the tiny size of graph
@@ -526,7 +529,7 @@ def prune_graph(graph):
                 or not re.match(RE_PATTERN,data['label']):
             to_remove_nodes.append(node)  # mark the node as to be removed
     for edge in g.edges():
-        if (edge[0] in to_remove_nodes) or (edge[1] in to_remove_nodes):
+        if (edge[0] == edge[1] if REMOVE_RING else True) or edge[0] in to_remove_nodes or edge[1] in to_remove_nodes:
             to_remove_edges.append(edge)
     g.remove_nodes_from(to_remove_nodes)
     g.remove_edges_from(to_remove_edges)
@@ -607,7 +610,7 @@ def dep_extract_from_sent(sent, filter_opt):
         parse_result = loads(r)
     except Exception as detail:
         cut = min(30,len(sentence))
-        maybe_print('[W] Unable to parse sentence for dependencies: {0}.'.format(sentence[:cut]),2)
+        maybe_print(' Unable to parse sentence for dependencies: {0}.'.format(sentence[:cut]),2,'W')
         maybe_print('    --> Error: {0}'.format(detail), 2)
         threadLock.release()
         return [],[],u""
@@ -774,7 +777,7 @@ def dep_extract_from_sent(sent, filter_opt):
         if len(to_add_rels) > 0:
             maybe_print(u"   + Contracted {0} ed-n-ed using rules for sentence \"{1}...\": {2}"
                         .format(len(to_add_rels),sentence[:50], str(['{0}--{1}->{2}'.format(s,r,t)
-                                                                     for (s,_),r,(t,_) in to_add_rels])),2)
+                                                                     for (s,_),r,(t,_) in to_add_rels])),3)
             # print "asdsad", contracted_edges_result  ######################################################
 
     if not contracted_edges_result:
@@ -785,7 +788,7 @@ def dep_extract_from_sent(sent, filter_opt):
     # Merge compounds
     compound_merge = filter_opt['compound_merge']
     if compound_merge:
-        tokens = [lemmatizer.lemmatize(w) for w in word_tokenize(sentence.lower())]
+        tokens = [lemmatizer.lemmatize(w) for w in StanfordTokenizer().tokenize(sentence.lower())]
         compounds = [(t, s) for (s, s_tag), r, (t, t_tag) in contracted_edges_result if r == u'compound']
         # print "!!!!!!!!!", compounds
         replacements = dict()
@@ -877,11 +880,14 @@ def graph_unify(g=None, uni_opt=None):
 
     # Merge sub graph with similar keyword -> Now just
     if ENABLE_UNIFY_MATCHED_KEYWORDS:
-        maybe_print(" - Start unification by matched keywords",2,"")
+        maybe_print(" - Start unification by matched keywords",2)
         match_dict = dict()
+        # First find a list of mathced keywords
+        # TODO: Implement/modify this to work on historical label too, not only the selected label after similarity uni
         for node in g.nodes(data=True):
             node_id = node[0]
             label = node[1]['label']
+            # historical_labels = re.findall(r'([a-z_/\\-][a-z_/\\-]+)\^\d', node[1]['history'])
             # print "--------->", node_id, label
             if label not in match_dict:
                 match_dict[label] = set([node_id])
@@ -922,7 +928,7 @@ def graph_unify(g=None, uni_opt=None):
             if INTER_CLUSTER_UNIFY:
                 # print "2....", inter_match
                 if UNIFY_MODE == 'link':
-                    max_score, _ = get_max_value_attribute(g, 'weight')  # Get the max weight of all nodes in graph
+                    max_score, _ = get_max_value_attribute(rs, 'weight')  # Get the max weight of all nodes in graph
                     print max_score
                     # Now make the links
                     # print inter_match
@@ -942,7 +948,7 @@ def graph_unify(g=None, uni_opt=None):
                         # Sum up the sentiment of the two nodes
                         pos_count = rs.node[node0]['sentiment']['pos_count'] + rs.node[node1]['sentiment']['pos_count']
                         neg_count = rs.node[node0]['sentiment']['neg_count'] + rs.node[node1]['sentiment']['neg_count']
-                        neu_count = g.node[node0]['sentiment']['neu_count'] + rs.node[node1]['sentiment']['neu_count']
+                        neu_count = rs.node[node0]['sentiment']['neu_count'] + rs.node[node1]['sentiment']['neu_count']
                         # Sum up the weight if two nodes has same neighbor
                         share_neighbors = set(nx.all_neighbors(rs, node0)) & set(nx.all_neighbors(rs, node1))
                         add_up_weights = []
@@ -963,8 +969,12 @@ def graph_unify(g=None, uni_opt=None):
                                     label = unicode.join(u',', [rs[n][node0]['label'], rs[n][node1]['label']])
                                     add_up_weights.append((n, node0, n_n0_weight+n_n1_weight, label))
                         group_id = rs.node[node0]['group_id'] | rs.node[node1]['group_id']
+                        history = rs.node[node0]['history'] + \
+                                  '<br> - Joined with <br> {0}'.format(rs.node[node1]['history']) \
+                                  if rs.node[node1]['history'] != "" else ""
                         pos = rs.node[node0]['pos'] | rs.node[node1]['pos']
-                        rs = nx.contracted_nodes(rs, node0, node1)
+                        rs = nx.contracted_nodes(rs, node0, node1)   # Perform contraction
+                        # set the combined properties
                         rs.node[node0]['weight'] = sum_weight
                         rs.node[node0]['label'] = rs.node[node0]['label']
                         rs.node[node0]['sentiment'] = {'pos_count': pos_count,
@@ -973,6 +983,7 @@ def graph_unify(g=None, uni_opt=None):
                                                        }
                         rs.node[node0]['group_id'] = group_id
                         rs.node[node0]['pos'] = pos
+                        rs.node[node0]['history'] = history
                         # Update the weight of edges that has been added
                         if add_up_weights:
                             for s, t, sw, lb in add_up_weights:
@@ -984,7 +995,7 @@ def graph_unify(g=None, uni_opt=None):
             if INTRA_CLUSTER_UNIFY:  # Unify the same  keywords in one cluster
                 # print "1....", intra_match
                 if UNIFY_MODE == 'link':
-                    max_score, _ = get_max_value_attribute(g, 'weight')  # Get the max weight of all nodes in graph
+                    max_score, _ = get_max_value_attribute(rs, 'weight')  # Get the max weight of all nodes in graph
                     print max_score
                     # Now make the links
                     print matches
@@ -1006,7 +1017,7 @@ def graph_unify(g=None, uni_opt=None):
                                         + rs.node[node1]['sentiment']['pos_count']
                             neg_count = rs.node[node0]['sentiment']['neg_count'] \
                                         + rs.node[node1]['sentiment']['neg_count']
-                            neu_count = g.node[node0]['sentiment']['neu_count'] \
+                            neu_count = rs.node[node0]['sentiment']['neu_count'] \
                                         + rs.node[node1]['sentiment']['neu_count']
 
                             # Sum up the weight if two nodes has same neighbor
@@ -1030,6 +1041,9 @@ def graph_unify(g=None, uni_opt=None):
                                                              [rs[n][node0]['label'], rs[n][node1]['label']])
                                         add_up_weights.append((n, node0, n_n0_weight + n_n1_weight,label))
                             group_id = rs.node[node0]['group_id'] | rs.node[node1]['group_id']
+                            history = rs.node[node0]['history'] + \
+                                      '<br> Joined with <br> {0}'.format(rs.node[node1]['history']) \
+                                      if rs.node[node1]['history'] != "" else ""
                             pos = rs.node[node0]['pos'] | rs.node[node1]['pos']
                             rs = nx.contracted_nodes(rs, node0, node1)
                             rs.node[node0]['weight'] = sum_weight
@@ -1040,13 +1054,14 @@ def graph_unify(g=None, uni_opt=None):
                                                             }
                             rs.node[node0]['group_id'] = group_id
                             rs.node[node0]['pos'] = pos
+                            rs.node[node0]['history'] = history
                             # Update the weight of edges that has been added
                             if add_up_weights:
                                 for s, t, sw, lb in add_up_weights:
                                     rs[s][t]['weight'] = sw
                                     rs[s][t]['label'] = lb
                             intra_match.pop(0)  # Remove first element
-        maybe_print(" - Finished unification by matched keywords", 2, "")
+        maybe_print(" - Finished unification by matched keywords", 2)
         maybe_print(" -> Unification by matched keywords complete! "
                     "Number of nodes changed from {0} to {1}".format(len(g.nodes()), len(rs.nodes())), 2)
     else:
@@ -1055,12 +1070,13 @@ def graph_unify(g=None, uni_opt=None):
     # END UNIFY BY SEMANTIC SIMILARITY KEYWORDS
     # print "ENABLE_UNIFY_BY_SIMILARITY",ENABLE_UNIFY_BY_SIMILARITY
     if ENABLE_UNIFY_BY_SIMILARITY:
-        maybe_print(" - Start unification by matched keywords", 2, "")
-        maybe_print("   + Loading model from " + GLOVE_MODEL_FILE, 2, "")
+        maybe_print(" - Start unification by semantic similarity of keywords", 2)
         try:
             global glove_model
-            glove_model = Glove.load_stanford(GLOVE_MODEL_FILE)
-            maybe_print("   + Model loading completed1", 2, "")
+            if not glove_model:
+                maybe_print("   + Loading model from " + GLOVE_MODEL_FILE, 2, "i")
+                glove_model = Glove.load_stanford(GLOVE_MODEL_FILE)
+                maybe_print("   + Model loading completed :)", 2)
         except Exception as inst:
             maybe_print("   + Error while loading model from {0}. "
                         "Semantic similarity node merging SKIPPED! ".format(GLOVE_MODEL_FILE), 2, "E")
@@ -1071,17 +1087,25 @@ def graph_unify(g=None, uni_opt=None):
         to_contract_pairs = set()
         for n1, d1 in rs.nodes(data=True):
             for n2, d2 in rs.nodes(data=True):
-                if d1['label'] != d1['label'] \
-                        and (n1,n2) not in to_contract_pairs and (n2,n1) not in to_contract_pairs \
-                        and cosine_similarity(d1['label'], d2['label'], glove_model) >= MINIMUM_THRESHOLD:
-                    to_contract_pairs.add((n1,n2))
+                # print d1['label'], d2['label']
+                if d1['label'] != d2['label'] \
+                        and (n1,n2) not in to_contract_pairs and (n2,n1) not in to_contract_pairs:
+
+                    if cosine_similarity(d1['label'], d2['label'], glove_model) >= MINIMUM_THRESHOLD:
+                        to_contract_pairs.add((n1,n2))
         maybe_print("  -> Found {0} pairs whose similarity greater or equal threshold {1}."
                     .format(len(to_contract_pairs), MINIMUM_THRESHOLD))
-        print to_contract_pairs
+
+        ################################################################################################################
+        # Graph unification by semantic similarity
+        ################################################################################################################
+
+        # print to_contract_pairs
         # Now perform the contraction
+        to_contract_pairs = list(to_contract_pairs)
         while len(to_contract_pairs) > 0:
-            node0 = list(to_contract_pairs)[0][0]
-            node1 = list(to_contract_pairs)[0][1]
+            node0 = to_contract_pairs[0][0]
+            node1 = to_contract_pairs[0][1]
             # Sum up the weight of the two node
             sum_weight = rs_semantic.node[node0]['weight'] + rs_semantic.node[node1]['weight']
             # print g.node[node0]['weight'], g.node[node1]['weight']
@@ -1113,9 +1137,21 @@ def graph_unify(g=None, uni_opt=None):
                         add_up_weights.append((n, node0, n_n0_weight + n_n1_weight, label))
             group_id = rs_semantic.node[node0]['group_id'] | rs_semantic.node[node1]['group_id']
             pos = rs_semantic.node[node0]['pos'] | rs_semantic.node[node1]['pos']
+            history = u'{0} <br> - Contracted with {1}^{2} ({3})'\
+                .format(rs_semantic.node[node0]['history'],
+                        rs_semantic.node[node1]['label'],
+                        rs_semantic.node[node1]['weight'],
+                        node1)
+            # Decide the label
+            tmp = sorted(re.findall(r'([a-z_/\\-][a-z_/\\-]+)\^(\d)', history), key=lambda x: int(x[1]))
+            # print tups
+            label = rs_semantic.node[node0]['label'] if not history or not tmp else tmp[-1][0]
+
+            # print rs_semantic.node[node0]
             rs_semantic = nx.contracted_nodes(rs_semantic, node0, node1)
             rs_semantic.node[node0]['weight'] = sum_weight
-            rs_semantic.node[node0]['label'] = rs_semantic.node[node0]['label']
+            rs_semantic.node[node0]['label'] = label
+            rs_semantic.node[node0]['history'] = history
             rs_semantic.node[node0]['sentiment'] = {'pos_count': pos_count,
                                                     'neg_count': neg_count,
                                                     'neu_count': neu_count
@@ -1128,9 +1164,25 @@ def graph_unify(g=None, uni_opt=None):
                     rs_semantic[s][t]['weight'] = sw
                     rs_semantic[s][t]['label'] = lb
             # Update the match lst
-            to_contract_pairs.pop(0)  # Remove first element
-
-        maybe_print(" - Finished unification by semantic similarity fo  keywords", 2, "")
+            to_contract_pairs = to_contract_pairs[1:]  # Remove first elements
+            # Replace the existence of all node1 by node 0
+            if to_contract_pairs:
+                # print to_contract_pairs
+                to_remove_items = []
+                for j in xrange(0, len(to_contract_pairs)):
+                    # print j
+                    n0,n1 = to_contract_pairs[j]
+                    if n0 == node1 and n1 == node1:  # Check duplicate
+                        to_remove_items.append(j)
+                    else:
+                        if n0 == node1:
+                            to_contract_pairs[j] = (node0, n1)
+                        elif n1 == node1:
+                            to_contract_pairs[j] = (n0, node0)
+                to_contract_pairs = [to_contract_pairs[i] for i in xrange(0, len(to_contract_pairs))
+                                     if i not in to_remove_items]
+                to_contract_pairs = list(set(to_contract_pairs))
+        maybe_print(" - Finished unification by semantic similarity for  keywords", 2)
         maybe_print(" -> Unification by semantic similarity  complete! "
                     "Totally, Number of nodes changed from {0} to {1}"
                     .format(len(g.nodes()), len(rs_semantic.nodes())), 2)
@@ -1232,7 +1284,7 @@ def unicode_csv_reader(unicode_csv_data, dialect=csv.excel, **kwargs):
 def coreference_refine(text):
     if not text.strip():
         return text
-    tokens = [[tok for tok in word_tokenize(sen)] for sen in sent_tokenize(text)]
+    tokens = [[tok for tok in StanfordTokenizer().tokenize(sen)] for sen in sent_tokenize(text)]
     rs_tks = tokens
     parse_rs = None
     try:
@@ -1242,8 +1294,8 @@ def coreference_refine(text):
         threadLock.release()
         # parse_rs = loads(parse)
     except Exception as detail:
-        maybe_print("[W] Can't parse sentence this sentence for coreference \"{0}...\"\n --> Error: {1}"
-                    .format(text[:min(30,len(text))],detail), 2)
+        maybe_print("Can't parse sentence this sentence for coreference \"{0}...\"\n --> Error: {1}"
+                    .format(text[:min(30,len(text))],detail), 2,'E')
         threadLock.release()
     try:
         if not parse_rs or 'coref' not in parse_rs:
@@ -1296,6 +1348,6 @@ def coreference_refine(text):
         else:
             return text
     except Exception as detail:
-        maybe_print("[W] --> unable to extract co-reference for sentence: \"{0}...\"\n     --> Error: {1}"
-                    .format(text[:min(30,len(text))],detail), 2)
+        maybe_print(" --> Unable to extract co-reference for sentence: \"{0}...\"\n     --> Error: {1}"
+                    .format(text[:min(30,len(text))],detail), 2,'W')
         return text

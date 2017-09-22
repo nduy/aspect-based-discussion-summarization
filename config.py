@@ -20,10 +20,11 @@ prune_options = {
     'enable_prunning': True,            # Enable/Disable prunning
     'min_word_length': 2,               # Minimum length of node label
     'remove_isolated_node': True,       # Remove not whose degree is 0
-    'node_freq_min': 2,                 # Minimum frequency of node
-    'edge_freq_min': 1,                 # Minimum frequency of edge
+    'node_freq_min': 3,                 # Minimum frequency of node
+    'edge_freq_min': 2,                 # Minimum frequency of edge
     'node_degree_min': 2,               # Minimum degree of node, this override the remove_isolated_node
-    'regex_pattern': '[a-z\/]+[-_]?',   # Regular expression pattern to keep
+    'remove_rings': True,               # Remove edges that connect a node to itself
+    'regex_pattern': '[a-z\/][a-z\/]+[-_]?[a-z\/]?[a-z\/]?',   # Regular expression pattern to keep
     # A while list of words to keep no mater how bad it is
     'white_node_labels': [],
     # A black list of words to be killed no mater how good it is
@@ -32,6 +33,12 @@ prune_options = {
     'black_pos': [u'VB',u'VBD',u'VBG',u'VBN',u'VBZ',u'VBP']  # All node with this POS wil be removed
 }
 
+community_detect_options = {
+    'enable_community_detection': True,     # Enable/Disable community detection,
+    'algorithm': 'fluid_communities'  # other options 'bipartitions', Label propagation
+
+
+}
 
 # Verbality: to print or not to print ################################################################################
 script_verbality = 2     # 0: silent, 1: print main info, 2: print some techs info, 3. print debugging info
@@ -45,7 +52,7 @@ uni_options = {
     },
     'unify_semantic_similarity': {
         'enable': True,
-        'threshold': 0.9,   # Those nodes whose similarity greater than this threshold will be unified
+        'threshold': 0.85,   # Those nodes whose similarity greater than this threshold will be unified
         'glove_model_file': '../models/glove.6B.200d.txt'
     }
 }
