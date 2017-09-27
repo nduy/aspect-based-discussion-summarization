@@ -20,7 +20,7 @@ prune_options = {
     'enable_prunning': True,            # Enable/Disable prunning
     'min_word_length': 3,               # Minimum length of node label
     'remove_isolated_node': True,       # Remove not whose degree is 0
-    'node_freq_min': 2,                 # Minimum frequency of node
+    'node_freq_min': 3,                 # Minimum frequency of node
     'edge_freq_min': 2,                 # Minimum frequency of edge
     'node_degree_min': 2,               # Minimum degree of node, this override the remove_isolated_node
     'remove_rings': True,               # Remove edges that connect a node to itself
@@ -39,7 +39,13 @@ community_detect_options = {
                     'algorithm': 'fluid_communities',     # other options 'bipartitions', Label propagation
                     'n_communities': 7
                },
-    'community_label_inference': 'distributed_semantic'  # method for infering the label of
+    'community_label_inference': {   # method for inferring the label
+        'method': 'distributed_semantic',
+        'params': {
+            'window': 3,
+            'weight_ls': [1., .7, .5]
+        }
+    }
 }
 
 # Verbality: to print or not to print ################################################################################
@@ -71,7 +77,7 @@ dep_opt = {
     #  - from_pos: POS of the starting node
     #  - to_pos: POS of the ending node
     #  - rs_pos: designated POS of the result node
-    #  - rs_direction: desinated direction of the result node '1-2' or '2-1'
+    #  - rs_direction: designated direction of the result node '1-2' or '2-1'
     'custom_nodes_contract': {
         'enable': True,
         'rule_set': [

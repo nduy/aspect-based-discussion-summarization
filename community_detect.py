@@ -45,8 +45,9 @@ def detect_communities(g=None, comm_opt=None):
     else:
         ENABLE_DETECTION = comm_opt['enable_community_detection'] if 'enable_community_detection' in comm_opt else False
         ALGORITHM = comm_opt['method']['algorithm'] if 'algorithm' in comm_opt else 'fluid_communities'
-        LABEL_DETECTION_METHOD = comm_opt['community_label_inference'] if 'community_label_inference' in comm_opt \
-                                                                       else 'distributed_semantic'
+        LABEL_DETECTION_METHOD = comm_opt['community_label_inference']['method'] \
+            if 'community_label_inference' in comm_opt and 'method' in comm_opt['community_label_inference']\
+            else 'distributed_semantic'
 
     # Convert directed graph to undirected graph
     undir_graph = graph.to_undirected()
@@ -76,7 +77,6 @@ def detect_communities(g=None, comm_opt=None):
                 # list of list. Each sublist contain ID of nodes in the same community
                 communities = list(community.asyn_fluidc(gc, n_com))
                 com_index = -1
-
                 for com in communities:
                     com_index += 1
                     #####################
@@ -89,41 +89,51 @@ def detect_communities(g=None, comm_opt=None):
                     # weights are computed for the original keywords of these NonZero vectors.
                     # Suggest a label for the community
                     comm_labels = [graph.node[node_id]['label'] for node_id in com]
-                    words_matrix = extract_vector_from_text_list(comm_labels, model=glove_model, window=3)
-                    # get indices for rows whose is zero rows
-                    zeros_indices = np.where(~words_matrix.any(axis=1))[0]
-                    maybe_print(' -->Community' + str(com_index) + ' has ' + str(len(zeros_indices)) + \
-                          " zero key(s) out of "+ str(len(com)),2,'i')
-                    # remove zero rows from words_matrix
-                    words_matrix = np.delete(words_matrix, zeros_indices, axis=0)
-                    # get all the weight in the community, then convert to float by multiply 1.0
-                    vector_weight = np.array([graph.node[node_id]['weight'] for node_id in com]) * 1.0
-                    vector_weight = np.delete(vector_weight, zeros_indices, axis=0)  # remove lines whose vector is zero
-                    # Compute weights -> this is a kind of weighted sum
-                    vector_weight = vector_weight/np.sum(vector_weight)  # compute ratio/scale/co-efficient, whatever :D
-                    vector_weight = vector_weight.reshape((len(vector_weight), 1))  # Transpose to column vector
-                    print vector_weight
-                    #vector_weight = np.ones((len(com),1))
-                    print words_matrix.shape, vector_weight.shape
-                    assert words_matrix.shape[0] == vector_weight.shape[0], 'Mismatch size of matrix for community {0}'\
-                                                                          ' with {1} members and its weight matrix.\n'\
-                        .format(com_index-1, len(com))
-                    # Multiple matrices and the sum te vector to be the representative vector for the community
-                    composition_matrix = np.multiply(words_matrix,vector_weight)
-                    # Remove zero rows and sum
-                    # composition_vector = np.sum(composition_matrix[~np.all(composition_matrix == 0, axis=1)],axis=0)
-                    composition_vector = np.sum(composition_matrix, axis=0)
-                    print composition_vector
-                    # Dig to vector space of Glove to get the label
-                    dst = (np.dot(glove_model.word_vectors, composition_vector)
-                           / np.linalg.norm(glove_model.word_vectors, axis=1)
-                           / np.linalg.norm(composition_vector))
-                    word_ids = np.argsort(-dst)
-                    # Get 2 most similar words @@@@@
-                    suggested_labels = [glove_model.inverse_dictionary[x] for x in word_ids[:10]
-                                        if x in glove_model.inverse_dictionary]
-                    # suggested_labels = glove_model.most_similar_paragraph(comm_labels)
-                    for node_id in com: #sample_community_names[com_index]
+
+                    # Now run abstraction by different method
+                    suggested_labels = None
+                    if LABEL_DETECTION_METHOD == 'distributed_semantic':
+                        WINDOW = comm_opt['community_label_inference']['params']['window'] \
+                            if 'window' in comm_opt['community_label_inference']['params'] else 3
+                        V_WEIGHTS = comm_opt['community_label_inference']['params']['weight_ls'] \
+                            if 'weight_ls' in comm_opt['community_label_inference']['params'] else 3
+                        words_matrix = extract_vector_from_text_list(comm_labels,
+                                                                     model=glove_model,
+                                                                     window=WINDOW,
+                                                                     vector_weights=V_WEIGHTS)
+                        # get indices for rows whose is zero rows
+                        zeros_indices = np.where(~words_matrix.any(axis=1))[0]
+                        maybe_print(' -->Community' + str(com_index) + ' has ' + str(len(zeros_indices))
+                                    + " zero key(s) out of "+ str(len(com)),2,'i')
+                        # remove zero rows from words_matrix
+                        words_matrix = np.delete(words_matrix, zeros_indices, axis=0)
+                        # get all the weight in the community, then convert to float by multiply 1.0
+                        vector_weight = np.array([graph.node[node_id]['weight'] for node_id in com]) * 1.0
+                        vector_weight = np.delete(vector_weight, zeros_indices, axis=0)  # rm lines whose vector is zero
+                        # Compute weights -> this is a kind of weighted sum
+                        vector_weight = vector_weight/np.sum(vector_weight)  # compute scale/co-efficient, whatever :D
+                        vector_weight = vector_weight.reshape((len(vector_weight), 1))  # Transpose to column vector
+                        print vector_weight
+                        #vector_weight = np.ones((len(com),1))
+                        print words_matrix.shape, vector_weight.shape
+                        assert words_matrix.shape[0] == vector_weight.shape[0], \
+                            'Mismatch size of matrix for community {0}  with {1} members and its weight matrix.\n'\
+                            .format(com_index-1, len(com))
+                        # Multiple matrices and the sum te vector to be the representative vector for the community
+                        composition_matrix = np.multiply(words_matrix,vector_weight)
+                        # Remove zero rows and sum
+                        composition_vector = np.sum(composition_matrix, axis=0)
+                        print composition_vector
+                        # Dig to vector space of Glove to get the label
+                        dst = (np.dot(glove_model.word_vectors, composition_vector)
+                               / np.linalg.norm(glove_model.word_vectors, axis=1)
+                               / np.linalg.norm(composition_vector))
+                        word_ids = np.argsort(-dst)
+                        # Get 2 most similar words @@@@@
+                        suggested_labels = [glove_model.inverse_dictionary[x] for x in word_ids[:10]
+                                            if x in glove_model.inverse_dictionary]
+                        # suggested_labels = glove_model.most_similar_paragraph(comm_labels)
+                    for node_id in com:  # sample_community_names[com_index]
                         graph.node[node_id]['cluster_id'] = sample_community_names[com_index] + ' ' \
                                                             + (' - '.join(suggested_labels)).upper()
 
@@ -140,11 +150,16 @@ def detect_communities(g=None, comm_opt=None):
 
 # Extract from a text, form abc_def_xyz to form a vector. This vector is a sum vector in a distributed semantic space
 # under variable model. The window define how many words should we use for sum up, starting from the END of sentence
-def extract_vector_from_text(inp_str,model,window=3):
+# What is vector weight? Each words in phrase has different importance. For example in "red car", car is more important
+# than red (which is a modifier). ATTENTION: the weight's indices are REVERED order of the window. That is, the fist
+# weight is for the last word of the inp_str and so on.
+def extract_vector_from_text(inp_str,model,window=3,vector_weights = [1.0,.5,.3]):
     PREFERED_POS = set([u'n',u'v'])
     if not inp_str:
         raise ValueError('Invalid keyword for vector extraction:' + inp_str)
-
+    if len(vector_weights) != window:
+        raise ValueError('While extracting vector from text, size of the weight list {0} '
+                         'must be the same as the window {1}.'.format(len(window),window))
     raw_ws = None
     if inp_str in model.dictionary:
         raw_ws = [inp_str]
@@ -169,27 +184,30 @@ def extract_vector_from_text(inp_str,model,window=3):
     vector = np.array(model.word_vectors[model.dictionary[ws[-1]]])
     if len(ws) > window:
         for i in xrange(1,window):
-            vector = vector + np.array(model.word_vectors[model.dictionary[ws[-1*i]]])
+            vector = vector + np.array(model.word_vectors[model.dictionary[ws[-1*i]]]) * vector_weights[i-1]
         return vector
     else:
         for i in xrange(1,len(ws)):
-            vector = vector + np.array(model.word_vectors[model.dictionary[ws[-1*i]]])
+            vector = vector + np.array(model.word_vectors[model.dictionary[ws[-1*i]]]) * vector_weights[i-1]
         return vector
 
 
 # Apply sentence extract for each element in a list inp_str_list, then stack them to form a matrix. For parameter detail
 # see the above function
-def extract_vector_from_text_list(inp_ls,model,window=3):
+def extract_vector_from_text_list(inp_ls,model,window=3,vector_weights = [1.0,.5,.3]):
     rs = None
     if not inp_ls:
         raise ValueError("Nothing to extract vector.")
+    if len(vector_weights) != window:
+        raise ValueError('While extracting vector from text, size of the weight list {0} '
+                         'must be the same as the window {1}.'.format(len(window),window))
     count = 0
     for inp_srt in inp_ls:
         count += 1
         if count == 1:
-            rs = np.array(extract_vector_from_text(inp_srt,model,window))
+            rs = np.array(extract_vector_from_text(inp_srt,model,window,vector_weights))
         else:
-            rs = np.vstack((rs,np.array(extract_vector_from_text(inp_srt,model,window))))
+            rs = np.vstack((rs,np.array(extract_vector_from_text(inp_srt,model,window,vector_weights))))
     return rs
 '''
 import argparse
