@@ -44,6 +44,7 @@ if __name__ == "__main__":
     print("[i] Elapsed time:  {0} seconds".format(str(td(seconds=(time.time() - start_time)))))
 
     # Prune the graph, then serialize
+    # colored_graph = nx.read_gpickle("tmp/colored_graph.gpickle")
     pruned_graph = prune_graph(colored_graph)
     nx.write_gpickle(pruned_graph, "tmp/pruned_graph.gpickle")
     del colored_graph

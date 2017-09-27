@@ -199,14 +199,14 @@ def generate_json_from_graph(g):
             w = g.node[node]['weight']
             # print type(g.node[node]['history']), g.node[node]['history']
             item['value'] = w
-            item['title'] = u"*NodeID: " + node \
-                            + u" <br> *Freq: " + str(w) \
-                            + u" <br> *Sen_Score: " + str(round(g.node[node]['sentiment_score'], 4)) \
-                            + u" <br> *Sentiment: " + json.dumps(g.node[node]['sentiment']) \
-                            + u" <br> *POS: " + ','.join(list(g.node[node]['pos'])) \
-                            + u" <br> *Group_ids: " + ','.join(list(g.node[node]['group_id'])) \
-                            + u" <br> *Cluster_ids: " + cluster_id \
-                            + u" <br> *History: {0}".format(str(g.node[node]['history']))
+            item['title'] = u"✭NodeID: " + node \
+                            + u" <br> ✭ Freq: " + str(w) \
+                            + u" <br> ✭ Sen_Score: " + str(round(g.node[node]['sentiment_score'], 4)) \
+                            + u" <br> ✭ Sentiment: " + json.dumps(g.node[node]['sentiment']) \
+                            + u" <br> ✭ POS: " + ','.join(list(g.node[node]['pos'])) \
+                            + u" <br> ✭ Group_ids: " + ','.join(list(g.node[node]['group_id'])) \
+                            + u" <br> ✭ Cluster_ids: " + cluster_id \
+                            + u" <br> ✭ History: {0}".format(g.node[node]['history'])
             item['cid'] = cluster_id
         if g.node[node]['label']:
             item['label'] = g.node[node]['label']
@@ -281,3 +281,24 @@ def cosine_similarity(word1,word2,model):
         return 1 - cosine(v1,v2)
     except Exception as ex:  # key does
         return 0.0
+
+
+# Inspect a history log of a node to detect and count repeated patterns
+# E.g: "Initialize X^1 <br> Initialize X^1 <br> Initialize Y^1" to "Initialize X^2"
+def repetition_summary(inp_string):
+    head_str = inp_string
+    rs = u""
+    groups = re.findall(r'[\w]+\s([a-z_/\\-][a-z_/\\-]+)\^(\d)+', inp_string)
+    tmp = [(key,int(count)) for key,count in groups] # convert count
+    full_list=[]
+    for key,count in tmp:
+        for i in xrange(0,count):
+            full_list.append(key)
+    count_keys = Counter(full_list)  # convert occurrences of keys
+    # Now get those whose occuced more than 1
+    for key in count_keys:
+        if count_keys[key]>1:
+            head_str = re.sub('(<br> - ' + key + '\^[\d]+.+)<br>',u'',head_str)
+            rs = rs + u"<br> » " + key + u"^" + str(count_keys[key])
+    return head_str + rs
+

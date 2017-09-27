@@ -10,6 +10,9 @@ var highlightActive = false;
 var parsed_text;
 var color_book; // save original color of all nodes
 var seed = 2;
+var clustered = false;
+var cluster_ids = null;
+
 var locales = {
   en: {
     edit: 'Edit',
@@ -522,13 +525,34 @@ function color2hex(rgb){
   ("0" + parseInt(rgb[3],10).toString(16)).slice(-2) : ori;
 }
 
+// Handle cluster/expand button
+function handleExpandCluster(){
+	if (clustered == false){
+		clusterByCid();
+		clustered = true;
+		$("#clusterButton").prop('value', 'Expand all clusters'); 
+	} else {
+		clustered = false;
+		// console.log(cluster_ids);
+		for (let nodeId of cluster_ids) {
+		   // console.log(nodeId);
+		   if (network.isCluster(nodeId) == true) {
+				  network.openCluster(nodeId);
+			  }
+		}
+		$("#clusterButton").prop('value', 'Cluster nodes by topics'); 
+		
+	}
+}
+
+// Cluster the group
 function clusterByCid() {
   network.setData(data);
-  var cluster_ids = new Set();
+  cluster_ids = new Set();
   var group_members = {}
   for (key in allNodes){
 	  item = allNodes[key];
-	  console.log(item);
+	  // console.log(item);
 	  if (item.cid != undefined){
 	  	  cluster_ids.add(item.cid);
 	  	  if (!(item.cid in group_members)){  // the cluster id wasn't there before
@@ -540,7 +564,7 @@ function clusterByCid() {
 	  }
   }
   
-  console.log(group_members);
+  // console.log(group_members);
   // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
   var clusterOptionsByData;
   for (let cid of cluster_ids.values()){
@@ -558,7 +582,7 @@ function clusterByCid() {
 			  clusterOptions.mass = totalMass;
 			  return clusterOptions;
 		  },
-		  clusterNodeProperties: {id: 'cluster:' + cid.toString(), 
+		  clusterNodeProperties: {id: cid.toString(), 
 			  borderWidth: 1, shape: 'box', 
 			  label:'Group:' + cid.toString(),
 			  title: 'Nodes: <br> - ' + group_members[cid].join('<br> - ')
@@ -566,6 +590,7 @@ function clusterByCid() {
 	  };  
 	  network.cluster(clusterOptionsByData);
   }
+  // console.log(clustered)
 }
 
 $(document).ready(function () {

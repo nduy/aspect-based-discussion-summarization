@@ -24,7 +24,7 @@ prune_options = {
     'edge_freq_min': 2,                 # Minimum frequency of edge
     'node_degree_min': 2,               # Minimum degree of node, this override the remove_isolated_node
     'remove_rings': True,               # Remove edges that connect a node to itself
-    'regex_pattern': '[a-z\/][a-z\/]+[-_]?[a-z\/]?[a-z\/]?',   # Regular expression pattern to keep
+    'regex_pattern': r'^[a-z]{2,}([-_\/]{1}[a-z]{2,})*$',   # Regular expression pattern to keep
     # A while list of words to keep no mater how bad it is
     'white_node_labels': [],
     # A black list of words to be killed no mater how good it is
@@ -37,8 +37,9 @@ community_detect_options = {
     'enable_community_detection': True,             # Enable/Disable community detection,
     'method': {
                     'algorithm': 'fluid_communities',     # other options 'bipartitions', Label propagation
-                    'n_communities': 6
-               }
+                    'n_communities': 7
+               },
+    'community_label_inference': 'distributed_semantic'  # method for infering the label of
 }
 
 # Verbality: to print or not to print ################################################################################

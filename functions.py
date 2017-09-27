@@ -164,7 +164,7 @@ def build_mode_1(title, article, comments):
 
     # Unify the article
     rs = nx.compose(rs, article_graph)
-    rs = graph_unify(rs, uni_options)
+    # rs = graph_unify(rs, uni_options)
 
     # threadLock.release()  # Release the lock that may be used while extracting graph for article
     # global server
@@ -352,7 +352,7 @@ def build_directed_graph_from_text(txt, group_id='', member_id=''):
 
         # Assign id and label to the nodes before adding the graph
         assigned_nodes = [('{0}~{1}~{2}~{3}'.format(keys[i][0], group_id, member_id, gen_mcs_only()),
-                           {'label': keys[i][0], 'pos': set([keys[i][1]]), 'weight':0, 'history':''}) for i in xrange(0, len(keys))]
+                           {'label': keys[i][0], 'pos': set([keys[i][1]]), 'weight':0, 'history':u''}) for i in xrange(0, len(keys))]
         # print '---____----',assigned_nodes
         g.add_nodes_from(assigned_nodes)  # Add nodes from filtered words
         # Update nodes's weight
@@ -375,6 +375,7 @@ def build_directed_graph_from_text(txt, group_id='', member_id=''):
                 g.node[node[0]]['sentiment'] = {'pos_count': 1 if sen_score > 0 else 0,  # Add sentiment score
                                                 'neg_count': 1 if sen_score < 0 else 0,
                                                 'neu_count': 1 if sen_score == 0 else 0}
+            g.node[node[0]]['history'] = u'<br> - Initialize '+ g.node[node[0]]['label'] + '^' + str(g.node[node[0]]['weight'])
         maybe_print('Sentence no ' + str(sen_count) + '\nNodes ' + str(g.nodes()), 3)
         sen_count += 1
         word2id = dict(zip([k for k,_ in keys], assigned_nodes))
@@ -507,7 +508,7 @@ def prune_graph(graph):
     if 'remove_rings' in options:
         REMOVE_RING= options['remove_rings']
 
-    maybe_print("Start pruning the graph.", 2)
+    maybe_print("Start pruning the graph.", 2,'i')
     # :: Perform pruning
     # Decide whether to skip the pruning because of the tiny size of graph
     if len(g.nodes()) < NUM_MIN_NODES or len(g.edges()) < NUM_MIN_EDGES:
@@ -530,11 +531,14 @@ def prune_graph(graph):
                 or len(node_label) < MIN_WORD_LENGTH \
                 or not re.match(RE_PATTERN,data['label']):
             to_remove_nodes.append(node)  # mark the node as to be removed
+    g.remove_nodes_from(to_remove_nodes)  # Remove marked nodes. Their corresponding edges will be automatically drop.
     for edge in g.edges():
-        if (edge[0] == edge[1] if REMOVE_RING else False) or edge[0] in to_remove_nodes or edge[1] in to_remove_nodes:
+        if edge[0] == edge[1] and REMOVE_RING:
             to_remove_edges.append(edge)
-    g.remove_nodes_from(to_remove_nodes)
     g.remove_edges_from(to_remove_edges)
+    maybe_print("  --> up to Short word, black/white list, regex, length filter, {0} nodes and {1} edges removed"
+                .format(ori_nnode-g.number_of_nodes(), ori_nedge-g.number_of_edges()),
+                2, 'i')
 
     # Filter nodes by frequency
     if NODE_FREQ_MIN > 1:
@@ -551,7 +555,9 @@ def prune_graph(graph):
         to_remove_nodes = [n for n in g.nodes()
                            if g.degree(n) < NODE_DEGREE_MIN and g.node[n]['label'] not in WHITE_NODES_LIST]
         g.remove_nodes_from(to_remove_nodes)
-
+    maybe_print("  --> up to Frequency and degree filter, {0} nodes and {1} edges removed"
+                .format(ori_nnode-g.number_of_nodes(), ori_nedge-g.number_of_edges()),
+                2, 'i')
     # Remove isolated nodes
     to_remove_edges = []
     if REMOVE_ISOLATED_NODE:
@@ -563,6 +569,9 @@ def prune_graph(graph):
         g.remove_nodes_from(to_remove_nodes)
         g.remove_edges_from(to_remove_edges)
 
+    maybe_print("  --> up to Isolated nodes filter, {0} nodes and {1} edges removed"
+                .format(ori_nnode-g.number_of_nodes(), ori_nedge-g.number_of_edges()),
+                2, 'i')
     # :: Done pruning
     maybe_print("--> Graph PRUNNING completed.\n    Number of nodes: {0}\n    Number of edges: {1}"
                 .format(len(g.nodes()), len(g.edges())),2)
@@ -969,9 +978,10 @@ def graph_unify(g=None, uni_opt=None):
                                     label = unicode.join(u',', [rs[n][node0]['label'], rs[n][node1]['label']])
                                     add_up_weights.append((n, node0, n_n0_weight+n_n1_weight, label))
                         group_id = rs.node[node0]['group_id'] | rs.node[node1]['group_id']
-                        history = rs.node[node0]['history'] + \
-                                  '<br> - Joined with <br> {0}'.format(rs.node[node1]['history']) \
-                                  if rs.node[node1]['history'] != "" else ""
+                        # print rs.node[node0]['history'], rs.node[node1]['history']  ####################################
+                        history = repetition_summary(rs.node[node0]['history'] + \
+                                  u'<br> - Joined with {0} ({1})'.format(rs.node[node1]['history'].replace('<br> -',':')
+                                                                         , node1))
                         pos = rs.node[node0]['pos'] | rs.node[node1]['pos']
                         rs = nx.contracted_nodes(rs, node0, node1)   # Perform contraction
                         # set the combined properties
@@ -1041,9 +1051,10 @@ def graph_unify(g=None, uni_opt=None):
                                                              [rs[n][node0]['label'], rs[n][node1]['label']])
                                         add_up_weights.append((n, node0, n_n0_weight + n_n1_weight,label))
                             group_id = rs.node[node0]['group_id'] | rs.node[node1]['group_id']
-                            history = rs.node[node0]['history'] + \
-                                      '<br> Joined with <br> {0}'.format(rs.node[node1]['history']) \
-                                      if rs.node[node1]['history'] != "" else ""
+                            # print rs.node[node0]['history'], rs.node[node1]['history']  ################################
+                            history = repetition_summary(rs.node[node0]['history'] + \
+                                      u'<br> - Joined with {0} ({1})'.format(rs.node[node1]['history'].replace('<br> -',':')
+                                                                           ,node1))
                             pos = rs.node[node0]['pos'] | rs.node[node1]['pos']
                             rs = nx.contracted_nodes(rs, node0, node1)
                             rs.node[node0]['weight'] = sum_weight
@@ -1106,6 +1117,7 @@ def graph_unify(g=None, uni_opt=None):
         while len(to_contract_pairs) > 0:
             node0 = to_contract_pairs[0][0]
             node1 = to_contract_pairs[0][1]
+            # print 'xxxxxxxxx==== ', node0, node1
             # Sum up the weight of the two node
             sum_weight = rs_semantic.node[node0]['weight'] + rs_semantic.node[node1]['weight']
             # print g.node[node0]['weight'], g.node[node1]['weight']
@@ -1143,7 +1155,7 @@ def graph_unify(g=None, uni_opt=None):
                         rs_semantic.node[node1]['weight'],
                         node1)
             # Decide the label
-            tmp = sorted(re.findall(r'([a-z_/\\-][a-z_/\\-]+)\^(\d)', history), key=lambda x: int(x[1]))
+            tmp = sorted(re.findall(r'\s([a-z_/\\-][a-z_/\\-]+)\^(\d+)', history), key=lambda x: int(x[1]))
             # print tups
             label = rs_semantic.node[node0]['label'] if not history or not tmp else tmp[-1][0]
 
