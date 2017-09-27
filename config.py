@@ -37,13 +37,14 @@ community_detect_options = {
     'enable_community_detection': True,             # Enable/Disable community detection,
     'method': {
                     'algorithm': 'fluid_communities',     # other options 'bipartitions', Label propagation
-                    'n_communities': 7
+                    'n_communities': 6
                },
     'community_label_inference': {   # method for inferring the label
         'method': 'distributed_semantic',
         'params': {
             'window': 3,
-            'weight_ls': [1., .7, .5]
+            'weight_ls': [1., .7, .5],
+            'composition_method': 'average' # 'weighted_average', 'average' (special kind of average), 'vec_sum'
         }
     }
 }

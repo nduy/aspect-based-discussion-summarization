@@ -97,6 +97,8 @@ def detect_communities(g=None, comm_opt=None):
                             if 'window' in comm_opt['community_label_inference']['params'] else 3
                         V_WEIGHTS = comm_opt['community_label_inference']['params']['weight_ls'] \
                             if 'weight_ls' in comm_opt['community_label_inference']['params'] else 3
+                        COMPOSITION_METHOD = comm_opt['community_label_inference']['params']['composition_method'] \
+                            if 'composition_method' in comm_opt['community_label_inference']['params'] else 3
                         words_matrix = extract_vector_from_text_list(comm_labels,
                                                                      model=glove_model,
                                                                      window=WINDOW,
@@ -108,14 +110,22 @@ def detect_communities(g=None, comm_opt=None):
                         # remove zero rows from words_matrix
                         words_matrix = np.delete(words_matrix, zeros_indices, axis=0)
                         # get all the weight in the community, then convert to float by multiply 1.0
-                        vector_weight = np.array([graph.node[node_id]['weight'] for node_id in com]) * 1.0
-                        vector_weight = np.delete(vector_weight, zeros_indices, axis=0)  # rm lines whose vector is zero
-                        # Compute weights -> this is a kind of weighted sum
-                        vector_weight = vector_weight/np.sum(vector_weight)  # compute scale/co-efficient, whatever :D
-                        vector_weight = vector_weight.reshape((len(vector_weight), 1))  # Transpose to column vector
-                        print vector_weight
-                        #vector_weight = np.ones((len(com),1))
-                        print words_matrix.shape, vector_weight.shape
+                        # Compute vector weight according to composition method
+                        vector_weight = None
+                        if COMPOSITION_METHOD == 'weighted_average':
+                            vector_weight = np.array([graph.node[node_id]['weight'] for node_id in com]) * 1.0
+                            vector_weight = np.delete(vector_weight, zeros_indices, axis=0)  # remove zero rows
+                            # Compute weights -> this is a kind of weighted sum
+                            vector_weight = vector_weight/np.sum(vector_weight)  # compute scale/co-efficient, whatever :D
+                            vector_weight = vector_weight.reshape((len(vector_weight), 1))  # Transpose to column vector
+                        elif COMPOSITION_METHOD == 'average':
+                            n_row = len(com) - len(zeros_indices)
+                            vector_weight = np.full((n_row,1),1.0/len(n_row),dtype=np.float)
+                        elif COMPOSITION_METHOD == 'vec_sum':
+                            vector_weight = np.ones((len(com) - len(zeros_indices), 1))
+                        else:
+                            raise ValueError('Invalid vector composition method')
+                        # print words_matrix.shape, vector_weight.shape
                         assert words_matrix.shape[0] == vector_weight.shape[0], \
                             'Mismatch size of matrix for community {0}  with {1} members and its weight matrix.\n'\
                             .format(com_index-1, len(com))
@@ -123,7 +133,7 @@ def detect_communities(g=None, comm_opt=None):
                         composition_matrix = np.multiply(words_matrix,vector_weight)
                         # Remove zero rows and sum
                         composition_vector = np.sum(composition_matrix, axis=0)
-                        print composition_vector
+                        # print composition_vector
                         # Dig to vector space of Glove to get the label
                         dst = (np.dot(glove_model.word_vectors, composition_vector)
                                / np.linalg.norm(glove_model.word_vectors, axis=1)

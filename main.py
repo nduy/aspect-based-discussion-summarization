@@ -64,7 +64,8 @@ if __name__ == "__main__":
             'timestamp': dt.now().strftime("%Y-%m-%d %H:%M:%S %Z"),
             'build_option': build_options,
             'pruning_option': prune_options,
-            'unification_option': uni_options
+            'unification_option': uni_options,
+            'community_detection_option': community_detect_options
         }
     with open('result.json', 'w') as outfile:
         json.dump(json_g, outfile, sort_keys=True, indent=4, separators=(',', ': '))
