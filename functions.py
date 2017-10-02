@@ -146,7 +146,7 @@ def build_mode_1(title, article, comments):
                                                               group_id = ['central.group'],
                                                               sentiment= {'pos_count': 0,
                                                                            'neu_count': 1,
-                                                                             'neg_count': 0},
+                                                                           'neg_count': 0},
                                                               history = u"",
                                                               cluster_id = u"central"
                                                             )
@@ -407,7 +407,7 @@ def build_directed_graph_from_text(txt, group_id='', member_id=''):
 
 
 # Declaration for graph extractor in order to run mulithreading
-class DirGraphExtractor (threading.Thread):
+class DirGraphExtractor(threading.Thread):
     name = 'unnamed'
     data = []
     result = []
@@ -1096,8 +1096,8 @@ def graph_unify(g=None, uni_opt=None):
         rs_semantic = rs  # clone the network before modifying
         # First determine pairs of node that similar to each other
         to_contract_pairs = set()
-        for n1, d1 in rs.nodes(data=True):
-            for n2, d2 in rs.nodes(data=True):
+        for n1, d1 in rs_semantic.nodes(data=True):
+            for n2, d2 in rs_semantic.nodes(data=True):
                 # print d1['label'], d2['label']
                 if d1['label'] != d2['label'] \
                         and (n1,n2) not in to_contract_pairs and (n2,n1) not in to_contract_pairs:
@@ -1117,6 +1117,7 @@ def graph_unify(g=None, uni_opt=None):
         while len(to_contract_pairs) > 0:
             node0 = to_contract_pairs[0][0]
             node1 = to_contract_pairs[0][1]
+
             # print 'xxxxxxxxx==== ', node0, node1
             # Sum up the weight of the two node
             sum_weight = rs_semantic.node[node0]['weight'] + rs_semantic.node[node1]['weight']
@@ -1296,7 +1297,7 @@ def unicode_csv_reader(unicode_csv_data, dialect=csv.excel, **kwargs):
 def coreference_refine(text):
     if not text.strip():
         return text
-    tokens = [[tok for tok in StanfordTokenizer().tokenize(sen.strip())] for sen in sent_tokenize(text)]
+    tokens = [[tok for tok in StanfordTokenizer().tokenize(sen)] for sen in sent_tokenize(text)]
     rs_tks = tokens
     parse_rs = None
     try:
@@ -1307,7 +1308,7 @@ def coreference_refine(text):
         # parse_rs = loads(parse)
     except Exception as detail:
         maybe_print("Can't parse sentence this sentence for coreference \"{0}...\"\n --> Error: {1}"
-                    .format(text[:min(30,len(text))],detail), 2,'E')
+                    .format(text[:min(130,len(text))],detail), 2,'E')
         threadLock.release()
     try:
         if not parse_rs or 'coref' not in parse_rs:
@@ -1360,6 +1361,6 @@ def coreference_refine(text):
         else:
             return text
     except Exception as detail:
-        maybe_print(" --> Unable to extract co-reference for sentence: \"{0}...\"\n     --> Error: {1}"
+        maybe_print(" --> Unable to extract co-reference for sentence: \"{0}...\"\n     --> Error: {1}."
                     .format(text[:min(30,len(text))],detail), 2,'W')
         return text

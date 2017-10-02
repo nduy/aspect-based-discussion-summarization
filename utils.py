@@ -263,7 +263,7 @@ def cosine_similarity(word1,word2,model):
             return 0
         elif len(ws) > 1:  # there are at least 2 elements of the list is in dictionary
             # Simple composition by summing the vector
-            v1 = model.word_vectors[model.dictionary[ws[-1]]] + model.word_vectors[model.dictionary[ws[-2]]]
+            v1 = model.word_vectors[model.dictionary[ws[-1]]] + model.word_vectors[model.dictionary[ws[-2]]]*0.5
         else:  # has 1 element that is in the dictionary
             v1 = model.word_vectors[model.dictionary[ws[0]]]
 
@@ -273,7 +273,7 @@ def cosine_similarity(word1,word2,model):
             return 0
         elif len(ws) > 1:  # there are at least 2 elements of the list is in dictionary
             # Simple composition by summing the vector
-            v2 = model.word_vectors[model.dictionary[ws[-1]]] + model.word_vectors[model.dictionary[ws[-2]]]
+            v2 = model.word_vectors[model.dictionary[ws[-1]]] + model.word_vectors[model.dictionary[ws[-2]]]*0.5
         else:  # has 1 element that is in the dictionary
             v2 = model.word_vectors[model.dictionary[ws[0]]]
 
