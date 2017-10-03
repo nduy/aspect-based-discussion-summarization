@@ -1172,10 +1172,14 @@ def graph_unify(g=None, uni_opt=None):
             rs_semantic.node[node0]['group_id'] = group_id
             rs_semantic.node[node0]['pos'] = pos
             # Update the weight of edges that has been added
+            # print '----->',len(rs_semantic.nodes())
             if add_up_weights:
                 for s, t, sw, lb in add_up_weights:
-                    rs_semantic[s][t]['weight'] = sw
-                    rs_semantic[s][t]['label'] = lb
+                    try:
+                        rs_semantic[s][t]['weight'] = sw
+                        rs_semantic[s][t]['label'] = lb
+                    except Exception as inst:
+                        maybe_print("Bug found: {0}".format(inst),2,'E')
             # Update the match lst
             to_contract_pairs = to_contract_pairs[1:]  # Remove first elements
             # Replace the existence of all node1 by node 0

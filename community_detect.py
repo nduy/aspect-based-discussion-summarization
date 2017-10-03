@@ -27,7 +27,7 @@ sample_community_names = [u'α',u'β',u'γ',u'δ',u'ε',u'ζ',u'η',u'θ',u'ι',
                            u'ν',u'ξ',u'ο',u'π',u'ρ',u'σ',u'τ',u'υ',u'φ',u'χ',u'ψ',u'ω']
 
 # Outliner ration: how many nodes do you want to treat as outliner
-outliers_fraction = 0.25
+outliers_fraction = 0.20
 
 
 # Detect the communities in a graph
@@ -84,7 +84,7 @@ def detect_communities(g=None, comm_opt=None):
                 for com in communities:
                     com_index += 1
                     # SVM One class classifier for outlier detection.
-                    clf = OneClassSVM(nu=0.85 * outliers_fraction + 0.05, kernel="poly", gamma='auto')
+                    clf = OneClassSVM(nu=0.90 * outliers_fraction + 0.05, kernel="poly", gamma=0.025, degree=4)
                     #####################
                     # How this work? the program compute weight sum over the vector of all member of the communities who
                     # DO EXIST in the glove vector space. The scale factor is the ratio between the node's frequency
@@ -140,15 +140,22 @@ def detect_communities(g=None, comm_opt=None):
                             'Mismatch size of matrix for community {0}  with {1} members and its weight matrix.\n'\
                             .format(com_index-1, len(com))
                         # Multiple matrices and the sum te vector to be the representative vector for the community
-                        composition_matrix = np.multiply(words_matrix,vector_weight)
+                        # composition_matrix = np.multiply(words_matrix,vector_weight)
                         # Remove outliers
-                        clf.fit(composition_matrix)  # fit the model
+                        #clf.fit(X=composition_matrix)  # fit the model
+                        print words_matrix.shape, vector_weight.flatten().shape
+                        clf.fit(X=words_matrix,sample_weight=vector_weight.flatten())  # fit the model
                         # predict with the model. The outcome is an array, each element is the predicted value of
                         # the word/row. It can be 1 (inlier) or -1 (outlier)
-                        y_pred = clf.predict(composition_matrix)
+                        # y_pred = clf.predict(composition_matrix)
+                        y_pred = clf.predict(words_matrix)
                         print y_pred
+
+                        # Weighted AVERAGE composition
+                        composition_matrix = np.multiply(words_matrix, vector_weight)
                         # Now filter inliner only
                         filtered_composition_vector = composition_matrix[np.where(y_pred == 1)]
+                        #filtered_composition_vector = words_matrix[np.where(y_pred == 1)]
                         # Remove predicted outlier
                         comm_labels_array = np.delete(comm_labels_array, np.where(y_pred == -1))
                         maybe_print('  --> Outlier removal discarded {0} words. Remaining words: {1}'

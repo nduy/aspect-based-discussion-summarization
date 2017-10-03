@@ -49,6 +49,9 @@ if __name__ == "__main__":
     nx.write_gpickle(pruned_graph, "tmp/pruned_graph.gpickle")
     del colored_graph
     print("[i] Elapsed time:  {0} seconds".format(str(td(seconds=(time.time() - start_time)))))
+    
+
+    # pruned_graph = nx.read_gpickle("tmp/pruned_graph.gpickle")
 
     # Compute sentiment scores, then serialize
     com_graph = detect_communities(pruned_graph, community_detect_options)
