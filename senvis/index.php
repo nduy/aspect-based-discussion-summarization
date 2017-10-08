@@ -13,11 +13,14 @@
 		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.20.1/vis.min.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<link href="mystyle.css" rel="stylesheet" type="text/css"/> 
 		<link href="vis.min.css" rel="stylesheet" type="text/css"/> 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.20.1/vis.min.js"></script>
 		<script type="text/javascript" src="exampleUtil.js"></script>
-
+		<link rel="icon" 
+		  type="image/png" 
+		  href="img/logowhite.png">
 		
 		
 	</head>
@@ -69,13 +72,18 @@
 			  <input type="button" value="save" id="edge-saveButton" class="flatbutton" style="width:7vw;height: 4vh;"/>
 			  <input type="button" value="cancel" id="edge-cancelButton" class="flatbutton" style="width:7vw;height: 4vh;"/>
 			</div>
-			<div id="mynetwork"> </div> 
+			<div id="mynetwork"> 
+				<div class="welcome w3-animate-opacity"><img src="img/sis.png" alt="SISLab's logo" style="position: absolute; top: 0; bottom:0; left: 0; right:0; margin: auto;"></div>
+			</div> 
+			<div id="comments-box"> 
+				<div class="welcome flashit" style="position: absolute; top: 0; bottom:0; left: 0; right:0; margin: auto;">WELCOME</div>
+			</div> 
 			<div id = "grabar" class= "vertical-text">
 				<div class= "textcentering">-<br>~<br>+</div>
 			</div> 
 		</div>
 		<div id = "commandbox">
-			<textarea id="jsonarea" onclick="this.select()">Paste graph description or enter JSON here</textarea>  
+			<textarea id="jsonarea" onclick="this.select()">Drop graph description JSON file or paste its content here</textarea>  
 			<button id = "submitbutton" class="flatbutton" style="position:absolute; width:9vw;	height: 8vh;">Draw</button>
 			<p id="status">File API & FileReader API not supported</p>
 

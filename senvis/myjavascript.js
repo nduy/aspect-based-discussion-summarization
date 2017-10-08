@@ -2,6 +2,7 @@
 var dataset_options = {};
 var nodesDataset = new vis.DataSet(dataset_options); 
 var edgesDataset = new vis.DataSet(dataset_options);
+var commentsDict = {}; // Store all comment
 var network = null;
 var data = null;
 var allNodes;
@@ -12,7 +13,8 @@ var color_book; // save original color of all nodes
 var seed = 2;
 var clustered = false;
 var cluster_ids = null;
-
+var enableLoading = false;
+var enableSmily = false;
 var locales = {
   en: {
     edit: 'Edit',
@@ -51,6 +53,8 @@ function destroy() {
 }
  
 function draw() {
+	enableLoading = true;
+	enableSmily = true;
 	destroy();
    // create a network
 	var container = document.getElementById('mynetwork');
@@ -105,8 +109,12 @@ function draw() {
 	   },
 	   //locales: locales,
 	   clickToUse: false,
-	   physics: true,
-	   
+	   physics: {
+			barnesHut: {
+			  gravitationalConstant: -8400,
+			},
+			minVelocity: 0.69,
+		  },
 	   layout: {
 	    improvedLayout:false,
 	    randomSeed:seed
@@ -143,7 +151,7 @@ function draw() {
 			smooth: {
 			  enabled: true,
 			  type: "dynamic",
-			  roundness: 0.1
+			  roundness: 0.35
 			},
 			scaling:{
 			  min: 1,
@@ -205,12 +213,40 @@ function draw() {
 	for (var nodeId in allNodes) {
      color_book[nodeId] = allNodes[nodeId].color;
 	}
+	
+	network.on("startStabilizing", function (params) {
+		// document.getElementById('eventSpan').innerHTML = '<h3>Starting Stabilization</h3>';
+		//console.log("started")
+		if (enableLoading){
+			$("#comments-box").html("<div class=\"welcome w3-spin\"><img src=\"img/loading.png\" alt=\"drawing...\" style=\"position: absolute; top: 0; bottom:0; left: 0; right:0; margin: auto;\"></div>");
+			enableLoading = false;
+		}
+		
+	});
+/*  network.on("stabilizationProgress", function (params) {
+    document.getElementById('eventSpan').innerHTML = '<h3>Stabilization progress</h3>' + JSON.stringify(params, null, 4);
+    console.log("progress:",params);
+  });
+  network.on("stabilizationIterationsDone", function (params) {
+    document.getElementById('eventSpan').innerHTML = '<h3>Stabilization iterations complete</h3>';
+    console.log("finished stabilization interations");
+  });
+ */
+  network.on("stabilized", function (params) {
+    // document.getElementById('eventSpan').innerHTML = '<h3>Stabilized!</h3>' + JSON.stringify(params, null, 4);
+    //console.log("stabilized!", params);
+    if (enableSmily){
+		$("#comments-box").html("<div class=\"welcome w3-spin\">:)</div>");
+		enableSmily = false;
+	}
+  });
+  
      network.on("selectNode", function(params) {
-      if (params.nodes.length == 1) {
-          if (network.isCluster(params.nodes[0]) == true) {
-              network.openCluster(params.nodes[0]);
-          }
-      }
+      //if (params.nodes.length == 1) {
+      //   if (network.isCluster(params.nodes[0]) == true) {
+      //        network.openCluster(params.nodes[0]);
+      //    }
+      // }
 	});
 	
 	/*	network.on("click", function (params) {
@@ -281,7 +317,14 @@ function draw() {
     });
 */
 	network.on("hoverNode", function (params) {
+        // Hightlight the neighbour nodes
         neighbourhoodHighlight(params);
+        // If the nodes is comment node, then display the comment
+        node_id = params.node;
+        if (node_id.match(/^comment~[\d]+$/i)){ // Check if it is a comment
+			// Clear the comment show area
+			$("#comments-box").html("<div class=\"block-item\">" + commentsDict[node_id] + "</div>");
+		}
     });
 }
 
@@ -504,7 +547,13 @@ function drawFromJS() {
 				edgesDataset.clear();
 				nodesDataset.add(parsed_text.nodes);
 				edgesDataset.add(parsed_text.edges);
+				// Read the comments
+				for (let item of parsed_text.comments){
+					commentsDict[item.id] = item.label;
+				}
+				// console.log(commentsDict);
 				draw();
+				
 				
 			}
 			catch(err) {
@@ -528,6 +577,8 @@ function color2hex(rgb){
 // Handle cluster/expand button
 function handleExpandCluster(){
 	if (clustered == false){
+		enableLoading = true;
+		enableSmily = true;
 		clusterByCid();
 		clustered = true;
 		$("#clusterButton").prop('value', 'Expand all clusters'); 
@@ -535,10 +586,11 @@ function handleExpandCluster(){
 		clustered = false;
 		// console.log(cluster_ids);
 		for (let nodeId of cluster_ids) {
-		   // console.log(nodeId);
-		   if (network.isCluster(nodeId) == true) {
-				  network.openCluster(nodeId);
-			  }
+		  console.log(nodeId);
+		  if (network.isCluster(nodeId) == true) {
+			  network.openCluster(nodeId);
+		   }
+
 		}
 		$("#clusterButton").prop('value', 'Cluster nodes by topics'); 
 		
@@ -584,11 +636,16 @@ function clusterByCid() {
 		  },
 		  clusterNodeProperties: {id: cid.toString(), 
 			  borderWidth: 1, shape: 'box', 
-			  label:'Group:' + cid.toString(),
-			  title: 'Nodes: <br> - ' + group_members[cid].join('<br> - ')
+			  label: cid.toString(),
+			  title: 'Nodes: <br> - ' + group_members[cid].join('<br> - '),
+			  x : 200,
+			  fixed: { x: true},
+			  color: '#1E90FF' // Do some sentiment composition here
 			  }
 	  };  
 	  network.cluster(clusterOptionsByData);
+	  allNodes[cid] = clusterOptionsByData['clusterNodeProperties'];
+	  color_book[cid] = '#1E90FF';
   }
   // console.log(clustered)
 }

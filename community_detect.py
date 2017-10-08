@@ -84,7 +84,7 @@ def detect_communities(g=None, comm_opt=None):
                 for com in communities:
                     com_index += 1
                     # SVM One class classifier for outlier detection.
-                    clf = OneClassSVM(nu=0.90 * outliers_fraction + 0.05, kernel="poly", gamma=0.025, degree=4)
+                    clf = OneClassSVM(nu=0.90 * outliers_fraction + 0.05, kernel="poly", gamma=0.03, degree=3)
                     #####################
                     # How this work? the program compute weight sum over the vector of all member of the communities who
                     # DO EXIST in the glove vector space. The scale factor is the ratio between the node's frequency

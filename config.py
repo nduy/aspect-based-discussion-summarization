@@ -73,7 +73,7 @@ community_detect_options = {
         'method': 'distributed_semantic',
         'params': {
             'window': 3,
-            'weight_ls': [1., .65, .4],
+            'weight_ls': [1., .7, .4],
             # 'weighted_average', 'average' (special kind of average), 'vec_sum'
             'composition_method': 'weighted_average'
         }

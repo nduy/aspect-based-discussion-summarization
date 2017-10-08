@@ -7,11 +7,12 @@
 		visibility: hidden;
 }
 #mynetwork {
-	position:absolute
-	width: 80vw;
+	position:absolute;
+	left: 0.5vw;
+	width: 75.5vw;
 	height: 81.5vh;
-	border: 1px solid #444444;
-	background-color: #222222;
+	border: 0px solid #444444;
+	background-color: #180E15;
 }
 
 #text {
@@ -83,8 +84,8 @@ div.outerBorder {
 #grabar{
 	position:absolute;
 	top: 10vh; 
-	left:97.6vw;
-	width:1.7vw;
+	left:1vw;
+	width:1.2vw;
 	height: 70vh;
 	background: red; /* For browsers that do not support gradients */
 	background: linear-gradient(yellow,red); /* Standard syntax */
@@ -255,3 +256,160 @@ table.legend_table {
 	  background-color: #27496d;
 	  text-shadow: -1px 1px #193047;
 	}
+
+body{
+	background-color: #070507;
+}
+
+/* Comment box */
+
+#comments-box {
+	position:absolute;
+	width: 23vw;
+	right: 0.5vw;
+	height: 81.5vh;
+	border: 0px solid #444444;
+	background-color: #180E15;
+    text-align: justify;
+    text-justify: inter-word;
+	overflow-y:scroll;
+	overflow-x:hidden;
+}
+.welcome {
+	text-align:center;
+	font-size:2em;
+	color:#ffe6e6;
+	text-align:center;
+	vertical-align: middle;
+	height:70vh;text-justify: 
+	inter-word;line-height:70vh;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+}
+.block-item {
+	float:right;
+	-webkit-transform:translateX(100%);
+	-moz-transform:translateX(100%);
+	transform:translateX(100%);	
+	opacity:0;
+	overflow:hidden;
+	padding:10px 5px 10px 5px;
+	width:21.5vw;
+	height:auto;
+	line-height:30px;
+	background:#4A3247;
+	color:#FFF;
+	font-family: Sans-Serif, serif, Times;
+	font-size: 0.875em;
+	line-height: 1.3em;
+	text-align: justify;
+    text-justify: inter-word;
+	-webkit-animation: slide 1s forwards;
+	-moz-animation: slide 1s forwards;
+	-ms-animation: slide 1s forwards;
+	animation: slide 1s forwards;
+}
+.block-item:nth-child(2n) {
+	background:#2D1E26;
+}
+@-webkit-keyframes slide{100%{opacity:1;-webkit-transform:translateY(0%)}}
+@-moz-keyframes slide{100%{opacity:1;-moz-transform:translateY(0%)}}
+@keyframes slide{100%{opacity:1;transform:translateY(0%)}}
+.block-item:nth-child(2) { 
+	-webkit-animation-delay: .02s;
+	-moz-animation-delay: .02s;
+	-ms-animation-delay: .02s;
+	animation-delay: .02s;
+}
+.block-item:nth-child(3) { 
+	-webkit-animation-delay: .03s;
+	-moz-animation-delay: .03s;
+	-ms-animation-delay: .03s;
+	animation-delay: .03s;
+}
+.block-item:nth-child(4) { 
+	-webkit-animation-delay: .04s;
+	-moz-animation-delay: .04s;
+	-ms-animation-delay: .04s;
+	animation-delay: .04s;
+}
+.block-item:nth-child(5) { 
+	-webkit-animation-delay: .05s;
+	-moz-animation-delay: .05s;
+	-ms-animation-delay: .05s;
+	animation-delay: .05s;
+}
+.block-item:nth-child(6) { 
+	-webkit-animation-delay: .06s;
+	-moz-animation-delay: .06s;
+	-ms-animation-delay: .06s;
+	animation-delay: .06s;
+}
+.block-item:nth-child(7) { 
+	-webkit-animation-delay: .07s;
+	-moz-animation-delay: .07s;
+	-ms-animation-delay: .07s;
+	animation-delay: .07s;
+}
+.block-item:nth-child(8) { 
+	-webkit-animation-delay: .08s;
+	-moz-animation-delay: .08s;
+	-ms-animation-delay: .08s;
+	animation-delay: .08s;
+}
+.block-item:nth-child(9) { 
+	-webkit-animation-delay: .09s;
+	-moz-animation-delay: .09s;
+	-ms-animation-delay: .09s;
+	animation-delay: .09s;
+}
+.block-item:nth-child(10) { 
+	-webkit-animation-delay: .1s;
+	-moz-animation-delay: .1s;
+	-ms-animation-delay: .1s;
+	animation-delay: .1s;
+}
+#comments-box::-webkit-scrollbar {
+    width: .5em;
+}
+ 
+#comments-box::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+#comments-box::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+/* Flash class and keyframe animation */
+.flashit{
+  color:#E5E5E5;
+	-webkit-animation: flash linear 1s infinite;
+	animation: flash linear 3s infinite;
+}
+@-webkit-keyframes flash {
+	0% { opacity: 1; } 
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
+}
+@keyframes flash {
+	0% { opacity: 1; } 
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
+}
+/* Pulse class and keyframe animation */
+.pulseit{
+	-webkit-animation: pulse linear .5s infinite;
+	animation: pulse linear .5s infinite;
+}
+@-webkit-keyframes pulse {
+	0% { width:200px; } 
+	50% { width:340px; } 
+	100% { width:200px; }
+}
+@keyframes pulse {
+	0% { width:200px; } 
+	50% { width:340px; } 
+	100% { width:200px; }
+}
