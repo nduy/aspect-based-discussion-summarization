@@ -15,6 +15,11 @@ var clustered = false;
 var cluster_ids = null;
 var enableLoading = false;
 var enableSmily = false;
+var groupComments = null; // save nodeid of each comments i
+var group_members = null;
+var n_comments = 20;
+var cluster_radius = 400; // radius of each cluster
+var selected_cluster = null; // selected cluster when right click, store so that can triggle command when context menu is sellected
 var locales = {
   en: {
     edit: 'Edit',
@@ -110,10 +115,21 @@ function draw() {
 	   //locales: locales,
 	   clickToUse: false,
 	   physics: {
+		    enabled: true,
 			barnesHut: {
-			  gravitationalConstant: -8400,
+			  centralGravity: 0.01,
+			  springLength: 1,
+			  springConstant: 0.01,
+			  damping: 0.22,
+			  avoidOverlap: 0.4,
 			},
-			minVelocity: 0.69,
+			maxVelocity: 10,
+			minVelocity: 3,
+			adaptiveTimestep: true,
+			stabilization:{
+				enabled: true,
+				iterations: 1000,
+			}
 		  },
 	   layout: {
 	    improvedLayout:false,
@@ -122,7 +138,9 @@ function draw() {
 	   
 	   interaction:{
 			hover:true,
-			tooltipDelay: 200
+			tooltipDelay: 200,
+			navigationButtons: true,
+			keyboard: true,
 		},
 	   nodes: {
 		shape: 'square',
@@ -151,7 +169,7 @@ function draw() {
 			smooth: {
 			  enabled: true,
 			  type: "dynamic",
-			  roundness: 0.35
+			  roundness: 0.2
 			},
 			scaling:{
 			  min: 1,
@@ -197,11 +215,23 @@ function draw() {
 		  
 	};	
 	
+	// Re arrange the comment to be a line
+    y_pos = n_comments/2*-30;	// Starting pos
+    x_pos = $('#mynetwork').width()*0.8;
+    // alert(x_pos);
+    for (let node_id of nodesDataset.getIds()) {
+     if (node_id.match(/^comment~[\d]+$/i)) {
+		// console.log(node_id);
+		nodesDataset.update({id: node_id, y: y_pos, x : x_pos, size: 400, margin: {left: 100, right: 100}});
+		y_pos+= 30;
+     }
+   }
+	// Group to data
 	data = {
 	  nodes: nodesDataset,
 	  edges: edgesDataset
 		}; 
-	
+	// draw the network
 	network = new vis.Network(container, data, options);
 	// get a JSON object
 	allNodes = nodesDataset.get({returnType:"Object"});
@@ -213,7 +243,20 @@ function draw() {
 	for (var nodeId in allNodes) {
      color_book[nodeId] = allNodes[nodeId].color;
 	}
-	
+   
+	// Save all ClusterID -> commetn
+	groupComments = {};
+	for (var edgeId in allEdges) {
+		if (edgeId.match(/^cmn\d+$/i)){ // is a cluster-comment edge
+			// console.log(allEdges[edgeId]);
+			if (!groupComments[allEdges[edgeId].from]){
+				groupComments[allEdges[edgeId].from] = [allEdges[edgeId].to];
+			} else {
+				groupComments[allEdges[edgeId].from].push(allEdges[edgeId].to);
+			}
+		}
+	}
+	// console.log(groupComments);
 	network.on("startStabilizing", function (params) {
 		// document.getElementById('eventSpan').innerHTML = '<h3>Starting Stabilization</h3>';
 		//console.log("started")
@@ -232,22 +275,69 @@ function draw() {
     console.log("finished stabilization interations");
   });
  */
-  network.on("stabilized", function (params) {
-    // document.getElementById('eventSpan').innerHTML = '<h3>Stabilized!</h3>' + JSON.stringify(params, null, 4);
-    //console.log("stabilized!", params);
-    if (enableSmily){
-		$("#comments-box").html("<div class=\"welcome w3-spin\">:)</div>");
+	network.on("stabilized", function (params) {
+	// document.getElementById('eventSpan').innerHTML = '<h3>Stabilized!</h3>' + JSON.stringify(params, null, 4);
+	//console.log("stabilized!", params);
+	if (enableSmily){
+		// $("#comments-box").html("<div class=\"welcome w3-spin\">:)</div>");
+		showAllComments();
 		enableSmily = false;
 	}
-  });
-  
-     network.on("selectNode", function(params) {
-      //if (params.nodes.length == 1) {
-      //   if (network.isCluster(params.nodes[0]) == true) {
-      //        network.openCluster(params.nodes[0]);
-      //    }
-      // }
 	});
+  
+	network.on("selectNode", function(params) {
+	console.log(params);
+	if (params.nodes.length == 1) {
+	 // console.log(network.isCluster(params.nodes[0]));
+	 if (network.isCluster(params.nodes[0]) == true) {
+		  
+		  // $('.context-menu-one').contextMenu();
+		  //$('.context-menu-one').trigger("contextmenu");
+		  /*
+		  // network.physics.options.enabled = false;
+		  network.openCluster(params.nodes[0]);
+		  // Remove node from dataset
+		  nodesDataset.remove(params.nodes[0]);
+		  delete allNodes[params.nodes[0]];
+		  cluster_ids.delete(params.nodes[0]);
+		  delete group_members[params.nodes[0]];
+		  // console.log(cluster_ids);
+		  if (cluster_ids.size == 0){
+			clustered = false;
+			$("#clusterButton").prop('value', 'Cluster nodes by topics'); 
+		  }
+		  // Now re-arange stuff at the center
+		  
+		  var central_x = allNodes[params.nodes[0]].x;
+		  var central_y = allNodes[params.nodes[0]].y;
+		  console.log(group_members[params.nodes[0]]);
+		  var delta_phi = 360/group_members[params.nodes[0]].ids.length;
+		  var phi = 0; //initialize phi at zero
+		  for (let nodeID of group_members[params.nodes[0]].ids){
+				position = rotate(0, 0, 0, 0 + cluster_radius, phi);
+				phi += delta_phi;
+				allNodes[nodeID].x = position[0];
+				allNodes[nodeID].y = position[1];
+				nodesDataset.update({ id: nodeID, x:  position[0], y:  position[1]});
+		  }
+		  network.physics.options.enabled = true;
+		  */
+		  console.log('');
+	  }
+	}
+	});
+	
+	network.on("oncontext", function (params) {
+        selected_nodeid = network.getNodeAt({x: params.event.layerX, y: params.event.layerY});
+        if (selected_nodeid){
+			if (network.isCluster(selected_nodeid)) {
+				params.event.preventDefault();
+				selected_cluster = selected_nodeid;
+				$('.context-menu-one').contextMenu({x: params.event.layerX-200, y: params.event.layerY});
+			}
+		}
+        //document.getElementById('eventSpan').innerHTML = '<h2>oncontext (right click) event:</h2>' + JSON.stringify(params, null, 4);
+    });
 	
 	/*	network.on("click", function (params) {
         params.event = "[original event]";
@@ -321,10 +411,23 @@ function draw() {
         neighbourhoodHighlight(params);
         // If the nodes is comment node, then display the comment
         node_id = params.node;
+        // console.log(node_id);
+        // console.log(node_id.match(/^\[[α-ωΑ-Ω]\]\s/i));
         if (node_id.match(/^comment~[\d]+$/i)){ // Check if it is a comment
 			// Clear the comment show area
 			$("#comments-box").html("<div class=\"block-item\">" + commentsDict[node_id] + "</div>");
+		} else if (node_id.match(/^\[[α-ωΑ-Ω]\]\s/i)){ // is a Cluster node -> display text in clusters
+			// Find all nodes id of the nodes that it connected with
+			html_content = "";
+			//console.log(groupComments[node_id]);
+			for (let comment_id of groupComments[node_id]){
+				if (commentsDict[comment_id]){
+					html_content = html_content + "<div class=\"block-item\">" + commentsDict[comment_id] + "</div>"; ///////////////////////////////////////////////////////////
+				}	
+			}
+			$("#comments-box").html(html_content); // Update to page
 		}
+		
     });
 }
 
@@ -445,6 +548,7 @@ function init() {
 
 function neighbourhoodHighlight(params) {
 //console.log(params);
+ network.physics.options.enabled = false;
  // if something is selected:
  if (params.node) {
    highlightActive = true;
@@ -522,10 +626,14 @@ function neighbourhoodHighlight(params) {
  var updateArray = [];
  for (nodeId in allNodes) {
    if (allNodes.hasOwnProperty(nodeId)) {
-     updateArray.push(allNodes[nodeId]);
+     // updateArray.push(allNodes[nodeId]);
+     updateArray.push({id: allNodes[nodeId].id, color: allNodes[nodeId].color});
+     // nodesDataset.update({id: allNodes[nodeId].id, color: allNodes[nodeId].color});
    }
  }
+ //console.log(updateArray);
  nodesDataset.update(updateArray);
+ network.physics.options.enabled = true;
 }
 
 function drawFromJS() {
@@ -547,6 +655,7 @@ function drawFromJS() {
 				edgesDataset.clear();
 				nodesDataset.add(parsed_text.nodes);
 				edgesDataset.add(parsed_text.edges);
+				n_comments = parsed_text.summary.n_comments;
 				// Read the comments
 				for (let item of parsed_text.comments){
 					commentsDict[item.id] = item.label;
@@ -579,6 +688,7 @@ function handleExpandCluster(){
 	if (clustered == false){
 		enableLoading = true;
 		enableSmily = true;
+		network.physics.options.stabilization.enabled  = false;
 		clusterByCid();
 		clustered = true;
 		$("#clusterButton").prop('value', 'Expand all clusters'); 
@@ -586,13 +696,22 @@ function handleExpandCluster(){
 		clustered = false;
 		// console.log(cluster_ids);
 		for (let nodeId of cluster_ids) {
-		  console.log(nodeId);
-		  if (network.isCluster(nodeId) == true) {
-			  network.openCluster(nodeId);
-		   }
+		  //if (network.isCluster(nodeId) == true) {
+		  // network.physics.options.enabled = false;
+		  //console.log(network.physics.options);
+		  network.openCluster(nodeId);
+		  nodesDataset.remove(nodeId);
+		  //console.log(network.physics.options);
+		  //network.physics.options.enabled = true;
+		  //}
 
 		}
+		// Reset all records
+		cluster_ids = null;
+		group_members = null;
 		$("#clusterButton").prop('value', 'Cluster nodes by topics'); 
+		console.log('0000-->');
+		network.physics.options.stabilization.enabled  = true;
 		
 	}
 }
@@ -601,57 +720,153 @@ function handleExpandCluster(){
 function clusterByCid() {
   network.setData(data);
   cluster_ids = new Set();
-  var group_members = {}
+  group_members = {}
+  // Arrange nodes to clusters
   for (key in allNodes){
 	  item = allNodes[key];
 	  // console.log(item);
 	  if (item.cid != undefined){
 	  	  cluster_ids.add(item.cid);
 	  	  if (!(item.cid in group_members)){  // the cluster id wasn't there before
-			  group_members[item.cid] = [item.label];
+			  group_members[item.cid] = {count: item.value, members: [item.label], ids: [key]};
 		  } else {
-			  group_members[item.cid].push(item.label);
+			  group_members[item.cid].count = group_members[item.cid].count + item.value;
+			  group_members[item.cid].members.push(item.label); // Add member to group
+			  group_members[item.cid].ids.push(key); // Add id to group
 		  }
 			
 	  }
+  }
+  // Coumpute weighted-average sentiment score
+  for (var cid in group_members){
+	 var avg = 0;
+	 var total_count = group_members[cid].count;
+	 for (let nodeid of group_members[cid].ids){
+		// console.log(allNodes[nodeid].title.match(/Sen_Score: (-?[\d.]+)/i)[1]);
+		avg += allNodes[nodeid].value/total_count*parseFloat(allNodes[nodeid].title.match(/Sen_Score: (-?[\d.]+)/i)[1]);
+	 }
+	 group_members[cid].avg_sen_score = Math.round(avg*10000)/10000;
   }
   
   // console.log(group_members);
   // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
   var clusterOptionsByData;
+  var y_pos = -250*cluster_ids.size/2;
   for (let cid of cluster_ids.values()){
-  // for (var i = 0; i < cluster_ids.length; i++) {
-	  // var cid = cluster_ids[i];
+	  y_pos = y_pos + 250;
+	  // console.log(y_pos);
 	  clusterOptionsByData = {
 		  joinCondition: function (childOptions) {
 			  return childOptions.cid == cid; // the color is fully defined in the node.
 		  },
-		  processProperties: function (clusterOptions, childNodes, childEdges) {
+		  /*processProperties: function (clusterOptions, childNodes, childEdges) {
+			  
 			  var totalMass = 0;
 			  for (var i = 0; i < childNodes.length; i++) {
 				  totalMass += childNodes[i].mass;
 			  }
 			  clusterOptions.mass = totalMass;
 			  return clusterOptions;
-		  },
-		  clusterNodeProperties: {id: cid.toString(), 
+			 
+		  }, */
+		  clusterNodeProperties: {id: cid, 
 			  borderWidth: 1, shape: 'box', 
-			  label: cid.toString(),
-			  title: 'Nodes: <br> - ' + group_members[cid].join('<br> - '),
-			  x : 200,
-			  fixed: { x: true},
-			  color: '#1E90FF' // Do some sentiment composition here
+			  label: cid,
+			  title: '☉ Nodes: <br> - ' + group_members[cid].members.join('<br> - ') + '<br>Σ Total count: '+ group_members[cid].count + '<br>' + ((group_members[cid].avg_sen_score<0) ? '☹': '☺') + ' W.mean sen.: ' + group_members[cid].avg_sen_score,
+			  x : $('#mynetwork').width()*-0.8,
+			  y : y_pos,
+			  fixed: { y: true, y: true},
+			  color: '#1E90FF', // Do some sentiment composition here
+			  value: group_members[cid].count,
 			  }
-	  };  
+	  }; 
+	  nodesDataset.update(clusterOptionsByData['clusterNodeProperties']);
 	  network.cluster(clusterOptionsByData);
 	  allNodes[cid] = clusterOptionsByData['clusterNodeProperties'];
 	  color_book[cid] = '#1E90FF';
+	  network.fit();
+  
   }
   // console.log(clustered)
 }
 
+function showAllComments(){
+	html_cnt = "";
+	for (var commentId in commentsDict){
+		html_cnt += "<div class=\"block-item\">" + commentsDict[commentId] + "</div>";
+		
+	}
+	$("#comments-box").html(html_cnt);
+}
+
+function rotate(cx, cy, x, y, angle) {
+    var radians = (Math.PI / 180) * angle,
+        cos = Math.cos(radians),
+        sin = Math.sin(radians),
+        nx = (cos * (x - cx)) + (sin * (y - cy)) + cx,
+        ny = (cos * (y - cy)) - (sin * (x - cx)) + cy;
+    return [nx, ny];
+}
+
+function hideAll(){
+	html_cnt = "";
+	for (var commentId in commentsDict){
+		html_cnt += "<div class=\"block-item\">" + commentsDict[commentId] + "</div>";
+	}
+	$("#comments-box").html(html_cnt);
+}
+
+function expandCluster(clusterID){
+	if (clusterID){
+		network.openCluster(clusterID);
+		// Remove node from dataset
+		nodesDataset.remove(clusterID);
+		delete allNodes[clusterID];
+		cluster_ids.delete(clusterID);
+		delete group_members[clusterID];
+		// console.log(cluster_ids);
+		if (cluster_ids.size == 0){
+			clustered = false;
+		$("#clusterButton").prop('value', 'Cluster nodes by topics'); 
+		}
+	}
+}
+
 $(document).ready(function () {
 	drawFromJS();
+});
+
+$(function(){
+  $.contextMenu({
+    selector: '.context-menu-one', 
+    trigger: 'none',
+    callback: function(key, options) {
+      var m = "clicked: " + key;
+      if (key == 'fit'){ network.fit();}
+      else if (key == 'expand'){expandCluster(selected_nodeid);}
+      else if (key == 'inspect'){alert('Cluster inspection is under construction.');}
+      // window.console && console.log(options) || alert(m);
+      // console.log(selected_nodeid);
+
+    },
+    items: {
+	  "expand"      : { name: "Expand Cluster",               icon: "expand-cluster" },
+	  "inspect"      : { name: "Inspect Cluster",               icon: "inspect-cluster" },
+	  "sep1"     : "---------",
+	  "fit"      : { name: "Fit Graph",               
+					 icon: "fit" 
+					}
+      // "cut"      : { name: "Cut",               icon: "cut" },
+      // "copy"     : { name: "Copy",              icon: "copy" },
+      // "paste"    : { name: "Paste",             icon: "paste" },
+      // "sep1"     : "---------",
+      // "google"   : { name: "Share on Google+",  icon: "google-plus" },
+      // "facebook" : { name: "Share on Facebook", icon: "facebook" },
+      // "sep2"     : "---------",
+      // "save"     : { name: "Save",              icon: "save" },
+      // "quit"     : { name: "Quit",              icon: "quit" }
+    }
+  });
 });
 
 
