@@ -5,6 +5,7 @@ var edgesDataset = new vis.DataSet(dataset_options);
 var commentsDict = {}; // Store all comment
 var network = null;
 var data = null;
+var jtext = null; // Raw graph description content
 var allNodes;
 var allEdges;
 var highlightActive = false;
@@ -20,6 +21,8 @@ var group_members = null;
 var n_comments = 20;
 var cluster_radius = 400; // radius of each cluster
 var selected_cluster = null; // selected cluster when right click, store so that can triggle command when context menu is sellected
+var color_scale = scale = chroma.scale(['red', 'yellow']);
+
 var locales = {
   en: {
     edit: 'Edit',
@@ -286,7 +289,7 @@ function draw() {
 	});
   
 	network.on("selectNode", function(params) {
-	console.log(params);
+	// console.log(params);
 	if (params.nodes.length == 1) {
 	 // console.log(network.isCluster(params.nodes[0]));
 	 if (network.isCluster(params.nodes[0]) == true) {
@@ -416,14 +419,27 @@ function draw() {
         if (node_id.match(/^comment~[\d]+$/i)){ // Check if it is a comment
 			// Clear the comment show area
 			$("#comments-box").html("<div class=\"block-item\">" + commentsDict[node_id] + "</div>");
-		} else if (node_id.match(/^\[[α-ωΑ-Ω]\]\s/i)){ // is a Cluster node -> display text in clusters
+		} else if (network.isCluster(node_id)){ // is a Cluster node -> display text in clusters
 			// Find all nodes id of the nodes that it connected with
 			html_content = "";
 			//console.log(groupComments[node_id]);
-			for (let comment_id of groupComments[node_id]){
-				if (commentsDict[comment_id]){
-					html_content = html_content + "<div class=\"block-item\">" + commentsDict[comment_id] + "</div>"; ///////////////////////////////////////////////////////////
-				}	
+			// for (let comment_id of groupComments[node_id]){
+			//	if (commentsDict[comment_id]){
+			//		html_content = html_content + "<div class=\"block-item\">" + commentsDict[comment_id] + "</div>"; ///////////////////////////////////////////////////////////
+			//	}	
+			//}
+			for (var comment_id in commentsDict){
+				// console.log($.inArray(comment_id, group_members[node_id].ids));
+				//console.log(group_members[node_id].ids);
+				var condition = edgesDataset.get({
+					filter: function (item) {
+						return item.to == comment_id && ($.inArray(item.from, group_members[node_id].ids)>-1);
+				  }
+				});
+				//console.log(condition);
+				if (condition.length>0){
+					html_content = html_content + "<div class=\"block-item\">" + commentsDict[comment_id] + "</div>";
+				}
 			}
 			$("#comments-box").html(html_content); // Update to page
 		}
@@ -637,14 +653,14 @@ function neighbourhoodHighlight(params) {
 }
 
 function drawFromJS() {
-   jtextArea = document.getElementById("jsonarea");
+   //jtextArea = document.getElementById("jsonarea");
 	//jtextArea.value="Input the json";
 	// Event of pressing input json
 	document.getElementById("submitbutton").addEventListener("click", function(){
 		// Hide the language selection combobox
 		document.getElementById("locale").disabled = true;
 		// Get the data
-		jtext = jtextArea.value;
+		// jtext = jtextArea.value;
 		if (jtext== "") {
 			alert("Please enter json document! oyo")
 		}
@@ -745,7 +761,13 @@ function clusterByCid() {
 		// console.log(allNodes[nodeid].title.match(/Sen_Score: (-?[\d.]+)/i)[1]);
 		avg += allNodes[nodeid].value/total_count*parseFloat(allNodes[nodeid].title.match(/Sen_Score: (-?[\d.]+)/i)[1]);
 	 }
-	 group_members[cid].avg_sen_score = Math.round(avg*10000)/10000;
+	 avg = Math.round(avg*10000)/10000;
+	 group_members[cid].avg_sen_score = avg;// Do some sentiment composition here
+	 group_members[cid].color = color_scale((avg+1)/2).hex();
+	 var color = color_scale((avg+1)/2).hex();
+	 color_book[cid] = color;
+	 // allNodes[cid].color = color;
+	 nodesDataset.update({id: cid, color: color});
   }
   
   // console.log(group_members);
@@ -776,14 +798,13 @@ function clusterByCid() {
 			  x : $('#mynetwork').width()*-0.8,
 			  y : y_pos,
 			  fixed: { y: true, y: true},
-			  color: '#1E90FF', // Do some sentiment composition here
 			  value: group_members[cid].count,
 			  }
 	  }; 
 	  nodesDataset.update(clusterOptionsByData['clusterNodeProperties']);
 	  network.cluster(clusterOptionsByData);
 	  allNodes[cid] = clusterOptionsByData['clusterNodeProperties'];
-	  color_book[cid] = '#1E90FF';
+	  // color_book[cid] = '#1E90FF';
 	  network.fit();
   
   }
@@ -832,6 +853,195 @@ function expandCluster(clusterID){
 	}
 }
 
+function onFileSelected(event) {
+	var selectedFile = event.target.files[0];
+	var reader = new FileReader();
+	reader.onload = function(event) {
+	 jtext = event.target.result;
+	 if (jtext== "") {
+		alert("Please enter json document! oyo")
+	 }
+	 else {
+		try {
+			parsed_text = JSON.parse(jtext);
+			nodesDataset.clear();
+			edgesDataset.clear();
+			nodesDataset.add(parsed_text.nodes);
+			edgesDataset.add(parsed_text.edges);
+			n_comments = parsed_text.summary.n_comments;
+			// Read the comments
+			for (let item of parsed_text.comments){
+				commentsDict[item.id] = item.label;
+			}
+			// console.log(commentsDict);
+			draw();
+			
+			
+		}
+		catch(err) {
+			console.log(err.message);
+			alert("Unable to draw the network!", console.log(err.message));
+		};
+	 };	
+  };
+
+  reader.readAsText(selectedFile,"UTF-8");
+}
+
+function selectDesFile(){
+	$( "#file-input" ).trigger( "click" );
+}
+
+function hideInspectWindow(){
+	$('#inspect-network-window').toggle('slide'); $("#mynetwork").fadeIn('slow', function() { });
+}
+
+function draw_cluster(){
+	var cluster_container = document.getElementById('myinspectnetwork');
+	var cluster_options = {
+	   autoResize: true,
+	   height: '100%',
+	   width: '100%',
+	   locale: document.getElementById('locale').value,
+	   clickToUse: false,
+	   physics: {
+		    enabled: true,
+			barnesHut: {
+			  centralGravity: 0.01,
+			  springLength: 1,
+			  springConstant: 0.01,
+			  damping: 0.22,
+			  avoidOverlap: 0.4,
+			},
+			maxVelocity: 20,
+			minVelocity: .5,
+			adaptiveTimestep: true,
+			stabilization:{
+				enabled: true,
+				iterations: 1000,
+			}
+		  },
+	   layout: {
+	    improvedLayout:false,
+	    randomSeed:seed
+	  	},
+	   
+	   interaction:{
+			hover:true,
+			tooltipDelay: 200,
+		},
+	   nodes: {
+		shape: 'square',
+		font: {
+				size: 28,
+				color: '#ffffff'
+			},
+	     scaling: {
+			  min: 20,
+			  max: 40,
+			  label: {
+				min: 20,
+				max: 40,
+				drawThreshold: 12,
+				maxVisible: 30
+			  }
+		  },  
+	    },
+	    edges: {
+			arrows: {
+			  to:     {enabled: true, scaleFactor:1, type:'arrow'},
+			  middle: {enabled: false, scaleFactor:1, type:'arrow'},
+			  from:   {enabled: false, scaleFactor:1, type:'arrow'}
+			},
+			color: {inherit: 'both'},
+			smooth: {
+			  enabled: true,
+			  type: "dynamic",
+			  roundness: 0.2
+			},
+			scaling:{
+			  min: 1,
+			  max: 10,
+			  label: {
+				enabled: true,
+				min: 4,
+				max: 20,
+				maxVisible: 10,
+				drawThreshold: 1
+			  },
+			  customScalingFunction: function (min,max,total,value) {
+				if (max === min) {
+				  return 0.5;
+				}
+				else {
+				  var scale = 1 / (max - min);
+				  return Math.max(0,(value - min)*scale);
+				}
+			  }
+			},
+	    },
+	    configure:function (option, path) {
+	      if (path.indexOf('smooth') !== -1 || option === 'smooth') {
+	        return true;
+	      }
+	      return false;
+	    },
+	    groups: {
+            central: {
+                color: {background:'red',border:'white'},
+                shape: 'star'
+            },
+            article: {
+                color: {background:'red',border:'white'},
+                shape: 'diamond'
+            },
+            comment: {
+            color: {background:'red',border:'white'},
+                shape: 'dot'
+            }
+        }
+		  
+	};	// End option
+	var filtered_nodes = nodesDataset.get({
+	  filter: function (item) {
+		// console.log(filtered_nodes);
+		return ($.inArray(item.id, group_members[selected_cluster].ids)>-1) && !network.isCluster(item.id);
+	  }
+	});
+	// Recolor all nodes
+
+	for (var i = 0; i < filtered_nodes.length; i++) {
+	   filtered_nodes[i].color = color_book[filtered_nodes[i].id];
+	}
+	
+	cluster_data = {
+	  nodes: filtered_nodes,
+	  edges: edgesDataset.get({
+		  filter: function (item) {
+			return (item.from == selected_cluster || item.to == selected_cluster || $.inArray(item.from, group_members[selected_cluster].ids)|| $.inArray(item.to, group_members[selected_cluster].ids));
+		  }
+		})
+	  }; 
+	// draw the network
+	// console.log(cluster_data);
+	var cluster_network = new vis.Network(cluster_container, cluster_data, cluster_options);
+	cluster_network.on("hoverNode", function (params) {
+        node_id = params.node;
+        html_content = "";
+		var related_edges = edgesDataset.get({
+				filter: function (item) {
+					return item.from == node_id && item.to.match(/^comment~[\d]+$/i);
+			  }
+		});
+		
+		for (let item of related_edges){
+			html_content = html_content + "<div class=\"block-item\">" + commentsDict[item.to] + "</div>";
+		}
+		$("#comments-box").html(html_content); // Update to page
+    });
+	
+}
+
 $(document).ready(function () {
 	drawFromJS();
 });
@@ -844,7 +1054,11 @@ $(function(){
       var m = "clicked: " + key;
       if (key == 'fit'){ network.fit();}
       else if (key == 'expand'){expandCluster(selected_nodeid);}
-      else if (key == 'inspect'){alert('Cluster inspection is under construction.');}
+      else if (key == 'inspect'){
+		 $( "#mynetwork" ).fadeOut( "slow", function() { });
+		 $( "#inspect-network-window" ).toggle( "slide" );
+		 draw_cluster();
+	  }
       // window.console && console.log(options) || alert(m);
       // console.log(selected_nodeid);
 

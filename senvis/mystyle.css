@@ -10,8 +10,16 @@
 	position:absolute;
 	left: 0.5vw;
 	width: 75.5vw;
-	height: 81.5vh;
+	height: 85vh;
 	border: 0px solid #444444;
+	background-color: #180E15;
+}
+#myinspectnetwork {
+	position:absolute;
+	left: 0vw;
+	width: 75.5vw;
+	height: 85vh;
+	border: 1px solid #444444;
 	background-color: #180E15;
 }
 
@@ -72,13 +80,17 @@ div.outerBorder {
 
 #commandbox{
 	position:absolute;
-	top: 87vh;
-	left -20px;
+	top: 90vh;
 	width:98vw;
-	height:9.5vh;
+	height:8vh;
 	margin:bottom;
-	border:8px solid rgba(0,0,0,0.1);
+	border:0px solid #FF476A;
+	background: #180E15;
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+	margin-bottom: 0.7vh;
+    margin-top: 0.7vh;
+    margin-left: .5vw;
+    margin-right: .5vw;
 }
 
 #grabar{
@@ -198,12 +210,12 @@ table.legend_table {
    z-index:299;
    background-color: #f9f9f9;
    border-style:solid;
-   border-width:3px;
+   border-width:1px;
    border-color: #5394ed;
    padding:10px;
    text-align: center;
    border-radius: 5px;
-   border: 2px solid ##6496c8;
+   border: 2px solid #6496c8;
    box-shadow: 0 8px 168px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  }
  
@@ -211,51 +223,64 @@ table.legend_table {
   margin: 1px;
   border: 1px solid #111;
   background: transparent;
-  width: 150px;
-  padding: 4px 31px 4px 4px;
-  font-size: 11px;
-  border: 1px solid #ccc;
+  width: 80px;
+  padding: 1px 28px 1px 1px;
+  font-size: 10px;
+  border: 2px solid #2D1E26;
   height: 20px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: url(img/lang.png) 90% / 13% no-repeat #eee;
+  background: url(img/lang.png) 90% / 20% no-repeat #4A3247;
   font-family: Sans-serif, serif;
+  color: #eeeeee;
 }
 
-#clusterButton{
+.haftSizeButton{
   margin: 1px;
   border: 1px solid #111;
   background: transparent;
-  width: 170px;
-  padding: 4px 31px 4px 4px;
-  font-size: 11px;
+  width: 12vw;
+  padding: 4px 4px 4px 31px;
+  font-size: .9em;
   border: 1px solid #ccc;
-  height: 20px;
+  height: 4vh;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: url(img/cluster.png) 90% / 10% no-repeat #eee;
   font-family: Sans-serif, serif;
   color: #fff;
   background-color: #6496c8;
   text-shadow: -1px 1px #417cb8;
   border: none;
   border-radius: 2px;
-  margin-left: 5vw;
+  margin-left: 1vw;
+  margin-top: 1vw;
 }
 
-#clusterButton:hover,
+.haftSizeButton:hover,
 	section.flat button.hover {
 	  background-color: #346392;
 	  text-shadow: -1px 1px #27496d;
 	}
 
-#clusterButton:active,
-#clusterButton.active {
+.haftSizeButton:active,
+.haftSizeButton.active {
 	  background-color: #27496d;
 	  text-shadow: -1px 1px #193047;
 	}
+	
+.cluster-icon{
+	background: url(img/cluster.png) 8% / 13% no-repeat #6496c8;
+}
+
+.open-icon{
+	background: url(img/open-archive.png) 8% / 13% no-repeat #6496c8;
+}
+
+.draw-icon{
+	background: url(img/draw.png) 8% / 13% no-repeat #6496c8;
+}
 
 body{
 	background-color: #070507;
@@ -265,9 +290,9 @@ body{
 
 #comments-box {
 	position:absolute;
-	width: 23vw;
+	width: 22vw;
 	right: 0.5vw;
-	height: 81.5vh;
+	height: 85vh;
 	border: 0px solid #444444;
 	background-color: #180E15;
     text-align: justify;
@@ -442,4 +467,26 @@ body{
 }
 .context-menu-icon-fit {
   background-image: url("img/fit.png");
+}
+
+/* Cluster inspection boad*/
+#inspect-network-window, #flip  {
+	position:absolute;
+	left: 0.5vw;
+	width: 75.5vw;
+	height: 85vh;
+	border: 1px solid ##6e5a6b;
+	background-color: #180E15;
+}
+.round-button {
+    background-color: red;
+    border: none;
+    padding: 20px;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 50%;
+    background: url(img/close.png) 50% / 40% no-repeat #4A3247;
+    position: absolute;
+    cursor:pointer;
 }

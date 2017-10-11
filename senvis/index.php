@@ -19,6 +19,7 @@
 		<link href="mystyle.css" rel="stylesheet" type="text/css"/> 
 		<link href="vis.min.css" rel="stylesheet" type="text/css"/> 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.20.1/vis.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.3.4/chroma.min.js"></script>
 		<script type="text/javascript" src="exampleUtil.js"></script>
 		<link rel="icon" 
 		  type="image/png" 
@@ -28,10 +29,10 @@
 	</head>
 	<body onload="init();">
 		<div id="netcontainer" > 
-			<p style="margin-bottom:0.7vh;margin-top:0.7vh;">
-			  <label for="locale" style="font-family: Sans-serif, serif; font-size: 12px;">Select a locale:</label>
+			<p style="margin-bottom:0.7vh;margin-top:0.7vh; margin-left:3vw; font-size: 0.2em;">
+			  <!-- <label for="locale" style="font-family: Sans-serif, serif; font-size: 12px;">Select a locale:</label> -->
 			  <select id="locale" onchange="drawFromJS();">
-			    <option value="en">Enlish</option>
+			    <option value="en">English</option>
 			    <option value="de">Deutsch</option>
 			    <option value="es">Español</option>
 			    <option value="it">Italiano</option>
@@ -39,7 +40,6 @@
 			    <option value="pt-br">Português</option>
 			    <option value="ru">Русский </option>
 			  </select>
-			  <input type="button" onclick="handleExpandCluster()" value="Cluster nodes by topics" id="clusterButton"> 
 			</p>
 			<div id="node-popUp">
 			  <span id="node-operation">node</span> <br>
@@ -77,6 +77,14 @@
 			<div id="mynetwork" class="context-menu-one"> 
 				<div class="welcome w3-animate-opacity"><img src="img/sis.png" alt="SISLab's logo" style="position: absolute; top: 0; bottom:0; left: 0; right:0; margin: auto;"></div>
 			</div> 
+			<!-- Inspection panel and button --> 
+			<div id="inspect-network-window" style="display:none;" class=""> 
+				<div id="myinspectnetwork" class=""></div> 
+				<input type="button" value="" id="close-inspect-button" class="round-button" style="width: 2.5vw;height: 2.5vw; left: 72vw;" onclick="hideInspectWindow();"/>
+			</div>
+			
+			
+			
 			<div id="comments-box"> 
 				<div class="welcome flashit" style="position: absolute; top: 0; bottom:0; left: 0; right:0; margin: auto;">WELCOME</div>
 			</div> 
@@ -85,8 +93,12 @@
 			</div> 
 		</div>
 		<div id = "commandbox">
-			<textarea id="jsonarea" onclick="this.select()">Drop graph description JSON file or paste its content here...</textarea>  
-			<button id = "submitbutton" class="flatbutton" style="position:absolute; width:9vw;	height: 8vh;">Draw</button>
+			<!-- <textarea id="jsonarea" onclick="this.select()">Drop graph description JSON file or paste its content here...</textarea>  
+			<button id = "submitbutton" class="flatbutton" style="position:absolute; width:9vw;	height: 6vh;">Draw</button>  -->
+			<input type="button" onclick="selectDesFile();" value="Open & Draw" id="Openfile" class="open-icon haftSizeButton"> 
+			<input type="button" onclick="" value="Redraw" id="submitbutton" class="draw-icon haftSizeButton"> 
+			<input type="button" onclick="handleExpandCluster()" value="Cluster by Topic" id="OpenButton" class="cluster-icon haftSizeButton"> 
+			<input id="file-input" type="file" name="name" style="display: none;"  accept=".json" onchange="onFileSelected(event)"/>
 			<p id="status">File API & FileReader API not supported</p>
 
 		</div>
@@ -98,7 +110,33 @@
 			var files = evt.dataTransfer.files; // FileList object.
 			var reader = new FileReader();  
 			reader.onload = function(event) {            
-				 document.getElementById('jsonarea').value = event.target.result;
+				 // document.getElementById('jsonarea').value = event.target.result;
+				 jtext = event.target.result;
+				 if (jtext== "") {
+					alert("Please enter json document! oyo")
+				 }
+				 else {
+					try {
+						parsed_text = JSON.parse(jtext);
+						nodesDataset.clear();
+						edgesDataset.clear();
+						nodesDataset.add(parsed_text.nodes);
+						edgesDataset.add(parsed_text.edges);
+						n_comments = parsed_text.summary.n_comments;
+						// Read the comments
+						for (let item of parsed_text.comments){
+							commentsDict[item.id] = item.label;
+						}
+						// console.log(commentsDict);
+						draw();
+						
+						
+					}
+					catch(err) {
+						console.log(err.message);
+						alert("Unable to draw the network!", console.log(err.message));
+					};
+				 };	
 			}        
 			reader.readAsText(files[0],"UTF-8");
 		  }
@@ -110,7 +148,8 @@
 		  }
 
 		  // Setup the dnd listeners.
-		  var dropZone = document.getElementById('jsonarea');
+		  // var dropZone = document.getElementById('jsonarea');
+		  dropZone = document.getElementById('mynetwork');
 		  dropZone.addEventListener('dragover', handleDragOver, false);
 		  dropZone.addEventListener('drop', handleFileSelect, false);
 		</script>
