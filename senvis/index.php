@@ -129,7 +129,7 @@
 						}
 						// console.log(commentsDict);
 						draw();
-						
+						handleExpandCluster();
 						
 					}
 					catch(err) {

@@ -678,8 +678,8 @@ function drawFromJS() {
 				}
 				// console.log(commentsDict);
 				draw();
-				
-				
+				// console.log("1. !!!!");
+				handleExpandCluster();
 			}
 			catch(err) {
 				console.log(err.message);
@@ -754,7 +754,7 @@ function clusterByCid() {
 	  }
   }
   // Coumpute weighted-average sentiment score
-  for (var cid in group_members){
+  for (let cid of Object.keys(group_members)){
 	 var avg = 0;
 	 var total_count = group_members[cid].count;
 	 for (let nodeid of group_members[cid].ids){
@@ -766,11 +766,13 @@ function clusterByCid() {
 	 group_members[cid].color = color_scale((avg+1)/2).hex();
 	 var color = color_scale((avg+1)/2).hex();
 	 color_book[cid] = color;
+	 console.log(cid);
+	 //console.log(allNodes);
+	 //console.log(typeof(allNodes));
 	 // allNodes[cid].color = color;
-	 nodesDataset.update({id: cid, color: color});
   }
-  
-  // console.log(group_members);
+  // console.log(allNodes);
+
   // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
   var clusterOptionsByData;
   var y_pos = -250*cluster_ids.size/2;
@@ -809,6 +811,13 @@ function clusterByCid() {
   
   }
   // console.log(clustered)
+  for (var cid in allNodes){
+	if ($.inArray(cid,Object.keys(group_members)) != -1){
+		//console.log(cid);
+		allNodes[cid].color = group_members[cid].color;
+		nodesDataset.update({id: cid, color: group_members[cid].color});
+	}
+  }
 }
 
 function showAllComments(){
@@ -875,7 +884,8 @@ function onFileSelected(event) {
 			}
 			// console.log(commentsDict);
 			draw();
-			
+			//console.log("2. !!!!");
+			handleExpandCluster();
 			
 		}
 		catch(err) {
