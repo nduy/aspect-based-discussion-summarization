@@ -21,7 +21,9 @@ var group_members = null;
 var n_comments = 20;
 var cluster_radius = 400; // radius of each cluster
 var selected_cluster = null; // selected cluster when right click, store so that can triggle command when context menu is sellected
-var color_scale = scale = chroma.scale(['red', 'yellow']);
+var starting_color = 'Red';
+var ending_color = 'Blue';
+var color_scale = scale = chroma.scale([starting_color, ending_color]);
 
 var locales = {
   en: {
@@ -120,11 +122,11 @@ function draw() {
 	   physics: {
 		    enabled: true,
 			barnesHut: {
-			  centralGravity: 0.01,
-			  springLength: 1,
+			  centralGravity: 0.03,
+			  springLength: 0.5,
 			  springConstant: 0.01,
 			  damping: 0.22,
-			  avoidOverlap: 0.4,
+			  avoidOverlap: 0.3,
 			},
 			maxVelocity: 10,
 			minVelocity: 3,
@@ -219,15 +221,30 @@ function draw() {
 	};	
 	
 	// Re arrange the comment to be a line
-    y_pos = n_comments/2*-30;	// Starting pos
+    y_pos = (n_comments-1)/2*(-40);	// Starting pos
     x_pos = $('#mynetwork').width()*0.8;
     // alert(x_pos);
     for (let node_id of nodesDataset.getIds()) {
-     if (node_id.match(/^comment~[\d]+$/i)) {
+	  // console.log(node_id);
+     if (node_id.match(/^comment~[\d]+$/gi)) {
 		// console.log(node_id);
-		nodesDataset.update({id: node_id, y: y_pos, x : x_pos, size: 400, margin: {left: 100, right: 100}});
-		y_pos+= 30;
-     }
+		var img = generateCommentImageURL(node_id);
+		nodesDataset.update({id: node_id, y: y_pos, x : x_pos, size: 20, margin: {left: 100, right: 100}, image: img, shape: 'image', font: {size: 1}});
+		commentsDict[node_id].image = img;
+		y_pos+= 50;
+     } else { // Hide/Display history
+		 if ($('#his-history-chk').is(":checked")){
+			// console.log(nodesDataset.get(node_id).title);
+			var ori_title = nodesDataset.get(node_id).title;
+			if (ori_title.search("<br> ✭ History") ==  -1){
+				nodesDataset.update({id: node_id, title:ori_title, ori_title: ori_title});
+			} else {
+				var new_title =  ori_title.substring(1,ori_title.search("<br> ✭ History")-1);
+				nodesDataset.update({id: node_id, title:new_title, ori_title: ori_title});
+			}
+			
+		 }
+	 }
    }
 	// Group to data
 	data = {
@@ -244,7 +261,10 @@ function draw() {
 	// Save all original color to color box
 	color_book = {};
 	for (var nodeId in allNodes) {
-     color_book[nodeId] = allNodes[nodeId].color;
+	 if (!(nodeId in commentsDict)){
+		 // compute color according to sentiment score
+		 color_book[nodeId] = color_scale((parseFloat(allNodes[nodeId].title.match(/Sen_Score: (-?[\d.]+)/i)[1])+1)/2).hex();
+	 }
 	}
    
 	// Save all ClusterID -> commetn
@@ -418,7 +438,7 @@ function draw() {
         // console.log(node_id.match(/^\[[α-ωΑ-Ω]\]\s/i));
         if (node_id.match(/^comment~[\d]+$/i)){ // Check if it is a comment
 			// Clear the comment show area
-			$("#comments-box").html("<div class=\"block-item\">" + commentsDict[node_id] + "</div>");
+			$("#comments-box").html(generateCommentCode(node_id));
 		} else if (network.isCluster(node_id)){ // is a Cluster node -> display text in clusters
 			// Find all nodes id of the nodes that it connected with
 			html_content = "";
@@ -438,13 +458,29 @@ function draw() {
 				});
 				//console.log(condition);
 				if (condition.length>0){
-					html_content = html_content + "<div class=\"block-item\">" + commentsDict[comment_id] + "</div>";
+					html_content += generateCommentCode(comment_id);
+					// html_content = html_content + "<div class=\"block-item\">" + commentsDict[comment_id] + "</div>";
 				}
+			}
+			$("#comments-box").html(html_content); // Update to page
+		} else {
+			html_content = "";
+			var related_edges = edgesDataset.get({
+					filter: function (item) {
+						return item.from == node_id && item.to.match(/^comment~[\d]+$/i);
+				  }
+			});
+			
+			for (let item of related_edges){
+				html_content += generateCommentCode(item.to);
+				// html_content = html_content + "<div class=\"block-item\">" + commentsDict[item.to] + "</div>";
 			}
 			$("#comments-box").html(html_content); // Update to page
 		}
 		
     });
+    $("#submitbutton").prop('disabled', false); 
+    $("#clusterButton").prop('disabled', false); 
 }
 
 function editNode(data, callback) {
@@ -574,12 +610,18 @@ function neighbourhoodHighlight(params) {
 
    // mark all nodes as hard to read.
    for (var nodeId in allNodes) {
-     allNodes[nodeId].color = 'rgba(200,200,200,0.5)';
-     if (allNodes[nodeId].hiddenLabel === undefined) {
-       allNodes[nodeId].hiddenLabel = allNodes[nodeId].label;
-       // allNodes[nodeId].label = undefined; /////////////////////  [W]
-     }
+	 //if (!(nodeId in commentsDict)){
+		 allNodes[nodeId].color = 'rgba(200,200,200,0.5)';
+		 if (allNodes[nodeId].hiddenLabel === undefined) {
+		   allNodes[nodeId].hiddenLabel = allNodes[nodeId].label;
+		 }
+		 if (allNodes[nodeId].image){
+		 	 allNodes[nodeId].image = generateGREYCommentImageURL(nodeId);
+		   // allNodes[nodeId].label = undefined; /////////////////////  [W]
+		 }
+	 //}
    }
+   //console.log(allNodes);
    var connectedNodes = network.getConnectedNodes(selectedNode);
    var allConnectedNodes = [];
 
@@ -593,12 +635,14 @@ function neighbourhoodHighlight(params) {
    // all second degree nodes get a different color and their label back
    for (i = 0; i < allConnectedNodes.length; i++) {
 	 if (allNodes[allConnectedNodes[i]] !== undefined) {
-		if (allNodes[allConnectedNodes[i]].color !== undefined) {
-			allNodes[allConnectedNodes[i]].color = 'rgba(150,150,150,0.75)';
-		}
-		if (allNodes[allConnectedNodes[i]].hiddenLabel !== undefined) {
-			allNodes[allConnectedNodes[i]].label = allNodes[allConnectedNodes[i]].hiddenLabel;
-			allNodes[allConnectedNodes[i]].hiddenLabel = undefined;
+		 if (!(connectedNodes[i] in commentsDict)){
+			if (allNodes[allConnectedNodes[i]].color !== undefined) {
+				allNodes[allConnectedNodes[i]].color = 'rgba(150,150,150,0.75)';
+			}
+			if (allNodes[allConnectedNodes[i]].hiddenLabel !== undefined) {
+				allNodes[allConnectedNodes[i]].label = allNodes[allConnectedNodes[i]].hiddenLabel;
+				allNodes[allConnectedNodes[i]].hiddenLabel = undefined;
+			}
 		}
 	}
 		   
@@ -607,22 +651,37 @@ function neighbourhoodHighlight(params) {
 
    // all first degree nodes get their own color and their label back
    for (i = 0; i < connectedNodes.length; i++) {
-     if (allNodes[connectedNodes[i]] !== undefined){
-		 allNodes[connectedNodes[i]].color = color_book[connectedNodes[i]];
-		 if (allNodes[connectedNodes[i]].hiddenLabel !== undefined) {
-		   allNodes[connectedNodes[i]].label = allNodes[connectedNodes[i]].hiddenLabel;
-		   allNodes[connectedNodes[i]].hiddenLabel = undefined;
+     if (allNodes[connectedNodes[i]] !== undefined ){
+		 if (!(connectedNodes[i] in commentsDict)){
+			allNodes[connectedNodes[i]].color = color_book[connectedNodes[i]];
+			if (allNodes[connectedNodes[i]].hiddenLabel !== undefined) {
+			   allNodes[connectedNodes[i]].label = allNodes[connectedNodes[i]].hiddenLabel;
+			   allNodes[connectedNodes[i]].hiddenLabel = undefined;
+			}
+		 } else {
+			allNodes[connectedNodes[i]].image = generateCommentImageURL(connectedNodes[i]);
+			// console.log(nodesDataset.get(connectedNodes[i]));
+			// nodesDataset.update({id: connectedNodes[i], borderWidth: 20});
+			// console.log(nodesDataset);
 		 }
+		 
 	 }
    }
 
    // the main node gets its own color and its label back.
    if (allNodes[selectedNode] !== undefined){
-		allNodes[selectedNode].color = color_book[selectedNode];
-	    if (allNodes[selectedNode].hiddenLabel !== undefined) {
-		 allNodes[selectedNode].label = allNodes[selectedNode].hiddenLabel;
-		 allNodes[selectedNode].hiddenLabel = undefined;
-	    }
+	   if (!(selectedNode in commentsDict)){
+			allNodes[selectedNode].color = color_book[selectedNode];
+			if (allNodes[selectedNode].hiddenLabel !== undefined) {
+			 allNodes[selectedNode].label = allNodes[selectedNode].hiddenLabel;
+			 allNodes[selectedNode].hiddenLabel = undefined;
+			}
+	   } else {
+		    // allNodes[selectedNode].font = {size:30};
+		    allNodes[selectedNode].image = generateCommentImageURL(selectedNode);
+		    //console.log(connectedNodes[i]);
+			// nodesDataset.update({id: selectedNode, borderWidth: nodesDataset.get(selectedNode).borderWidth*3});
+	   }
    }
    
  }
@@ -642,12 +701,16 @@ function neighbourhoodHighlight(params) {
  var updateArray = [];
  for (nodeId in allNodes) {
    if (allNodes.hasOwnProperty(nodeId)) {
+	 if (!(nodeId in commentsDict)){
      // updateArray.push(allNodes[nodeId]);
-     updateArray.push({id: allNodes[nodeId].id, color: allNodes[nodeId].color});
+		updateArray.push({id: allNodes[nodeId].id, color: allNodes[nodeId].color});
      // nodesDataset.update({id: allNodes[nodeId].id, color: allNodes[nodeId].color});
+	 } else {
+		 updateArray.push({id: allNodes[nodeId].id, image: allNodes[nodeId].image});
+	 }
    }
  }
- //console.log(updateArray);
+ // console.log(updateArray);
  nodesDataset.update(updateArray);
  network.physics.options.enabled = true;
 }
@@ -673,8 +736,9 @@ function drawFromJS() {
 				edgesDataset.add(parsed_text.edges);
 				n_comments = parsed_text.summary.n_comments;
 				// Read the comments
+				console.log("XXXXXXXXXXxx");
 				for (let item of parsed_text.comments){
-					commentsDict[item.id] = item.label;
+					commentsDict[item.id] = {label: item.label, user: item.user, time: item.time, sen: item.sen_score};
 				}
 				// console.log(commentsDict);
 				draw();
@@ -706,8 +770,9 @@ function handleExpandCluster(){
 		enableSmily = true;
 		network.physics.options.stabilization.enabled  = false;
 		clusterByCid();
-		clustered = true;
 		$("#clusterButton").prop('value', 'Expand all clusters'); 
+		clustered = true;
+		 
 	} else {
 		clustered = false;
 		// console.log(cluster_ids);
@@ -717,6 +782,9 @@ function handleExpandCluster(){
 		  //console.log(network.physics.options);
 		  network.openCluster(nodeId);
 		  nodesDataset.remove(nodeId);
+		  delete allNodes[nodeId];
+		  cluster_ids.delete(nodeId);
+		  delete color_book[nodeId]
 		  //console.log(network.physics.options);
 		  //network.physics.options.enabled = true;
 		  //}
@@ -725,8 +793,8 @@ function handleExpandCluster(){
 		// Reset all records
 		cluster_ids = null;
 		group_members = null;
-		$("#clusterButton").prop('value', 'Cluster nodes by topics'); 
-		console.log('0000-->');
+		$("#clusterButton").prop('value', 'Cluster by topics'); 
+		// console.log('0000-->');
 		network.physics.options.stabilization.enabled  = true;
 		
 	}
@@ -766,7 +834,7 @@ function clusterByCid() {
 	 group_members[cid].color = color_scale((avg+1)/2).hex();
 	 var color = color_scale((avg+1)/2).hex();
 	 color_book[cid] = color;
-	 console.log(cid);
+	 //console.log(cid);
 	 //console.log(allNodes);
 	 //console.log(typeof(allNodes));
 	 // allNodes[cid].color = color;
@@ -775,9 +843,9 @@ function clusterByCid() {
 
   // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
   var clusterOptionsByData;
-  var y_pos = -250*cluster_ids.size/2;
+  var y_pos = -200*cluster_ids.size/2;
   for (let cid of cluster_ids.values()){
-	  y_pos = y_pos + 250;
+	  y_pos = y_pos + 200;
 	  // console.log(y_pos);
 	  clusterOptionsByData = {
 		  joinCondition: function (childOptions) {
@@ -797,7 +865,7 @@ function clusterByCid() {
 			  borderWidth: 1, shape: 'box', 
 			  label: cid,
 			  title: '☉ Nodes: <br> - ' + group_members[cid].members.join('<br> - ') + '<br>Σ Total count: '+ group_members[cid].count + '<br>' + ((group_members[cid].avg_sen_score<0) ? '☹': '☺') + ' W.mean sen.: ' + group_members[cid].avg_sen_score,
-			  x : $('#mynetwork').width()*-0.8,
+			  x : $('#mynetwork').width()*-0.4,
 			  y : y_pos,
 			  fixed: { y: true, y: true},
 			  value: group_members[cid].count,
@@ -823,7 +891,7 @@ function clusterByCid() {
 function showAllComments(){
 	html_cnt = "";
 	for (var commentId in commentsDict){
-		html_cnt += "<div class=\"block-item\">" + commentsDict[commentId] + "</div>";
+		html_cnt += generateCommentCode(commentId);
 		
 	}
 	$("#comments-box").html(html_cnt);
@@ -841,7 +909,7 @@ function rotate(cx, cy, x, y, angle) {
 function hideAll(){
 	html_cnt = "";
 	for (var commentId in commentsDict){
-		html_cnt += "<div class=\"block-item\">" + commentsDict[commentId] + "</div>";
+		html_cnt += generateCommentCode(commentId);
 	}
 	$("#comments-box").html(html_cnt);
 }
@@ -854,10 +922,10 @@ function expandCluster(clusterID){
 		delete allNodes[clusterID];
 		cluster_ids.delete(clusterID);
 		delete group_members[clusterID];
+		delete color_book[clusterID]
 		// console.log(cluster_ids);
 		if (cluster_ids.size == 0){
 			clustered = false;
-		$("#clusterButton").prop('value', 'Cluster nodes by topics'); 
 		}
 	}
 }
@@ -880,7 +948,7 @@ function onFileSelected(event) {
 			n_comments = parsed_text.summary.n_comments;
 			// Read the comments
 			for (let item of parsed_text.comments){
-				commentsDict[item.id] = item.label;
+				commentsDict[item.id] = {label: item.label, user: item.user, time: item.time, sen: item.sen_score};
 			}
 			// console.log(commentsDict);
 			draw();
@@ -898,12 +966,96 @@ function onFileSelected(event) {
   reader.readAsText(selectedFile,"UTF-8");
 }
 
+function  onHistoryShowHideChange(event){
+	if ($('#his-history-chk').is(":checked")){
+		// Switch show to hide -> show History
+		for (let node_id of nodesDataset.getIds()) {
+			var ori_title = nodesDataset.get(node_id).ori_title;
+			if (ori_title && ori_title.search("<br> ✭ History") ==  -1){
+				nodesDataset.update({id: node_id, title:ori_title, ori_title: ori_title});
+				allNodes[node_id].title = ori_title;
+				allNodes[node_id].ori_title = ori_title;
+			} else {
+				var new_title =  ori_title.substring(1,ori_title.search("<br> ✭ History")-1);
+				nodesDataset.update({id: node_id, title:new_title, ori_title: ori_title});
+				allNodes[node_id].title = new_title;
+				allNodes[node_id].ori_title = ori_title;
+			}	 
+		}
+	} else { // let show the history again
+		for (let node_id of nodesDataset.getIds()) {
+			var ori_title = nodesDataset.get(node_id).ori_title;
+			nodesDataset.update({id: node_id, title:ori_title});
+			allNodes[node_id].title = ori_title;
+		}
+	}
+}
+
+function  onChangeStabilizationSpeed(event){
+	if ($('#fast-stabilization-chk').is(":checked")){
+		network.physics.options.minVelocity = 3;
+		network.physics.options.maxVelocity = 10;
+		network.physics.options.stabilization.iterations = 1000;
+	} else { // let set it slow again
+		network.physics.options.minVelocity = 5;
+		network.physics.options.maxVelocity = 8;
+		network.physics.options.stabilization.iterations = 100;
+	}
+}
+
 function selectDesFile(){
 	$( "#file-input" ).trigger( "click" );
 }
 
 function hideInspectWindow(){
 	$('#inspect-network-window').toggle('slide'); $("#mynetwork").fadeIn('slow', function() { });
+}
+
+function generateCommentCode(commentId){
+	return  "<div class=\"block-item\" style=\"background-image: url(img/avatars/" + getRandomInt(1,12) +".png\">" 
+			+ "<p><b>" + commentsDict[commentId].user +"</b><small>" + commentsDict[commentId].time +"</small></p>" +commentsDict[commentId].label + "</div>";;
+}
+
+function generateCommentImageURL(node_id){
+	var svg = '<svg xmlns="http://www.w3.org/2000/svg" width="250px" height="65px" >'
+				  + '<defs><linearGradient id="Gradient1"> <stop class="stop1" offset="0%"/> <stop class="stop2" offset="'+(commentsDict[node_id].sen+1)/2*100
+				  +'%"/> <stop class="stop3" offset="100%"/> </linearGradient>'
+				  + '<style type="text/css"><![CDATA[.rect { fill: url(#Gradient1); margin-top: 20px;}.stop1 { stop-color: '+ starting_color + '; }.stop2 { stop-color: '+ color_scale(.5).hex() + '; }.stop3 { stop-color: '+ ending_color + '; } ]]></style>' 
+				  + '</defs> '
+				  + '<rect x="0" y="0" width="250px" height="65px" fill="url(#Gradient1)" stroke-width="0.001px" stroke="#ffffff" ></rect>'
+				  + '<foreignObject x="15" y="10" width="100%" height="100%">'
+				  + '<div xmlns="http://www.w3.org/1999/xhtml" style="font-size:30px;text-align: justify; width: 250px;">'
+				  + '<span style="color:white; text-shadow:0 0 20px #000000; width: 250px; text-align: justify;"> <b>💬 </b>'+ node_id.match(/[\d]+/g) +'</span>'
+				  + '</div>'
+				  + '</foreignObject>'
+				  + '</svg>';
+	// console.log(svg);
+	return  "data:image/svg+xml;charset=utf-8,"+ encodeURIComponent(svg);
+}
+
+function generateGREYCommentImageURL(node_id){
+	var svg = '<svg xmlns="http://www.w3.org/2000/svg" width="250px" height="65px" >'
+				  + '<defs><linearGradient id="Gradient1"> <stop class="stop1" offset="0%"/> <stop class="stop2" offset="'+0
+				  +'%"/> <stop class="stop3" offset="100%"/> </linearGradient>'
+				  + '<style type="text/css"><![CDATA[.rect { fill: url(#Gradient1); margin-top: 20px;}.stop1 { stop-color: '+ 'rgba(200,200,200,0.5)' + '; }.stop2 { stop-color: '+ 'rgba(200,200,200,0.5)' + '; }.stop3 { stop-color: '+ 'rgba(200,200,200,0.5)' + '; } ]]></style>' 
+				  + '</defs> '
+				  + '<rect x="0" y="0" width="250px" height="65px" fill="url(#Gradient1)" stroke-width="0.001px" stroke="#ffffff" ></rect>'
+				  + '<foreignObject x="15" y="10" width="100%" height="100%">'
+				  + '<div xmlns="http://www.w3.org/1999/xhtml" style="font-size:30px;text-align: justify; width: 250px;">'
+				  + '<span style="color:white; text-shadow:0 0 20px #000000; width: 250px; text-align: justify;"> <b>💬 </b>'+ node_id.match(/[\d]+/g) +'</span>'
+				  + '</div>'
+				  + '</foreignObject>'
+				  + '</svg>';
+	// console.log(svg);
+	return  "data:image/svg+xml;charset=utf-8,"+ encodeURIComponent(svg);
+}
+
+
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
 }
 
 function draw_cluster(){
@@ -1045,7 +1197,7 @@ function draw_cluster(){
 		});
 		
 		for (let item of related_edges){
-			html_content = html_content + "<div class=\"block-item\">" + commentsDict[item.to] + "</div>";
+			html_content += generateCommentCode(item.to);
 		}
 		$("#comments-box").html(html_content); // Update to page
     });

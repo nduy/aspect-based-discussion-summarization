@@ -100,7 +100,7 @@ div.outerBorder {
 	width:1.2vw;
 	height: 70vh;
 	background: red; /* For browsers that do not support gradients */
-	background: linear-gradient(yellow,red); /* Standard syntax */
+	background: linear-gradient(Red,Blue); /* Standard syntax */
 	text-align: center;
 	vertical-align: middle;
 	margin:auto;
@@ -269,7 +269,13 @@ table.legend_table {
 	  background-color: #27496d;
 	  text-shadow: -1px 1px #193047;
 	}
-	
+
+.haftSizeButton:disabled,
+.haftSizeButton.disabled {
+	  background-color: #808080;
+	  text-shadow: -1px 1px #193047;
+	}
+
 .cluster-icon{
 	background: url(img/cluster.png) 8% / 13% no-repeat #6496c8;
 }
@@ -318,7 +324,7 @@ body{
 	transform:translateX(100%);	
 	opacity:0;
 	overflow:hidden;
-	padding:10px 5px 10px 5px;
+	padding:10px 5px 10px 55px;
 	width:21.5vw;
 	height:auto;
 	line-height:30px;
@@ -333,9 +339,12 @@ body{
 	-moz-animation: slide 1s forwards;
 	-ms-animation: slide 1s forwards;
 	animation: slide 1s forwards;
+	background-repeat: no-repeat;
+	background-size: 3.2em;
+	background-position: 2% 5%;
 }
 .block-item:nth-child(2n) {
-	background:#2D1E26;
+	background-color:#2D1E26;
 }
 @-webkit-keyframes slide{100%{opacity:1;-webkit-transform:translateY(0%)}}
 @-moz-keyframes slide{100%{opacity:1;-moz-transform:translateY(0%)}}
@@ -394,6 +403,21 @@ body{
 	-ms-animation-delay: 1s;
 	animation-delay: 1s;
 }
+
+.block-item small{
+	color: #dcdcdc;
+    float: right;
+}
+.block-item b{
+	font-size: 1.1em;
+	color: #FF476A;
+}
+
+.block-item p{
+	margin-bottom: 0.2em;
+	margin-top: 0.2em;
+}
+
 #comments-box::-webkit-scrollbar {
     width: .5em;
 }
@@ -489,4 +513,109 @@ body{
     background: url(img/close.png) 50% / 40% no-repeat #4A3247;
     position: absolute;
     cursor:pointer;
+}
+
+/* --------------- */
+/* The checkbox-container */
+#commandbox .checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 1.5vw;
+    margin-bottom: 1vh;
+    cursor: pointer;
+    font-size: 0.8em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: Sans-serif, serif;
+  	color: #DCDCDC;
+  	margin-left: 1vw;
+	margin-top: 1vh;
+}
+
+/* Hide the browser's default checkbox */
+#commandbox .checkbox-container input {
+    position: absolute;
+    opacity: 0;
+}
+
+/* Create a custom checkbox */
+#commandbox .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1em;
+    width: 1em;
+    background-color: #eee;
+    border-radius: 0.2em;
+}
+
+/* On mouse-over, add a grey background color */
+#commandbox .checkbox-container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+#commandbox .checkbox-container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+#commandbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+#commandbox .heckbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+#commandbox .checkbox-container .checkmark:after {
+    left: 4px;
+    top: 4px;
+    width: 4px;
+    height: 4px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* Style the quote */
+blockquote {
+font-family: Georgia, serif;
+font-size: 1em;
+font-style: italic;
+width: 19vw;
+margin: 0.2em 0;
+padding: 0.2em 2vw;
+line-height: 1.1em;
+position: relative;
+color: #b8b8b8;
+}
+
+blockquote:before {
+display: block;
+content: "\201C";
+font-size: 4em;
+position: absolute;
+left: -0.5vw;
+top: 1.2vh;
+color: #7a7a7a;
+}
+
+blockquote cite {
+color: #999999;
+font-size: 14px;
+display: block;
+margin-top: 5px;
+}
+ 
+blockquote cite:before {
+content: "\2014 \2009";
 }

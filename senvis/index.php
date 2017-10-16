@@ -96,11 +96,21 @@
 			<!-- <textarea id="jsonarea" onclick="this.select()">Drop graph description JSON file or paste its content here...</textarea>  
 			<button id = "submitbutton" class="flatbutton" style="position:absolute; width:9vw;	height: 6vh;">Draw</button>  -->
 			<input type="button" onclick="selectDesFile();" value="Open & Draw" id="Openfile" class="open-icon haftSizeButton"> 
-			<input type="button" onclick="" value="Redraw" id="submitbutton" class="draw-icon haftSizeButton"> 
-			<input type="button" onclick="handleExpandCluster()" value="Cluster by Topic" id="OpenButton" class="cluster-icon haftSizeButton"> 
+			<input type="button" onclick="" value="Redraw" id="submitbutton" class="draw-icon haftSizeButton" disabled> 
+			<input type="button" onclick="handleExpandCluster()" value="Expand all clusters" id="clusterButton" class="cluster-icon haftSizeButton" disabled> 
 			<input id="file-input" type="file" name="name" style="display: none;"  accept=".json" onchange="onFileSelected(event)"/>
+			<div  style="right: 0vw; top: 0.0vw; width: 20vw; position: absolute; ">
+				<label class="checkbox-container">Hide nodes history
+				  <input type="checkbox" checked="checked" id="his-history-chk" onclick="onHistoryShowHideChange(event);">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="checkbox-container">Enable fast stabilization
+				  <input type="checkbox" checked="checked" id="fast-stabilization-chk" onclick="onChangeStabilizationSpeed(event);">
+				  <span class="checkmark"></span>
+				</label>
+			</div>
 			<p id="status">File API & FileReader API not supported</p>
-
+			
 		</div>
 		<script>
 		  function handleFileSelect(evt) {
@@ -125,12 +135,12 @@
 						n_comments = parsed_text.summary.n_comments;
 						// Read the comments
 						for (let item of parsed_text.comments){
-							commentsDict[item.id] = item.label;
+							// console.log(commentsDict);
+							commentsDict[item.id] = {label: item.label, user: item.user, time: item.time, sen: item.sen_score};
 						}
 						// console.log(commentsDict);
 						draw();
 						handleExpandCluster();
-						
 					}
 					catch(err) {
 						console.log(err.message);
