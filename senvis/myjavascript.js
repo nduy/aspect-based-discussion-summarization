@@ -22,7 +22,7 @@ var n_comments = 20;
 var cluster_radius = 400; // radius of each cluster
 var selected_cluster = null; // selected cluster when right click, store so that can triggle command when context menu is sellected
 var starting_color = 'Red';
-var ending_color = 'Blue';
+var ending_color = 'Green';
 var color_scale = scale = chroma.scale([starting_color, ending_color]);
 
 var locales = {

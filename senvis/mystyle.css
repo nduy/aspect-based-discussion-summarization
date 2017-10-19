@@ -100,7 +100,7 @@ div.outerBorder {
 	width:1.2vw;
 	height: 70vh;
 	background: red; /* For browsers that do not support gradients */
-	background: linear-gradient(Red,Blue); /* Standard syntax */
+	background: linear-gradient(Red,Green); /* Standard syntax */
 	text-align: center;
 	vertical-align: middle;
 	margin:auto;

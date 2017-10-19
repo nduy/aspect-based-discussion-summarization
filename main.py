@@ -17,7 +17,7 @@ import time
 
 start_time = time.time()
 if __name__ == "__main__":
-    comments = read_comment_file("data/comments_article0.txt", read_as_threads=False)
+    comments,comment_js,comment_des = read_comment_file("data/comments_article0.txt", read_as_threads=False)
     title, article = read_article_file("data/article0.txt")
 
     dataset = {'title': title,
@@ -70,6 +70,19 @@ if __name__ == "__main__":
             'unification_option': uni_options,
             'community_detection_option': community_detect_options
         }
+        json_g['summary'] = {
+            'n_comments': len(comments)
+        }
+
+        # add comment nodes to graph
+        json_g['nodes'].extend(comment_des)
+
+        # Add edges from nodes to comments
+        json_g['edges'].extend(extract_comment_relations(com_graph))
+
+        # add comments
+        json_g['comments'] = comment_js  # add comment descriptions
+
     with open('result.json', 'w') as outfile:
         json.dump(json_g, outfile, sort_keys=True, indent=4, separators=(',', ': '))
 

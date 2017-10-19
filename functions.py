@@ -155,6 +155,8 @@ def build_mode_1(title, article, comments):
     maybe_print("Start building aspect graph for the ARTICLE.", 2,'i')
     article_graph = nx.DiGraph()
     article_group_count = 0
+    # print(texttiling_tokenize(article))
+    # exit(0)
     for segment in texttiling_tokenize(article):  # Run texttiling, then go to each segment
         maybe_print(" - Building graph for segment {0}".format(article_group_count), 2)
         segment_graph = build_directed_graph_from_text(txt=segment,
@@ -424,7 +426,8 @@ class DirGraphExtractor(threading.Thread):
         for record in self.data:
             txt = record['content'] if record['content'] else ""
             group = record['group_id'] if record['group_id'] else ""
-            member = record['member_id'] if record['member_id'] else ""
+            #member = record['member_id'] if record['member_id'] else ""
+            member = record['comment_id'] if record['comment_id'] else ""
             g = build_directed_graph_from_text(txt=txt, group_id=group, member_id=member)
             if g:
                 self.result.append(g)
@@ -1240,17 +1243,48 @@ def read_comment_file(data_file, read_as_threads=False):
             with codecs.open(data_file, "rb", "utf8") as comment_file:
                 reader = unicode_csv_reader(comment_file, delimiter='	', quotechar='"')
                 dataset = []
+                dataset_json = []
+                dataset_nodes_description = []
                 count = 0
                 for entry in reader:
+                    if count == 0:
+                        count+=1
+                        continue
+
                     sentence_id = gen_mcs() + "^" + str(count)
                     dataset.append({'member_id': sentence_id,
+                                    'user_name': entry[3],
+                                    'comment_id': entry[1],
+                                    'date': entry[5],
                                     'group_id': 'com.',
                                     'content': text_preprocessing(entry[6])})
+                    dataset_json.append({'user': entry[3],
+                                         'time': entry[5],
+                                         'id': u"comment~" + entry[1],
+                                         'size': 150,
+                                         # TODO Compute sentiment score later. Now it is just fixed value
+                                         'sen_score': 0.01,
+                                         'label': entry[6]})
+                    dataset_nodes_description.append({'id': u'comment~' + entry[1],
+                                                      'size': 150,
+                                                      'label': u'💬 \t' + entry[1],
+                                                      'color': '#2C3E50',
+                                                      'shape': 'box',
+                                                      'font': {'face': 'arial', 'align': 'left', 'size': 15},
+                                                      'fixed': {'x': True},
+                                                      'margin': {'left': 10, 'right': 10},
+                                                      'widthConstraint': {'minimum': 400, 'maximum': 403},
+                                                      'x': 1000,
+                                                      'physics': {
+                                                          'forceAtlas2Based': {'gravitationalConstant': -131,
+                                                                               'centralGravity': 0.015,
+                                                                               'springLength': 100},
+                                                          'minVelocity': 0.34, 'solver': 'forceAtlas2Based'}})
                     count += 1
         except IOError:
             print "Unable to open {0}".format(data_file)
         maybe_print(json.dumps(dataset, sort_keys=True, indent=4, separators=(',', ': ')), 3)
-    return dataset
+    return dataset,dataset_json,dataset_nodes_description
 
 
 # Read the ARTICLE file
@@ -1368,3 +1402,29 @@ def coreference_refine(text):
         maybe_print(" --> Unable to extract co-reference for sentence: \"{0}...\"\n     --> Error: {1}."
                     .format(text[:min(30,len(text))],detail), 2,'W')
         return text
+
+
+# Extract edges between node and comment
+# @param: a graph
+# @return: list of connection between node-comment
+def extract_comment_relations(g):
+    rs=[]
+    for node,data in g.nodes(data=True):
+        comments = [cmn_id.replace(".","") for cmn_id in re.findall(r'~(com.~\d+)~', data['history'])]
+        if comments:
+            for comment_id in comments:
+                rs.append({
+                            'from': node,
+                            'id': 'n2cmn~'+node+'~'+comment_id + gen_mcs_only(),
+                            'label': '',
+                            'title': '',
+                            'to': comment_id,
+                            'value': 2,
+                            'arrows': { 'to': { 'enabled' : False}, 'from' : {'enabled': False}},
+                            'dashes': True,
+                            'smooth': {'type': 'cubicBezier','forceDirection': 'none','roundness': 0.5},
+                            'hoverWidth': 1.5,
+                            'labelHighlightBold': True,
+                            'physics': False
+                })
+    return set(rs)
