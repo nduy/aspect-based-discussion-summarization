@@ -160,7 +160,7 @@ function draw() {
 				min: 20,
 				max: 40,
 				drawThreshold: 12,
-				maxVisible: 30
+				maxVisible: 20
 			  }
 		  },  
 	    },
@@ -219,9 +219,8 @@ function draw() {
         }
 		  
 	};	
-	
 	// Re arrange the comment to be a line
-    y_pos = (n_comments-1)/2*(-40);	// Starting pos
+    y_pos = (n_comments-1)/2*(-15);	// Starting pos
     x_pos = $('#mynetwork').width()*0.8;
     // alert(x_pos);
     for (let node_id of nodesDataset.getIds()) {
@@ -229,13 +228,14 @@ function draw() {
      if (node_id.match(/^comment~[\d]+$/gi)) {
 		// console.log(node_id);
 		var img = generateCommentImageURL(node_id);
-		nodesDataset.update({id: node_id, y: y_pos, x : x_pos, size: 20, margin: {left: 100, right: 100}, image: img, shape: 'image', font: {size: 1}});
+		nodesDataset.update({id: node_id, y: y_pos, x : x_pos, size: 8, image: img, shape: 'image', font: {size: 1}, widthConstraint: {minimum: 300, maximum: 400}});
 		commentsDict[node_id].image = img;
-		y_pos+= 50;
+		y_pos+= 18;
      } else { // Hide/Display history
 		 if ($('#his-history-chk').is(":checked")){
 			// console.log(nodesDataset.get(node_id).title);
 			var ori_title = nodesDataset.get(node_id).title;
+			// console.log(node_id);
 			if (ori_title.search("<br> ✭ History") ==  -1){
 				nodesDataset.update({id: node_id, title:ori_title, ori_title: ori_title});
 			} else {
@@ -260,13 +260,16 @@ function draw() {
 	
 	// Save all original color to color box
 	color_book = {};
+	
 	for (var nodeId in allNodes) {
 	 if (!(nodeId in commentsDict)){
+		 // console.log(allNodes[nodeId].title.match(/Sen_Score: (-?[\d.]+)/i));
 		 // compute color according to sentiment score
-		 color_book[nodeId] = color_scale((parseFloat(allNodes[nodeId].title.match(/Sen_Score: (-?[\d.]+)/i)[1])+1)/2).hex();
+		 if (allNodes[nodeId].title.match(/Sen_Score: (-?[\d.]+)/i)!= null){
+			color_book[nodeId] = color_scale((parseFloat(allNodes[nodeId].title.match(/Sen_Score: (-?[\d.]+)/i)[1])+1)/2).hex();
+		}
 	 }
 	}
-   
 	// Save all ClusterID -> commetn
 	groupComments = {};
 	for (var edgeId in allEdges) {
@@ -307,7 +310,6 @@ function draw() {
 		enableSmily = false;
 	}
 	});
-  
 	network.on("selectNode", function(params) {
 	// console.log(params);
 	if (params.nodes.length == 1) {
@@ -349,7 +351,6 @@ function draw() {
 	  }
 	}
 	});
-	
 	network.on("oncontext", function (params) {
         selected_nodeid = network.getNodeAt({x: params.event.layerX, y: params.event.layerY});
         if (selected_nodeid){
@@ -429,6 +430,7 @@ function draw() {
         console.log('blurEdge Event:', params);
     });
 */
+	
 	network.on("hoverNode", function (params) {
         // Hightlight the neighbour nodes
         neighbourhoodHighlight(params);
@@ -804,7 +806,8 @@ function handleExpandCluster(){
 function clusterByCid() {
   network.setData(data);
   cluster_ids = new Set();
-  group_members = {}
+  group_members = {};
+  var total_count = 0;
   // Arrange nodes to clusters
   for (key in allNodes){
 	  item = allNodes[key];
@@ -812,12 +815,13 @@ function clusterByCid() {
 	  if (item.cid != undefined){
 	  	  cluster_ids.add(item.cid);
 	  	  if (!(item.cid in group_members)){  // the cluster id wasn't there before
-			  group_members[item.cid] = {count: item.value, members: [item.label], ids: [key]};
+			  group_members[item.cid] = {count: item.value, members: [item.label], ids: [key]}; 
 		  } else {
 			  group_members[item.cid].count = group_members[item.cid].count + item.value;
 			  group_members[item.cid].members.push(item.label); // Add member to group
 			  group_members[item.cid].ids.push(key); // Add id to group
 		  }
+		  total_count+= item.value;
 			
 	  }
   }
@@ -827,7 +831,9 @@ function clusterByCid() {
 	 var total_count = group_members[cid].count;
 	 for (let nodeid of group_members[cid].ids){
 		// console.log(allNodes[nodeid].title.match(/Sen_Score: (-?[\d.]+)/i)[1]);
-		avg += allNodes[nodeid].value/total_count*parseFloat(allNodes[nodeid].title.match(/Sen_Score: (-?[\d.]+)/i)[1]);
+		if (allNodes[nodeid].title.match(/Sen_Score: (-?[\d.]+)/i)){
+			avg += allNodes[nodeid].value/total_count*parseFloat(allNodes[nodeid].title.match(/Sen_Score: (-?[\d.]+)/i)[1]);
+		}
 	 }
 	 avg = Math.round(avg*10000)/10000;
 	 group_members[cid].avg_sen_score = avg;// Do some sentiment composition here
@@ -844,9 +850,11 @@ function clusterByCid() {
   // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
   var clusterOptionsByData;
   var y_pos = -200*cluster_ids.size/2;
+  
   for (let cid of cluster_ids.values()){
 	  y_pos = y_pos + 200;
-	  // console.log(y_pos);
+	  // alert(cid.length);
+	  var margin_val = 100/Math.pow(group_members[cid].count/total_count,1/30);
 	  clusterOptionsByData = {
 		  joinCondition: function (childOptions) {
 			  return childOptions.cid == cid; // the color is fully defined in the node.
@@ -869,8 +877,11 @@ function clusterByCid() {
 			  y : y_pos,
 			  fixed: { y: true, y: true},
 			  value: group_members[cid].count,
+			  shape: 'box',
+			  margin: {left:margin_val, right:margin_val}
 			  }
 	  }; 
+	  // Let all the node have the same width
 	  nodesDataset.update(clusterOptionsByData['clusterNodeProperties']);
 	  network.cluster(clusterOptionsByData);
 	  allNodes[cid] = clusterOptionsByData['clusterNodeProperties'];
@@ -950,15 +961,17 @@ function onFileSelected(event) {
 			for (let item of parsed_text.comments){
 				commentsDict[item.id] = {label: item.label, user: item.user, time: item.time, sen: item.sen_score};
 			}
-			// console.log(commentsDict);
+			//console.log(commentsDict);
 			draw();
 			//console.log("2. !!!!");
 			handleExpandCluster();
 			
 		}
-		catch(err) {
-			console.log(err.message);
-			alert("Unable to draw the network!", console.log(err.message));
+		catch(e) {
+			console.log("Error", e.stack);
+			console.log("Error", e.name);
+			console.log("Error", e.message);
+			alert("Unable to draw the network!", console.log(e.message));
 		};
 	 };	
   };
@@ -1017,15 +1030,15 @@ function generateCommentCode(commentId){
 }
 
 function generateCommentImageURL(node_id){
-	var svg = '<svg xmlns="http://www.w3.org/2000/svg" width="250px" height="65px" >'
+	var svg = '<svg xmlns="http://www.w3.org/2000/svg" width="450px" height="65px" >'
 				  + '<defs><linearGradient id="Gradient1"> <stop class="stop1" offset="0%"/> <stop class="stop2" offset="'+(commentsDict[node_id].sen+1)/2*100
 				  +'%"/> <stop class="stop3" offset="100%"/> </linearGradient>'
 				  + '<style type="text/css"><![CDATA[.rect { fill: url(#Gradient1); margin-top: 20px;}.stop1 { stop-color: '+ starting_color + '; }.stop2 { stop-color: '+ color_scale(.5).hex() + '; }.stop3 { stop-color: '+ ending_color + '; } ]]></style>' 
 				  + '</defs> '
-				  + '<rect x="0" y="0" width="250px" height="65px" fill="url(#Gradient1)" stroke-width="0.001px" stroke="#ffffff" ></rect>'
+				  + '<rect x="0" y="0" width="450px" height="65px" fill="url(#Gradient1)" stroke-width="0.001px" stroke="#ffffff" ></rect>'
 				  + '<foreignObject x="15" y="10" width="100%" height="100%">'
-				  + '<div xmlns="http://www.w3.org/1999/xhtml" style="font-size:30px;text-align: justify; width: 250px;">'
-				  + '<span style="color:white; text-shadow:0 0 20px #000000; width: 250px; text-align: justify;"> <b>💬 </b>'+ node_id.match(/[\d]+/g) +'</span>'
+				  + '<div xmlns="http://www.w3.org/1999/xhtml" style="font-size:30px;text-align: center; width: 450px;">'
+				  + '<span style="color:white; text-shadow:0 0 20px #000000; width: 450px; text-center: justify;"> <b>💬 </b>'+ node_id.match(/[\d]+/g) +'</span>'
 				  + '</div>'
 				  + '</foreignObject>'
 				  + '</svg>';
@@ -1034,15 +1047,15 @@ function generateCommentImageURL(node_id){
 }
 
 function generateGREYCommentImageURL(node_id){
-	var svg = '<svg xmlns="http://www.w3.org/2000/svg" width="250px" height="65px" >'
+	var svg = '<svg xmlns="http://www.w3.org/2000/svg" width="450px" height="65px" >'
 				  + '<defs><linearGradient id="Gradient1"> <stop class="stop1" offset="0%"/> <stop class="stop2" offset="'+0
 				  +'%"/> <stop class="stop3" offset="100%"/> </linearGradient>'
 				  + '<style type="text/css"><![CDATA[.rect { fill: url(#Gradient1); margin-top: 20px;}.stop1 { stop-color: '+ 'rgba(200,200,200,0.5)' + '; }.stop2 { stop-color: '+ 'rgba(200,200,200,0.5)' + '; }.stop3 { stop-color: '+ 'rgba(200,200,200,0.5)' + '; } ]]></style>' 
 				  + '</defs> '
-				  + '<rect x="0" y="0" width="250px" height="65px" fill="url(#Gradient1)" stroke-width="0.001px" stroke="#ffffff" ></rect>'
+				  + '<rect x="0" y="0" width="450px" height="65px" fill="url(#Gradient1)" stroke-width="0.001px" stroke="#ffffff" ></rect>'
 				  + '<foreignObject x="15" y="10" width="100%" height="100%">'
-				  + '<div xmlns="http://www.w3.org/1999/xhtml" style="font-size:30px;text-align: justify; width: 250px;">'
-				  + '<span style="color:white; text-shadow:0 0 20px #000000; width: 250px; text-align: justify;"> <b>💬 </b>'+ node_id.match(/[\d]+/g) +'</span>'
+				  + '<div xmlns="http://www.w3.org/1999/xhtml" style="font-size:30px;text-align: center; width: 450px;">'
+				  + '<span style="color:white; text-shadow:0 0 20px #000000; width: 450px; text-align: center;"> <b>💬 </b>'+ node_id.match(/[\d]+/g) +'</span>'
 				  + '</div>'
 				  + '</foreignObject>'
 				  + '</svg>';
@@ -1059,6 +1072,7 @@ function getRandomInt(min, max) {
 }
 
 function draw_cluster(){
+	$('#inspected-cluster-name').text("⚯ Cluster: " + selected_cluster);
 	var cluster_container = document.getElementById('myinspectnetwork');
 	var cluster_options = {
 	   autoResize: true,
@@ -1199,6 +1213,7 @@ function draw_cluster(){
 		for (let item of related_edges){
 			html_content += generateCommentCode(item.to);
 		}
+		console.log(nodesDataset.get(node_id).title);
 		$("#comments-box").html(html_content); // Update to page
     });
 	

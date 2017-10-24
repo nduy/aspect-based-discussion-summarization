@@ -79,8 +79,9 @@
 			</div> 
 			<!-- Inspection panel and button --> 
 			<div id="inspect-network-window" style="display:none;" class=""> 
+				<span id="inspected-cluster-name" style="color: white; font-family: Sans-serif, serif; font-size: 1em; padding-left: 1em;"> </span>
 				<div id="myinspectnetwork" class=""></div> 
-				<input type="button" value="" id="close-inspect-button" class="round-button" style="width: 2.5vw;height: 2.5vw; left: 72vw;" onclick="hideInspectWindow();"/>
+				<input type="button" value="" id="close-inspect-button" class="round-button" style="width: 2.5vw;height: 2.5vw; left: 72vw; position:absollute;" onclick="hideInspectWindow();"/>
 			</div>
 			
 			

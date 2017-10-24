@@ -18,8 +18,8 @@
 	position:absolute;
 	left: 0vw;
 	width: 75.5vw;
-	height: 85vh;
-	border: 1px solid #444444;
+	height: 82vh;
+	border: 0px solid #444444;
 	background-color: #180E15;
 }
 
@@ -255,7 +255,7 @@ table.legend_table {
   border: none;
   border-radius: 2px;
   margin-left: 1vw;
-  margin-top: 1vw;
+  margin-top: 2vh;
 }
 
 .haftSizeButton:hover,

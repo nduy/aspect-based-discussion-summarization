@@ -61,6 +61,7 @@ N_THREADS = 2
 threadLock = threading.Lock()
 
 # Model for cosine similarity computation on glove
+GLOVE_MODEL_FILE = '../models/glove.6B.200d.txt'
 glove_model = None
 
 ######################################
@@ -212,6 +213,25 @@ def build_mode_1(title, article, comments):
     # print 'Composed: ', rs.edges(data=True)
     rs = graph_unify(rs, uni_options)
     # print 'Unified: ', rs.edges(data=True)
+    # Post-processing: reassign node label by the most frequent word of each node
+    for node,data in rs.nodes(data=True):
+        labels = Counter([item for item in re.findall("([a-z_-]+)~", data['history'])]).most_common(3)
+        # print data['history'].encode('ascii', errors='backslashreplace')
+        # print labels
+        if len(labels) == 1:
+            rs.node[node]['label'] = labels[0][0]
+        elif len(labels) == 2:
+            if u'_' in labels[1][0] or u'-' in labels[1][0]:
+                rs.node[node]['label'] = labels[1][0]
+            else:
+                rs.node[node]['label'] = labels[0][0]
+        elif len(labels) == 3:
+            if u'_' in labels[1][0] or u'-' in labels[1][0]:
+                rs.node[node]['label'] = labels[1][0]
+            elif u'_' in labels[2][0] or u'-' in labels[2][0]:
+                rs.node[node]['label'] = labels[2][0]
+            else:
+                rs.node[node]['label'] = labels[0][0]
     return rs
 
 
@@ -377,7 +397,8 @@ def build_directed_graph_from_text(txt, group_id='', member_id=''):
                 g.node[node[0]]['sentiment'] = {'pos_count': 1 if sen_score > 0 else 0,  # Add sentiment score
                                                 'neg_count': 1 if sen_score < 0 else 0,
                                                 'neu_count': 1 if sen_score == 0 else 0}
-            g.node[node[0]]['history'] = u'<br> - Initialize '+ g.node[node[0]]['label'] + '^' + str(g.node[node[0]]['weight'])
+            g.node[node[0]]['history'] = u'<br> - Initialize {0} ({1})'.format(g.node[node[0]]['label'] + '^' + str(g.node[node[0]]['weight']),
+                                                                               node[0])
         maybe_print('Sentence no ' + str(sen_count) + '\nNodes ' + str(g.nodes()), 3)
         sen_count += 1
         word2id = dict(zip([k for k,_ in keys], assigned_nodes))
@@ -511,6 +532,9 @@ def prune_graph(graph):
     if 'remove_rings' in options:
         REMOVE_RING= options['remove_rings']
 
+    if 'min_edge_similarity' in options:
+        MIN_EDGE_SIMILARITY= options['min_edge_similarity']
+
     maybe_print("Start pruning the graph.", 2,'i')
     # :: Perform pruning
     # Decide whether to skip the pruning because of the tiny size of graph
@@ -553,6 +577,30 @@ def prune_graph(graph):
         to_remove_edges = [(s, t) for (s, t) in g.edges() if g[s][t]['weight'] < EDGE_FREQ_MIN]
         g.remove_edges_from(to_remove_edges)
 
+    # Remove edges whose cosine similarity between its edge is less than a threshold
+    if MIN_EDGE_SIMILARITY != 0:
+        to_remove_edges = []
+        try:
+            global glove_model
+            global GLOVE_MODEL_FILE
+            if not glove_model:
+                maybe_print("   + Loading model from " + GLOVE_MODEL_FILE, 2, "i")
+                glove_model = Glove.load_stanford(GLOVE_MODEL_FILE)
+                maybe_print("   + Model loading completed :)", 2)
+        except Exception as inst:
+            maybe_print("   + Error while loading model from {0}. "
+                        "Semantic similarity prunning SKIPPED! ".format(GLOVE_MODEL_FILE), 2, "E")
+            print inst
+        for edge in g.edges():
+            if cosine_similarity(g.node[edge[0]]['label'], g.node[edge[1]]['label'], glove_model) < MIN_EDGE_SIMILARITY:
+                to_remove_edges.append((edge[0],edge[1]))
+        print "-------------",to_remove_nodes
+        n_edge = nx.number_of_edges(g)
+        g.remove_edges_from(to_remove_nodes)
+        maybe_print("  -> Found {0} edges whose similarity is less than threshold {1} to be removed. "
+                    "Number of node changed {2}"
+                    .format(len(to_remove_edges), MIN_EDGE_SIMILARITY,n_edge-nx.number_of_edges(g)))
+
     # Filter nodes by degree
     if NODE_DEGREE_MIN > 1:
         to_remove_nodes = [n for n in g.nodes()
@@ -575,6 +623,7 @@ def prune_graph(graph):
     maybe_print("  --> up to Isolated nodes filter, {0} nodes and {1} edges removed"
                 .format(ori_nnode-g.number_of_nodes(), ori_nedge-g.number_of_edges()),
                 2, 'i')
+
     # :: Done pruning
     maybe_print("--> Graph PRUNNING completed.\n    Number of nodes: {0}\n    Number of edges: {1}"
                 .format(len(g.nodes()), len(g.edges())),2)
@@ -608,7 +657,15 @@ def dep_extract_from_sent(sent, filter_opt):
     blob = TextBlob(sentence)
     # print blob.noun_phrases
     for phrase in blob.noun_phrases:
-        sentence = sentence.replace(phrase,phrase.replace(u' ',u'_'))
+        pos = phrase.rfind(' ')
+        if pos==-1:
+            sentence = sentence.replace(phrase, lemmatizer.lemmatize(phrase))
+        else:
+            new_phrase = phrase[:pos+1]+ lemmatizer.lemmatize(phrase[pos+1:])
+            sentence = sentence.replace(phrase, new_phrase.replace(u' ', u'_'))
+
+
+
     # print sentence
     '''
     result = dep_parser.raw_parse(sentence)
@@ -642,10 +699,10 @@ def dep_extract_from_sent(sent, filter_opt):
         s = e[1]
         t = e[2]
         if r not in [u'root',u'punct'] and s in pos_dict and t in pos_dict and len(s)>1 and len(t)>1:
-
-            raw_results.append(((lemmatizer.lemmatize(s.lower()), pos_dict[s]),
-                                r,
-                                (lemmatizer.lemmatize(t.lower()), pos_dict[t])))
+            source = lemmatizer.lemmatize(s.lower())
+            target = lemmatizer.lemmatize(t.lower())
+            if source not in prune_options['black_node_labels'] and target not in prune_options['black_node_labels']:
+                raw_results.append(((source, pos_dict[s]), r, (target, pos_dict[t])))
 
     #  Filter by relationship
     preferred_rel = filter_opt['preferred_rel']
@@ -1153,11 +1210,15 @@ def graph_unify(g=None, uni_opt=None):
                         add_up_weights.append((n, node0, n_n0_weight + n_n1_weight, label))
             group_id = rs_semantic.node[node0]['group_id'] | rs_semantic.node[node1]['group_id']
             pos = rs_semantic.node[node0]['pos'] | rs_semantic.node[node1]['pos']
-            history = u'{0} <br> - Contracted with {1}^{2} ({3})'\
+            # history = repetition_summary(rs.node[node0]['history'] + \
+            #          u'<br> - Joined with {0} ({1})'.format( \
+            #          rs.node[node1]['history'].replace('<br> -', ':'), node1))
+            history = repetition_summary(u'{0} <br> - Contracted with {1}^{2} ({3}). Whose his. is: {4}'\
                 .format(rs_semantic.node[node0]['history'],
                         rs_semantic.node[node1]['label'],
                         rs_semantic.node[node1]['weight'],
-                        node1)
+                        node1,
+                        rs_semantic.node[node1]['history']))
             # Decide the label
             tmp = sorted(re.findall(r'\s([a-z_/\\-][a-z_/\\-]+)\^(\d+)', history), key=lambda x: int(x[1]))
             # print tups
@@ -1262,7 +1323,6 @@ def read_comment_file(data_file, read_as_threads=False):
                                          'time': entry[5],
                                          'id': u"comment~" + entry[1],
                                          'size': 150,
-                                         # TODO Compute sentiment score later. Now it is just fixed value
                                          'sen_score': 0.01,
                                          'label': entry[6]})
                     dataset_nodes_description.append({'id': u'comment~' + entry[1],
@@ -1342,6 +1402,7 @@ def coreference_refine(text):
         # parse = server.parse(text)
         threadLock.acquire()
         parse_rs = loads(server.parse(text))
+        # print tokens, parse_rs
         threadLock.release()
         # parse_rs = loads(parse)
     except Exception as detail:
@@ -1408,14 +1469,15 @@ def coreference_refine(text):
 # @param: a graph
 # @return: list of connection between node-comment
 def extract_comment_relations(g):
-    rs=[]
+    rs = []
+    comment_mean_sentiment = {} # Store the mean sentiment of nodes connect to the comment
     for node,data in g.nodes(data=True):
-        comments = [cmn_id.replace(".","") for cmn_id in re.findall(r'~(com.~\d+)~', data['history'])]
+        comments = [cmn_id.replace("com.","comment") for cmn_id in set(re.findall(r'~(com.~\d+)~', data['history']))]
         if comments:
             for comment_id in comments:
                 rs.append({
                             'from': node,
-                            'id': 'n2cmn~'+node+'~'+comment_id + gen_mcs_only(),
+                            'id': 'n2cmn~'+node+'~'+comment_id + '~' + gen_mcs_only(),
                             'label': '',
                             'title': '',
                             'to': comment_id,
@@ -1427,4 +1489,8 @@ def extract_comment_relations(g):
                             'labelHighlightBold': True,
                             'physics': False
                 })
-    return set(rs)
+                if comment_id not in comment_mean_sentiment:
+                    comment_mean_sentiment[comment_id] = data['sentiment_score']
+                else:
+                    comment_mean_sentiment[comment_id] = (comment_mean_sentiment[comment_id]+data['sentiment_score'])/2
+    return rs,comment_mean_sentiment

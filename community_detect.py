@@ -7,7 +7,6 @@
 """
 
 import networkx as nx
-from networkx.algorithms import community
 from utils import *
 import functions
 import config
@@ -16,9 +15,11 @@ import numpy as np
 import traceback
 import random
 from nltk.corpus import wordnet as wn
-import en
+import DbpediaLabeller
 from nltk.stem import WordNetLemmatizer
 from sklearn.svm import OneClassSVM
+import en
+from asyn_fluidc import asyn_fluidc
 
 # Wordnet Lemmatizer
 lemmatizer = WordNetLemmatizer()
@@ -26,8 +27,8 @@ lemmatizer = WordNetLemmatizer()
 sample_community_names = [u'α',u'β',u'γ',u'δ',u'ε',u'ζ',u'η',u'θ',u'ι',u'κ',u'λ',u'μ',
                            u'ν',u'ξ',u'ο',u'π',u'ρ',u'σ',u'τ',u'υ',u'φ',u'χ',u'ψ',u'ω']
 
-# Outliner ration: how many nodes do you want to treat as outliner
-outliers_fraction = 0.20
+# Outliner rate: how many nodes do you want to treat as outliner
+outliers_fraction = 0.15
 
 
 # Detect the communities in a graph
@@ -76,10 +77,14 @@ def detect_communities(g=None, comm_opt=None):
             if ALGORITHM == "fluid_communities":
                 # get the largest messy graph
                 # Get number of communities to be detected
-                n_com = comm_opt['method']['n_communities'] if 'n_communities' in comm_opt['method'] else 4
+                n_com = comm_opt['method']['params']['n_communities'] \
+                    if 'n_communities' in comm_opt['method']['params'] else 4
+                enable_pagerank = comm_opt['method']['params']['n_commenable_pagerank_initializationunities'] \
+                    if 'enable_pagerank_initialization' in comm_opt['method']['params'] else 4
+
                 gc = max(nx.connected_component_subgraphs(undir_graph), key=len)
                 # list of list. Each sublist contain ID of nodes in the same community
-                communities = list(community.asyn_fluidc(gc, n_com))
+                communities = list(asyn_fluidc(gc, n_com,enable_pr=enable_pagerank))
                 com_index = -1
                 for com in communities:
                     com_index += 1
@@ -179,15 +184,28 @@ def detect_communities(g=None, comm_opt=None):
                                 if related_pos and len(set([u'v',u'a',u's',u'r']) & related_pos) == 0:  # Filter: exclude some pos
                                     suggested_labels.append(w)
                         # Get 3 most frequent word
-                    freqs = sorted([(g.node[n]['label'],g.node[n]['weight']) for n in com],key=lambda e: int(e[1]))
+                    freqs = [w for w,_ in sorted([(g.node[n]['label'],g.node[n]['weight']) for n in com],
+                                                 key=lambda e: int(e[1]),reverse=True)]
                     # suggested_labels = glove_model.most_similar_paragraph(comm_labels)
                     if len(suggested_labels) >5:
                         suggested_labels = suggested_labels[:5]
+
+                    # Apply DBPedia Labeler
+                    top10 =[subword for word in freqs[:5] for subword in word.split('_') if en.is_noun(subword)] + freqs[:5]
+                    print "---> ",top10
+                    # DB_labels = DbpediaLabeller.DBPprocess(top10)
+                    DB_labels = DbpediaLabeller.DBPprocess(top10)
+                    # print 'ZZZZZZZZZzzzzz',comm_labels_array
+                    # DB_labels = DbpediaLabeller.DBPprocess(comm_labels_array)
+                    print DB_labels
+                    if len(DB_labels) >5:
+                        DB_labels = DB_labels[:5]
                     for node_id in com:  # sample_community_names[com_index]
-                        graph.node[node_id]['cluster_id'] = u'[{0}] Top: {1}, {2}, {3} \n'\
+                        graph.node[node_id]['cluster_id'] = u'[{0}] Top: {1} \nV.Comp: {2} \nDbpedia: {3}'\
                                                                 .format(sample_community_names[com_index],
-                                                                        freqs[-1][0],freqs[-2][0],freqs[-3][0])  \
-                                                            + (' - '.join(suggested_labels)).upper()
+                                                                        ', '.join(freqs[:5]),
+                                                                        ' - '.join(suggested_labels).upper(),
+                                                                        ' - '.join(DB_labels).upper())
 
                 return graph
         except Exception as inst:

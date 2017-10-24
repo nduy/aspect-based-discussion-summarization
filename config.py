@@ -28,8 +28,8 @@ prune_options = {
     # A while list of words to keep no mater how bad it is
     'white_node_labels': [],
     # A black list of words to be killed no mater how good it is
-    'black_node_labels': [u"week",u"month",u"amount",u"bit",u"wa",
-                          u"a",u"plenty",u"many",u"use",u"able",u"sort",u"little",u"most"
+    'black_node_labels': [u"week",u"month",u"amount",u"bit",u"wa",u"think",u"look",u"new",
+                          u"a",u"plenty",u"many",u"use",u"able",u"sort",u"little",u"most",u"used"
                           u"about",u"above",u"across",u"after",u"afterwards",u"again",u"against",u"all",u"almost",
                           u"alone",u"along",u"already",u"also",u"although",u"always",u"am",u"among",u"amongst",
                           u"amongst",u"an",u"and",u"another",u"any",u"anyhow",u"anyone",u"anything",u"anyway",
@@ -59,15 +59,22 @@ prune_options = {
                           u"wherein",u"whereupon",u"wherever",u"whether",u"which",u"while",u"whither",u"who",u"whoever",
                           u"whole",u"whom",u"whose",u"why",u"whyever",u"will",u"with",u"within",u"without",u"would",
                           u"yes",u"yet",u"you",u"your",u"yours",u"yourself",u"yourselves"],
-    'black_dependencies': [u'advcl',u'dep',u'parataxis'],   # All edges with this dependency will be removed
-    'black_pos': [u'VB',u'VBD',u'VBG',u'VBN',u'VBZ',u'VBP']  # All node with this POS wil be removed
+# All edges with this dependency will be removed
+    'black_dependencies': [u'advcl',u'dep',u'parataxis',u'det',u'acl',u'case'],
+    'black_pos': [u'VB',u'VBD',u'VBG',u'VBN',u'VBZ',u'VBP',u'JJ'],  # All node with this POS wil be removed
+    'min_edge_similarity': 0.20          # Minimum semantic similarity ins distributed semantic vector space
 }
 
 community_detect_options = {
     'enable_community_detection': True,             # Enable/Disable community detection,
     'method': {
                     'algorithm': 'fluid_communities',     # other options 'bipartitions', Label propagation
-                    'n_communities': 6
+                    'params':{
+                        'n_communities': 6,
+                        'enable_pagerank_initialization': True
+                    }
+
+
                },
     'community_label_inference': {   # method for inferring the label
         'method': 'distributed_semantic',
@@ -92,7 +99,7 @@ uni_options = {
     },
     'unify_semantic_similarity': {
         'enable': True,
-        'threshold': 0.8,   # Those nodes whose similarity greater than this threshold will be unified
+        'threshold': 0.85,   # Those nodes whose similarity greater than this threshold will be unified
         'glove_model_file': '../models/glove.6B.200d.txt'
     }
 }

@@ -68,20 +68,28 @@ if __name__ == "__main__":
             'build_option': build_options,
             'pruning_option': prune_options,
             'unification_option': uni_options,
-            'community_detection_option': community_detect_options
+            'community_detection_option': community_detect_options,
+            'title': 'fluid with pagerank'
         }
         json_g['summary'] = {
             'n_comments': len(comments)
         }
 
-        # add comment nodes to graph
-        json_g['nodes'].extend(comment_des)
-
         # Add edges from nodes to comments
-        json_g['edges'].extend(extract_comment_relations(com_graph))
-
+        comment_edges,comment_mean_sentiment = extract_comment_relations(com_graph)
+        # print(comment_mean_sentiment)
+        json_g['edges'].extend(comment_edges)
         # add comments
         json_g['comments'] = comment_js  # add comment descriptions
+
+        # Combine comment node and its sentiment
+        for i in xrange(0,len(comment_des)):
+            if comment_des[i]['id'] in comment_mean_sentiment:
+                comment_des[i]['sen_score'] = comment_mean_sentiment[comment_des[i]['id']]
+            else:
+                comment_des[i]['sen_score'] = 0.0
+        # add comment nodes to graph
+        json_g['nodes'].extend(comment_des)
 
     with open('result.json', 'w') as outfile:
         json.dump(json_g, outfile, sort_keys=True, indent=4, separators=(',', ': '))
