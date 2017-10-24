@@ -79,7 +79,7 @@ def detect_communities(g=None, comm_opt=None):
                 # Get number of communities to be detected
                 n_com = comm_opt['method']['params']['n_communities'] \
                     if 'n_communities' in comm_opt['method']['params'] else 4
-                enable_pagerank = comm_opt['method']['params']['n_commenable_pagerank_initializationunities'] \
+                enable_pagerank = comm_opt['method']['params']['enable_pagerank_initialization'] \
                     if 'enable_pagerank_initialization' in comm_opt['method']['params'] else 4
 
                 gc = max(nx.connected_component_subgraphs(undir_graph), key=len)
@@ -191,7 +191,8 @@ def detect_communities(g=None, comm_opt=None):
                         suggested_labels = suggested_labels[:5]
 
                     # Apply DBPedia Labeler
-                    top10 =[subword for word in freqs[:5] for subword in word.split('_') if en.is_noun(subword)] + freqs[:5]
+                    # top10 =[subword for word in freqs[:5] for subword in word.split('_') if en.is_noun(subword)] + freqs[:5]
+                    top10 = freqs[:10]
                     print "---> ",top10
                     # DB_labels = DbpediaLabeller.DBPprocess(top10)
                     DB_labels = DbpediaLabeller.DBPprocess(top10)
