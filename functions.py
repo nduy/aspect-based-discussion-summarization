@@ -577,6 +577,11 @@ def prune_graph(graph):
         to_remove_edges = [(s, t) for (s, t) in g.edges() if g[s][t]['weight'] < EDGE_FREQ_MIN]
         g.remove_edges_from(to_remove_edges)
 
+    # delete blacklisted edges
+    if len(BLACK_DEPENDENCIES) > 0:
+        to_remove_edges = [(s, t) for s, t, data in g.edges(data=True) if data['label'] in BLACK_DEPENDENCIES]
+        g.remove_edges_from(to_remove_edges)
+
     # Remove edges whose cosine similarity between its edge is less than a threshold
     if MIN_EDGE_SIMILARITY != 0:
         to_remove_edges = []
@@ -594,11 +599,11 @@ def prune_graph(graph):
         for edge in g.edges():
             if cosine_similarity(g.node[edge[0]]['label'], g.node[edge[1]]['label'], glove_model) < MIN_EDGE_SIMILARITY:
                 to_remove_edges.append((edge[0],edge[1]))
-        print "-------------",to_remove_nodes
+        # print "-------------",to_remove_nodes
         n_edge = nx.number_of_edges(g)
-        g.remove_edges_from(to_remove_nodes)
+        g.remove_edges_from(to_remove_edges)
         maybe_print("  -> Found {0} edges whose similarity is less than threshold {1} to be removed. "
-                    "Number of node changed {2}"
+                    "Number edges node changed {2}"
                     .format(len(to_remove_edges), MIN_EDGE_SIMILARITY,n_edge-nx.number_of_edges(g)))
 
     # Filter nodes by degree

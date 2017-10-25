@@ -52,7 +52,7 @@ def expandConcepts(topicWord,expansionList,noHops):
     if len(graph) ==0:
         logger.info('Trying to split the word if applicable')
         subwords = topicWord.split(u"_")
-        if len(subwords)!=0:
+        if len(subwords)>1:
             for subword in subwords:
                 graph += expandConcepts(subword,expansionList,noHops)
     return graph

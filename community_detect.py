@@ -85,6 +85,7 @@ def detect_communities(g=None, comm_opt=None):
                 gc = max(nx.connected_component_subgraphs(undir_graph), key=len)
                 # list of list. Each sublist contain ID of nodes in the same community
                 communities = list(asyn_fluidc(gc, n_com,enable_pr=enable_pagerank))
+                maybe_print("Detected communities: {0}".format(communities,'i'))
                 com_index = -1
                 for com in communities:
                     com_index += 1

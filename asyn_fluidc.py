@@ -50,6 +50,8 @@ def asyn_fluidc(G, k, max_iter=100, enable_pr=True):
     max_iter : integer
         The number of maximum iterations allowed. By default 15.
 
+    enable_pr : Enable/disable Pagerank for initialize starting points
+
     Returns
     -------
     communities : iterable
@@ -79,13 +81,19 @@ def asyn_fluidc(G, k, max_iter=100, enable_pr=True):
     max_density = 1.0
     vertices = list(G)
     random.shuffle(vertices)
+    # print "@@@",vertices
     if enable_pr:
         # Run PageRank with alpha of 0.9 the push them to the head of vertices
         #  so that it will be understand as start points
         # Find the top k  keys by page rank: run pr, sort the value, then get top k key
-        top_keys = [word_id for word_id,_ in list(sorted(pagerank(G).items(), key=lambda x:x[1], reverse=True))[:k]]
+        top_keys = [word_id for word_id,_ in list(sorted(pagerank(G).items(), key=lambda x:x[1], reverse=True))]
+        print top_keys
+        random.shuffle(top_keys[:(len(top_keys))/4])
+        top_keys = top_keys[:k]
+        # print "+++", top_keys
         # Remove these top keys from the vertices, then append top_key to the head
-        vertices = top_keys.extend([v for v in vertices if v not in top_keys])
+        top_keys.extend([v for v in vertices if v not in top_keys])
+        # print "XXX", vertices
 
     communities = {n: i for i, n in enumerate(vertices[:k])}
     density = {}

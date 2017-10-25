@@ -62,7 +62,7 @@ prune_options = {
 # All edges with this dependency will be removed
     'black_dependencies': [u'advcl',u'dep',u'parataxis',u'det',u'acl',u'case'],
     'black_pos': [u'VB',u'VBD',u'VBG',u'VBN',u'VBZ',u'VBP',u'JJ'],  # All node with this POS wil be removed
-    'min_edge_similarity': 0.20          # Minimum semantic similarity ins distributed semantic vector space
+    'min_edge_similarity': 0.15          # Minimum semantic similarity ins distributed semantic vector space
 }
 
 community_detect_options = {

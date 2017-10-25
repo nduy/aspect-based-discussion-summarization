@@ -40,6 +40,7 @@
 			    <option value="pt-br">Português</option>
 			    <option value="ru">Русский </option>
 			  </select>
+			  <span style="" id="title_box"></span>
 			</p>
 			<div id="node-popUp">
 			  <span id="node-operation">node</span> <br>
@@ -100,11 +101,17 @@
 			<input type="button" onclick="" value="Redraw" id="submitbutton" class="draw-icon haftSizeButton" disabled> 
 			<input type="button" onclick="handleExpandCluster()" value="Expand all clusters" id="clusterButton" class="cluster-icon haftSizeButton" disabled> 
 			<input id="file-input" type="file" name="name" style="display: none;"  accept=".json" onchange="onFileSelected(event)"/>
-			<div  style="right: 0vw; top: 0.0vw; width: 20vw; position: absolute; ">
+			<div  style="right: 18vw; top: 0.0vh; width: 15vw; position: absolute; ">
 				<label class="checkbox-container">Hide nodes history
 				  <input type="checkbox" checked="checked" id="his-history-chk" onclick="onHistoryShowHideChange(event);">
 				  <span class="checkmark"></span>
 				</label>
+				<label class="checkbox-container">Hide edges to comments
+				  <input type="checkbox" id="hide-e2com-chk" onclick="onCommentEdgeHideChange(event);" disabled>
+				  <span class="checkmark"></span>
+				</label>
+			</div>
+			<div  style="right: 0vw; top: 0.0vh; width: 15vw; position: absolute; ">
 				<label class="checkbox-container">Enable fast stabilization
 				  <input type="checkbox" checked="checked" id="fast-stabilization-chk" onclick="onChangeStabilizationSpeed(event);">
 				  <span class="checkmark"></span>
@@ -134,6 +141,7 @@
 						nodesDataset.add(parsed_text.nodes);
 						edgesDataset.add(parsed_text.edges);
 						n_comments = parsed_text.summary.n_comments;
+						$("#title_box").text("🕒  "+ parsed_text.options.timestamp + " | § " + parsed_text.options.title);
 						// Read the comments
 						for (let item of parsed_text.comments){
 							// console.log(commentsDict);

@@ -19,6 +19,7 @@ import jsonrpc
 import json
 from collections import Counter
 from scipy.spatial.distance import cosine
+import en
 
 # Normalization and cleaning engine
 cucco = Cucco()
@@ -258,7 +259,7 @@ def all_x_is_in_y(setx=set(),sety=set()):
 # Implement the cosine similarity calculating using stanford Glove
 def cosine_similarity(word1,word2,model):
     if word1 not in model.dictionary:
-        ws = [w for w in word1.split(u'_') if w in model.dictionary]
+        ws = [w for w in word1.split(u'_') if w in model.dictionary and en.is_noun(w)]
         if not ws:
             return 0
         elif len(ws) > 1:  # there are at least 2 elements of the list is in dictionary
@@ -270,7 +271,7 @@ def cosine_similarity(word1,word2,model):
         v1 = model.word_vectors[model.dictionary[word1]]
 
     if word2 not in model.dictionary:
-        ws = [w for w in word2.split(u'_') if w in model.dictionary]
+        ws = [w for w in word2.split(u'_') if w in model.dictionary and en.is_noun(w)]
         if not ws:
             return 0
         elif len(ws) > 1:  # there are at least 2 elements of the list is in dictionary

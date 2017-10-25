@@ -561,6 +561,11 @@ body{
     background-color: #2196F3;
 }
 
+/* When the checkbox is disable, add a blue background */
+#commandbox .checkbox-container input:disabled  ~ .checkmark{
+    background-color: #696969;
+}
+
 /* Create the checkmark/indicator (hidden when not checked) */
 #commandbox .checkmark:after {
     content: "";
@@ -618,4 +623,10 @@ margin-top: 5px;
  
 blockquote cite:before {
 content: "\2014 \2009";
+}
+
+#title_box{
+font: bold 5em Arial, san-serif; 
+color: white;
+margin: 0 0 0 2vw;
 }

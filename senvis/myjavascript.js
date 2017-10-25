@@ -24,7 +24,7 @@ var selected_cluster = null; // selected cluster when right click, store so that
 var starting_color = 'Red';
 var ending_color = 'Green';
 var color_scale = scale = chroma.scale([starting_color, ending_color]);
-
+var showNode2CommentEdges = true;
 var locales = {
   en: {
     edit: 'Edit',
@@ -737,6 +737,7 @@ function drawFromJS() {
 				nodesDataset.add(parsed_text.nodes);
 				edgesDataset.add(parsed_text.edges);
 				n_comments = parsed_text.summary.n_comments;
+				$("#title_box").text("🕒 "+ parsed_text.options.timestamp + " | § " + parsed_text.options.title);
 				// Read the comments
 				console.log("XXXXXXXXXXxx");
 				for (let item of parsed_text.comments){
@@ -771,10 +772,26 @@ function handleExpandCluster(){
 		enableLoading = true;
 		enableSmily = true;
 		network.physics.options.stabilization.enabled  = false;
-		clusterByCid();
 		$("#clusterButton").prop('value', 'Expand all clusters'); 
+		$("#hide-e2com-chk").prop('disabled', true);
 		clustered = true;
-		 
+		// Show all node to comment edges
+		if (showNode2CommentEdges == false){
+			var to_update = [];
+			// for (let edge_id of edgesDataset.getIds()) {
+			for (var edge_id in allEdges) {
+				// console.log(edgesDataset.get(edge_id).to);
+				console.log(edgesDataset.get(edge_id).to in commentsDict);
+				if (edgesDataset.get(edge_id).to in commentsDict){
+					to_update.push({id: edge_id, hidden:false});
+					allEdges[edge_id].hidden = false;
+				}
+			}
+			edgesDataset.update(to_update);
+			showNode2CommentEdges = true;
+			$("#hide-e2com-chk").prop('checked', false);
+		}
+		clusterByCid();
 	} else {
 		clustered = false;
 		// console.log(cluster_ids);
@@ -796,6 +813,7 @@ function handleExpandCluster(){
 		cluster_ids = null;
 		group_members = null;
 		$("#clusterButton").prop('value', 'Cluster by topics'); 
+		$("#hide-e2com-chk").prop('disabled', false);
 		// console.log('0000-->');
 		network.physics.options.stabilization.enabled  = true;
 		
@@ -1002,6 +1020,44 @@ function  onHistoryShowHideChange(event){
 			allNodes[node_id].title = ori_title;
 		}
 	}
+}
+
+function  onCommentEdgeHideChange(event){
+	if (!clustered){
+		if ($('#hide-e2com-chk').is(":checked")){
+		// Switch show to hide -> show History
+		var to_update = [];
+		// for (let edge_id of edgesDataset.getIds()) {
+		for (var edge_id in allEdges) {
+			// console.log(edgesDataset.get(edge_id).to);
+			// console.log(edgesDataset.get(edge_id).to);
+			// console.log(edgesDataset.get(edge_id).to in commentsDict);
+			if (edgesDataset.get(edge_id).to in commentsDict){
+				to_update.push({id: edge_id, hidden:true});
+				allEdges[edge_id].hidden = true;
+			}
+		}
+		edgesDataset.update(to_update);
+		showNode2CommentEdges = false;
+		} else { // let show the history again
+			
+			var to_update = [];
+			// for (let edge_id of edgesDataset.getIds()) {
+			for (var edge_id in allEdges) {
+				// console.log(edgesDataset.get(edge_id).to);
+				console.log(edgesDataset.get(edge_id).to in commentsDict);
+				if (edgesDataset.get(edge_id).to in commentsDict){
+					to_update.push({id: edge_id, hidden:false});
+					allEdges[edge_id].hidden = false;
+				}
+			}
+			edgesDataset.update(to_update);
+			showNode2CommentEdges = true;
+		}
+	} else {
+
+	}
+	
 }
 
 function  onChangeStabilizationSpeed(event){
