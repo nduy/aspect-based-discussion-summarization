@@ -28,8 +28,8 @@ prune_options = {
     # A while list of words to keep no mater how bad it is
     'white_node_labels': [],
     # A black list of words to be killed no mater how good it is
-    'black_node_labels': [u"week",u"month",u"amount",u"bit",u"wa",u"think",u"look",u"new",
-                          u"a",u"plenty",u"many",u"use",u"able",u"sort",u"little",u"most",u"used"
+    'black_node_labels': [u"week",u"month",u"year",u"amount",u"bit",u"wa",u"think",u"look",u"new",u"know",
+                          u"a",u"plenty",u"many",u"use",u"able",u"sort",u"little",u"most",u"used",u"do",u"make",
                           u"about",u"above",u"across",u"after",u"afterwards",u"again",u"against",u"all",u"almost",
                           u"alone",u"along",u"already",u"also",u"although",u"always",u"am",u"among",u"amongst",
                           u"amongst",u"an",u"and",u"another",u"any",u"anyhow",u"anyone",u"anything",u"anyway",

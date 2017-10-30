@@ -72,7 +72,10 @@ if __name__ == "__main__":
             'title': 'fluid with pagerank'
         }
         json_g['summary'] = {
-            'n_comments': len(comments)
+            'n_comments': len(comments),
+            'n_nodes': nx.number_of_nodes(com_graph),
+            'n_edges': nx.number_of_edges(com_graph),
+            'elapsed_time_sec': str(td(seconds=(time.time() - start_time)))
         }
 
         # Add edges from nodes to comments

@@ -13,6 +13,8 @@ from networkx.algorithms.components import is_connected
 from networkx.utils import groups
 from networkx.utils.decorators import not_implemented_for
 from networkx import pagerank
+from utils import maybe_print
+
 __all__ = ['asyn_fluidc']
 
 
@@ -85,11 +87,13 @@ def asyn_fluidc(G, k, max_iter=100, enable_pr=True):
     if enable_pr:
         # Run PageRank with alpha of 0.9 the push them to the head of vertices
         #  so that it will be understand as start points
+        maybe_print("PageRanks: {0}".format(pagerank(G)), 2, u'i')
         # Find the top k  keys by page rank: run pr, sort the value, then get top k key
         top_keys = [word_id for word_id,_ in list(sorted(pagerank(G).items(), key=lambda x:x[1], reverse=True))]
-        print top_keys
-        random.shuffle(top_keys[:(len(top_keys))/4])
+        # random.shuffle(top_keys[:(len(top_keys))/4])
+        random.shuffle(top_keys[:(k*2)])
         top_keys = top_keys[:k]
+        maybe_print("Top keys: {0}".format(top_keys), 2, u'i')
         # print "+++", top_keys
         # Remove these top keys from the vertices, then append top_key to the head
         top_keys.extend([v for v in vertices if v not in top_keys])

@@ -4,6 +4,8 @@ import Queue
 import logging
 import networkx as nx
 import operator
+from nltk.stem import WordNetLemmatizer
+
 '''
 This is an implementation of WSDM-2013 paper (title: Unsupervised Graph based Topic Labelling Using DBPedia
 
@@ -17,6 +19,9 @@ Forked from https://gitlab.lif.univ-mrs.fr/balamurali.ar/labelling_rest.git
 logger = logging.getLogger("Dbpedia Labeller")
 logging.basicConfig(format='%(asctime)s : %(threadName)s : %(levelname)s : %(message)s', level=logging.INFO)
 DBPediaURI= 'http://dbpedia.org/resource/'
+# Lemmatizer
+lemmatizer = WordNetLemmatizer()
+
 
 def createGraph(topicURI,relation,toExpandURI):
     graph=rdflib.Graph()
@@ -28,6 +33,7 @@ def createGraph(topicURI,relation,toExpandURI):
             toExpandURI.append(o)
         
     return (graph.triples((None, relation, None)),toExpandURI)
+
 
 def expandConcepts(topicWord,expansionList,noHops):
     uri = DBPediaURI +  topicWord
@@ -51,14 +57,12 @@ def expandConcepts(topicWord,expansionList,noHops):
 
     if len(graph) ==0:
         logger.info('Trying to split the word if applicable')
-        subwords = topicWord.split(u"_")
+        subwords = [lemmatizer.lemmatize(w.lower()) for w in topicWord.split(u"_")]
         if len(subwords)>1:
             for subword in subwords:
                 graph += expandConcepts(subword,expansionList,noHops)
     return graph
     
-
-
 
 def findCentralNode(graph):
     '''
@@ -99,10 +103,6 @@ def DBPprocess(topicWordList):
     sortedNodes =cleanLabels(sortedNodes)
     return sortedNodes
     
-    
-    
-
-
 
 if __name__ =='__main__':
     topicWordList=['waste', 'collection', 'rubbish']
