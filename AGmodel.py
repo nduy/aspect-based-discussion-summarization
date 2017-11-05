@@ -8,6 +8,7 @@ from nltk.tokenize import StanfordTokenizer
 from collections import Counter
 import re
 
+
 class AGmodel:
     """
     The Aspect Graph model for topic modeling
@@ -30,6 +31,7 @@ class AGmodel:
         :param asp_graph: The aspect graph to be converted to aspect graph model
         :param kwargs:
         """
+        # print '---', len(asp_graph)
         # Compute a dictionary for the graph, which is all nodes in graph
         index = 0
         for node,data in asp_graph.nodes(data=True):
@@ -51,7 +53,9 @@ class AGmodel:
         # initialize a place holder for storing nodes of clusters
         self.topic_nodes = {key: [] for key in self.topic_ids}
         for node,data in asp_graph.nodes(data=True):
-            self.topic_nodes[data['cluster_id']].append(node)
+            print data
+            if 'cluster_id' in data:
+                self.topic_nodes[data['cluster_id']].append(node)
         # Extract subraph from the big graph
         for key,node_list in self.topic_nodes:
             self.topic_graphs[key] = asp_graph.subgraph(self.topic_nodes[key])
