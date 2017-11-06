@@ -9,6 +9,8 @@ from collections import Counter
 import re
 from nltk.tokenize import word_tokenize
 import warnings
+from itertools import permutations
+from sklearn import metrics
 
 
 class AGmodel:
@@ -94,7 +96,7 @@ class AGmodel:
             self.topic_graphs[cluster_id] = asp_graph.subgraph(self.topic_nodes[cluster_id])
         maybe_print("Modeled {0} topics. ".format(self.n_topics), 2, "i")
         for key in self.topic_graphs:
-            maybe_print(u' -> Topic: {0}, Nodes: {1}'.format(key,list(self.topic_graphs[key].nodes())), 2, '3')
+            maybe_print(u' -> Topic: {0}, Nodes: {1}'.format(key,list(self.topic_graphs[key].nodes())), 3, 'i')
 
         # Compute matrix
         self.matrix = self.compute_probability_matrix(method='eigenvector_centrality', enable_softmax=True)
@@ -256,7 +258,7 @@ class AGmodel:
                                       text=content,
                                       vectorize_method=vectorize_method,
                                       top=1)
-                print rs
+                # print rs
                 result[rs['doc_id'] if rs['doc_id'] else str(i)+u'~' + gen_mcs_only()] = rs['labels']
             except Exception as ins:
                 print ins
@@ -281,26 +283,26 @@ class AGmodel:
         assert ground_truth, 'Invalid ground-truth for evaluating model'
         assert len(ground_truth)==len(multi_docs), 'Ground-truth and document content have different size'
         # compute the prediction of clusters
-        predicted_result = self.predict_multi_docs( doc_ids=doc_ids,
-                                                    multi_docs=multi_docs,
-                                                    vectorize_method=vectorize_method)
+        predicted_result = self.predict_multi_docs(doc_ids=doc_ids,
+                                                   multi_docs=multi_docs,
+                                                   vectorize_method=vectorize_method)
         # Now evaluate the result
         # First reassign generated to the ground truth value
-        # make a topic dictionarary
-        topic_dictionary = {k: v for k, v in enumerate(set(ground_truth))}
-        rev_topic_dictionary = {topic_dictionary[k]:k for k in topic_dictionary} # inverted topic dictionary
 
         # convert predicted result to a dictionary form {topic: topic_label, docs: []} where docs is list of docs in the
         predicted_clusters = dict()
         # the cluster
         for doc_id in predicted_result:
-            label = predicted_result[doc_id]
+            label = predicted_result[doc_id][0][0]
             if label not in predicted_clusters:
                 predicted_clusters[label] = [doc_id]
             else:
-                predicted_clusters[label].append([doc_id])
+                predicted_clusters[label].append(doc_id)
         predicted_topic_names = predicted_clusters.keys()
-
+        # make a topic dictionary
+        predicted_topic_dictionary = {k: v for k, v in enumerate(predicted_topic_names)} # id -> name
+        inv_predicted_topic_dictionary = {predicted_topic_dictionary[k]:k for k in predicted_topic_dictionary}
+        ###
         truth_clusters = dict()
         # do similar for the ground truth
         for i in xrange(0,len(ground_truth)):
@@ -310,5 +312,63 @@ class AGmodel:
             else:
                 truth_clusters[label].append(doc_ids[i])
         truth_topic_names = truth_clusters.keys()
+        truth_topic_dictionary = {k: v for k, v in enumerate(truth_topic_names)}    # id-> name
+        inv_truth_topic_dictionary = {truth_topic_dictionary[k]:k for k in truth_topic_dictionary}
 
-        # Compute the
+        # Compute the overlap matrix. Its columns are the ground truth topics, the rows is the generated topics, cell
+        # contain the overlap statistic between the two cluster, depend on the parameter cluster_overlap
+        overlap_matrix = np.zeros([len(predicted_clusters),len(truth_clusters)],dtype=np.float)
+        for i in xrange(0,len(predicted_topic_names)):
+            gen_topic = predicted_topic_names[i]
+            for j in xrange(0,len(truth_topic_names)):
+                truth_topic = truth_topic_names[j]
+                if cluster_overlap == 'count':
+                    print '\n',predicted_clusters
+                    overlap_matrix[i][j] = len(set(predicted_clusters[gen_topic])
+                                               .intersection(set(truth_clusters[truth_topic])))
+                elif cluster_overlap == 'percentage':
+                    overlap_matrix[i][j] = len(set(predicted_clusters[gen_topic])
+                                               .intersection(set(truth_clusters[truth_topic])))\
+                                           / (len(set(predicted_clusters[gen_topic]))
+                                              + len(set(truth_clusters[truth_topic]))
+                                              )
+        # Greedy approach find the best match from the generated to ground truth topic
+        best_permutation = None
+        best_sum_score=0.0
+        # find all posible permutation of generated label
+        for permu in permutations(predicted_topic_names):
+            sum_score = 0.0
+            for i in xrange(0,len(truth_topic_names)):
+                sum_score += overlap_matrix[inv_predicted_topic_dictionary[permu[i]]][i]
+            if sum_score > best_sum_score:
+                best_sum_score = sum_score
+                best_permutation = permu
+        # Now we had the best permutation, from the first to the last of the list, it map to the first to the last of
+        #   ground-truth values
+        # Now we update the predicted topic dictionary such that its id metion the same cluster
+        #   as in truth topic ditionary
+        predicted_topic_dictionary = {k: best_permutation[truth_topic_names.index(truth_topic_dictionary[k])]
+                                      for k in truth_topic_dictionary}
+        # print 'CCC', predicted_topic_dictionary
+        inv_predicted_topic_dictionary = {predicted_topic_dictionary[k]: k for k in predicted_topic_dictionary}
+        # OK, we got it. Now make material for measurement:
+        y_predicted = [inv_predicted_topic_dictionary[predicted_result[doc_id][0][0]] for doc_id in doc_ids]
+        # print 'Predicted', y_predicted
+        y_truth = [inv_truth_topic_dictionary[label] for label in ground_truth]
+        # print 'Truth', y_truth
+        # return
+        rs = {
+            'accuracy': metrics.accuracy_score(y_truth,y_predicted),
+            'precision_macro': metrics.precision_score(y_truth,y_predicted, average='macro'),
+            'precision_micro': metrics.precision_score(y_truth, y_predicted, average='micro'),
+            'precision_weighted': metrics.precision_score(y_truth, y_predicted, average='weighted'),
+            'average_precision': metrics.average_precision_score(y_truth, y_predicted),
+            'recall_macro': metrics.recall_score(y_truth,y_predicted, average='macro'),
+            'recall_micro': metrics.recall_score(y_truth, y_predicted, average='micro'),
+            'recall_weighted': metrics.recall_score(y_truth, y_predicted, average='weighted'),
+            'f1_macro': metrics.f1_score(y_truth, y_predicted, average='macro'),
+            'f1_micro': metrics.f1_score(y_truth, y_predicted, average='micro'),
+            'f1_weighted': metrics.f1_score(y_truth, y_predicted, average='weighted'),
+        }
+        maybe_print("Model evaluation result: {0}".format(rs))
+        return rs
