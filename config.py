@@ -70,7 +70,7 @@ community_detect_options = {
     'method': {
                     'algorithm': 'fluid_communities',     # other options 'bipartitions', Label propagation
                     'params':{
-                        'n_communities': 6,
+                        'n_communities': 10,
                         'enable_pagerank_initialization': True
                     }
 

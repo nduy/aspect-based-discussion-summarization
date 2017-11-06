@@ -152,22 +152,23 @@ def build_mode_1(title, article, comments):
                                                               cluster_id = u"central"
                                                             )
 
-    # Second work on the article
-    maybe_print("Start building aspect graph for the ARTICLE.", 2,'i')
-    article_graph = nx.DiGraph()
-    article_group_count = 0
-    # print(texttiling_tokenize(article))
-    # exit(0)
-    for segment in texttiling_tokenize(article):  # Run texttiling, then go to each segment
-        maybe_print(" - Building graph for segment {0}".format(article_group_count), 2)
-        segment_graph = build_directed_graph_from_text(txt=segment,
-                                                       group_id="art."+str(article_group_count))
-        article_graph = nx.compose(article_graph, segment_graph)
-        article_group_count += 1
+    if article:  # check if the article exist
+        # Second work on the article
+        maybe_print("Start building aspect graph for the ARTICLE.", 2,'i')
+        article_graph = nx.DiGraph()
+        article_group_count = 0
+        # print(texttiling_tokenize(article))
+        # exit(0)
+        for segment in texttiling_tokenize(article):  # Run texttiling, then go to each segment
+            maybe_print(" - Building graph for segment {0}".format(article_group_count), 2)
+            segment_graph = build_directed_graph_from_text(txt=segment,
+                                                           group_id="art."+str(article_group_count))
+            article_graph = nx.compose(article_graph, segment_graph)
+            article_group_count += 1
 
-    # Unify the article
-    rs = nx.compose(rs, article_graph)
-    # rs = graph_unify(rs, uni_options)
+        # Unify the article
+        rs = nx.compose(rs, article_graph)
+        # rs = graph_unify(rs, uni_options)
 
     # threadLock.release()  # Release the lock that may be used while extracting graph for article
     # global server
