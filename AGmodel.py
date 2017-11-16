@@ -11,6 +11,7 @@ from nltk.tokenize import word_tokenize
 import warnings
 from itertools import permutations
 from sklearn import metrics
+from config import model_build_options as options
 
 
 class AGmodel:
@@ -99,7 +100,8 @@ class AGmodel:
             maybe_print(u' -> Topic: {0}, Nodes: {1}'.format(key,list(self.topic_graphs[key].nodes())), 3, 'i')
 
         # Compute matrix
-        self.matrix = self.compute_probability_matrix(method='eigenvector_centrality', enable_softmax=True)
+        self.matrix = self.compute_probability_matrix(method=options.get('centrality_method'),
+                                                      normalize=options.get('normalization_method'))
         # print(self.matrix)
 
     @classmethod
@@ -134,7 +136,7 @@ class AGmodel:
         """
         return np.exp(x) / np.sum(np.exp(x), axis=0)
 
-    def compute_probability_matrix(self, method='eigenvector_centrality', enable_softmax=False):
+    def compute_probability_matrix(self, method='eigenvector_centrality', normalize='sum'):
         """
         Compute the probability matrix
         :param method: threee methods:
@@ -143,38 +145,52 @@ class AGmodel:
             - 'pagerank': bases on result of page rank algorithm
             - 'eigenvector_centrality': Eigenvector centrality computes the centrality for a node based on
             the centrality of its neighbors.
-        :param enable_softmax: apply softmax function on computing probability from node characterize statistic
-            - True: apply softmax
-            - False: apply simple scale by sum
+        :param normalize: apply normaliztion on centrality score, so that they sum to 1
+            - 'softmax': apply softmax function on computing probability from node characterize statistic
+            - 'sum': apply simple scale by sum of all centrality scores
         :return:
         """
         result_matrix = None
-        if method == 'eigenvector_centrality':
-            # for each topic, we compute a vector size len(dictionary)
-            # print '----->',self.topic_ids
-            for key in self.topic_ids:
-                # print len(self.topic_graphs[key].edges())
+
+        # for each topic, we compute a vector size len(dictionary)
+        # print '----->',self.topic_ids
+        for key in self.topic_ids:
+            # print len(self.topic_graphs[key].edges())
+            if method == 'eigenvector':
                 centrality = nx.eigenvector_centrality(G=self.topic_graphs[key], max_iter=10000)
-                # print centrality
-                row = np.zeros(self.dict_size)
-                for node_id in centrality:
-                    # row[self.inverted_node_id_dictionary[node_id]] = centrality[node_id]
-                    for i in self.inverted_node_id_dictionary[node_id]:
-                        row[i] = centrality[node_id]
-                if result_matrix is None:
-                    result_matrix = row
-                else:
-                    result_matrix = np.vstack((result_matrix, row))
+            elif method == 'degree':
+                centrality = nx.degree_centrality(G=self.topic_graphs[key])
+            elif method == 'closeness':
+                centrality = nx.closeness_centrality(G=self.topic_graphs[key])
+            elif method == 'betweenness':
+                centrality = nx.betweenness_centrality(G=self.topic_graphs[key])
+            elif method == 'pagerank':
+                centrality = nx.pagerank(G=self.topic_graphs[key])
+            else:
+                raise ValueError('Invalid centrality method: {0}'.format(method))
+            # print centrality
+            row = np.zeros(self.dict_size)
+            for node_id in centrality:
+                # row[self.inverted_node_id_dictionary[node_id]] = centrality[node_id]
+                for i in self.inverted_node_id_dictionary[node_id]:
+                    row[i] = centrality[node_id]
+            if result_matrix is None:
+                result_matrix = row
+            else:
+                result_matrix = np.vstack((result_matrix, row))
+
         # Convert characterize statistic to probability
         # print result_matrix
-        if not enable_softmax: # divide each element in a row a sum of that row
+        if normalize == "softmax": # divide each element in a row a sum of that row
             # now result_matrix is just a sum matrix. We need to turn it to a normaized matrix
             row_sum = np.sum(result_matrix,axis=1)[np.newaxis] # Sum by row. Result an array size is number of topics
             row_sum = row_sum.T     # convert to matrix for division
             result_matrix = result_matrix/np.repeat(row_sum, self.dict_size,axis=1)
-        else:  # apply softmax to each row of the matrix
+        elif normalize == "sum":  # apply softmax to each row of the matrix
             for i in xrange(0,self.n_topics):
                 result_matrix[i] = self.softmax(result_matrix[i])
+        else:
+            raise ValueError('Invalid normalization method: {0}'.format(normalize))
         return result_matrix
 
     def predict_doc(self, doc_id=None, text='', vectorize_method='bow', top=3):

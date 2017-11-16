@@ -93,6 +93,7 @@ def build_sum_graph(dataset):
         #  print "---", g.nodes()
         return g
     if MERGE_MODE == 1:
+        # print dataset['article']
         g = build_mode_1(dataset['title'], dataset['article'], dataset['comments'])
         print "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
         # maybe_print("--> Graph BUILD in mode 1 completed.\n    Number of nodes: {0}\n    Number of edges: {1}"
@@ -141,16 +142,17 @@ def build_mode_0(threads):
 def build_mode_1(title, article, comments):
     rs = nx.DiGraph()
     # First add the title as central node
-    rs.add_node('Central~title~_~{0}'.format(gen_mcs_only()), label = title[:9] + "...",
-                                                              pos = u"TOPIC",
-                                                              weight = 1,
-                                                              group_id = ['central.group'],
-                                                              sentiment= {'pos_count': 0,
-                                                                           'neu_count': 1,
-                                                                           'neg_count': 0},
-                                                              history = u"",
-                                                              cluster_id = u"central"
-                                                            )
+    if title:
+        rs.add_node('Central~title~_~{0}'.format(gen_mcs_only()), label = title[:9] + "...",
+                                                                  pos = u"TOPIC",
+                                                                  weight = 1,
+                                                                  group_id = ['central.group'],
+                                                                  sentiment= {'pos_count': 0,
+                                                                              'neu_count': 1,
+                                                                              'neg_count': 0},
+                                                                  history = u"",
+                                                                  cluster_id = u"central"
+                                                                )
 
     if article:  # check if the article exist
         # Second work on the article
@@ -161,11 +163,13 @@ def build_mode_1(title, article, comments):
         # exit(0)
         for segment in texttiling_tokenize(article):  # Run texttiling, then go to each segment
             maybe_print(" - Building graph for segment {0}".format(article_group_count), 2)
+            print segment
             segment_graph = build_directed_graph_from_text(txt=segment,
                                                            group_id="art."+str(article_group_count))
             article_graph = nx.compose(article_graph, segment_graph)
             article_group_count += 1
-
+            #print segment
+        # exit(0)
         # Unify the article
         rs = nx.compose(rs, article_graph)
         # rs = graph_unify(rs, uni_options)
@@ -185,6 +189,7 @@ def build_mode_1(title, article, comments):
         while count < len(comments):
             data_chunks[count % N_THREADS].append(comments[count])
             count += 1
+        del comments  # free memory
         # initialize th threads
         threads = []
         results = [[] for _ in xrange(0,N_THREADS)]
@@ -288,7 +293,11 @@ def build_graph_from_text(txt, group_id='_', member_id='_'):
 
         raw_text = sen
         for item in (named_entities+noun_phrases):  # group the words in noun phrase / NE into one big word
-            raw_text = raw_text.replace(item, item.replace(' ', '_'))
+            if raw_text.count(' ') < 5:
+                raw_text = raw_text.replace(item, item.replace(' ', '_'))
+            else:
+                # print '[WWWW]',sen
+                print item
         # Convert to polygot format
         text = Text(raw_text, hint_language_code='en')
         # Filter tokens by POS tag
@@ -326,7 +335,7 @@ def build_graph_from_text(txt, group_id='_', member_id='_'):
                                                 'neg_count': 1 if sen_score < 0 else 0,
                                                 'neu_count': 1 if sen_score == 0 else 0}
 
-        maybe_print('Sentence no ' + str(sen_count) + '\nNodes ' + str(g.nodes()), 3)
+        maybe_print(u'Sentence no ' + str(sen_count) + '\nNodes ' + str(g.nodes()), 3)
         sen_count += 1
         edges = combinations([i[0] for i in assigned_nodes], 2)
         filtered_edges = [(n, m) for n, m in edges if n.split('~')[0] != m.split('~')[0]]
@@ -340,13 +349,13 @@ def build_graph_from_text(txt, group_id='_', member_id='_'):
                     g[u][v]['weight'] += 1
                 except KeyError:
                     g[u][v]['weight'] = 1
-            maybe_print('Edges ' + str(g.edges()) + '\n', 3)
+            maybe_print(u'Edges ' + str(g.edges()) + '\n', 3)
         sen_count += 1  # Increase the sentence count index
     if len(g.nodes()) == 0:
         return None
 
-    maybe_print('Nodes ' + str(g.nodes()), 3)
-    maybe_print('Edges ' + str(g.edges()) + '\n', 3)
+    maybe_print(u'Nodes ' + str(g.nodes()), 3)
+    maybe_print(u'Edges ' + str(g.edges()) + '\n', 3)
     return g
 
 
@@ -356,7 +365,9 @@ def build_graph_from_text(txt, group_id='_', member_id='_'):
 def build_directed_graph_from_text(txt, group_id='', member_id=''):
     maybe_print(u"Generating directed graph for text: {0}".format(txt), 3)
     # First do the co-reference refine
+    # print txt
     corefered_txt = coreference_refine(txt)
+    # print corefered_txt
     sentences = sent_tokenize(corefered_txt.strip())  # sentence segmentation
     g = nx.DiGraph()
     # Get nodes and edges from sentence
@@ -400,7 +411,7 @@ def build_directed_graph_from_text(txt, group_id='', member_id=''):
                                                 'neu_count': 1 if sen_score == 0 else 0}
             g.node[node[0]]['history'] = u'<br> - Initialize {0} ({1})'.format(g.node[node[0]]['label'] + '^' + str(g.node[node[0]]['weight']),
                                                                                node[0])
-        maybe_print('Sentence no ' + str(sen_count) + '\nNodes ' + str(g.nodes()), 3)
+        maybe_print(u'Sentence no ' + str(sen_count) + '\nNodes ' + str(g.nodes()), 3)
         sen_count += 1
         word2id = dict(zip([k for k,_ in keys], assigned_nodes))
         filtered_edges = [(word2id[s][0], word2id[t][0], {'label': r,
@@ -417,16 +428,16 @@ def build_directed_graph_from_text(txt, group_id='', member_id=''):
                 except KeyError:
                     g[u][v]['weight'] = 1
                     g[u][v]['label'] = r['label']
-            maybe_print('Edges ' + str(g.edges()) + '\n', 3)
+            maybe_print(u'Edges ' + str(g.edges()) + '\n', 3)
         sen_count += 1  # Increase the sentence count index
     if len(g.nodes()) == 0:
         # raise ValueError("Generated graph is empty")
         return None
 
-    maybe_print('   + Graph for group: {0:5s} \t member: {1:15s} \t has {2:3d} nodes and {3:3d} edges '
+    maybe_print(u'   + Graph for group: {0:5s} \t member: {1:15s} \t has {2:3d} nodes and {3:3d} edges '
                 .format(group_id,member_id,len(g.nodes()),len(g.edges())), 2)
-    maybe_print('Nodes ' + str(g.nodes()), 3)
-    maybe_print('Edges ' + str(g.edges()) + '\n', 3)
+    maybe_print(u'Nodes ' + str(g.nodes()), 3)
+    maybe_print(u'Edges ' + str(g.edges()) + '\n', 3)
     return g
 
 
@@ -660,17 +671,25 @@ def compute_sentiment_score(g):
 # @output: 1. a list of dependencies 2. a list of keys, 3. the sentence after grouped compounds/entities
 def dep_extract_from_sent(sent, filter_opt):
     sentence = sent
+    # print sent
     blob = TextBlob(sentence)
     # print blob.noun_phrases
     for phrase in blob.noun_phrases:
         pos = phrase.rfind(' ')
-        if pos==-1:
-            sentence = sentence.replace(phrase, lemmatizer.lemmatize(phrase))
-        else:
-            new_phrase = phrase[:pos+1]+ lemmatizer.lemmatize(phrase[pos+1:])
-            sentence = sentence.replace(phrase, new_phrase.replace(u' ', u'_'))
+        try:
+            if pos==-1:
+                sentence = sentence.replace(phrase, lemmatizer.lemmatize(phrase))
+            else:
+                if phrase.count(' ') < 5:
+                    new_phrase = phrase[:pos + 1] + lemmatizer.lemmatize(phrase[pos + 1:])
+                    sentence = sentence.replace(phrase, new_phrase.replace(u' ', u'_'))
+                else:
+                    # print '[WWWW]', sent
+                    print phrase
 
-
+        except:
+            # do nothing
+            maybe_print(u'Cannot replace noun phrase.',3,'i')
 
     # print sentence
     '''
@@ -687,8 +706,8 @@ def dep_extract_from_sent(sent, filter_opt):
         parse_result = loads(r)
     except Exception as detail:
         cut = min(30,len(sentence))
-        maybe_print(' Unable to parse sentence for dependencies: {0}.'.format(sentence[:cut]),2,'W')
-        maybe_print('    --> Error: {0}'.format(detail), 2)
+        maybe_print(u' Unable to parse sentence for dependencies: {0}.'.format(sentence[:cut]),2,'W')
+        maybe_print(u'    --> Error: {0}'.format(detail), 2)
         threadLock.release()
         return [],[],u""
     pos_dict = dict()
@@ -723,6 +742,8 @@ def dep_extract_from_sent(sent, filter_opt):
         # FIRST ROUND
         to_replace_keys = dict()
         for (s, s_tag), r, (t, t_tag) in filter_rel_result:
+            if s.count('_') >2 or t.count('_') >2:
+                continue
             for rule in dep_opt['custom_nodes_contract']['rule_set']:
                 if rule['from_pos'] == s_tag and rule['to_pos'] == t_tag and rule['rel_name'] == r:
                     keyword = s + u'_' + t if rule['rs_direction'] == u'1-2' else t + u'_' + s
@@ -750,6 +771,8 @@ def dep_extract_from_sent(sent, filter_opt):
         # SECOND ROUND
         to_replace_keys = dict()
         for (s, s_tag), r, (t, t_tag) in contracted_nodes_result:
+            if s.count('_') > 2 or t.count('_') > 2:
+                continue
             for rule in dep_opt['custom_nodes_contract']['rule_set']:
                 if rule['from_pos'] == s_tag and rule['to_pos'] == t_tag and rule['rel_name'] == r:
                     keyword = s + u'_' + t if rule['rs_direction'] == u'1-2' else t + u'_' + s
@@ -777,8 +800,6 @@ def dep_extract_from_sent(sent, filter_opt):
         contracted_nodes_result = contracted_nodes_result_2
     else:
         contracted_nodes_result = filter_rel_result
-
-
 
 
     # Custom edge contract
@@ -1284,6 +1305,7 @@ def graph_unify(g=None, uni_opt=None):
 #   [{'id':'cluster_id', 'central_comment': 'abc', 'supports':[support comments]},
 #                       {}]
 def read_comment_file(data_file, read_as_threads=False):
+    maybe_print("Loading comment!",2,'i')
     dataset = None
     if read_as_threads:
         try:
@@ -1314,6 +1336,9 @@ def read_comment_file(data_file, read_as_threads=False):
                 dataset_nodes_description = []
                 count = 0
                 for entry in reader:
+                    # print entry
+                    if count % 1000 == 0:
+                        maybe_print(" - Loaded {0} items.".format(count))
                     if count == 0:
                         count+=1
                         continue
@@ -1382,6 +1407,7 @@ def read_article_file(data_file):
 
     except IOError:
         print "Unable to open {0}".format(data_file)
+    # print article
     return title, article
 
 
@@ -1402,6 +1428,8 @@ def coreference_refine(text):
     if not text.strip():
         return text
     tokens = [[tok for tok in StanfordTokenizer().tokenize(sen)] for sen in sent_tokenize(text)]
+    #tokens = StanfordTokenizer().tokenize(text)
+
     rs_tks = tokens
     parse_rs = None
     try:
@@ -1412,7 +1440,7 @@ def coreference_refine(text):
         threadLock.release()
         # parse_rs = loads(parse)
     except Exception as detail:
-        maybe_print("Can't parse sentence this sentence for coreference \"{0}...\"\n --> Error: {1}"
+        maybe_print(u"Can't parse sentence this sentence for coreference \"{0}...\"\n --> Error: {1}"
                     .format(text[:min(130,len(text))],detail), 2,'E')
         threadLock.release()
     try:
@@ -1464,9 +1492,10 @@ def coreference_refine(text):
         if rs:
             return rs
         else:
+            #print text
             return text
     except Exception as detail:
-        maybe_print(" --> Unable to extract co-reference for sentence: \"{0}...\"\n     --> Error: {1}."
+        maybe_print(u" --> Unable to extract co-reference for sentence: \"{0}...\"\n     --> Error: {1}."
                     .format(text[:min(30,len(text))],detail), 2,'W')
         return text
 

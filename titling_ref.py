@@ -9,8 +9,8 @@ import time
 
 start_time = time.time()
 if __name__ == "__main__":
-    comments, comment_js, comment_des = read_comment_file("data/comments_article0.txt", read_as_threads=False)
-    title, article = read_article_file("data/article0.txt")
+    comments, comment_js, comment_des = read_comment_file("data/comments_article23.txt", read_as_threads=False)
+    title, article = read_article_file("data/article23.txt")
 
     dataset = {'title': title,
                'article': article,

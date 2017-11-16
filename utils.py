@@ -19,7 +19,14 @@ import jsonrpc
 import json
 from collections import Counter
 from scipy.spatial.distance import cosine
+import networkx as nx
 import en
+import sys
+from operator import itemgetter
+import csv
+
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 # Normalization and cleaning engine
 cucco = Cucco()
@@ -35,6 +42,29 @@ normalizations = [
     'remove_extra_whitespaces',
 ]
 
+rep = {u'\n':'' ,
+       '            ': '',
+       u"\n \n": "",
+       u" \t  \t ": "",
+       u"\u201c": "\"",
+       u"\u201d": "\"",
+       u"\u2019": "\'",
+       u"\u2018": "\'",
+       u"\u2013": "-",
+       u"\u2014": "-",
+       u"\u2011": "-",
+#       u"\u0027": "",
+#       u"\u0022": "",
+       u"\u201e": "",
+       u"\u201d": "",
+#       u"\u002c": "",
+       u"\u002b": "",
+       u"\u07f5": "",
+       u"\u07f4": "",
+       u"\u0092": ""}
+
+rep = dict((re.escape(k), v) for k, v in rep.iteritems())
+pattern = re.compile("|".join(rep.keys()))
 
 # Decide to print the print text or not according to the verbality
 # command_verbality:
@@ -44,7 +74,7 @@ normalizations = [
 def maybe_print(text, command_verbality=1, alias=" "):
     if script_verbality > 0:
         if script_verbality >= command_verbality:
-            print '[{0}] {1}'.format(alias,text)
+            print u'[{0}] {1}'.format(alias,text.encode('utf-8'))
 
 
 # flattening list of sublist into a single list
@@ -123,17 +153,7 @@ def gen_mcs_only():
 # @param: a string, should be in unicode
 # @return: the normalized string
 def simple_normalize(cnt):
-    reps = ('\n', ''), \
-           ('            ', ''), \
-           ("\n \n", ""), \
-           (u"\u201c", "\""), \
-           (u"\u201d", "\""), \
-           (u"\u2019", "\'"), \
-           (u"\u2018", "\'"), \
-           (u"\u2013", "-"), \
-           (u"\u2014", "-"), \
-           (u"\u2011", "-")
-    return reduce(lambda a, kv: a.replace(*kv), reps, cnt)
+    return pattern.sub(lambda m: rep[re.escape(m.group(0))], cnt)
 
 
 # Segmentize the sentences
@@ -152,6 +172,9 @@ def texttiling_tokenize(sentence_list):
     # print doc
     tt = texttiling.TextTilingTokenizer()
     segmented_text = tt.tokenize(doc)
+    #print segmented_text
+    # print [simple_normalize(para.strip()) for para in segmented_text if para.strip()]
+    # exit(0)
     return [simple_normalize(para.strip()) for para in segmented_text if para.strip()]
 
 
@@ -171,12 +194,14 @@ def replace_all(repls, str):
 #text =  "i like apples, but pears scare me"
 #print replace_all({"apple": "pear", "pear": "apple"}, text)
 
+
 # Clean up the text, and get rig of unnecessary characters
 def text_preprocessing(rawText):
     # print  replace_pattern
-    txt = cucco.normalize(rawText, normalizations)
+    txt = cucco.normalize(rawText.decode('utf8', 'ignore'), normalizations)
     txt = re.sub('<\D*>.*?<\D*>', '', txt)
-    m = re.search(r"[a-z]([.,;:<>()+])[A-Z]", txt) # Fix space missing typo
+    # m = re.search(r"[a-z]([.,;:<>()+])[A-Z]", txt) # Fix space missing typo
+    m = re.search(r"[a-z]([<>()+])[A-Z]", txt) # Fix space missing typo
     txt = txt[:m.start()+2] + u" " + txt[m.end()-1:] if m else txt
     txt = replace_all(replace_pattern,txt)
     return txt
@@ -306,4 +331,41 @@ def repetition_summary(inp_string):
             head_str = re.sub('(<br> - ' + key + '\^[\d]+.+)<br>',u'',head_str)
             rs = rs + u"<br> » " + key + u"^" + str(count_keys[key])
     return head_str + rs
+
+
+def print_top_keyphrases(g=None, ntop=20, out_path='./top20.csv'):
+    """
+    :param g: the aspect graph to compute
+    :param ntop: number of topwords to extract
+    :param out_path: path of output csv file
+    :return: None
+    """
+    assert g is not None, "Can't get keyphrase from a NoneType graph."
+    eigenvector_cen = nx.eigenvector_centrality(G=g, max_iter=10000)
+    eigenvector_top = sorted(eigenvector_cen.iteritems(), key=itemgetter(1), reverse=True)[:min([ntop,
+                                                                                                len(eigenvector_cen)])]
+
+    degree_cen = nx.degree_centrality(G=g)
+    degree_top = sorted(degree_cen.iteritems(), key=itemgetter(1), reverse=True)[:min(ntop, len(degree_cen))]
+
+    closeness_cen = nx.closeness_centrality(G=g)
+    closeness_top = sorted(closeness_cen.iteritems(), key=itemgetter(1), reverse=True)[:min([ntop, len(closeness_cen)])]
+
+    betweenness_cen = nx.betweenness_centrality(G=g)
+    betweenness_top = sorted(betweenness_cen.iteritems(), key=itemgetter(1), reverse=True)[:min([ntop,
+                                                                                                len(betweenness_cen)])]
+
+    pagerank_cen = nx.pagerank(G=g)
+    pagerank_top = sorted(pagerank_cen.iteritems(), key=itemgetter(1), reverse=True)[:min([ntop, len(pagerank_cen)])]
+
+    # Now write to filec
+    with open(out_path, 'wb+') as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerow(['Eigenvector_cen', 'Degree', 'Closeness', 'Betweenness', 'Pagerank'])
+        for i in xrange(0,ntop):
+            writer.writerow([g.node[eigenvector_top[i][0]]['label'] if i < len(eigenvector_top) else "",
+                             g.node[degree_top[i][0]]['label'] if i < len(degree_top) else "",
+                             g.node[closeness_top[i][0]]['label'] if i < len(closeness_top) else "",
+                             g.node[betweenness_top[i][0]]['label'] if i < len(betweenness_top) else "",
+                             g.node[pagerank_top[i][0]]['label']]) if i < len(pagerank_top) else ""
 

@@ -8,57 +8,187 @@
 
 from functions import *
 from decoration import *
-from datetime import datetime as dt
 from datetime import timedelta as td
+from datetime import datetime as dt
 from config import *
 from community_detect import *
+import AGmodel
+import argparse
+
 # ------ Time recording
 import time
 
+build_scenario = 'unknown'  # three scenario: "article only", "comment only" and "combine"
+
+def add_args(parser):
+    """Command-line arguments to extract a summarization dataset from the
+    NYT Annotated Corpus.
+    """
+    # Paths to training data
+    # for building AG
+    parser.add_argument('--art_path', action='store',
+                        help='path to the ARTICLE file',
+                        default=None)
+    parser.add_argument('--com_path', action='store',
+                        help='path to the COMMENT file',
+                        default=None)
+    # Path to JSON graph visualization file
+    parser.add_argument('--json_path', action='store',
+                        help='path to store JSON file',
+                        default='./art23.json')
+
+    # Filters for NYT corpus based on descriptors and summary type
+    '''
+    parser.add_argument('--summary_type', action='store',
+                        choices=('abstract', 'lead', 'online_lead'),
+                        help='type of NYT summary to consider',
+                        default='online_lead')
+    parser.add_argument('--descriptors', action='store', nargs='+',
+                        help='topics of docs to extract',
+                        default=None)
+    parser.add_argument('--descriptor_types', action='store', nargs='+',
+                        choices=('indexing', 'online', 'online_general',
+                                 'taxonomic', 'type'),
+                        help='topic categories considered for --descriptors',
+                        default=('online_general',))
+    parser.add_argument('--exclude', action='store_true',
+                        help='drop docs with --descriptors',
+                        default=False)
+
+    # Filters for extracted docs based on the summary size
+    parser.add_argument('--limit', action='store', type=int,
+                        help='number of docs to consider',
+                        default=None)
+    parser.add_argument('--cost_type', action='store',
+                        choices=('char', 'word', 'sent'),
+                        help='type of cost per unit', default='char')
+    parser.add_argument('--min_ref_cost', action='store', type=int,
+                        help='minimum cost of a reference summary',
+                        default=1)
+    parser.add_argument('--max_ref_cost', action='store', type=int,
+                        help='maximum cost of a reference summary',
+                        default=int(1e9))
+    parser.add_argument('--min_ref_sents', action='store', type=int,
+                        help='minimum number of reference summary sentences',
+                        default=1)
+    parser.add_argument('--max_ref_sents', action='store', type=int,
+                        help='maximum number of reference summary sentences',
+                        default=int(1e9))
+
+    # Mutually-exclusive filters for extractive and near-extractive summaries.
+    # Multiple filters are treated as disjunctive, i.e., combinations of
+    # the single-filter datasets
+    parser.add_argument('--extractive', action='store_true',
+                        help='every summary sentence comes from the doc')
+    parser.add_argument('--semi_extractive', action='store_true',
+                        help='one or more summary sentence is a contiguous '
+                             'substring in a doc sentence; rest extractive')
+    parser.add_argument('--sub_extractive', action='store_true',
+                        help='one or more summary sentence is a '
+                             'non-contiguous subsequence in a doc sentence; '
+                             'rest semi-extractive')
+
+    # Dataset partitioning by date
+    parser.add_argument('--partition', action='store',
+                        choices=('train', 'dev', 'test'),
+                        help='dataset partition to extract',
+                        default=None)
+    parser.add_argument('--id_split', action='store', nargs=2,
+                        help='any two prefixes of YYYY/MM/DD/DOCID to divide '
+                             'the train/dev/test partition',
+                        default=['2005/', '2006/'])
+    '''
+
+
 start_time = time.time()
 if __name__ == "__main__":
-    comments,comment_js,comment_des = read_comment_file("data/comments_article23_clipped.txt", read_as_threads=False)
-    title, article = read_article_file("data/article23_clipped.txt")
+    parser = argparse.ArgumentParser(description="Run Aspect graph construction and model building")
+    add_args(parser)
+    args = parser.parse_args()
+    # Load (or create) a cached corpus of NYT docs
+    print(args)
+
+    if args.art_path and args.com_path is None:  # Article only mode
+        build_scenario = "article_only"
+        title, article = read_article_file(args.art_path)
+        comments, comment_js, comment_des = None, None, None
+
+    elif args.art_path is None and args.com_path:  # Article only mode
+        build_scenario = "comment_only"
+        comments, comment_js, comment_des = read_comment_file(args.com_path,
+                                                              read_as_threads=False)
+        title = ""
+        article = ""
+    elif args.com_path and args.art_path:
+        build_scenario = "combine"
+        title, article = read_article_file(args.art_path)
+        comments, comment_js, comment_des = read_comment_file(args.com_path,
+                                                              read_as_threads=False)
+    else:
+        raise ValueError("Please specify article and/or comment path. The build mode will be decided automatically.")
 
     dataset = {'title': title,
                'article': article,
                'comments': comments}
 
-    maybe_print("Loaded data set! Number of conversation thread: {0}".format(len(dataset['title'])), 0)
+    maybe_print("Loaded data set! Data mode: {0}".format(build_scenario), 0)
+    if build_scenario == 'comment_only' or build_scenario == 'combine':
+        maybe_print("Loaded data set! Number of comments: {0}".format(len(dataset['comments'])), 0)
 
     # Build aspect graph, then serialize
     asp_graph = build_sum_graph(dataset)  # Build sum keygraph at mode 1
     nx.write_gpickle(asp_graph, "tmp/asp_graph.gpickle")
-    print("[i] Elapsed time:  {0} seconds".format(str(td(seconds=(time.time() - start_time)))))
+    print("[i] Raw graph build completed. Elapsed time:  {0} seconds"
+          .format(str(td(seconds=(time.time() - start_time)))))
+    del dataset
 
     # Compute sentiment scores, then serialize
     sen_graph = compute_sentiment_score(asp_graph)
     nx.write_gpickle(sen_graph, "tmp/sen_graph.gpickle")
     del asp_graph
-    print("[i] Elapsed time:  {0} seconds".format(str(td(seconds=(time.time() - start_time)))))
+    print("[i] Sentiment computation completed. Elapsed time:  {0} seconds"
+          .format(str(td(seconds=(time.time() - start_time)))))
 
     # Coloring the graph by sentiment, then serialize
     colored_graph = coloring_nodes(sen_graph)
     nx.write_gpickle(sen_graph, "tmp/colored_graph.gpickle")
     del sen_graph
-    print("[i] Elapsed time:  {0} seconds".format(str(td(seconds=(time.time() - start_time)))))
+    print("[i] Coloring graph completed. "
+          "Elapsed time:  {0} seconds".format(str(td(seconds=(time.time() - start_time)))))
 
     # Prune the graph, then serialize
     # colored_graph = nx.read_gpickle("tmp/colored_graph.gpickle")
     pruned_graph = prune_graph(colored_graph)
     nx.write_gpickle(pruned_graph, "tmp/pruned_graph.gpickle")
     del colored_graph
-    print("[i] Elapsed time:  {0} seconds".format(str(td(seconds=(time.time() - start_time)))))
+    print("[i] Graph prunning completed. Elapsed time:  {0} seconds"
+          .format(str(td(seconds=(time.time() - start_time)))))
     
-
     # pruned_graph = nx.read_gpickle("tmp/pruned_graph.gpickle")
+
+    # Print top 20 words by centrality
+    print_top_keyphrases(g=pruned_graph, ntop=100, out_path='./tmp/top20.csv')
 
     # Compute sentiment scores, then serialize
     com_graph = detect_communities(pruned_graph, community_detect_options)
     nx.write_gpickle(com_graph, "tmp/com_graph.gpickle")
     del pruned_graph
-    print("[i] Elapsed time:  {0} seconds".format(str(td(seconds=(time.time() - start_time)))))
+    print("Community detection completed. Elapsed time:  {0} seconds"
+          .format(str(td(seconds=(time.time() - start_time)))))
 
+    # Now evaluate the model
+    '''
+    model = AGmodel.AGmodel(asp_graph=com_graph)  # Build the model bases on the communities
+    del com_graph
+    # Load the test file:  doc_ids,  multi_docs, ground_truth
+    doc_ids = [line.rstrip('\n') for line in open('data/nyt.online_lead_top10.shelf_test_ids_lead_only.txt')]
+    multi_docs = [line.rstrip('\n') for line in open('data/nyt.online_lead_top10.shelf_test_lead_only.txt')]
+    ground_truth = [line.rstrip('\n') for line in open('data/nyt.online_lead_top10.shelf_test_truth_lead_only.txt')]
+    evaluation_result = model.evaluate_model(doc_ids=doc_ids,
+                                             multi_docs=multi_docs,
+                                             ground_truth=ground_truth)
+    maybe_print("Model evaluation result: {0}".format(evaluation_result),2,'i')
+    '''
     json_g = None
     if com_graph.nodes():
         json_g = generate_json_from_graph(com_graph)
@@ -94,7 +224,7 @@ if __name__ == "__main__":
         # add comment nodes to graph
         json_g['nodes'].extend(comment_des)
 
-    with open('result.json', 'w') as outfile:
+    with open(args.json_path, 'w') as outfile:
         json.dump(json_g, outfile, sort_keys=True, indent=4, separators=(',', ': '))
 
     print("Execution time:  {0} seconds".format(str(td(seconds=(time.time() - start_time)))))
