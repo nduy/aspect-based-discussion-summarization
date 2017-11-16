@@ -20,7 +20,7 @@ prune_options = {
     'enable_prunning': True,            # Enable/Disable prunning
     'min_word_length': 3,               # Minimum length of node label
     'remove_isolated_node': True,       # Remove not whose degree is 0
-    'node_freq_min': 3,                 # Minimum frequency of node
+    'node_freq_min': 2,                 # Minimum frequency of node
     'edge_freq_min': 2,                 # Minimum frequency of edge
     'node_degree_min': 2,               # Minimum degree of node, this override the remove_isolated_node
     'remove_rings': True,               # Remove edges that connect a node to itself

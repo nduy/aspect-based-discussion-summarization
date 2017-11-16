@@ -36,7 +36,15 @@ def add_args(parser):
     parser.add_argument('--json_path', action='store',
                         help='path to store JSON file',
                         default='./art23.json')
-
+    parser.add_argument('--evaluate_conversation', action='store_true',
+                        help='Enable evaluation for CONVERSATION. Test set will be picked up dirrectly from data. '
+                             'Split the dataset to training and testing dataset, You need to specify path to the gold '
+                             'standard as well',
+                        default=False)
+    parser.add_argument('--truth_conversation_path', action='store',
+                        help='path to the ground truth file for CONVERSATION. It comprise 2 columns: first is the id, s'
+                        'second is the truth label.',
+                        default=None)
     # Filters for NYT corpus based on descriptors and summary type
     '''
     parser.add_argument('--summary_type', action='store',
@@ -108,6 +116,7 @@ if __name__ == "__main__":
     # Load (or create) a cached corpus of NYT docs
     print(args)
 
+    #  ################# PRE-BUILD #####################
     if args.art_path and args.com_path is None:  # Article only mode
         build_scenario = "article_only"
         title, article = read_article_file(args.art_path)
@@ -127,14 +136,43 @@ if __name__ == "__main__":
     else:
         raise ValueError("Please specify article and/or comment path. The build mode will be decided automatically.")
 
-    dataset = {'title': title,
-               'article': article,
-               'comments': comments}
+    # evaluation for conversation -> spit the data, then write them to three separate files for further processing
+    if args.evaluate_conversation and args.truth_conversation_path:
+        if article:
+            raise UserWarning("You are running evaluation on conversation, but article was appointed. Thus, the "
+                              "program will run in combined mode. Perhaps you want to run it in comment only mode.")
+        # load truth file
+        all_ground_truth = [line.rstrip('\n').split('\t') for line in open(args.truth_conversation_path)]
+        # now do the splitting
+        assert len(comments) == len(all_ground_truth), "Number of comments {0} an {1} ground truth is mismatched!"\
+            .format(len(comments), len(all_ground_truth))
+        n_comment = int(len(comments)*3/10)
+        test_ids_f = open('./tmp/test_ids.txt', 'w+')
+        test_text_f = open('./tmp/test_text.txt', 'w+')
+        test_truth_f = open('./tmp/test_truth.txt', 'w+')
+        for i in xrange(int(len(all_ground_truth)*0.7),len(all_ground_truth)):
+            assert str(comments[i]['no']) == str(all_ground_truth[i][0]), 'Mismatch id between ground truth and comment, ' \
+                                                                'cmn num {0}'.format(i)
+            test_ids_f.write('{0}\n'.format(all_ground_truth[i][0]))
+            test_text_f.write('{0}\n'.format(comments[i]['content']))
+            test_truth_f.write('{0}\n'.format(all_ground_truth[i][1]))
+        test_ids_f.close()
+        test_text_f.close()
+        test_truth_f.close()
+        dataset = {'title': title,
+                   'article': article,
+                   'comments': comments[:int(len(all_ground_truth)*0.7)]} # get top 70% as training file
+
+    else:
+        dataset = {'title': title,
+                   'article': article,
+                   'comments': comments}
 
     maybe_print("Loaded data set! Data mode: {0}".format(build_scenario), 0)
     if build_scenario == 'comment_only' or build_scenario == 'combine':
         maybe_print("Loaded data set! Number of comments: {0}".format(len(dataset['comments'])), 0)
 
+    #  ################### BUILD #######################
     # Build aspect graph, then serialize
     asp_graph = build_sum_graph(dataset)  # Build sum keygraph at mode 1
     nx.write_gpickle(asp_graph, "tmp/asp_graph.gpickle")
@@ -176,19 +214,34 @@ if __name__ == "__main__":
     print("Community detection completed. Elapsed time:  {0} seconds"
           .format(str(td(seconds=(time.time() - start_time)))))
 
-    # Now evaluate the model
-    '''
-    model = AGmodel.AGmodel(asp_graph=com_graph)  # Build the model bases on the communities
-    del com_graph
-    # Load the test file:  doc_ids,  multi_docs, ground_truth
-    doc_ids = [line.rstrip('\n') for line in open('data/nyt.online_lead_top10.shelf_test_ids_lead_only.txt')]
-    multi_docs = [line.rstrip('\n') for line in open('data/nyt.online_lead_top10.shelf_test_lead_only.txt')]
-    ground_truth = [line.rstrip('\n') for line in open('data/nyt.online_lead_top10.shelf_test_truth_lead_only.txt')]
-    evaluation_result = model.evaluate_model(doc_ids=doc_ids,
-                                             multi_docs=multi_docs,
-                                             ground_truth=ground_truth)
-    maybe_print("Model evaluation result: {0}".format(evaluation_result),2,'i')
-    '''
+    #  ################### PREDICTIVE MODEL #######################
+    if args.evaluate_conversation:
+        # Now evaluate the model for CONVERSATION ----> Comment only!
+        model = AGmodel.AGmodel(asp_graph=com_graph)  # Build the model bases on the communities
+        del com_graph
+        # Load the test file:  doc_ids,  multi_docs, ground_truth
+        doc_ids = [line.rstrip('\n') for line in open('./tmp/test_ids.txt')]
+        multi_docs = [line.rstrip('\n') for line in open('./tmp/test_text.txt')]
+        ground_truth = [line.rstrip('\n') for line in open('./tmp/test_truth.txt')]
+        evaluation_result = model.evaluate_model(doc_ids=doc_ids,
+                                                 multi_docs=multi_docs,
+                                                 ground_truth=ground_truth)
+        maybe_print("Model evaluation result: {0}".format(evaluation_result),2,'i')
+
+        '''        
+        model = AGmodel.AGmodel(asp_graph=com_graph)  # Build the model bases on the communities
+        del com_graph
+        # Load the test file:  doc_ids,  multi_docs, ground_truth
+        doc_ids = [line.rstrip('\n') for line in open('data/nyt.online_lead_top10.shelf_test_ids_lead_only.txt')]
+        multi_docs = [line.rstrip('\n') for line in open('data/nyt.online_lead_top10.shelf_test_lead_only.txt')]
+        ground_truth = [line.rstrip('\n') for line in open('data/nyt.online_lead_top10.shelf_test_truth_lead_only.txt')]
+        evaluation_result = model.evaluate_model(doc_ids=doc_ids,
+                                                 multi_docs=multi_docs,
+                                                 ground_truth=ground_truth)
+        maybe_print("Model evaluation result: {0}".format(evaluation_result),2,'i')
+        '''
+
+    #################### DUMP JSON FILE #######################
     json_g = None
     if com_graph.nodes():
         json_g = generate_json_from_graph(com_graph)

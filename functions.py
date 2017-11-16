@@ -1348,6 +1348,7 @@ def read_comment_file(data_file, read_as_threads=False):
                     dataset.append({'member_id': sentence_id,
                                     'user_name': entry[3],
                                     'comment_id': entry[1],
+                                    'no': count,
                                     'date': entry[5],
                                     'group_id': 'com.',
                                     'content': text_preprocessing(entry[6])})
