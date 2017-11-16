@@ -163,7 +163,7 @@ def build_mode_1(title, article, comments):
         # exit(0)
         for segment in texttiling_tokenize(article):  # Run texttiling, then go to each segment
             maybe_print(" - Building graph for segment {0}".format(article_group_count), 2)
-            print segment
+            # print segment
             segment_graph = build_directed_graph_from_text(txt=segment,
                                                            group_id="art."+str(article_group_count))
             article_graph = nx.compose(article_graph, segment_graph)
@@ -183,7 +183,7 @@ def build_mode_1(title, article, comments):
     # Check if we use thread structure or not
     if build_options['use_thread_structure']:
         raise RuntimeError("Thread structure usage in build mode 1 is NOT supported!")
-    else:
+    elif comments:
         count = 0
         data_chunks = [[] for _ in xrange(0,N_THREADS)]
         while count < len(comments):
@@ -670,6 +670,7 @@ def compute_sentiment_score(g):
 # @param: a sentence, and filtering options
 # @output: 1. a list of dependencies 2. a list of keys, 3. the sentence after grouped compounds/entities
 def dep_extract_from_sent(sent, filter_opt):
+    lemmatizer_s = WordNetLemmatizer()
     sentence = sent
     # print sent
     blob = TextBlob(sentence)
@@ -677,11 +678,11 @@ def dep_extract_from_sent(sent, filter_opt):
     for phrase in blob.noun_phrases:
         pos = phrase.rfind(' ')
         try:
-            if pos==-1:
-                sentence = sentence.replace(phrase, lemmatizer.lemmatize(phrase))
+            if pos == -1:
+                sentence = sentence.replace(phrase, lemmatizer_s.lemmatize(phrase))
             else:
                 if phrase.count(' ') < 5:
-                    new_phrase = phrase[:pos + 1] + lemmatizer.lemmatize(phrase[pos + 1:])
+                    new_phrase = phrase[:pos + 1] + lemmatizer_s.lemmatize(phrase[pos + 1:])
                     sentence = sentence.replace(phrase, new_phrase.replace(u' ', u'_'))
                 else:
                     # print '[WWWW]', sent
@@ -695,7 +696,7 @@ def dep_extract_from_sent(sent, filter_opt):
     '''
     result = dep_parser.raw_parse(sentence)
     dependencies = result.next()
-    raw_results = [((lemmatizer.lemmatize(s.lower()), s_tag), r, (lemmatizer.lemmatize(t.lower()), t_tag))
+    raw_results = [((lemmatizer_s.lemmatize(s.lower()), s_tag), r, (lemmatizer_s.lemmatize(t.lower()), t_tag))
                    for (s, s_tag), r, (t, t_tag) in list(dependencies.triples())]
     '''
     parse_result = None
@@ -724,8 +725,8 @@ def dep_extract_from_sent(sent, filter_opt):
         s = e[1]
         t = e[2]
         if r not in [u'root',u'punct'] and s in pos_dict and t in pos_dict and len(s)>1 and len(t)>1:
-            source = lemmatizer.lemmatize(s.lower())
-            target = lemmatizer.lemmatize(t.lower())
+            source = lemmatizer_s.lemmatize(s.lower())
+            target = lemmatizer_s.lemmatize(t.lower())
             if source not in prune_options['black_node_labels'] and target not in prune_options['black_node_labels']:
                 raw_results.append(((source, pos_dict[s]), r, (target, pos_dict[t])))
 
@@ -886,7 +887,7 @@ def dep_extract_from_sent(sent, filter_opt):
     # Merge compounds
     compound_merge = filter_opt['compound_merge']
     if compound_merge:
-        tokens = [lemmatizer.lemmatize(w) for w in StanfordTokenizer().tokenize(sentence.lower())]
+        tokens = [lemmatizer_s.lemmatize(w) for w in StanfordTokenizer().tokenize(sentence.lower())]
         compounds = [(t, s) for (s, s_tag), r, (t, t_tag) in contracted_edges_result if r == u'compound']
         # print "!!!!!!!!!", compounds
         replacements = dict()
