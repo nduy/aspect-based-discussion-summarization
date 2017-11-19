@@ -20,9 +20,9 @@ prune_options = {
     'enable_prunning': True,            # Enable/Disable prunning
     'min_word_length': 3,               # Minimum length of node label
     'remove_isolated_node': True,       # Remove not whose degree is 0
-    'node_freq_min': 2,                 # Minimum frequency of node
-    'edge_freq_min': 2,                 # Minimum frequency of edge
-    'node_degree_min': 2,               # Minimum degree of node, this override the remove_isolated_node
+    'node_freq_min': 1,                 # Minimum frequency of node
+    'edge_freq_min': 1,                 # Minimum frequency of edge
+    'node_degree_min': 1,               # Minimum degree of node, this override the remove_isolated_node
     'remove_rings': True,               # Remove edges that connect a node to itself
     'regex_pattern': r'^[a-z]{2,}([-_\/]{1}[a-z]{2,})*$',   # Regular expression pattern to keep
     # A while list of words to keep no mater how bad it is
@@ -70,7 +70,7 @@ community_detect_options = {
     'method': {
                     'algorithm': 'fluid_communities',     # other options 'bipartitions', Label propagation
                     'params':{
-                        'n_communities': 10,
+                        'n_communities': 13,
                         'enable_pagerank_initialization': True
                     }
 
@@ -99,7 +99,7 @@ uni_options = {
     },
     'unify_semantic_similarity': {
         'enable': True,
-        'threshold': 0.85,   # Those nodes whose similarity greater than this threshold will be unified
+        'threshold': 0.8,   # Those nodes whose similarity greater than this threshold will be unified
         'glove_model_file': '../models/glove.6B.200d.txt'
     }
 }

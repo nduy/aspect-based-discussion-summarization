@@ -14,6 +14,7 @@ from config import *
 from community_detect import *
 import AGmodel
 import argparse
+from nltk.corpus import wordnet as wn
 
 # ------ Time recording
 import time
@@ -110,6 +111,10 @@ def add_args(parser):
 
 start_time = time.time()
 if __name__ == "__main__":
+    #  ################# Init #####################
+    # print wn.__class__            # <class 'nltk.corpus.util.LazyCorpusLoader'>
+    wn.ensure_loaded()            # first access to wn transforms it
+    # print wn.__class__
     parser = argparse.ArgumentParser(description="Run Aspect graph construction and model building")
     add_args(parser)
     args = parser.parse_args()
@@ -218,11 +223,11 @@ if __name__ == "__main__":
     if args.evaluate_conversation:
         # Now evaluate the model for CONVERSATION ----> Comment only!
         model = AGmodel.AGmodel(asp_graph=com_graph)  # Build the model bases on the communities
-        del com_graph
+        # del com_graph
         # Load the test file:  doc_ids,  multi_docs, ground_truth
-        doc_ids = [line.rstrip('\n') for line in open('./tmp/test_ids.txt')]
-        multi_docs = [line.rstrip('\n') for line in open('./tmp/test_text.txt')]
-        ground_truth = [line.rstrip('\n') for line in open('./tmp/test_truth.txt')]
+        doc_ids = [line.rstrip() for line in open('./tmp/test_ids.txt')]
+        multi_docs = [line.rstrip() for line in open('./tmp/test_text.txt')]
+        ground_truth = [line.rstrip() for line in open('./tmp/test_truth.txt')]
         evaluation_result = model.evaluate_model(doc_ids=doc_ids,
                                                  multi_docs=multi_docs,
                                                  ground_truth=ground_truth)

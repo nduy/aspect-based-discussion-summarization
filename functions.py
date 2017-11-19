@@ -584,15 +584,21 @@ def prune_graph(graph):
         to_remove_nodes = [n for n in g.nodes()
                            if g.node[n]['weight'] < NODE_FREQ_MIN and g.node[n]['label'] not in WHITE_NODES_LIST]
         g.remove_nodes_from(to_remove_nodes)
+    maybe_print("  --> up to NODE_FREQ_MIN, {0} nodes and {1} edges removed"
+                .format(ori_nnode - g.number_of_nodes(), ori_nedge - g.number_of_edges()), 2, 'i')
 
     if EDGE_FREQ_MIN > 1:
         to_remove_edges = [(s, t) for (s, t) in g.edges() if g[s][t]['weight'] < EDGE_FREQ_MIN]
         g.remove_edges_from(to_remove_edges)
+    maybe_print("  --> up to EDGE_FREQ_MIN, {0} nodes and {1} edges removed"
+                .format(ori_nnode - g.number_of_nodes(), ori_nedge - g.number_of_edges()), 2, 'i')
 
     # delete blacklisted edges
     if len(BLACK_DEPENDENCIES) > 0:
         to_remove_edges = [(s, t) for s, t, data in g.edges(data=True) if data['label'] in BLACK_DEPENDENCIES]
         g.remove_edges_from(to_remove_edges)
+    maybe_print("  --> up to BLACK_DEPENDENCIES, {0} nodes and {1} edges removed"
+                .format(ori_nnode - g.number_of_nodes(), ori_nedge - g.number_of_edges()), 2, 'i')
 
     # Remove edges whose cosine similarity between its edge is less than a threshold
     if MIN_EDGE_SIMILARITY != 0:
@@ -614,7 +620,7 @@ def prune_graph(graph):
         # print "-------------",to_remove_nodes
         n_edge = nx.number_of_edges(g)
         g.remove_edges_from(to_remove_edges)
-        maybe_print("  -> Found {0} edges whose similarity is less than threshold {1} to be removed. "
+        maybe_print("  --> Found {0} edges whose similarity is less than threshold {1} to be removed. "
                     "Number edges node changed {2}"
                     .format(len(to_remove_edges), MIN_EDGE_SIMILARITY,n_edge-nx.number_of_edges(g)))
 
@@ -622,6 +628,7 @@ def prune_graph(graph):
     if NODE_DEGREE_MIN > 1:
         to_remove_nodes = [n for n in g.nodes()
                            if g.degree(n) < NODE_DEGREE_MIN and g.node[n]['label'] not in WHITE_NODES_LIST]
+        print "-----+>",len(to_remove_nodes)
         g.remove_nodes_from(to_remove_nodes)
     maybe_print("  --> up to Frequency and degree filter, {0} nodes and {1} edges removed"
                 .format(ori_nnode-g.number_of_nodes(), ori_nedge-g.number_of_edges()),

@@ -28,7 +28,7 @@ sample_community_names = [u'α',u'β',u'γ',u'δ',u'ε',u'ζ',u'η',u'θ',u'ι',
                            u'ν',u'ξ',u'ο',u'π',u'ρ',u'σ',u'τ',u'υ',u'φ',u'χ',u'ψ',u'ω']
 
 # Outliner rate: how many nodes do you want to treat as outliner
-outliers_fraction = 0.15
+outliers_fraction = 0.05
 
 
 # Detect the communities in a graph
@@ -90,7 +90,7 @@ def detect_communities(g=None, comm_opt=None):
                 for com in communities:
                     com_index += 1
                     # SVM One class classifier for outlier detection.
-                    clf = OneClassSVM(nu=0.90 * outliers_fraction + 0.05, kernel="poly", gamma=0.03, degree=3)
+                    clf = OneClassSVM(nu=0.90 * outliers_fraction + 0.01, kernel="poly", gamma=0.03, degree=3)
                     #####################
                     # How this work? the program compute weight sum over the vector of all member of the communities who
                     # DO EXIST in the glove vector space. The scale factor is the ratio between the node's frequency
@@ -148,20 +148,25 @@ def detect_communities(g=None, comm_opt=None):
                         # Multiple matrices and the sum te vector to be the representative vector for the community
                         # composition_matrix = np.multiply(words_matrix,vector_weight)
                         # Remove outliers
-                        #clf.fit(X=composition_matrix)  # fit the model
+                        # clf.fit(X=composition_matrix)  # fit the model
+                        y_pred = None
                         print words_matrix.shape, vector_weight.flatten().shape
-                        clf.fit(X=words_matrix,sample_weight=vector_weight.flatten())  # fit the model
-                        # predict with the model. The outcome is an array, each element is the predicted value of
-                        # the word/row. It can be 1 (inlier) or -1 (outlier)
-                        # y_pred = clf.predict(composition_matrix)
-                        y_pred = clf.predict(words_matrix)
-                        print y_pred
+                        if len(comm_labels) < 15:
+                            maybe_print("Community {0} has less than 10 members, outliner removal skipped!".format(com))
+                            y_pred = np.ones(words_matrix.shape[0])
+                        else:
+                            clf.fit(X=words_matrix,sample_weight=vector_weight.flatten())  # fit the model
+                            # predict with the model. The outcome is an array, each element is the predicted value of
+                            # the word/row. It can be 1 (inlier) or -1 (outlier)
+                            # y_pred = clf.predict(composition_matrix)
+                            y_pred = clf.predict(words_matrix)
+                            print y_pred
 
                         # Weighted AVERAGE composition
                         composition_matrix = np.multiply(words_matrix, vector_weight)
                         # Now filter inliner only
                         filtered_composition_vector = composition_matrix[np.where(y_pred == 1)]
-                        #filtered_composition_vector = words_matrix[np.where(y_pred == 1)]
+                        # filtered_composition_vector = words_matrix[np.where(y_pred == 1)]
                         # Remove predicted outlier
                         comm_labels_array = np.delete(comm_labels_array, np.where(y_pred == -1))
                         maybe_print('  --> Outlier removal discarded {0} words. Remaining words: {1}'
@@ -188,9 +193,9 @@ def detect_communities(g=None, comm_opt=None):
                     freqs = [w for w,_ in sorted([(g.node[n]['label'],g.node[n]['weight']) for n in com],
                                                  key=lambda e: int(e[1]),reverse=True)]
                     # suggested_labels = glove_model.most_similar_paragraph(comm_labels)
-                    if len(suggested_labels) >5:
+                    if len(suggested_labels) > 5:
                         suggested_labels = suggested_labels[:5]
-
+                    '''
                     # Apply DBPedia Labeler
                     # top10 =[subword for word in freqs[:5] for subword in word.split('_') if en.is_noun(subword)] + freqs[:5]
                     top10 = freqs[:10]
@@ -208,7 +213,12 @@ def detect_communities(g=None, comm_opt=None):
                                                                         ', '.join(freqs[:5]),
                                                                         ' - '.join(suggested_labels).upper(),
                                                                         ' - '.join(DB_labels).upper())
-
+                     '''
+                    for node_id in com:  # sample_community_names[com_index]
+                        graph.node[node_id]['cluster_id'] = u'[{0}] Top: {1} \nV.Comp: {2}' \
+                            .format(sample_community_names[com_index],
+                                    ', '.join(freqs[:5]),
+                                    ' - '.join(suggested_labels).upper())
                 return graph
         except Exception as inst:
             maybe_print(" Error while running algorithm {0} to detect communities. Error name: {1}. \n"
@@ -225,7 +235,7 @@ def detect_communities(g=None, comm_opt=None):
 # What is vector weight? Each words in phrase has different importance. For example in "red car", car is more important
 # than red (which is a modifier). ATTENTION: the weight's indices are REVERED order of the window. That is, the fist
 # weight is for the last word of the inp_str and so on.
-def extract_vector_from_text(inp_str,model,window=3,vector_weights = [1.0,.5,.3]):
+def extract_vector_from_text(inp_str, model, window=3, vector_weights=[1.0, .5, .3]):
     PREFERED_POS = set([u'n'])          # Filtering: the word must be able to play this role
     BLACK_POS = set([u'a'])   # Filtering: the word with these tag will be excluded
     if not inp_str:
@@ -249,38 +259,38 @@ def extract_vector_from_text(inp_str,model,window=3,vector_weights = [1.0,.5,.3]
 
     if not ws:  # Non word is in semantic space
         maybe_print('None of the word in string "{0}" is in the dictionary or has invalid POS: {1}. Return zero vector.'
-                    .format(inp_str,', '.join(related_pos)), 2, 'W')
+                    .format(inp_str, ', '.join(related_pos)), 2, 'W')
         random_key = random.choice(model.dictionary.keys())
         random_vector = (model.word_vectors[model.dictionary[random_key]])
         # print random_vector.shape
         return np.zeros(random_vector.shape[0])
     vector = np.array(model.word_vectors[model.dictionary[ws[-1]]])
     if len(ws) > window:
-        for i in xrange(1,window):
+        for i in xrange(1, window):
             vector = vector + np.array(model.word_vectors[model.dictionary[ws[-1*i]]]) * vector_weights[i-1]
         return vector
     else:
-        for i in xrange(1,len(ws)):
+        for i in xrange(1, len(ws)):
             vector = vector + np.array(model.word_vectors[model.dictionary[ws[-1*i]]]) * vector_weights[i-1]
         return vector
 
 
 # Apply sentence extract for each element in a list inp_str_list, then stack them to form a matrix. For parameter detail
 # see the above function
-def extract_vector_from_text_list(inp_ls,model,window=3,vector_weights= [1.0,.5,.3]):
+def extract_vector_from_text_list(inp_ls, model, window=3, vector_weights=[1.0, .5, .3]):
     rs = None
     if not inp_ls:
         raise ValueError("Nothing to extract vector.")
     if len(vector_weights) != window:
         raise ValueError('While extracting vector from text, size of the weight list {0} '
-                         'must be the same as the window {1}.'.format(len(window),window))
+                         'must be the same as the window {1}.'.format(len(window), window))
     count = 0
     for inp_srt in inp_ls:
         count += 1
         if count == 1:
-            rs = np.array(extract_vector_from_text(inp_srt,model,window,vector_weights))
+            rs = np.array(extract_vector_from_text(inp_srt, model, window, vector_weights))
         else:
-            rs = np.vstack((rs,np.array(extract_vector_from_text(inp_srt,model,window,vector_weights))))
+            rs = np.vstack((rs, np.array(extract_vector_from_text(inp_srt, model, window, vector_weights))))
     return rs
 '''
 import argparse
