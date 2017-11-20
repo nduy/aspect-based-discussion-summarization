@@ -46,6 +46,14 @@ def add_args(parser):
                         help='path to the ground truth file for CONVERSATION. It comprise 2 columns: first is the id, s'
                         'second is the truth label.',
                         default=None)
+    parser.add_argument('--centrality', action='store',
+                        choices=('eigenvector', 'pagerank', 'degree', 'closeness'),
+                        help='Centrality measure method for building probabilistic model',
+                        default='eigenvector')
+    parser.add_argument('--normalization', action='store',
+                        choices=('sum', 'softmax'),
+                        help='Normaization method apply to centrality score, in order to sum to 1 (probability)',
+                        default='sum')
     # Filters for NYT corpus based on descriptors and summary type
     '''
     parser.add_argument('--summary_type', action='store',
@@ -140,7 +148,6 @@ if __name__ == "__main__":
                                                               read_as_threads=False)
     else:
         raise ValueError("Please specify article and/or comment path. The build mode will be decided automatically.")
-
     # evaluation for conversation -> spit the data, then write them to three separate files for further processing
     if args.evaluate_conversation and args.truth_conversation_path:
         if article:
@@ -167,11 +174,12 @@ if __name__ == "__main__":
         dataset = {'title': title,
                    'article': article,
                    'comments': comments[:int(len(all_ground_truth)*0.7)]} # get top 70% as training file
-
     else:
         dataset = {'title': title,
                    'article': article,
                    'comments': comments}
+    config.model_build_options['centrality_method'] = args.centrality
+    config.model_build_options['normalization_method'] = args.normalization
 
     maybe_print("Loaded data set! Data mode: {0}".format(build_scenario), 0)
     if build_scenario == 'comment_only' or build_scenario == 'combine':

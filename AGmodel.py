@@ -279,7 +279,7 @@ class AGmodel:
         :param doc_ids: list of the id of all docs.
         :param multi_docs: List, each element is a text document to be processed
         :param vectorize_method: document vectorizing method, see predict_doc method for more details
-        :return: a list, whose size is equal to the size of multi_docs, each is a label for the corresponsing doc
+        :return: a dictionary, whose key is docid, value is the cluster id
         """
         assert multi_docs, "Can not predict a NoneType list of document."
         if doc_ids:
@@ -366,138 +366,21 @@ class AGmodel:
         inv_predicted_topic_dictionary = {predicted_topic_dictionary[k]:k for k in predicted_topic_dictionary}
         print 'Done making dictionaries'
 
-        # Compute the overlap matrix. Its columns are the ground truth topics, the rows is the generated topics, cell
-        # contain the overlap statistic between the two cluster, depend on the parameter cluster_overlap
-        overlap_matrix = np.zeros([len(predicted_clusters),len(truth_clusters)],dtype=np.float)
-        for i in xrange(0,len(predicted_topic_names)):
-            gen_topic = predicted_topic_names[i]
-            for j in xrange(0,len(truth_topic_names)):
-                truth_topic = truth_topic_names[j]
-                if cluster_overlap == 'count':
-                    # print '\n',predicted_clusters
-                    overlap_matrix[i][j] = len(set(predicted_clusters[gen_topic])
-                                               .intersection(set(truth_clusters[truth_topic])))
-                elif cluster_overlap == 'percentage':
-                    overlap_matrix[i][j] = len(set(predicted_clusters[gen_topic])
-                                               .intersection(set(truth_clusters[truth_topic])))\
-                                           / (len(set(predicted_clusters[gen_topic]))
-                                              + len(set(truth_clusters[truth_topic]))
-                                              )
-        print 'Done making overlap matrix'
-        # Greedy approach find the best match from the generated to ground truth topic
-        # print overlap_matrix
-        best_permutation = []
-        best_sum_score = 0.0
-        '''
-        # find all posible permutation of generated label
-        # print 'predicted_topic_names: ', predicted_topic_names
-        #  for permu in permutations(predicted_topic_names):
-        permu_count = 0
-        for permu in permutations(predicted_topic_names):
-            permu_count +=1
-            print '[{0}]---> permu: {1}'.format(permu_count,permu)
-            sum_score = 0.0
-            for i in xrange(0, len(predicted_topic_names)):
-                # print '---> permu[i]: ', permu[i]
-                # print '---> inv_predicted_topic_dictionary[permu[i]]: ', inv_predicted_topic_dictionary[permu[i]]
-                # print '---> overlap_matrix[inv_predicted_topic_dictionary[permu[i]]][i]: ',
-                # overlap_matrix[inv_predicted_topic_dictionary[permu[i]]][i]
-
-                sum_score += overlap_matrix[inv_predicted_topic_dictionary[permu[i]]][i]
-            if sum_score > best_sum_score:
-                best_sum_score = sum_score
-                best_permutation = permu
-        
-        # First make a matrix of factorial(len(predicted_topic_names)) x len(truth_topic_names). Each row corresponding
-        # to one possible order of the predict_label, values are overlap picked from overlap_matrix (given this order)
-        # then we sum row and get the best permutation as the one that give highest overlap
-        # all possible combination of predicted label indices
-        n_pre_topics = len(predicted_topic_names)
-        possible_order = np.array(list(permutations(list(xrange(0,n_pre_topics))))) # convert to array, each row is posible indecess
-        rows = np.reshape(possible_order,(1,possible_order.shape[0]*n_pre_topics))[0]  # convert to 1-D array
-        cols = np.matlib.repmat(np.array(list(xrange(0,n_pre_topics))), 1, possible_order.shape[0])[0]  # 1-D array too
-        score_matrix = overlap_matrix[rows,cols].reshape(possible_order.shape[0],n_pre_topics)
-        max_permutation_index = np.argmax(np.sum(a=score_matrix, axis=1))
-        for index in possible_order[max_permutation_index]:
-            best_permutation.append(predicted_topic_names[index])
-        '''
-        # find all posible permutation of generated label
-        # print 'predicted_topic_names: ', predicted_topic_names
-        #  for permu in permutations(predicted_topic_names):
-        n_pre_topics = len(predicted_topic_names)
-        #print '-------> n_pre_topics', n_pre_topics
-        # exit(0)
-        cols = np.array(xrange(0,n_pre_topics))
-        # convert to array, each row is possibleindicess
-        permu_count = 0
-        # possible_order = np.array(list(permutations(list(xrange(0, n_pre_topics)))))
-        # print possible_order
-        # for i in xrange(0, possible_order.shape[0]): # go through every possible permutation
-        MAX_ITERATION = 5000000000
-        # all_permutations = list(permutations(xrange(0, n_pre_topics)))
-        #shuffle(all_permutations)
-        # what it does? It seek for permutation that has the higest score in MAX_ITERATION consecutive random loop
-        dominant_count = 0
-        max_dominant = 200000000
-        #for per in all_permutations: # go through every possible permutation
-        for per in permutations(xrange(0, n_pre_topics)): # go through every possible permutation
-            permu_count += 1
-            if permu_count > MAX_ITERATION: # break the loop if max iteration reached
-                break
-            if np.random.rand() < 0.6:  # random choose to keep or disregard the combination
-                continue
-            if permu_count % 100000 == 0:
-                print "+++++++ ", permu_count
-            if dominant_count == max_dominant and best_sum_score!=0:
-                break
-            # Compute sum overlap for this permutation
-            rows = np.array(per)
-            sum_score = np.sum(overlap_matrix[rows,cols])
-            # print best_sum_score
-            if sum_score > best_sum_score:
-                dominant_count = 0
-                best_sum_score = sum_score
-                print best_sum_score
-                best_permutation = [predicted_topic_names[i] for i in rows]
-            else:
-                dominant_count += 1
-
-        print 'Done search for best permutation'
-        assert best_permutation, "best permutation is still None!"
-        assert best_sum_score > 0, "best sum score 0.0 means no overlap was found!"
-        # Now we had the best permutation, from the first to the last of the list, it map to the first to the last of
-        #   ground-truth values
-        # Now we update the predicted topic dictionary such that its id mention the same cluster
-        #   as in truth topic dictionary
-        # print 'truth_topic_dictionary:', truth_topic_dictionary
-        # print 'best_permutation', best_permutation
-        predicted_topic_dictionary = dict()
-        for key in truth_topic_dictionary:
-            # print "key: ",key
-            # print "truth_topic_dictionary[key]", truth_topic_dictionary[key]
-            predicted_topic_dictionary[key] = best_permutation[truth_topic_names.index(truth_topic_dictionary[key])]
-        # {k: best_permutation[truth_topic_names.index(truth_topic_dictionary[k])]
-        #                              for k in truth_topic_dictionary}
-        # print 'CCC', predicted_topic_dictionary
-        inv_predicted_topic_dictionary = {predicted_topic_dictionary[k]: k for k in predicted_topic_dictionary}
-        # OK, we got it. Now make material for measurement:
-        y_predicted = [inv_predicted_topic_dictionary[predicted_result[doc_id][0][0]] for doc_id in doc_ids]
-        print 'Predicted', y_predicted
         y_truth = [inv_truth_topic_dictionary[label] for label in ground_truth]
-        print 'Truth', y_truth
-        # return
+        y_predicted = [inv_predicted_topic_dictionary[predicted_result[doc_id][0][0]] for doc_id in doc_ids]
+
+        print 'y_truth: ', y_truth
+        print 'y_predicted: ', y_predicted
+
         rs = {
-            'accuracy': metrics.accuracy_score(y_truth,y_predicted),
-            'precision_macro': metrics.precision_score(y_truth,y_predicted, average='macro'),
-            'precision_micro': metrics.precision_score(y_truth, y_predicted, average='micro'),
-            'precision_weighted': metrics.precision_score(y_truth, y_predicted, average='weighted'),
-            # 'average_precision': metrics.average_precision_score(y_truth, y_predicted),
-            'recall_macro': metrics.recall_score(y_truth,y_predicted, average='macro'),
-            'recall_micro': metrics.recall_score(y_truth, y_predicted, average='micro'),
-            'recall_weighted': metrics.recall_score(y_truth, y_predicted, average='weighted'),
-            'f1_macro': metrics.f1_score(y_truth, y_predicted, average='macro'),
-            'f1_micro': metrics.f1_score(y_truth, y_predicted, average='micro'),
-            'f1_weighted': metrics.f1_score(y_truth, y_predicted, average='weighted'),
+            'adjusted_rand_score': metrics.adjusted_rand_score(y_truth, y_predicted),
+            'adjusted_mutual_info_score': metrics.adjusted_mutual_info_score(y_truth, y_predicted),
+            'homogeneity_score': metrics.homogeneity_score(y_truth, y_predicted),
+            'completeness_score': metrics.completeness_score(y_truth, y_predicted),
+            'v_measure_score': metrics.v_measure_score(y_truth, y_predicted),
+            'fowlkes_mallows_score': metrics.adjusted_rand_score(y_truth, y_predicted),
+            'silhouette_score': metrics.adjusted_rand_score(y_truth, y_predicted),
+
         }
-        # maybe_print("Model evaluation result: {0}".format(rs))
+
         return rs
