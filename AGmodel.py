@@ -15,6 +15,8 @@ from config import model_build_options as options
 import sys
 from random import shuffle
 
+error_analysis_method = 'heuristic-greedy'
+
 class AGmodel:
     """
     The Aspect Graph model for topic modeling
@@ -155,6 +157,37 @@ class AGmodel:
             :return: the softmax vector, sum to 1
         """
         return np.exp(x) / np.sum(np.exp(x), axis=0)
+
+    def find_best_row_permutation(self,mat=None, rows=[], cols=[]):
+        """
+        Find the best order or rows, such that sum of dianog is maximum. The idea
+        is first start from the highest overlap point, consider it as on idead match
+        then remove the row and column of that cell, then repeat the process until
+        the size of matrix is 1 (single cell)
+        :param mat: the matrix to search
+        :param rows: label/index for each row
+        :param cols: label/index for each colm
+        """
+        n_row, n_col = mat.shape
+        assert n_row == n_col, 'can only find permutation in square matrix'
+        assert n_row == len(rows), 'Mismatch matrix size and row labels'
+        assert n_col == len(cols), 'Mismatch matrix size and row labels'
+        assert len(rows) == len(cols), 'Mismatch number of cols and rows labels'
+        if n_row == 1 and n_col == 1:
+            return [(rows[0], cols[0])]
+        else:
+            # Find the max
+            max_row, max_col = np.unravel_index(mat.argmax(), mat.shape)
+            row_label, col_label = rows[max_row], cols[max_col]
+            reduce_mat = np.delete(mat, max_row, 0)
+            reduce_mat = np.delete(reduce_mat, max_col, 1)
+            r_rows = rows
+            r_cols = cols
+            del r_rows[max_row]
+            del r_cols[max_col]
+            # print '---> ',rows[max_row],cols[max_col]
+            return [(row_label, col_label)] + self.find_best_row_permutation(reduce_mat, r_rows, r_cols)
+
 
     def compute_probability_matrix(self, method='eigenvector_centrality', normalize='sum'):
         """
@@ -321,10 +354,12 @@ class AGmodel:
         assert ground_truth, 'Invalid ground-truth for evaluating model'
         assert len(ground_truth) == len(multi_docs), 'Ground-truth and document content have different size'
         # compute the prediction of clusters
+        # print 'len(doc_ids)',len(doc_ids)
+        # print 'len(multi_docs)',len(multi_docs)
         predicted_result = self.predict_multi_docs(doc_ids=doc_ids,
                                                    multi_docs=multi_docs,
                                                    vectorize_method=vectorize_method)
-        print "Done predicting on test set!"
+        # print "Done predicting on test set. Total number of predictions:.{0}".format(len(predicted_result))
         # print "Predicted predicted_result: ", predicted_result
         # Now evaluate the result
         # First reassign generated to the ground truth value
@@ -366,13 +401,16 @@ class AGmodel:
         inv_predicted_topic_dictionary = {predicted_topic_dictionary[k]:k for k in predicted_topic_dictionary}
         print 'Done making dictionaries'
 
+        # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+        # Compute standard clustering metrics
         y_truth = [inv_truth_topic_dictionary[label] for label in ground_truth]
+        print predicted_result
         y_predicted = [inv_predicted_topic_dictionary[predicted_result[doc_id][0][0]] for doc_id in doc_ids]
 
         print 'y_truth: ', y_truth
         print 'y_predicted: ', y_predicted
 
-        rs = {
+        rs_clustering = {
             'adjusted_rand_score': metrics.adjusted_rand_score(y_truth, y_predicted),
             'adjusted_mutual_info_score': metrics.adjusted_mutual_info_score(y_truth, y_predicted),
             'homogeneity_score': metrics.homogeneity_score(y_truth, y_predicted),
@@ -383,4 +421,146 @@ class AGmodel:
 
         }
 
-        return rs
+        # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+        # Compute error analysis
+
+        rs_error = None
+        if error_analysis_method:
+            overlap_matrix = np.zeros([len(predicted_clusters), len(truth_clusters)], dtype=np.float)
+            for i in xrange(0, len(predicted_topic_names)):
+                gen_topic = predicted_topic_names[i]
+                for j in xrange(0, len(truth_topic_names)):
+                    truth_topic = truth_topic_names[j]
+                    if cluster_overlap == 'count':
+                        # print '\n',predicted_clusters
+                        overlap_matrix[i][j] = len(set(predicted_clusters[gen_topic])
+                                                   .intersection(set(truth_clusters[truth_topic])))
+                    elif cluster_overlap == 'percentage':
+                        overlap_matrix[i][j] = len(set(predicted_clusters[gen_topic])
+                                                   .intersection(set(truth_clusters[truth_topic]))) \
+                                               / (len(set(predicted_clusters[gen_topic]))
+                                                  + len(set(truth_clusters[truth_topic]))
+                                                  )
+            print 'Done making overlap matrix'
+
+            if error_analysis_method == 'semi-greedy': # separate permutation to blocks, select max of that block
+                best_permutation = []
+                best_sum_score = 0.0
+                n_pre_topics = len(predicted_topic_names)
+                cols = np.array(xrange(0, n_pre_topics))
+                permu_count = -1
+                MAX_ITERATION = 500000000
+                dominant_count = 0
+                max_dominant = 20
+                block_size = 100000
+                # compute max in block of 1000. How this work? For each 100 records, it find the max sum score,
+                rows = None
+                cols = np.matlib.repmat(np.array(list(xrange(0, n_pre_topics))), 1, block_size)[0]  # 1-D array too
+                for per in permutations(xrange(0, n_pre_topics)):  # go through every possible permutation
+                    permu_count += 1
+                    if permu_count > MAX_ITERATION:  # break the loop if max iteration reached
+                        break
+
+                    if permu_count % block_size == 0:
+                        print "+++++++ ", permu_count
+                        rows = np.array(per)  # beginning of block, initialize data block
+                    else:
+                        rows = np.concatenate((rows, np.array(per)), axis=0)
+                        if permu_count % block_size == (block_size - 1):
+                            score_matrix = overlap_matrix[rows, cols].reshape(block_size, n_pre_topics)
+                            sum_matrix = np.sum(a=score_matrix, axis=1)
+                            max_permutation_index = np.argmax(sum_matrix)
+                            if sum_matrix[max_permutation_index] > best_sum_score:
+                                dominant_count = 0
+                                best_sum_score = sum_matrix[max_permutation_index]
+                                print best_sum_score
+                                per_indices = rows[
+                                              max_permutation_index * n_pre_topics:
+                                              max_permutation_index * n_pre_topics + n_pre_topics]
+                                best_permutation = [predicted_topic_names[i] for i in per_indices]
+                            else:
+                                dominant_count += 1
+
+                    if dominant_count == max_dominant and best_sum_score != 0:
+                        break
+
+            elif error_analysis_method == 'random-greedy': # randomly choose to bypass a sample, if neccesary
+                best_permutation = []
+                best_sum_score = 0.0
+                n_pre_topics = len(predicted_topic_names)
+                cols = np.array(xrange(0, n_pre_topics))
+                permu_count = -1
+                MAX_ITERATION = 500000000
+                max_dominant = 2000000
+                for per in permutations(xrange(0, n_pre_topics)):  # go through every possible permutation
+                    permu_count += 1
+                    if permu_count > MAX_ITERATION: # break the loop if max iteration reached
+                        break
+                    if np.random.rand() < 0.6:  # random choose to keep or disregard the combination
+                        continue
+                    if permu_count % 100000 == 0:
+                        print "+++++++ ", permu_count
+                    if dominant_count == max_dominant and best_sum_score!=0:
+                        break
+                    # Compute sum overlap for this permutation
+                    rows = np.array(per)
+                    sum_score = np.sum(overlap_matrix[rows,cols])
+                    # print best_sum_score
+                    if sum_score > best_sum_score:
+                        dominant_count = 0
+                        best_sum_score = sum_score
+                        print best_sum_score
+                        best_permutation = [predicted_topic_names[i] for i in rows]
+                    else:
+                        dominant_count += 1
+
+            elif error_analysis_method == 'heuristic-greedy':
+               tmp = self.find_best_row_permutation(overlap_matrix,
+                                                    rows=list(xrange(0,len(predicted_topic_names))),
+                                                    cols=list(xrange(0,len(truth_topic_names))))
+               best_indices = [i for i,_ in sorted(tmp,key=lambda x: x[1])]
+               best_permutation = [predicted_topic_names[i] for i in best_indices]
+               best_sum_score = np.sum(overlap_matrix[best_indices, list(xrange(0,len(truth_topic_names)))])
+
+            else:
+                raise ValueError('Invalid error analysis method!')
+
+            print 'Done search for best permutation'
+            assert best_permutation, "best permutation is still None!"
+            assert best_sum_score > 0, "best sum score 0.0 means no overlap was found!"
+            # Now we had the best permutation, from the first to the last of the list, it map to the first to the last of
+            #   ground-truth values
+            # Now we update the predicted topic dictionary such that its id mention the same cluster
+            #   as in truth topic dictionary
+            # print 'truth_topic_dictionary:', truth_topic_dictionary
+            # print 'best_permutation', best_permutation
+            predicted_topic_dictionary = dict()
+            for key in truth_topic_dictionary:
+                # print "key: ",key
+                # print "truth_topic_dictionary[key]", truth_topic_dictionary[key]
+                predicted_topic_dictionary[key] = best_permutation[truth_topic_names.index(truth_topic_dictionary[key])]
+            # {k: best_permutation[truth_topic_names.index(truth_topic_dictionary[k])]
+            #                              for k in truth_topic_dictionary}
+            # print 'CCC', predicted_topic_dictionary
+            inv_predicted_topic_dictionary = {predicted_topic_dictionary[k]: k for k in predicted_topic_dictionary}
+            # OK, we got it. Now make material for measurement:
+            y_predicted = [inv_predicted_topic_dictionary[predicted_result[doc_id][0][0]] for doc_id in doc_ids]
+            print 'Predicted', y_predicted
+            # return
+
+            rs_error = {
+                'accuracy': metrics.accuracy_score(y_truth, y_predicted),
+                'precision_macro': metrics.precision_score(y_truth, y_predicted, average='macro'),
+                'precision_micro': metrics.precision_score(y_truth, y_predicted, average='micro'),
+                'precision_weighted': metrics.precision_score(y_truth, y_predicted, average='weighted'),
+                # 'average_precision': metrics.average_precision_score(y_truth, y_predicted),
+                'recall_macro': metrics.recall_score(y_truth, y_predicted, average='macro'),
+                'recall_micro': metrics.recall_score(y_truth, y_predicted, average='micro'),
+                'recall_weighted': metrics.recall_score(y_truth, y_predicted, average='weighted'),
+                'f1_macro': metrics.f1_score(y_truth, y_predicted, average='macro'),
+                'f1_micro': metrics.f1_score(y_truth, y_predicted, average='micro'),
+                'f1_weighted': metrics.f1_score(y_truth, y_predicted, average='weighted'),
+            }
+
+        # Return result
+        return rs_clustering, rs_error

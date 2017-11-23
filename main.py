@@ -21,6 +21,7 @@ import time
 
 build_scenario = 'unknown'  # three scenario: "article only", "comment only" and "combine"
 
+
 def add_args(parser):
     """Command-line arguments to extract a summarization dataset from the
     NYT Annotated Corpus.
@@ -54,6 +55,15 @@ def add_args(parser):
                         choices=('sum', 'softmax'),
                         help='Normaization method apply to centrality score, in order to sum to 1 (probability)',
                         default='sum')
+    parser.add_argument('--n_topics', action='store', type=int,
+                        help='number of topic to consider',
+                        default=10)
+
+    parser.add_argument('--node_freq_min', action='store', type=int,
+                        help='Minimum frequency of node. Nodes whose freq less than this will be removed.',
+                        default=1)
+
+
     # Filters for NYT corpus based on descriptors and summary type
     '''
     parser.add_argument('--summary_type', action='store',
@@ -164,7 +174,10 @@ if __name__ == "__main__":
         test_truth_f = open('./tmp/test_truth.txt', 'w+')
         for i in xrange(int(len(all_ground_truth)*0.7),len(all_ground_truth)):
             assert str(comments[i]['no']) == str(all_ground_truth[i][0]), 'Mismatch id between ground truth and comment, ' \
-                                                                'cmn num {0}'.format(i)
+                                                                'cmn num {0}({1} != {2})'.format(i,
+                                                                                                 comments[i]['no'],
+                                                                                                 all_ground_truth[i][0])
+            
             test_ids_f.write('{0}\n'.format(all_ground_truth[i][0]))
             test_text_f.write('{0}\n'.format(comments[i]['content']))
             test_truth_f.write('{0}\n'.format(all_ground_truth[i][1]))
@@ -180,6 +193,8 @@ if __name__ == "__main__":
                    'comments': comments}
     config.model_build_options['centrality_method'] = args.centrality
     config.model_build_options['normalization_method'] = args.normalization
+    config.community_detect_options['method']['params']['n_communities'] = args.n_topics
+    config.prune_options['node_freq_min'] = args.node_freq_min
 
     maybe_print("Loaded data set! Data mode: {0}".format(build_scenario), 0)
     if build_scenario == 'comment_only' or build_scenario == 'combine':
@@ -236,11 +251,11 @@ if __name__ == "__main__":
         doc_ids = [line.rstrip() for line in open('./tmp/test_ids.txt')]
         multi_docs = [line.rstrip() for line in open('./tmp/test_text.txt')]
         ground_truth = [line.rstrip() for line in open('./tmp/test_truth.txt')]
-        evaluation_result = model.evaluate_model(doc_ids=doc_ids,
-                                                 multi_docs=multi_docs,
-                                                 ground_truth=ground_truth)
-        maybe_print("Model evaluation result: {0}".format(evaluation_result),2,'i')
-
+        eva_rs_cluster,eva_rs_error = model.evaluate_model(doc_ids=doc_ids,
+                                                           multi_docs=multi_docs,
+                                                           ground_truth=ground_truth)
+        maybe_print("Topic clustering evaluation result: \n {0}".format(eva_rs_cluster),2,'i')
+        maybe_print("Error evaluation result: \n {0}".format(eva_rs_error), 2, 'i')
         '''        
         model = AGmodel.AGmodel(asp_graph=com_graph)  # Build the model bases on the communities
         del com_graph

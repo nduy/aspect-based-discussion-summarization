@@ -199,7 +199,9 @@ def replace_all(repls, str):
 def text_preprocessing(rawText):
     # print  replace_pattern
     txt = cucco.normalize(rawText.decode('utf8', 'ignore'), normalizations)
-    txt = re.sub('<\D*>.*?<\D*>', '', txt)
+    tmp = re.sub('<\D*>.*?<\D*>', '', txt)
+    if tmp != '':
+        txt = tmp
     # m = re.search(r"[a-z]([.,;:<>()+])[A-Z]", txt) # Fix space missing typo
     m = re.search(r"[a-z]([<>()+])[A-Z]", txt) # Fix space missing typo
     txt = txt[:m.start()+2] + u" " + txt[m.end()-1:] if m else txt
