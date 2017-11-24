@@ -58,7 +58,8 @@ SENTIMENT_ANALYSIS_MODE = 'local'  # m
 N_THREADS = 2
 
 # a lock for controlling server request on Multi threading
-threadLock = threading.Lock()
+coref_threadLock = threading.Lock()
+dep_threadLock = threading.Lock()
 
 # Model for cosine similarity computation on glove
 GLOVE_MODEL_FILE = '../models/glove.6B.200d.txt'
@@ -174,7 +175,7 @@ def build_mode_1(title, article, comments):
         rs = nx.compose(rs, article_graph)
         # rs = graph_unify(rs, uni_options)
 
-    # threadLock.release()  # Release the lock that may be used while extracting graph for article
+    # coref_threadLock.release()  # Release the lock that may be used while extracting graph for article
     # global server
     # server = jsonrpc.ServerProxy(jsonrpc.JsonRpc20(), jsonrpc.TransportTcpIp(addr=("127.0.0.1", 8080)))
 
@@ -708,15 +709,15 @@ def dep_extract_from_sent(sent, filter_opt):
     '''
     parse_result = None
     try:
-        threadLock.acquire()
-        r = server.parse(sentence)
-        threadLock.release()
+        dep_threadLock.acquire()
+        r = dep_server.parse(sentence)
+        dep_threadLock.release()
         parse_result = loads(r)
     except Exception as detail:
         cut = min(30,len(sentence))
         maybe_print(u' Unable to parse sentence for dependencies: {0}.'.format(sentence[:cut]),2,'W')
         maybe_print(u'    --> Error: {0}'.format(detail), 2)
-        threadLock.release()
+        dep_threadLock.release()
         return [],[],u""
     pos_dict = dict()
     # build look up word-postag dictionary
@@ -1443,15 +1444,15 @@ def coreference_refine(text):
     parse_rs = None
     try:
         # parse = server.parse(text)
-        threadLock.acquire()
-        parse_rs = loads(server.parse(text))
+        coref_threadLock.acquire()
+        parse_rs = loads(coref_server.parse(text))
         # print tokens, parse_rs
-        threadLock.release()
+        coref_threadLock.release()
         # parse_rs = loads(parse)
     except Exception as detail:
         maybe_print(u"Can't parse sentence this sentence for coreference \"{0}...\"\n --> Error: {1}"
                     .format(text[:min(130,len(text))],detail), 2,'E')
-        threadLock.release()
+        coref_threadLock.release()
     try:
         if not parse_rs or 'coref' not in parse_rs:
             return text

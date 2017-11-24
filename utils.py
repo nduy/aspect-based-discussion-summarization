@@ -32,8 +32,8 @@ sys.setdefaultencoding('utf-8')
 cucco = Cucco()
 
 # Connect to core nLP server
-server = jsonrpc.ServerProxy(jsonrpc.JsonRpc20(),jsonrpc.TransportTcpIp(addr=("127.0.0.1", 8080)))
-
+coref_server = jsonrpc.ServerProxy(jsonrpc.JsonRpc20(),jsonrpc.TransportTcpIp(addr=("127.0.0.1", 8080)))
+dep_server = jsonrpc.ServerProxy(jsonrpc.JsonRpc20(),jsonrpc.TransportTcpIp(addr=("127.0.0.2", 8080)))
 
 normalizations = [
     'remove_accent_marks',
