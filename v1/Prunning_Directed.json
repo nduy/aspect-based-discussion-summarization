@@ -1,0 +1,1039 @@
+{
+    "edges": [
+        {
+            "from": "christmas~com.~0x5585efbf15236^14~0x59ad7522",
+            "id": "christmas~com.~0x5585efbf15236^14~0x59ad7522|brained_idea~com.~0x5585efbf15236^14~0x59ad7522",
+            "label": "acl:relcl",
+            "title": "freq: 2",
+            "to": "brained_idea~com.~0x5585efbf15236^14~0x59ad7522",
+            "value": 2
+        },
+        {
+            "from": "end~com.~0x5585efbf150b6^13~0x59ad7530",
+            "id": "end~com.~0x5585efbf150b6^13~0x59ad7530|leaf_fall~com.~0x5585efbf150b6^13~0x59ad7537",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "leaf_fall~com.~0x5585efbf150b6^13~0x59ad7537",
+            "value": 2
+        },
+        {
+            "from": "fox~art.0~~0x59ad74d9",
+            "id": "fox~art.0~~0x59ad74d9|vermin~com.~0x5585efbf1531a^15~0x59ad753f",
+            "label": "conj",
+            "title": "freq: 2",
+            "to": "vermin~com.~0x5585efbf1531a^15~0x59ad753f",
+            "value": 2
+        },
+        {
+            "from": "first_cut~com.~0x5585efbf150b6^13~0x59ad7530",
+            "id": "first_cut~com.~0x5585efbf150b6^13~0x59ad7530|year~art.2~~0x59ad74f6",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "year~art.2~~0x59ad74f6",
+            "value": 2
+        },
+        {
+            "from": "first_cut~com.~0x5585efbf150b6^13~0x59ad7530",
+            "id": "first_cut~com.~0x5585efbf150b6^13~0x59ad7530|lawn~com.~0x5585efbf150b6^13~0x59ad7530",
+            "label": "compound",
+            "title": "freq: 2",
+            "to": "lawn~com.~0x5585efbf150b6^13~0x59ad7530",
+            "value": 2
+        },
+        {
+            "from": "packaging_fox~com.~0x5585efbf14a01^8~0x59ad7512",
+            "id": "packaging_fox~com.~0x5585efbf14a01^8~0x59ad7512|rat~com.~0x5585efbf15604^16~0x59ad7529",
+            "label": "conj",
+            "title": "freq: 2",
+            "to": "rat~com.~0x5585efbf15604^16~0x59ad7529",
+            "value": 2
+        },
+        {
+            "from": "packaging_fox~com.~0x5585efbf14a01^8~0x59ad7512",
+            "id": "packaging_fox~com.~0x5585efbf14a01^8~0x59ad7512|such~com.~0x5585efbf14a01^8~0x59ad7512",
+            "label": "case",
+            "title": "freq: 2",
+            "to": "such~com.~0x5585efbf14a01^8~0x59ad7512",
+            "value": 2
+        },
+        {
+            "from": "packaging_fox~com.~0x5585efbf14a01^8~0x59ad7512",
+            "id": "packaging_fox~com.~0x5585efbf14a01^8~0x59ad7512|other_vermin~com.~0x5585efbf145f6^1~0x59ad7506",
+            "label": "conj",
+            "title": "freq: 2",
+            "to": "other_vermin~com.~0x5585efbf145f6^1~0x59ad7506",
+            "value": 2
+        },
+        {
+            "from": "desperate_measure~art.2~~0x59ad74f6",
+            "id": "desperate_measure~art.2~~0x59ad74f6|cut~art.2~~0x59ad74f6",
+            "label": "compound",
+            "title": "freq: 2",
+            "to": "cut~art.2~~0x59ad74f6",
+            "value": 2
+        },
+        {
+            "from": "compost~com.~0x5585efbf1493b^7~0x59ad7519",
+            "id": "compost~com.~0x5585efbf1493b^7~0x59ad7519|lawn~com.~0x5585efbf150b6^13~0x59ad7530",
+            "label": "compound",
+            "title": "freq: 2",
+            "to": "lawn~com.~0x5585efbf150b6^13~0x59ad7530",
+            "value": 2
+        },
+        {
+            "from": "compost~com.~0x5585efbf1493b^7~0x59ad7519",
+            "id": "compost~com.~0x5585efbf1493b^7~0x59ad7519|first_cut~com.~0x5585efbf150b6^13~0x59ad7530",
+            "label": "conj",
+            "title": "freq: 3",
+            "to": "first_cut~com.~0x5585efbf150b6^13~0x59ad7530",
+            "value": 3
+        },
+        {
+            "from": "trouble~com.~0x5585efbf1469f^2~0x59ad7509",
+            "id": "trouble~com.~0x5585efbf1469f^2~0x59ad7509|household~art.2~~0x59ad74ec",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "household~art.2~~0x59ad74ec",
+            "value": 2
+        },
+        {
+            "from": "trouble~com.~0x5585efbf1469f^2~0x59ad7509",
+            "id": "trouble~com.~0x5585efbf1469f^2~0x59ad7509|rat~com.~0x5585efbf15604^16~0x59ad7529",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "rat~com.~0x5585efbf15604^16~0x59ad7529",
+            "value": 2
+        },
+        {
+            "from": "row~com.~0x5585efbf156f8^17~0x59ad754a",
+            "id": "row~com.~0x5585efbf156f8^17~0x59ad754a|front~com.~0x5585efbf156f8^17~0x59ad754a",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "front~com.~0x5585efbf156f8^17~0x59ad754a",
+            "value": 2
+        },
+        {
+            "from": "row~com.~0x5585efbf156f8^17~0x59ad754a",
+            "id": "row~com.~0x5585efbf156f8^17~0x59ad754a|terrace~com.~0x5585efbf156f8^17~0x59ad754a",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "terrace~com.~0x5585efbf156f8^17~0x59ad754a",
+            "value": 2
+        },
+        {
+            "from": "ivan_lewis~art.3~~0x59ad74f9",
+            "id": "ivan_lewis~art.3~~0x59ad74f9|labour~com.~0x5585efbf15236^14~0x59ad7522",
+            "label": "compound",
+            "title": "freq: 2",
+            "to": "labour~com.~0x5585efbf15236^14~0x59ad7522",
+            "value": 2
+        },
+        {
+            "from": "rubbish~com.~0x5585efbf15236^14~0x59ad7524",
+            "id": "rubbish~com.~0x5585efbf15236^14~0x59ad7524|christmas~com.~0x5585efbf15236^14~0x59ad7522",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "christmas~com.~0x5585efbf15236^14~0x59ad7522",
+            "value": 2
+        },
+        {
+            "from": "budget~art.3~~0x59ad74f9",
+            "id": "budget~art.3~~0x59ad74f9|year~art.2~~0x59ad74f6",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "year~art.2~~0x59ad74f6",
+            "value": 2
+        },
+        {
+            "from": "budget~art.3~~0x59ad74f9",
+            "id": "budget~art.3~~0x59ad74f9|council~art.1~~0x59ad74df",
+            "label": "nmod:poss",
+            "title": "freq: 2",
+            "to": "council~art.1~~0x59ad74df",
+            "value": 2
+        },
+        {
+            "from": "people~com.~0x5585efbf14f0a^11~0x59ad7529",
+            "id": "people~com.~0x5585efbf14f0a^11~0x59ad7529|glass/plastic~com.~0x5585efbf150b6^13~0x59ad7537",
+            "label": "amod",
+            "title": "freq: 2",
+            "to": "glass/plastic~com.~0x5585efbf150b6^13~0x59ad7537",
+            "value": 2
+        },
+        {
+            "from": "people~com.~0x5585efbf14f0a^11~0x59ad7529",
+            "id": "people~com.~0x5585efbf14f0a^11~0x59ad7529|compost_bin~com.~0x5585efbf150b6^13~0x59ad7537",
+            "label": "dep",
+            "title": "freq: 2",
+            "to": "compost_bin~com.~0x5585efbf150b6^13~0x59ad7537",
+            "value": 2
+        },
+        {
+            "from": "bins-glass/plastic~com.~0x5585efbf14ff4^12~0x59ad751f",
+            "id": "bins-glass/plastic~com.~0x5585efbf14ff4^12~0x59ad751f|black~com.~0x5585efbf14ff4^12~0x59ad751f",
+            "label": "conj",
+            "title": "freq: 2",
+            "to": "black~com.~0x5585efbf14ff4^12~0x59ad751f",
+            "value": 2
+        },
+        {
+            "from": "bins-glass/plastic~com.~0x5585efbf14ff4^12~0x59ad751f",
+            "id": "bins-glass/plastic~com.~0x5585efbf14ff4^12~0x59ad751f|paper~com.~0x5585efbf14ff4^12~0x59ad751f",
+            "label": "conj",
+            "title": "freq: 2",
+            "to": "paper~com.~0x5585efbf14ff4^12~0x59ad751f",
+            "value": 2
+        },
+        {
+            "from": "week~com.~0x5585efbf1531a^15~0x59ad7542",
+            "id": "week~com.~0x5585efbf1531a^15~0x59ad7542|food/garden_waste~com.~0x5585efbf1531a^15~0x59ad753c",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "food/garden_waste~com.~0x5585efbf1531a^15~0x59ad753c",
+            "value": 2
+        },
+        {
+            "from": "bin~art.2~~0x59ad74ee",
+            "id": "bin~art.2~~0x59ad74ee|compost~com.~0x5585efbf1493b^7~0x59ad7519",
+            "label": "amod",
+            "title": "freq: 2",
+            "to": "compost~com.~0x5585efbf1493b^7~0x59ad7519",
+            "value": 2
+        },
+        {
+            "from": "bin~art.2~~0x59ad74ee",
+            "id": "bin~art.2~~0x59ad74ee|waste~com.~0x5585efbf14f0a^11~0x59ad7529",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "waste~com.~0x5585efbf14f0a^11~0x59ad7529",
+            "value": 2
+        },
+        {
+            "from": "bin~art.2~~0x59ad74ee",
+            "id": "bin~art.2~~0x59ad74ee|communal~com.~0x5585efbf14ddb^10~0x59ad7518",
+            "label": "amod",
+            "title": "freq: 2",
+            "to": "communal~com.~0x5585efbf14ddb^10~0x59ad7518",
+            "value": 2
+        },
+        {
+            "from": "bin~art.2~~0x59ad74ee",
+            "id": "bin~art.2~~0x59ad74ee|paper~com.~0x5585efbf14ff4^12~0x59ad751f",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "paper~com.~0x5585efbf14ff4^12~0x59ad751f",
+            "value": 2
+        },
+        {
+            "from": "bin~art.2~~0x59ad74ee",
+            "id": "bin~art.2~~0x59ad74ee|empty~com.~0x5585efbf14ddb^10~0x59ad7518",
+            "label": "amod",
+            "title": "freq: 2",
+            "to": "empty~com.~0x5585efbf14ddb^10~0x59ad7518",
+            "value": 2
+        },
+        {
+            "from": "bin~art.2~~0x59ad74ee",
+            "id": "bin~art.2~~0x59ad74ee|food_waste~com.~0x5585efbf15c0c^25~0x59ad7568",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "food_waste~com.~0x5585efbf15c0c^25~0x59ad7568",
+            "value": 2
+        },
+        {
+            "from": "bin~art.2~~0x59ad74ee",
+            "id": "bin~art.2~~0x59ad74ee|green~art.2~~0x59ad74ee",
+            "label": "amod",
+            "title": "freq: 2",
+            "to": "green~art.2~~0x59ad74ee",
+            "value": 2
+        },
+        {
+            "from": "bin~art.2~~0x59ad74ee",
+            "id": "bin~art.2~~0x59ad74ee|odd_bit~com.~0x5585efbf15c0c^25~0x59ad7568",
+            "label": "conj",
+            "title": "freq: 2",
+            "to": "odd_bit~com.~0x5585efbf15c0c^25~0x59ad7568",
+            "value": 2
+        },
+        {
+            "from": "leftover_food~com.~0x5585efbf15604^16~0x59ad752c",
+            "id": "leftover_food~com.~0x5585efbf15604^16~0x59ad752c|waste_packaging~com.~0x5585efbf15604^16~0x59ad752c",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "waste_packaging~com.~0x5585efbf15604^16~0x59ad752c",
+            "value": 2
+        },
+        {
+            "from": "grey_bin~com.~0x5585efbf1531a^15~0x59ad753f",
+            "id": "grey_bin~com.~0x5585efbf1531a^15~0x59ad753f|week~com.~0x5585efbf1531a^15~0x59ad7542",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "week~com.~0x5585efbf1531a^15~0x59ad7542",
+            "value": 2
+        },
+        {
+            "from": "close~com.~0x5585efbf1531a^15~0x59ad7540",
+            "id": "close~com.~0x5585efbf1531a^15~0x59ad7540|bin~art.2~~0x59ad74ee",
+            "label": "nsubj",
+            "title": "freq: 2",
+            "to": "bin~art.2~~0x59ad74ee",
+            "value": 2
+        },
+        {
+            "from": "smell~com.~0x5585efbf15604^16~0x59ad752c",
+            "id": "smell~com.~0x5585efbf15604^16~0x59ad752c|nappy~com.~0x5585efbf1531a^15~0x59ad7540",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "nappy~com.~0x5585efbf1531a^15~0x59ad7540",
+            "value": 2
+        },
+        {
+            "from": "smell~com.~0x5585efbf15604^16~0x59ad752c",
+            "id": "smell~com.~0x5585efbf15604^16~0x59ad752c|leftover_food~com.~0x5585efbf15604^16~0x59ad752c",
+            "label": "conj",
+            "title": "freq: 2",
+            "to": "leftover_food~com.~0x5585efbf15604^16~0x59ad752c",
+            "value": 2
+        },
+        {
+            "from": "town_hall~art.4~~0x59ad7503",
+            "id": "town_hall~art.4~~0x59ad7503|bury~art.1~~0x59ad74e1",
+            "label": "compound",
+            "title": "freq: 2",
+            "to": "bury~art.1~~0x59ad74e1",
+            "value": 2
+        },
+        {
+            "from": "glass_bottle~com.~0x5585efbf1531a^15~0x59ad7544",
+            "id": "glass_bottle~com.~0x5585efbf1531a^15~0x59ad7544|paper~com.~0x5585efbf14ff4^12~0x59ad751f",
+            "label": "conj",
+            "title": "freq: 2",
+            "to": "paper~com.~0x5585efbf14ff4^12~0x59ad751f",
+            "value": 2
+        },
+        {
+            "from": "collection_schedule~com.~0x5585efbf1531a^15~0x59ad753c",
+            "id": "collection_schedule~com.~0x5585efbf1531a^15~0x59ad753c|week~com.~0x5585efbf1531a^15~0x59ad7542",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "week~com.~0x5585efbf1531a^15~0x59ad7542",
+            "value": 2
+        },
+        {
+            "from": "collection_schedule~com.~0x5585efbf1531a^15~0x59ad753c",
+            "id": "collection_schedule~com.~0x5585efbf1531a^15~0x59ad753c|grey_bin~com.~0x5585efbf1531a^15~0x59ad753f",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "grey_bin~com.~0x5585efbf1531a^15~0x59ad753f",
+            "value": 2
+        },
+        {
+            "from": "brained_idea~com.~0x5585efbf15236^14~0x59ad7522",
+            "id": "brained_idea~com.~0x5585efbf15236^14~0x59ad7522|labour~com.~0x5585efbf15236^14~0x59ad7522",
+            "label": "compound",
+            "title": "freq: 2",
+            "to": "labour~com.~0x5585efbf15236^14~0x59ad7522",
+            "value": 2
+        },
+        {
+            "from": "waste~com.~0x5585efbf14f0a^11~0x59ad7529",
+            "id": "waste~com.~0x5585efbf14f0a^11~0x59ad7529|kitchen~com.~0x5585efbf14f0a^11~0x59ad7529",
+            "label": "compound",
+            "title": "freq: 2",
+            "to": "kitchen~com.~0x5585efbf14f0a^11~0x59ad7529",
+            "value": 2
+        },
+        {
+            "from": "line_service~art.3~~0x59ad74fc",
+            "id": "line_service~art.3~~0x59ad74fc|front~com.~0x5585efbf156f8^17~0x59ad754a",
+            "label": "amod",
+            "title": "freq: 2",
+            "to": "front~com.~0x5585efbf156f8^17~0x59ad754a",
+            "value": 2
+        },
+        {
+            "from": "line_service~art.3~~0x59ad74fc",
+            "id": "line_service~art.3~~0x59ad74fc|many~art.2~~0x59ad74f6",
+            "label": "amod",
+            "title": "freq: 2",
+            "to": "many~art.2~~0x59ad74f6",
+            "value": 2
+        },
+        {
+            "from": "terrace~com.~0x5585efbf156f8^17~0x59ad754a",
+            "id": "terrace~com.~0x5585efbf156f8^17~0x59ad754a|bin~art.2~~0x59ad74ee",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "bin~art.2~~0x59ad74ee",
+            "value": 2
+        },
+        {
+            "from": "empty~com.~0x5585efbf14ddb^10~0x59ad7518",
+            "id": "empty~com.~0x5585efbf14ddb^10~0x59ad7518|bin~art.2~~0x59ad74ee",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "bin~art.2~~0x59ad74ee",
+            "value": 2
+        },
+        {
+            "from": "empty~com.~0x5585efbf14ddb^10~0x59ad7518",
+            "id": "empty~com.~0x5585efbf14ddb^10~0x59ad7518|serving_flat~com.~0x5585efbf14ddb^10~0x59ad7518",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "serving_flat~com.~0x5585efbf14ddb^10~0x59ad7518",
+            "value": 2
+        },
+        {
+            "from": "cut~art.2~~0x59ad74f6",
+            "id": "cut~art.2~~0x59ad74f6|year~art.2~~0x59ad74f6",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "year~art.2~~0x59ad74f6",
+            "value": 2
+        },
+        {
+            "from": "rat~com.~0x5585efbf15604^16~0x59ad7529",
+            "id": "rat~com.~0x5585efbf15604^16~0x59ad7529|fox~art.0~~0x59ad74d9",
+            "label": "conj",
+            "title": "freq: 2",
+            "to": "fox~art.0~~0x59ad74d9",
+            "value": 2
+        },
+        {
+            "from": "rat~com.~0x5585efbf15604^16~0x59ad7529",
+            "id": "rat~com.~0x5585efbf15604^16~0x59ad7529|other_vermin~com.~0x5585efbf145f6^1~0x59ad7506",
+            "label": "conj",
+            "title": "freq: 4",
+            "to": "other_vermin~com.~0x5585efbf145f6^1~0x59ad7506",
+            "value": 4
+        },
+        {
+            "from": "collection~com.~0x5585efbf15236^14~0x59ad7522",
+            "id": "collection~com.~0x5585efbf15236^14~0x59ad7522|rubbish~com.~0x5585efbf15236^14~0x59ad7524",
+            "label": "amod",
+            "title": "freq: 2",
+            "to": "rubbish~com.~0x5585efbf15236^14~0x59ad7524",
+            "value": 2
+        },
+        {
+            "from": "serving_flat~com.~0x5585efbf14ddb^10~0x59ad7518",
+            "id": "serving_flat~com.~0x5585efbf14ddb^10~0x59ad7518|communal~com.~0x5585efbf14ddb^10~0x59ad7518",
+            "label": "amod",
+            "title": "freq: 2",
+            "to": "communal~com.~0x5585efbf14ddb^10~0x59ad7518",
+            "value": 2
+        },
+        {
+            "from": "serving_flat~com.~0x5585efbf14ddb^10~0x59ad7518",
+            "id": "serving_flat~com.~0x5585efbf14ddb^10~0x59ad7518|bin~art.2~~0x59ad74ee",
+            "label": "compound",
+            "title": "freq: 2",
+            "to": "bin~art.2~~0x59ad74ee",
+            "value": 2
+        },
+        {
+            "from": "facility~com.~0x5585efbf14ddb^10~0x59ad751b",
+            "id": "facility~com.~0x5585efbf14ddb^10~0x59ad751b|communal~com.~0x5585efbf14ddb^10~0x59ad7518",
+            "label": "amod",
+            "title": "freq: 2",
+            "to": "communal~com.~0x5585efbf14ddb^10~0x59ad7518",
+            "value": 2
+        },
+        {
+            "from": "odd_bit~com.~0x5585efbf15c0c^25~0x59ad7568",
+            "id": "odd_bit~com.~0x5585efbf15c0c^25~0x59ad7568|unrecyclable_packaging~com.~0x5585efbf15c0c^25~0x59ad7568",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "unrecyclable_packaging~com.~0x5585efbf15c0c^25~0x59ad7568",
+            "value": 2
+        },
+        {
+            "from": "leaf_fall~com.~0x5585efbf150b6^13~0x59ad7537",
+            "id": "leaf_fall~com.~0x5585efbf150b6^13~0x59ad7537|year~art.2~~0x59ad74f6",
+            "label": "compound",
+            "title": "freq: 2",
+            "to": "year~art.2~~0x59ad74f6",
+            "value": 2
+        },
+        {
+            "from": "resident~com.~0x5585efbf1596b^22~0x59ad7538",
+            "id": "resident~com.~0x5585efbf1596b^22~0x59ad7538|many~art.2~~0x59ad74f6",
+            "label": "amod",
+            "title": "freq: 2",
+            "to": "many~art.2~~0x59ad74f6",
+            "value": 2
+        },
+        {
+            "from": "resident~com.~0x5585efbf1596b^22~0x59ad7538",
+            "id": "resident~com.~0x5585efbf1596b^22~0x59ad7538|borough~com.~0x5585efbf1596b^22~0x59ad7538",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "borough~com.~0x5585efbf1596b^22~0x59ad7538",
+            "value": 2
+        },
+        {
+            "from": "compost_bin~com.~0x5585efbf150b6^13~0x59ad7537",
+            "id": "compost_bin~com.~0x5585efbf150b6^13~0x59ad7537|kitchen_waste~com.~0x5585efbf150b6^13~0x59ad7537",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "kitchen_waste~com.~0x5585efbf150b6^13~0x59ad7537",
+            "value": 2
+        },
+        {
+            "from": "compost_bin~com.~0x5585efbf150b6^13~0x59ad7537",
+            "id": "compost_bin~com.~0x5585efbf150b6^13~0x59ad7537|end~com.~0x5585efbf150b6^13~0x59ad7530",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "end~com.~0x5585efbf150b6^13~0x59ad7530",
+            "value": 2
+        },
+        {
+            "from": "compost_bin~com.~0x5585efbf150b6^13~0x59ad7537",
+            "id": "compost_bin~com.~0x5585efbf150b6^13~0x59ad7537|black~com.~0x5585efbf14ff4^12~0x59ad751f",
+            "label": "amod",
+            "title": "freq: 2",
+            "to": "black~com.~0x5585efbf14ff4^12~0x59ad751f",
+            "value": 2
+        },
+        {
+            "from": "lot~com.~0x5585efbf15c0c^25~0x59ad7568",
+            "id": "lot~com.~0x5585efbf15c0c^25~0x59ad7568|unrecyclable_packaging~com.~0x5585efbf15c0c^25~0x59ad7568",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "unrecyclable_packaging~com.~0x5585efbf15c0c^25~0x59ad7568",
+            "value": 2
+        },
+        {
+            "from": "lot~com.~0x5585efbf15c0c^25~0x59ad7568",
+            "id": "lot~com.~0x5585efbf15c0c^25~0x59ad7568|nappy~com.~0x5585efbf1531a^15~0x59ad7540",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "nappy~com.~0x5585efbf1531a^15~0x59ad7540",
+            "value": 2
+        },
+        {
+            "from": "lot~com.~0x5585efbf15c0c^25~0x59ad7568",
+            "id": "lot~com.~0x5585efbf15c0c^25~0x59ad7568|bin~art.2~~0x59ad74ee",
+            "label": "nmod",
+            "title": "freq: 2",
+            "to": "bin~art.2~~0x59ad74ee",
+            "value": 2
+        }
+    ],
+    "nodes": [
+        {
+            "color": "#ff7200",
+            "group": "comment",
+            "id": "christmas~com.~0x5585efbf15236^14~0x59ad7522",
+            "label": "christmas",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 1
+        },
+        {
+            "color": "#ff5600",
+            "group": "comment",
+            "id": "end~com.~0x5585efbf150b6^13~0x59ad7530",
+            "label": "end",
+            "title": "*Freq: 2 <br> *Sen_Score: -0.1538 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: com.",
+            "value": 2
+        },
+        {
+            "color": "#ff5600",
+            "group": "article",
+            "id": "communal~com.~0x5585efbf14ddb^10~0x59ad7518",
+            "label": "communal",
+            "title": "*Freq: 3 <br> *Sen_Score: -0.1538 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 2} <br> *Group_ids: art.2,com.",
+            "value": 3
+        },
+        {
+            "color": "#ff7200",
+            "group": "comment",
+            "id": "first_cut~com.~0x5585efbf150b6^13~0x59ad7530",
+            "label": "first_cut",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 1
+        },
+        {
+            "color": "#ff5600",
+            "group": "article",
+            "id": "desperate_measure~art.2~~0x59ad74f6",
+            "label": "desperate_measure",
+            "title": "*Freq: 2 <br> *Sen_Score: -0.1538 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: art.0,art.2",
+            "value": 2
+        },
+        {
+            "color": "#ff7200",
+            "group": "comment",
+            "id": "food/garden_waste~com.~0x5585efbf1531a^15~0x59ad753c",
+            "label": "food/garden_waste",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 1
+        },
+        {
+            "color": "#ff3800",
+            "group": "comment",
+            "id": "compost~com.~0x5585efbf1493b^7~0x59ad7519",
+            "label": "compost",
+            "title": "*Freq: 3 <br> *Sen_Score: -0.2308 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 3} <br> *Group_ids: com.",
+            "value": 3
+        },
+        {
+            "color": "#ff9000",
+            "group": "comment",
+            "id": "trouble~com.~0x5585efbf1469f^2~0x59ad7509",
+            "label": "trouble",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 2
+        },
+        {
+            "color": "#ff9000",
+            "group": "comment",
+            "id": "collection_schedule~com.~0x5585efbf1531a^15~0x59ad753c",
+            "label": "collection_schedule",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 2
+        },
+        {
+            "color": "#ff5600",
+            "group": "article",
+            "id": "labour~com.~0x5585efbf15236^14~0x59ad7522",
+            "label": "labour",
+            "title": "*Freq: 2 <br> *Sen_Score: -0.1538 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: art.3,com.",
+            "value": 2
+        },
+        {
+            "color": "#ff7200",
+            "group": "article",
+            "id": "ivan_lewis~art.3~~0x59ad74f9",
+            "label": "ivan_lewis",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
+            "value": 1
+        },
+        {
+            "color": "#ff3800",
+            "group": "comment",
+            "id": "rubbish~com.~0x5585efbf15236^14~0x59ad7524",
+            "label": "rubbish",
+            "title": "*Freq: 3 <br> *Sen_Score: -0.2308 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 3} <br> *Group_ids: com.",
+            "value": 3
+        },
+        {
+            "color": "#ff7200",
+            "group": "article",
+            "id": "budget~art.3~~0x59ad74f9",
+            "label": "budget",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
+            "value": 1
+        },
+        {
+            "color": "#ff7200",
+            "group": "comment",
+            "id": "kitchen~com.~0x5585efbf14f0a^11~0x59ad7529",
+            "label": "kitchen",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 1
+        },
+        {
+            "color": "#ff7200",
+            "group": "comment",
+            "id": "nappy~com.~0x5585efbf1531a^15~0x59ad7540",
+            "label": "nappy",
+            "title": "*Freq: 4 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: com.",
+            "value": 4
+        },
+        {
+            "color": "#ff9000",
+            "group": "article",
+            "id": "household~art.2~~0x59ad74ec",
+            "label": "household",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.2,com.",
+            "value": 2
+        },
+        {
+            "color": "#ff7200",
+            "group": "comment",
+            "id": "glass/plastic~com.~0x5585efbf150b6^13~0x59ad7537",
+            "label": "glass/plastic",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 1
+        },
+        {
+            "color": "#ff5600",
+            "group": "article",
+            "id": "front~com.~0x5585efbf156f8^17~0x59ad754a",
+            "label": "front",
+            "title": "*Freq: 2 <br> *Sen_Score: -0.1538 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: com.,art.3",
+            "value": 2
+        },
+        {
+            "color": "#ff1c00",
+            "group": "article",
+            "id": "year~art.2~~0x59ad74f6",
+            "label": "year",
+            "title": "*Freq: 4 <br> *Sen_Score: -0.3077 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 4} <br> *Group_ids: com.,art.2,art.3",
+            "value": 4
+        },
+        {
+            "color": "#ff7200",
+            "group": "comment",
+            "id": "bins-glass/plastic~com.~0x5585efbf14ff4^12~0x59ad751f",
+            "label": "bins-glass/plastic",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 1
+        },
+        {
+            "color": "#ff7200",
+            "group": "article",
+            "id": "week~com.~0x5585efbf1531a^15~0x59ad7542",
+            "label": "week",
+            "title": "*Freq: 4 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: art.2,com.",
+            "value": 4
+        },
+        {
+            "color": "#ff0000",
+            "group": "article",
+            "id": "bin~art.2~~0x59ad74ee",
+            "label": "bin",
+            "title": "*Freq: 13 <br> *Sen_Score: -0.3846 <br> *Sentiment: {\"pos_count\": 3, \"neu_count\": 1, \"neg_count\": 8} <br> *Group_ids: art.1,art.2,com.",
+            "value": 13
+        },
+        {
+            "color": "#ff7200",
+            "group": "comment",
+            "id": "such~com.~0x5585efbf14a01^8~0x59ad7512",
+            "label": "such",
+            "title": "*Freq: 2 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 2
+        },
+        {
+            "color": "#ff7200",
+            "group": "comment",
+            "id": "leftover_food~com.~0x5585efbf15604^16~0x59ad752c",
+            "label": "leftover_food",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 1
+        },
+        {
+            "color": "#ffac00",
+            "group": "comment",
+            "id": "grey_bin~com.~0x5585efbf1531a^15~0x59ad753f",
+            "label": "grey_bin",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0769 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
+            "value": 1
+        },
+        {
+            "color": "#ff7200",
+            "group": "comment",
+            "id": "lawn~com.~0x5585efbf150b6^13~0x59ad7530",
+            "label": "lawn",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 1
+        },
+        {
+            "color": "#ffac00",
+            "group": "comment",
+            "id": "close~com.~0x5585efbf1531a^15~0x59ad7540",
+            "label": "close",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0769 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
+            "value": 1
+        },
+        {
+            "color": "#ff9000",
+            "group": "article",
+            "id": "green~art.2~~0x59ad74ee",
+            "label": "green",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.2",
+            "value": 1
+        },
+        {
+            "color": "#ff7200",
+            "group": "comment",
+            "id": "smell~com.~0x5585efbf15604^16~0x59ad752c",
+            "label": "smell",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 1
+        },
+        {
+            "color": "#ff9000",
+            "group": "article",
+            "id": "town_hall~art.4~~0x59ad7503",
+            "label": "town_hall",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.4",
+            "value": 1
+        },
+        {
+            "color": "#ffac00",
+            "group": "comment",
+            "id": "glass_bottle~com.~0x5585efbf1531a^15~0x59ad7544",
+            "label": "glass_bottle",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0769 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: com.",
+            "value": 1
+        },
+        {
+            "color": "#ff6400",
+            "group": "article",
+            "id": "vermin~com.~0x5585efbf1531a^15~0x59ad753f",
+            "label": "vermin",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.1538 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 0, \"neg_count\": 0} <br> *Group_ids: art.0,com.",
+            "value": 2
+        },
+        {
+            "color": "#ff7200",
+            "group": "comment",
+            "id": "kitchen_waste~com.~0x5585efbf150b6^13~0x59ad7537",
+            "label": "kitchen_waste",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 1
+        },
+        {
+            "color": "#ff7200",
+            "group": "comment",
+            "id": "other_vermin~com.~0x5585efbf145f6^1~0x59ad7506",
+            "label": "other_vermin",
+            "title": "*Freq: 3 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 3
+        },
+        {
+            "color": "#ff7200",
+            "group": "article",
+            "id": "resident~com.~0x5585efbf1596b^22~0x59ad7538",
+            "label": "resident",
+            "title": "*Freq: 2 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 1} <br> *Group_ids: art.2,com.",
+            "value": 2
+        },
+        {
+            "color": "#ff5600",
+            "group": "comment",
+            "id": "borough~com.~0x5585efbf1596b^22~0x59ad7538",
+            "label": "borough",
+            "title": "*Freq: 3 <br> *Sen_Score: -0.1538 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 2} <br> *Group_ids: com.",
+            "value": 3
+        },
+        {
+            "color": "#ff7200",
+            "group": "comment",
+            "id": "brained_idea~com.~0x5585efbf15236^14~0x59ad7522",
+            "label": "brained_idea",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 1
+        },
+        {
+            "color": "#ff5600",
+            "group": "comment",
+            "id": "waste~com.~0x5585efbf14f0a^11~0x59ad7529",
+            "label": "waste",
+            "title": "*Freq: 2 <br> *Sen_Score: -0.1538 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: com.",
+            "value": 2
+        },
+        {
+            "color": "#ff9000",
+            "group": "article",
+            "id": "council~art.1~~0x59ad74df",
+            "label": "council",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.1,art.3",
+            "value": 2
+        },
+        {
+            "color": "#ff7200",
+            "group": "article",
+            "id": "line_service~art.3~~0x59ad74fc",
+            "label": "line_service",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.3",
+            "value": 1
+        },
+        {
+            "color": "#ff7200",
+            "group": "comment",
+            "id": "terrace~com.~0x5585efbf156f8^17~0x59ad754a",
+            "label": "terrace",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 1
+        },
+        {
+            "color": "#ff3800",
+            "group": "article",
+            "id": "empty~com.~0x5585efbf14ddb^10~0x59ad7518",
+            "label": "empty",
+            "title": "*Freq: 3 <br> *Sen_Score: -0.2308 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 3} <br> *Group_ids: art.2,com.",
+            "value": 3
+        },
+        {
+            "color": "#ff9000",
+            "group": "comment",
+            "id": "packaging_fox~com.~0x5585efbf14a01^8~0x59ad7512",
+            "label": "packaging_fox",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: com.",
+            "value": 1
+        },
+        {
+            "color": "#ff7200",
+            "group": "comment",
+            "id": "unrecyclable_packaging~com.~0x5585efbf15c0c^25~0x59ad7568",
+            "label": "unrecyclable_packaging",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 1
+        },
+        {
+            "color": "#ff3800",
+            "group": "article",
+            "id": "cut~art.2~~0x59ad74f6",
+            "label": "cut",
+            "title": "*Freq: 3 <br> *Sen_Score: -0.2308 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 3} <br> *Group_ids: art.0,art.2,art.3",
+            "value": 3
+        },
+        {
+            "color": "#ff5600",
+            "group": "comment",
+            "id": "rat~com.~0x5585efbf15604^16~0x59ad7529",
+            "label": "rat",
+            "title": "*Freq: 4 <br> *Sen_Score: -0.1538 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 2} <br> *Group_ids: com.",
+            "value": 4
+        },
+        {
+            "color": "#ff9000",
+            "group": "comment",
+            "id": "collection~com.~0x5585efbf15236^14~0x59ad7522",
+            "label": "collection",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 2
+        },
+        {
+            "color": "#ff7200",
+            "group": "comment",
+            "id": "serving_flat~com.~0x5585efbf14ddb^10~0x59ad7518",
+            "label": "serving_flat",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 1
+        },
+        {
+            "color": "#ff5600",
+            "group": "comment",
+            "id": "food_waste~com.~0x5585efbf15c0c^25~0x59ad7568",
+            "label": "food_waste",
+            "title": "*Freq: 2 <br> *Sen_Score: -0.1538 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: com.",
+            "value": 2
+        },
+        {
+            "color": "#ff9000",
+            "group": "comment",
+            "id": "facility~com.~0x5585efbf14ddb^10~0x59ad751b",
+            "label": "facility",
+            "title": "*Freq: 1 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: com.",
+            "value": 1
+        },
+        {
+            "color": "#ff7200",
+            "group": "comment",
+            "id": "odd_bit~com.~0x5585efbf15c0c^25~0x59ad7568",
+            "label": "odd_bit",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 1
+        },
+        {
+            "color": "#ff5600",
+            "group": "comment",
+            "id": "black~com.~0x5585efbf14ff4^12~0x59ad751f",
+            "label": "black",
+            "title": "*Freq: 2 <br> *Sen_Score: -0.1538 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: com.",
+            "value": 2
+        },
+        {
+            "color": "#ff9000",
+            "group": "article",
+            "id": "fox~art.0~~0x59ad74d9",
+            "label": "fox",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.0,com.",
+            "value": 2
+        },
+        {
+            "color": "#ff9000",
+            "group": "article",
+            "id": "paper~com.~0x5585efbf14ff4^12~0x59ad751f",
+            "label": "paper",
+            "title": "*Freq: 3 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: art.2,com.",
+            "value": 3
+        },
+        {
+            "color": "#ff7200",
+            "group": "comment",
+            "id": "leaf_fall~com.~0x5585efbf150b6^13~0x59ad7537",
+            "label": "leaf_fall",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 1
+        },
+        {
+            "color": "#ffac00",
+            "group": "article",
+            "id": "bury~art.1~~0x59ad74e1",
+            "label": "bury",
+            "title": "*Freq: 2 <br> *Sen_Score: 0.0769 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 0} <br> *Group_ids: art.4,art.1",
+            "value": 2
+        },
+        {
+            "color": "#ff7200",
+            "group": "comment",
+            "id": "row~com.~0x5585efbf156f8^17~0x59ad754a",
+            "label": "row",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 1
+        },
+        {
+            "color": "#ff5600",
+            "group": "comment",
+            "id": "people~com.~0x5585efbf14f0a^11~0x59ad7529",
+            "label": "people",
+            "title": "*Freq: 2 <br> *Sen_Score: -0.1538 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: com.",
+            "value": 2
+        },
+        {
+            "color": "#ff7200",
+            "group": "comment",
+            "id": "waste_packaging~com.~0x5585efbf15604^16~0x59ad752c",
+            "label": "waste_packaging",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 1
+        },
+        {
+            "color": "#ff5600",
+            "group": "article",
+            "id": "many~art.2~~0x59ad74f6",
+            "label": "many",
+            "title": "*Freq: 2 <br> *Sen_Score: -0.1538 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: art.2,art.3",
+            "value": 2
+        },
+        {
+            "color": "#ff7200",
+            "group": "comment",
+            "id": "compost_bin~com.~0x5585efbf150b6^13~0x59ad7537",
+            "label": "compost_bin",
+            "title": "*Freq: 1 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 1} <br> *Group_ids: com.",
+            "value": 1
+        },
+        {
+            "color": "#ff7200",
+            "group": "comment",
+            "id": "lot~com.~0x5585efbf15c0c^25~0x59ad7568",
+            "label": "lot",
+            "title": "*Freq: 3 <br> *Sen_Score: -0.0769 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 2} <br> *Group_ids: com.",
+            "value": 3
+        }
+    ],
+    "options": {
+        "build_option": {
+            "build_mode": 1,
+            "n_thread": 5,
+            "sentiment_ana_mode": "global",
+            "use_thread_structure": false
+        },
+        "pruning_option": {
+            "edge_freq_min": 1,
+            "enable_pruning": true,
+            "min_word_length": 2,
+            "node_degree_min": 2,
+            "node_freq_min": 1,
+            "remove_isolated_node": true
+        },
+        "timestamp": "2017-09-04 17:46:49 "
+    }
+}

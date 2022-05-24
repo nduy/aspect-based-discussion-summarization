@@ -1,0 +1,225 @@
+[ ] Loaded data set! Number of conversation thread: 80
+[ ] Start building sum graph in mode 1
+[i] Start building aspect graph for the ARTICLE.
+[ ]  - Building graph for segment 0
+[ ]    + Graph for group: art.0 	 member:                 	 has  29 nodes and  25 edges 
+[ ]  - Building graph for segment 1
+[ ]    + Graph for group: art.1 	 member:                 	 has  26 nodes and  21 edges 
+[ ]  - Building graph for segment 2
+[ ]    + Graph for group: art.2 	 member:                 	 has  95 nodes and  88 edges 
+[ ]  - Building graph for segment 3
+[ ]    + Graph for group: art.3 	 member:                 	 has  31 nodes and  27 edges 
+[ ]  - Building graph for segment 4
+[ ]    + Graph for group: art.4 	 member:                 	 has  16 nodes and  13 edges 
+[ ]  - Building graph for segment 5
+[ ]    + Graph for group: art.5 	 member:                 	 has  59 nodes and  54 edges 
+[ ]  - Building graph for segment 6
+[ ]    + Graph for group: art.6 	 member:                 	 has  39 nodes and  34 edges 
+[ ]  - Building graph for segment 7
+[E] Can't parse sentence this sentence for coreference "He said that in the last three years Bury's recycling rate has risen from 29.4% to 47.6% but he has ambitions to reach 75%. "We kn..."
+ --> Error: <RPCFault -32603: 'Internal error.' (None)>
+[W]  Unable to parse sentence for dependencies: Recycling just 10% more than w.
+[ ]     --> Error: <RPCFault -32603: 'Internal error.' (None)>
+[ ]    + Graph for group: art.7 	 member:                 	 has  30 nodes and  27 edges 
+[ ] 
+Start building aspect graph for COMMENTS, add up to the article graph.
+[i] Starting extractor Thread 0 with 10 data records
+[i] Starting extractor Thread 1 with 10 data records
+[i] Starting extractor Thread 2 with 10 data records
+[i] Starting extractor Thread 3 with 10 data records
+[i] Starting extractor Thread 4 with 10 data records
+[i] Starting extractor Thread 5 with 10 data records
+[i] Starting extractor Thread 6 with 10 data records
+[i] Starting extractor Thread 7 with 10 data records
+[i] Starting extractor Thread 8 with 10 data records
+[i] Starting extractor Thread 9 with 10 data records
+[ ]    + Graph for group: com.  	 member: 38262154        	 has   3 nodes and   3 edges 
+[ ]    + Graph for group: com.  	 member: 38262601        	 has   5 nodes and   4 edges 
+[ ]    + Graph for group: com.  	 member: 38263529        	 has   7 nodes and   4 edges 
+[ ]    + Graph for group: com.  	 member: 38263723        	 has   4 nodes and   4 edges 
+[ ]    + Graph for group: com.  	 member: 38262916        	 has   7 nodes and   4 edges 
+[ ]    + Graph for group: com.  	 member: 38266774        	 has  10 nodes and   7 edges 
+[ ]    + Graph for group: com.  	 member: 38265037        	 has   5 nodes and   3 edges 
+[ ]    + Graph for group: com.  	 member: 38260242        	 has   9 nodes and   7 edges 
+[ ]    + Graph for group: com.  	 member: 38263546        	 has  16 nodes and  16 edges 
+[ ]    + Graph for group: com.  	 member: 38268408        	 has   7 nodes and   6 edges 
+[ ]    + Graph for group: com.  	 member: 38262530        	 has  12 nodes and   8 edges 
+[W]  --> Unable to extract co-reference for sentence: "Food waste is placed in the br..."
+     --> Error: list index out of range.
+[ ]    + Graph for group: com.  	 member: 38275781        	 has  12 nodes and  10 edges 
+[ ]    + Graph for group: com.  	 member: 38261738        	 has   5 nodes and   4 edges 
+[ ]    + Graph for group: com.  	 member: 38260316        	 has   3 nodes and   2 edges 
+[ ]    + Graph for group: com.  	 member: 38270623        	 has  18 nodes and  20 edges 
+[ ]    + Graph for group: com.  	 member: 38280303        	 has  11 nodes and   8 edges 
+[ ]    + Graph for group: com.  	 member: 38280237        	 has  13 nodes and  11 edges 
+[ ]    + Graph for group: com.  	 member: 38263429        	 has   3 nodes and   2 edges 
+[ ]    + Graph for group: com.  	 member: 38266495        	 has   4 nodes and   2 edges 
+[ ]    + Graph for group: com.  	 member: 38269346        	 has  37 nodes and  36 edges 
+[ ]    + Graph for group: com.  	 member: 38267008        	 has  13 nodes and  12 edges 
+[ ]    + Graph for group: com.  	 member: 38269408        	 has  14 nodes and  17 edges 
+[ ]    + Graph for group: com.  	 member: 38272830        	 has   4 nodes and   3 edges 
+[ ]    + Graph for group: com.  	 member: 38265761        	 has   3 nodes and   2 edges 
+[ ]    + Graph for group: com.  	 member: 38271761        	 has   2 nodes and   1 edges 
+[ ]    + Graph for group: com.  	 member: 38261792        	 has   7 nodes and   6 edges 
+[ ]    + Graph for group: com.  	 member: 38269458        	 has  10 nodes and   7 edges 
+[ ]    + Graph for group: com.  	 member: 38272651        	 has  48 nodes and  42 edges 
+[ ]    + Graph for group: com.  	 member: 38278336        	 has  12 nodes and   8 edges 
+[ ]    + Graph for group: com.  	 member: 38309252        	 has   5 nodes and   4 edges 
+[ ]    + Graph for group: com.  	 member: 38279721        	 has  26 nodes and  19 edges 
+[ ]    + Graph for group: com.  	 member: 38283996        	 has  15 nodes and  11 edges 
+[ ]    + Graph for group: com.  	 member: 38261655        	 has   4 nodes and   3 edges 
+[ ]    + Graph for group: com.  	 member: 38262864        	 has  14 nodes and  10 edges 
+[ ]    + Graph for group: com.  	 member: 38260400        	 has   3 nodes and   3 edges 
+[ ]    + Graph for group: com.  	 member: 38262840        	 has  26 nodes and  20 edges 
+[ ]    + Graph for group: com.  	 member: 38269696        	 has   7 nodes and   6 edges 
+[W]  --> Unable to extract co-reference for sentence: "How much does an average or cr..."
+     --> Error: pop index out of range.
+[ ]    + Graph for group: com.  	 member: 38263137        	 has   5 nodes and   3 edges 
+[W]  --> Unable to extract co-reference for sentence: "  Where I live we have a fortn..."
+     --> Error: pop index out of range.
+[ ]    + Graph for group: com.  	 member: 38271528        	 has  48 nodes and  41 edges 
+[ ]    + Graph for group: com.  	 member: 38265315        	 has  30 nodes and  23 edges 
+[ ]    + Graph for group: com.  	 member: 38265916        	 has  28 nodes and  24 edges 
+[ ]    + Graph for group: com.  	 member: 38260819        	 has  11 nodes and   8 edges 
+[ ]    + Graph for group: com.  	 member: 38260414        	 has  15 nodes and  10 edges 
+[ ]    + Graph for group: com.  	 member: 38271541        	 has   7 nodes and   5 edges 
+[ ]    + Graph for group: com.  	 member: 38260352        	 has   3 nodes and   2 edges 
+[W]  --> Unable to extract co-reference for sentence: "  2 adults, 1 baby, 1 dog. We ..."
+     --> Error: pop index out of range.
+[W]  --> Unable to extract co-reference for sentence: "It is difficult with a baby in..."
+     --> Error: list index out of range.
+[E] Can't parse sentence this sentence for coreference "reusables have to be washed at high temperature and therefore use large quantities of electricity My washing machine takes in hot ..."
+ --> Error: timed out
+[ ]    + Graph for group: com.  	 member: 38262338        	 has   2 nodes and   1 edges 
+[ ]    + Graph for group: com.  	 member: 38265648        	 has  36 nodes and  39 edges 
+[ ]    + Graph for group: com.  	 member: 38260522        	 has  15 nodes and  11 edges 
+[ ]    + Graph for group: com.  	 member: 38275229        	 has  37 nodes and  26 edges 
+[ ]    + Graph for group: com.  	 member: 38272587        	 has   7 nodes and   4 edges 
+[ ]    + Graph for group: com.  	 member: 38263268        	 has   4 nodes and   4 edges 
+[ ]    + Graph for group: com.  	 member: 38268502        	 has   3 nodes and   2 edges 
+[ ]    + Graph for group: com.  	 member: 38268442        	 has  37 nodes and  35 edges 
+[ ]    + Graph for group: com.  	 member: 38274559        	 has   4 nodes and   2 edges 
+[ ]    + Graph for group: com.  	 member: 38268053        	 has  27 nodes and  22 edges 
+[ ]    + Graph for group: com.  	 member: 38278859        	 has  37 nodes and  29 edges 
+[ ]    + Graph for group: com.  	 member: 38262513        	 has   6 nodes and   4 edges 
+[i] Exiting extractor Thread 1
+[ ]    + Graph for group: com.  	 member: 38263970        	 has   2 nodes and   1 edges 
+[i] Exiting extractor Thread 3
+[ ]    + Graph for group: com.  	 member: 38275664        	 has  41 nodes and  30 edges 
+[ ]    + Graph for group: com.  	 member: 38260595        	 has  10 nodes and   9 edges 
+[ ]    + Graph for group: com.  	 member: 38303445        	 has   7 nodes and   7 edges 
+[ ]    + Graph for group: com.  	 member: 38265225        	 has   7 nodes and   7 edges 
+[ ]    + Graph for group: com.  	 member: 38263408        	 has   7 nodes and   4 edges 
+[ ]    + Graph for group: com.  	 member: 38264042        	 has  39 nodes and  33 edges 
+[ ]    + Graph for group: com.  	 member: 38261938        	 has  23 nodes and  16 edges 
+[ ]    + Graph for group: com.  	 member: 38263103        	 has  15 nodes and  13 edges 
+[ ]    + Graph for group: com.  	 member: 38302616        	 has   2 nodes and   1 edges 
+[ ]    + Graph for group: com.  	 member: 38265359        	 has  53 nodes and  41 edges 
+[ ]    + Graph for group: com.  	 member: 38267680        	 has  88 nodes and  76 edges 
+[ ]    + Graph for group: com.  	 member: 38263207        	 has  15 nodes and  12 edges 
+[ ]    + Graph for group: com.  	 member: 38302588        	 has   9 nodes and   8 edges 
+[ ]    + Graph for group: com.  	 member: 38260769        	 has  15 nodes and  11 edges 
+[i] Exiting extractor Thread 9
+[i] Exiting extractor Thread 8
+[ ]    + Graph for group: com.  	 member: 38260791        	 has   8 nodes and   9 edges 
+[W]  Unable to parse sentence for dependencies: If you wash full_load at 60 in.
+[ ]     --> Error: timed out
+[ ]    + Graph for group: com.  	 member: 38270127        	 has  10 nodes and   9 edges 
+[i] Exiting extractor Thread 7
+[ ]    + Graph for group: com.  	 member: 38277477        	 has  18 nodes and  12 edges 
+[ ]    + Graph for group: com.  	 member: 38263343        	 has   7 nodes and   6 edges 
+[ ]    + Graph for group: com.  	 member: 38274597        	 has   9 nodes and   6 edges 
+[ ]    + Graph for group: com.  	 member: 38263239        	 has  26 nodes and  22 edges 
+[ ]    + Graph for group: com.  	 member: 38274518        	 has   7 nodes and   8 edges 
+[i] Exiting extractor Thread 4
+[ ]    + Graph for group: com.  	 member: 38261875        	 has  22 nodes and  20 edges 
+[i] Exiting extractor Thread 2
+[ ]    + Graph for group: com.  	 member: 38260975        	 has   6 nodes and   5 edges 
+[ ]    + Graph for group: com.  	 member: 38263617        	 has  21 nodes and  14 edges 
+[ ]    + Graph for group: com.  	 member: 38263346        	 has  22 nodes and  20 edges 
+[ ]    + Graph for group: com.  	 member: 38275576        	 has   7 nodes and   6 edges 
+[ ]    + Graph for group: com.  	 member: 38275877        	 has  18 nodes and  13 edges 
+[ ]    + Graph for group: com.  	 member: 38268482        	 has   6 nodes and   7 edges 
+[i] Exiting extractor Thread 5
+[ ]    + Graph for group: com.  	 member: 38260768        	 has  22 nodes and  16 edges 
+[i] Exiting extractor Thread 0
+[ ]    + Graph for group: com.  	 member: 38268770        	 has   9 nodes and   7 edges 
+[i] Exiting extractor Thread 6
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[ ] Start graph Unification
+[ ]  - Start unification by matched keywords
+[ ]  - Finished unification by matched keywords
+[ ]  -> Unification by matched keywords complete! Number of nodes changed from 1643 to 908
+[ ]  - Start unification by semantic similarity of keywords
+[i]    + Loading model from ../models/glove.6B.200d.txt
+[ ]    + Model loading completed :)
+[ ]   -> Found 666 pairs whose similarity greater or equal threshold 0.85.
+[ ]  - Finished unification by semantic similarity for  keywords
+[ ]  -> Unification by semantic similarity  complete! Totally, Number of nodes changed from 1643 to 722
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[i] Elapsed time:  0:10:29.024548 seconds
+[i] Elapsed time:  0:10:29.072549 seconds
+[i] Elapsed time:  0:10:29.157422 seconds
+[ ] Start pruning aspect graph.
+[i] Start pruning the graph.
+[i]   --> up to Short word, black/white list, regex, length filter, 307 nodes and 804 edges removed
+[ ]   -> Found 29 edges whose similarity is less than threshold 0.15 to be removed. Number edges node changed 29
+[i]   --> up to Frequency and degree filter, 673 nodes and 1159 edges removed
+[i]   --> up to Isolated nodes filter, 673 nodes and 1159 edges removed
+[ ] --> Graph PRUNNING completed.
+    Number of nodes: 49
+    Number of edges: 96
+[ ] --> 673 nodes removed. 1159 edges removed.
+[i] Elapsed time:  0:10:29.240597 seconds
+[i]  Detecting communities.
+['hot_plastic_bin~com.~38260819~0x59f081ff', 'waste_food~com.~38263546~0x59f081a3', 'central_government_cut~com.~38264042~0x59f08243', 'weekly_collection~com.~38264042~0x59f0824e', 'cost~com.~38277477~0x59f08275', 'bin_space~art.5~~0x59f08180', 'people~art.1~~0x59f0815e', 'hoover_bag~com.~38267680~0x59f08231', 'working_alternate_week~com.~38268442~0x59f0822e', 'thing~com.~38271528~0x59f081d6', 'matter~com.~38275229~0x59f08228', 'fill~com.~38265359~0x59f08228', 'empty~com.~38260595~0x59f08242', 'size~com.~38268502~0x59f08230', 'recycle~art.6~~0x59f08192', 'family~com.~38260522~0x59f08203', 'great_idea~com.~38278336~0x59f081dd', 'move~art.0~~0x59f08156', 'stockport_council~com.~38261938~0x59f08245', 'front_line_service~art.2~~0x59f0816b', 'rat~com.~38263723~0x59f081a7', 'year_whilst_resident~com.~38260414~0x59f081fd', 'measure~art.0~~0x59f08157', 'lead~art.4~~0x59f0817a', 'adult~com.~38263346~0x59f08286', 'shiny_silver_fox~com.~38303445~0x59f08247', 'round_year~com.~38269346~0x59f081bd', 'compost~com.~38278336~0x59f081e3', 'stuff~com.~38278859~0x59f0821d', 'taxpayers_vote~com.~38262864~0x59f081ec', 'life~art.3~~0x59f08175', 'polystyrene_packaging~com.~38278859~0x59f0823d', 'medical_issue~com.~38274518~0x59f0827c', 'garden~com.~38275229~0x59f08221', 'whole_winter~com.~38269408~0x59f081c9', 'long_run~com.~38277477~0x59f08275', 'certain_point~com.~38275664~0x59f08240', 'paper~com.~38272651~0x59f081d6', 'instance~com.~38279721~0x59f081df', 'bottle~com.~38275664~0x59f0822b', 'end~com.~38263617~0x59f0827c', 'bury~art.4~~0x59f0817a', 'cardboard~com.~38272651~0x59f081d6', 'baby~com.~38275664~0x59f0820c', 'borough~com.~38262530~0x59f081ab', 'duff_household~art.5~~0x59f08180', 'problem~com.~38274559~0x59f08236', 'change~art.2~~0x59f08167', 'house~com.~38267680~0x59f08254']
+[ ] Detected communities: [set(['duff_household~art.5~~0x59f08180', 'adult~com.~38263346~0x59f08286', 'empty~com.~38260595~0x59f08242', 'baby~com.~38275664~0x59f0820c', 'change~art.2~~0x59f08167', 'bin_space~art.5~~0x59f08180']), set(['fill~com.~38265359~0x59f08228', 'cardboard~com.~38272651~0x59f081d6', 'family~com.~38260522~0x59f08203', 'paper~com.~38272651~0x59f081d6', 'problem~com.~38274559~0x59f08236', 'size~com.~38268502~0x59f08230', 'working_alternate_week~com.~38268442~0x59f0822e', 'garden~com.~38275229~0x59f08221', 'hoover_bag~com.~38267680~0x59f08231', 'bottle~com.~38275664~0x59f0822b', 'hot_plastic_bin~com.~38260819~0x59f081ff']), set(['front_line_service~art.2~~0x59f0816b', 'stockport_council~com.~38261938~0x59f08245', 'taxpayers_vote~com.~38262864~0x59f081ec', 'thing~com.~38271528~0x59f081d6', 'central_government_cut~com.~38264042~0x59f08243', 'round_year~com.~38269346~0x59f081bd', 'great_idea~com.~38278336~0x59f081dd']), set(['people~art.1~~0x59f0815e', 'life~art.3~~0x59f08175', 'recycle~art.6~~0x59f08192', 'weekly_collection~com.~38264042~0x59f0824e', 'matter~com.~38275229~0x59f08228', 'house~com.~38267680~0x59f08254', 'bury~art.4~~0x59f0817a', 'certain_point~com.~38275664~0x59f08240']), set(['whole_winter~com.~38269408~0x59f081c9', 'waste_food~com.~38263546~0x59f081a3', 'end~com.~38263617~0x59f0827c', 'polystyrene_packaging~com.~38278859~0x59f0823d', 'year_whilst_resident~com.~38260414~0x59f081fd', 'borough~com.~38262530~0x59f081ab', 'stuff~com.~38278859~0x59f0821d', 'compost~com.~38278336~0x59f081e3']), set(['instance~com.~38279721~0x59f081df', 'cost~com.~38277477~0x59f08275', 'long_run~com.~38277477~0x59f08275', 'move~art.0~~0x59f08156', 'measure~art.0~~0x59f08157', 'rat~com.~38263723~0x59f081a7', 'medical_issue~com.~38274518~0x59f0827c', 'lead~art.4~~0x59f0817a', 'shiny_silver_fox~com.~38303445~0x59f08247'])]
+[W] None of the word in string "empty" is in the dictionary or has invalid POS: a, s, v, n. Return zero vector.
+[i]  --> Community 0 has 1 zero key(s) out of 6
+[ ]  --> Remaining labels: duff_household, adult, new_baby, change, bin_space
+(5, 200) (5,)
+[-1 -1  1 -1 -1]
+[ ]   --> Outlier removal discarded 4 words. Remaining words: [u'new_baby']
+--->  [u'bin_space', u'duff_household', u'empty', u'adult', u'new_baby', u'change']
+[u'Sociological_terminology', u'Demography']
+[i]  --> Community 1 has 0 zero key(s) out of 11
+[ ]  --> Remaining labels: land_fill, cardboard, family, paper, nappy_problem, size, alternate_week, front_garden, supermarket_carrier_bag, plastic_bottle, grey_bin
+(11, 200) (11,)
+[-1 -1 -1 -1 -1 -1 -1 -1  1 -1  1]
+[ ]   --> Outlier removal discarded 9 words. Remaining words: [u'supermarket_carrier_bag' u'grey_bin']
+--->  [u'grey_bin', u'supermarket_carrier_bag', u'land_fill', u'family', u'alternate_week', u'cardboard', u'nappy_problem', u'size', u'front_garden', u'paper']
+[u'American_inventions', u'Geomorphology']
+[i]  --> Community 2 has 0 zero key(s) out of 7
+[ ]  --> Remaining labels: council_service, bury_council, taxpayers_vote, know, lawn_cut, round_year, stupid_idea
+(7, 200) (7,)
+[ 1  1  1  1  1  1 -1]
+[ ]   --> Outlier removal discarded 1 words. Remaining words: [u'council_service' u'bury_council' u'taxpayers_vote' u'know' u'lawn_cut'
+ u'round_year']
+--->  [u'bury_council', u'lawn_cut', u'know', u'stupid_idea', u'council_service', u'round_year', u'taxpayers_vote']
+[u'Cognition', u'Years']
+[W] None of the word in string "recycle" is in the dictionary or has invalid POS: v. Return zero vector.
+[W] None of the word in string "bury" is in the dictionary or has invalid POS: v. Return zero vector.
+[i]  --> Community 3 has 2 zero key(s) out of 8
+[ ]  --> Remaining labels: people, easy_life, bin_collection, matter, house, certain_point
+(6, 200) (6,)
+[-1  1  1 -1  1 -1]
+[ ]   --> Outlier removal discarded 3 words. Remaining words: [u'easy_life' u'bin_collection' u'house']
+--->  [u'bin_collection', u'recycle', u'people', u'bury', u'easy_life', u'house', u'certain_point', u'matter']
+[u'Structural_system', u'Biology']
+[i]  --> Community 4 has 0 zero key(s) out of 8
+[ ]  --> Remaining labels: whole_winter, organic_waste, end, waste_packaging, year_whilst_resident, zero_waste_borough, recyclable_stuff, garden_compost
+(8, 200) (8,)
+[-1 -1 -1  1 -1 -1 -1 -1]
+[ ]   --> Outlier removal discarded 7 words. Remaining words: [u'waste_packaging']
+--->  [u'organic_waste', u'recyclable_stuff', u'garden_compost', u'year_whilst_resident', u'zero_waste_borough', u'whole_winter', u'end', u'waste_packaging']
+[u'Types_of_country_subdivisions', u'Years']
+[i]  --> Community 5 has 0 zero key(s) out of 9
+[ ]  --> Remaining labels: example, desperate_cost, long_run, move, saving_measure, rat, green_issue, lead, shiny_silver_fox
+(9, 200) (9,)
+[-1  1 -1 -1  1  1  1  1  1]
+[ ]   --> Outlier removal discarded 3 words. Remaining words: [u'desperate_cost' u'saving_measure' u'rat' u'green_issue' u'lead'
+ u'shiny_silver_fox']
+--->  [u'green_issue', u'desperate_cost', u'example', u'rat', u'long_run', u'move', u'lead', u'shiny_silver_fox', u'saving_measure']
+[u'Occupational_safety_and_health', u'Chemical_elements']
+[i] Elapsed time:  0:39:26.437115 seconds
+Execution time:  0:39:26.528304 seconds

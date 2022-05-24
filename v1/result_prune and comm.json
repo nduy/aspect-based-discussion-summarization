@@ -1,0 +1,1881 @@
+{
+    "edges": [
+        {
+            "from": "green~art.2~~0x59c53d13",
+            "id": "green~art.2~~0x59c53d13|blue~art.6~~0x59c53d40",
+            "label": "conj",
+            "title": "*Freq: 4 <br>*Labels: <br>conj^4",
+            "to": "blue~art.6~~0x59c53d40",
+            "value": 4
+        },
+        {
+            "from": "fill~com.~0x559c9dd1fd8dc^76~0x59c53e8b",
+            "id": "fill~com.~0x559c9dd1fd8dc^76~0x59c53e8b|bin~com.~0x559c9dd1ff7bb^88~0x59c53e4e",
+            "label": "dobj",
+            "title": "*Freq: 4 <br>*Labels: <br>dobj^2<br>  -ccomp^2",
+            "to": "bin~com.~0x559c9dd1ff7bb^88~0x59c53e4e",
+            "value": 4
+        },
+        {
+            "from": "fill~com.~0x559c9dd1fd8dc^76~0x59c53e8b",
+            "id": "fill~com.~0x559c9dd1fd8dc^76~0x59c53e8b|week~com.~0x559c9dd1f3beb^15~0x59c53dca",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "week~com.~0x559c9dd1f3beb^15~0x59c53dca",
+            "value": 2
+        },
+        {
+            "from": "fill~com.~0x559c9dd1fd8dc^76~0x59c53e8b",
+            "id": "fill~com.~0x559c9dd1fd8dc^76~0x59c53e8b|end~com.~0x559c9dd1fdb4d^77~0x59c53e82",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "end~com.~0x559c9dd1fdb4d^77~0x59c53e82",
+            "value": 2
+        },
+        {
+            "from": "fill~com.~0x559c9dd1fd8dc^76~0x59c53e8b",
+            "id": "fill~com.~0x559c9dd1fd8dc^76~0x59c53e8b|winter~com.~0x559c9dd1f3667^13~0x59c53dbb",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "winter~com.~0x559c9dd1f3667^13~0x59c53dbb",
+            "value": 2
+        },
+        {
+            "from": "councillor~com.~0x559c9dd1f7fc8^41~0x59c53e2e",
+            "id": "councillor~com.~0x559c9dd1f7fc8^41~0x59c53e2e|bury~com.~0x559c9dd1f87ca^46~0x59c53e50",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "bury~com.~0x559c9dd1f87ca^46~0x59c53e50",
+            "value": 2
+        },
+        {
+            "from": "councillor~com.~0x559c9dd1f7fc8^41~0x59c53e2e",
+            "id": "councillor~com.~0x559c9dd1f7fc8^41~0x59c53e2e|vote~com.~0x559c9dd1f4efb^23~0x59c53dfd",
+            "label": "ccomp",
+            "title": "*Freq: 2 <br>*Labels: <br>ccomp^2",
+            "to": "vote~com.~0x559c9dd1f4efb^23~0x59c53dfd",
+            "value": 2
+        },
+        {
+            "from": "struggle~com.~0x559c9dd1f49a1^21~0x59c53dd0",
+            "id": "struggle~com.~0x559c9dd1f49a1^21~0x59c53dd0|collection~com.~0x559c9dd1f4efb^23~0x59c53ddd",
+            "label": "nmod",
+            "title": "*Freq: 4 <br>*Labels: <br>nmod^4",
+            "to": "collection~com.~0x559c9dd1f4efb^23~0x59c53ddd",
+            "value": 4
+        },
+        {
+            "from": "grey_bin~art.6~~0x59c53d40",
+            "id": "grey_bin~art.6~~0x59c53d40|week~com.~0x559c9dd1f3beb^15~0x59c53dca",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "week~com.~0x559c9dd1f3beb^15~0x59c53dca",
+            "value": 2
+        },
+        {
+            "from": "rat~com.~0x559c9dd1f7fc8^41~0x59c53e2e",
+            "id": "rat~com.~0x559c9dd1f7fc8^41~0x59c53e2e|size~com.~0x559c9dd1f7c65^39~0x59c53e05",
+            "label": "dep",
+            "title": "*Freq: 4 <br>*Labels: <br>dep^4",
+            "to": "size~com.~0x559c9dd1f7c65^39~0x59c53e05",
+            "value": 4
+        },
+        {
+            "from": "rat~com.~0x559c9dd1f7fc8^41~0x59c53e2e",
+            "id": "rat~com.~0x559c9dd1f7fc8^41~0x59c53e2e|vermin~com.~0x559c9dd1f3beb^15~0x59c53dbd",
+            "label": "conj",
+            "title": "*Freq: 4 <br>*Labels: <br>conj^4",
+            "to": "vermin~com.~0x559c9dd1f3beb^15~0x59c53dbd",
+            "value": 4
+        },
+        {
+            "from": "rat~com.~0x559c9dd1f7fc8^41~0x59c53e2e",
+            "id": "rat~com.~0x559c9dd1f7fc8^41~0x59c53e2e|look~com.~0x559c9dd2000f7^92~0x59c53e47",
+            "label": "GO",
+            "title": "*Freq: 2 <br>*Labels: <br>GO^2",
+            "to": "look~com.~0x559c9dd2000f7^92~0x59c53e47",
+            "value": 2
+        },
+        {
+            "from": "rat~com.~0x559c9dd1f7fc8^41~0x59c53e2e",
+            "id": "rat~com.~0x559c9dd1f7fc8^41~0x59c53e2e|fox~com.~0x559c9dd1f87ca^46~0x59c53e44",
+            "label": "conj",
+            "title": "*Freq: 2 <br>*Labels: <br>conj^2",
+            "to": "fox~com.~0x559c9dd1f87ca^46~0x59c53e44",
+            "value": 2
+        },
+        {
+            "from": "article~com.~0x559c9dd1faa9f^57~0x59c53e54",
+            "id": "article~com.~0x559c9dd1faa9f^57~0x59c53e54|nappy~com.~0x559c9dd1f4044^16~0x59c53da5",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "nappy~com.~0x559c9dd1f4044^16~0x59c53da5",
+            "value": 2
+        },
+        {
+            "from": "vote~com.~0x559c9dd1f4efb^23~0x59c53dfd",
+            "id": "vote~com.~0x559c9dd1f4efb^23~0x59c53dfd|lead~art.5~~0x59c53d34",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "lead~art.5~~0x59c53d34",
+            "value": 2
+        },
+        {
+            "from": "vote~com.~0x559c9dd1f4efb^23~0x59c53dfd",
+            "id": "vote~com.~0x559c9dd1f4efb^23~0x59c53dfd|week~com.~0x559c9dd1f3beb^15~0x59c53dca",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "week~com.~0x559c9dd1f3beb^15~0x59c53dca",
+            "value": 2
+        },
+        {
+            "from": "vote~com.~0x559c9dd1f4efb^23~0x59c53dfd",
+            "id": "vote~com.~0x559c9dd1f4efb^23~0x59c53dfd|year~com.~0x559c9dd1f5cfd^29~0x59c53ddc",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "year~com.~0x559c9dd1f5cfd^29~0x59c53ddc",
+            "value": 2
+        },
+        {
+            "from": "rubbish~com.~0x559c9dd1fceea^71~0x59c53e7d",
+            "id": "rubbish~com.~0x559c9dd1fceea^71~0x59c53e7d|recycle~com.~0x559c9dd1f87ca^46~0x59c53e17",
+            "label": "acl",
+            "title": "*Freq: 2 <br>*Labels: <br>acl^2",
+            "to": "recycle~com.~0x559c9dd1f87ca^46~0x59c53e17",
+            "value": 2
+        },
+        {
+            "from": "rubbish~com.~0x559c9dd1fceea^71~0x59c53e7d",
+            "id": "rubbish~com.~0x559c9dd1fceea^71~0x59c53e7d|green_rubbish_recycling~com.~0x559c9dd1f87ca^46~0x59c53e13",
+            "label": "amod",
+            "title": "*Freq: 2 <br>*Labels: <br>amod^2",
+            "to": "green_rubbish_recycling~com.~0x559c9dd1f87ca^46~0x59c53e13",
+            "value": 2
+        },
+        {
+            "from": "rubbish~com.~0x559c9dd1fceea^71~0x59c53e7d",
+            "id": "rubbish~com.~0x559c9dd1fceea^71~0x59c53e7d|full~com.~0x559c9dd1fc3b1^65~0x59c53e75",
+            "label": "case",
+            "title": "*Freq: 2 <br>*Labels: <br>case^2",
+            "to": "full~com.~0x559c9dd1fc3b1^65~0x59c53e75",
+            "value": 2
+        },
+        {
+            "from": "rubbish~com.~0x559c9dd1fceea^71~0x59c53e7d",
+            "id": "rubbish~com.~0x559c9dd1fceea^71~0x59c53e7d|little~com.~0x559c9dd1ffbab^90~0x59c53e35",
+            "label": "amod",
+            "title": "*Freq: 2 <br>*Labels: <br>amod^2",
+            "to": "little~com.~0x559c9dd1ffbab^90~0x59c53e35",
+            "value": 2
+        },
+        {
+            "from": "rubbish~com.~0x559c9dd1fceea^71~0x59c53e7d",
+            "id": "rubbish~com.~0x559c9dd1fceea^71~0x59c53e7d|house~com.~0x559c9dd1fb04f^58~0x59c53e07",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "house~com.~0x559c9dd1fb04f^58~0x59c53e07",
+            "value": 2
+        },
+        {
+            "from": "rubbish~com.~0x559c9dd1fceea^71~0x59c53e7d",
+            "id": "rubbish~com.~0x559c9dd1fceea^71~0x59c53e7d|vermin~com.~0x559c9dd1f3beb^15~0x59c53dbd",
+            "label": "ATTRACT",
+            "title": "*Freq: 2 <br>*Labels: <br>ATTRACT^2",
+            "to": "vermin~com.~0x559c9dd1f3beb^15~0x59c53dbd",
+            "value": 2
+        },
+        {
+            "from": "matter~com.~0x559c9dd1f5cfd^29~0x59c53de6",
+            "id": "matter~com.~0x559c9dd1f5cfd^29~0x59c53de6|people~com.~0x559c9dd1fded0^78~0x59c53e45",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "people~com.~0x559c9dd1fded0^78~0x59c53e45",
+            "value": 2
+        },
+        {
+            "from": "matter~com.~0x559c9dd1f5cfd^29~0x59c53de6",
+            "id": "matter~com.~0x559c9dd1f5cfd^29~0x59c53de6|service~com.~0x559c9dd1fe5f7^80~0x59c53e16",
+            "label": "nsubj",
+            "title": "*Freq: 2 <br>*Labels: <br>nsubj^2",
+            "to": "service~com.~0x559c9dd1fe5f7^80~0x59c53e16",
+            "value": 2
+        },
+        {
+            "from": "recycle~com.~0x559c9dd1f87ca^46~0x59c53e17",
+            "id": "recycle~com.~0x559c9dd1f87ca^46~0x59c53e17|rubbish~com.~0x559c9dd1fceea^71~0x59c53e7d",
+            "label": "BE",
+            "title": "*Freq: 4 <br>*Labels: <br>BE^2<br>  -amod^2",
+            "to": "rubbish~com.~0x559c9dd1fceea^71~0x59c53e7d",
+            "value": 4
+        },
+        {
+            "from": "recycle~com.~0x559c9dd1f87ca^46~0x59c53e17",
+            "id": "recycle~com.~0x559c9dd1f87ca^46~0x59c53e17|waste~com.~0x559c9dd1f6ff6^35~0x59c53e20",
+            "label": "BE",
+            "title": "*Freq: 2 <br>*Labels: <br>BE^2",
+            "to": "waste~com.~0x559c9dd1f6ff6^35~0x59c53e20",
+            "value": 2
+        },
+        {
+            "from": "stuff~com.~0x559c9dd1f5cfd^29~0x59c53dd7",
+            "id": "stuff~com.~0x559c9dd1f5cfd^29~0x59c53dd7|compost~com.~0x559c9dd1f58cb^27~0x59c53dc8",
+            "label": "acl",
+            "title": "*Freq: 2 <br>*Labels: <br>acl^2",
+            "to": "compost~com.~0x559c9dd1f58cb^27~0x59c53dc8",
+            "value": 2
+        },
+        {
+            "from": "sort~com.~0x559c9dd1f6ff6^35~0x59c53e2f",
+            "id": "sort~com.~0x559c9dd1f6ff6^35~0x59c53e2f|fly-tipping~art.5~~0x59c53d32",
+            "label": "dobj",
+            "title": "*Freq: 2 <br>*Labels: <br>dobj^2",
+            "to": "fly-tipping~art.5~~0x59c53d32",
+            "value": 2
+        },
+        {
+            "from": "vermin~com.~0x559c9dd1f3beb^15~0x59c53dbd",
+            "id": "vermin~com.~0x559c9dd1f3beb^15~0x59c53dbd|fly-tipping~art.5~~0x59c53d32",
+            "label": "conj",
+            "title": "*Freq: 2 <br>*Labels: <br>conj^2",
+            "to": "fly-tipping~art.5~~0x59c53d32",
+            "value": 2
+        },
+        {
+            "from": "vermin~com.~0x559c9dd1f3beb^15~0x59c53dbd",
+            "id": "vermin~com.~0x559c9dd1f3beb^15~0x59c53dbd|look~com.~0x559c9dd2000f7^92~0x59c53e47",
+            "label": "GO",
+            "title": "*Freq: 2 <br>*Labels: <br>GO^2",
+            "to": "look~com.~0x559c9dd2000f7^92~0x59c53e47",
+            "value": 2
+        },
+        {
+            "from": "collection~com.~0x559c9dd1f4efb^23~0x59c53ddd",
+            "id": "collection~com.~0x559c9dd1f4efb^23~0x59c53ddd|recycle~com.~0x559c9dd1f87ca^46~0x59c53e17",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "recycle~com.~0x559c9dd1f87ca^46~0x59c53e17",
+            "value": 2
+        },
+        {
+            "from": "collection~com.~0x559c9dd1f4efb^23~0x59c53ddd",
+            "id": "collection~com.~0x559c9dd1f4efb^23~0x59c53ddd|fortnightly~com.~0x559c9dd1ff307^86~0x59c53e92",
+            "label": "amod",
+            "title": "*Freq: 22 <br>*Labels: <br>amod^20<br>  -advmod^2",
+            "to": "fortnightly~com.~0x559c9dd1ff307^86~0x59c53e92",
+            "value": 22
+        },
+        {
+            "from": "size~com.~0x559c9dd1f7c65^39~0x59c53e05",
+            "id": "size~com.~0x559c9dd1f7c65^39~0x59c53e05|garden~com.~0x559c9dd1f5cfd^29~0x59c53de2",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "garden~com.~0x559c9dd1f5cfd^29~0x59c53de2",
+            "value": 2
+        },
+        {
+            "from": "size~com.~0x559c9dd1f7c65^39~0x59c53e05",
+            "id": "size~com.~0x559c9dd1f7c65^39~0x59c53e05|councillor~com.~0x559c9dd1f7fc8^41~0x59c53e2e",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "councillor~com.~0x559c9dd1f7fc8^41~0x59c53e2e",
+            "value": 2
+        },
+        {
+            "from": "fox~com.~0x559c9dd1f87ca^46~0x59c53e44",
+            "id": "fox~com.~0x559c9dd1f87ca^46~0x59c53e44|vermin~com.~0x559c9dd1f3beb^15~0x59c53dbd",
+            "label": "conj",
+            "title": "*Freq: 2 <br>*Labels: <br>conj^2",
+            "to": "vermin~com.~0x559c9dd1f3beb^15~0x59c53dbd",
+            "value": 2
+        },
+        {
+            "from": "flat~com.~0x559c9dd1f254c^5~0x59c53d9f",
+            "id": "flat~com.~0x559c9dd1f254c^5~0x59c53d9f|adult~com.~0x559c9dd1f56f5^26~0x59c53dbd",
+            "label": "appos",
+            "title": "*Freq: 2 <br>*Labels: <br>appos^2",
+            "to": "adult~com.~0x559c9dd1f56f5^26~0x59c53dbd",
+            "value": 2
+        },
+        {
+            "from": "flat~com.~0x559c9dd1f254c^5~0x59c53d9f",
+            "id": "flat~com.~0x559c9dd1f254c^5~0x59c53d9f|weekly_collection~com.~0x559c9dd1f56f5^26~0x59c53dbd",
+            "label": "HAVE",
+            "title": "*Freq: 2 <br>*Labels: <br>HAVE^2",
+            "to": "weekly_collection~com.~0x559c9dd1f56f5^26~0x59c53dbd",
+            "value": 2
+        },
+        {
+            "from": "flat~com.~0x559c9dd1f254c^5~0x59c53d9f",
+            "id": "flat~com.~0x559c9dd1f254c^5~0x59c53d9f|rubbish~com.~0x559c9dd1fceea^71~0x59c53e7d",
+            "label": "HAVE",
+            "title": "*Freq: 2 <br>*Labels: <br>HAVE^2",
+            "to": "rubbish~com.~0x559c9dd1fceea^71~0x59c53e7d",
+            "value": 2
+        },
+        {
+            "from": "lead~art.5~~0x59c53d34",
+            "id": "lead~art.5~~0x59c53d34|move~art.2~~0x59c53d15",
+            "label": "nsubj",
+            "title": "*Freq: 2 <br>*Labels: <br>nsubj^2",
+            "to": "move~art.2~~0x59c53d15",
+            "value": 2
+        },
+        {
+            "from": "lead~art.5~~0x59c53d34",
+            "id": "lead~art.5~~0x59c53d34|medical_issues~com.~0x559c9dd1fece9^83~0x59c53e7b",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "medical_issues~com.~0x559c9dd1fece9^83~0x59c53e7b",
+            "value": 2
+        },
+        {
+            "from": "able~com.~0x559c9dd1f8131^42~0x59c53dd2",
+            "id": "able~com.~0x559c9dd1f8131^42~0x59c53dd2|family~com.~0x559c9dd1fb3a7^59~0x59c53e40",
+            "label": "nsubj",
+            "title": "*Freq: 2 <br>*Labels: <br>nsubj^2",
+            "to": "family~com.~0x559c9dd1fb3a7^59~0x59c53e40",
+            "value": 2
+        },
+        {
+            "from": "able~com.~0x559c9dd1f8131^42~0x59c53dd2",
+            "id": "able~com.~0x559c9dd1f8131^42~0x59c53dd2|disposable_nappies~art.6~~0x59c53d3c",
+            "label": "advcl",
+            "title": "*Freq: 2 <br>*Labels: <br>advcl^2",
+            "to": "disposable_nappies~art.6~~0x59c53d3c",
+            "value": 2
+        },
+        {
+            "from": "able~com.~0x559c9dd1f8131^42~0x59c53dd2",
+            "id": "able~com.~0x559c9dd1f8131^42~0x59c53dd2|people~com.~0x559c9dd1fded0^78~0x59c53e45",
+            "label": "nsubj",
+            "title": "*Freq: 2 <br>*Labels: <br>nsubj^2",
+            "to": "people~com.~0x559c9dd1fded0^78~0x59c53e45",
+            "value": 2
+        },
+        {
+            "from": "look~com.~0x559c9dd2000f7^92~0x59c53e47",
+            "id": "look~com.~0x559c9dd2000f7^92~0x59c53e47|resident~com.~0x559c9dd1f9b20^51~0x59c53e45",
+            "label": "nsubj",
+            "title": "*Freq: 2 <br>*Labels: <br>nsubj^2",
+            "to": "resident~com.~0x559c9dd1f9b20^51~0x59c53e45",
+            "value": 2
+        },
+        {
+            "from": "look~com.~0x559c9dd2000f7^92~0x59c53e47",
+            "id": "look~com.~0x559c9dd2000f7^92~0x59c53e47|package~com.~0x559c9dd1f4492^18~0x59c53d9d",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "package~com.~0x559c9dd1f4492^18~0x59c53d9d",
+            "value": 2
+        },
+        {
+            "from": "empty~com.~0x559c9dd1f541d^25~0x59c53dfd",
+            "id": "empty~com.~0x559c9dd1f541d^25~0x59c53dfd|bin~com.~0x559c9dd1ff7bb^88~0x59c53e4e",
+            "label": "BE",
+            "title": "*Freq: 2 <br>*Labels: <br>BE^2",
+            "to": "bin~com.~0x559c9dd1ff7bb^88~0x59c53e4e",
+            "value": 2
+        },
+        {
+            "from": "empty~com.~0x559c9dd1f541d^25~0x59c53dfd",
+            "id": "empty~com.~0x559c9dd1f541d^25~0x59c53dfd|change~com.~0x559c9dd1f2efa^10~0x59c53da0",
+            "label": "conj",
+            "title": "*Freq: 2 <br>*Labels: <br>conj^2",
+            "to": "change~com.~0x559c9dd1f2efa^10~0x59c53da0",
+            "value": 2
+        },
+        {
+            "from": "full~com.~0x559c9dd1fc3b1^65~0x59c53e75",
+            "id": "full~com.~0x559c9dd1fc3b1^65~0x59c53e75|week~com.~0x559c9dd1f3beb^15~0x59c53dca",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "week~com.~0x559c9dd1f3beb^15~0x59c53dca",
+            "value": 2
+        },
+        {
+            "from": "full~com.~0x559c9dd1fc3b1^65~0x59c53e75",
+            "id": "full~com.~0x559c9dd1fc3b1^65~0x59c53e75|adult~com.~0x559c9dd1f56f5^26~0x59c53dbd",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "adult~com.~0x559c9dd1f56f5^26~0x59c53dbd",
+            "value": 2
+        },
+        {
+            "from": "full~com.~0x559c9dd1fc3b1^65~0x59c53e75",
+            "id": "full~com.~0x559c9dd1fc3b1^65~0x59c53e75|struggle~com.~0x559c9dd1f49a1^21~0x59c53dd0",
+            "label": "parataxis",
+            "title": "*Freq: 2 <br>*Labels: <br>parataxis^2",
+            "to": "struggle~com.~0x559c9dd1f49a1^21~0x59c53dd0",
+            "value": 2
+        },
+        {
+            "from": "full~com.~0x559c9dd1fc3b1^65~0x59c53e75",
+            "id": "full~com.~0x559c9dd1fc3b1^65~0x59c53e75|bin~com.~0x559c9dd1ff7bb^88~0x59c53e4e",
+            "label": "nsubj",
+            "title": "*Freq: 6 <br>*Labels: <br>nsubj^4<br>  -dep^2",
+            "to": "bin~com.~0x559c9dd1ff7bb^88~0x59c53e4e",
+            "value": 6
+        },
+        {
+            "from": "week~com.~0x559c9dd1f3beb^15~0x59c53dca",
+            "id": "week~com.~0x559c9dd1f3beb^15~0x59c53dca|waste~com.~0x559c9dd1f6ff6^35~0x59c53e20",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "waste~com.~0x559c9dd1f6ff6^35~0x59c53e20",
+            "value": 2
+        },
+        {
+            "from": "disposable_nappies~art.6~~0x59c53d3c",
+            "id": "disposable_nappies~art.6~~0x59c53d3c|recycle~com.~0x559c9dd1f87ca^46~0x59c53e17",
+            "label": "amod",
+            "title": "*Freq: 2 <br>*Labels: <br>amod^2",
+            "to": "recycle~com.~0x559c9dd1f87ca^46~0x59c53e17",
+            "value": 2
+        },
+        {
+            "from": "disposable_nappies~art.6~~0x59c53d3c",
+            "id": "disposable_nappies~art.6~~0x59c53d3c|grey_bin~art.6~~0x59c53d40",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "grey_bin~art.6~~0x59c53d40",
+            "value": 2
+        },
+        {
+            "from": "end~com.~0x559c9dd1fdb4d^77~0x59c53e82",
+            "id": "end~com.~0x559c9dd1fdb4d^77~0x59c53e82|cardboard~com.~0x559c9dd1f3667^13~0x59c53dc1",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "cardboard~com.~0x559c9dd1f3667^13~0x59c53dc1",
+            "value": 2
+        },
+        {
+            "from": "end~com.~0x559c9dd1fdb4d^77~0x59c53e82",
+            "id": "end~com.~0x559c9dd1fdb4d^77~0x59c53e82|waste~com.~0x559c9dd1f6ff6^35~0x59c53e20",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "waste~com.~0x559c9dd1f6ff6^35~0x59c53e20",
+            "value": 2
+        },
+        {
+            "from": "house~com.~0x559c9dd1fb04f^58~0x59c53e07",
+            "id": "house~com.~0x559c9dd1fb04f^58~0x59c53e07|fill~com.~0x559c9dd1fd8dc^76~0x59c53e8b",
+            "label": "conj",
+            "title": "*Freq: 2 <br>*Labels: <br>conj^2",
+            "to": "fill~com.~0x559c9dd1fd8dc^76~0x59c53e8b",
+            "value": 2
+        },
+        {
+            "from": "people~com.~0x559c9dd1fded0^78~0x59c53e45",
+            "id": "people~com.~0x559c9dd1fded0^78~0x59c53e45|collection~com.~0x559c9dd1f4efb^23~0x59c53ddd",
+            "label": "appos",
+            "title": "*Freq: 2 <br>*Labels: <br>appos^2",
+            "to": "collection~com.~0x559c9dd1f4efb^23~0x59c53ddd",
+            "value": 2
+        },
+        {
+            "from": "people~com.~0x559c9dd1fded0^78~0x59c53e45",
+            "id": "people~com.~0x559c9dd1fded0^78~0x59c53e45|vote~com.~0x559c9dd1f4efb^23~0x59c53dfd",
+            "label": "DO",
+            "title": "*Freq: 2 <br>*Labels: <br>DO^2",
+            "to": "vote~com.~0x559c9dd1f4efb^23~0x59c53dfd",
+            "value": 2
+        },
+        {
+            "from": "people~com.~0x559c9dd1fded0^78~0x59c53e45",
+            "id": "people~com.~0x559c9dd1fded0^78~0x59c53e45|bin~com.~0x559c9dd1ff7bb^88~0x59c53e4e",
+            "label": "FILL",
+            "title": "*Freq: 2 <br>*Labels: <br>FILL^2",
+            "to": "bin~com.~0x559c9dd1ff7bb^88~0x59c53e4e",
+            "value": 2
+        },
+        {
+            "from": "people~com.~0x559c9dd1fded0^78~0x59c53e45",
+            "id": "people~com.~0x559c9dd1fded0^78~0x59c53e45|amount~com.~0x559c9dd1f3192^11~0x59c53db6",
+            "label": "GENERATE",
+            "title": "*Freq: 2 <br>*Labels: <br>GENERATE^2",
+            "to": "amount~com.~0x559c9dd1f3192^11~0x59c53db6",
+            "value": 2
+        },
+        {
+            "from": "people~com.~0x559c9dd1fded0^78~0x59c53e45",
+            "id": "people~com.~0x559c9dd1fded0^78~0x59c53e45|weekly_collection~com.~0x559c9dd1f56f5^26~0x59c53dbd",
+            "label": "MANAGE",
+            "title": "*Freq: 2 <br>*Labels: <br>MANAGE^2",
+            "to": "weekly_collection~com.~0x559c9dd1f56f5^26~0x59c53dbd",
+            "value": 2
+        },
+        {
+            "from": "people~com.~0x559c9dd1fded0^78~0x59c53e45",
+            "id": "people~com.~0x559c9dd1fded0^78~0x59c53e45|rubbish~com.~0x559c9dd1fceea^71~0x59c53e7d",
+            "label": "STEAL",
+            "title": "*Freq: 2 <br>*Labels: <br>STEAL^2",
+            "to": "rubbish~com.~0x559c9dd1fceea^71~0x59c53e7d",
+            "value": 2
+        },
+        {
+            "from": "green_rubbish_recycling~com.~0x559c9dd1f87ca^46~0x59c53e13",
+            "id": "green_rubbish_recycling~com.~0x559c9dd1f87ca^46~0x59c53e13|week~com.~0x559c9dd1f3beb^15~0x59c53dca",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "week~com.~0x559c9dd1f3beb^15~0x59c53dca",
+            "value": 2
+        },
+        {
+            "from": "compost~com.~0x559c9dd1f58cb^27~0x59c53dc8",
+            "id": "compost~com.~0x559c9dd1f58cb^27~0x59c53dc8|package~com.~0x559c9dd1f4492^18~0x59c53d9d",
+            "label": "advcl",
+            "title": "*Freq: 2 <br>*Labels: <br>advcl^2",
+            "to": "package~com.~0x559c9dd1f4492^18~0x59c53d9d",
+            "value": 2
+        },
+        {
+            "from": "compost~com.~0x559c9dd1f58cb^27~0x59c53dc8",
+            "id": "compost~com.~0x559c9dd1f58cb^27~0x59c53dc8|stuff~com.~0x559c9dd1f5cfd^29~0x59c53dd7",
+            "label": "BE",
+            "title": "*Freq: 2 <br>*Labels: <br>BE^2",
+            "to": "stuff~com.~0x559c9dd1f5cfd^29~0x59c53dd7",
+            "value": 2
+        },
+        {
+            "from": "compost~com.~0x559c9dd1f58cb^27~0x59c53dc8",
+            "id": "compost~com.~0x559c9dd1f58cb^27~0x59c53dc8|winter~com.~0x559c9dd1f3667^13~0x59c53dbb",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "winter~com.~0x559c9dd1f3667^13~0x59c53dbb",
+            "value": 2
+        },
+        {
+            "from": "bury~com.~0x559c9dd1f87ca^46~0x59c53e50",
+            "id": "bury~com.~0x559c9dd1f87ca^46~0x59c53e50|bin~com.~0x559c9dd1ff7bb^88~0x59c53e4e",
+            "label": "PROVIDE",
+            "title": "*Freq: 2 <br>*Labels: <br>PROVIDE^2",
+            "to": "bin~com.~0x559c9dd1ff7bb^88~0x59c53e4e",
+            "value": 2
+        },
+        {
+            "from": "bury~com.~0x559c9dd1f87ca^46~0x59c53e50",
+            "id": "bury~com.~0x559c9dd1f87ca^46~0x59c53e50|recycle~com.~0x559c9dd1f87ca^46~0x59c53e17",
+            "label": "dep",
+            "title": "*Freq: 2 <br>*Labels: <br>dep^2",
+            "to": "recycle~com.~0x559c9dd1f87ca^46~0x59c53e17",
+            "value": 2
+        },
+        {
+            "from": "bury~com.~0x559c9dd1f87ca^46~0x59c53e50",
+            "id": "bury~com.~0x559c9dd1f87ca^46~0x59c53e50|year~com.~0x559c9dd1f5cfd^29~0x59c53ddc",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "year~com.~0x559c9dd1f5cfd^29~0x59c53ddc",
+            "value": 2
+        },
+        {
+            "from": "medical_issues~com.~0x559c9dd1fece9^83~0x59c53e7b",
+            "id": "medical_issues~com.~0x559c9dd1fece9^83~0x59c53e7b|article~com.~0x559c9dd1faa9f^57~0x59c53e54",
+            "label": "dep",
+            "title": "*Freq: 2 <br>*Labels: <br>dep^2",
+            "to": "article~com.~0x559c9dd1faa9f^57~0x59c53e54",
+            "value": 2
+        },
+        {
+            "from": "susan_southworth~art.5~~0x59c53d36",
+            "id": "susan_southworth~art.5~~0x59c53d36|lead~art.5~~0x59c53d34",
+            "label": "INSIST",
+            "title": "*Freq: 2 <br>*Labels: <br>INSIST^2",
+            "to": "lead~art.5~~0x59c53d34",
+            "value": 2
+        },
+        {
+            "from": "susan_southworth~art.5~~0x59c53d36",
+            "id": "susan_southworth~art.5~~0x59c53d36|resident~com.~0x559c9dd1f9b20^51~0x59c53e45",
+            "label": "ADVISE",
+            "title": "*Freq: 2 <br>*Labels: <br>ADVISE^2",
+            "to": "resident~com.~0x559c9dd1f9b20^51~0x59c53e45",
+            "value": 2
+        },
+        {
+            "from": "susan_southworth~art.5~~0x59c53d36",
+            "id": "susan_southworth~art.5~~0x59c53d36|councillor~com.~0x559c9dd1f7fc8^41~0x59c53e2e",
+            "label": "compound",
+            "title": "*Freq: 2 <br>*Labels: <br>compound^2",
+            "to": "councillor~com.~0x559c9dd1f7fc8^41~0x59c53e2e",
+            "value": 2
+        },
+        {
+            "from": "little~com.~0x559c9dd1ffbab^90~0x59c53e35",
+            "id": "little~com.~0x559c9dd1ffbab^90~0x59c53e35|winter~com.~0x559c9dd1f3667^13~0x59c53dbb",
+            "label": "'S",
+            "title": "*Freq: 2 <br>*Labels: <br>'S^2",
+            "to": "winter~com.~0x559c9dd1f3667^13~0x59c53dbb",
+            "value": 2
+        },
+        {
+            "from": "food~com.~0x559c9dd1ff7bb^88~0x59c53e4b",
+            "id": "food~com.~0x559c9dd1ff7bb^88~0x59c53e4b|compost~com.~0x559c9dd1f58cb^27~0x59c53dc8",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "compost~com.~0x559c9dd1f58cb^27~0x59c53dc8",
+            "value": 2
+        },
+        {
+            "from": "food~com.~0x559c9dd1ff7bb^88~0x59c53e4b",
+            "id": "food~com.~0x559c9dd1ff7bb^88~0x59c53e4b|garden_waste~com.~0x559c9dd1f3192^11~0x59c53db6",
+            "label": "conj",
+            "title": "*Freq: 4 <br>*Labels: <br>conj^4",
+            "to": "garden_waste~com.~0x559c9dd1f3192^11~0x59c53db6",
+            "value": 4
+        },
+        {
+            "from": "weekly_bin_collections~com.~0x559c9dd1fded0^78~0x59c53e41",
+            "id": "weekly_bin_collections~com.~0x559c9dd1fded0^78~0x59c53e41|think~com.~0x559c9dd200526^94~0x59c53e3e",
+            "label": "dep",
+            "title": "*Freq: 4 <br>*Labels: <br>dep^4",
+            "to": "think~com.~0x559c9dd200526^94~0x59c53e3e",
+            "value": 4
+        },
+        {
+            "from": "weekly_bin_collections~com.~0x559c9dd1fded0^78~0x59c53e41",
+            "id": "weekly_bin_collections~com.~0x559c9dd1fded0^78~0x59c53e41|fortnightly~com.~0x559c9dd1ff307^86~0x59c53e92",
+            "label": "amod",
+            "title": "*Freq: 4 <br>*Labels: <br>amod^4",
+            "to": "fortnightly~com.~0x559c9dd1ff307^86~0x59c53e92",
+            "value": 4
+        },
+        {
+            "from": "move~art.2~~0x59c53d15",
+            "id": "move~art.2~~0x59c53d15|fox~com.~0x559c9dd1f87ca^46~0x59c53e44",
+            "label": "ATTRACT",
+            "title": "*Freq: 2 <br>*Labels: <br>ATTRACT^2",
+            "to": "fox~com.~0x559c9dd1f87ca^46~0x59c53e44",
+            "value": 2
+        },
+        {
+            "from": "move~art.2~~0x59c53d15",
+            "id": "move~art.2~~0x59c53d15|vermin~com.~0x559c9dd1f3beb^15~0x59c53dbd",
+            "label": "ATTRACT",
+            "title": "*Freq: 2 <br>*Labels: <br>ATTRACT^2",
+            "to": "vermin~com.~0x559c9dd1f3beb^15~0x59c53dbd",
+            "value": 2
+        },
+        {
+            "from": "think~com.~0x559c9dd200526^94~0x59c53e3e",
+            "id": "think~com.~0x559c9dd200526^94~0x59c53e3e|matter~com.~0x559c9dd1f5cfd^29~0x59c53de6",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "matter~com.~0x559c9dd1f5cfd^29~0x59c53de6",
+            "value": 2
+        },
+        {
+            "from": "think~com.~0x559c9dd200526^94~0x59c53e3e",
+            "id": "think~com.~0x559c9dd200526^94~0x59c53e3e|garden~com.~0x559c9dd1f5cfd^29~0x59c53de2",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "garden~com.~0x559c9dd1f5cfd^29~0x59c53de2",
+            "value": 2
+        },
+        {
+            "from": "cut~art.2~~0x59c53d18",
+            "id": "cut~art.2~~0x59c53d18|amount~com.~0x559c9dd1f3192^11~0x59c53db6",
+            "label": "dobj",
+            "title": "*Freq: 2 <br>*Labels: <br>dobj^2",
+            "to": "amount~com.~0x559c9dd1f3192^11~0x59c53db6",
+            "value": 2
+        },
+        {
+            "from": "cut~art.2~~0x59c53d18",
+            "id": "cut~art.2~~0x59c53d18|family~com.~0x559c9dd1fb3a7^59~0x59c53e40",
+            "label": "nsubj",
+            "title": "*Freq: 2 <br>*Labels: <br>nsubj^2",
+            "to": "family~com.~0x559c9dd1fb3a7^59~0x59c53e40",
+            "value": 2
+        },
+        {
+            "from": "cut~art.2~~0x59c53d18",
+            "id": "cut~art.2~~0x59c53d18|council~art.0~~0x59c53d02",
+            "label": "nsubj",
+            "title": "*Freq: 2 <br>*Labels: <br>nsubj^2",
+            "to": "council~art.0~~0x59c53d02",
+            "value": 2
+        },
+        {
+            "from": "cut~art.2~~0x59c53d18",
+            "id": "cut~art.2~~0x59c53d18|collection~com.~0x559c9dd1f4efb^23~0x59c53ddd",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "collection~com.~0x559c9dd1f4efb^23~0x59c53ddd",
+            "value": 2
+        },
+        {
+            "from": "cut~art.2~~0x59c53d18",
+            "id": "cut~art.2~~0x59c53d18|year~com.~0x559c9dd1f5cfd^29~0x59c53ddc",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "year~com.~0x559c9dd1f5cfd^29~0x59c53ddc",
+            "value": 2
+        },
+        {
+            "from": "amount~com.~0x559c9dd1f3192^11~0x59c53db6",
+            "id": "amount~com.~0x559c9dd1f3192^11~0x59c53db6|waste~com.~0x559c9dd1f6ff6^35~0x59c53e20",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "waste~com.~0x559c9dd1f6ff6^35~0x59c53e20",
+            "value": 2
+        },
+        {
+            "from": "amount~com.~0x559c9dd1f3192^11~0x59c53db6",
+            "id": "amount~com.~0x559c9dd1f3192^11~0x59c53db6|package~com.~0x559c9dd1f4492^18~0x59c53d9d",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "package~com.~0x559c9dd1f4492^18~0x59c53d9d",
+            "value": 2
+        },
+        {
+            "from": "family~com.~0x559c9dd1fb3a7^59~0x59c53e40",
+            "id": "family~com.~0x559c9dd1fb3a7^59~0x59c53e40|recycle~com.~0x559c9dd1f87ca^46~0x59c53e17",
+            "label": "acl",
+            "title": "*Freq: 2 <br>*Labels: <br>acl^2",
+            "to": "recycle~com.~0x559c9dd1f87ca^46~0x59c53e17",
+            "value": 2
+        },
+        {
+            "from": "family~com.~0x559c9dd1fb3a7^59~0x59c53e40",
+            "id": "family~com.~0x559c9dd1fb3a7^59~0x59c53e40|fill~com.~0x559c9dd1fd8dc^76~0x59c53e8b",
+            "label": "GO",
+            "title": "*Freq: 2 <br>*Labels: <br>GO^2",
+            "to": "fill~com.~0x559c9dd1fd8dc^76~0x59c53e8b",
+            "value": 2
+        },
+        {
+            "from": "family~com.~0x559c9dd1fb3a7^59~0x59c53e40",
+            "id": "family~com.~0x559c9dd1fb3a7^59~0x59c53e40|week~com.~0x559c9dd1f3beb^15~0x59c53dca",
+            "label": "PUT",
+            "title": "*Freq: 2 <br>*Labels: <br>PUT^2",
+            "to": "week~com.~0x559c9dd1f3beb^15~0x59c53dca",
+            "value": 2
+        },
+        {
+            "from": "adult~com.~0x559c9dd1f56f5^26~0x59c53dbd",
+            "id": "adult~com.~0x559c9dd1f56f5^26~0x59c53dbd|baby~com.~0x559c9dd1f6ff6^35~0x59c53e16",
+            "label": "appos",
+            "title": "*Freq: 2 <br>*Labels: <br>appos^2",
+            "to": "baby~com.~0x559c9dd1f6ff6^35~0x59c53e16",
+            "value": 2
+        },
+        {
+            "from": "change~com.~0x559c9dd1f2efa^10~0x59c53da0",
+            "id": "change~com.~0x559c9dd1f2efa^10~0x59c53da0|article~com.~0x559c9dd1faa9f^57~0x59c53e54",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "article~com.~0x559c9dd1faa9f^57~0x59c53e54",
+            "value": 2
+        },
+        {
+            "from": "change~com.~0x559c9dd1f2efa^10~0x59c53da0",
+            "id": "change~com.~0x559c9dd1f2efa^10~0x59c53da0|bin_space~com.~0x559c9dd1fc5a7^66~0x59c53e86",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "bin_space~com.~0x559c9dd1fc5a7^66~0x59c53e86",
+            "value": 2
+        },
+        {
+            "from": "change~com.~0x559c9dd1f2efa^10~0x59c53da0",
+            "id": "change~com.~0x559c9dd1f2efa^10~0x59c53da0|empty~com.~0x559c9dd1f541d^25~0x59c53dfd",
+            "label": "nsubj",
+            "title": "*Freq: 4 <br>*Labels: <br>nsubj^4",
+            "to": "empty~com.~0x559c9dd1f541d^25~0x59c53dfd",
+            "value": 4
+        },
+        {
+            "from": "bin_space~com.~0x559c9dd1fc5a7^66~0x59c53e86",
+            "id": "bin_space~com.~0x559c9dd1fc5a7^66~0x59c53e86|adult~com.~0x559c9dd1f56f5^26~0x59c53dbd",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "adult~com.~0x559c9dd1f56f5^26~0x59c53dbd",
+            "value": 2
+        },
+        {
+            "from": "bin~com.~0x559c9dd1ff7bb^88~0x59c53e4e",
+            "id": "bin~com.~0x559c9dd1ff7bb^88~0x59c53e4e|family~com.~0x559c9dd1fb3a7^59~0x59c53e40",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "family~com.~0x559c9dd1fb3a7^59~0x59c53e40",
+            "value": 2
+        },
+        {
+            "from": "bin~com.~0x559c9dd1ff7bb^88~0x59c53e4e",
+            "id": "bin~com.~0x559c9dd1ff7bb^88~0x59c53e4e|green~art.2~~0x59c53d13",
+            "label": "amod",
+            "title": "*Freq: 2 <br>*Labels: <br>amod^2",
+            "to": "green~art.2~~0x59c53d13",
+            "value": 2
+        },
+        {
+            "from": "bin~com.~0x559c9dd1ff7bb^88~0x59c53e4e",
+            "id": "bin~com.~0x559c9dd1ff7bb^88~0x59c53e4e|garden_waste~com.~0x559c9dd1f3192^11~0x59c53db6",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "garden_waste~com.~0x559c9dd1f3192^11~0x59c53db6",
+            "value": 2
+        },
+        {
+            "from": "bin~com.~0x559c9dd1ff7bb^88~0x59c53e4e",
+            "id": "bin~com.~0x559c9dd1ff7bb^88~0x59c53e4e|blue~art.6~~0x59c53d40",
+            "label": "amod",
+            "title": "*Freq: 2 <br>*Labels: <br>amod^2",
+            "to": "blue~art.6~~0x59c53d40",
+            "value": 2
+        },
+        {
+            "from": "bin~com.~0x559c9dd1ff7bb^88~0x59c53e4e",
+            "id": "bin~com.~0x559c9dd1ff7bb^88~0x59c53e4e|week~com.~0x559c9dd1f3beb^15~0x59c53dca",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "week~com.~0x559c9dd1f3beb^15~0x59c53dca",
+            "value": 2
+        },
+        {
+            "from": "bin~com.~0x559c9dd1ff7bb^88~0x59c53e4e",
+            "id": "bin~com.~0x559c9dd1ff7bb^88~0x59c53e4e|waste~com.~0x559c9dd1f6ff6^35~0x59c53e20",
+            "label": "conj",
+            "title": "*Freq: 2 <br>*Labels: <br>conj^2",
+            "to": "waste~com.~0x559c9dd1f6ff6^35~0x59c53e20",
+            "value": 2
+        },
+        {
+            "from": "bin~com.~0x559c9dd1ff7bb^88~0x59c53e4e",
+            "id": "bin~com.~0x559c9dd1ff7bb^88~0x59c53e4e|collection~com.~0x559c9dd1f4efb^23~0x59c53ddd",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "collection~com.~0x559c9dd1f4efb^23~0x59c53ddd",
+            "value": 2
+        },
+        {
+            "from": "bin~com.~0x559c9dd1ff7bb^88~0x59c53e4e",
+            "id": "bin~com.~0x559c9dd1ff7bb^88~0x59c53e4e|rubbish~com.~0x559c9dd1fceea^71~0x59c53e7d",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "rubbish~com.~0x559c9dd1fceea^71~0x59c53e7d",
+            "value": 2
+        },
+        {
+            "from": "borough~com.~0x559c9dd1f4bcd^22~0x59c53dbb",
+            "id": "borough~com.~0x559c9dd1f4bcd^22~0x59c53dbb|compost~com.~0x559c9dd1f58cb^27~0x59c53dc8",
+            "label": "acl",
+            "title": "*Freq: 2 <br>*Labels: <br>acl^2",
+            "to": "compost~com.~0x559c9dd1f58cb^27~0x59c53dc8",
+            "value": 2
+        },
+        {
+            "from": "baby~com.~0x559c9dd1f6ff6^35~0x59c53e16",
+            "id": "baby~com.~0x559c9dd1f6ff6^35~0x59c53e16|nappy~com.~0x559c9dd1f4044^16~0x59c53da5",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "nappy~com.~0x559c9dd1f4044^16~0x59c53da5",
+            "value": 2
+        },
+        {
+            "from": "waste~com.~0x559c9dd1f6ff6^35~0x59c53e20",
+            "id": "waste~com.~0x559c9dd1f6ff6^35~0x59c53e20|week~com.~0x559c9dd1f3beb^15~0x59c53dca",
+            "label": "dep",
+            "title": "*Freq: 2 <br>*Labels: <br>dep^2",
+            "to": "week~com.~0x559c9dd1f3beb^15~0x59c53dca",
+            "value": 2
+        },
+        {
+            "from": "waste~com.~0x559c9dd1f6ff6^35~0x59c53e20",
+            "id": "waste~com.~0x559c9dd1f6ff6^35~0x59c53e20|little~com.~0x559c9dd1ffbab^90~0x59c53e35",
+            "label": "amod",
+            "title": "*Freq: 2 <br>*Labels: <br>amod^2",
+            "to": "little~com.~0x559c9dd1ffbab^90~0x59c53e35",
+            "value": 2
+        },
+        {
+            "from": "garden~com.~0x559c9dd1f5cfd^29~0x59c53de2",
+            "id": "garden~com.~0x559c9dd1f5cfd^29~0x59c53de2|matter~com.~0x559c9dd1f5cfd^29~0x59c53de6",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "matter~com.~0x559c9dd1f5cfd^29~0x59c53de6",
+            "value": 2
+        },
+        {
+            "from": "garden~com.~0x559c9dd1f5cfd^29~0x59c53de2",
+            "id": "garden~com.~0x559c9dd1f5cfd^29~0x59c53de2|sort~com.~0x559c9dd1f6ff6^35~0x59c53e2f",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "sort~com.~0x559c9dd1f6ff6^35~0x59c53e2f",
+            "value": 2
+        },
+        {
+            "from": "winter~com.~0x559c9dd1f3667^13~0x59c53dbb",
+            "id": "winter~com.~0x559c9dd1f3667^13~0x59c53dbb|garden_waste~com.~0x559c9dd1f3192^11~0x59c53db6",
+            "label": "conj",
+            "title": "*Freq: 3 <br>*Labels: <br>conj^2<br>  -TAKE^1",
+            "to": "garden_waste~com.~0x559c9dd1f3192^11~0x59c53db6",
+            "value": 3
+        },
+        {
+            "from": "winter~com.~0x559c9dd1f3667^13~0x59c53dbb",
+            "id": "winter~com.~0x559c9dd1f3667^13~0x59c53dbb|food~com.~0x559c9dd1ff7bb^88~0x59c53e4b",
+            "label": "TAKE",
+            "title": "*Freq: 2 <br>*Labels: <br>TAKE^2",
+            "to": "food~com.~0x559c9dd1ff7bb^88~0x59c53e4b",
+            "value": 2
+        },
+        {
+            "from": "service~com.~0x559c9dd1fe5f7^80~0x59c53e16",
+            "id": "service~com.~0x559c9dd1fe5f7^80~0x59c53e16|matter~com.~0x559c9dd1f5cfd^29~0x59c53de6",
+            "label": "acl",
+            "title": "*Freq: 2 <br>*Labels: <br>acl^2",
+            "to": "matter~com.~0x559c9dd1f5cfd^29~0x59c53de6",
+            "value": 2
+        },
+        {
+            "from": "service~com.~0x559c9dd1fe5f7^80~0x59c53e16",
+            "id": "service~com.~0x559c9dd1fe5f7^80~0x59c53e16|council~art.0~~0x59c53d02",
+            "label": "dep",
+            "title": "*Freq: 2 <br>*Labels: <br>dep^2",
+            "to": "council~art.0~~0x59c53d02",
+            "value": 2
+        },
+        {
+            "from": "desperate_cost~art.2~~0x59c53d17",
+            "id": "desperate_cost~art.2~~0x59c53d17|cut~art.2~~0x59c53d18",
+            "label": "dep",
+            "title": "*Freq: 2 <br>*Labels: <br>dep^2",
+            "to": "cut~art.2~~0x59c53d18",
+            "value": 2
+        },
+        {
+            "from": "desperate_cost~art.2~~0x59c53d17",
+            "id": "desperate_cost~art.2~~0x59c53d17|move~art.2~~0x59c53d15",
+            "label": "nsubj",
+            "title": "*Freq: 2 <br>*Labels: <br>nsubj^2",
+            "to": "move~art.2~~0x59c53d15",
+            "value": 2
+        },
+        {
+            "from": "council~art.0~~0x59c53d02",
+            "id": "council~art.0~~0x59c53d02|service~com.~0x559c9dd1fe5f7^80~0x59c53e16",
+            "label": "PERFORM",
+            "title": "*Freq: 2 <br>*Labels: <br>PERFORM^2",
+            "to": "service~com.~0x559c9dd1fe5f7^80~0x59c53e16",
+            "value": 2
+        },
+        {
+            "from": "resident~com.~0x559c9dd1f9b20^51~0x59c53e45",
+            "id": "resident~com.~0x559c9dd1f9b20^51~0x59c53e45|borough~com.~0x559c9dd1f4bcd^22~0x59c53dbb",
+            "label": "nmod",
+            "title": "*Freq: 2 <br>*Labels: <br>nmod^2",
+            "to": "borough~com.~0x559c9dd1f4bcd^22~0x59c53dbb",
+            "value": 2
+        },
+        {
+            "from": "cardboard~com.~0x559c9dd1f3667^13~0x59c53dc1",
+            "id": "cardboard~com.~0x559c9dd1f3667^13~0x59c53dc1|fill~com.~0x559c9dd1fd8dc^76~0x59c53e8b",
+            "label": "GO",
+            "title": "*Freq: 2 <br>*Labels: <br>GO^2",
+            "to": "fill~com.~0x559c9dd1fd8dc^76~0x59c53e8b",
+            "value": 2
+        },
+        {
+            "from": "cardboard~com.~0x559c9dd1f3667^13~0x59c53dc1",
+            "id": "cardboard~com.~0x559c9dd1f3667^13~0x59c53dc1|year~com.~0x559c9dd1f5cfd^29~0x59c53ddc",
+            "label": "compound",
+            "title": "*Freq: 2 <br>*Labels: <br>compound^2",
+            "to": "year~com.~0x559c9dd1f5cfd^29~0x59c53ddc",
+            "value": 2
+        }
+    ],
+    "nodes": [
+        {
+            "cid": "\u03b6",
+            "color": "#ffb000",
+            "group": "article",
+            "id": "green~art.2~~0x59c53d13",
+            "label": "green",
+            "title": "*NodeID: green~art.2~~0x59c53d13 <br> *Freq: 4 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 2, \"neg_count\": 1} <br> *POS: JJ <br> *Group_ids: art.5,art.6,art.2 <br> *Cluster_ids: \u03b6 <br> *History: ",
+            "value": 4
+        },
+        {
+            "cid": "\u03b5",
+            "color": "#ffa800",
+            "group": "comment",
+            "id": "fill~com.~0x559c9dd1fd8dc^76~0x59c53e8b",
+            "label": "fill",
+            "title": "*NodeID: fill~com.~0x559c9dd1fd8dc^76~0x59c53e8b <br> *Freq: 9 <br> *Sen_Score: -0.0087 <br> *Sentiment: {\"pos_count\": 3, \"neu_count\": 2, \"neg_count\": 4} <br> *POS: VB,VBP,NN,VBD <br> *Group_ids: com. <br> *Cluster_ids: \u03b5 <br> *History: ",
+            "value": 9
+        },
+        {
+            "cid": "\u03b4",
+            "color": "#ffa000",
+            "group": "article",
+            "id": "councillor~com.~0x559c9dd1f7fc8^41~0x59c53e2e",
+            "label": "councillor",
+            "title": "*NodeID: councillor~com.~0x559c9dd1f7fc8^41~0x59c53e2e <br> *Freq: 8 <br> *Sen_Score: -0.0174 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 2, \"neg_count\": 4} <br> *POS: NNS,NN,NNP <br> *Group_ids: art.4,art.5,art.6,art.7,art.1,com. <br> *Cluster_ids: \u03b4 <br> *History: ",
+            "value": 8
+        },
+        {
+            "cid": "\u03b4",
+            "color": "#ffa000",
+            "group": "comment",
+            "id": "struggle~com.~0x559c9dd1f49a1^21~0x59c53dd0",
+            "label": "struggle",
+            "title": "*NodeID: struggle~com.~0x559c9dd1f49a1^21~0x59c53dd0 <br> *Freq: 4 <br> *Sen_Score: -0.0174 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 3} <br> *POS: VB,VBP,VBN,NN <br> *Group_ids: com. <br> *Cluster_ids: \u03b4 <br> *History: ",
+            "value": 4
+        },
+        {
+            "cid": "\u03b6",
+            "color": "#ffa000",
+            "group": "article",
+            "id": "grey_bin~art.6~~0x59c53d40",
+            "label": "grey_bin",
+            "title": "*NodeID: grey_bin~art.6~~0x59c53d40 <br> *Freq: 4 <br> *Sen_Score: -0.0174 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 2, \"neg_count\": 2} <br> *POS: NN,NNP <br> *Group_ids: art.6,com. <br> *Cluster_ids: \u03b6 <br> *History:  <br> - Contracted with extra_grey_bin^1 (extra_grey_bin~art.6~~0x59c53d3c) <br> - Contracted with grey_bin^2 (grey_bin~com.~0x559c9dd1f3beb^15~0x59c53dca)",
+            "value": 4
+        },
+        {
+            "cid": "\u03b1",
+            "color": "#ffa000",
+            "group": "comment",
+            "id": "rat~com.~0x559c9dd1f7fc8^41~0x59c53e2e",
+            "label": "rat",
+            "title": "*NodeID: rat~com.~0x559c9dd1f7fc8^41~0x59c53e2e <br> *Freq: 5 <br> *Sen_Score: -0.0174 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 3, \"neg_count\": 2} <br> *POS: NNS <br> *Group_ids: com. <br> *Cluster_ids: \u03b1 <br> *History: ",
+            "value": 5
+        },
+        {
+            "cid": "\u03b3",
+            "color": "#ffb000",
+            "group": "comment",
+            "id": "article~com.~0x559c9dd1faa9f^57~0x59c53e54",
+            "label": "article",
+            "title": "*NodeID: article~com.~0x559c9dd1faa9f^57~0x59c53e54 <br> *Freq: 3 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 1} <br> *POS: NN <br> *Group_ids: com. <br> *Cluster_ids: \u03b3 <br> *History: ",
+            "value": 3
+        },
+        {
+            "cid": "\u03b4",
+            "color": "#ffa800",
+            "group": "article",
+            "id": "vote~com.~0x559c9dd1f4efb^23~0x59c53dfd",
+            "label": "vote",
+            "title": "*NodeID: vote~com.~0x559c9dd1f4efb^23~0x59c53dfd <br> *Freq: 3 <br> *Sen_Score: -0.0087 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 2, \"neg_count\": 1} <br> *POS: NN,VBD <br> *Group_ids: art.1,art.2,com. <br> *Cluster_ids: \u03b4 <br> *History: ",
+            "value": 3
+        },
+        {
+            "cid": "\u03b6",
+            "color": "#ffb000",
+            "group": "article",
+            "id": "rubbish~com.~0x559c9dd1fceea^71~0x59c53e7d",
+            "label": "rubbish",
+            "title": "*NodeID: rubbish~com.~0x559c9dd1fceea^71~0x59c53e7d <br> *Freq: 17 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 3, \"neu_count\": 11, \"neg_count\": 3} <br> *POS: JJ <br> *Group_ids: art.5,art.7,art.1,art.2,com.,art.3 <br> *Cluster_ids: \u03b6 <br> *History: ",
+            "value": 17
+        },
+        {
+            "cid": "\u03b2",
+            "color": "#ffb000",
+            "group": "comment",
+            "id": "matter~com.~0x559c9dd1f5cfd^29~0x59c53de6",
+            "label": "matter",
+            "title": "*NodeID: matter~com.~0x559c9dd1f5cfd^29~0x59c53de6 <br> *Freq: 4 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 0, \"neg_count\": 2} <br> *POS: NN <br> *Group_ids: com. <br> *Cluster_ids: \u03b2 <br> *History: ",
+            "value": 4
+        },
+        {
+            "cid": "\u03b4",
+            "color": "#ffb800",
+            "group": "article",
+            "id": "recycle~com.~0x559c9dd1f87ca^46~0x59c53e17",
+            "label": "recycle",
+            "title": "*NodeID: recycle~com.~0x559c9dd1f87ca^46~0x59c53e17 <br> *Freq: 17 <br> *Sen_Score: 0.0087 <br> *Sentiment: {\"pos_count\": 5, \"neu_count\": 8, \"neg_count\": 4} <br> *POS: VB,VBG,NN,VBZ,VBN <br> *Group_ids: art.6,art.7,art.2,com. <br> *Cluster_ids: \u03b4 <br> *History: ",
+            "value": 17
+        },
+        {
+            "cid": "\u03b5",
+            "color": "#ff8800",
+            "group": "comment",
+            "id": "stuff~com.~0x559c9dd1f5cfd^29~0x59c53dd7",
+            "label": "stuff",
+            "title": "*NodeID: stuff~com.~0x559c9dd1f5cfd^29~0x59c53dd7 <br> *Freq: 5 <br> *Sen_Score: -0.0435 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 0, \"neg_count\": 5} <br> *POS: NN <br> *Group_ids: com. <br> *Cluster_ids: \u03b5 <br> *History: ",
+            "value": 5
+        },
+        {
+            "cid": "\u03b4",
+            "color": "#ff9800",
+            "group": "article",
+            "id": "fortnightly~com.~0x559c9dd1ff307^86~0x59c53e92",
+            "label": "fortnightly",
+            "title": "*NodeID: fortnightly~com.~0x559c9dd1ff307^86~0x59c53e92 <br> *Freq: 14 <br> *Sen_Score: -0.0261 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 7, \"neg_count\": 5} <br> *POS: JJ,RB <br> *Group_ids: art.0,com. <br> *Cluster_ids: \u03b4 <br> *History: ",
+            "value": 14
+        },
+        {
+            "cid": "\u03b2",
+            "color": "#ffb000",
+            "group": "article",
+            "id": "sort~com.~0x559c9dd1f6ff6^35~0x59c53e2f",
+            "label": "sort",
+            "title": "*NodeID: sort~com.~0x559c9dd1f6ff6^35~0x59c53e2f <br> *Freq: 4 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 2, \"neg_count\": 1} <br> *POS: VBG,NNS,NN <br> *Group_ids: art.5,com. <br> *Cluster_ids: \u03b2 <br> *History: ",
+            "value": 4
+        },
+        {
+            "cid": "\u03b1",
+            "color": "#ffa000",
+            "group": "article",
+            "id": "vermin~com.~0x559c9dd1f3beb^15~0x59c53dbd",
+            "label": "vermin",
+            "title": "*NodeID: vermin~com.~0x559c9dd1f3beb^15~0x59c53dbd <br> *Freq: 6 <br> *Sen_Score: -0.0174 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 2, \"neg_count\": 3} <br> *POS: NN <br> *Group_ids: art.5,art.0,art.1,com. <br> *Cluster_ids: \u03b1 <br> *History: ",
+            "value": 6
+        },
+        {
+            "cid": "\u03b4",
+            "color": "#ff9800",
+            "group": "article",
+            "id": "collection~com.~0x559c9dd1f4efb^23~0x59c53ddd",
+            "label": "collection",
+            "title": "*NodeID: collection~com.~0x559c9dd1f4efb^23~0x59c53ddd <br> *Freq: 13 <br> *Sen_Score: -0.0261 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 6, \"neg_count\": 5} <br> *POS: NNS,NN <br> *Group_ids: art.6,art.0,com. <br> *Cluster_ids: \u03b4 <br> *History: ",
+            "value": 13
+        },
+        {
+            "cid": "\u03b2",
+            "color": "#ffb800",
+            "group": "comment",
+            "id": "size~com.~0x559c9dd1f7c65^39~0x59c53e05",
+            "label": "size",
+            "title": "*NodeID: size~com.~0x559c9dd1f7c65^39~0x59c53e05 <br> *Freq: 5 <br> *Sen_Score: 0.0087 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 4, \"neg_count\": 0} <br> *POS: VBN,NN <br> *Group_ids: com. <br> *Cluster_ids: \u03b2 <br> *History: ",
+            "value": 5
+        },
+        {
+            "cid": "\u03b1",
+            "color": "#ffb800",
+            "group": "article",
+            "id": "fox~com.~0x559c9dd1f87ca^46~0x59c53e44",
+            "label": "fox",
+            "title": "*NodeID: fox~com.~0x559c9dd1f87ca^46~0x59c53e44 <br> *Freq: 3 <br> *Sen_Score: 0.0087 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 0, \"neg_count\": 1} <br> *POS: NNS <br> *Group_ids: art.0,com. <br> *Cluster_ids: \u03b1 <br> *History: ",
+            "value": 3
+        },
+        {
+            "cid": "\u03b6",
+            "color": "#ff9800",
+            "group": "article",
+            "id": "flat~com.~0x559c9dd1f254c^5~0x59c53d9f",
+            "label": "flat",
+            "title": "*NodeID: flat~com.~0x559c9dd1f254c^5~0x59c53d9f <br> *Freq: 7 <br> *Sen_Score: -0.0261 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 4, \"neg_count\": 3} <br> *POS: NNS,JJ <br> *Group_ids: art.2,com. <br> *Cluster_ids: \u03b6 <br> *History: ",
+            "value": 7
+        },
+        {
+            "cid": "\u03b3",
+            "color": "#ff9000",
+            "group": "comment",
+            "id": "nappy~com.~0x559c9dd1f4044^16~0x59c53da5",
+            "label": "nappy",
+            "title": "*NodeID: nappy~com.~0x559c9dd1f4044^16~0x59c53da5 <br> *Freq: 12 <br> *Sen_Score: -0.0348 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 4, \"neg_count\": 6} <br> *POS: NNS <br> *Group_ids: com. <br> *Cluster_ids: \u03b3 <br> *History: ",
+            "value": 12
+        },
+        {
+            "cid": "\u03b1",
+            "color": "#ffa800",
+            "group": "article",
+            "id": "lead~art.5~~0x59c53d34",
+            "label": "lead",
+            "title": "*NodeID: lead~art.5~~0x59c53d34 <br> *Freq: 4 <br> *Sen_Score: -0.0087 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 2} <br> *POS: VB,VBG,NN <br> *Group_ids: art.4,art.5,art.0,art.2 <br> *Cluster_ids: \u03b1 <br> *History: ",
+            "value": 4
+        },
+        {
+            "cid": "\u03b4",
+            "color": "#ffa800",
+            "group": "article",
+            "id": "able~com.~0x559c9dd1f8131^42~0x59c53dd2",
+            "label": "able",
+            "title": "*NodeID: able~com.~0x559c9dd1f8131^42~0x59c53dd2 <br> *Freq: 3 <br> *Sen_Score: -0.0087 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 2, \"neg_count\": 1} <br> *POS: JJ <br> *Group_ids: art.6,com. <br> *Cluster_ids: \u03b4 <br> *History: ",
+            "value": 3
+        },
+        {
+            "cid": "\u03b1",
+            "color": "#ff9800",
+            "group": "comment",
+            "id": "look~com.~0x559c9dd2000f7^92~0x59c53e47",
+            "label": "look",
+            "title": "*NodeID: look~com.~0x559c9dd2000f7^92~0x59c53e47 <br> *Freq: 8 <br> *Sen_Score: -0.0261 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 5, \"neg_count\": 3} <br> *POS: VB,VBG,NN,VBZ,VBN <br> *Group_ids: com. <br> *Cluster_ids: \u03b1 <br> *History: ",
+            "value": 8
+        },
+        {
+            "cid": "\u03b6",
+            "color": "#ffb000",
+            "group": "comment",
+            "id": "weekly_collection~com.~0x559c9dd1f56f5^26~0x59c53dbd",
+            "label": "efb",
+            "title": "*NodeID: weekly_collection~com.~0x559c9dd1f56f5^26~0x59c53dbd <br> *Freq: 3 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 1} <br> *POS: NNS,NN <br> *Group_ids: com. <br> *Cluster_ids: \u03b6 <br> *History:  <br> - Contracted with weekly_collections^1 (weekly_collections~com.~0x559c9dd1fded0^78~0x59c53e45) <br> - Contracted with offer_weekly_collections^1 (offer_weekly_collections~com.~0x559c9dd1f4efb^23~0x59c53e03)",
+            "value": 3
+        },
+        {
+            "cid": "\u03b3",
+            "color": "#ff9800",
+            "group": "article",
+            "id": "empty~com.~0x559c9dd1f541d^25~0x59c53dfd",
+            "label": "empty",
+            "title": "*NodeID: empty~com.~0x559c9dd1f541d^25~0x59c53dfd <br> *Freq: 7 <br> *Sen_Score: -0.0261 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 0, \"neg_count\": 5} <br> *POS: JJ,VBN,NN <br> *Group_ids: art.5,art.6,art.2,com. <br> *Cluster_ids: \u03b3 <br> *History: ",
+            "value": 7
+        },
+        {
+            "cid": "\u03b6",
+            "color": "#ffb800",
+            "group": "comment",
+            "id": "full~com.~0x559c9dd1fc3b1^65~0x59c53e75",
+            "label": "full",
+            "title": "*NodeID: full~com.~0x559c9dd1fc3b1^65~0x59c53e75 <br> *Freq: 6 <br> *Sen_Score: 0.0087 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 5, \"neg_count\": 0} <br> *POS: JJ <br> *Group_ids: com. <br> *Cluster_ids: \u03b6 <br> *History: ",
+            "value": 6
+        },
+        {
+            "cid": "\u03b5",
+            "color": "#ffc000",
+            "group": "comment",
+            "id": "package~com.~0x559c9dd1f4492^18~0x59c53d9d",
+            "label": "package",
+            "title": "*NodeID: package~com.~0x559c9dd1f4492^18~0x59c53d9d <br> *Freq: 7 <br> *Sen_Score: 0.0174 <br> *Sentiment: {\"pos_count\": 3, \"neu_count\": 3, \"neg_count\": 1} <br> *POS: NN <br> *Group_ids: com. <br> *Cluster_ids: \u03b5 <br> *History: ",
+            "value": 7
+        },
+        {
+            "cid": "\u03b6",
+            "color": "#ff9000",
+            "group": "article",
+            "id": "week~com.~0x559c9dd1f3beb^15~0x59c53dca",
+            "label": "week",
+            "title": "*NodeID: week~com.~0x559c9dd1f3beb^15~0x59c53dca <br> *Freq: 20 <br> *Sen_Score: -0.0348 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 12, \"neg_count\": 6} <br> *POS: NNS,NN <br> *Group_ids: art.6,art.0,art.2,com. <br> *Cluster_ids: \u03b6 <br> *History: ",
+            "value": 20
+        },
+        {
+            "cid": "\u03b4",
+            "color": "#ffa800",
+            "group": "article",
+            "id": "disposable_nappies~art.6~~0x59c53d3c",
+            "label": "disposable_nappies",
+            "title": "*NodeID: disposable_nappies~art.6~~0x59c53d3c <br> *Freq: 4 <br> *Sen_Score: -0.0087 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 2} <br> *POS: NNS <br> *Group_ids: art.6,com. <br> *Cluster_ids: \u03b4 <br> *History: ",
+            "value": 4
+        },
+        {
+            "cid": "\u03b5",
+            "color": "#ffa800",
+            "group": "comment",
+            "id": "end~com.~0x559c9dd1fdb4d^77~0x59c53e82",
+            "label": "end",
+            "title": "*NodeID: end~com.~0x559c9dd1fdb4d^77~0x59c53e82 <br> *Freq: 3 <br> *Sen_Score: -0.0087 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 2} <br> *POS: VB,NN <br> *Group_ids: com. <br> *Cluster_ids: \u03b5 <br> *History: ",
+            "value": 3
+        },
+        {
+            "cid": "\u03b6",
+            "color": "#ff9800",
+            "group": "comment",
+            "id": "house~com.~0x559c9dd1fb04f^58~0x59c53e07",
+            "label": "house",
+            "title": "*NodeID: house~com.~0x559c9dd1fb04f^58~0x59c53e07 <br> *Freq: 5 <br> *Sen_Score: -0.0261 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 2, \"neg_count\": 3} <br> *POS: VBP,NN,NNP <br> *Group_ids: com. <br> *Cluster_ids: \u03b6 <br> *History: ",
+            "value": 5
+        },
+        {
+            "cid": "\u03b4",
+            "color": "#ff8000",
+            "group": "article",
+            "id": "people~com.~0x559c9dd1fded0^78~0x59c53e45",
+            "label": "people",
+            "title": "*NodeID: people~com.~0x559c9dd1fded0^78~0x59c53e45 <br> *Freq: 18 <br> *Sen_Score: -0.0522 <br> *Sentiment: {\"pos_count\": 4, \"neu_count\": 4, \"neg_count\": 10} <br> *POS: NNS <br> *Group_ids: art.1,com. <br> *Cluster_ids: \u03b4 <br> *History: ",
+            "value": 18
+        },
+        {
+            "cid": "\u03b6",
+            "color": "#ffb800",
+            "group": "comment",
+            "id": "green_rubbish_recycling~com.~0x559c9dd1f87ca^46~0x59c53e13",
+            "label": "people_household_rubbish_bins",
+            "title": "*NodeID: green_rubbish_recycling~com.~0x559c9dd1f87ca^46~0x59c53e13 <br> *Freq: 3 <br> *Sen_Score: 0.0087 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 2, \"neg_count\": 0} <br> *POS: NNS,NN,JJ <br> *Group_ids: com. <br> *Cluster_ids: \u03b6 <br> *History:  <br> - Contracted with non-recyclable_rubbish^1 (non-recyclable_rubbish~com.~0x559c9dd200fb7^100~0x59c53e4d) <br> - Contracted with people_household_rubbish_bins^1 (people_household_rubbish_bins~com.~0x559c9dd1f9906^50~0x59c53dde)",
+            "value": 3
+        },
+        {
+            "cid": "\u03b5",
+            "color": "#ff9800",
+            "group": "comment",
+            "id": "compost~com.~0x559c9dd1f58cb^27~0x59c53dc8",
+            "label": "compost",
+            "title": "*NodeID: compost~com.~0x559c9dd1f58cb^27~0x59c53dc8 <br> *Freq: 6 <br> *Sen_Score: -0.0261 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 4} <br> *POS: NNS,VBN,NN <br> *Group_ids: com. <br> *Cluster_ids: \u03b5 <br> *History: ",
+            "value": 6
+        },
+        {
+            "cid": "\u03b5",
+            "color": "#ffb800",
+            "group": "comment",
+            "id": "garden_waste~com.~0x559c9dd1f3192^11~0x59c53db6",
+            "label": "garden_waste",
+            "title": "*NodeID: garden_waste~com.~0x559c9dd1f3192^11~0x59c53db6 <br> *Freq: 4 <br> *Sen_Score: 0.0087 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 1, \"neg_count\": 1} <br> *POS: NN <br> *Group_ids: com. <br> *Cluster_ids: \u03b5 <br> *History: ",
+            "value": 4
+        },
+        {
+            "cid": "\u03b4",
+            "color": "#ffa800",
+            "group": "article",
+            "id": "bury~com.~0x559c9dd1f87ca^46~0x59c53e50",
+            "label": "bury",
+            "title": "*NodeID: bury~com.~0x559c9dd1f87ca^46~0x59c53e50 <br> *Freq: 11 <br> *Sen_Score: -0.0087 <br> *Sentiment: {\"pos_count\": 4, \"neu_count\": 2, \"neg_count\": 5} <br> *POS: VB,NN,NNP <br> *Group_ids: art.4,art.7,art.1,art.2,com. <br> *Cluster_ids: \u03b4 <br> *History: ",
+            "value": 11
+        },
+        {
+            "cid": "\u03b1",
+            "color": "#ffa800",
+            "group": "article",
+            "id": "medical_issues~com.~0x559c9dd1fece9^83~0x59c53e7b",
+            "label": "public_health_issues",
+            "title": "*NodeID: medical_issues~com.~0x559c9dd1fece9^83~0x59c53e7b <br> *Freq: 3 <br> *Sen_Score: -0.0087 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 2} <br> *POS: NNS,NN <br> *Group_ids: art.5,com. <br> *Cluster_ids: \u03b1 <br> *History:  <br> - Contracted with public_health_issues^2 (public_health~art.5~~0x59c53d34)",
+            "value": 3
+        },
+        {
+            "cid": "\u03b1",
+            "color": "#ffb000",
+            "group": "article",
+            "id": "susan_southworth~art.5~~0x59c53d36",
+            "label": "susan_southworth",
+            "title": "*NodeID: susan_southworth~art.5~~0x59c53d36 <br> *Freq: 3 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 1} <br> *POS: NNP <br> *Group_ids: art.5 <br> *Cluster_ids: \u03b1 <br> *History: ",
+            "value": 3
+        },
+        {
+            "cid": "\u03b5",
+            "color": "#ffb800",
+            "group": "comment",
+            "id": "little~com.~0x559c9dd1ffbab^90~0x59c53e35",
+            "label": "little",
+            "title": "*NodeID: little~com.~0x559c9dd1ffbab^90~0x59c53e35 <br> *Freq: 4 <br> *Sen_Score: 0.0087 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 1, \"neg_count\": 1} <br> *POS: JJ <br> *Group_ids: com. <br> *Cluster_ids: \u03b5 <br> *History: ",
+            "value": 4
+        },
+        {
+            "cid": "\u03b4",
+            "color": "#ffb000",
+            "group": "article",
+            "id": "year~com.~0x559c9dd1f5cfd^29~0x59c53ddc",
+            "label": "year",
+            "title": "*NodeID: year~com.~0x559c9dd1f5cfd^29~0x59c53ddc <br> *Freq: 7 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 3, \"neu_count\": 1, \"neg_count\": 3} <br> *POS: NNS,NN <br> *Group_ids: art.7,art.2,com. <br> *Cluster_ids: \u03b4 <br> *History: ",
+            "value": 7
+        },
+        {
+            "cid": "\u03b5",
+            "color": "#ffc000",
+            "group": "comment",
+            "id": "food~com.~0x559c9dd1ff7bb^88~0x59c53e4b",
+            "label": "food",
+            "title": "*NodeID: food~com.~0x559c9dd1ff7bb^88~0x59c53e4b <br> *Freq: 7 <br> *Sen_Score: 0.0174 <br> *Sentiment: {\"pos_count\": 3, \"neu_count\": 3, \"neg_count\": 1} <br> *POS: NN,NNP <br> *Group_ids: com. <br> *Cluster_ids: \u03b5 <br> *History: ",
+            "value": 7
+        },
+        {
+            "cid": "\u03b2",
+            "color": "#ffb800",
+            "group": "article",
+            "id": "fly-tipping~art.5~~0x59c53d32",
+            "label": "fly-tipping",
+            "title": "*NodeID: fly-tipping~art.5~~0x59c53d32 <br> *Freq: 4 <br> *Sen_Score: 0.0087 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 1, \"neg_count\": 1} <br> *POS: NN,JJ <br> *Group_ids: art.5,art.0 <br> *Cluster_ids: \u03b2 <br> *History: ",
+            "value": 4
+        },
+        {
+            "cid": "\u03b2",
+            "color": "#ff9000",
+            "group": "article",
+            "id": "weekly_bin_collections~com.~0x559c9dd1fded0^78~0x59c53e41",
+            "label": "bin_collections",
+            "title": "*NodeID: weekly_bin_collections~com.~0x559c9dd1fded0^78~0x59c53e41 <br> *Freq: 8 <br> *Sen_Score: -0.0348 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 4, \"neg_count\": 4} <br> *POS: NNS,NN <br> *Group_ids: art.2,com. <br> *Cluster_ids: \u03b2 <br> *History:  <br> - Contracted with bin_collections^3 (bin_collection~art.2~~0x59c53d19) <br> - Contracted with bin_collections^4 (weekly_bin_collections~com.~0x559c9dd1fded0^78~0x59c53e41)",
+            "value": 8
+        },
+        {
+            "cid": "\u03b1",
+            "color": "#ffb800",
+            "group": "article",
+            "id": "move~art.2~~0x59c53d15",
+            "label": "move",
+            "title": "*NodeID: move~art.2~~0x59c53d15 <br> *Freq: 4 <br> *Sen_Score: 0.0087 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 1, \"neg_count\": 1} <br> *POS: VBG,NN <br> *Group_ids: art.0,art.2,com. <br> *Cluster_ids: \u03b1 <br> *History: ",
+            "value": 4
+        },
+        {
+            "cid": "\u03b2",
+            "color": "#ffb800",
+            "group": "comment",
+            "id": "think~com.~0x559c9dd200526^94~0x59c53e3e",
+            "label": "think",
+            "title": "*NodeID: think~com.~0x559c9dd200526^94~0x59c53e3e <br> *Freq: 10 <br> *Sen_Score: 0.0087 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 7, \"neg_count\": 1} <br> *POS: VB,VBP,VBN,NN <br> *Group_ids: com. <br> *Cluster_ids: \u03b2 <br> *History: ",
+            "value": 10
+        },
+        {
+            "cid": "\u03b4",
+            "color": "#ff8000",
+            "group": "article",
+            "id": "cut~art.2~~0x59c53d18",
+            "label": "cut",
+            "title": "*NodeID: cut~art.2~~0x59c53d18 <br> *Freq: 8 <br> *Sen_Score: -0.0522 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 0, \"neg_count\": 7} <br> *POS: VB,VBG,NN,VBD,NNS <br> *Group_ids: art.0,art.2,com. <br> *Cluster_ids: \u03b4 <br> *History: ",
+            "value": 8
+        },
+        {
+            "cid": "\u03b4",
+            "color": "#ffa000",
+            "group": "comment",
+            "id": "amount~com.~0x559c9dd1f3192^11~0x59c53db6",
+            "label": "amount",
+            "title": "*NodeID: amount~com.~0x559c9dd1f3192^11~0x59c53db6 <br> *Freq: 3 <br> *Sen_Score: -0.0174 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 2} <br> *POS: NNS,NN <br> *Group_ids: com. <br> *Cluster_ids: \u03b4 <br> *History: ",
+            "value": 3
+        },
+        {
+            "cid": "\u03b4",
+            "color": "#ff9800",
+            "group": "article",
+            "id": "family~com.~0x559c9dd1fb3a7^59~0x59c53e40",
+            "label": "family",
+            "title": "*NodeID: family~com.~0x559c9dd1fb3a7^59~0x59c53e40 <br> *Freq: 11 <br> *Sen_Score: -0.0261 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 4, \"neg_count\": 5} <br> *POS: NNS,NN <br> *Group_ids: art.6,com. <br> *Cluster_ids: \u03b4 <br> *History: ",
+            "value": 11
+        },
+        {
+            "cid": "\u03b3",
+            "color": "#ffb800",
+            "group": "article",
+            "id": "adult~com.~0x559c9dd1f56f5^26~0x59c53dbd",
+            "label": "adult",
+            "title": "*NodeID: adult~com.~0x559c9dd1f56f5^26~0x59c53dbd <br> *Freq: 6 <br> *Sen_Score: 0.0087 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 5, \"neg_count\": 0} <br> *POS: NNS <br> *Group_ids: art.5,com. <br> *Cluster_ids: \u03b3 <br> *History: ",
+            "value": 6
+        },
+        {
+            "cid": "\u03b3",
+            "color": "#ffa000",
+            "group": "article",
+            "id": "change~com.~0x559c9dd1f2efa^10~0x59c53da0",
+            "label": "change",
+            "title": "*NodeID: change~com.~0x559c9dd1f2efa^10~0x59c53da0 <br> *Freq: 5 <br> *Sen_Score: -0.0174 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 3} <br> *POS: VB,NN <br> *Group_ids: art.6,art.2,com. <br> *Cluster_ids: \u03b3 <br> *History: ",
+            "value": 5
+        },
+        {
+            "cid": "\u03b3",
+            "color": "#ffb000",
+            "group": "article",
+            "id": "bin_space~com.~0x559c9dd1fc5a7^66~0x59c53e86",
+            "label": "weekly_bin_space",
+            "title": "*NodeID: bin_space~com.~0x559c9dd1fc5a7^66~0x59c53e86 <br> *Freq: 3 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 1} <br> *POS: NN,NNP <br> *Group_ids: art.5,art.6,com. <br> *Cluster_ids: \u03b3 <br> *History:  <br> - Contracted with weekly_bin_space^2 (bin_space~art.5~~0x59c53d2e)",
+            "value": 3
+        },
+        {
+            "cid": "\u03b6",
+            "color": "#ffb800",
+            "group": "article",
+            "id": "bin~com.~0x559c9dd1ff7bb^88~0x59c53e4e",
+            "label": "bin",
+            "title": "*NodeID: bin~com.~0x559c9dd1ff7bb^88~0x59c53e4e <br> *Freq: 26 <br> *Sen_Score: 0.0087 <br> *Sentiment: {\"pos_count\": 7, \"neu_count\": 13, \"neg_count\": 6} <br> *POS: NNS,NN <br> *Group_ids: art.5,art.2,com. <br> *Cluster_ids: \u03b6 <br> *History: ",
+            "value": 26
+        },
+        {
+            "cid": "\u03b1",
+            "color": "#ffb000",
+            "group": "article",
+            "id": "borough~com.~0x559c9dd1f4bcd^22~0x59c53dbb",
+            "label": "borough",
+            "title": "*NodeID: borough~com.~0x559c9dd1f4bcd^22~0x59c53dbb <br> *Freq: 3 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 1} <br> *POS: NN <br> *Group_ids: art.5,com. <br> *Cluster_ids: \u03b1 <br> *History: ",
+            "value": 3
+        },
+        {
+            "cid": "\u03b3",
+            "color": "#ffb000",
+            "group": "comment",
+            "id": "baby~com.~0x559c9dd1f6ff6^35~0x59c53e16",
+            "label": "baby",
+            "title": "*NodeID: baby~com.~0x559c9dd1f6ff6^35~0x59c53e16 <br> *Freq: 4 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 2, \"neg_count\": 1} <br> *POS: NN <br> *Group_ids: com. <br> *Cluster_ids: \u03b3 <br> *History: ",
+            "value": 4
+        },
+        {
+            "cid": "\u03b6",
+            "color": "#ff4800",
+            "group": "article",
+            "id": "waste~com.~0x559c9dd1f6ff6^35~0x59c53e20",
+            "label": "waste",
+            "title": "*NodeID: waste~com.~0x559c9dd1f6ff6^35~0x59c53e20 <br> *Freq: 15 <br> *Sen_Score: -0.113 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 2, \"neg_count\": 13} <br> *POS: VBP,VBG,NN <br> *Group_ids: art.6,art.3,com. <br> *Cluster_ids: \u03b6 <br> *History: ",
+            "value": 15
+        },
+        {
+            "cid": "\u03b2",
+            "color": "#ffb800",
+            "group": "comment",
+            "id": "garden~com.~0x559c9dd1f5cfd^29~0x59c53de2",
+            "label": "garden",
+            "title": "*NodeID: garden~com.~0x559c9dd1f5cfd^29~0x59c53de2 <br> *Freq: 6 <br> *Sen_Score: 0.0087 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 3, \"neg_count\": 1} <br> *POS: NN <br> *Group_ids: com. <br> *Cluster_ids: \u03b2 <br> *History: ",
+            "value": 6
+        },
+        {
+            "cid": "\u03b5",
+            "color": "#ffb000",
+            "group": "comment",
+            "id": "winter~com.~0x559c9dd1f3667^13~0x59c53dbb",
+            "label": "winter",
+            "title": "*NodeID: winter~com.~0x559c9dd1f3667^13~0x59c53dbb <br> *Freq: 3 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 1, \"neu_count\": 1, \"neg_count\": 1} <br> *POS: NN <br> *Group_ids: com. <br> *Cluster_ids: \u03b5 <br> *History: ",
+            "value": 3
+        },
+        {
+            "cid": "\u03b2",
+            "color": "#ff9800",
+            "group": "comment",
+            "id": "service~com.~0x559c9dd1fe5f7^80~0x59c53e16",
+            "label": "service",
+            "title": "*NodeID: service~com.~0x559c9dd1fe5f7^80~0x59c53e16 <br> *Freq: 4 <br> *Sen_Score: -0.0261 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 1, \"neg_count\": 3} <br> *POS: NNS,NN <br> *Group_ids: com. <br> *Cluster_ids: \u03b2 <br> *History: ",
+            "value": 4
+        },
+        {
+            "cid": "\u03b1",
+            "color": "#ffb000",
+            "group": "article",
+            "id": "desperate_cost~art.2~~0x59c53d17",
+            "label": "desperate_cost",
+            "title": "*NodeID: desperate_cost~art.2~~0x59c53d17 <br> *Freq: 4 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 0, \"neg_count\": 2} <br> *POS: JJ <br> *Group_ids: art.0,art.2 <br> *Cluster_ids: \u03b1 <br> *History: ",
+            "value": 4
+        },
+        {
+            "cid": "\u03b6",
+            "color": "#ffa800",
+            "group": "article",
+            "id": "blue~art.6~~0x59c53d40",
+            "label": "blue",
+            "title": "*NodeID: blue~art.6~~0x59c53d40 <br> *Freq: 3 <br> *Sen_Score: -0.0087 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 2, \"neg_count\": 1} <br> *POS: JJ <br> *Group_ids: art.6,art.2 <br> *Cluster_ids: \u03b6 <br> *History: ",
+            "value": 3
+        },
+        {
+            "cid": "\u03b2",
+            "color": "#ffb000",
+            "group": "article",
+            "id": "council~art.0~~0x59c53d02",
+            "label": "council",
+            "title": "*NodeID: council~art.0~~0x59c53d02 <br> *Freq: 12 <br> *Sen_Score: 0.0 <br> *Sentiment: {\"pos_count\": 4, \"neu_count\": 4, \"neg_count\": 4} <br> *POS: NNS,NN <br> *Group_ids: art.7,art.0,com. <br> *Cluster_ids: \u03b2 <br> *History: ",
+            "value": 12
+        },
+        {
+            "cid": "\u03b1",
+            "color": "#ffa800",
+            "group": "article",
+            "id": "resident~com.~0x559c9dd1f9b20^51~0x59c53e45",
+            "label": "resident",
+            "title": "*NodeID: resident~com.~0x559c9dd1f9b20^51~0x59c53e45 <br> *Freq: 6 <br> *Sen_Score: -0.0087 <br> *Sentiment: {\"pos_count\": 0, \"neu_count\": 5, \"neg_count\": 1} <br> *POS: NNS,NN <br> *Group_ids: art.5,art.2,com. <br> *Cluster_ids: \u03b1 <br> *History: ",
+            "value": 6
+        },
+        {
+            "cid": "\u03b5",
+            "color": "#ffc000",
+            "group": "comment",
+            "id": "cardboard~com.~0x559c9dd1f3667^13~0x59c53dc1",
+            "label": "cardboard",
+            "title": "*NodeID: cardboard~com.~0x559c9dd1f3667^13~0x59c53dc1 <br> *Freq: 5 <br> *Sen_Score: 0.0174 <br> *Sentiment: {\"pos_count\": 2, \"neu_count\": 3, \"neg_count\": 0} <br> *POS: NN <br> *Group_ids: com. <br> *Cluster_ids: \u03b5 <br> *History: ",
+            "value": 5
+        }
+    ],
+    "options": {
+        "build_option": {
+            "build_mode": 1,
+            "n_thread": 10,
+            "sentiment_ana_mode": "local",
+            "use_thread_structure": false
+        },
+        "pruning_option": {
+            "black_dependencies": [
+                "advcl"
+            ],
+            "black_node_labels": [
+                "wa",
+                "a",
+                "about",
+                "above",
+                "across",
+                "after",
+                "afterwards",
+                "again",
+                "against",
+                "all",
+                "almost",
+                "alone",
+                "along",
+                "already",
+                "also",
+                "although",
+                "always",
+                "am",
+                "among",
+                "amongst",
+                "amoungst",
+                "an",
+                "and",
+                "another",
+                "any",
+                "anyhow",
+                "anyone",
+                "anything",
+                "anyway",
+                "anywhere",
+                "are",
+                "around",
+                "as",
+                "at",
+                "be",
+                "became",
+                "because",
+                "been",
+                "before",
+                "beforehand",
+                "behind",
+                "being",
+                "below",
+                "beside",
+                "besides",
+                "between",
+                "beyond",
+                "both",
+                "but",
+                "by",
+                "can",
+                "cannot",
+                "could",
+                "dare",
+                "despite",
+                "did",
+                "do",
+                "does",
+                "done",
+                "down",
+                "during",
+                "each",
+                "eg",
+                "either",
+                "else",
+                "elsewhere",
+                "enough",
+                "etc",
+                "even",
+                "ever",
+                "every",
+                "everyone",
+                "everything",
+                "everywhere",
+                "except",
+                "few",
+                "first",
+                "for",
+                "former",
+                "formerly",
+                "from",
+                "further",
+                "furthermore",
+                "had",
+                "has",
+                "have",
+                "he",
+                "hence",
+                "her",
+                "here",
+                "hereabouts",
+                "hereafter",
+                "hereby",
+                "herein",
+                "hereinafter",
+                "heretofore",
+                "hereunder",
+                "hereupon",
+                "herewith",
+                "hers",
+                "herself",
+                "him",
+                "himself",
+                "his",
+                "how",
+                "however",
+                "i",
+                "ie",
+                "if",
+                "in",
+                "indeed",
+                "inside",
+                "instead",
+                "into",
+                "is",
+                "it",
+                "its",
+                "itself",
+                "last",
+                "latter",
+                "latterly",
+                "least",
+                "less",
+                "lot",
+                "lots",
+                "many",
+                "may",
+                "me",
+                "meanwhile",
+                "might",
+                "mine",
+                "more",
+                "moreover",
+                "most",
+                "mostly",
+                "much",
+                "must",
+                "my",
+                "myself",
+                "namely",
+                "near",
+                "need",
+                "neither",
+                "never",
+                "nevertheless",
+                "next",
+                "no",
+                "nobody",
+                "none",
+                "noone",
+                "nor",
+                "not",
+                "nothing",
+                "now",
+                "nowhere",
+                "of",
+                "off",
+                "often",
+                "oftentimes",
+                "on",
+                "once",
+                "one",
+                "only",
+                "onto",
+                "or",
+                "other",
+                "others",
+                "otherwise",
+                "ought",
+                "our",
+                "ours",
+                "ourselves",
+                "out",
+                "outside",
+                "over",
+                "per",
+                "perhaps",
+                "rather",
+                "re",
+                "same",
+                "second",
+                "several",
+                "shall",
+                "she",
+                "should",
+                "since",
+                "so",
+                "some",
+                "somehow",
+                "someone",
+                "something",
+                "sometime",
+                "sometimes",
+                "somewhat",
+                "somewhere",
+                "still",
+                "such",
+                "than",
+                "that",
+                "the",
+                "their",
+                "theirs",
+                "them",
+                "themselves",
+                "then",
+                "thence",
+                "there",
+                "thereabouts",
+                "thereafter",
+                "thereby",
+                "therefore",
+                "therein",
+                "thereof",
+                "thereon",
+                "thereupon",
+                "these",
+                "they",
+                "third",
+                "this",
+                "those",
+                "though",
+                "through",
+                "throughout",
+                "thru",
+                "thus",
+                "to",
+                "together",
+                "too",
+                "top",
+                "toward",
+                "towards",
+                "under",
+                "until",
+                "up",
+                "upon",
+                "us",
+                "used",
+                "very",
+                "via",
+                "was",
+                "we",
+                "well",
+                "were",
+                "what",
+                "whatever",
+                "when",
+                "whence",
+                "whenever",
+                "where",
+                "whereafter",
+                "whereas",
+                "whereby",
+                "wherein",
+                "whereupon",
+                "wherever",
+                "whether",
+                "which",
+                "while",
+                "whither",
+                "who",
+                "whoever",
+                "whole",
+                "whom",
+                "whose",
+                "why",
+                "whyever",
+                "will",
+                "with",
+                "within",
+                "without",
+                "would",
+                "yes",
+                "yet",
+                "you",
+                "your",
+                "yours",
+                "yourself",
+                "yourselves"
+            ],
+            "black_pos": [
+                "VB",
+                "VBD",
+                "VBG",
+                "VBN",
+                "VBZ",
+                "VBP"
+            ],
+            "edge_freq_min": 2,
+            "enable_prunning": true,
+            "min_word_length": 3,
+            "node_degree_min": 2,
+            "node_freq_min": 3,
+            "regex_pattern": "[a-z\\/][a-z\\/]+[-_]?[a-z\\/]?[a-z\\/]?",
+            "remove_isolated_node": true,
+            "remove_rings": true,
+            "white_node_labels": []
+        },
+        "timestamp": "2017-09-22 23:48:25 ",
+        "unification_option": {
+            "unify_matched_keywords": {
+                "enable": true,
+                "inter_cluster_unify": true,
+                "intra_cluster_unify": true,
+                "unification_mode": "contract"
+            },
+            "unify_semantic_similarity": {
+                "enable": true,
+                "glove_model_file": "../models/glove.6B.200d.txt",
+                "threshold": 0.85
+            }
+        }
+    }
+}

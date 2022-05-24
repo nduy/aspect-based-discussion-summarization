@@ -1,0 +1,1209 @@
+2017-10-25 19:29:47,502 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Bin_Space
+2017-10-25 19:29:48,864 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Bin_Space
+2017-10-25 19:29:49,971 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Bin_Space
+2017-10-25 19:29:51,074 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Bin_Space
+2017-10-25 19:29:52,164 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:29:52,164 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:29:52,165 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Bin
+2017-10-25 19:29:53,347 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Bin
+2017-10-25 19:29:54,449 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Bin
+2017-10-25 19:29:55,559 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Bin
+2017-10-25 19:29:56,684 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:29:56,684 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:29:56,685 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Space
+2017-10-25 19:29:59,384 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Space
+2017-10-25 19:30:01,938 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Space
+2017-10-25 19:30:04,680 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Space
+2017-10-25 19:30:07,574 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Geometry
+2017-10-25 19:30:09,202 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Geometry
+2017-10-25 19:30:10,942 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Geometry
+2017-10-25 19:30:12,657 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Geometry
+2017-10-25 19:30:14,501 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Topology
+2017-10-25 19:30:16,318 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Topology
+2017-10-25 19:30:18,101 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Topology
+2017-10-25 19:30:19,892 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Topology
+2017-10-25 19:30:21,701 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Space
+2017-10-25 19:30:22,831 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Space
+2017-10-25 19:30:23,949 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Space
+2017-10-25 19:30:25,060 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Space
+2017-10-25 19:30:26,167 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Spacetime
+2017-10-25 19:30:27,300 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Spacetime
+2017-10-25 19:30:28,412 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Spacetime
+2017-10-25 19:30:29,522 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Spacetime
+2017-10-25 19:30:30,639 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Nothing
+2017-10-25 19:30:31,795 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Nothing
+2017-10-25 19:30:32,939 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Nothing
+2017-10-25 19:30:34,071 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Nothing
+2017-10-25 19:30:35,206 : MainThread : INFO : The length of the graph is 535
+2017-10-25 19:30:35,263 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Duff_Household
+2017-10-25 19:30:36,397 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Duff_Household
+2017-10-25 19:30:37,491 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Duff_Household
+2017-10-25 19:30:38,580 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Duff_Household
+2017-10-25 19:30:39,687 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:30:39,687 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:30:39,687 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Duff
+2017-10-25 19:30:41,073 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Duff
+2017-10-25 19:30:43,184 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Duff
+2017-10-25 19:30:44,295 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Duff
+2017-10-25 19:30:45,411 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:30:45,411 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:30:45,412 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Household
+2017-10-25 19:30:46,843 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Household
+2017-10-25 19:30:48,265 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Household
+2017-10-25 19:30:49,656 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Household
+2017-10-25 19:30:51,054 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Sociological_terminology
+2017-10-25 19:30:53,151 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Sociological_terminology
+2017-10-25 19:30:55,227 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Sociological_terminology
+2017-10-25 19:30:57,061 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Sociological_terminology
+2017-10-25 19:30:59,201 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:National_accounts
+2017-10-25 19:31:00,655 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:National_accounts
+2017-10-25 19:31:02,085 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:National_accounts
+2017-10-25 19:31:03,490 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:National_accounts
+2017-10-25 19:31:04,931 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Demography
+2017-10-25 19:31:06,770 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Demography
+2017-10-25 19:31:08,599 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Demography
+2017-10-25 19:31:10,800 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Demography
+2017-10-25 19:31:12,795 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Family_economics
+2017-10-25 19:31:15,326 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Family_economics
+2017-10-25 19:31:16,443 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Family_economics
+2017-10-25 19:31:17,578 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Family_economics
+2017-10-25 19:31:18,696 : MainThread : INFO : The length of the graph is 767
+2017-10-25 19:31:18,779 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Empty
+2017-10-25 19:31:19,884 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Empty
+2017-10-25 19:31:21,000 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Empty
+2017-10-25 19:31:22,101 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Empty
+2017-10-25 19:31:23,206 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:31:23,206 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:31:23,207 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Adult
+2017-10-25 19:31:24,936 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Adult
+2017-10-25 19:31:26,681 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Adult
+2017-10-25 19:31:28,442 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Adult
+2017-10-25 19:31:30,160 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Adulthood
+2017-10-25 19:31:31,311 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Adulthood
+2017-10-25 19:31:32,415 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Adulthood
+2017-10-25 19:31:33,525 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Adulthood
+2017-10-25 19:31:34,642 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Biological_concepts
+2017-10-25 19:31:35,786 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Biological_concepts
+2017-10-25 19:31:36,921 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Biological_concepts
+2017-10-25 19:31:38,046 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Biological_concepts
+2017-10-25 19:31:39,164 : MainThread : INFO : The length of the graph is 38
+2017-10-25 19:31:39,167 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/New_Baby
+2017-10-25 19:31:40,492 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/New_Baby
+2017-10-25 19:31:42,032 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/New_Baby
+2017-10-25 19:31:43,144 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/New_Baby
+2017-10-25 19:31:44,239 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:31:44,240 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:31:44,240 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/New
+2017-10-25 19:31:46,079 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/New
+2017-10-25 19:31:47,817 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/New
+2017-10-25 19:31:49,581 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/New
+2017-10-25 19:31:51,319 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:31:51,319 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:31:51,319 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Baby
+2017-10-25 19:31:52,436 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Baby
+2017-10-25 19:31:53,549 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Baby
+2017-10-25 19:31:54,658 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Baby
+2017-10-25 19:31:55,772 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:31:55,772 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:31:55,772 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Change
+2017-10-25 19:31:57,594 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Change
+2017-10-25 19:31:59,397 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Change
+2017-10-25 19:32:01,167 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Change
+2017-10-25 19:32:02,962 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:32:02,962 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:32:03,405 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Grey_Bin
+2017-10-25 19:32:04,509 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Grey_Bin
+2017-10-25 19:32:05,608 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Grey_Bin
+2017-10-25 19:32:06,716 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Grey_Bin
+2017-10-25 19:32:07,826 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:32:07,826 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:32:07,826 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Grey
+2017-10-25 19:32:09,516 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Grey
+2017-10-25 19:32:14,164 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Grey
+2017-10-25 19:32:15,866 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Grey
+2017-10-25 19:32:17,576 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Shades_of_gray
+2017-10-25 19:32:18,689 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Shades_of_gray
+2017-10-25 19:32:19,806 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Shades_of_gray
+2017-10-25 19:32:20,924 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Shades_of_gray
+2017-10-25 19:32:22,035 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Optical_spectrum
+2017-10-25 19:32:23,157 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Optical_spectrum
+2017-10-25 19:32:24,276 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Optical_spectrum
+2017-10-25 19:32:25,397 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Optical_spectrum
+2017-10-25 19:32:26,502 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Web_colors
+2017-10-25 19:32:27,626 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Web_colors
+2017-10-25 19:32:28,738 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Web_colors
+2017-10-25 19:32:29,842 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Web_colors
+2017-10-25 19:32:30,945 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Color
+2017-10-25 19:32:32,446 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Color
+2017-10-25 19:32:34,180 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Color
+2017-10-25 19:32:35,655 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Color
+2017-10-25 19:32:37,410 : MainThread : INFO : The length of the graph is 228
+2017-10-25 19:32:37,422 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Bin
+2017-10-25 19:32:38,520 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Bin
+2017-10-25 19:32:39,631 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Bin
+2017-10-25 19:32:40,739 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Bin
+2017-10-25 19:32:41,842 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:32:41,842 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:32:41,855 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Supermarket_Carrier_Bag
+2017-10-25 19:32:46,049 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Supermarket_Carrier_Bag
+2017-10-25 19:32:47,147 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Supermarket_Carrier_Bag
+2017-10-25 19:32:48,238 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Supermarket_Carrier_Bag
+2017-10-25 19:32:49,343 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:32:49,343 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:32:49,343 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Supermarket
+2017-10-25 19:32:51,173 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Supermarket
+2017-10-25 19:32:52,936 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Supermarket
+2017-10-25 19:32:54,710 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Supermarket
+2017-10-25 19:32:56,467 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Food_retailing
+2017-10-25 19:32:57,637 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Food_retailing
+2017-10-25 19:32:58,775 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Food_retailing
+2017-10-25 19:32:59,908 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Food_retailing
+2017-10-25 19:33:01,040 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:American_inventions
+2017-10-25 19:33:03,435 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:American_inventions
+2017-10-25 19:33:05,791 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:American_inventions
+2017-10-25 19:33:08,103 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:American_inventions
+2017-10-25 19:33:10,466 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Retailing
+2017-10-25 19:33:12,247 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Retailing
+2017-10-25 19:33:14,140 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Retailing
+2017-10-25 19:33:15,970 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Retailing
+2017-10-25 19:33:17,741 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Supermarkets
+2017-10-25 19:33:18,875 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Supermarkets
+2017-10-25 19:33:20,017 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Supermarkets
+2017-10-25 19:33:21,147 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Supermarkets
+2017-10-25 19:33:22,271 : MainThread : INFO : The length of the graph is 918
+2017-10-25 19:33:22,320 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Carrier
+2017-10-25 19:33:24,898 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Carrier
+2017-10-25 19:33:27,213 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Carrier
+2017-10-25 19:33:29,560 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Carrier
+2017-10-25 19:33:31,963 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:33:31,963 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:33:31,963 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Bag
+2017-10-25 19:33:33,405 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Bag
+2017-10-25 19:33:34,858 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Bag
+2017-10-25 19:33:36,296 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Bag
+2017-10-25 19:33:37,712 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Bags
+2017-10-25 19:33:39,142 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Bags
+2017-10-25 19:33:40,570 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Bags
+2017-10-25 19:33:42,205 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Bags
+2017-10-25 19:33:44,711 : MainThread : INFO : The length of the graph is 95
+2017-10-25 19:33:44,774 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Land_Fill
+2017-10-25 19:33:45,881 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Land_Fill
+2017-10-25 19:33:46,972 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Land_Fill
+2017-10-25 19:33:48,061 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Land_Fill
+2017-10-25 19:33:49,180 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:33:49,181 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:33:49,181 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Land
+2017-10-25 19:33:51,072 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Land
+2017-10-25 19:33:52,805 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Land
+2017-10-25 19:33:54,524 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Land
+2017-10-25 19:33:56,305 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Geography_terminology
+2017-10-25 19:33:57,707 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Geography_terminology
+2017-10-25 19:33:59,122 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Geography_terminology
+2017-10-25 19:34:00,542 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Geography_terminology
+2017-10-25 19:34:01,945 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Physical_geography
+2017-10-25 19:34:03,411 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Physical_geography
+2017-10-25 19:34:05,142 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Physical_geography
+2017-10-25 19:34:06,884 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Physical_geography
+2017-10-25 19:34:08,369 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Geomorphology
+2017-10-25 19:34:10,162 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Geomorphology
+2017-10-25 19:34:15,749 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Geomorphology
+2017-10-25 19:34:17,527 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Geomorphology
+2017-10-25 19:34:19,325 : MainThread : INFO : The length of the graph is 479
+2017-10-25 19:34:19,350 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Fill
+2017-10-25 19:34:20,471 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Fill
+2017-10-25 19:34:21,581 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Fill
+2017-10-25 19:34:22,692 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Fill
+2017-10-25 19:34:23,819 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:34:23,820 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:34:23,848 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Family
+2017-10-25 19:34:31,380 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Family
+2017-10-25 19:34:39,158 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Family
+2017-10-25 19:34:51,418 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Family
+2017-10-25 19:34:59,133 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Family
+2017-10-25 19:35:00,881 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Family
+2017-10-25 19:35:02,614 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Family
+2017-10-25 19:35:04,367 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Family
+2017-10-25 19:35:06,106 : MainThread : INFO : The length of the graph is 183
+2017-10-25 19:35:06,116 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Alternate_Week
+2017-10-25 19:35:07,215 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Alternate_Week
+2017-10-25 19:35:08,306 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Alternate_Week
+2017-10-25 19:35:09,393 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Alternate_Week
+2017-10-25 19:35:10,497 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:35:10,497 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:35:10,497 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Alternate
+2017-10-25 19:35:12,578 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Alternate
+2017-10-25 19:35:13,672 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Alternate
+2017-10-25 19:35:14,791 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Alternate
+2017-10-25 19:35:15,901 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:35:15,901 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:35:15,902 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Week
+2017-10-25 19:35:17,372 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Week
+2017-10-25 19:35:19,102 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Week
+2017-10-25 19:35:20,541 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Week
+2017-10-25 19:35:22,286 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Weeks
+2017-10-25 19:35:23,433 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Weeks
+2017-10-25 19:35:24,543 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Weeks
+2017-10-25 19:35:25,644 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Weeks
+2017-10-25 19:35:26,781 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Units_of_time
+2017-10-25 19:35:28,225 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Units_of_time
+2017-10-25 19:35:29,646 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Units_of_time
+2017-10-25 19:35:31,059 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Units_of_time
+2017-10-25 19:35:32,505 : MainThread : INFO : The length of the graph is 113
+2017-10-25 19:35:32,518 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Cardboard
+2017-10-25 19:35:33,905 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Cardboard
+2017-10-25 19:35:35,514 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Cardboard
+2017-10-25 19:35:36,912 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Cardboard
+2017-10-25 19:35:38,297 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Paper_products
+2017-10-25 19:35:39,737 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Paper_products
+2017-10-25 19:35:41,171 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Paper_products
+2017-10-25 19:35:45,612 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Paper_products
+2017-10-25 19:35:47,061 : MainThread : INFO : The length of the graph is 103
+2017-10-25 19:35:47,067 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Nappy_Problem
+2017-10-25 19:35:48,180 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Nappy_Problem
+2017-10-25 19:35:49,280 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Nappy_Problem
+2017-10-25 19:35:50,371 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Nappy_Problem
+2017-10-25 19:35:51,468 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:35:51,468 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:35:51,468 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Nappy
+2017-10-25 19:35:52,582 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Nappy
+2017-10-25 19:35:53,685 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Nappy
+2017-10-25 19:35:54,790 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Nappy
+2017-10-25 19:35:55,885 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:35:55,886 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:35:55,886 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Problem
+2017-10-25 19:35:58,027 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Problem
+2017-10-25 19:36:00,286 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Problem
+2017-10-25 19:36:02,586 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Problem
+2017-10-25 19:36:04,846 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:36:04,846 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:36:04,846 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Size
+2017-10-25 19:36:06,252 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Size
+2017-10-25 19:36:07,685 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Size
+2017-10-25 19:36:09,089 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Size
+2017-10-25 19:36:10,499 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Size
+2017-10-25 19:36:15,606 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Size
+2017-10-25 19:36:16,725 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Size
+2017-10-25 19:36:17,827 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Size
+2017-10-25 19:36:18,925 : MainThread : INFO : The length of the graph is 12
+2017-10-25 19:36:18,926 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Front_Garden
+2017-10-25 19:36:20,047 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Front_Garden
+2017-10-25 19:36:21,147 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Front_Garden
+2017-10-25 19:36:22,240 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Front_Garden
+2017-10-25 19:36:23,349 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:36:23,349 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:36:23,350 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Front
+2017-10-25 19:36:24,790 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Front
+2017-10-25 19:36:26,284 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Front
+2017-10-25 19:36:27,748 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Front
+2017-10-25 19:36:29,189 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:36:29,190 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:36:29,190 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Garden
+2017-10-25 19:36:32,156 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Garden
+2017-10-25 19:36:35,163 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Garden
+2017-10-25 19:36:38,099 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Garden
+2017-10-25 19:36:41,026 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Landscape
+2017-10-25 19:36:44,411 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Landscape
+2017-10-25 19:36:45,989 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Landscape
+2017-10-25 19:36:47,437 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Landscape
+2017-10-25 19:36:48,866 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Gardens
+2017-10-25 19:36:49,981 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Gardens
+2017-10-25 19:36:51,102 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Gardens
+2017-10-25 19:36:52,207 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Gardens
+2017-10-25 19:36:53,342 : MainThread : INFO : The length of the graph is 117
+2017-10-25 19:36:53,356 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Paper
+2017-10-25 19:36:55,641 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Paper
+2017-10-25 19:36:57,741 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Paper
+2017-10-25 19:36:59,881 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Paper
+2017-10-25 19:37:02,004 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Packaging_materials
+2017-10-25 19:37:03,411 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Packaging_materials
+2017-10-25 19:37:04,810 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Packaging_materials
+2017-10-25 19:37:06,208 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Packaging_materials
+2017-10-25 19:37:07,636 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Art_materials
+2017-10-25 19:37:09,074 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Art_materials
+2017-10-25 19:37:11,055 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Art_materials
+2017-10-25 19:37:12,613 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Art_materials
+2017-10-25 19:37:14,089 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Papermaking
+2017-10-25 19:37:16,781 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Papermaking
+2017-10-25 19:37:18,196 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Papermaking
+2017-10-25 19:37:19,617 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Papermaking
+2017-10-25 19:37:21,072 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Chinese_inventions
+2017-10-25 19:37:22,817 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Chinese_inventions
+2017-10-25 19:37:24,714 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Chinese_inventions
+2017-10-25 19:37:26,446 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Chinese_inventions
+2017-10-25 19:37:28,219 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Paper
+2017-10-25 19:37:29,853 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Paper
+2017-10-25 19:37:31,292 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Paper
+2017-10-25 19:37:32,751 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Paper
+2017-10-25 19:37:34,195 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Printing_materials
+2017-10-25 19:37:35,313 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Printing_materials
+2017-10-25 19:37:36,419 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Printing_materials
+2017-10-25 19:37:37,548 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Printing_materials
+2017-10-25 19:37:38,681 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Paper_art
+2017-10-25 19:37:40,084 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Paper_art
+2017-10-25 19:37:41,484 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Paper_art
+2017-10-25 19:37:43,071 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Paper_art
+2017-10-25 19:37:44,478 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Materials
+2017-10-25 19:37:45,939 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Materials
+2017-10-25 19:37:47,391 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Materials
+2017-10-25 19:37:48,836 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Materials
+2017-10-25 19:37:50,330 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Stationery
+2017-10-25 19:37:51,765 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Stationery
+2017-10-25 19:37:53,193 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Stationery
+2017-10-25 19:37:54,617 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Stationery
+2017-10-25 19:37:56,046 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Writing_media
+2017-10-25 19:37:57,610 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Writing_media
+2017-10-25 19:37:58,730 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Writing_media
+2017-10-25 19:37:59,845 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Writing_media
+2017-10-25 19:38:03,289 : MainThread : INFO : The length of the graph is 947
+2017-10-25 19:38:03,823 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Bury_Council
+2017-10-25 19:38:04,929 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Bury_Council
+2017-10-25 19:38:06,044 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Bury_Council
+2017-10-25 19:38:07,151 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Bury_Council
+2017-10-25 19:38:08,242 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:38:08,242 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:38:08,243 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Bury
+2017-10-25 19:38:10,459 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Bury
+2017-10-25 19:38:23,017 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Bury
+2017-10-25 19:38:37,275 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Bury
+2017-10-25 19:38:39,568 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Market_towns_in_Greater_Manchester
+2017-10-25 19:38:40,706 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Market_towns_in_Greater_Manchester
+2017-10-25 19:38:41,806 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Market_towns_in_Greater_Manchester
+2017-10-25 19:38:43,030 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Market_towns_in_Greater_Manchester
+2017-10-25 19:38:44,141 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Towns_in_Greater_Manchester
+2017-10-25 19:38:47,112 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Towns_in_Greater_Manchester
+2017-10-25 19:38:48,536 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Towns_in_Greater_Manchester
+2017-10-25 19:38:50,510 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Towns_in_Greater_Manchester
+2017-10-25 19:38:52,281 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Bury_Borough
+2017-10-25 19:38:53,440 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Bury_Borough
+2017-10-25 19:38:54,777 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Bury_Borough
+2017-10-25 19:38:55,900 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Bury_Borough
+2017-10-25 19:38:57,381 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Bury
+2017-10-25 19:38:58,512 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Bury
+2017-10-25 19:38:59,620 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Bury
+2017-10-25 19:39:00,868 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Bury
+2017-10-25 19:39:01,975 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Requests_for_audio_pronunciation_(English)
+2017-10-25 19:39:03,107 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Requests_for_audio_pronunciation_(English)
+2017-10-25 19:39:04,376 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Requests_for_audio_pronunciation_(English)
+2017-10-25 19:39:05,511 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Requests_for_audio_pronunciation_(English)
+2017-10-25 19:39:06,645 : MainThread : INFO : The length of the graph is 180
+2017-10-25 19:39:06,656 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Council
+2017-10-25 19:39:10,527 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Council
+2017-10-25 19:39:13,868 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Council
+2017-10-25 19:39:26,370 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Council
+2017-10-25 19:39:29,242 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Deliberative_groups
+2017-10-25 19:39:30,375 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Deliberative_groups
+2017-10-25 19:39:31,480 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Deliberative_groups
+2017-10-25 19:39:32,598 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Deliberative_groups
+2017-10-25 19:39:33,751 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Legislatures
+2017-10-25 19:39:35,301 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Legislatures
+2017-10-25 19:39:36,740 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Legislatures
+2017-10-25 19:39:38,513 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Legislatures
+2017-10-25 19:39:39,958 : MainThread : INFO : The length of the graph is 121
+2017-10-25 19:39:39,981 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Lawn_Cut
+2017-10-25 19:39:41,741 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Lawn_Cut
+2017-10-25 19:39:42,847 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Lawn_Cut
+2017-10-25 19:39:44,387 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Lawn_Cut
+2017-10-25 19:39:46,716 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:39:46,716 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:39:46,717 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Lawn
+2017-10-25 19:39:55,319 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Lawn
+2017-10-25 19:39:58,082 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Lawn
+2017-10-25 19:40:00,600 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Lawn
+2017-10-25 19:40:03,130 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Grasslands
+2017-10-25 19:40:04,278 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Grasslands
+2017-10-25 19:40:05,414 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Grasslands
+2017-10-25 19:40:06,551 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Grasslands
+2017-10-25 19:40:07,894 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Lawns
+2017-10-25 19:40:09,585 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Lawns
+2017-10-25 19:40:10,694 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Lawns
+2017-10-25 19:40:12,165 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Lawns
+2017-10-25 19:40:14,107 : MainThread : INFO : The length of the graph is 62
+2017-10-25 19:40:14,110 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Cut
+2017-10-25 19:40:21,832 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Cut
+2017-10-25 19:40:23,269 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Cut
+2017-10-25 19:40:24,704 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Cut
+2017-10-25 19:40:26,430 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:40:26,430 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:40:26,434 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Know
+2017-10-25 19:40:27,538 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Know
+2017-10-25 19:40:28,643 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Know
+2017-10-25 19:40:29,749 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Know
+2017-10-25 19:40:30,972 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:40:30,972 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:40:30,972 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Stupid_Idea
+2017-10-25 19:40:32,084 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Stupid_Idea
+2017-10-25 19:40:33,180 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Stupid_Idea
+2017-10-25 19:40:34,274 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Stupid_Idea
+2017-10-25 19:40:35,366 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:40:35,366 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:40:35,367 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Stupid
+2017-10-25 19:40:36,471 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Stupid
+2017-10-25 19:40:37,573 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Stupid
+2017-10-25 19:40:38,670 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Stupid
+2017-10-25 19:40:39,773 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:40:39,773 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:40:39,773 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Idea
+2017-10-25 19:40:41,820 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Idea
+2017-10-25 19:40:43,920 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Idea
+2017-10-25 19:40:46,432 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Idea
+2017-10-25 19:40:48,224 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Idealism
+2017-10-25 19:40:49,456 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Idealism
+2017-10-25 19:40:50,580 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Idealism
+2017-10-25 19:40:51,692 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Idealism
+2017-10-25 19:40:52,821 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Concepts
+2017-10-25 19:40:53,969 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Concepts
+2017-10-25 19:40:55,093 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Concepts
+2017-10-25 19:40:56,210 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Concepts
+2017-10-25 19:40:57,334 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Cognition
+2017-10-25 19:40:59,142 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Cognition
+2017-10-25 19:41:00,939 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Cognition
+2017-10-25 19:41:02,712 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Cognition
+2017-10-25 19:41:04,516 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Ontology
+2017-10-25 19:41:06,013 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Ontology
+2017-10-25 19:41:07,457 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Ontology
+2017-10-25 19:41:08,920 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Ontology
+2017-10-25 19:41:10,369 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Thought
+2017-10-25 19:41:11,832 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Thought
+2017-10-25 19:41:15,568 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Thought
+2017-10-25 19:41:17,240 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Thought
+2017-10-25 19:41:18,655 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Creativity
+2017-10-25 19:41:20,083 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Creativity
+2017-10-25 19:41:21,517 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Creativity
+2017-10-25 19:41:22,962 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Creativity
+2017-10-25 19:41:24,408 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Concepts_in_metaphysics
+2017-10-25 19:41:25,862 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Concepts_in_metaphysics
+2017-10-25 19:41:27,606 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Concepts_in_metaphysics
+2017-10-25 19:41:29,331 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Concepts_in_metaphysics
+2017-10-25 19:41:30,797 : MainThread : INFO : The length of the graph is 803
+2017-10-25 19:41:30,884 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Council_Service
+2017-10-25 19:41:31,997 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Council_Service
+2017-10-25 19:41:33,088 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Council_Service
+2017-10-25 19:41:34,200 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Council_Service
+2017-10-25 19:41:35,307 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:41:35,307 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:41:35,308 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Council
+2017-10-25 19:41:37,972 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Council
+2017-10-25 19:41:40,706 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Council
+2017-10-25 19:41:43,528 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Council
+2017-10-25 19:41:47,407 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Deliberative_groups
+2017-10-25 19:41:48,541 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Deliberative_groups
+2017-10-25 19:41:49,648 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Deliberative_groups
+2017-10-25 19:41:50,774 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Deliberative_groups
+2017-10-25 19:41:51,900 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Legislatures
+2017-10-25 19:41:53,342 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Legislatures
+2017-10-25 19:41:54,776 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Legislatures
+2017-10-25 19:41:56,204 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Legislatures
+2017-10-25 19:41:57,629 : MainThread : INFO : The length of the graph is 121
+2017-10-25 19:41:57,636 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Service
+2017-10-25 19:42:01,641 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Service
+2017-10-25 19:42:05,988 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Service
+2017-10-25 19:42:10,443 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Service
+2017-10-25 19:42:15,183 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:42:15,183 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:42:15,190 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Round_Year
+2017-10-25 19:42:16,287 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Round_Year
+2017-10-25 19:42:17,382 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Round_Year
+2017-10-25 19:42:18,474 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Round_Year
+2017-10-25 19:42:19,573 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:42:19,574 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:42:19,574 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Round
+2017-10-25 19:42:22,931 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Round
+2017-10-25 19:42:29,100 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Round
+2017-10-25 19:42:32,557 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Round
+2017-10-25 19:42:35,929 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:42:35,929 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:42:35,930 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Year
+2017-10-25 19:42:40,396 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Year
+2017-10-25 19:42:49,258 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Year
+2017-10-25 19:42:53,741 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Year
+2017-10-25 19:42:58,009 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Solar_calendars
+2017-10-25 19:42:59,154 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Solar_calendars
+2017-10-25 19:43:00,269 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Solar_calendars
+2017-10-25 19:43:01,381 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Solar_calendars
+2017-10-25 19:43:02,507 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Orders_of_magnitude_(time)
+2017-10-25 19:43:03,635 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Orders_of_magnitude_(time)
+2017-10-25 19:43:04,743 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Orders_of_magnitude_(time)
+2017-10-25 19:43:05,854 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Orders_of_magnitude_(time)
+2017-10-25 19:43:06,961 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Years
+2017-10-25 19:43:11,013 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Years
+2017-10-25 19:43:20,352 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Years
+2017-10-25 19:43:24,338 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Years
+2017-10-25 19:43:28,405 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Units_of_time
+2017-10-25 19:43:29,859 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Units_of_time
+2017-10-25 19:43:31,280 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Units_of_time
+2017-10-25 19:43:32,713 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Units_of_time
+2017-10-25 19:43:34,186 : MainThread : INFO : The length of the graph is 2886
+2017-10-25 19:43:34,505 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Taxpayers_Vote
+2017-10-25 19:43:35,627 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Taxpayers_Vote
+2017-10-25 19:43:36,722 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Taxpayers_Vote
+2017-10-25 19:43:37,815 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Taxpayers_Vote
+2017-10-25 19:43:38,916 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:43:38,916 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:43:38,916 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Taxpayers
+2017-10-25 19:43:40,038 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Taxpayers
+2017-10-25 19:43:41,132 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Taxpayers
+2017-10-25 19:43:42,227 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Taxpayers
+2017-10-25 19:43:43,700 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:43:43,701 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:43:43,702 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Vote
+2017-10-25 19:43:45,166 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Vote
+2017-10-25 19:43:46,311 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Vote
+2017-10-25 19:43:47,430 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Vote
+2017-10-25 19:43:48,566 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:43:48,566 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:43:49,214 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Bin_Collection
+2017-10-25 19:43:50,323 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Bin_Collection
+2017-10-25 19:43:51,416 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Bin_Collection
+2017-10-25 19:43:52,513 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Bin_Collection
+2017-10-25 19:43:53,608 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:43:53,609 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:43:53,609 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Bin
+2017-10-25 19:43:54,717 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Bin
+2017-10-25 19:43:55,811 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Bin
+2017-10-25 19:43:56,909 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Bin
+2017-10-25 19:43:58,111 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:43:58,111 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:43:58,112 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Collection
+2017-10-25 19:44:03,652 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Collection
+2017-10-25 19:44:09,368 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Collection
+2017-10-25 19:44:19,283 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Collection
+2017-10-25 19:44:25,025 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:44:25,025 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:44:25,025 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Recycle
+2017-10-25 19:44:26,125 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Recycle
+2017-10-25 19:44:27,217 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Recycle
+2017-10-25 19:44:28,314 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Recycle
+2017-10-25 19:44:29,422 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:44:29,422 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:44:29,422 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/People
+2017-10-25 19:44:32,901 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/People
+2017-10-25 19:44:36,256 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/People
+2017-10-25 19:44:39,683 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/People
+2017-10-25 19:44:43,465 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Humans
+2017-10-25 19:44:44,967 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Humans
+2017-10-25 19:44:46,377 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Humans
+2017-10-25 19:44:47,795 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Humans
+2017-10-25 19:44:49,225 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:People
+2017-10-25 19:44:51,039 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:People
+2017-10-25 19:44:52,903 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:People
+2017-10-25 19:44:54,707 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:People
+2017-10-25 19:44:56,460 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Main_topic_classifications
+2017-10-25 19:44:57,701 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Main_topic_classifications
+2017-10-25 19:44:58,828 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Main_topic_classifications
+2017-10-25 19:44:59,952 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Main_topic_classifications
+2017-10-25 19:45:01,092 : MainThread : INFO : The length of the graph is 129
+2017-10-25 19:45:01,099 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Bury
+2017-10-25 19:45:03,227 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Bury
+2017-10-25 19:45:05,508 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Bury
+2017-10-25 19:45:07,785 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Bury
+2017-10-25 19:45:09,965 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Bury_Borough
+2017-10-25 19:45:11,082 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Bury_Borough
+2017-10-25 19:45:12,194 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Bury_Borough
+2017-10-25 19:45:14,799 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Bury_Borough
+2017-10-25 19:45:16,820 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Towns_in_Greater_Manchester
+2017-10-25 19:45:18,343 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Towns_in_Greater_Manchester
+2017-10-25 19:45:19,772 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Towns_in_Greater_Manchester
+2017-10-25 19:45:21,199 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Towns_in_Greater_Manchester
+2017-10-25 19:45:22,624 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Bury
+2017-10-25 19:45:23,736 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Bury
+2017-10-25 19:45:24,842 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Bury
+2017-10-25 19:45:26,520 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Bury
+2017-10-25 19:45:28,081 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Requests_for_audio_pronunciation_(English)
+2017-10-25 19:45:29,212 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Requests_for_audio_pronunciation_(English)
+2017-10-25 19:45:30,333 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Requests_for_audio_pronunciation_(English)
+2017-10-25 19:45:31,449 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Requests_for_audio_pronunciation_(English)
+2017-10-25 19:45:32,582 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Market_towns_in_Greater_Manchester
+2017-10-25 19:45:33,683 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Market_towns_in_Greater_Manchester
+2017-10-25 19:45:34,794 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Market_towns_in_Greater_Manchester
+2017-10-25 19:45:35,890 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Market_towns_in_Greater_Manchester
+2017-10-25 19:45:37,000 : MainThread : INFO : The length of the graph is 180
+2017-10-25 19:45:37,010 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Easy_Life
+2017-10-25 19:45:38,478 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Easy_Life
+2017-10-25 19:45:39,572 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Easy_Life
+2017-10-25 19:45:40,667 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Easy_Life
+2017-10-25 19:45:41,764 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:45:41,764 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:45:41,765 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Easy
+2017-10-25 19:45:42,950 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Easy
+2017-10-25 19:45:44,328 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Easy
+2017-10-25 19:45:45,856 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Easy
+2017-10-25 19:45:47,173 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:45:47,173 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:45:47,173 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Life
+2017-10-25 19:45:48,936 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Life
+2017-10-25 19:45:50,648 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Life
+2017-10-25 19:45:52,361 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Life
+2017-10-25 19:45:54,077 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Nature
+2017-10-25 19:45:55,307 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Nature
+2017-10-25 19:45:56,424 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Nature
+2017-10-25 19:45:57,538 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Nature
+2017-10-25 19:45:58,663 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Life
+2017-10-25 19:45:59,802 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Life
+2017-10-25 19:46:00,922 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Life
+2017-10-25 19:46:02,029 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Life
+2017-10-25 19:46:03,159 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Biology
+2017-10-25 19:46:04,617 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Biology
+2017-10-25 19:46:06,343 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Biology
+2017-10-25 19:46:08,077 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Biology
+2017-10-25 19:46:09,534 : MainThread : INFO : The length of the graph is 233
+2017-10-25 19:46:09,560 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/House
+2017-10-25 19:46:17,411 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/House
+2017-10-25 19:46:24,882 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/House
+2017-10-25 19:46:32,580 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/House
+2017-10-25 19:46:40,174 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Houses
+2017-10-25 19:46:41,303 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Houses
+2017-10-25 19:46:42,417 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Houses
+2017-10-25 19:46:43,535 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Houses
+2017-10-25 19:46:44,856 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Home
+2017-10-25 19:46:46,032 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Home
+2017-10-25 19:46:47,157 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Home
+2017-10-25 19:46:48,287 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Home
+2017-10-25 19:46:49,435 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Housing
+2017-10-25 19:46:50,867 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Housing
+2017-10-25 19:46:52,269 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Housing
+2017-10-25 19:46:53,695 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Housing
+2017-10-25 19:46:55,105 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Structural_system
+2017-10-25 19:46:56,560 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Structural_system
+2017-10-25 19:46:57,995 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Structural_system
+2017-10-25 19:46:59,442 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Structural_system
+2017-10-25 19:47:00,912 : MainThread : INFO : The length of the graph is 294
+2017-10-25 19:47:00,929 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Certain_Point
+2017-10-25 19:47:02,044 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Certain_Point
+2017-10-25 19:47:03,136 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Certain_Point
+2017-10-25 19:47:04,226 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Certain_Point
+2017-10-25 19:47:05,336 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:47:05,336 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:47:05,337 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Certain
+2017-10-25 19:47:06,451 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Certain
+2017-10-25 19:47:07,543 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Certain
+2017-10-25 19:47:08,639 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Certain
+2017-10-25 19:47:09,747 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:47:09,747 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:47:09,748 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Point
+2017-10-25 19:47:13,069 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Point
+2017-10-25 19:47:17,093 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Point
+2017-10-25 19:47:21,604 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Point
+2017-10-25 19:47:25,003 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:47:25,004 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:47:25,004 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Matter
+2017-10-25 19:47:26,737 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Matter
+2017-10-25 19:47:28,454 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Matter
+2017-10-25 19:47:30,174 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Matter
+2017-10-25 19:47:31,914 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Matter
+2017-10-25 19:47:33,047 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Matter
+2017-10-25 19:47:34,165 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Matter
+2017-10-25 19:47:35,296 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Matter
+2017-10-25 19:47:36,411 : MainThread : INFO : The length of the graph is 34
+2017-10-25 19:47:36,828 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Organic_Waste
+2017-10-25 19:47:37,933 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Organic_Waste
+2017-10-25 19:47:39,024 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Organic_Waste
+2017-10-25 19:47:40,116 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Organic_Waste
+2017-10-25 19:47:41,223 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:47:41,224 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:47:41,224 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Organic
+2017-10-25 19:47:42,427 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Organic
+2017-10-25 19:47:43,537 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Organic
+2017-10-25 19:47:45,734 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Organic
+2017-10-25 19:47:46,847 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:47:46,847 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:47:46,847 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Waste
+2017-10-25 19:47:48,552 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Waste
+2017-10-25 19:47:49,989 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Waste
+2017-10-25 19:47:51,413 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Waste
+2017-10-25 19:47:52,826 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Waste
+2017-10-25 19:47:54,269 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Waste
+2017-10-25 19:47:55,682 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Waste
+2017-10-25 19:47:57,087 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Waste
+2017-10-25 19:47:58,525 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Waste_of_resources
+2017-10-25 19:47:59,698 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Waste_of_resources
+2017-10-25 19:48:00,810 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Waste_of_resources
+2017-10-25 19:48:01,922 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Waste_of_resources
+2017-10-25 19:48:03,048 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Environmental_issues_with_population
+2017-10-25 19:48:04,476 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Environmental_issues_with_population
+2017-10-25 19:48:05,889 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Environmental_issues_with_population
+2017-10-25 19:48:07,516 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Environmental_issues_with_population
+2017-10-25 19:48:08,930 : MainThread : INFO : The length of the graph is 179
+2017-10-25 19:48:08,951 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Recyclable_Stuff
+2017-10-25 19:48:10,044 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Recyclable_Stuff
+2017-10-25 19:48:11,137 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Recyclable_Stuff
+2017-10-25 19:48:12,245 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Recyclable_Stuff
+2017-10-25 19:48:13,531 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:48:13,531 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:48:13,532 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Recyclable
+2017-10-25 19:48:15,202 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Recyclable
+2017-10-25 19:48:16,309 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Recyclable
+2017-10-25 19:48:17,408 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Recyclable
+2017-10-25 19:48:18,532 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:48:18,533 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:48:18,533 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Stuff
+2017-10-25 19:48:19,652 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Stuff
+2017-10-25 19:48:20,757 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Stuff
+2017-10-25 19:48:21,868 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Stuff
+2017-10-25 19:48:22,985 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:48:22,986 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:48:22,986 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Garden_Compost
+2017-10-25 19:48:24,087 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Garden_Compost
+2017-10-25 19:48:25,193 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Garden_Compost
+2017-10-25 19:48:26,294 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Garden_Compost
+2017-10-25 19:48:27,393 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:48:27,394 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:48:27,394 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Garden
+2017-10-25 19:48:30,380 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Garden
+2017-10-25 19:48:33,579 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Garden
+2017-10-25 19:48:36,499 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Garden
+2017-10-25 19:48:39,743 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Gardens
+2017-10-25 19:48:40,867 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Gardens
+2017-10-25 19:48:41,997 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Gardens
+2017-10-25 19:48:43,109 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Gardens
+2017-10-25 19:48:45,279 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Landscape
+2017-10-25 19:48:47,016 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Landscape
+2017-10-25 19:48:48,440 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Landscape
+2017-10-25 19:48:49,884 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Landscape
+2017-10-25 19:48:51,302 : MainThread : INFO : The length of the graph is 117
+2017-10-25 19:48:51,308 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Compost
+2017-10-25 19:48:53,006 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Compost
+2017-10-25 19:48:54,683 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Compost
+2017-10-25 19:48:56,097 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Compost
+2017-10-25 19:48:57,781 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Sanitation
+2017-10-25 19:48:59,191 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Sanitation
+2017-10-25 19:49:00,599 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Sanitation
+2017-10-25 19:49:02,016 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Sanitation
+2017-10-25 19:49:03,453 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Soil_improvers
+2017-10-25 19:49:04,855 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Soil_improvers
+2017-10-25 19:49:06,271 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Soil_improvers
+2017-10-25 19:49:07,687 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Soil_improvers
+2017-10-25 19:49:09,114 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Soil
+2017-10-25 19:49:10,598 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Soil
+2017-10-25 19:49:12,040 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Soil
+2017-10-25 19:49:13,643 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Soil
+2017-10-25 19:49:15,324 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Organic_gardening
+2017-10-25 19:49:16,769 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Organic_gardening
+2017-10-25 19:49:18,212 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Organic_gardening
+2017-10-25 19:49:19,627 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Organic_gardening
+2017-10-25 19:49:21,045 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Waste_management
+2017-10-25 19:49:22,469 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Waste_management
+2017-10-25 19:49:23,931 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Waste_management
+2017-10-25 19:49:25,353 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Waste_management
+2017-10-25 19:49:26,797 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Organic_farming
+2017-10-25 19:49:28,225 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Organic_farming
+2017-10-25 19:49:29,647 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Organic_farming
+2017-10-25 19:49:31,071 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Organic_farming
+2017-10-25 19:49:32,502 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Composting
+2017-10-25 19:49:33,655 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Composting
+2017-10-25 19:49:34,800 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Composting
+2017-10-25 19:49:35,926 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Composting
+2017-10-25 19:49:37,076 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Organic_fertilizers
+2017-10-25 19:49:38,208 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Organic_fertilizers
+2017-10-25 19:49:39,324 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Organic_fertilizers
+2017-10-25 19:49:40,451 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Organic_fertilizers
+2017-10-25 19:49:41,561 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Gardening_aids
+2017-10-25 19:49:42,752 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Gardening_aids
+2017-10-25 19:49:43,887 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Gardening_aids
+2017-10-25 19:49:45,018 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Gardening_aids
+2017-10-25 19:49:46,149 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Sustainable_food_system
+2017-10-25 19:49:47,304 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Sustainable_food_system
+2017-10-25 19:49:48,453 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Sustainable_food_system
+2017-10-25 19:49:49,569 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Sustainable_food_system
+2017-10-25 19:49:50,705 : MainThread : INFO : The length of the graph is 737
+2017-10-25 19:49:50,793 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Year_Whilst_Resident
+2017-10-25 19:49:51,901 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Year_Whilst_Resident
+2017-10-25 19:49:52,995 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Year_Whilst_Resident
+2017-10-25 19:49:54,098 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Year_Whilst_Resident
+2017-10-25 19:49:55,201 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:49:55,201 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:49:55,201 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Year
+2017-10-25 19:49:59,450 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Year
+2017-10-25 19:50:03,999 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Year
+2017-10-25 19:50:08,385 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Year
+2017-10-25 19:50:12,609 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Orders_of_magnitude_(time)
+2017-10-25 19:50:13,812 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Orders_of_magnitude_(time)
+2017-10-25 19:50:14,932 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Orders_of_magnitude_(time)
+2017-10-25 19:50:16,137 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Orders_of_magnitude_(time)
+2017-10-25 19:50:17,258 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Solar_calendars
+2017-10-25 19:50:18,386 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Solar_calendars
+2017-10-25 19:50:19,501 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Solar_calendars
+2017-10-25 19:50:20,613 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Solar_calendars
+2017-10-25 19:50:21,736 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Years
+2017-10-25 19:50:25,809 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Years
+2017-10-25 19:50:29,871 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Years
+2017-10-25 19:50:33,847 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Years
+2017-10-25 19:50:37,908 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Units_of_time
+2017-10-25 19:50:39,408 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Units_of_time
+2017-10-25 19:50:40,885 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Units_of_time
+2017-10-25 19:50:42,393 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Units_of_time
+2017-10-25 19:50:44,022 : MainThread : INFO : The length of the graph is 2886
+2017-10-25 19:50:44,174 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Whilst
+2017-10-25 19:50:45,288 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Whilst
+2017-10-25 19:50:46,406 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Whilst
+2017-10-25 19:50:47,530 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Whilst
+2017-10-25 19:50:48,625 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:50:48,625 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:50:48,626 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Resident
+2017-10-25 19:50:50,465 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Resident
+2017-10-25 19:50:52,269 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Resident
+2017-10-25 19:50:54,068 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Resident
+2017-10-25 19:50:55,866 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:50:55,867 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:50:56,030 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Zero_Waste_Borough
+2017-10-25 19:50:57,128 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Zero_Waste_Borough
+2017-10-25 19:50:58,228 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Zero_Waste_Borough
+2017-10-25 19:50:59,319 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Zero_Waste_Borough
+2017-10-25 19:51:00,426 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:51:00,426 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:51:00,426 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Zero
+2017-10-25 19:51:01,557 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Zero
+2017-10-25 19:51:02,657 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Zero
+2017-10-25 19:51:03,772 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Zero
+2017-10-25 19:51:04,889 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:51:04,889 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:51:04,890 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Waste
+2017-10-25 19:51:06,588 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Waste
+2017-10-25 19:51:08,279 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Waste
+2017-10-25 19:51:09,978 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Waste
+2017-10-25 19:51:11,665 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Waste
+2017-10-25 19:51:13,185 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Waste
+2017-10-25 19:51:14,632 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Waste
+2017-10-25 19:51:17,128 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Waste
+2017-10-25 19:51:18,533 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Environmental_issues_with_population
+2017-10-25 19:51:19,941 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Environmental_issues_with_population
+2017-10-25 19:51:21,345 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Environmental_issues_with_population
+2017-10-25 19:51:22,762 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Environmental_issues_with_population
+2017-10-25 19:51:24,191 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Waste_of_resources
+2017-10-25 19:51:25,308 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Waste_of_resources
+2017-10-25 19:51:26,447 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Waste_of_resources
+2017-10-25 19:51:27,554 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Waste_of_resources
+2017-10-25 19:51:28,690 : MainThread : INFO : The length of the graph is 179
+2017-10-25 19:51:28,737 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Borough
+2017-10-25 19:51:32,470 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Borough
+2017-10-25 19:51:36,420 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Borough
+2017-10-25 19:51:40,434 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Borough
+2017-10-25 19:51:44,540 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Local_government_in_Canada
+2017-10-25 19:51:45,723 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Local_government_in_Canada
+2017-10-25 19:51:47,018 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Local_government_in_Canada
+2017-10-25 19:51:48,125 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Local_government_in_Canada
+2017-10-25 19:51:49,240 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Boroughs
+2017-10-25 19:51:50,374 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Boroughs
+2017-10-25 19:51:51,476 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Boroughs
+2017-10-25 19:51:52,587 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Boroughs
+2017-10-25 19:51:53,688 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Types_of_populated_places
+2017-10-25 19:51:54,822 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Types_of_populated_places
+2017-10-25 19:51:55,952 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Types_of_populated_places
+2017-10-25 19:51:57,097 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Types_of_populated_places
+2017-10-25 19:51:58,213 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Types_of_country_subdivisions
+2017-10-25 19:52:00,279 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Types_of_country_subdivisions
+2017-10-25 19:52:02,395 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Types_of_country_subdivisions
+2017-10-25 19:52:04,491 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Types_of_country_subdivisions
+2017-10-25 19:52:06,589 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Types_of_subdivision_in_the_United_Kingdom
+2017-10-25 19:52:07,718 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Types_of_subdivision_in_the_United_Kingdom
+2017-10-25 19:52:08,834 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Types_of_subdivision_in_the_United_Kingdom
+2017-10-25 19:52:09,954 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Types_of_subdivision_in_the_United_Kingdom
+2017-10-25 19:52:11,064 : MainThread : INFO : The length of the graph is 421
+2017-10-25 19:52:11,121 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Whole_Winter
+2017-10-25 19:52:12,220 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Whole_Winter
+2017-10-25 19:52:13,322 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Whole_Winter
+2017-10-25 19:52:15,025 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Whole_Winter
+2017-10-25 19:52:16,224 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:52:16,224 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:52:16,225 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Whole
+2017-10-25 19:52:17,401 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Whole
+2017-10-25 19:52:18,505 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Whole
+2017-10-25 19:52:19,624 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Whole
+2017-10-25 19:52:20,726 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:52:20,726 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:52:20,726 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Winter
+2017-10-25 19:52:22,146 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Winter
+2017-10-25 19:52:23,786 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Winter
+2017-10-25 19:52:25,192 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Winter
+2017-10-25 19:52:26,601 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Winter
+2017-10-25 19:52:27,717 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Winter
+2017-10-25 19:52:28,825 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Winter
+2017-10-25 19:52:29,955 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Winter
+2017-10-25 19:52:31,078 : MainThread : INFO : The length of the graph is 19
+2017-10-25 19:52:31,081 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/End
+2017-10-25 19:52:34,588 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/End
+2017-10-25 19:52:38,103 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/End
+2017-10-25 19:52:41,886 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/End
+2017-10-25 19:52:46,060 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:52:46,060 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:52:46,060 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Waste_Packaging
+2017-10-25 19:52:47,189 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Waste_Packaging
+2017-10-25 19:52:48,290 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Waste_Packaging
+2017-10-25 19:52:49,384 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Waste_Packaging
+2017-10-25 19:52:50,486 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:52:50,486 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:52:50,487 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Waste
+2017-10-25 19:52:52,194 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Waste
+2017-10-25 19:52:53,877 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Waste
+2017-10-25 19:52:55,557 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Waste
+2017-10-25 19:52:57,253 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Waste_of_resources
+2017-10-25 19:52:58,386 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Waste_of_resources
+2017-10-25 19:52:59,495 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Waste_of_resources
+2017-10-25 19:53:00,615 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Waste_of_resources
+2017-10-25 19:53:01,739 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Environmental_issues_with_population
+2017-10-25 19:53:03,163 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Environmental_issues_with_population
+2017-10-25 19:53:04,718 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Environmental_issues_with_population
+2017-10-25 19:53:06,170 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Environmental_issues_with_population
+2017-10-25 19:53:07,583 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Waste
+2017-10-25 19:53:08,996 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Waste
+2017-10-25 19:53:10,402 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Waste
+2017-10-25 19:53:11,807 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Waste
+2017-10-25 19:53:13,218 : MainThread : INFO : The length of the graph is 179
+2017-10-25 19:53:13,228 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Packaging
+2017-10-25 19:53:14,555 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Packaging
+2017-10-25 19:53:16,265 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Packaging
+2017-10-25 19:53:17,412 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Packaging
+2017-10-25 19:53:18,555 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:53:18,555 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:53:19,133 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Green_Issue
+2017-10-25 19:53:20,243 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Green_Issue
+2017-10-25 19:53:21,346 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Green_Issue
+2017-10-25 19:53:22,436 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Green_Issue
+2017-10-25 19:53:23,540 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:53:23,540 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:53:23,541 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Green
+2017-10-25 19:53:25,955 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Green
+2017-10-25 19:53:28,291 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Green
+2017-10-25 19:53:30,624 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Green
+2017-10-25 19:53:33,019 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Color
+2017-10-25 19:53:34,781 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Color
+2017-10-25 19:53:36,513 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Color
+2017-10-25 19:53:38,269 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Color
+2017-10-25 19:53:40,011 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Web_colors
+2017-10-25 19:53:41,133 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Web_colors
+2017-10-25 19:53:42,240 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Web_colors
+2017-10-25 19:53:43,433 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Web_colors
+2017-10-25 19:53:44,666 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Optical_spectrum
+2017-10-25 19:53:45,814 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Optical_spectrum
+2017-10-25 19:53:47,013 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Optical_spectrum
+2017-10-25 19:53:48,135 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Optical_spectrum
+2017-10-25 19:53:49,258 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Shades_of_green
+2017-10-25 19:53:50,680 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Shades_of_green
+2017-10-25 19:53:52,078 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Shades_of_green
+2017-10-25 19:53:53,476 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Shades_of_green
+2017-10-25 19:53:54,878 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Rainbow
+2017-10-25 19:53:55,998 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Rainbow
+2017-10-25 19:53:57,120 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Rainbow
+2017-10-25 19:53:58,258 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Rainbow
+2017-10-25 19:53:59,367 : MainThread : INFO : The length of the graph is 296
+2017-10-25 19:53:59,382 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Issue
+2017-10-25 19:54:01,155 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Issue
+2017-10-25 19:54:02,919 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Issue
+2017-10-25 19:54:04,707 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Issue
+2017-10-25 19:54:06,486 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:54:06,487 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:54:06,503 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Desperate_Cost
+2017-10-25 19:54:07,606 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Desperate_Cost
+2017-10-25 19:54:08,710 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Desperate_Cost
+2017-10-25 19:54:09,805 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Desperate_Cost
+2017-10-25 19:54:10,898 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:54:10,898 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:54:10,899 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Desperate
+2017-10-25 19:54:12,066 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Desperate
+2017-10-25 19:54:13,174 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Desperate
+2017-10-25 19:54:14,510 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Desperate
+2017-10-25 19:54:15,670 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:54:15,671 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:54:15,671 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Cost
+2017-10-25 19:54:17,156 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Cost
+2017-10-25 19:54:18,570 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Cost
+2017-10-25 19:54:19,982 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Cost
+2017-10-25 19:54:21,419 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Costs
+2017-10-25 19:54:23,319 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Costs
+2017-10-25 19:54:24,730 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Costs
+2017-10-25 19:54:26,145 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Costs
+2017-10-25 19:54:27,568 : MainThread : INFO : The length of the graph is 88
+2017-10-25 19:54:27,578 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Example
+2017-10-25 19:54:29,715 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Example
+2017-10-25 19:54:31,865 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Example
+2017-10-25 19:54:34,171 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Example
+2017-10-25 19:54:36,339 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:54:36,340 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:54:36,340 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Rat
+2017-10-25 19:54:38,074 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Rat
+2017-10-25 19:54:39,792 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Rat
+2017-10-25 19:54:41,501 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Rat
+2017-10-25 19:54:43,308 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Rats
+2017-10-25 19:54:44,652 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Rats
+2017-10-25 19:54:45,776 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Rats
+2017-10-25 19:54:46,886 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Rats
+2017-10-25 19:54:47,997 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Invasive_mammal_species
+2017-10-25 19:54:49,121 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Invasive_mammal_species
+2017-10-25 19:54:50,239 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Invasive_mammal_species
+2017-10-25 19:54:51,359 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Invasive_mammal_species
+2017-10-25 19:54:52,484 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Scavengers
+2017-10-25 19:54:53,630 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Scavengers
+2017-10-25 19:54:54,740 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Scavengers
+2017-10-25 19:54:55,850 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Scavengers
+2017-10-25 19:54:56,982 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Extant_Pleistocene_first_appearances
+2017-10-25 19:54:58,439 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Extant_Pleistocene_first_appearances
+2017-10-25 19:54:59,872 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Extant_Pleistocene_first_appearances
+2017-10-25 19:55:01,277 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Extant_Pleistocene_first_appearances
+2017-10-25 19:55:02,696 : MainThread : INFO : The length of the graph is 181
+2017-10-25 19:55:02,707 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Long_Run
+2017-10-25 19:55:03,820 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Long_Run
+2017-10-25 19:55:04,942 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Long_Run
+2017-10-25 19:55:06,046 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Long_Run
+2017-10-25 19:55:07,150 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:55:07,150 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:55:07,151 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Long
+2017-10-25 19:55:08,602 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Long
+2017-10-25 19:55:09,735 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Long
+2017-10-25 19:55:10,845 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Long
+2017-10-25 19:55:11,971 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:55:11,971 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:55:11,971 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Run
+2017-10-25 19:55:14,864 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Run
+2017-10-25 19:55:17,556 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Run
+2017-10-25 19:55:20,217 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Run
+2017-10-25 19:55:22,875 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:55:22,875 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:55:22,876 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Move
+2017-10-25 19:55:24,310 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Move
+2017-10-25 19:55:25,749 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Move
+2017-10-25 19:55:27,165 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Move
+2017-10-25 19:55:28,583 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:55:28,583 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:55:28,584 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Lead
+2017-10-25 19:55:30,339 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Lead
+2017-10-25 19:55:32,136 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Lead
+2017-10-25 19:55:34,058 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Lead
+2017-10-25 19:55:35,810 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Toxicology
+2017-10-25 19:55:37,580 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Toxicology
+2017-10-25 19:55:39,364 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Toxicology
+2017-10-25 19:55:41,126 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Toxicology
+2017-10-25 19:55:42,892 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Coolants
+2017-10-25 19:55:44,280 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Coolants
+2017-10-25 19:55:48,081 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Coolants
+2017-10-25 19:55:49,215 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Coolants
+2017-10-25 19:55:50,363 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:IARC_Group_2B_carcinogens
+2017-10-25 19:55:52,001 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:IARC_Group_2B_carcinogens
+2017-10-25 19:55:53,459 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:IARC_Group_2B_carcinogens
+2017-10-25 19:55:55,203 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:IARC_Group_2B_carcinogens
+2017-10-25 19:55:56,934 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Endocrine_disruptors
+2017-10-25 19:55:58,344 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Endocrine_disruptors
+2017-10-25 19:55:59,764 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Endocrine_disruptors
+2017-10-25 19:56:01,163 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Endocrine_disruptors
+2017-10-25 19:56:02,597 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Native_element_minerals
+2017-10-25 19:56:04,024 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Native_element_minerals
+2017-10-25 19:56:05,433 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Native_element_minerals
+2017-10-25 19:56:06,837 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Native_element_minerals
+2017-10-25 19:56:08,257 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Superconductors
+2017-10-25 19:56:09,386 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Superconductors
+2017-10-25 19:56:10,499 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Superconductors
+2017-10-25 19:56:11,619 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Superconductors
+2017-10-25 19:56:12,745 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Nuclear_reactor_coolants
+2017-10-25 19:56:13,962 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Nuclear_reactor_coolants
+2017-10-25 19:56:15,492 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Nuclear_reactor_coolants
+2017-10-25 19:56:16,598 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Nuclear_reactor_coolants
+2017-10-25 19:56:17,722 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Occupational_safety_and_health
+2017-10-25 19:56:19,514 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Occupational_safety_and_health
+2017-10-25 19:56:21,335 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Occupational_safety_and_health
+2017-10-25 19:56:23,097 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Occupational_safety_and_health
+2017-10-25 19:56:24,877 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Soil_contamination
+2017-10-25 19:56:26,010 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Soil_contamination
+2017-10-25 19:56:27,140 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Soil_contamination
+2017-10-25 19:56:28,258 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Soil_contamination
+2017-10-25 19:56:29,393 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Chemical_elements
+2017-10-25 19:56:31,190 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Chemical_elements
+2017-10-25 19:56:32,979 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Chemical_elements
+2017-10-25 19:56:34,769 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Chemical_elements
+2017-10-25 19:56:36,553 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Lead
+2017-10-25 19:56:37,680 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Lead
+2017-10-25 19:56:38,807 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Lead
+2017-10-25 19:56:39,938 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Lead
+2017-10-25 19:56:41,059 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Post-transition_metals
+2017-10-25 19:56:42,188 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Post-transition_metals
+2017-10-25 19:56:43,310 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Post-transition_metals
+2017-10-25 19:56:44,676 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Post-transition_metals
+2017-10-25 19:56:45,800 : MainThread : INFO : The length of the graph is 1233
+2017-10-25 19:56:45,866 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Shiny_Silver_Fox
+2017-10-25 19:56:46,957 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Shiny_Silver_Fox
+2017-10-25 19:56:48,051 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Shiny_Silver_Fox
+2017-10-25 19:56:49,147 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Shiny_Silver_Fox
+2017-10-25 19:56:50,250 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:56:50,251 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:56:50,251 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Shiny
+2017-10-25 19:56:51,393 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Shiny
+2017-10-25 19:56:52,529 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Shiny
+2017-10-25 19:56:53,627 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Shiny
+2017-10-25 19:56:54,742 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:56:54,742 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:56:54,743 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Silver
+2017-10-25 19:56:56,538 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Silver
+2017-10-25 19:56:58,573 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Silver
+2017-10-25 19:57:00,638 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Silver
+2017-10-25 19:57:02,421 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Silver
+2017-10-25 19:57:03,874 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Silver
+2017-10-25 19:57:05,302 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Silver
+2017-10-25 19:57:06,709 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Silver
+2017-10-25 19:57:08,136 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Native_element_minerals
+2017-10-25 19:57:09,548 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Native_element_minerals
+2017-10-25 19:57:10,961 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Native_element_minerals
+2017-10-25 19:57:12,364 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Native_element_minerals
+2017-10-25 19:57:13,774 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Precious_metals
+2017-10-25 19:57:15,177 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Precious_metals
+2017-10-25 19:57:16,308 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Precious_metals
+2017-10-25 19:57:17,511 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Precious_metals
+2017-10-25 19:57:18,643 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Chemical_elements
+2017-10-25 19:57:20,424 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Chemical_elements
+2017-10-25 19:57:22,307 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Chemical_elements
+2017-10-25 19:57:24,078 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Chemical_elements
+2017-10-25 19:57:25,903 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Warrants_issued_in_Hong_Kong_Stock_Exchange
+2017-10-25 19:57:27,663 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Warrants_issued_in_Hong_Kong_Stock_Exchange
+2017-10-25 19:57:29,388 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Warrants_issued_in_Hong_Kong_Stock_Exchange
+2017-10-25 19:57:31,111 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Warrants_issued_in_Hong_Kong_Stock_Exchange
+2017-10-25 19:57:32,853 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Noble_metals
+2017-10-25 19:57:33,986 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Noble_metals
+2017-10-25 19:57:35,092 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Noble_metals
+2017-10-25 19:57:36,191 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Noble_metals
+2017-10-25 19:57:37,292 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Cubic_minerals
+2017-10-25 19:57:38,757 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Cubic_minerals
+2017-10-25 19:57:40,203 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Cubic_minerals
+2017-10-25 19:57:41,650 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Cubic_minerals
+2017-10-25 19:57:43,116 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Transition_metals
+2017-10-25 19:57:44,582 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Transition_metals
+2017-10-25 19:57:46,041 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Transition_metals
+2017-10-25 19:57:47,549 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Transition_metals
+2017-10-25 19:57:48,994 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Electrical_conductors
+2017-10-25 19:57:50,101 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Electrical_conductors
+2017-10-25 19:57:51,206 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Electrical_conductors
+2017-10-25 19:57:52,322 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Electrical_conductors
+2017-10-25 19:57:53,433 : MainThread : INFO : The length of the graph is 913
+2017-10-25 19:57:53,480 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Fox
+2017-10-25 19:57:55,272 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Fox
+2017-10-25 19:57:57,072 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Fox
+2017-10-25 19:57:58,808 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Fox
+2017-10-25 19:58:00,533 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Foxes
+2017-10-25 19:58:01,664 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Foxes
+2017-10-25 19:58:02,790 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Foxes
+2017-10-25 19:58:03,957 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Foxes
+2017-10-25 19:58:05,070 : MainThread : INFO : The length of the graph is 25
+2017-10-25 19:58:05,123 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Saving_Measure
+2017-10-25 19:58:06,221 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Saving_Measure
+2017-10-25 19:58:07,326 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Saving_Measure
+2017-10-25 19:58:08,421 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Saving_Measure
+2017-10-25 19:58:09,529 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:58:09,529 : MainThread : INFO : Trying to split the word if applicable
+2017-10-25 19:58:09,530 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Saving
+2017-10-25 19:58:10,951 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Saving
+2017-10-25 19:58:12,358 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Saving
+2017-10-25 19:58:14,099 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Saving
+2017-10-25 19:58:15,687 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Consumer_theory
+2017-10-25 19:58:17,333 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Consumer_theory
+2017-10-25 19:58:19,566 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Consumer_theory
+2017-10-25 19:58:20,983 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Consumer_theory
+2017-10-25 19:58:22,424 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Personal_finance
+2017-10-25 19:58:23,892 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Personal_finance
+2017-10-25 19:58:25,348 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Personal_finance
+2017-10-25 19:58:26,798 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Personal_finance
+2017-10-25 19:58:28,264 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Intertemporal_economics
+2017-10-25 19:58:29,378 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Intertemporal_economics
+2017-10-25 19:58:30,490 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Intertemporal_economics
+2017-10-25 19:58:31,625 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Category:Intertemporal_economics
+2017-10-25 19:58:32,743 : MainThread : INFO : The length of the graph is 269
+2017-10-25 19:58:32,757 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Measure
+2017-10-25 19:58:35,359 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Measure
+2017-10-25 19:58:38,177 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Measure
+2017-10-25 19:58:41,177 : MainThread : INFO : Parsing the uri:http://dbpedia.org/resource/Measure
+2017-10-25 19:58:43,902 : MainThread : INFO : The length of the graph is 0
+2017-10-25 19:58:43,902 : MainThread : INFO : Trying to split the word if applicable
