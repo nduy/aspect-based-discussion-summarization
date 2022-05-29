@@ -1,0 +1,340 @@
+LABELS
+
+Label for comment 1: Wages gap: positive: older workers won't have mortgage to pay and most will be retiring
+Label for comment 2: Wages gap: negative: he is worse off because he is older despite having qualifications
+Label for comment 3: Wages gap: comment: they don't choose to earn less because they are older, they just do
+Label for comment 4: Comment: unclear
+Label for comment 5: Wages gap: answer to choice comment: given the choice I'd be working and earning more, mortgage paid but still struggles
+Label for comment 6: Wages gap: negative: people still need the money, have kids; Comment: all are worse off, no matter young or old
+Label for comment 7: Cost of living: more to it than wages, people would only need £1k if they needn't pay for travel and housing
+Label for comment 8: Comment: panglossian view - the poor choose to be poor
+Label for comment 9: Wages gap: answer to choice comment: if everyone 'chose' to be rich, i.e. not spend, economy would halt.
+Label for comment 10: Personal insult
+Label for comment 11: Personal insult about not understanding
+Label for comment 12: Personal insult about not understanding
+Label for comment 13: Cost of living: many now retired use homes to as pension funds or to repay debt
+Label for comment 14: Comment: poor choose to be poor: people have a choice, even if born in certain class
+Label for comment 15: Young generations: article suggests later generations have more but choose to spend it on consumer goods rather than housing
+Label for comment 16: Young generations: article: is nonsense
+Label for comment 17: Cost of living: math: huge mortgage rates and cost of living in the 70s
+Label for comment 18: Cost of living: houses were cheaper; today it is worse because of high prices on everything; mortgages will remain a heavy burden
+Label for comment 19: Cost of living: mortgages will remain a burden: approves
+Label for comment 20: Personal comment
+Label for comment 21: Article question 1: information adjusted to cost of living - how does it work out?
+Label for comment 22: Article question 1: answer: math about house costs and geographical differences in prices
+Label for comment 23: Choices: everything depends on them; External forces: stop blaming
+Label for comment 24: External forces: stop blaming: sarcastic comment
+Label for comment 25: Choices: everything depends on them: negative: life not that simple
+Label for comment 26: External forces: sarcasm about trade unions
+Label for comment 27: Choices: everything depends on them: neutral: depends where you are born as well, define 'wrong' and 'right'
+Label for comment 28: Choices: everything depends on them: sarcasm: thinking any way won't make you feel good and happy, even if you are more well off than others
+Label for comment 29: Choices: everything depends on them: negative: depends on your birth actually; External forces: sarcastic personal comment
+Label for comment 30: Choices: everything depends on them: negative: hindsight bias - the end result
+Label for comment 31: Choices: everything depends on them:: hindsight bias agrees
+Label for comment 32: External forces: sarcastic personal comment
+Label for comment 33: Choices: everything depends on them: negative: depends on luck
+Label for comment 34: Retirement: some are forced
+Label for comment 35: Retirement: some are forced agrees, sarcasm on how good it is to be made redundant
+Label for comment 36: Retirement: sarcasm on how good it is to be made redundant continues
+Label for comment 37: Retirement: sarcasm on how good it is to be made redundant: disagrees, explains about JSA
+Label for comment 38: Personal comment about sense of humour
+Label for comment 39: Retirement: sarcasm on how good it is to be made redundant: disagrees, explains about getting outsourced
+Label for comment 40: Personal comment
+Label for comment 41: Retirement: pensions: explains
+Label for comment 42: Article question 2:  does this factor in university fees?
+Label for comment 43: Article question 2: answer: only 3-5% went to uni, not relevant
+Label for comment 44: Free money and education: before, made it easier
+Label for comment 45: Free education: asking for clarification
+Label for comment 46: Free education: explanation, outrage about current fees
+Label for comment 47: Free education: was not free, grants were mean tested
+Label for comment 48: Free education: was not free: disagrees, there was no tuition fee, now students with a huge debt
+Label for comment 49: Free money: adjusted rates for property means he would need less money if he lived before now
+Label for comment 50: Free education: sarcasm, fees should be paid by the taxpayer, insulting class comment
+Label for comment 51: Free education: sarcasm: answer - lists professions that benefit the taxpayer
+Label for comment 52: Retirement age: article doesn't hold together because youths will retire much older
+Label for comment 53: Retirement age: disagrees, suggests it is only a couple of years' difference; Public servants' pension: taxpayers are paying for them
+Label for comment 54: Cost of living: life story, it was difficult then due to rising prices
+Label for comment 55: Public servants' pension: sarcasm - suggesting they make their own pension contributions
+Label for comment 56: Public servants' pension: they contribute but tax payer shouldn't pay for it
+Label for comment 57: Cost of living: life story: comment on student loans - shouldn't have paid them off
+Label for comment 58: Retirement age: will continue to rise because of longevity; Public servants' retirement age: don't have a significantly better deal related to pension
+Label for comment 59: light-hearted personal comment
+Label for comment 60: light-hearted personal answer to personal comment
+Label for comment 61: Women: things were worse then in terms of information and support
+Label for comment 62: Young generation: house prices: would've cost less, does not sympathise with the elders
+Label for comment 63: Young generation: picked up money while growing up, don't blame the elders
+Label for comment 64: Young generation: not blaming, just comparing
+Label for comment 65: Young generation: elders only better if they paid off debts and are not looking after kids
+Label for comment 66: Young generation: it is the same, everyone has worries when they are young
+Label for comment 67: Young generation: picked up money: disagrees, would never afford a home
+Label for comment 68: Young generation: not affordable homes: clarification, would refer to 80s
+Label for comment 69: Young generation: clarification, accepted
+Label for comment 70: Young generation: house not that more expensive, what is the bonus after all
+Label for comment 71: Young generation: youth worries: mortgage was lower before relative to income
+Label for comment 72: Young generation: will be too old when retired
+Label for comment 73: Young generation: too old comment: insult
+Label for comment 74: Young generation: few benefited from RTB, personal insult
+Label for comment 75: Personal insult
+Label for comment 76: Response to personal insult leading to another personal insult
+Label for comment 77: Young generation: RTB started earlier, Labour policy
+Label for comment 78: Young generation: entitled, reality is hard now because of that
+Label for comment 79: Journalism: negative, article not good
+Label for comment 80: Journalism: disagrees, explains this is just a report, not investigation
+Label for comment 81: Not easy then: 70s not all beer and skittles
+Label for comment 82: Not easy then: Joke: beer
+Label for comment 83: Not easy then: disagrees
+Label for comment 84: Not easy then: they were cheated before, now these are the results
+Label for comment 85: Not easy then: cheated: continues explanation with maths
+Label for comment 86: Not easy then: Joke: disagrees
+Label for comment 87: Not easy then: disagrees, joke
+Label for comment 88: Journalism: negative, article not good, should have informed better
+Label for comment 89: Journalism: negative, article is clickbait now
+Label for comment 90: Anti-50s comments: not needed, everyone is achieved what they have
+Label for comment 91: Anti-50s comments: all replies trying to prove there is no difference, nothing is good anyway
+Label for comment 92: Anti-50s comments: happens all over the internet because of 'smugly' owning huge properties
+Label for comment 93: Anti-50s comments: happens all over: negative: depends on the location, not all has changed
+Label for comment 94: Anti-50s comments: all owning huge properties: disagrees - not everyone is in SE; Anti-50s comments: if you don't like it, you can always move
+Label for comment 95: Anti-50s comments: in the 70s there were jobs in those areas
+Label for comment 96: Anti-50s comments: jobs: when did they decline, sarcasm/insult
+Label for comment 97: Anti-50s comments: all owning huge properties: sarcasm, only doing it to irritate others
+Label for comment 98: Anti-50s comments: personal account, not that expensive, questions sources
+Label for comment 99: Anti-50s comments: numbers thanks
+Label for comment 100: Anti-50s comments: numbers thanks continues
+Label for comment 101: Anti-50s comments: 5-bed detached homes not common, high house prices don't do the house owner much good anyway
+
+GROUPS
+
+GROUP: Cost of Living
+Label for comment 7 [borris14]: Cost of living: more to it than wages, people would only need £1k if they needn't pay for travel and housing
+Label for comment 13 [AlbertEinstein2]: Cost of living: many now retired use homes to as pension funds or to repay debt
+Label for comment 17 [thriftynot]: Cost of living: math: huge mortgage rates and cost of living in the 70s
+Label for comment 18 [Turnbull2000]: Cost of living: houses were cheaper; today it is worse because of high prices on everything; mortgages will remain a heavy burden
+Label for comment 19 [borris14]: Cost of living: mortgages will remain a burden: approves
+Label for comment 54 [shebunkin]: Cost of living: life story, it was difficult then due to rising prices
+Label for comment 57 [GreatBlah]: Cost of living: life story: comment on student loans - shouldn't have paid them off
+
+SUBGROUP: Choices: everything depends on them
+Label for comment 23 [Mirabeaux]: Choices: everything depends on them; External forces: stop blaming
+Label for comment 25 [ameliaposte]: Choices: everything depends on them: negative: life not that simple
+Label for comment 27 [Meerkat_5]: Choices: everything depends on them: neutral: depends where you are born as well, define 'wrong' and 'right'
+Label for comment 28 [C LS]: Choices: everything depends on them: sarcasm: thinking any way won't make you feel good and happy, even if you are more well off than others
+Label for comment 29 [JBowers]: Choices: everything depends on them: negative: depends on your birth actually; External forces: sarcastic personal comment
+Label for comment 30 [Ladinda]: Choices: everything depends on them: negative: hindsight bias - the end result
+Label for comment 31 [C LS]: Choices: everything depends on them:: hindsight bias agrees
+Label for comment 33 [olderiamthelessiknow]: Choices: everything depends on them: negative: depends on luck
+
+SUBGROUP: External forces: stop blaming them
+Label for comment 23 [Mirabeaux]: Choices: everything depends on them; External forces: stop blaming
+Label for comment 24 [TheThunkWorks]: External forces: stop blaming: sarcastic comment
+Label for comment 26 [MaltnHops]: External forces: sarcasm about trade unions
+Label for comment 29 [JBowers]: Choices: everything depends on them: negative: depends on your birth actually; External forces: sarcastic personal comment
+Label for comment 32 [nondescrpt]: External forces: sarcastic personal comment
+
+GROUP: Retirement
+Label for comment 34 [jfngw]: Retirement: some are forced
+Label for comment 35 [Katesdad0]: Retirement: some are forced agrees, sarcasm on how good it is to be made redundant
+Label for comment 36 [C LS]: Retirement: sarcasm on how good it is to be made redundant continues
+Label for comment 37 [thriftynot]: Retirement: sarcasm on how good it is to be made redundant: disagrees, explains about JSA
+Label for comment 39 [jfngw]: Retirement: sarcasm on how good it is to be made redundant: disagrees, explains about getting outsourced
+Label for comment 41 [Brauchsel]: Retirement: pensions: explains
+
+SUBGROUP: Retirement Age
+Label for comment 52 [Croft12]: Retirement age: article doesn't hold together because youths will retire much older
+Label for comment 53 [thriftynot]: Retirement age: disagrees, suggests it is only a couple of years' difference; Public servants' pension: taxpayers are paying for them
+Label for comment 58 [Brauchsel]: Retirement age: will continue to rise because of longevity; Public servants' retirement age: don't have a significantly better deal related to pension
+
+SUBGROUP: Public servants' pension and age
+Label for comment 55 [MELSM]: Public servants' pension: sarcasm - suggesting they make their own pension contributions
+Label for comment 56 [thriftynot]: Public servants' pension: they contribute but tax payer shouldn't pay for it
+Label for comment 58 [Brauchsel]: Retirement age: will continue to rise because of longevity; Public servants' retirement age: don't have a significantly better deal related to pension
+
+GROUP: It was not easy then
+Label for comment 81 [Katesdad0]: Not easy then: 70s not all beer and skittles
+Label for comment 82 [Taxed2Death]: Not easy then: Joke: beer
+Label for comment 83 [Martin Lee Normington]: Not easy then: disagrees
+Label for comment 84 [theonionmurders]: Not easy then: they were cheated before, now these are the results
+Label for comment 85 [theonionmurders]: Not easy then: cheated: continues explanation with maths
+Label for comment 86 [Martin Lee Normington]: Not easy then: Joke: disagrees
+Label for comment 87 [maximilienrobespiere]: Not easy then: disagrees, joke
+
+SUBGROUP: Free education 
+Label for comment 44 [sonicboom82]: Free money and education: before, made it easier
+Label for comment 45 [MaltnHops]: Free education: asking for clarification
+Label for comment 46 [lazyn31]: Free education: explanation, outrage about current fees
+Label for comment 47 [BeckyP]: Free education: was not free, grants were mean tested
+Label for comment 48 [Billlogan]: Free education: was not free: disagrees, there was no tuition fee, now students with a huge debt
+Label for comment 50 [jochenrindt]: Free education: sarcasm, fees should be paid by the taxpayer, insulting class comment
+Label for comment 51 [CocoTheClown]: Free education: sarcasm: answer - lists professions that benefit the taxpayer
+
+SUBGROUP: Free money
+Label for comment 44 [sonicboom82]: Free money and education: before, made it easier
+Label for comment 49 [steed82]: Free money: adjusted rates for property means he would need less money if he lived before now
+
+GROUP: Journalism
+Label for comment 79 [beyondthezero]: Journalism: negative, article not good
+Label for comment 80 [JBowers]: Journalism: disagrees, explains this is just a report, not investigation
+Label for comment 88 [WhistlingNeil]: Journalism: negative, article not good, should have informed better
+Label for comment 89 [RedGiant23]: Journalism: negative, article is clickbait now
+
+GROUP: Wages gap
+Label for comment 1 [borris14]: Wages gap: positive: older workers won't have mortgage to pay and most will be retiring
+Label for comment 2 [ridcully24]: Wages gap: negative: he is worse off because he is older despite having qualifications
+Label for comment 3 [nondescrpt]: Wages gap: comment: they don't choose to earn less because they are older, they just do
+Label for comment 5 [LouiseHR]: Wages gap: answer to choice comment: given the choice I'd be working and earning more, mortgage paid but still struggles
+Label for comment 6 [Katesdad0]: Wages gap: negative: people still need the money, have kids; Comment: all are worse off, no matter young or old
+Label for comment 9 [CaptCrash]: Wages gap: answer to choice comment: if everyone 'chose' to be rich, i.e. not spend, economy would halt.
+
+GROUP: Young generations
+Label for comment 15 [ThornburyBoy]: Young generations: article suggests later generations have more but choose to spend it on consumer goods rather than housing
+Label for comment 16 [C LS]: Young generations: article: is nonsense
+Label for comment 62 [alanredangel]: Young generation: house prices: would've cost less, does not sympathise with the elders
+Label for comment 63 [Katesdad0]: Young generation: picked up money while growing up, don't blame the elders
+Label for comment 64 [alanredangel]: Young generation: not blaming, just comparing
+Label for comment 65 [theWall50]: Young generation: elders only better if they paid off debts and are not looking after kids
+Label for comment 66 [Yeokel]: Young generation: it is the same, everyone has worries when they are young
+Label for comment 67 [C LS]: Young generation: picked up money: disagrees, would never afford a home
+Label for comment 68 [Yeokel]: Young generation: not affordable homes: clarification, would refer to 80s
+Label for comment 69 [C LS]: Young generation: clarification, accepted
+Label for comment 70 [thriftynot]: Young generation: house not that more expensive, what is the bonus after all
+Label for comment 71 [alanredangel]: Young generation: youth worries: mortgage was lower before relative to income
+Label for comment 72 [scrotgrot]: Young generation: will be too old when retired
+Label for comment 73 [richardha28]: Young generation: too old comment: insult
+Label for comment 74 [richardha28]: Young generation: few benefited from RTB, personal insult
+Label for comment 77 [GreatBlah]: Young generation: RTB started earlier, Labour policy
+Label for comment 78 [olderiamthelessiknow]: Young generation: entitled, reality is hard now because of that
+
+SUBGROUP: Anti-50s comments
+Label for comment 90 [Yeokel]: Anti-50s comments: not needed, everyone is achieved what they have
+Label for comment 91 [C LS]: Anti-50s comments: all replies trying to prove there is no difference, nothing is good anyway
+Label for comment 92 [Elbowpatch]: Anti-50s comments: happens all over the internet because of 'smugly' owning huge properties
+Label for comment 93 [thriftynot]: Anti-50s comments: happens all over: negative: depends on the location, not all has changed
+Label for comment 94 [Yeokel]: Anti-50s comments: all owning huge properties: disagrees - not everyone is in SE; Anti-50s comments: if you don't like it, you can always move
+Label for comment 95 [scrotgrot]: Anti-50s comments: in the 70s there were jobs in those areas
+Label for comment 96 [thriftynot]: Anti-50s comments: jobs: when did they decline, sarcasm/insult
+Label for comment 97 [richardha28]: Anti-50s comments: all owning huge properties: sarcasm, only doing it to irritate others
+Label for comment 98 [NomadEngineer]: Anti-50s comments: personal account, not that expensive, questions sources
+Label for comment 99 [walkinginthesand]: Anti-50s comments: numbers thanks
+Label for comment 100 [walkinginthesand]: Anti-50s comments: numbers thanks continues
+Label for comment 101 [thebiker]: Anti-50s comments: 5-bed detached homes not common, high house prices don't do the house owner much good anyway
+
+GROUP: Article questions
+Label for comment 21 [TRT1968]: Article question 1: information adjusted to cost of living - how does it work out?
+Label for comment 22 [AlbertEinstein2]: Article question 1: answer: math about house costs and geographical differences in prices
+Label for comment 42 [genericshrew]: Article question 2:  does this factor in university fees?
+Label for comment 43 [thriftynot]: Article question 2: answer: only 3-5% went to uni, not relevant
+
+GROUP: Other comments
+Label for comment 4 [TRT1968]: Comment: unclear
+Label for comment 8 [baggins45]: Comment: panglossian view - the poor choose to be poor
+Label for comment 14 [borris14]: Comment: poor choose to be poor: people have a choice, even if born in certain class
+Label for comment 61 [shebunkin]: Women: things were worse then in terms of information and support
+
+GROUP: miscellaneous
+Label for comment 10 [thriftynot]: Personal insult
+Label for comment 11 [VSLVSL]: Personal insult about not understanding
+Label for comment 12 [keepsmiling]: Personal insult about not understanding
+Label for comment 20 [Slave2bank]: Personal comment
+Label for comment 38 [MELSM]: Personal comment about sense of humour
+Label for comment 40 [jfngw]: Personal comment
+Label for comment 59 [Billlogan]: light-hearted personal comment
+Label for comment 60 [shebunkin]: light-hearted personal answer to personal comment
+Label for comment 75 [Bongo_in_wonderland]: Personal insult
+Label for comment 76 [C LS]: Response to personal insult leading to another personal insult
+
+UNCONSTRAINED SUMMARY
+
+Most of the commenters discussed the cost of living and housing relative to the wages. Some suggested older people do not need that much money with their debts paid off and children grown up. There was significant disagreement on that subject and some life stories to show what cost of living they have had to bear.
+
+A big discussion was started on the topic of people's ability to make 'right' and 'wrong' choices and how it all depends on those. Many disagreed and said it depends mostly on birth and luck. A commenter argued external forces should not be blamed which resulted in many insulting and sarcastic comments directed at them.
+
+Significant part of the comments concerned retirement and retirement age. Commenters talked about people being forced to retire and sarcastically explored the incentives that come from being made redundant. Others focused on the increasing retirement age and the difference between normal workers and civil servants, who retire earlier. An argument arose claiming taxpayers should not pay for the pension funds of civil servants.
+
+A portion of commenters noted it was not easy in the 70s, some explaining finances and bad decisions while others joked about it. A point was made about free education as opposed to the present reality and some disagreed and went with sarcasm.
+
+A few commenters claimed the article was pointless and a bad standard of journalism, pointing out it was just a collection of facts with no additional context.
+
+The younger generation was a huge topic for the commenters - claiming they were entitled while older people worked hard to get where they were. There was disagreement explaining it was difficult with student loans, expensive housing and high mortgage rates.
+
+The last thing commenters talked about was the hateful comments directed to over-50s, claiming they were not to blame and everyone has achieved what they achieved.
+
+CONSTRAINED SUMMARY
+
+Most of the commenters discussed the cost of living and housing relative to wages. Some suggested older people do not need much money with their debts paid off. There was significant disagreement and life stories to show what cost of living they had to bear.
+
+A big discussion was started on people's ability to make 'right' and 'wrong' choices and how it all depends on those. Many disagreed and said it depends mostly on birth and luck. 
+
+Significant part of the comments concerned retirement and age. Commenters talked about people being forced to retire and sarcastically explored the incentives that come from being made redundant. Others focused on the increasing retirement age and the difference between normal workers and civil servants, who retire earlier. An argument arose claiming taxpayers should not pay for the pension funds of civil servants.
+
+A portion of commenters noted it was not easy in the 70s, explaining finances and bad decisions while others joked about it. A point was made about free education as opposed to the present reality; some disagreed and went with sarcasm.
+
+A few commenters claimed the article was pointless and a bad standard of journalism.
+
+The younger generation was a huge topic for the commenters - claiming they were entitled while older people worked hard. There was disagreement explaining it was difficult with student loans, expensive housing and high mortgage rates.
+
+The last thing commenters talked about was hateful comments directed to over-50s, claiming they were not to blame.
+
+BACK LINKING
+
+Most of the commenters discussed the cost of living and housing relative to wages.
+(Sub)GroupNames:
+- GROUP: Cost of Living
+- GROUP: Wages gap
+
+Some suggested older people do not need much money with their debts paid off.
+(Sub)GroupNames:
+- GROUP: Wages gap
+
+There was significant disagreement and life stories to show what cost of living they had to bear.
+(Sub)GroupNames:
+- GROUP: Cost of Living
+
+A big discussion was started on people's ability to make 'right' and 'wrong' choices and how it all depends on those.
+(Sub)GroupNames:
+- SUBGROUP: Choices: everything depends on them
+
+Many disagreed and said it depends mostly on birth and luck.
+(Sub)GroupNames:
+- SUBGROUP: Choices: everything depends on them
+
+Significant part of the comments concerned retirement and age.
+(Sub)GroupNames:
+- GROUP: Retirement
+- SUBGROUP: Retirement Age
+- SUBGROUP: Public servants' pension and age
+
+Commenters talked about people being forced to retire and sarcastically explored the incentives that come from being made redundant.
+(Sub)GroupNames:
+- GROUP: Retirement
+
+Others focused on the increasing retirement age and the difference between normal workers and civil servants, who retire earlier.
+(Sub)GroupNames:
+- SUBGROUP: Retirement Age
+- SUBGROUP: Public servants' pension and age
+
+An argument arose claiming taxpayers should not pay for the pension funds of civil servants.
+(Sub)GroupNames:
+- SUBGROUP: Public servants' pension and age
+
+A portion of commenters noted it was not easy in the 70s, explaining finances and bad decisions while others joked about it.
+(Sub)GroupNames:
+- GROUP: It was not easy then
+
+A point was made about free education as opposed to the present reality; some disagreed and went with sarcasm.
+(Sub)GroupNames:
+- SUBGROUP: Free education
+
+A few commenters claimed the article was pointless and a bad standard of journalism.
+(Sub)GroupNames:
+- GROUP: Journalism
+
+The younger generation was a huge topic for the commenters - claiming they were entitled while older people worked hard.
+(Sub)GroupNames:
+- GROUP: Young generations
+
+There was disagreement explaining it was difficult with student loans, expensive housing and high mortgage rates.
+(Sub)GroupNames:
+- GROUP: Young generations
+
+The last thing commenters talked about was hateful comments directed to over-50s, claiming they were not to blame.
+(Sub)GroupNames:
+- SUBGROUP: Anti-50s comments

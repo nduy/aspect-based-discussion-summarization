@@ -1,0 +1,330 @@
+LABELS
+
+Label for comment 1: Positive: is happy about heatwave
+Label for comment 2: Negative: least favourite weather
+Label for comment 3: Misc: corrects own spelling
+Label for comment 4: Misc: replies to spelling mistake
+Label for comment 5: Misc: replies asking for wattage
+Label for comment 6: Sceptical: says it is a Met Office forecast so it is unlikely to be right
+Label for comment 7: Cave: jokes they will find a cave to hide in from the moist weather
+Label for comment 8: Cave: replies to 2 joking a North Yorkshire cottage would be the same as a cave
+Label for comment 9: Cave: replies to 2.1 asking when he can move in
+Label for comment 10: Cave: replies to 2 asking him to make room in the cave
+Label for comment 11: Cave: replies to 2.3 saying he can move into the cave but he's not sure another commenter would let him move into the cottage yet
+Label for comment 12: Britain: says to all non-Brits that this is what we call a heatwave
+Label for comment 13: Air con: replies to 3 saying after living south of the Mason Dixon with no air con and sleeping well he can't see anything the summer here could do to stop him sleeping, although he would get flyscreens if it is a regular occurence
+Label for comment 14: Air con: replies to 3.1 saying they lived in Indiana with no air con and had to have 3 fans blowing all the time in summer
+Label for comment 15: Air con: replies to 3.2 asking wouldn't it have been cheaper to get air con than using 3 fans
+Label for comment 16: Air con: replies to 3.3 saying fans around the room are better for creating a feel of all round air con
+Label for comment 17: Air con: replies to 3.1 joking he is a lizard to sleep well in humidity
+Label for comment 18: Britain: replies to 3 agreeing, jokingly says he just warned his parents who are coming over as after 50 years in Aus of the weather, says they'll probably be cold
+Label for comment 19: Air con: replies to 3.3 saying air con is expensive and makes you housebound as you can't get used to the heat outside.
+Label for comment 20: Air con: replies to 3.7 saying air con is the best thing ever invented by man, except beer
+Label for comment 21: Britain: replies to 3 saying of course it is a heatwave here, and that the UK would be similar to Labrador without the gulf stream. Says he lives in Alabama and it is 25 celsius with which is better than their normal 35c summer temperature. Says people get used to it.
+Label for comment 22: Air con: replies to 3.4 saying he disagrees and fans only work if they are directed as a person getting the sweat off them, and that it would only work if it would bring cold air up from the basement.
+Label for comment 23: Air con: replies to 3.10 saying he obviously knows  a lot about it and that he only ran the fans when he was in the room, but found them better than air con. Says each to their own.
+Label for comment 24: Air con: replies to 3.11 saying they find air con noisy and hard to sleep with, and and makes a joke about knowing about fans.
+Label for comment 25: Britain: replies to 3 saying Britain are amateurs as it was 46c last year in Austraia, and says they'll only be warm beer to drink.
+Label for comment 26: Britain: repeat of 3.13
+Label for comment 27: Air con: replies to 3.5 saying they like the heat better than cold but air con was expensive to run and he thinks it's even more expensive now.
+Label for comment 28: Chestnuts: says he hopes his chestnut harvest does not fail as it did last year due to rainfall increase.
+Label for comment 29: Chestnuts: replies to 4 saying jokingly good luck with your nuts
+Label for comment 30: Chestnuts: replies to 4.1 joking about how they could knit safety nets for his nuts, and they could make it a communal event, or wait for conference season in Autumn.
+Label for comment 31: Chestnuts: replies to 3 saying they had a mast last year with moderate rainfall and heat, asks where he lives.
+Label for comment 32: Chestnuts: replies to 4.2 saying his humour fell flat, he didn't understand the issues and he should go back to the Daily Mail.
+Label for comment 33: Misc: includes a link
+Label for comment 34: Chestnuts/misc: replies to 4.5 link saying LOL
+Label for comment 35: Report from a person: says he is in Central London and it is hot as hell, and with no air con he could fry an egg on his desk
+Label for comment 36: Report: replies to 5.1 saying another working lunch, no rest for the wicked
+Label for comment 37: Report: replies to 5 saying his is in London and his fan has blown all the papers off his desk
+Label for comment 38: Report: replies to 5.2 saying they are up North and it is cool and pleasant
+Label for comment 39: Report: replies to 5 saying he is sorry because hot weather and no air con is a human rights violation.
+Label for comment 40: Report: replies to 5.3 saying they are in the midlands and it is hot and stuffy with no sun and high pollen count, worst of all worlds
+Label for comment 41: Weather forecasts/London: says there should be an option to hide local weather forecast for the south east on the website
+Label for comment 42: Weather forecasts: replies to 6 giving him a weather report saying all the areas affected by the heatwave
+Label for comment 43: Weather forecasts/London: replies to 6.1 sarcastically saying adjusting his chair so the chip on his shoulder obscures south-east related articles
+Label for comment 44: Weather forecasts: replies to 6.1 saying if those places are worst for heat you should take a journey to the north-west or Scotland
+Label for comment 45: Britain: replies to 6.1 saying definition of heatwave needs work as 30 degrees is just summer, says it will be gone soon and drizzle will return.
+Label for comment 46: London: says why does anyone care London is muggy as it is nice where they are.
+Label for comment 47: London: replies to 7 says London is great in the sun as there's lots to do and you can leave work early so what is not to like
+Label for comment 48: London/smog: replies to 7.1 asking them if they like smog
+Label for comment 49: London/smog: replies to 7.2 saying he doesn't like smog but it's the price to pay to love in a city and says although it's not for everyone there's nowhere quite like it.
+Label for comment 50: London/Sunny: replies to 7.1 says everything looks better when sunny
+Label for comment 51: Sunny: replies to 7.4 joking they don't look better when sunny
+Label for comment 52: Sunny/London: replies to 7.4 saying places look good in the snow too but he is going to the pub
+Label for comment 53: London/smog: replies to 7.3 agreeing smog is the price to pay saying greetings from South Korea
+Label for comment 54: London/smog: replies to 7.2 asking what smog, they grew up in countryside now live in London and love it
+Label for comment 55: Sunny: replies to 7.5 jokingly saying they look better in the dark or dim light
+Label for comment 56: London: replies to 7 jokingly saying who are they calling muggy
+Label for comment 57: London/smog: replies to 7.3 saying he had a pint in a pub in the countryside and the air was clear, beer didn't taste of petrol and can see stars
+Label for comment 58: London: replies to 7.1 replying to what's not to like with traffic, pollution, over-crowding, tubes, prices and pace of life
+Label for comment 59: London: replies to 7.1 saying London is never awesome as it is dirty, overcrowded and the air is toxic, and prefers places like the peaks
+Label for comment 60: London: replies to 7.13 saying it is up to them what they think but why don't they tell him where they live so he can be rude about it
+Label for comment 61: Insects: said it is not the heat but the midges that come in when the window is open.
+Label for comment 62: Insects: replies to 8 telling them to shut the windows or fit screens
+Label for comment 63: Insects: repleis to 8 telling him to take up smoking to get rid of them
+Label for comment 64: Insects: replies to 8 saying an american mistook a scottish friend saying midges for midgets, and had a funny conversation about a candle used to keep them away
+Label for comment 65: Insects: replies to 8.3 jokingly asking if midgets turned up
+Label for comment 66: Insects: replies to 8.4 jokingly saying no that's what the candle was for
+Label for comment 67: Insects: replies to 8.3 saying he is amazed a candle saw off midges as he was bitten all over despite wearing socks and citronella oil, wished he'd known an antihistamine would stop the burning and itching
+Label for comment 68: Insects: replies to 8.6 joking about midgets
+Label for comment 69: Exaggeration: says they live somewhere were it is months of 30c weather without air con, recommends  fluids and fans and dressing sensibly, says Ontario is worse
+Label for comment 70: Exaggeration/ Britain: replies to 9 sarcastically saying UK and Ontario are different places with different people used to different weather
+Label for comment 71: Exaggeration: replies to 9.1 saying 'lol'
+Label for comment 72: Exaggeration: replies to 9 sarcastically saying what a man he is
+Label for comment 73: Exaggeration: replies to 9 sarcastically saying that's nothing as he sleeps in an oven and a freezer on alternate nights
+Label for comment 74: Exaggeration: replies to 9 saying they should move as it sounds rubbish
+Label for comment 75: Exaggeration: replies to 9.4 sarcastically saying they're a wimp as he lives in Mercury and it's no big deal and what are Brits getting excited about
+Label for comment 76: Exaggeration/Britain: replies to 9 saying focusing on the exact temperature is a mistake as the air in Britain is wet and humid and makes heatwaves feel hotter and cold feel colder.
+Label for comment 77: Air con/fan: says if you don't have air con get a standing fan as he lives in Thailand and itis bearable with decent fans, or to sleep under a damp or wet bed sheet
+Label for comment 78: Air con/fan: adds to 10 saying set a fan in the bedroom to swing or that it will lead to a sore throat
+Label for comment 79: Air con/fan: replies to 10.1 saying they lived in Thailand and Africa and the best solution to getting  good sleep was 12-14 beers!
+Label for comment 80: Air con/fan: replies to 10 saying he was trying to impress by stating the obvious and showing off saying he's been to thailand
+Label for comment 81: Air con/fan: replies to 10.1 saying their fan is set to new jack swing all night
+Label for comment 82: Air con/fan: replies to 10 saying get a ceiling fan and in winter if you set to the opposite direction it regulates the temperature in the room
+Label for comment 83: Air con/fan: replies to 10.5 saying you can't get a ceiling fan if renting and you can't move then,and says a fan in Britain may only see use a few days every 10 years
+Label for comment 84: Air con/fan: replies to 10.3 saying he wasn't stating the obviou as his mother wouldn't have known they existed, and why is it a problem he mentions he lives in Thailand when he isn't working in the gulf
+Label for comment 85: Air con/fan: replies to 10.4 saying his fan is set to New Orleans sissy bounce swing
+Label for comment 86: Air con/fan: replies to 10.7 saying the suggestion of damp sheets was useful but Brits get tetchy with heat about 65f
+Label for comment 87: Air con/fan: replies to 10.2 saying doesn't that make the sheet sticky when it evaporates
+Label for comment 88: Air con/fan: repeat of 10.10
+Label for comment 89: Air con/fan: says if in England and it's hot you should buy a BTU air con as it will make sleep easier, and that fans don't get water out of the air. Says it works for him in the US where temps and humidity get very high.
+Label for comment 90: Air con/fan: replies to 11 saying no one in the UK will by an air con unit for a week or two a year
+Label for comment 91: Air con/fan: replies to 11 saying air con in the UK is a complete waste of time for one week a year and has bad environmental impact, noise keeps you or neighbours awake, wake up with dry eyes and throat. Says doesn't get that warm here and it seems weird to want to chill the little warm air we have
+Label for comment 92: Air con/fan: says there are lots of air con where he lives, some reason popular amongst Hassidic Jew community but no one else has them
+Label for comment 93: Air con/fan: replies to 11.2 saying ACs are cheaper to run than a fan, andtheir AC has sorted out their bungalow extension's temperature, costs about 2000 but runs on pennies.
+Label for comment 94: Air con/fan: replies to 11.4 saying an air con is just a fan with a refrigeration unit
+Label for comment 95: Air con/fan: replies to 11.1 saying if you have a room high in a building, especially an old/bad converted loft, it can get very hot for more than a few days a year.
+Label for comment 96: Air con/fan:replies to 11.1 saying yes they have an air con and they are very grateful for it
+Label for comment 97: Air con/fan: replies to 11.2 saying they think the UK will be seeing more very hot days in the future and they should feel free not to buy an AC but the noise is not as bad as rolling around in a sweaty bed, and you won't get itchy eyes if you don't overdo it, and that when the gulf stream is turned off by the melting arctic ice coming in then England will have a climate more like Labrador
+Label for comment 98: Hosepipe ban: says hosepipe ban starts on Monday south of the Watford gap
+Label for comment 99: Bad headline: says media can never seem to get their heads around the seasons
+Label for comment 100: Bad headline: replies to 13 joking about looking for more stereotypical weather headlines
+Label for comment 101: Bad headline: replies to 13.1 saying he is in the pas and terminology is 'scorchio' nowadays
+Label for comment 102: Bad headline: replies to 13.2 saying scorchio died a while ago and it is time to come up with a new one
+Label for comment 103: Bad headline: replies to 13.1 jokingly suggesting the headline 'uberscorcher'
+Label for comment 104: Bad headline: replies to 13.4 saying uberscorcher is crap and to try again
+Label for comment 105: Bad headline: replies to 13.4 saying what about 'storms set to have second test for England'
+Label for comment 106: Irony: says irony is we live in one of the most temperate places on the planet
+Label for comment 107: Heat: says heat will only last 1 day and will mainly effect the south east
+Label for comment 108: Bad headline: replies to 13.4 saying he likes the headline and the Daily Express will be funny the next few days with strange weather forecasts as long as there aren't any other of their stereotypical articles
+Label for comment 109: Bad headline: replies to 13.5 joking about the Page Three in the tabloids and saying they will do a pun on the weather
+
+GROUPS
+
+GROUP: Feelings about the heatwave
+
+SUBGROUP: Positive about heatwave
+Label for comment 1 [Bunn]: Positive: is happy about heatwave
+
+SUBGROUP: Negative about heatwave
+Label for comment 2 [Freddie2014]: Negative: least favourite weather
+
+SUBGROUP: Sceptical about heatwave
+Label for comment 6 [Jack Jazz]: Sceptical: says it is a Met Office forecast so it is unlikely to be right
+
+SUBGROUP: Britain and heatwaves
+Label for comment 12 [AlanWest81]: Britain: says to all non-Brits that this is what we call a heatwave
+Label for comment 18 [RonJB]: Britain: replies to 3 agreeing, jokingly says he just warned his parents who are coming over as after 50 years in Aus of the weather, says they'll probably be cold
+Label for comment 21 [BlakeK]: Britain: replies to 3 saying of course it is a heatwave here, and that the UK would be similar to Labrador without the gulf stream. Says he lives in Alabama and it is 25 celsius with which is better than their normal 35c summer temperature. Says people get used to it.
+Label for comment 25 [EvilCommieDictator]: Britain: replies to 3 saying Britain are amateurs as it was 46c last year in Australia, and says they'll only be warm beer to drink.
+Label for comment 26 [EvilCommieDictator]: Britain: repeat of 3.13
+Label for comment 45 [Sakuranbo]: Britain: replies to 6.1 saying definition of heatwave needs work as 30 degrees is just summer, says it will be gone soon and drizzle will return.
+Label for comment 69 [JaitcH]: Exaggeration: says they live somewhere were it is months of 30c weather without air con, recommends  fluids and fans and dressing sensibly, says Ontario is worse
+Label for comment 70 [Mangala]: Exaggeration/ Britain: replies to 9 sarcastically saying UK and Ontario are different places with different people used to different weather
+Label for comment 71 [waltjabsco]: Exaggeration: replies to 9.1 saying 'lol'
+Label for comment 72 [HenryBlince]: Exaggeration: replies to 9 sarcastically saying what a man he is
+Label for comment 73 [warmerwherewewere]: Exaggeration: replies to 9 sarcastically saying that's nothing as he sleeps in an oven and a freezer on alternate nights
+Label for comment 74 [quittoexit]: Exaggeration: replies to 9 saying they should move as it sounds rubbish
+Label for comment 75 [lissendis]: Exaggeration: replies to 9.4 sarcastically saying they're a wimp as he lives in Mercury and it's no big deal and what are Brits getting excited about
+Label for comment 76 [justask]: Exaggeration/Britain: replies to 9 saying focusing on the exact temperature is a mistake as the air in Britain is wet and humid and makes heatwaves feel hotter and cold feel colder.
+
+SUBGROUP: Hosepipe ban
+Label for comment 98 [FloodZilla]: Hosepipe ban: says hosepipe ban starts on Monday south of the Watford gap
+
+GROUP: Misc
+Label for comment 3 [Freddie2014]: Misc: corrects own spelling
+Label for comment 4 [BrotherGorilla]: Misc: replies to spelling mistake
+Label for comment 5 [peugeott]: Misc: replies asking for wattage
+Label for comment 33 [EconomicDeterminist]: Misc: includes a link
+Label for comment 34 [HappyChickie]: Chestnuts/misc: replies to 4.5 link saying LOL
+
+GROUP: Joking about living in cave
+Label for comment 7 [Dolpheran]: Cave: jokes they will find a cave to hide in from the moist weather
+Label for comment 8 [JackTheJuggler]: Cave: replies to 2 joking a North Yorkshire cottage would be the same as a cave
+Label for comment 9 [Dolpheran]: Cave: replies to 2.1 asking when he can move in
+Label for comment 10 [olderiamthelessiknow]: Cave: replies to 2 asking him to make room in the cave
+Label for comment 11 [Dolpheran]: Cave: replies to 2.3 saying he can move into the cave but he's not sure another commenter would let him move into the cottage yet
+
+GROUP: Air conditioning/fans
+Label for comment 13 [Madranon]: Air con: replies to 3 saying after living south of the Mason Dixon with no air con and sleeping well he can't see anything the summer here could do to stop him sleeping, although he would get flyscreens if it is a regular occurence
+Label for comment 14 [AlanWest81]: Air con: replies to 3.1 saying they lived in Indiana with no air con and had to have 3 fans blowing all the time in summer
+Label for comment 15 [Aliktren]: Air con: replies to 3.2 asking wouldn't it have been cheaper to get air con than using 3 fans
+Label for comment 16 [AlanWest81]: Air con: replies to 3.3 saying fans around the room are better for creating a feel of all round air con
+Label for comment 17 [Foom]: Air con: replies to 3.1 joking he is a lizard to sleep well in humidity
+Label for comment 19 [madtom1999]: Air con: replies to 3.3 saying air con is expensive and makes you housebound as you can't get used to the heat outside.
+Label for comment 20 [vincent19]: Air con: replies to 3.7 saying air con is the best thing ever invented by man, except beer
+Label for comment 22 [sergeberard]: Air con: replies to 3.4 saying he disagrees and fans only work if they are directed as a person getting the sweat off them, and that it would only work if it would bring cold air up from the basement.
+Label for comment 23 [AlanWest81]: Air con: replies to 3.10 saying he obviously knows  a lot about it and that he only ran the fans when he was in the room, but found them better than air con. Says each to their own.
+Label for comment 24 [sergeberard]: Air con: replies to 3.11 saying they find air con noisy and hard to sleep with, and and makes a joke about knowing about fans.
+Label for comment 27 [Madranon]: Air con: replies to 3.5 saying they like the heat better than cold but air con was expensive to run and he thinks it's even more expensive now.
+Label for comment 77 [retsdon]: Air con/fan: says if you don't have air con get a standing fan as he lives in Thailand and itis bearable with decent fans, or to sleep under a damp or wet bed sheet
+Label for comment 78 [retsdon]: Air con/fan: adds to 10 saying set a fan in the bedroom to swing or that it will lead to a sore throat
+Label for comment 79 [midasman]: Air con/fan: replies to 10.1 saying they lived in Thailand and Africa and the best solution to getting  good sleep was 12-14 beers!
+Label for comment 80 [HenryBlince]: Air con/fan: replies to 10 saying he was trying to impress by stating the obvious and showing off saying he's been to thailand
+Label for comment 81 [IceCreamTony]: Air con/fan: replies to 10.1 saying their fan is set to new jack swing all night
+Label for comment 82 [MrGenius]: Air con/fan: replies to 10 saying get a ceiling fan and in winter if you set to the opposite direction it regulates the temperature in the room
+Label for comment 83 [retsdon]: Air con/fan: replies to 10.5 saying you can't get a ceiling fan if renting and you can't move then,and says a fan in Britain may only see use a few days every 10 years
+Label for comment 84 [retsdon]: Air con/fan: replies to 10.3 saying he wasn't stating the obviou as his mother wouldn't have known they existed, and why is it a problem he mentions he lives in Thailand when he isn't working in the gulf
+Label for comment 85 [jackheron]: Air con/fan: replies to 10.4 saying his fan is set to New Orleans sissy bounce swing
+Label for comment 86 [Ortho]: Air con/fan: replies to 10.7 saying the suggestion of damp sheets was useful but Brits get tetchy with heat about 65f
+Label for comment 87 [Fergusp]: Air con/fan: replies to 10.2 saying doesn't that make the sheet sticky when it evaporates
+Label for comment 88 [Fergusp]: Air con/fan: repeat of 10.10
+Label for comment 89 [Leer]: Air con/fan: says if in England and it's hot you should buy a BTU air con as it will make sleep easier, and that fans don't get water out of the air. Says it works for him in the US where temps and humidity get very high.
+Label for comment 90 [waltjabsco]: Air con/fan: replies to 11 saying no one in the UK will by an air con unit for a week or two a year
+Label for comment 91 [bigredroo]: Air con/fan: replies to 11 saying air con in the UK is a complete waste of time for one week a year and has bad environmental impact, noise keeps you or neighbours awake, wake up with dry eyes and throat. Says doesn't get that warm here and it seems weird to want to chill the little warm air we have
+Label for comment 92 [freewheelingfrankie]: Air con/fan: says there are lots of air con where he lives, some reason popular amongst Hassidic Jew community but no one else has them
+Label for comment 93 [Aliktren]: Air con/fan: replies to 11.2 saying ACs are cheaper to run than a fan, andtheir AC has sorted out their bungalow extension's temperature, costs about 2000 but runs on pennies.
+Label for comment 94 [HenryBlince]: Air con/fan: replies to 11.4 saying an air con is just a fan with a refrigeration unit
+Label for comment 95 [Ortho]: Air con/fan: replies to 11.1 saying if you have a room high in a building, especially an old/bad converted loft, it can get very hot for more than a few days a year.
+Label for comment 96 [horrypops]: Air con/fan:replies to 11.1 saying yes they have an air con and they are very grateful for it
+Label for comment 97 [Leer]: Air con/fan: replies to 11.2 saying they think the UK will be seeing more very hot days in the future and they should feel free not to buy an AC but the noise is not as bad as rolling around in a sweaty bed, and you won't get itchy eyes if you don't overdo it, and that when the gulf stream is turned off by the melting arctic ice coming in then England will have a climate more like Labrador
+
+GROUP: Chestnut growth
+Label for comment 28 [QuinSleeps]: Chestnuts: says he hopes his chestnut harvest does not fail as it did last year due to rainfall increase.
+Label for comment 29 [RogueStatement9000]: Chestnuts: replies to 4 saying jokingly good luck with your nuts
+Label for comment 30 [MasterPale]: Chestnuts: replies to 4.1 joking about how they could knit safety nets for his nuts, and they could make it a communal event, or wait for conference season in Autumn.
+Label for comment 31 [Briar]: Chestnuts: replies to 3 saying they had a mast last year with moderate rainfall and heat, asks where he lives.
+Label for comment 32 [EconomicDeterminist]: Chestnuts: replies to 4.2 saying his humour fell flat, he didn't understand the issues and he should go back to the Daily Mail.
+
+GROUP: People give weather reports
+Label for comment 35 [michaelfromlondon]: Report from a person: says he is in Central London and it is hot as hell, and with no air con he could fry an egg on his desk
+Label for comment 36 [RichWoods]: Report: replies to 5.1 saying another working lunch, no rest for the wicked
+Label for comment 37 [Salcombe]: Report: replies to 5 saying his is in London and his fan has blown all the papers off his desk
+Label for comment 38 [mercatorish]: Report: replies to 5.2 saying they are up North and it is cool and pleasant
+Label for comment 39 [RogueStatement9000]: Report: replies to 5 saying he is sorry because hot weather and no air con is a human rights violation.
+Label for comment 40 [Ortho]: Report: replies to 5.3 saying they are in the midlands and it is hot and stuffy with no sun and high pollen count, worst of all worlds
+
+GROUP: London/areas affected by heat wave
+Label for comment 42 [MZorin]: Weather forecasts: replies to 6 giving him a weather report saying all the areas affected by the heatwave
+Label for comment 44 [almorr]: Weather forecasts: replies to 6.1 saying if those places are worst for heat you should take a journey to the north-west or Scotland
+Label for comment 46 [Silliband]: London: says why does anyone care London is muggy as it is nice where they are.
+Label for comment 49 [IceCreamTony]: London/smog: replies to 7.2 saying he doesn't like smog but it's the price to pay to love in a city and says although it's not for everyone there's nowhere quite like it.
+
+SUBGROUP: Anti-London
+Label for comment 41 [MitchellAdcow]: Weather forecasts/London: says there should be an option to hide local weather forecast for the south east on the website
+Label for comment 48 [hapaxlegomenon]: London/smog: replies to 7.1 asking them if they like smog
+Label for comment 57 [madtom1999]: London/smog: replies to 7.3 saying he had a pint in a pub in the countryside and the air was clear, beer didn't taste of petrol and can see stars
+Label for comment 58 [MikeyMovement]: London: replies to 7.1 replying to what's not to like with traffic, pollution, over-crowding, tubes, prices and pace of life
+Label for comment 59 [Sakuranbo]: London: replies to 7.1 saying London is never awesome as it is dirty, overcrowded and the air is toxic, and prefers places like the peaks
+
+SUBGROUP: Pro-London
+Label for comment 43 [diotavelli]: Weather forecasts/London: replies to 6.1 sarcastically saying adjusting his chair so the chip on his shoulder obscures south-east related articles
+Label for comment 47 [IceCreamTony]: London: replies to 7 says London is great in the sun as there's lots to do and you can leave work early so what is not to like
+Label for comment 53 [RogueStatement9000]: London/smog: replies to 7.3 agreeing smog is the price to pay saying greetings from South Korea
+Label for comment 54 [MrGenius]: London/smog: replies to 7.2 asking what smog, they grew up in countryside now live in London and love it
+Label for comment 60 [IceCreamTony]: London: replies to 7.13 saying it is up to them what they think but why don't they tell him where they live so he can be rude about it
+
+SUBGROUP: Sunshine making places look better
+Label for comment 50 [Bunn]: London/Sunny: replies to 7.1 says everything looks better when sunny
+Label for comment 51 [Salcombe]: Sunny: replies to 7.4 joking they don't look better when sunny
+Label for comment 52 [IceCreamTony]: Sunny/London: replies to 7.4 saying places look good in the snow too but he is going to the pub
+Label for comment 55 [CeilingCat]: Sunny: replies to 7.5 jokingly saying they look better in the dark or dim light
+Label for comment 56 [creetree]: London: replies to 7 jokingly saying who are they calling muggy
+
+GROUP: Midges
+Label for comment 61 [Madranon]: Insects: said it is not the heat but the midges that come in when the window is open.
+Label for comment 62 [JaitcH]: Insects: replies to 8 telling them to shut the windows or fit screens
+Label for comment 63 [realisscum]: Insects: repleis to 8 telling him to take up smoking to get rid of them
+Label for comment 64 [SugarPlumpFairy]: Insects: replies to 8 saying an american mistook a scottish friend saying midges for midgets, and had a funny conversation about a candle used to keep them away
+Label for comment 65 [jonnie2thumbs]: Insects: replies to 8.3 jokingly asking if midgets turned up
+Label for comment 66 [SugarPlumpFairy]: Insects: replies to 8.4 jokingly saying no that's what the candle was for
+Label for comment 67 [Typingmonkeys]: Insects: replies to 8.3 saying he is amazed a candle saw off midges as he was bitten all over despite wearing socks and citronella oil, wished he'd known an antihistamine would stop the burning and itching
+Label for comment 68 [jonnie2thumbs]: Insects: replies to 8.6 joking about midgets
+
+GROUP: Newspapers/bad headlines
+Label for comment 99 [scrapthebbc]: Bad headline: says media can never seem to get their heads around the seasons
+Label for comment 100 [MikeRichards]: Bad headline: replies to 13 joking about looking for more stereotypical weather headlines
+Label for comment 101 [Anusol]: Bad headline: replies to 13.1 saying he is in the pas and terminology is 'scorchio' nowadays
+Label for comment 102 [waltjabsco]: Bad headline: replies to 13.2 saying scorchio died a while ago and it is time to come up with a new one
+Label for comment 103 [RogueStatement9000]: Bad headline: replies to 13.1 jokingly suggesting the headline 'uberscorcher'
+Label for comment 104 [Wifeandthreekids]: Bad headline: replies to 13.4 saying uberscorcher is crap and to try again
+Label for comment 105 [Wifeandthreekids]: Bad headline: replies to 13.4 saying what about 'storms set to have second test for England'
+Label for comment 106 [CoconutJoe]: Irony: says irony is we live in one of the most temperate places on the planet
+Label for comment 107 [blairsnemesis]: Heat: says heat will only last 1 day and will mainly effect the south east
+Label for comment 108 [MikeRichards]: Bad headline: replies to 13.4 saying he likes the headline and the Daily Express will be funny the next few days with strange weather forecasts as long as there aren't any other of their stereotypical articles
+Label for comment 109 [Leer]: Bad headline: replies to 13.5 joking about the Page Three in the tabloids and saying they will do a pun on the weather
+
+UNCONSTRAINED SUMMARY
+
+One person was happy about the heatwave, but another was negative saying they weren't looking forward to it. Another mentioned that they were sceptical it would even happen.
+
+Some people joked that Britain's definition of a heatwave paled in comparison to other countries, and some people included anecdotes about their own countries, although some replied sarcastically to one of these that Britain is a completely different place and people are used to different weather. Others joked they lived in an oven and a freezer, or on Mercury, making fun of the person saying the British were amateurs. One person mentioned the hosepipe ban would be starting soon, one person joked about moving into a cave which another suggested would be the same as a cottage in North Yorkshire.
+
+Some people debated about the use of air cons and fans. Those against the use of air con said it gives you dry eyes, it's noisy, costs a lot and is bad for the environment. Some people said a fan would be a good idea but one person replied saying it is only good pointed directly at the body to dry the sweat off. Some people said buying air con would be a waste of money as it is only hot here for a few days or weeks a year. One person said that they thought the UK would get hotter, and air con made it much easier to sleep. One person suggested a ceiling fan, but another said if you rent this wouldn't be possible and as Britain is only occasionally hot it would be a waste of money. Others said a standing fan, or a fan set on swing, is a good way to keep cool at night.
+
+One person said they wished they didn't have to see weather reports for the South east on the website, but another added that this heatwave would affect the whole country, someone else sarcastically saying they had a chip on their shoulder. One person said London was a good place to be in a heatwave as there are lots of pubs and people get off work early, but another asked him if he liked all the smog. People then debated whether London was a nice place to live: two people said it was too busy, expensive and polluted, another aid they moved their from the countryside and they loved it. The original commenter who liked London said it was their choice if they liked it.
+
+One person said how midges were a problem in this weather, another said they should shut the windows or get a screen. One person told an anecdote about the use of a citronella candle to put off midges where an American misheard midges for midgets, which was joked about, and another said they were surprised the candle worked as they had been severely bitten after using citronella oil.
+
+Some people discussed how the media invented ridiculous headlines about temperatures soaring and plummeting, and invented silly headlines of their own.
+
+CONSTRAINED SUMMARY
+
+There were mixed feelings on the heatwave. Some people joked about Britain's definition of a heatwave in comparison to other countries, and some included anecdotes about their own countries.
+
+Some people debated about the use of air cons and fans. Those against the use of air con said it gives you dry eyes, it's noisy, costs a lot and is bad for the environment. Some people said a fan would be a good idea (ceiling or standing) but one person replied saying it is only good pointed directly at the body. Some people said buying air con would be a waste of money as it is only hot here for a few days or weeks a year. One person said that they thought the UK would keep getting hotter.
+
+People debated whether London was a nice place to live in the sunshine or otherwise: some said it was too busy, expensive and polluted, others loved it.
+
+One person said how midges were a problem in this weather, another said they should shut the windows or get a screen. One person told an anecdote about the use of a citronella candle to put off midges where an American misheard midges for midgets, which was joked about, and another said they were surprised the candle worked as they had been severely bitten after using citronella oil.
+
+Some people discussed how the media invented ridiculous headlines about temperatures soaring and plummeting.
+
+BACK LINKING
+
+There were mixed feelings on the heatwave.
+(Sub)GroupNames:
+- SUBGROUP: Positive about heatwave
+- SUBGROUP: Negative about heatwave
+- SUBGROUP: Sceptical about heatwave
+
+Some people joked about Britain's definition of a heatwave in comparison to other countries, and some included anecdotes about their own countries.
+(Sub)GroupNames:
+- SUBGROUP: Britain and heatwaves
+
+Some people said a fan would be a good idea (ceiling or standing) but one person replied saying it is only good pointed directly at the body.
+(Sub)GroupNames:
+- GROUP: Air conditioning/fans
+
+Those against the use of air con said it gives you dry eyes, it's noisy, costs a lot and is bad for the environment.
+(Sub)GroupNames:
+- GROUP: Air conditioning/fans
+
+Some people debated about the use of air cons and fans.
+(Sub)GroupNames:
+- GROUP: Air conditioning/fans
+
+Some people said buying air con would be a waste of money as it is only hot here for a few days or weeks a year.
+(Sub)GroupNames:
+- GROUP: Air conditioning/fans
+
+One person said that they thought the UK would keep getting hotter.
+(Sub)GroupNames:
+- GROUP: Air conditioning/fans
+
+People debated whether London was a nice place to live in the sunshine or otherwise: some said it was too busy, expensive and polluted, others loved it.
+(Sub)GroupNames:
+- GROUP: London/areas affected by heat wave
+
+One person said how midges were a problem in this weather, another said they should shut the windows or get a screen.
+(Sub)GroupNames:
+- GROUP: Midges
+
+One person told an anecdote about the use of a citronella candle to put off midges where an American misheard midges for midgets, which was joked about, and another said they were surprised the candle worked as they had been severely bitten after using citronella oil.
+(Sub)GroupNames:
+- GROUP: Midges
+
+Some people discussed how the media invented ridiculous headlines about temperatures soaring and plummeting.
+(Sub)GroupNames:
+- GROUP: Newspapers/bad headlines

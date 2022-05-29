@@ -1,0 +1,319 @@
+LABELS
+
+Label for comment 1: Reward for fat cleaning; sewerage workers deserve reward
+Label for comment 2: sewerage workers treatment at work
+Label for comment 3: sewerage workers like medication
+Label for comment 4: reward for fat cleaning; sewerage workers deserve honours
+Label for comment 5: reward for fat cleaning; sewerage workers deserve honours
+Label for comment 7: sewerage workers treatment at work
+Label for comment 8: sewerage workers should take a bath
+Label for comment 9: sewerage workers like medication
+Label for comment 11: sewerage workers treatment at work;; david cameron should take laxatives;
+Label for comment 12: sewerage workers treatment at work
+Label for comment 14: sewerage workers deserve reward;; condition of the blocked sewer;
+Label for comment 15: condition of the blocked sewer;
+Label for comment 16: movie on fat clearing;; sewerage workers deserve reward by filming the story;
+Label for comment 18: how statins work;; comparing workers to statins not accurate, rather laxatives;
+Label for comment 19: comparing workers to wire hangers
+Label for comment 20: respect for sewerage workers for working in foul conditions;
+Label for comment 21: how statins work;
+Label for comment 22: movie on fat clearing;; there is one 60 years ago;
+Label for comment 23: movie on fat clearing;; the movie with surround smell effects
+Label for comment 24: movie on fat clearing;; the movie with surround smell effects
+Label for comment 25: movie on fat clearing;
+Label for comment 26: movie on fat clearing;
+Label for comment 27: movie on fat clearing;
+Label for comment 29: movie on fat clearing;
+Label for comment 30: thanking sewerage workers;
+Label for comment 31: thanking sewerage workers;
+Label for comment 32: tory politicians in the sewer;; tory politicians should be sent in the sewer;
+Label for comment 33: tory politicians in the sewer;
+Label for comment 34: criticising torys;; criticising torys is Guardians rule
+Label for comment 35: criticising torys;
+Label for comment 36: London mayor should clear sewerage;
+Label for comment 37: London mayor interview;; London mayor doesn't appear in public after interview on fat reuse
+Label for comment 38: London mayor interview;
+Label for comment 39: London mayor interview;
+Label for comment 40: london mayor;; london mayor doesn't appear in public for long after interview
+Label for comment 41: london mayor;
+Label for comment 42: london mayor;; london mayor doesn't appear in public for long after interview
+Label for comment 43: sewers should be checked periodically;
+Label for comment 44: sewers should be checked periodically;
+Label for comment 45: sewers should be checked periodically;; could be checked by CCTV
+Label for comment 46: joke: NSA is controlling sewers
+Label for comment 47: joke: NSA is controlling sewers
+Label for comment 48: sewers should be checked periodically;; it is done but question of resources;
+Label for comment 49: Reference to Ghostbusters;
+Label for comment 50: renewability of the fat;
+Label for comment 51: renewability of the fat;
+Label for comment 52: renewability of the fat;
+Label for comment 53: renewability of the fat;
+Label for comment 55: renewability of the fat;
+Label for comment 57: renewability of the fat;; joke: McDonalds reduces fat by outting it in the food
+Label for comment 58: London mayor does not appear in public after interview;; Ed Balls also not present;
+Label for comment 59: Only one worker solved dealt with fatberg;
+Label for comment 60: Only one worker solved dealt with fatberg;
+Label for comment 62: Guardian headlines;; headlins are inaccurate and misleading;
+Label for comment 63: Comparing fat destruction with movie;
+Label for comment 64: Comparing fat destruction with movie;; joke: Rename;
+Label for comment 65: Comparing fat destruction with movie;; joke: Rename;
+Label for comment 66: Comparing fat destruction with movie;; joke: Rename;
+Label for comment 67: Comparing fat destruction with movie;; joke: Rename;
+Label for comment 68: Comparing fat destruction with movie;; joke: Rename;
+Label for comment 69: Comparing fat destruction with movie;; joke: Rename;
+Label for comment 70: event as a reminder for people to not flush down fats;; renewability of fat;
+Label for comment 71: the food outlets are the main culprits;; Misreference: Kingston to Kensigton
+Label for comment 72: wipes as a problem;; Why are they problem if producers say flushable;
+Label for comment 73: flushable != decomposable quickly
+Label for comment 74: Misreference: Kingston to Kensigton
+Label for comment 75: wipes as a problem;; wipes don't decompose like toilet paper
+Label for comment 76: Misreference: Kingston to Kensigton
+Label for comment 77: story on disposing fat in the vaste in Kensington;
+Label for comment 78: wipes vs toilet paper;
+Label for comment 79: Misreference: Kingston to Kensigton
+Label for comment 81: London mayor step down;; Article title suggest that London mayor has stepped down;
+Label for comment 82: London mayor step down;
+Label for comment 83: Comparing fat destruction with movie;
+Label for comment 84: Comparing fat destruction with movie;
+Label for comment 85: story: similar problem with congestion in Lesiter Sq. and NW london
+Label for comment 86: disgusting picture;; not able to eat dinner due to picture;
+Label for comment 87: not able to eat dinner due to picture;
+Label for comment 88: not able to eat dinner due to picture;
+Label for comment 89: not able to eat dinner due to picture;
+Label for comment 90: reference to stalagtites;
+Label for comment 91: not able to eat dinner due to picture;
+Label for comment 92: size of the fatberg;; false comparison of fatberg to a bus size
+Label for comment 93: size of the fatberg;
+Label for comment 94: size of the fatberg;
+Label for comment 95: Stuart Lee won't come to London;; joke: celebrities will avoid london;
+Label for comment 96: joke: celebrities will avoid london;
+Label for comment 97: joke: renewability of fat in food;; beef burgers;
+Label for comment 98: joke: renewability of fat in food;; Asian fried food;
+Label for comment 99: joke: renewability of fat in food;; horseburgers
+Label for comment 100: joke: renewability of fat in consmetics;; hair grease;
+Label for comment 101: joke: renewability of fat in food;; sewer fat fed into animals;
+Label for comment 102: joke: rats to be used for beef burgers;
+
+GROUPS
+
+GROUP: thanking sewerage workers
+
+SUBGROUP: sewerage workers should be rewarded
+Label for comment 1 [PatriciaPJ]:  Reward for fat cleaning; sewerage workers deserve reward;
+Label for comment 4 [Dunnyboy]: reward for fat cleaning; sewerage workers deserve honours;
+Label for comment 14 [FreakyChucker1]: sewerage workers deserve reward; condition of the blocked sewer;
+Label for comment 5 [MrHeathcliff]: reward for fat cleaning; sewerage workers deserve honours;
+Label for comment 16 [alanomaly]: movie on fat clearing; sewerage workers deserve reward by filming the story;
+Label for comment 20 [IvanDrago1]: respect for sewerage workers for working in foul conditions;
+Label for comment 30 [HermitBee]: thanking sewerage workers;
+Label for comment 31 [XenusVolcano]: thanking sewerage workers;
+Label for comment 59 [pickledshrew]: Only one worker dealt with fatberg;
+Label for comment 60 [T0nyN]: Only one worker dealt with fatberg;
+
+SUBGROUP: sewerage workers work in disgusting conditions
+Label for comment 2 [JulianG]: sewerage workers treatment at work;
+Label for comment 7 [AShortFuse]: sewerage workers treatment at work;
+Label for comment 11 [londonnites123]: sewerage workers treatment at work; david cameron should take laxatives;
+Label for comment 12 [almorr]: sewerage workers treatment at work;
+
+GROUP: condition of the blocked sewer
+Label for comment 14 [FreakyChucker1]: sewerage workers deserve reward; condition of the blocked sewer;
+Label for comment 15 [ponk2k]: condition of the blocked sewer;
+
+GROUP: comparison between sewerage workers and declogging medication
+Label for comment 3 [iamnotwise]: sewerage workers like medication;
+Label for comment 9 [farabundovive]: sewerage workers like medication;
+Label for comment 11 [londonnites123]: sewerage workers treatment at work; david cameron should take laxatives;
+Label for comment 18 [Mischieftess]: how statins work; comparing workers to statins not accurate, rather laxatives;
+Label for comment 19 [rustlebland]: comparing workers to wire hangers;
+Label for comment 21 [iamnotwise]: how statins work;
+
+GROUP: a movie on fighting the fat
+Label for comment 16 [alanomaly]: movie on fat clearing; sewerage workers deserve reward by filming the story;
+Label for comment 22 [ArtCritic]: movie on fat clearing; there is one 60 years ago;
+Label for comment 23 [dtap]: movie on fat clearing; the movie with surround smell effects;
+Label for comment 24 [Flumpasaurus]: movie on fat clearing; the movie with surround smell effects;
+Label for comment 25 [ArtCritic]: movie on fat clearing;
+Label for comment 26 [AshleyPomeroy]: movie on fat clearing;
+Label for comment 27 [unhombredesw19]: movie on fat clearing;
+Label for comment 29 [kiwmaq]: movie on fat clearing;
+Label for comment 49 [MorganFreechild]: Reference to Ghostbusters;
+Label for comment 83 [conanthebikeman]: Comparing fat destruction with movie;
+Label for comment 84 [Shoe]: Comparing fat destruction with movie;
+
+GROUP: Tory politicians in the sewer
+
+SUBGROUP: Tory politicians in the sewer: pro
+Label for comment 32 [johnypaty]: tory politicians in the sewer; tory politicians should be sent in the sewer;
+Label for comment 33 [redduke749]: tory politicians in the sewer;
+
+SUBGROUP: Tory politicians in the sewer: contra
+Label for comment 34 [CouchSlob]: criticising torys; criticising torys is Guardians rule
+Label for comment 35 [flyingdutchman]: criticising torys;
+
+GROUP: Checking sewers periodically
+Label for comment 43 [toffer9]: sewers should be checked periodically;
+Label for comment 44 [LagosKev]: sewers should be checked periodically;
+Label for comment 45 [Hartabuna]: sewers should be checked periodically; could be checked by CCTV
+Label for comment 48 [gotet]: sewers should be checked periodically; it is done but question of resources;
+
+GROUP: London mayor
+Label for comment 36 [Reflexive]: London mayor should clear sewerage;
+Label for comment 37 [iamnotwise]: London mayor interview; London mayor doesn't appear in public after interview on fat reuse;
+Label for comment 38 [JWhite2479]: London mayor interview;
+Label for comment 39 [iamnotwise]: London mayor interview;
+Label for comment 40 [Enheduanna]: london mayor; london mayor doesn't appear in public for long after interview;
+Label for comment 41 [SteveDavies01]: london mayor;
+Label for comment 42 [jobloobird]: london mayor; london mayor doesn't appear in public for long after interview;
+Label for comment 58 [JohnA23]: London mayor does not appear in public after interview; Ed Balls also not present;
+Label for comment 81 [pCareca]: London mayor step down; Article title suggest that London mayor has stepped down;
+Label for comment 82 [Lightfinger]: London mayor step down;
+
+GROUP: disposal and renewability of fat
+Label for comment 50 [GordonBrown12]: renewability of the fat;
+Label for comment 51 [kthxbye]: renewability of the fat;
+Label for comment 52 [LondonManc]: renewability of the fat;
+Label for comment 53 [Tonester7]: renewability of the fat;
+Label for comment 55 [theoldManxman]: renewability of the fat;
+Label for comment 70 [Circlesonic]: event as a reminder for people to not flush down fats; renewability of fat;
+Label for comment 71 [muscleguy]: the food outlets are the main culprits; Misreference: Kingston to Kensigton
+
+GROUP: jokes
+Label for comment 8 [Hartabuna]: sewerage workers should take a bath;
+Label for comment 46 [kthxbye]: joke: NSA is controlling sewers
+Label for comment 47 [BrianHarry]: joke: NSA is controlling sewers
+Label for comment 57 [Martin_C]: renewability of the fat; joke: McDonalds reduces fat by outting it in the food
+Label for comment 63 [MyFlippinValentine]: Comparing fat destruction with movie;
+Label for comment 64 [globeprober]: Comparing fat destruction with movie; joke: Rename;
+Label for comment 65 [iamnotwise]: Comparing fat destruction with movie; joke: Rename;
+Label for comment 66 [fflump]: Comparing fat destruction with movie; joke: Rename;
+Label for comment 67 [kthxbye]: Comparing fat destruction with movie; joke: Rename;
+Label for comment 68 [fflump]: Comparing fat destruction with movie; joke: Rename;
+Label for comment 69 [Docroddy]: Comparing fat destruction with movie; joke: Rename;
+Label for comment 95 [willonone]: Stuart Lee won't come to London; joke: celebrities will avoid london;
+Label for comment 96 [CaressOfSteel]: joke: celebrities will avoid london;
+Label for comment 97 [JohnDory]: joke: renewability of fat in food; beef burgers;
+Label for comment 98 [iamnotwise]: joke: renewability of fat in food; Asian fried food;
+Label for comment 99 [T0nyN]: joke: renewability of fat in food; horseburgers
+Label for comment 100 [epinoa]: joke: renewability of fat in consmetics; hair grease;
+Label for comment 101 [bobble4293]: joke: renewability of fat in food; sewer fat fed into animals;
+Label for comment 102 [JohnDory]: joke: rats to be used for beef burgers;
+
+GROUP: wipes cause blockages
+Label for comment 72 [Alexandria]: wipes as a problem; Why are they problem if producers say flushable;
+Label for comment 73 [T0nyN]: flushable != decomposable quickly;
+Label for comment 75 [siff]: wipes as a problem; wipes don't decompose like toilet paper;
+Label for comment 78 [JohnnieGoat]: wipes vs toilet paper;
+
+GROUP: similar stories of fat blockage in other places
+Label for comment 85 [JohnnieGoat]: story: similar problem with congestion in Lesiter Sq. and NW London;
+Label for comment 77 [noirnoirnoir]: story on disposing fat in the vaste in Kensington;
+
+GROUP: Misreference Kingston instead Kensington
+Label for comment 74 [ocdc]: Misreference: Kingston to Kensigton
+Label for comment 76 [elcid96]: Misreference: Kingston to Kensigton
+Label for comment 79 [Monty84]: Misreference: Kingston to Kensigton
+
+GROUP: size of the fetberg
+Label for comment 92 [TVwriter]: size of the fatberg; false comparison of fatberg to a bus size;
+Label for comment 93 [muscleguy]: size of the fatberg;
+Label for comment 94 [necroflange]: size of the fatberg;
+
+GROUP: disgusting story
+Label for comment 86 [Vulcan1969]: disgusting picture; not able to eat dinner due to picture;
+Label for comment 87 [iamnotwise]: not able to eat dinner due to picture;
+Label for comment 88 [Vulcan1969]: not able to eat dinner due to picture;
+Label for comment 89 [iamnotwise]: not able to eat dinner due to picture;
+Label for comment 90 [JohnnieGoat]: reference to stalagtites;
+Label for comment 91 [BrianHarry]: not able to eat dinner due to picture;
+
+GROUP: miscellaneous
+Label for comment 62 [Lainwilts]: Guardian headlines; headlins are inaccurate and misleading;
+
+UNCONSTRAINED SUMMARY
+
+Several posters thank sewerage workers for cleaning the fatberg in Kingston upon Thames. Some of them say the workers should be rewarded. Others refer to their working conditions in the disgusting sewer and poor treatment of sewerage workers in general.
+
+Several commenters compare the sewerage workers to declogging medication, statins or laxatives.
+
+Many comments refer to a movie on fighting the fat, comparing the fat removal action to actions in several movies. 
+
+A few commenters suggest that Tory politicians should be  put in the sewer. Others counter this by stating that Guardian readers generally always associate Torys with unpleasant things.
+
+Several comments discuss the mayor of London and his lack of public appearance. 
+
+Many comments discuss the disposal of fat and its renewability. 
+
+Some joke with it being put into food, however, this is also claimed to be true as sewer fat was fed to animals at one point in time. Several commenters discuss how wipes cause sewer blockages.  A few comments report stories of similar problems elsewhere in London.
+
+CONSTRAINED SUMMARY
+
+Several posters thank sewerage workers for cleaning the fatberg in Kingston upon Thames. Some of them say the workers should be rewarded. Others refer to their working conditions in the disgusting sewer and poor treatment of sewerage workers in general. 
+
+Several commenters compare the sewerage workers to declogging medication, statins or laxatives.  
+
+Many comments refer to a movie on fighting the fat, comparing the fat removal action to actions in several movies. 
+
+A few commenters suggest that Tory politicians should be  put in the sewer. Others counter this by stating that Guardian readers generally always associate Torys with unpleasant things.
+
+Several comments discuss the mayor of London and his lack of public appearance. 
+
+Many comments discuss the disposal of fat and its renewability. 
+
+Some joke with it being put into food, however, this is also claimed to be true as sewer fat was fed to animals at one point in time. Several commenters discuss how wipes cause sewer blockages.  
+
+A few comments report stories of similar problems elsewhere in London.
+
+BACK LINKING
+
+Several posters thank sewerage workers for cleaning the fatberg in Kingston upon Thames.
+(Sub)GroupNames:
+- GROUP: thanking sewerage workers
+- SUBGROUP: sewerage workers should be rewarded
+- SUBGROUP: sewerage workers work in disgusting conditions
+
+Some of them say the workers should be rewarded.
+(Sub)GroupNames:
+- SUBGROUP: sewerage workers should be rewarded
+
+Others refer to their working conditions in the disgusting sewer and poor treatment of sewerage workers in general.
+(Sub)GroupNames:
+- SUBGROUP: sewerage workers work in disgusting conditions
+
+Several commenters compare the sewerage workers to declogging medication, statins or laxatives.
+(Sub)GroupNames:
+- GROUP: comparison between sewerage workers and declogging medication
+
+Many comments refer to a movie on fighting the fat, comparing the fat removal action to actions in several movies.
+(Sub)GroupNames:
+- GROUP: a movie on fighting the fat
+- GROUP: jokes
+
+A few commenters suggest that Tory politicians should be  put in the sewer.
+(Sub)GroupNames:
+- SUBGROUP: Tory politicians in the sewer: pro
+
+Others counter this by stating that Guardian readers generally always associate Torys with unpleasant things.
+(Sub)GroupNames:
+- SUBGROUP: Tory politicians in the sewer: contra
+
+Several comments discuss the mayor of London and his lack of public appearance.
+(Sub)GroupNames:
+- GROUP: London mayor
+
+Many comments discuss the disposal of fat and its renewability.
+(Sub)GroupNames:
+- GROUP: disposal and renewability of fat
+
+Some joke with it being put into food, however, this is also claimed to be true as sewer fat was fed to animals at one point in time.
+(Sub)GroupNames:
+- GROUP: disposal and renewability of fat
+- GROUP: jokes
+
+Several commenters discuss how wipes cause sewer blockages.
+(Sub)GroupNames:
+- GROUP: wipes cause blockages
+
+A few comments report stories of similar problems elsewhere in London.
+(Sub)GroupNames:
+- GROUP: similar stories of fat blockage in other places

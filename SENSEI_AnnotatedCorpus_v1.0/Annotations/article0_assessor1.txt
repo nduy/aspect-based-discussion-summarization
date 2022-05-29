@@ -1,0 +1,339 @@
+LABELS
+
+Label for comment 1: Bad idea: May attract vermin
+Label for comment 2: Vermin: People with compost bins don't always have an issue
+Label for comment 3: Good idea: Up to 75% of waste could be recycled
+Label for comment 4: Flats: Will be difficult to manage
+Label for comment 5: Flats: There are facilities to put rubbish in away from the building so there should not be issues
+Label for comment 6: Bad idea: disagrees that 75% could be recycled
+Label for comment 7: Bad idea: the council is randomly making decision so the public should be able to randomly decide how much council tax to pay
+Label for comment 8: Vermin: Only packaging and other things should be in the black bin, which vermin will not be interested in
+Label for comment 9: Flats: Does not agree that all flats have sheds to put rubbish in
+Label for comment 10: Flats: The proposal is not aimed at people that live in flats
+Label for comment 11: Vermin: won't be attracted if waste is in a bin.; Larger bins: Asks the council to provide larger bins for recyclable waste to compensate for less frequent collections
+Label for comment 12: Larger bins: Families have an additional small bin. My family has four types of bins.
+Label for comment 13: Larger bins: My family manages with the size of the bins we currently have
+Label for comment 14: Bad idea: Council will soon extend to monthly collections
+Label for comment 15: Vermin: Should not be an issue; Education: People should be taught about what they can and can't recycle
+Label for comment 16: Vermin: Foxes may be drawn to smells of rubbish
+Label for comment 17: Flats: We do not have a separate shed for waste
+Label for comment 18: Vermin: May be attracted to smell of rubbish
+Label for comment 19: Bad idea: Exaggeration about plague coming
+Label for comment 20: Response: Plague suggestion is ridiculous
+Label for comment 21: Council: Dereliction of duty
+Label for comment 22: Council: Agrees that the council is crazy
+Label for comment 23: Good idea: We manage fine; Council: Asks if any party offers a weekly collection
+Label for comment 24: Bad idea
+Label for comment 25: Bin size: Asks how 2.4 keeps their bin so empty
+Label for comment 26: Bin size: Asks how 2.4 keeps their bin so empty
+Label for comment 27: Bin size: Suggests others are buying too much food
+Label for comment 28: Bin size: Asks why 2.2 struggles with bin size
+Label for comment 29: Bin size: I do not buy too much food
+Label for comment 30: Food waste: Councils should offer food waste collection
+Label for comment 31: Bin size: My bins are rarely full.; Compost: I use a compost bin
+Label for comment 32: Bin size: Harder to fit waste in a bin when you have a garden
+Label for comment 33: Bin size: We do what we can, but it is still a struggle
+Label for comment 34: Compost: More people should compost organic waste
+Label for comment 35: Bin size: I manage fine by composting and going to the recycling center
+Label for comment 36: Bin size: We create more waste according to who lives in the house
+Label for comment 37: Compost: Our scheme for food waste works really well
+Label for comment 38: Response: Overpopulation and overconsumption are bigger issues than waste
+Label for comment 39: Vermin: Rats will increase in size
+Label for comment 40: Response: Arguing is pointless
+Label for comment 41: Council: Councillors do not care/are making a bad decision
+Label for comment 42: Council: Councillors do not care/are making a bad decision
+Label for comment 43: Council: Councillors do not care/are making a bad decision
+Label for comment 44: Council: Asks if reducing waste budget to spend on other areas, such as paying a salary for social workers, is worth having to deal with three-week collections
+Label for comment 45: Strikes: Asks what will happen when refuse workers strike
+Label for comment 46: Council: Councillors do not care/are making a bad decision
+Label for comment 47: Two week collection: People didn't like it at first, but now they are used to it
+Label for comment 48: Children waste: Not big enough when a household includes children
+Label for comment 49: Children waste: Use recyclable nappies
+Label for comment 50: Food waste: Could be a concern after three weeks
+Label for comment 51: Children waste: Use recyclable nappies
+Label for comment 52: Children waste: Recyclable nappies have their own problems
+Label for comment 53: Children waste: Recyclable nappies have their own problems
+Label for comment 54: Children waste: Recyclable nappies have their own problems
+Label for comment 55: Children waste: Recyclable nappies have their own problems
+Label for comment 56: Children waste: Recyclable nappies have their own problems
+Label for comment 57: Changing collections: Collections are just changing, and some bins will be collected more often
+Label for comment 58: Children waste: Issues with both recyclable nappies and reusable nappies
+Label for comment 59: Bin size: People with few people in their house should be given smaller bins so that others can have larger bins if they have teenagers or children
+Label for comment 60: Response: if 5.10's waste falls, her water usage will go up
+Label for comment 61: Children waste: Recyclable nappies can be washed efficiently
+Label for comment 62: Response: agrees that 5.10's changes will make no overall difference
+Label for comment 63: Children waste: Recyclable nappies can be better for the environment
+Label for comment 64: Bad idea: Can become a health bazard; Council: Councillors are to blame
+Label for comment 65: Bin size: Good enough
+Label for comment 66: Children waste: Families will not have enough room for nappies in their bins
+Label for comment 67: Unknown: Link does not work
+Label for comment 68: Children waste: Families will have enough room for nappies in their bins
+Label for comment 69: Unknown: Response to link that does not work
+Label for comment 70: Response to OperationAnfield, who disagrees with them
+Label for comment 71: Burn rubbish: Gives more space in bins
+Label for comment 72: Agrees that he/she is a hippie
+Label for comment 73: Link to video about hippies. Says that people are greedy.
+Label for comment 74: Bin size: we don't have enough space
+Label for comment 75: Burn rubbish: Will give off toxic gases
+Label for comment 76: Bin size: When recycling properly it's easy to fit waste in the bin
+Label for comment 77: Children waste: Nappies need to be collected earlier
+Label for comment 78: Council: They have no option because of 50% cuts that they have to make
+Label for comment 79: Response: about lack of privacy from neighbours
+Label for comment 80: Council: Should not be able to make changes without consulting the public
+Label for comment 81: Bin size: we have enough room
+Label for comment 82: Response: joke about phrasing of 6.12
+Label for comment 83: Children waste: article says there will be provisions for people with specific needs
+Label for comment 84: Children waste: Use flushable nappy liners to save room in bins
+Label for comment 85: Bin space: People are not recycling properly if they do not have room in their bins
+Label for comment 86: Bin space: my council is bringing in smaller bins
+Label for comment 87: Good idea: it can work
+Label for comment 88: Food waste: main issue
+Label for comment 89: Council: blame for cuts is with Westminister
+Label for comment 90: Bad idea: hope my council hasn't heard about it
+Label for comment 91: Grammar issue
+Label for comment 92: Grammar issue: response
+Label for comment 93: Grammar issue: response
+Label for comment 94: Grammar issue: response
+Label for comment 95: Grammar issue: response
+Label for comment 96: Grammar issue: response
+Label for comment 97: Grammar issue: response
+Label for comment 98: Grammar issue: response
+Label for comment 99: Grammar issue: response
+Label for comment 100: Bin size: In Stockholm we have a small communal bin area
+
+GROUPS
+
+GROUP: General Bad idea
+Label for comment 6 [Dave C]: Bad idea: disagrees that 75% could be recycled
+Label for comment 14 [Gladstone Minzie]: Bad idea: Council will soon extend to monthly collections
+Label for comment 19 [megasox]: Bad idea: Exaggeration about plague coming
+Label for comment 24 [SonOfTheDesert]: Bad idea
+Label for comment 64 [Ingathewinger]: Bad idea: Can become a health hazard
+Label for comment 90 [jantice]: Bad idea: hope my council hasn't heard about it
+
+GROUP: Vermin
+Label for comment 1 [majicka]: Vermin: May attract vermin
+Label for comment 2 [brendon1]: Vermin: People with compost bins don't always have an issue
+Label for comment 8 [brendon1]: Vermin: Only packaging and other things should be in the black bin, which vermin will not be interested in
+Label for comment 11 [dianab]: Vermin: won't be attracted if waste is in a bin.
+Label for comment 15 [GO123]: Vermin: Should not be an issue
+Label for comment 16 [Iccleste]: Vermin: Foxes may be drawn to smells of rubbish
+Label for comment 18 [mresta]: Vermin: May be attracted to smell of rubbish
+Label for comment 39 [Thargthemighty]: Vermin: Rats will increase in size
+
+GROUP: Flats
+Label for comment 4 [mresta]: Flats: Will be difficult to manage
+Label for comment 5 [brendon1]: Flats: There are facilities to put rubbish in away from the building so there should not be issues
+Label for comment 9 [ElmerPhudd]: Flats: Does not agree that all flats have sheds to put rubbish in
+Label for comment 10 [VSLVSL]: Flats: The proposal is not aimed at people that live in flats
+Label for comment 17 [mresta]: Flats: We do not have a separate shed for waste
+
+GROUP: Good idea
+Label for comment 3 [littleritchie]: Good idea: Up to 75% of waste could be recycled
+Label for comment 23 [alr1970]: Good idea: We manage fine
+Label for comment 87 [ID5884238]: Good idea: it can work
+
+GROUP: Bin size
+Label for comment 11 [dianab]: Bin size: Asks the council to provide larger bins for recyclable waste to compensate for less frequent collections
+Label for comment 12 [Factsaregood]: Bin size: Families have an additional small bin. My family has four types of bins.
+Label for comment 13 [dianab]: Bin size: My family manages with the size of the bins we currently have
+Label for comment 25 [SonOfTheDesert]: Bin size: Asks how 2.4 keeps their bin so empty
+Label for comment 26 [MrMondypops]: Bin size: Asks how 2.4 keeps their bin so empty
+Label for comment 27 [IrishIain]: Bin size: Suggests others are buying too much food
+Label for comment 28 [dianab]: Bin size: Asks why 2.2 struggles with bin size
+Label for comment 29 [SonOfTheDesert]: Bin size: I do not buy too much food
+Label for comment 31 [dunnock49]: Bin size: My bins are rarely full. 
+Label for comment 35 [dunnock49]: Bin size: I manage fine by composting and going to the recycling center
+Label for comment 36 [dianab]: Bin size: We create more waste according to who lives in the house
+Label for comment 32 [dunnock49]: Bin size: Harder to fit waste in a bin when you have a garden
+Label for comment 33 [Iccleste]: Bin size: We do what we can, but it is still a struggle
+Label for comment 59 [flyinginn]: Bin size: People with few people in their house should be given smaller bins so that others can have larger bins if they have teenagers or children
+Label for comment 65 [paulrudolph]: Bin size: Good enough
+Label for comment 74 [TheOLEDman]: Bin size: we don't have enough space
+Label for comment 76 [egbsw3]: Bin size: When recycling properly it's easy to fit waste in the bin
+Label for comment 81 [IrishIain]: Bin size: we have enough room
+Label for comment 85 [ID5884238]: Bin space: People are not recycling properly if they do not have room in their bins
+Label for comment 86 [paulrudolph]: Bin space: my council is bringing in smaller bins
+Label for comment 100 [vampsinthe]: Bin size: In Stockholm we have a small communal bin area
+
+GROUP: Council
+Label for comment 7 [Iccleste]: Council: the council is randomly making decision so the public should be able to randomly decide how much council tax to pay
+Label for comment 21 [Iccleste]: Council: Dereliction of duty
+Label for comment 22 [Dave C]: Council: Agrees that the council is crazy
+Label for comment 23 [alr1970]: Council: Asks if any party offers a weekly collection
+Label for comment 41 [Factsaregood]: Council: Councillors do not care/are making a bad decision
+Label for comment 42 [magicmingus]: Council: Councillors do not care/are making a bad decision
+Label for comment 43 [njwimpenny]: Council: Councillors do not care/are making a bad decision
+Label for comment 44 [OperationAnfield]: Council: Asks if reducing waste budget to spend on other areas, such as paying a salary for social workers, is worth having to deal with three-week collections
+Label for comment 46 [flyinginn]: Council: Councillors do not care/are making a bad decision
+Label for comment 64 [Ingathewinger]: Council: Councillors are to blame
+Label for comment 78 [junglecitizen]: Council: They have no option because of 50% cuts that they have to make
+Label for comment 80 [flyinginn]: Council: Should not be able to make changes without consulting the public
+Label for comment 89 [Ingathewinger]: Council: blame for cuts is with Westminister
+
+GROUP: Food waste
+Label for comment 30 [GO123]: Food waste: Councils should offer food waste collection
+Label for comment 50 [russiandoll]: Food waste: Could be a concern after three weeks
+Label for comment 88 [Ingathewinger]: Food waste: main issue
+
+GROUP: Education
+Label for comment 15 [GO123]: Education: People should be taught about what they can and can't recycle
+
+GROUP: Compost
+Label for comment 31 [dunnock49]: Compost: I use a compost bin
+Label for comment 34 [SonOfTheDesert]: Compost: More people should compost organic waste
+Label for comment 37 [pgblade]: Compost: Our scheme for food waste works really well
+
+GROUP: Child waste/Nappies
+Label for comment 48 [Ingathewinger]: Children waste: Not big enough when a household includes children
+Label for comment 49 [Pudsk]: Children waste: Use recyclable nappies
+Label for comment 51 [babbitt]: Children waste: Use recyclable nappies
+Label for comment 52 [Skiiltan]: Children waste: Recyclable nappies have their own problems
+Label for comment 53 [Iccleste]: Children waste: Recyclable nappies have their own problems
+Label for comment 54 [healey]: Children waste: Recyclable nappies have their own problems
+Label for comment 55 [ThornDavis]: Children waste: Recyclable nappies have their own problems
+Label for comment 56 [junglecitizen]: Children waste: Recyclable nappies have their own problems
+Label for comment 58 [ilweran]: Children waste: Issues with both recyclable nappies and reusable nappies
+Label for comment 61 [IrishIain]: Children waste: Recyclable nappies can be washed efficiently
+Label for comment 63 [IrishIain]: Children waste: Recyclable nappies can be better for the environment
+Label for comment 66 [Ingathewinger]: Children waste: Families will not have enough room for nappies in their bins
+Label for comment 68 [OperationAnfield]: Children waste: Families will have enough room for nappies in their bins
+Label for comment 77 [ThornDavis]: Children waste: Nappies need to be collected earlier
+Label for comment 83 [ID5884238]: Children waste: article says there will be provisions for people with specific needs
+Label for comment 84 [thecoordinator]: Children waste: Use flushable nappy liners to save room in bins
+
+GROUP: Burn Rubbish
+Label for comment 71 [Chris Davison]: Burn rubbish: Gives more space in bins
+Label for comment 75 [junglecitizen]: Burn rubbish: Will give off toxic gases
+
+GROUP: Strikes
+Label for comment 45 [Iccleste]: Strikes: Asks what will happen when refuse workers strike
+
+GROUP: Collections just changing, not getting worse
+Label for comment 47 [babbitt]: Two week collection: People didn't like it at first, but now they are used to it
+Label for comment 57 [worksforcommunityorg]: Changing collections: Collections are just changing, and some bins will be collected more often
+
+GROUP: miscellaneous
+Label for comment 20 [SonOfTheDesert]: Response: Plague suggestion is ridiculous
+Label for comment 38 [SimpleOldSailor]: Response: Overpopulation and overconsumption are bigger issues than waste
+Label for comment 40 [SonOfTheDesert]: Response: Arguing is pointless
+Label for comment 60 [DrGargunza]: Response: if 5.10's waste falls, her water usage will go up
+Label for comment 62 [OperationAnfield]: Response: agrees that 5.10's changes will make no overall difference
+Label for comment 67 [paulrudolph]: Unknown: Link does not work
+Label for comment 69 [Ingathewinger]: Unknown: Response to link that does not work
+Label for comment 70 [paulrudolph]: Response to OperationAnfield, who disagrees with them
+Label for comment 72 [paulrudolph]: Agrees that he/she is a hippie
+Label for comment 73 [Fractelle]: Link to video about hippies. Says that people are greedy.
+Label for comment 79 [ElmerPhudd]: Response: about lack of privacy from neighbours
+Label for comment 82 [thierrytt1]: Response: joke about phrasing of 6.12
+Label for comment 91 [gullymiles]: Grammar issue
+Label for comment 92 [TheHiphopopotamus]: Grammar issue: response
+Label for comment 93 [CBR1100XX]: Grammar issue: response
+Label for comment 94 [TheOLEDman]: Grammar issue: response
+Label for comment 95 [Cynical007]: Grammar issue: response
+Label for comment 96 [Richard Hall]: Grammar issue: response
+Label for comment 97 [flyinginn]: Grammar issue: response
+Label for comment 98 [Cynical007]: Grammar issue: response
+Label for comment 99 [CBR1100XX]: Grammar issue: response
+
+UNCONSTRAINED SUMMARY
+
+The vast majority of comments were very negative towards the changes to bin collections. 
+
+The only positive comments were that it would be a positive move for recycling. Littlerichie thought it was a good idea to force people to recycle more. They said: "If 75% of this borough composted their waste at home then they could have their bins collected every six-weeks. It's amazing what doesn't need to be put into landfill." Other people said that they managed fine as they were, and many said that they did not put their bins out every time there was a collection. These people almost boasted that they were eco-friendly and produced little rubbish, which enraged other posters, while other people had problems already. 
+
+Many more people were angry with the proposals. Their main concerns were increased levels of vermin (specifically rats and foxes), not having enough space in their bins, communal bins in flats and issues with disposing of children's waste (mainly nappies, but also that children generally produce more waste than adults). 
+
+The comments about vermin mainly revolved around the issue of rubbish left for three weeks would attract rats and foxes. Some people replied saying that it should not be an issue because people with compost bins do not have more vermin than other people.
+
+Lots of people compared how much waste they create. Some showed off about the high amount of recycling that they managed to do, while others said that they couldn't believe how they did it. Parents with babies had the biggest issues with disposing of soiled nappies. There was a debate over which type of nappy was better for the environment between the waste produced from single-use nappies to the cleaning costs of hot water to wash multi-use nappies. 
+
+A few people talked about the issues with throwing away rubbish in large communal housing, such as at blocks of flats where lots of people will produce a lot of rubbish which would build up over three weeks. However, someone pointed out that the article says that flats will get different circumstances. 
+
+Many people blamed the Council for the cuts to waste services. Few people identified that the 50% cuts were imposed by central government, that local Councils then had to implement.
+
+CONSTRAINED SUMMARY
+
+The vast majority of comments were very negative towards the changes to bin collections. 
+
+The only positive comments were that it would be a good move for recycling. Littlerichie thought it was a good idea to force people to recycle more. They said: "If 75% of this borough composted their waste at home then they could have their bins collected every six-weeks." Other people said that they managed fine as they were, and many said that they did not put their bins out every time there was a collection. 
+
+Far more people were angry with the proposals. There were several comments about vermin. People said that rubbish left for three weeks would attract rats and foxes. Others said it should not be an issue because people with compost bins do not have more vermin than others.
+
+Lots of people compared their waste with others. Some showed off about the high amount of recycling that they managed to do. Parents with babies had big issues over disposing soiled nappies. There was a debate over which type of nappy was better for the environment. 
+
+A few people talked about the issues with throwing away rubbish in large communal housing. However, someone pointed out that the article says that flats will get different circumstances. 
+
+Many people blamed the Council for the cuts to waste services. Few people identified that the 50% cuts were imposed by central government, that local Councils then had to implement.
+
+BACK LINKING
+
+The vast majority of comments were very negative towards the changes to bin collections.
+(Sub)GroupNames:
+- GROUP: General Bad idea
+
+The only positive comments were that it would be a good move for recycling.
+(Sub)GroupNames:
+- GROUP: Good idea
+
+Littlerichie thought it was a good idea to force people to recycle more.
+(Sub)GroupNames:
+- GROUP: Good idea
+
+Other people said that they managed fine as they were, and many said that they did not put their bins out every time there was a collection.
+(Sub)GroupNames:
+- GROUP: Good idea
+
+Far more people were angry with the proposals.
+(Sub)GroupNames:
+- GROUP: General Bad idea
+- GROUP: Vermin
+- GROUP: Flats
+- GROUP: Bin size
+- GROUP: Council
+- GROUP: Child waste/Nappies
+- GROUP: Strikes
+
+There were several comments about vermin.
+(Sub)GroupNames:
+- GROUP: Vermin
+
+People said that rubbish left for three weeks would attract rats and foxes.
+(Sub)GroupNames:
+- GROUP: Vermin
+
+Others said it should not be an issue because people with compost bins do not have more vermin than others.
+(Sub)GroupNames:
+- GROUP: Vermin
+
+Lots of people compared their waste with others.
+(Sub)GroupNames:
+- GROUP: Bin size
+
+Some showed off about the high amount of recycling that they managed to do.
+(Sub)GroupNames:
+- GROUP: Bin size
+
+Parents with babies had big issues over disposing soiled nappies.
+(Sub)GroupNames:
+- GROUP: Child waste/Nappies
+
+There was a debate over which type of nappy was better for the environment.
+(Sub)GroupNames:
+- GROUP: Child waste/Nappies
+
+A few people talked about the issues with throwing away rubbish in large communal housing.
+(Sub)GroupNames:
+- GROUP: Flats
+
+However, someone pointed out that the article says that flats will get different circumstances.
+(Sub)GroupNames:
+- GROUP: Flats
+
+Many people blamed the Council for the cuts to waste services.
+(Sub)GroupNames:
+- GROUP: Council
+
+Few people identified that the 50% cuts were imposed by central government, that local Councils then had to implement.
+(Sub)GroupNames:
+- GROUP: Council

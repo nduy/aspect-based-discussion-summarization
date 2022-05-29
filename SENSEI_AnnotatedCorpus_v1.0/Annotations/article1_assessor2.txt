@@ -1,0 +1,299 @@
+LABELS
+
+Label for comment 1: Police cameras:free society negative and angry; suggests given the opportunity police would have cameras on everyone. They should be hear to guarantee a free society.
+Label for comment 2: Irrelevant
+Label for comment 3: Privacy: angry comments suggests police know too much about us already.
+Label for comment 4: Police cameras: police don't have cameras on themselves.
+Label for comment 5: Irrelevant
+Label for comment 6: Irrelevant
+Label for comment 7: Irrelevant
+Label for comment 8: Data protection: commenter believes police have poor understanding of Data Protection Act ie what they can share and not share without consent. Adds GP's are pretty good at this. Overall believes the suggestion of access to medical records should be resisted. Its between you and your doctor.Important for child protection.
+Label for comment 9: Irrelevant
+Label for comment 10: Medical privacy: Negative towards ideas that police can routinely access our medical records. Also questions accuracy of medical records. Agrees dealings with GP should remain confidential unless specifically asked permission. Feel GP have too much power regarding child protection.Feel there should be a law on Mandatory reporting. Given the chance lots of people would do nothing.
+Label for comment 11: police cameras: questions if police are trialing cameras to record their interactions with the public.
+Label for comment 12: Not clear:
+Label for comment 13: Child Protection: GPs trainind to level 3 and teachers to level 1 or 2. Believes there should be more training and the right sort of people in positions to make what are difficult decisions.
+Label for comment 14: Police cameras: confirms police are trialling cameras.
+Label for comment 15: Privacy: Negative but blames govt not police - its the state that wants to control everything not the police.
+Label for comment 16: Irrelevant
+Label for comment 17: Irrelevant
+Label for comment 18: Irrelevant
+Label for comment 19: Privacy: The effect of this lack of privacy has one outcome. If they can watch us we can watch them. Bit like politics.
+Label for comment 20: Medical privacy: objects to authorities having access to medical records without consent.
+Label for comment 21: Free society: police should preserve freedom.
+Label for comment 22: Free society: police should be here to guarantee our freedoms.
+Label for comment 23: Free society: reference to Karl Marx.
+Label for comment 24: Irrelevant.
+Label for comment 25: Irrelevant.
+Label for comment 26: Free society: Questions what would prevent police from being able to access medical records in order to smear people?
+Label for comment 27: Consequences of access to medical information:Once police have someone in custody could then go on search that person's home due to concerns of medical condition ie search for drugs.
+Label for comment 28: Medical privacy: suggests to opt out of NHS Summary Care Record.
+Label for comment 29: Press and privacy: Given the ease with which the late News of the World was able to illegally obtain information from police officers, this would not end well.
+Label for comment 30: Medical privacy: Jokingly suggests politicians, royalty etc would be exempt.
+Label for comment 31: Police remit: Positive perspective: police are on call 24/7 and often have to do their best particularly in the middle of the night.Believes author of article is contradicting herself. If police are going to be used as social workers and mental health nurses, give them the tools to do the job.
+Label for comment 32: Police remit: questions how giving police access to medical records will help them tools to do their job.Could make situation worst or unduly influence a situation.
+Label for comment 33: Police remit: lock them up in a police cell.
+Label for comment 34: police remit: have to deal with a lot of mentally ill people.
+Label for comment 35: Irrelevant
+Label for comment 36: police remit: disagrees on comment regarding that we should have less police and more social workers.
+Label for comment 37: Medical privacy: believes access to medical information could be useful ie if police arrested someone for causing a disturbance who wasn't drunk, but suffering from medical condition or mental health issue. Questions what police do with that information. That's what needs addressing.Needs to be greater interaction between medics, social workers and police. Maybe selective access to info ie if in need of regular medication.
+Label for comment 38: Medical privacy: Awareness: make it compulsory  that any person in need of regular medication would be wearing an appropriate medical alert bracelet/necklace.
+Label for comment 39: Medical privacy: Awareness:Response to previous comment, hard to enforce.
+Label for comment 40: Medical privacy:What to include in medical alert bracelet.
+Label for comment 41: Police remit: Sarcastic comments relating to training police to do other roles such as social workers, paramedic, dr, psychiatrist, perhaps even a lawyer. Why do we need specialists when the police can do it all.
+Label for comment 42: Police remit: police in an impossible position as they are the ones at the first point of contact for mentally ill people when an incident occurs and something goes wrong.Investment needed for training for police and specialists are immediately available.
+Label for comment 43: medical privacy:  Giving untrained officers access to files intended for medical professionals can only end badly. Police wouldn't want doctors reading police intelligence reports and making decisions based on those reports.
+Label for comment 44: Police trust: Can't trust police. Bad idea to grant access to personal information. Vulnerable people who had been victims of crime would probably be more reluctant to come forward.
+Label for comment 45: Medical privacy and mental health: positive response. If police could call GP to check mental health of someone accusing another of a crime would save police lots of time and accused lots of stress.
+Label for comment 46: Medical privacy and mental health: in response to accused comment, commenter highlights police have to investigate any and every accusation. Tricky. They will get the blame if they don't.
+Label for comment 47: Medical privacy and mental health: in response to accused comment, commenter highlights it doesn't give anyone the right to access someones medical records without consent.
+Label for comment 48: Police remit and mental health: in response to accused comment, commenter highlights even if police did know the accusers mental health problems they would still need to investigate.
+Label for comment 49: Police remit and mental health: in response to accused comment, commenter highlights police should of had full information about the accuser and considered charging accuser for wasting police time.
+Label for comment 50: Mental health issues: should having a mental health issue count against you in a police case? Previous comments proposes notion that mentally ill people are liars.
+Label for comment 51: Medical privacy and Police action consequencies: Highlights how investigation based on incomplete facts ends with wrongly accused having an incorrect record with social services
+Label for comment 52: Medical privacy and Police action consequencies: commenter highlights police need to investigate if accuser has mental health issues or not. Also the suggestion of prosecuting the person for wasting police time rather than acting as a mental health professional.
+Label for comment 53: Medical privacy and Police action consequencies: phoning GP may have given fuller picture of person background but agrees all allegations have to be investigated. Difference though between phoning GP and having full access to someones medical files.
+Label for comment 54: medical privacy and police: commenter brings discussion back to the point of whether police should be able to access medical information. Should police have a right to it? It is parted with on the basis that it is completely private and it should remain so.
+Label for comment 55: Medical privacy and Police action consequencies: commenter provides another example of where someone was falsely accused, despite the fact that the accuser had done this before the police had to investigate.
+Label for comment 56: Police remit and mental health: Angry response regarding previous comment on it would help if police have full picture of character of accuser ie whether they have history of mental health suggests that this would influence the police's investigation. Equally police would regularly access health information police if it was available to 'judge character' of people.
+Label for comment 57: Medical privacy and Police action consequencies:In response to previous response to serial accuser surely police would have record of that.
+Label for comment 58: Police remit and mental health: replies angrily to comment saying has nothing to do with history of mental health but history of unfounded accusations.
+Label for comment 59: Police remit and mental health: Another angry response regarding comment on it would help if police have full picture of character of accuser ie whether they have history of mental health suggests that this would influence the police's investigation and treat them unfairly.
+Label for comment 60: Police and mental health service: commenter has family member with mental health and highlights how services with mental health professionals were once 24/7. Now the police are deployed as a first response and can be very distressing for all involved.There is only so much family support can do.
+Label for comment 61: Data protection: the state has a terrible record of holding personal data securely.GPs are the exception. Commenter highlights DP Act only allows organisations to have access to data relevant to the task and suggestions proposals seem to be against the principle.
+Label for comment 62: Data Protection: The proposal sounds like one which could in theory be permitted by administrative action under that legislation.
+Label for comment 63: Data Protection:In response to comments regarding state's terrible record, commenter highlights NHS's attempt to make everyones records accessible.Believes there is a hidden agenda to make medical records accessible to anyone who is willing to pay.
+Label for comment 64: Police and mental health: commenter who has mental health problems reveals how he was unfairly treated by police one time when he tried to help someone who was being assaulted.
+Label for comment 65: Police and mental health: continuation of comment mentions he made a formal complaint to police.
+Label for comment 66: Police and mental health:Further continuation of post commenter refers to how one of the police officers involved said that he shouldn't have got involved in a domestic, highlighting police need to take domestic violence seriously.
+Label for comment 67: Police and mental health: Adds to debate that police are corrupt and don't respect people with any degree of mental health.
+Label for comment 68: Police and mental health: Adds to debate police are woefully undereducated about mental health issues just as they are about domestic violence. Police don't need more powers they need more education.
+Label for comment 69: Police distrust:negative comment regarding police and how we shouldn't give them access to medical records. Believes they are too arrogant and aggresive to be trusted.
+Label for comment 70: irrelevant
+Label for comment 71: Police remit: What makes the police think they are even competent to understand people's medical records? Believes this notion raise big questions about Sir Peter Fahy's competence.
+Label for comment 72: Police remit: Police are in a no win situation - they can't look at medical records as they can't be trusted, yet they're expected to diagnose a myriad of health problems and react accordingly.
+Label for comment 73: Police remit: in response police are expected to follow up reports and disturbances and then pass on cases for appropriate further action. They are specifically not supposed to act on any prejudices.
+Label for comment 74: Police remit: Unless the officers are medically trained, access to medical records will render them no more able to react accordingly.
+Label for comment 75: Police and mental health: questions what evidence there is of acting on prejudices.
+Label for comment 76: Police and mental health: suggests police affected by prejudice against mental illness as is much of society.
+Label for comment 77: Police distrust: Research on policing conducted in the 1970s, 1980s and early 1990s indicated that racism and racial prejudice in police culture were more widespread and more extreme than in wider society.
+Label for comment 78: Police and mental health: commenter highlights news story of a schizophrenic man who was shot dead by a police marksman after he refused to drop a samurai sword, adding this is what happens when police get involved with the vulnerable.
+Label for comment 79: Medical privacy: suggests if police had access to samurai sword man's medical records, it wouldn't have made any difference.
+Label for comment 80: Police distrust: blind man tasered adding to distrust in police argument.
+Label for comment 81: Police distrust: see a return to the days when the police wrote the criminals confession
+Label for comment 82: Police distrust: Police powers should not be getting wider. They should be restricted. They have clearly and repeatedly been shown to be corrupt and totally untrustworthy.
+Label for comment 83: Medical privacy and police distrust: Absurd and dangerous. Police do not have the competence to read and use medical records. Medical records are highly confidential and is a matter of basic medical ethics. Cannot imagine a worst custodian of sensitive medical information than the police. They have no credibility.
+Label for comment 84: Medical privacy and police distrust: Undoubtedly medical information would be leaked by unscrupulous officers to newspapers and also used to discredit anyone who makes a complaint against the police.
+Label for comment 85: Irrelevant
+Label for comment 86: Irrelevant
+Label for comment 87: Irrelevant
+Label for comment 88: Budget cuts: mental health and social work services suffer from poor investment resulting in longer waiting times for diagnosis and help.
+Label for comment 89: Police distrust:If a less benevolent successor to Mr Fahy were to have access to medical records, what's to stop them from operating a "pre-crime" initiative
+Label for comment 90: Irrelevant
+Label for comment 91: Irrelevant
+Label for comment 92: irrelevant
+Label for comment 93: Police distrust: questions what do the police want. Some information is private. Not because it masks criminal activity but because people essentially like only people they trust knowing things about them.
+Label for comment 94: Budget cuts: shocking that police cells are being utlized as a substitute for mental health wards and distrust society where justice depends on what is or isn't written on medical record.
+Label for comment 95: Police and mental health: Suspected criminal in custody in a Police cell must be reviewed at least once every 24 hours, whereas a suspected mentally ill person only needs to be reviewed every 72 hours.
+Label for comment 96: Police and mental health:The media constantly portray mentally ill people as violent and unpredictable and so why on earth would the police have an "educated" informed view.
+Label for comment 97: Irrelevant
+Label for comment 98: Irrelevant
+Label for comment 99: Police and mental health: Another comment of a bad experience with the police for someone with mental health issues.
+Label for comment 100: Police and mental health: Used the pejorative 'nutter' to emphasise how Society in general, but especially law enforcement in all it's forms, treats/views the mentally ill and disabled.
+Label for comment 101: Irrelevant
+
+GROUPS
+
+GROUP: Data Protection
+Label for comment 8 [OldBristolian]: Data protection: commenter believes police have poor understanding of Data Protection Act ie what they can share and not share without consent. Adds GP's are pretty good at this. Overall believes the suggestion of access to medical records should be resisted. Its between you and your doctor.Important for child protection.
+Label for comment 61 [SirTalbotBuxomly]: Data protection: the state has a terrible record of holding personal data securely.GPs are the exception. Commenter highlights DP Act only allows organisations to have access to data relevant to the task and suggestions proposals seem to be against the principle.
+Label for comment 62 [ABasu]: Data Protection: The proposal sounds like one which could in theory be permitted by administrative action under that legislation.
+Label for comment 63 [speedTriple]: Data Protection:In response to comments regarding state's terrible record, commenter highlights NHS's attempt to make everyones records accessible.Believes there is a hidden agenda to make medical records accessible to anyone who is willing to pay.
+
+GROUP: Medical privacy
+Label for comment 10 [snowcat3]: Medical privacy: Negative towards ideas that police can routinely access our medical records. Also questions accuracy of medical records. Agrees dealings with GP should remain confidential unless specifically asked permission. Feel GP have too much power regarding child protection.Feel there should be a law on Mandatory reporting. Given the chance lots of people would do nothing.
+Label for comment 20 [mcole003]: Medical privacy: objects to authorities having access to medical records without consent.
+Label for comment 28 [Imageark]: Medical privacy: suggests to opt out of NHS Summary Care Record.
+Label for comment 30 [TheGreatRonRafferty]: Medical privacy: Jokingly suggests politicians, royalty etc would be exempt.
+Label for comment 37 [bobbysixty]: Medical privacy: believes access to medical information could be useful ie if police arrested someone for causing a disturbance who wasn't drunk, but suffering from medical condition or mental health issue. Questions what police do with that information. That's what needs addressing.Needs to be greater interaction between medics, social workers and police. Maybe selective access to info ie if in need of regular medication.
+Label for comment 38 [SuburbanHomeboy]: Medical privacy: Awareness: make it compulsory  that any person in need of regular medication would be wearing an appropriate medical alert bracelet/necklace.
+Label for comment 39 [bobbysixty]: Medical privacy: Awareness:Response to previous comment, hard to enforce.
+Label for comment 40 [AntHopkins]: Medical privacy:What to include in medical alert bracelet.
+Label for comment 43 [HarryTheHorse]: medical privacy:  Giving untrained officers access to files intended for medical professionals can only end badly. Police wouldn't want doctors reading police intelligence reports and making decisions based on those reports.
+Label for comment 45 [lisalane]: Medical privacy and mental health: positive response. If police could call GP to check mental health of someone accusing another of a crime would save police lots of time and accused lots of stress.
+Label for comment 46 [Swan17]: Medical privacy and mental health: in response to accused comment, commenter highlights police have to investigate any and every accusation. Tricky. They will get the blame if they don't.
+Label for comment 47 [carcetti]: Medical privacy and mental health: in response to accused comment, commenter highlights it doesn't give anyone the right to access someones medical records without consent.
+Label for comment 79 [HarryTheHorse]: Medical privacy: suggests if police had access to samurai sword man's medical records, it wouldn't have made any difference.
+Label for comment 83 [HarryTheHorse]: Medical privacy and police distrust: Absurd and dangerous. Police do not have the competence to read and use medical records. Medical records are highly confidential and is a matter of basic medical ethics. Cannot imagine a worst custodian of sensitive medical information than the police. They have no credibility.
+Label for comment 84 [OldBristolian]: Medical privacy and police distrust: Undoubtedly medical information would be leaked by unscrupulous officers to newspapers and also used to discredit anyone who makes a complaint against the police.
+
+GROUP: Child protection
+Label for comment 13 [OldBristolian]: Child Protection: GPs trainind to level 3 and teachers to level 1 or 2. Believes there should be more training and the right sort of people in positions to make what are difficult decisions.
+
+GROUP: Free Society
+Label for comment 21 [whatithink]: Free society: police should preserve freedom.
+Label for comment 22 [conanthebarbarian]: Free society: police should be here to guarantee our freedoms.
+Label for comment 23 [GrandMoffTanner]: Free society: reference to Karl Marx.
+Label for comment 26 [dermaptera]: Free society: Questions what would prevent police from being able to access medical records in order to smear people?
+
+GROUP: Consequences of access to medical information
+Label for comment 27 [mattmcneany]: Consequences of access to medical information:Once police have someone in custody could then go on search that person's home due to concerns of medical condition ie search for drugs.
+Label for comment 51 [OldBristolian]: Medical privacy and Police action consequencies: Highlights how investigation based on incomplete facts ends with wrongly accused having an incorrect record with social services
+Label for comment 52 [Blaydon]: Medical privacy and Police action consequencies: commenter highlights police need to investigate if accuser has mental health issues or not. Also the suggestion of prosecuting the person for wasting police time rather than acting as a mental health professional.
+Label for comment 53 [snowcat3]: Medical privacy and Police action consequencies: phoning GP may have given fuller picture of person background but agrees all allegations have to be investigated. Difference though between phoning GP and having full access to someones medical files.
+Label for comment 54 [carcetti]: medical privacy and police: commenter brings discussion back to the point of whether police should be able to access medical information. Should police have a right to it? It is parted with on the basis that it is completely private and it should remain so.
+Label for comment 55 [TheGreatRonRafferty]: Medical privacy and Police action consequencies: commenter provides another example of where someone was falsely accused, despite the fact that the accuser had done this before the police had to investigate.
+Label for comment 57 [HomerJS]: Medical privacy and Police action consequencies:In response to previous response to serial accuser surely police would have record of that.
+
+GROUP: Police remit
+Label for comment 31 [MutantNinjaThinktank]: Police remit: Positive perspective: police are on call 24/7 and often have to do their best particularly in the middle of the night.Believes author of article is contradicting herself. If police are going to be used as social workers and mental health nurses, give them the tools to do the job.
+Label for comment 32 [HarryTheHorse]: Police remit: questions how giving police access to medical records will help them tools to do their job.Could make situation worst or unduly influence a situation.
+Label for comment 33 [retreat33]: Police remit: lock them up in a police cell.
+Label for comment 34 [MutantNinjaThinktank]: police remit: have to deal with a lot of mentally ill people.
+Label for comment 36 [thylacosmilus]: police remit: disagrees on comment regarding that we should have less police and more social workers.
+Label for comment 41 [SteveRP]: Police remit: Sarcastic comments relating to training police to do other roles such as social workers, paramedic, dr, psychiatrist, perhaps even a lawyer. Why do we need specialists when the police can do it all.
+Label for comment 42 [Patrician]: Police remit: police in an impossible position as they are the ones at the first point of contact for mentally ill people when an incident occurs and something goes wrong.Investment needed for training for police and specialists are immediately available.
+Label for comment 71 [SteB1]: Police remit: What makes the police think they are even competent to understand people's medical records? Believes this notion raise big questions about Sir Peter Fahy's competence.
+Label for comment 72 [philipphilip99]: Police remit: Police are in a no win situation - they can't look at medical records as they can't be trusted, yet they're expected to diagnose a myriad of health problems and react accordingly.
+Label for comment 73 [Blaydon]: Police remit: in response police are expected to follow up reports and disturbances and then pass on cases for appropriate further action. They are specifically not supposed to act on any prejudices.
+Label for comment 74 [SE26lad]: Police remit: Unless the officers are medically trained, access to medical records will render them no more able to react accordingly.
+
+SUBGROUP: Police remit and mental health
+Label for comment 48 [TheGreatRonRafferty]: Police remit and mental health: in response to accused comment, commenter highlights even if police did know the accusers mental health problems they would still need to investigate.
+Label for comment 49 [lisalane]: Police remit and mental health: in response to accused comment, commenter highlights police should of had full information about the accuser and considered charging accuser for wasting police time.
+Label for comment 50 [conanthebarbarian]: Mental health issues: should having a mental health issue count against you in a police case? Previous comments proposes notion that mentally ill people are liars.
+Label for comment 56 [MiIney]: Police remit and mental health: Angry response regarding previous comment on it would help if police have full picture of character of accuser ie whether they have history of mental health suggests that this would influence the police's investigation. Equally police would regularly access health information police if it was available to 'judge character' of people.
+Label for comment 58 [lisalane]: Police remit and mental health: replies angrily to comment saying has nothing to do with history of mental health but history of unfounded accusations.
+Label for comment 59 [learningtofly]: Police remit and mental health: Another angry response regarding comment on it would help if police have full picture of character of accuser ie whether they have history of mental health suggests that this would influence the police's investigation and treat them unfairly.
+Label for comment 60 [BewilderedMark]: Police and mental health service: commenter has family member with mental health and highlights how services with mental health professionals were once 24/7. Now the police are deployed as a first response and can be very distressing for all involved.There is only so much family support can do.
+Label for comment 64 [JohntheLith]: Police and mental health: commenter who has mental health problems reveals how he was unfairly treated by police one time when he tried to help someone who was being assaulted.
+Label for comment 65 [JohntheLith]: Police and mental health: continuation of comment mentions he made a formal complaint to police.
+Label for comment 66 [JohntheLith]: Police and mental health:Further continuation of post commenter refers to how one of the police officers involved said that he shouldn't have got involved in a domestic, highlighting police need to take domestic violence seriously.
+Label for comment 67 [conanthebarbarian]: Police and mental health: Adds to debate that police are corrupt and don't respect people with any degree of mental health.
+Label for comment 68 [snowcat3]: Police and mental health: Adds to debate police are woefully undereducated about mental health issues just as they are about domestic violence. Police don't need more powers they need more education.
+Label for comment 75 [Remoxnoir]: Police and mental health: questions what evidence there is of acting on prejudices.
+Label for comment 76 [HarryTheHorse]: Police and mental health: suggests police affected by prejudice against mental illness as is much of society.
+Label for comment 78 [SteB1]: Police and mental health: commenter highlights news story of a schizophrenic man who was shot dead by a police marksman after he refused to drop a samurai sword, adding this is what happens when police get involved with the vulnerable.
+Label for comment 95 [JohntheLith]: Police and mental health: Suspected criminal in custody in a Police cell must be reviewed at least once every 24 hours, whereas a suspected mentally ill person only needs to be reviewed every 72 hours.
+Label for comment 96 [koolkarmauk]: Police and mental health:The media constantly portray mentally ill people as violent and unpredictable and so why on earth would the police have an "educated" informed view.
+Label for comment 99 [JohntheLith]: Police and mental health: Another comment of a bad experience with the police for someone with mental health issues.
+Label for comment 100 [JohntheLith]: Police and mental health: Used the pejorative 'nutter' to emphasise how Society in general, but especially law enforcement in all it's forms, treats/views the mentally ill and disabled.
+
+GROUP: Police Distrust
+Label for comment 1 [TheGreatRonRafferty]: Police cameras:free society negative and angry; suggests given the opportunity police would have cameras on everyone. They should be hear to guarantee a free society.
+Label for comment 4 [OrangeLagoon]: Police cameras: police don't have cameras on themselves.
+Label for comment 11 [ABasu]: police cameras: questions if police are trialing cameras to record their interactions with the public.
+Label for comment 14 [OrangeLagoon]: Police cameras: confirms police are trialling cameras.
+Label for comment 44 [carcetti]: Police trust: Can't trust police. Bad idea to grant access to personal information. Vulnerable people who had been victims of crime would probably be more reluctant to come forward.
+Label for comment 3 [TheGreatRonRafferty]: Privacy: angry comments suggests police know too much about us already.
+Label for comment 19 [gtegte]: Privacy: The effect of this lack of privacy has one outcome. If they can watch us we can watch them. Bit like politics.
+Label for comment 29 [pharos]: Press and privacy: Given the ease with which the late News of the World was able to illegally obtain information from police officers, this would not end well.
+Label for comment 69 [Roundearther]: Police distrust:negative comment regarding police and how we shouldn't give them access to medical records. Believes they are too arrogant and aggresive to be trusted.
+Label for comment 77 [Blaydon]: Police distrust: Research on policing conducted in the 1970s, 1980s and early 1990s indicated that racism and racial prejudice in police culture were more widespread and more extreme than in wider society.
+Label for comment 80 [retreat33]: Police distrust: blind man tasered adding to distrust in police argument.
+Label for comment 81 [bailliegillies]: Police distrust: see a return to the days when the police wrote the criminals confession
+Label for comment 82 [conanthebarbarian]: Police distrust: Police powers should not be getting wider. They should be restricted. They have clearly and repeatedly been shown to be corrupt and totally untrustworthy.
+Label for comment 83 [HarryTheHorse]: Medical privacy and police distrust: Absurd and dangerous. Police do not have the competence to read and use medical records. Medical records are highly confidential and is a matter of basic medical ethics. Cannot imagine a worst custodian of sensitive medical information than the police. They have no credibility.
+Label for comment 84 [OldBristolian]: Medical privacy and police distrust: Undoubtedly medical information would be leaked by unscrupulous officers to newspapers and also used to discredit anyone who makes a complaint against the police.
+Label for comment 89 [Pagey]: Police distrust:If a less benevolent successor to Mr Fahy were to have access to medical records, what's to stop them from operating a "pre-crime" initiative
+Label for comment 93 [GrandHotel30]: Police distrust: questions what do the police want. Some information is private. Not because it masks criminal activity but because people essentially like only people they trust knowing things about them.
+
+GROUP: Budget cuts
+Label for comment 15 [gtegte]: Privacy: Negative but blames govt not police - its the state that wants to control everything not the police.
+Label for comment 88 [Calimocho]: Budget cuts: mental health and social work services suffer from poor investment resulting in longer waiting times for diagnosis and help.
+Label for comment 94 [koolkarmauk]: Budget cuts: shocking that police cells are being utlized as a substitute for mental health wards and distrust society where justice depends on what is or isn't written on medical record.
+
+GROUP: miscellaneous
+Label for comment 2 [Bob_Helpful]: Irrelevant
+Label for comment 5 [TheGreatRonRafferty]: Irrelevant
+Label for comment 6 [OrangeLagoon]: Irrelevant
+Label for comment 7 [TheGreatRonRafferty]: Irrelevant
+Label for comment 9 [Pagey]: Irrelevant
+Label for comment 12 [salamandertome]: Not clear:
+Label for comment 16 [Wehadonebutitbroke]: Irrelevant
+Label for comment 17 [thylacosmilus]: Irrelevant
+Label for comment 18 [gtegte]: Irrelevant
+Label for comment 24 [Ian Russell]: Irrelevant.
+Label for comment 25 [philipphilip99]: Irrelevant.
+Label for comment 35 [Remoxnoir]: Irrelevant
+Label for comment 70 [acehlortt]: irrelevant
+Label for comment 85 [Remoxnoir]: Irrelevant
+Label for comment 86 [HarryTheHorse]: Irrelevant
+Label for comment 87 [Theoacme]: Irrelevant
+Label for comment 90 [JohntheLith]: Irrelevant
+Label for comment 91 [Pagey]: Irrelevant
+Label for comment 92 [SuburbanHomeboy]: irrelevant
+Label for comment 97 [LittleGhost]: Irrelevant
+Label for comment 98 [Remoxnoir]: Irrelevant
+Label for comment 101 [koolkarmauk]: Irrelevant
+
+UNCONSTRAINED SUMMARY
+
+A large number of commenters discussed how it was not part of the remit of the police to have access to medical files without consent and questioned why the police would want such information and how they would use it. Some commenters noted how only medically trained personnel could adequately understand medical records. One commenter added that the police do not have the competence to read and use medical records. Others suggested that the contents of a medical file could unduly influence the treatment of people in police custody.
+
+This led to the largest group of commenters discussing the treatment of people with mental health illness by the police. Several commenters highlighted how they had been mistreated by the police when in custody because they had a mental illness. This thread went on to discuss how the police don't respect people with mental health and need to be educated on these issues 
+
+Other commenters highlighted how due to budget cuts the police are now the first point of contact for mentally ill people when an incident occurs. Other commenters suggested that there needs to be greater interaction between medical staff, social workers and police rather than the police trying to do everything.
+
+Overall the comments were rather distrusting of the police, the majority objecting to the idea that the police should have access to medical records without consent. A group of commenters pressed on with this issue believing that Undoubtedly medical information could be leaked by unscrupulous officers to newspapers or used to discredit anyone who made a complaint against the police.
+
+CONSTRAINED SUMMARY
+
+A large number of commenters discussed how it was not part of the remit of the police to have access to medical files without consent and questioned why the police would want such information and how they would use it. Some commenters noted how only medically trained personnel could adequately understand medical records. One commenter added that the police do not have the competence to read and use medical records. Others suggested that the contents of a medical file could unduly influence the treatment of people in police custody.
+
+This led to the largest group of commenters discussing the treatment of people with mental health illness by the police. Several commenters highlighted how they had been mistreated by the police when in custody because they had a mental illness. This thread went on to discuss how the police don't respect people with mental health and need to be educated on mental health conditions. 
+
+Other commenters discussed due to budget cuts the police are now the first point of contact for mentally ill people when an incident occurs. Other commenters suggested that there needs to be greater interaction between medical staff, social workers and police.
+
+Overall the comments were rather distrusting of the police, the majority objecting to the idea that the police should have access to medical records without consent. A group of commenters believed that medical information could be leaked by unscrupulous officers to newspapers or used to discredit anyone who made a complaint against the police.
+
+BACK LINKING
+
+A large number of commenters discussed how it was not part of the remit of the police to have access to medical files without consent and questioned why the police would want such information and how they would use it.
+(Sub)GroupNames:
+- GROUP: Consequences of access to medical information
+- GROUP: Police remit
+
+Some commenters noted how only medically trained personnel could adequately understand medical records.
+(Sub)GroupNames:
+- GROUP: Medical privacy
+
+One commenter added that the police do not have the competence to read and use medical records.
+(Sub)GroupNames:
+- GROUP: Medical privacy
+
+Others suggested that the contents of a medical file could unduly influence the treatment of people in police custody.
+(Sub)GroupNames:
+- SUBGROUP: Police remit and mental health
+
+This led to the largest group of commenters discussing the treatment of people with mental health illness by the police.
+(Sub)GroupNames:
+- SUBGROUP: Police remit and mental health
+
+Several commenters highlighted how they had been mistreated by the police when in custody because they had a mental illness.
+(Sub)GroupNames:
+- SUBGROUP: Police remit and mental health
+- GROUP: Police Distrust
+
+This thread went on to discuss how the police don't respect people with mental health and need to be educated on mental health conditions.
+(Sub)GroupNames:
+- SUBGROUP: Police remit and mental health
+
+Other commenters discussed due to budget cuts the police are now the first point of contact for mentally ill people when an incident occurs.
+(Sub)GroupNames:
+- GROUP: Police remit
+- GROUP: Budget cuts
+
+Other commenters suggested that there needs to be greater interaction between medical staff, social workers and police.
+(Sub)GroupNames:
+- GROUP: Medical privacy
+- GROUP: Police remit
+
+Overall the comments were rather distrusting of the police, the majority objecting to the idea that the police should have access to medical records without consent.
+(Sub)GroupNames:
+- GROUP: Data Protection
+- GROUP: Police Distrust
+
+A group of commenters believed that medical information could be leaked by unscrupulous officers to newspapers or used to discredit anyone who made a complaint against the police.
+(Sub)GroupNames:
+- GROUP: Medical privacy

@@ -1,0 +1,381 @@
+LABELS
+
+Label for comment 1: Plain packaging: positive step
+Label for comment 2: Plain packaging: negative and disagrees. Sarcastic. Sceptical it will reduce sales.
+Label for comment 3: Plain packaging: negative. disagrees with 1. Critical of lack of progress to plain packaging. Cynical that it is because of tobacco lobbying of Conservatives. Government corruption.
+Label for comment 4: Plain packaging: disagrees with 1.1 that they want to reduce sales. Sceptical it will reduce sales as people aware dangers smoking.
+Label for comment 5: Plain packaging: negative. Sarcastic that it will have hoped-for positive effect.
+Label for comment 6: Plain packaging: positive. Cool, encourage return to stylish tins. Prefers to advertising brands.
+Label for comment 7: Plain packaging: agrees with 1.1 that sceptical it will affect sales. Puns on Lucky Strike.
+Label for comment 8: Plain packaging: negative. As sceptical it will reduce sales. Strongly disagrees, counterproductive step since box looks cool; swearing. Thinks packaging affects brand choice only and not effect to start smoking.
+Label for comment 9: Plain packaging: negative, sees it as further attack on smokers and individual freedom of choice. Sarcastic and grotesque.
+Label for comment 10: Packaging: sceptical that policy will make progress. Pro-Tobacco lobby will stifle reform.
+Label for comment 11: Disagrees with 2. Tobacco industry lobby not as powerful as made out and increasingly losing ground to regulation.
+Label for comment 12: Disagrees with 2.1 : lobbying is having an effect which is why the packaging policy is delayed. Lobbying very effective in less regulated market like Africa and Asia.
+Label for comment 13: Packaging: cool, positive step. Disagrees with 2 negativity that it is attack on smokers. Sees as in tune with spirit of smoking as form of individual expression.
+Label for comment 14: Disagrees in turn - resentful of excessive tax on smoking; implies the government only interested in taking peoples money. Angry.
+Label for comment 15: Disagrees with the cynicism on show in 2.4. Strongly against the attitudes of people imposing health "fascism" on others. Individual choice issue defended.
+Label for comment 16: Disagrees that the tobacco lobby are powerful as 2 asserts. Thinks the opposite - they are giving up on UK market. E.g. closed last cigarette factory recently.  Cites the huge fall in sales of recent years.
+Label for comment 17: Disagrees with 2.3 that packaging is cool but still positive about the step and optimistic about effects. (Given Australian data). Thinks 2.3 misses point that the policy is aimed at new smokers and making smoking less appealing or glamorous.
+Label for comment 18: Disagrees with 2.5 (why?!) Asserts that cigarettes can never look cool.
+Label for comment 19: Disagrees with 2.2 that Africa market for smoking vast, from personal experience.
+Label for comment 20: Agrees and disagrees with 2.9 that Africa market small. But smoking is increasing there.
+Label for comment 21: Sceptical that packaging positive effect. Because more about the taste than the marketing. Cynical of government intentions. Thinks lung cancer caused by diesel and suggests it needs regulating.
+Label for comment 22: Disagrees with 3: sarcastic about the positive assessment of smoking as a product.
+Label for comment 23: Disagrees with 3 about diesel - asserts it is regarded as safe now.
+Label for comment 24: Strongly disagrees with 3 - diesel does not cause cancer, but smoking does and there is plenty of evidence. Q:What does cause cancer?
+Label for comment 25: Disagrees with 3. Packaging will have a positive effect on cutting smoking, precisely why tobacco lobby against it.
+Label for comment 26: Disagrees with 3. Positive about new packaging policy. Smoking is an addiction.
+Label for comment 27: Irrelevant: cannot understand this point!
+Label for comment 28: Environmental issue: Disagrees with 3.2 that diesel is totally safe - other pollutants from it. London suffers badly from them.
+Label for comment 29: Disagrees with 3.2 assertion - CO2 not the real reason for cancer. Implies other causes.
+Label for comment 30: Disagrees that plain packaging positive effect with 3.1 Cites evidence that it can be counter productive. Suggests that price is the key issue to get people to stop smoking. Sceptical the government intend to really reduce smoking.
+Label for comment 31: Disagrees that plain packaging works, reiterates that Australia counterproductive policy evidence. Thinks alcohol a serious issue, suggests smokers unfair getting unfair treatment and regulation.
+Label for comment 32: Disagrees with 3.10 that plain packaging is negative - suggests it has in fact been positive and reduced smoking.
+Label for comment 33: disagrees with 3.2 points out that CO2 not the problem pollutant from diesel.
+Label for comment 34: disagrees with 3.1. Asserts that packaging affects brand separation. It just affects choice of brand. This change negative as will lead to people smoking cheaper brands. Cola example.
+Label for comment 35: Agrees that Australia has seen positive reduction from plain packaging. Citation.
+Label for comment 36: Sarcastically disagrees with 3 that diesel is a problem.
+Label for comment 37: Disagrees with 3 that diesel is a problem.
+Label for comment 38: Disagrees that 3.9 on price being only solution. People would circumvent price rise with smuggling. Counterproductive to over-regulate.
+Label for comment 39: Agrees with 3.13. Plain Packaging will not have a positive effect. It just affects choice of brand. Real solution lies elsewhere.
+Label for comment 40: Packaging: justifies opposition from tobacco lobby. Argues to 3.1 that they want to be able to affect choice of brand. Sceptical that will have positive effect reduce smoking.
+Label for comment 41: Again arguing that Australia evidence for plain packaging have a positive effect. Blames Murdoch press for this and accuses of him of being in league with tobacco lobby.
+Label for comment 42: To 3.3: Cancer is caused by another thing: wheat.
+Label for comment 43: Agrees with 3.9 ie- change will be counterproductive.
+Label for comment 44: Again to 3.3 Environment/pollution: not the problem. Smoking causes lung cancer, people in denial about it.
+Label for comment 45: Again protesting that CO2 not the issue but fine pollutant particulates. Cause cancer.
+Label for comment 46: Disagrees strongly with 3.24 - smoking key cause of cancer. 80-90% of COPD cases.
+Label for comment 47: Disagrees with 3.17 - smuggling may happen but would still have effect to reduce smoking if price went up. Risk of smuggling insignificant and worth the benefits.
+Label for comment 48: More cancer chat: sarcastic/heated! Disagrees that cancer caused by wheat. Agrees with others that smoking is a proven cause of cancer. Relates lost two relatives to lung cancer.
+Label for comment 49: Disagrees with 3.2 that diesel safe now - black smoke anecdotal.
+Label for comment 50: Angry (another) that policy delayed by government.
+Label for comment 51: Disagrees possibly with 4 - queries the point
+Label for comment 52: Replies by reasserting point.
+Label for comment 53: Another takes issue with 4 for not explaining why delay is bad.
+Label for comment 54: 4 responds that the delay is because of pandering to tobacco lobby, and should be no delay implementing it by government.
+Label for comment 55: Clarifying what 4 is for/against.
+Label for comment 56: Disagrees that policy is delayed. Since only Australia has done similar. Positive about the policy.
+Label for comment 57: Relates issue of pressure of big business lobbying to new TTIP free trade negotiations.
+Label for comment 58: Packaging: negative about the change. Will not reduce smoking. And won't reduce people starting to smoking which is real problem. Smoking is addictive mentioned again.
+Label for comment 59: Wants 4 to clarify position as claims they contradicting themselves!
+Label for comment 60: Complains hyperbolically at length that this policy is an attack on the individual choice. Nanny state attitude to government. Makes them want to take up smoking to resist!
+Label for comment 61: In agreement with 5
+Label for comment 62: Disagrees with 5 that it a nanny state move, problem is to help cut rates of smoking in young.
+Label for comment 63: Critical of 5 also, highlights benefits of regulation of environment pollution for workplaces and society. Sarcastic.
+Label for comment 64: Sarcastic about the emotive tone of 5.
+Label for comment 65: Agrees with 5.3 that benefits of regulation of env.
+Label for comment 66: Critical of 5 hyperbole too
+Label for comment 67: Disagrees again with 5
+Label for comment 68: Reiterates Again that Australia saw increase in smoking from this policy.
+Label for comment 69: Disagrees with Aus. claim of increase.
+Label for comment 70: Also Disagrees with Aus. claim of increase. Positive for trying policy.
+Label for comment 71: Disagrees with Aus. claim of increase.
+Label for comment 72: Disagrees with 5.2 that things have not been banned. Agrees that the policy is  nanny state/individual freedom issue. Smoking ban pubs example.
+Label for comment 73: Attacks anti-smoking attitude as unkind.
+Label for comment 74: irrelevant:insulting commenter
+Label for comment 75: Disagrees with 5.12 and agrees with 5.2 - have not been banned - can still smoke outside; raises point of others getting secondhand smoke. Smoking Ban example again.
+Label for comment 76: Sarcastic joke, pokes fun policy: possibly sceptical - policy simplistic?
+Label for comment 77: embellishes Sarcastic joke, pokes fun policy: possibly sceptical
+Label for comment 78: embellishes Sarcastic joke, pokes fun policy: possibly sceptical
+Label for comment 79: alternative Sarcastic joke that introduces seriousness to health of smoking. "Make it black..to match your lungs"
+Label for comment 80: Tobacco lobby: disagrees - agrees that the anti-smoking lobby / nanny state point too powerful.
+Label for comment 81: Disagrees with 7 - there is sense to it, cannot dismiss simply with nanny state criticism
+Label for comment 82: Replies to 7.1 that people know smoking is bad for them, individual freedom is at stake.
+Label for comment 83: Replies to same 7.2 that they are overstating the policy, it just means the packaging is plain - no ban. Positive about the policy.
+Label for comment 84: Packaging policy: positive and highlights the dirty air aspect of smoking.
+Label for comment 85: Replies to 8:negative but policy at odds with subsidy for tobacco growers by EU
+Label for comment 86: agrees, supports evidence that EU subsidy, experience in Spain.
+Label for comment 87: Agrees that it a stupid subsidy. Links to wider environment issue of pesticide use.
+Label for comment 88: adds links to previous comment
+Label for comment 89: Anti-nanny state, since McDonalds/fast food is also harmful and in glitzy packaging. Suggests should be more consistent with policy.
+Label for comment 90: Disagrees with 9 - not comparable: smoking risk is always bad and significantly worse for health than fast food.
+Label for comment 91: Disagree with 9 and Agrees with 9.1 - not comparable: risk of smoking bigger. Many smokers will die from the habit.
+Label for comment 92: Disagrees with 9 - packaging not comparable either
+Label for comment 93: Disagrees with 9 that it is nanny state to take action on packaging. Cites amount of money on advertising spent by tobacco. Not nannying to counteract the power of the vested interest of lobby.
+Label for comment 94: Disagrees with 9.1 that smoking risk is always bad. Medicinal quality of tobacco mentioned
+Label for comment 95: Agrees with 9.5 by saying marijuana is helpful for MS
+Label for comment 96: Disagrees with 9.5 and queries notion of tobacco as medicinal
+Label for comment 97: Repeats sceptical query that tobacco is medicinal in any way
+Label for comment 98: agrees with 9.8: lack of evidence that smoking can be a net benefit to people.
+Label for comment 99: agrees /implies it is a nanny state agenda that wants people to live to 105 and nothing can be enjoyed any more.
+Label for comment 100: riposte to 9.10 that lung cancer is horrible and deadly serious. It is relatively easy to avoid all the risks of smoking so people should do so. Regrets ever becoming a smoker.
+Label for comment 101: agrees: fast food not comparable to smoking. Doesn't affect those around you like smoking does. Passive smoking can affect babies, childrens hearing.
+Label for comment 102: agrees with 9.12 that asthma incidence related to smoking rates
+
+GROUPS
+
+GROUP: Will the policy for plain packaging impact rates of smoking in the UK?
+Label for comment 1 [musubi]: Plain packaging: positive step
+Label for comment 6 [BWhale]: Plain packaging: positive. Cool, encourage return to stylish tins. Prefers to advertising brands.
+Label for comment 17 [Deebles]: Disagrees with 2.3 that packaging is cool but still positive about the step and optimistic about effects. (Given Australian data). Thinks 2.3 misses point that the policy is aimed at new smokers and making smoking less appealing or glamorous.
+Label for comment 18 [Tonights]: Disagrees with 2.5 (why?!) Asserts that cigarettes can never look cool.
+Label for comment 26 [GoldenPa]: Disagrees with 3. Positive about new packaging policy. Smoking is an addiction.
+Label for comment 32 [retreat3]: Disagrees with 3.10 that plain packaging is negative - suggests it has in fact been positive and reduced smoking.
+
+SUBGROUP: Negative - sarcastic and sceptical it will reduce sales
+Label for comment 2 [lierbag]: Plain packaging: negative and disagrees. Sarcastic. Sceptical it will reduce sales.
+Label for comment 4 [Monosyll]: Plain packaging: disagrees with 1.1 that govt. want to reduce sales. Sceptical it will reduce sales as people aware dangers smoking.
+Label for comment 5 [jibber19]: Plain packaging: negative. Sarcastic that it will have hoped-for positive effect.
+Label for comment 7 [mhmediao]: Plain packaging: agrees with 1.1 that sceptical it will affect sales. Puns on Lucky Strike.
+Label for comment 16 [Deebles]: Disagrees that the tobacco lobby are powerful as 2 asserts. Thinks the opposite - they are giving up on UK market. E.g. closed last cigarette factory recently.  Cites the huge fall in sales of recent years.
+Label for comment 76 [Clearing]: Sarcastic joke, pokes fun policy: possibly sceptical - policy simplistic?
+Label for comment 77 [Ruffles7]: embellishes Sarcastic joke, pokes fun policy: possibly sceptical
+Label for comment 78 [Bishop_B]: embellishes Sarcastic joke, pokes fun policy: possibly sceptical
+Label for comment 79 [MalikSha]: alternative Sarcastic joke that introduces seriousness to health of smoking. "Make it black..to match your lungs"
+
+SUBGROUP: Negative - the packaging only affects brand choice. Price more impact?
+Label for comment 6 [BWhale]: Plain packaging: positive. Cool, encourage return to stylish tins. Prefers to advertising brands.
+Label for comment 8 [ManuelHu]: Plain packaging: negative. As sceptical it will reduce sales. Strongly disagrees, counterproductive step since box looks cool; swearing. Thinks packaging affects brand choice only and not effect to start smoking.
+Label for comment 30 [Cordwain]: Disagrees that plain packaging positive effect with 3.1 Cites evidence that it can be counter productive. Suggests that price is the key issue to get people to stop smoking. Sceptical the government intend to really reduce smoking.
+Label for comment 34 [Turnbull]: disagrees with 3.1. Asserts that packaging affects brand separation. It just affects choice of brand. This change negative as will lead to people smoking cheaper brands. Cola example.
+Label for comment 38 [dessiato]: Disagrees that 3.9 on price being only solution. People would circumvent price rise with smuggling. Counterproductive to over-regulate.
+Label for comment 39 [austerli]: Agrees with 3.13. Plain Packaging will not have a positive effect. It just affects choice of brand. Real solution lies elsewhere.
+Label for comment 40 [RichardM]: Packaging: justifies opposition from tobacco lobby. Argues to 3.1 that they want to be able to affect choice of brand. Sceptical that will have positive effect reduce smoking.
+Label for comment 47 [Cordwain]: Disagrees with 3.17 - smuggling may happen but would still have effect to reduce smoking if price went up. Risk of smuggling insignificant and worth the benefits.
+Label for comment 58 [liberalf]: Packaging: negative about the change. Will not reduce smoking. And won't reduce people starting to smoking which is real problem. Smoking is addictive mentioned again.
+
+SUBGROUP: Controversial whether the same policy has helped cut smoking in Australia 
+Label for comment 30 [Cordwain]: Disagrees that plain packaging positive effect with 3.1 Cites evidence that it can be counter productive. Suggests that price is the key issue to get people to stop smoking. Sceptical the government intend to really reduce smoking.
+Label for comment 31 [Gnoway]: Disagrees that plain packaging works, reiterates that Australia counterproductive policy evidence. Thinks alcohol a serious issue, suggests smokers unfair getting unfair treatment and regulation.
+Label for comment 32 [retreat3]: Disagrees with 3.10 that plain packaging is negative - suggests it has in fact been positive and reduced smoking.
+Label for comment 35 [Abertawe]: Agrees that Australia has seen positive reduction from plain packaging. Citation.
+Label for comment 41 [LordBile]: Again arguing that Australia evidence for plain packaging have a positive effect. Blames Murdoch press for this and accuses of him of being in league with tobacco lobby.
+Label for comment 56 [yeahboy]: Disagrees that policy is delayed. Since only Australia has done similar. Positive about the policy.
+Label for comment 68 [Nicholas]: Reiterates Again that Australia saw increase in smoking from this policy.
+Label for comment 69 [Ukulele]: Disagrees with Aus. claim of increase.
+Label for comment 70 [Frugal_D]: Also Disagrees with Aus. claim of increase. Positive for trying policy.
+Label for comment 71 [hamilton]: Disagrees with Aus. claim of increase.
+
+SUBGROUP: critical of the delays to the policy - tobacco industry pressure?
+Label for comment 3 [retreat3]: Plain packaging: negative. disagrees with 1. ; Critical of lack of progress to plain packaging. Cynical that it is because of tobacco lobbying of Conservatives. Government corruption.
+Label for comment 10 [Wassboy]: Packaging: sceptical that policy will make progress. Pro-Tobacco lobby will stifle reform.
+Label for comment 11 [AlfalfaF]: Disagrees with 2. Tobacco industry lobby not as powerful as made out and increasingly losing ground to regulation.
+Label for comment 12 [jdandi]: Disagrees with 2.1 : lobbying is having an effect which is why the packaging policy is delayed. Lobbying very effective in less regulated market like Africa and Asia.
+Label for comment 16 [Deebles]: Disagrees that the tobacco lobby are powerful as 2 asserts. Thinks the opposite - they are giving up on UK market. E.g. closed last cigarette factory recently.  Cites the huge fall in sales of recent years.
+Label for comment 25 [Barry841]: Disagrees with 3. Packaging will have a positive effect on cutting smoking, precisely why tobacco lobby against it.
+Label for comment 40 [RichardM]: Packaging: justifies opposition from tobacco lobby. Argues to 3.1 that they want to be able to affect choice of brand. Sceptical that will have positive effect reduce smoking.
+Label for comment 50 [liberalf]: Angry (another) that policy delayed by government.
+Label for comment 53 [Matt Pen]: Another takes issue with 4 for not explaining why delay is bad.
+Label for comment 54 [liberalf]: 4 responds that the delay is because of pandering to tobacco lobby, and should be no delay implementing it by government.
+Label for comment 55 [alexiram]: unconvinced by 4 reasoning -Clarifying what 4 is for/against.
+Label for comment 56 [yeahboy]: Disagrees that policy is delayed. Since only Australia has done similar. Positive about the policy.
+Label for comment 57 [Chenoa]: Relates issue of pressure of big business lobbying to new TTIP free trade negotiations.
+Label for comment 59 [alexiram]: Wants 4 to clarify position as claims they contradicting themselves!
+Label for comment 80 [colourfu]: Tobacco lobby: disagrees - agrees that the anti-smoking lobby / nanny state point too powerful.
+
+SUBGROUP: Point raised about inconsistency with EU subsidy for tobacco growers
+Label for comment 85 [bunkendr]: Replies to 8:negative but policy at odds with subsidy for tobacco growers by EU
+Label for comment 86 [birtland]: agrees, supports evidence that EU subsidy, experience in Spain.
+Label for comment 87 [Deebles]: Agrees that it a stupid subsidy. Links to wider environment issue of pesticide use.
+Label for comment 88 [Deebles]: adds links to previous comment
+
+SUBGROUP: Africa market?
+Label for comment 19 [Zamindar]: Disagrees with 2.2 that Africa market for smoking vast, from personal experience.
+Label for comment 20 [Deebles]: Agrees and disagrees with 2.9 that Africa market small. But smoking is increasing there.
+
+GROUP: Is it a "nanny state" policy issue that encroaches on individual freedom?
+Label for comment 9 [Shellfis]: Plain packaging: negative, sees it as further attack on smokers and individual freedom of choice. Sarcastic and grotesque.
+Label for comment 13 [BWhale]: Packaging: cool, positive step. Disagrees with 2 negativity that it is attack on smokers. Sees as in tune with spirit of smoking as form of individual expression.
+Label for comment 14 [Wassboy]: Disagrees in turn - resentful of excessive tax on smoking; implies the government only interested in taking peoples money. Angry.
+Label for comment 15 [BWhale]: Disagrees with the cynicism on show in 2.4. Strongly against the attitudes of people imposing health "fascism" on others. Individual choice issue defended.
+Label for comment 38 [dessiato]: Disagrees that 3.9 on price being only solution. People would circumvent price rise with smuggling. Counterproductive to over-regulate.
+Label for comment 43 [mitch666]: Agrees with 3.9 ie- change will be counterproductive.
+Label for comment 47 [Cordwain]: Disagrees with 3.17 - smuggling may happen but would still have effect to reduce smoking if price went up. Risk of smuggling insignificant and worth the benefits.
+Label for comment 60 [twiglett]: Complains hyperbolically at length that this policy is an attack on the individual choice. Nanny state attitude to government. Makes them want to take up smoking to resist!
+Label for comment 61 [Oysterhe]: In agreement with 5
+Label for comment 62 [Frugal_D]: Disagrees with 5 that it a nanny state move, problem is to help cut rates of smoking in young.
+Label for comment 63 [SleepieH]: Critical of 5 also, highlights benefits of regulation of environment pollution for workplaces and society. Sarcastic tone.
+Label for comment 64 [Barry841]: Sarcastic about the emotive tone of 5.
+Label for comment 65 [GoldenPa]: Agrees with 5.3 that benefits of regulation of env.
+Label for comment 66 [JimNolan]: Critical of 5 hyperbole too
+Label for comment 67 [TRISHJAR]: Disagrees again with 5
+Label for comment 99 [ID680823]: agrees /implies it is a nanny state agenda that wants people to live to 105 and nothing can be enjoyed any more.
+Label for comment 100 [mitch666]: riposte to 9.10 that lung cancer is horrible and deadly serious. It is relatively easy to avoid all the risks of smoking so people should do so. Regrets ever becoming a smoker.
+
+SUBGROUP: Smoking in pubs ban as a point of controversy
+Label for comment 72 [discobed]: Disagrees with 5.2 that things have not been banned. Agrees that the policy is  nanny state/individual freedom issue. Smoking ban pubs example.
+Label for comment 73 [discobed]: Attacks anti-smoking attitude as unkind.
+Label for comment 75 [Frugal_D]: Disagrees with 5.12 and agrees with 5.2 - have not been banned - can still smoke outside; raises point of others getting secondhand smoke. Smoking Ban example again.
+Label for comment 81 [olivebla]: Disagrees with 7 - there is sense to it, cannot dismiss simply with nanny state criticism
+Label for comment 82 [colourfu]: Replies to 7.1 that people know smoking is bad for them, individual freedom is at stake.
+Label for comment 83 [olivebla]: Replies to same 7.2 that they are overstating the policy, it just means the packaging is plain - no ban. Positive about the policy.
+
+SUBGROUP: Fast food risks as a comparison to smoking risk
+Label for comment 89 [Oysterhe]: Anti-nanny state argument, since McDonalds/fast food is also harmful and in glitzy packaging. Suggests should be more consistent with policy.
+Label for comment 90 [MammysLi]: Disagrees with 9 - not comparable: smoking risk is always bad and significantly worse for health than fast food.
+Label for comment 91 [GoldenPa]: Disagree with 9 and Agrees with 9.1 - not comparable: risk of smoking bigger. Many smokers will die from the habit.
+Label for comment 92 [wobwobwo]: Disagrees with 9 - packaging not comparable either
+Label for comment 93 [Alderbar]: Disagrees with 9 that it is nanny state to take action on packaging. Cites amount of money on advertising spent by tobacco. Not nannying to counteract the power of the vested interest of lobby.
+Label for comment 101 [tiredgir]: agrees: fast food not comparable to smoking. Doesn't affect those around you like smoking does. Passive smoking can affect babies, childrens hearing.
+
+SUBGROUP: Smoking positive medicinal effect - myth or reality?
+Label for comment 94 [ID537335]: Disagrees with 9.1 that smoking risk is always bad. Medicinal quality of tobacco mentioned
+Label for comment 95 [tryingto]: Agrees with 9.5 by saying marijuana is helpful for MS
+Label for comment 96 [MammysLi]: Disagrees with 9.5 and queries notion of tobacco as medicinal
+Label for comment 97 [ID943290]: Repeats sceptical query that tobacco is medicinal in any way
+Label for comment 98 [MammysLi]: agrees with 9.8: lack of evidence that smoking can be a net benefit to people.
+
+GROUP: Risks of smoking vs other environmental and health concerns e.g. diesel. Policy misguided?
+Label for comment 21 [LoPann]: Sceptical that packaging positive effect. Because more about the taste than the marketing. Cynical of government intentions. Thinks lung cancer caused by diesel and suggests it needs regulating.
+Label for comment 22 [MrsBertB]: Disagrees with 3: sarcastic about the positive assessment of smoking as a product.
+Label for comment 23 [kimorris]: Disagrees with 3 about diesel - asserts it is regarded as safe now.
+Label for comment 24 [Ezra85]: Strongly disagrees with 3 - diesel does not cause cancer, but smoking does and there is plenty of evidence. Q:What does cause cancer?
+Label for comment 31 [Gnoway]: Disagrees that plain packaging works, reiterates that Australia counterproductive policy evidence. Thinks alcohol a serious issue, suggests smokers unfair getting unfair treatment and regulation.
+Label for comment 36 [kmanley]: Sarcastically disagrees with 3 that diesel is a problem.
+Label for comment 37 [Jane Smi]: Disagrees with 3 that diesel is a problem.
+Label for comment 44 [tiredgir]: Again to 3.3 Environment/pollution: not the problem. Smoking causes lung cancer, people in denial about it.
+Label for comment 46 [Deebles]: Disagrees strongly with 3.24 - smoking key cause of cancer. 80-90% of COPD cases.
+Label for comment 48 [Ezra85]: More cancer chat: sarcastic/heated! Disagrees that cancer caused by wheat. Agrees with others that smoking is a proven cause of cancer. Relates lost two relatives to lung cancer.
+Label for comment 65 [GoldenPa]: Agrees with 5.3 that benefits of regulation of env.
+Label for comment 84 [balanced]: Packaging policy: positive and highlights the dirty air aspect of smoking.
+
+SUBGROUP: Asthma caused by smoking?
+Label for comment 102 [Deebles]: agrees with 9.12 that asthma incidence related to smoking rates
+
+SUBGROUP: Disagreement over what causes cancer - CO2 / diesel / other pollutants
+Label for comment 28 [dogprese]: Environmental issue: Disagrees with 3.2 that diesel is totally safe - other pollutants from it. London suffers badly from them.
+Label for comment 29 [demagogu]: Disagrees with 3.2 assertion - CO2 not the real reason for cancer. Implies other causes.
+Label for comment 33 [Nick321]: disagrees with 3.2 points out that CO2 not the problem pollutant from diesel.
+Label for comment 42 [LoPann]: To 3.3: Cancer is caused by another thing: wheat.
+Label for comment 45 [Chalcedo]: Again protesting that CO2 not the issue but fine pollutant particulates. Cause cancer.
+Label for comment 49 [Novelist]: Disagrees with 3.2 that diesel safe now - black smoke anecdotal.
+
+GROUP: miscellaneous
+Label for comment 27 [JimNolan]: Irrelevant: cannot understand this point!
+Label for comment 74 [TRISHJAR]: irrelevant:insulting commenter
+Label for comment 51 [alexiram]: irrelevant: Disagrees possibly with 4 - queries the point
+Label for comment 52 [liberalf]: irrelevant: Replies by reasserting point.
+
+UNCONSTRAINED SUMMARY
+
+There was much angry and divided opinion on how the announced plain packaging policy would impact on UK smoking rates. Many approved of making smoking less glamorous or "glitzy" and the need to inform that it is not "cool" but dangerous and addictive.
+
+Perhaps most commenters were critical and sarcastic - "Unlucky Strike". Sceptical it would reduce cigarette sales, many claimed packaging simply affects brand selection. One called it "simplistic". Increasing price was proposed as more effective, the risks of smuggling outweighed by the health benefits.
+
+Many disagreed whether the policy pioneered in Australia had cut smoking - some claimed it had been counter-productive. (A couple thought the plainness "cool"). But several pointed to tobacco industry resistance as implying the policy's impact.
+
+One commended the government trying the policy but several were critical of their real intentions e.g. delaying it and also why not regulating other areas? Many criticised obstructive lobbying of the tobacco industry and their global reach into Africa/Asia was mentioned. Several disagreed and said industry merely want brand separation. Also, EU subsidising tobacco in Spain was queried.
+
+Much mockery was expressed over unfair "nanny state" policies and encroachment on individual choice, that smokers knew it was bad for them and their enjoyment ignored. Many countered this was overstated and how public health had benefitted. The smoking ban in pubs was fair to prevent passive smoking. Many asserted smoking and lung cancer links; a mention of tobacco medicinal qualities was met with scepticism. One said asthma incidence had decreased as smoking's had.
+
+Also, other health risks led some to call the policy inconsistent. Alcohol, the environment (many debated diesel risks, and pollutants like CO2 were argued over) and fast food. But the latter dismissed as not comparable to passive smoking effect, for example.
+
+CONSTRAINED SUMMARY
+
+There was much anger and divided opinion on how the  plain packaging policy would impact on UK smoking rates. Many approved of making smoking less glamorous and the need to inform that it is not "cool", but dangerous and addictive.
+
+Perhaps most commenters were critical and sarcastic. Sceptical it would reduce cigarette sales, many claimed packaging simply affects brand selection. One called it "simplistic". Increasing price was proposed as more effective.
+
+Some queried whether the Australian example had cut smoking - triggering replies it had, while others claimed it was counter-productive. (A couple thought the plainness "cool"). But several pointed to tobacco industry resistance as indicating the policy's impact.
+
+One commended the government trying the policy but several were critical of the intentions and delays. Also why not regulate other areas? Many criticised lobbying power of the tobacco industry and their global reach into Africa/Asia. Several disagreed saying industry wanted brand separation. EU subsidising tobacco in Spain was queried.
+
+The "Nanny state" was often mocked as unfair to individual choice - smokers knew dangers. Many countered this as overstated and public health had benefitted. The pub smoking ban was fair to non-smokers. Many asserted smoking/cancer links; a mention of tobacco medicinal qualities met with scepticism. One said asthma incidence decreased as smoking did.
+
+Other risks led some to call the policy inconsistent. Alcohol, the environment (many debated diesel risks, and pollutants like CO2) and fast food. But the latter dismissed as not comparable: e.g. passive smoking effect.
+
+BACK LINKING
+
+There was much anger and divided opinion on how the  plain packaging policy would impact on UK smoking rates.
+(Sub)GroupNames:
+- GROUP: Will the policy for plain packaging impact rates of smoking in the UK?
+- SUBGROUP: Negative - sarcastic and sceptical it will reduce sales
+- SUBGROUP: Negative - the packaging only affects brand choice. Price more impact?
+
+Many approved of making smoking less glamorous and the need to inform that it is not "cool", but dangerous and addictive.
+(Sub)GroupNames:
+- GROUP: Will the policy for plain packaging impact rates of smoking in the UK?
+- SUBGROUP: Fast food risks as a comparison to smoking risk
+- SUBGROUP: Smoking positive medicinal effect - myth or reality?
+
+Perhaps most commenters were critical and sarcastic.
+(Sub)GroupNames:
+- SUBGROUP: Negative - sarcastic and sceptical it will reduce sales
+- SUBGROUP: Negative - the packaging only affects brand choice. Price more impact?
+- GROUP: Is it a "nanny state" policy issue that encroaches on individual freedom?
+
+Sceptical it would reduce cigarette sales, many claimed packaging simply affects brand selection.
+(Sub)GroupNames:
+- SUBGROUP: Negative - sarcastic and sceptical it will reduce sales
+- SUBGROUP: Negative - the packaging only affects brand choice. Price more impact?
+
+One called it "simplistic". 
+(Sub)GroupNames:
+- SUBGROUP: Negative - sarcastic and sceptical it will reduce sales
+
+Some queried whether the Australian example had cut smoking - triggering replies it had, while others claimed it was counter-productive.
+(Sub)GroupNames:
+- SUBGROUP: Controversial whether the same policy has helped cut smoking in Australia
+
+Increasing price was proposed as more effective.
+(Sub)GroupNames:
+- SUBGROUP: Negative - the packaging only affects brand choice. Price more impact?
+- SUBGROUP: Controversial whether the same policy has helped cut smoking in Australia
+
+(A couple thought the plainness "cool").
+(Sub)GroupNames:
+- GROUP: Will the policy for plain packaging impact rates of smoking in the UK?
+- GROUP: Is it a "nanny state" policy issue that encroaches on individual freedom?
+
+But several pointed to tobacco industry resistance as indicating the policy's impact.
+(Sub)GroupNames:
+- SUBGROUP: critical of the delays to the policy - tobacco industry pressure?
+
+One commended the government trying the policy but several were critical of the intentions and delays.
+(Sub)GroupNames:
+- SUBGROUP: critical of the delays to the policy - tobacco industry pressure?
+
+Also why not regulate other areas?
+(Sub)GroupNames:
+- SUBGROUP: Controversial whether the same policy has helped cut smoking in Australia
+- SUBGROUP: Fast food risks as a comparison to smoking risk
+
+Many criticised lobbying power of the tobacco industry and their global reach into Africa/Asia.
+(Sub)GroupNames:
+- SUBGROUP: critical of the delays to the policy - tobacco industry pressure?
+
+Several disagreed saying industry wanted brand separation.
+(Sub)GroupNames:
+- SUBGROUP: critical of the delays to the policy - tobacco industry pressure?
+
+EU subsidising tobacco in Spain was queried.
+(Sub)GroupNames:
+- SUBGROUP: Point raised about inconsistency with EU subsidy for tobacco growers
+
+The "Nanny state" was often mocked as unfair to individual choice - smokers knew dangers. 
+(Sub)GroupNames:
+- GROUP: Is it a "nanny state" policy issue that encroaches on individual freedom?
+
+Many countered this as overstated and public health had benefitted.
+(Sub)GroupNames:
+- GROUP: Is it a "nanny state" policy issue that encroaches on individual freedom?
+
+The pub smoking ban was fair to non-smokers.
+(Sub)GroupNames:
+- SUBGROUP: Smoking in pubs ban as a point of controversy
+
+Many asserted smoking/cancer links; a mention of tobacco medicinal qualities met with scepticism.
+(Sub)GroupNames:
+- GROUP: Is it a "nanny state" policy issue that encroaches on individual freedom?
+- SUBGROUP: Fast food risks as a comparison to smoking risk
+- SUBGROUP: Smoking positive medicinal effect - myth or reality?
+
+One said asthma incidence decreased as smoking did.
+(Sub)GroupNames:
+- SUBGROUP: Asthma caused by smoking?
+
+Other risks led some to call the policy inconsistent.
+(Sub)GroupNames:
+- SUBGROUP: Fast food risks as a comparison to smoking risk
+- GROUP: Risks of smoking vs other environmental and health concerns e.g. diesel. Policy misguided?
+
+Alcohol, the environment (many debated diesel risks, and pollutants like CO2) and fast food.
+(Sub)GroupNames:
+- SUBGROUP: Controversial whether the same policy has helped cut smoking in Australia
+- GROUP: Risks of smoking vs other environmental and health concerns e.g. diesel. Policy misguided?
+- SUBGROUP: Disagreement over what causes cancer - CO2 / diesel / other pollutants
+
+But the latter dismissed as not comparable: e.g. passive smoking effect.
+(Sub)GroupNames:
+- SUBGROUP: Fast food risks as a comparison to smoking risk

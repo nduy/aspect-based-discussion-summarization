@@ -1,0 +1,322 @@
+LABELS
+
+Label for comment 1: Anti-Scott Brown comments - stating that he doesn't care who or what he represents.
+Label for comment 2: not relevant - references to Hilary Clinton.
+Label for comment 3: not relevant - references to Hilary Clinton.
+Label for comment 4: Anti-Scott Brown comments regarding being a fiscal conservative and references to Big Oil, Big Ag and weaponry.
+Label for comment 5: Not relevant - references to Hilary Clinton.
+Label for comment 6: Anti-Scott Brown comments - criticising initial comment adding "doesn't care who or what he represents" refers to all politicians.
+Label for comment 7: Comparisons with Scott Brown to Hilary Clinton regarding how Scott Brown moved just once (from Massachusetts to New Hampshire to run for public office, like Hilary moved just once to New York. Criticism of initial comment as exaggerated.
+Label for comment 8: Criticism of initial comment as exaggerated ie Scott "moves from state to state".
+Label for comment 9: Not relevant
+Label for comment 10: Not relevant
+Label for comment 11: Not relevant
+Label for comment 12: References to carpetbagger.
+Label for comment 13: Clinton and Arkanas.
+Label for comment 14: Criticism of initial comment as exaggerated ie Scott "moves from state to state" adding Scott Brown was born in New Hampshire.
+Label for comment 15: Criticism of initial comment as exaggerated ie Scott "moves from state to state" affirming where Scott Brown was born.
+Label for comment 16: Comments regarding how (they) aren't fiscally conservative but route money towards their campaign funders.
+Label for comment 17: Not relevant
+Label for comment 18: Not relevant
+Label for comment 19: Comments regarding political agenda being radicalized.
+Label for comment 20: References to the Six Californias Proposal.
+Label for comment 21: Not relevant.
+Label for comment 22: References to Hilary Clinton.
+Label for comment 23: Anti-Scott Brown comments - criticising initial comment
+Label for comment 24: Comments regarding journalist's conduct. Suggesting should have pushed to get information even if it provokes violence from bodyguard.
+Label for comment 25: Reporter of article comments how he "folded" when told to leave.
+Label for comment 26: Comments regarding journalist's conduct. Fight fire with water, it always works best!
+Label for comment 27: Comments regarding journalist's conduct.There's no need to invite assault. I like to think that I have moral courage, while lacking physical courage...
+Label for comment 28: Comments regarding journalist's conduct. A magnificent opportunity squandered; could have created a mortal wound to the Brown campaign. Praise of article.
+Label for comment 29: Comments regarding journalist's conduct.If get another opportunity make sure phone camera running. Praise of article.
+Label for comment 30: Comments regarding journalist's conduct and how author behaved professionally. Praise of article.
+Label for comment 31: Comments regarding journalist's conduct. A journalists job is to speak truth to power.
+Label for comment 32: Comments regarding journalist's conduct and how author behaved professionally adding it was Brown who folded hiding in the men's room. Praise of article.
+Label for comment 33: Comments regarding journalist's conduct. Lowering yourself to their level would have been spun to somehow make Brown the victim. Praise of article - keep reporting from the front lines of America's dirty campaign front.
+Label for comment 34: Comments regarding journalist's conduct. It was Brown who folded and hid in bathroom.
+Label for comment 35: Comments regarding journalist's conduct. Funny thing that image of America as an open and free country.........it is, as long as you don't cross the line. Comparisons made to Russian politics.
+Label for comment 36: Not clear.
+Label for comment 37: Comments regarding journalist's conduct and how author behaved professionally. Praise of article.
+Label for comment 38: Comments regarding journalist's conduct and tremendous job of displaying who this coward (Scott) really is. Praise of article.
+Label for comment 39: Comments regarding journalist's conduct and being threatened by Scott's colleagues. Comparison with Chicago Democratic police attacking protesters with billy clubs at the behest of the people inside the Democratic convention.
+Label for comment 40: Comments regarding journalist's conduct. Browns reaction ie hiding in bathroom, threatening violence is answer enough.
+Label for comment 41: Comments regarding journalist's conduct. Calling the cops to oust a reporter should be enough to show people the kind of guy Scott Brown is.
+Label for comment 42: Agrees with previous comment.
+Label for comment 43: Visit to bathroom comments. Questions raised.
+Label for comment 44: Discouraging remarks about US politicians generally don't think public service ever comes into it. What a joke.
+Label for comment 45: Reporter being threatened comments - comparison with where a Republican Congressman, Michael Grimm, physically threatened a reporter for asking a question about campaign finance irregularities. Comments regarding how Republican elected officials behave in public, a certain caution is called for when dealing with them.
+Label for comment 46: Negative comments regarding politicians.
+Label for comment 47: Negative comments regarding politicians.
+Label for comment 48: Negative comments regarding politicians.
+Label for comment 49: Negative comments regarding politicians.
+Label for comment 50: Negative comments regarding politicians. Refering to politicians as seeing them as "puppies" rising thru the ranks,
+Label for comment 51: Comments regarding problems with healthcare system in America.Its totally broken.
+Label for comment 52: Unclear.
+Label for comment 53: Comments regarding problems with healthcare system in America referring how Congress keeps insurers as the beneficiaries.
+Label for comment 54: Comments regarding problems with healthcare system in America.
+Label for comment 55: Comments regarding journalist's conduct and how author behaved professionally. Good to see a reporter making a politician sweat with a legitimate line of inquiry. Wasn't much reporter could do in a situation where staff of the bar asked him to leave. It was a private business so can ask people to leave for any reason. If this is Brown's staff in action, he hasn't a prayer. This is rank amateurism. Praise of article.
+Label for comment 56: Comments regarding journalist's conduct and how politicians should be subjected to "Prime Minister's Question Time".
+Label for comment 57: Repetition of previous comment.
+Label for comment 58: Repetition of previous comment.
+Label for comment 59: Negative comments regarding Scott Brown such as stands for nothing but self-interest. He will gladly sell out New Hampshire to big Oil, big AG, and big Pharm, if elected.
+Label for comment 60: Negative comments regarding Scott Brown. "Send him packing".
+Label for comment 61: Unclear.
+Label for comment 62: Journalism profession - comments outside of press conferences or arranged interviews more like "ambush journalism".
+Label for comment 63: Journalism profession - refers to author is British journalist comparing favourably to the generally more "wimpy, conciliatory American journalist".
+Label for comment 64: Journalism profession - disagrees with "Ambush journalism" comments stating that this applies to celebrities but not to politicians. The job of the free press is to interrogate them.
+Label for comment 65: Journalism profession - "Ambush journalism" offers wikipedia definition. comments stating that this behaving of campaigning probably not appreciated "across the pond".
+Label for comment 66: Journalism profession - the stronger libel laws in the UK compared to the US forces journalists there to be careful to print only the truth.
+Label for comment 67: Journalism profession - Agrees with previous comment adding being more careful doesn't necessarily make one more searching.
+Label for comment 68: Journalism profession - We depend on journalists for our information. Politicians who stand for something, are pleased to get their message out.
+Label for comment 69: Journalism profession - comparison with UK to US. UK laws merely hold reporting and journalism to a higher standard of factual veracity and accuracy than the 'anything goes' substandards found in the US.
+Label for comment 70: Unclear
+Label for comment 71: Journalism profession - over-representing the case somewhat.
+Label for comment 72: Anti-Scott Brown comments regarding his refusal to speak to journalist. You can run Mr. Brown. But you can't hide. Does not seem like a good way to create a dialog.
+Label for comment 73: Anti-Scott Brown comments regarding his refusal to speak to journalist.
+Label for comment 74: Healthcare - Scott Brown supports women's healthcare and access to contraception,
+Label for comment 75: Healthcare - Scott Brown too lazy to look at cost efficient health care delivery.
+Label for comment 76: Anti-Scott Brown comments regarding being labelled "anti-woman".
+Label for comment 77: Anti-Scott Brown comments regarding Jeanne Shaheen, who has been elected to state-wide office in New Hampshire three times now, is going to feed him his lunch. Bye-bye, Scott.
+Label for comment 78: Repeated comments.
+Label for comment 79: Unclear.
+Label for comment 80: Anti-Scott Brown comments regarding the Hobby Lobby ruling.
+Label for comment 81: Anti-Scott Brown comments regarding the Hobby Lobby ruling.
+Label for comment 82: Not relevant.
+Label for comment 83: Anti-Scott Brown comments regarding how he avoided speaking to journalist. It's a bad situation when you're afraid to even acknowledge the positions you've already publicly chosen.
+Label for comment 84: Not relevant.
+Label for comment 85: Not relevant.
+Label for comment 86: Scott Brown comments regarding he how isn't a nominee yet government office.
+Label for comment 87: Anti-Scott Brown comments regarding his publicity stunt of doing his annual two weeks National Guard duty in Afghanistan, thus becoming an "Afghanistan Veteran" and promoted to full Colonel.
+Label for comment 88: Repeated comment.
+Label for comment 89: Anti-Scott Brown comments comparing other politicians doing similar publicity stunts.
+Label for comment 90: Healthcare - Scott Brown hates health care for women and children. He will lose in New Hampshire just as he did in Massachusetts.
+Label for comment 91: Unclear
+Label for comment 92: Anti-Scott Brown comments regarding his stand on allowing Catholic hospitals to send a rape victim elsewhere for the "morning after pill.
+Label for comment 93: Repeated comments
+Label for comment 94: Anti-Scott Brown comments in reaction to previous morning after pill comment - the morning-after pill doesn't prevent implantation according to lots and lots and lots of recent research.
+Label for comment 95: Healthcare - comment referring to prevention of access to contraceptives following Hobby Lobby case.
+Label for comment 96: Healthcare - In the Hobby Lobby case, the employer is a corporation, a person legally distinct from it's owners.
+Label for comment 97: Healthcare - Hobby Lobby case. recognizing the "religious rights" of corporations is as funny now as when the same Court recognized their "free speech" rights
+Label for comment 98: Unclear
+Label for comment 99: Not relevant
+Label for comment 100: Not relevant
+Label for comment 101: Healthcare - Affordable Care Act, made law 2010. As of March, there have been 50+ votes against it.
+Label for comment 102: Healthcare - SCOTUS judgment.
+Label for comment 103: Not relevant
+Label for comment 104: Not relevant
+Label for comment 105: Not relevant
+
+GROUPS
+
+GROUP: Anti Brown Comments
+Label for comment 1 [Boston2014]: Anti-Scott Brown comments - stating that he doesn't care who or what he represents.
+Label for comment 4 [beathoven]: Anti-Scott Brown comments regarding being a fiscal conservative and references to Big Oil, Big Ag and weaponry.
+Label for comment 6 [ArkEton]: Anti-Scott Brown comments - criticising initial comment adding "doesn't care who or what he represents" refers to all politicians.
+Label for comment 23 [marshwren]: Anti-Scott Brown comments - criticising initial comment
+Label for comment 59 [knuckles66]: Negative comments regarding Scott Brown such as stands for nothing but self-interest. He will gladly sell out New Hampshire to big Oil, big AG, and big Pharm, if elected.
+Label for comment 60 [proton58]: Negative comments regarding Scott Brown. "Send him packing".
+Label for comment 72 [gwpriester]: Anti-Scott Brown comments regarding his refusal to speak to journalist. You can run Mr. Brown. But you can't hide. Does not seem like a good way to create a dialog.
+Label for comment 73 [muezzin]: Anti-Scott Brown comments regarding his refusal to speak to journalist.
+Label for comment 76 [Semperfivirens]: Anti-Scott Brown comments regarding being labelled "anti-woman".
+Label for comment 77 [nagej1]: Anti-Scott Brown comments regarding Jeanne Shaheen, who has been elected to state-wide office in New Hampshire three times now, is going to feed him his lunch. Bye-bye, Scott.
+Label for comment 78 [Corrections]: Repeated comments.
+Label for comment 80 [ByrdSong]: Anti-Scott Brown comments regarding the Hobby Lobby ruling.
+Label for comment 81 [nauseausa]: Anti-Scott Brown comments regarding the Hobby Lobby ruling.
+Label for comment 83 [Adoniran]: Anti-Scott Brown comments regarding how he avoided speaking to journalist. It's a bad situation when you're afraid to even acknowledge the positions you've already publicly chosen.
+Label for comment 86 [herebutforfortune]: Scott Brown comments regarding he how isn't a nominee yet government office.
+Label for comment 87 [Alwick]: Anti-Scott Brown comments regarding his publicity stunt of doing his annual two weeks National Guard duty in Afghanistan, thus becoming an "Afghanistan Veteran" and promoted to full Colonel.
+Label for comment 88 [Justlyjohn]: Repeated comment.
+Label for comment 89 [marshwren]: Anti-Scott Brown comments comparing other politicians doing similar publicity stunts.
+Label for comment 92 [Corrections]: Anti-Scott Brown comments regarding his stand on allowing Catholic hospitals to send a rape victim elsewhere for the "morning after pill.
+Label for comment 93 [Corrections]: Repeated comments
+Label for comment 94 [SanJoseGrunge]: Anti-Scott Brown comments in reaction to previous morning after pill comment - the morning-after pill doesn't prevent implantation according to lots and lots and lots of recent research.
+
+GROUP: References to Hilary Clinton
+Label for comment 5 [Longhaultrucker]: Not relevant - references to Hilary Clinton.
+Label for comment 7 [aleatico]: Comparisons with Scott Brown to Hilary Clinton regarding how Scott Brown moved just once (from Massachusetts to New Hampshire to run for public office, like Hilary moved just once to New York. Criticism of initial comment as exaggerated.
+Label for comment 22 [waltzaway]: References to Hilary Clinton.
+
+GROUP: Criticisms
+Label for comment 8 [aleatico]: Criticism of initial comment as exaggerated ie Scott "moves from state to state".
+Label for comment 12 [aleatico]: References to carpetbagger.
+Label for comment 13 [aleatico]: Clinton and Arkanas.
+Label for comment 14 [bushwhacked]: Criticism of initial comment as exaggerated ie Scott "moves from state to state" adding Scott Brown was born in New Hampshire.
+Label for comment 15 [aleatico]: Criticism of initial comment as exaggerated ie Scott "moves from state to state" affirming where Scott Brown was born.
+Label for comment 16 [Anthony Irwin]: Comments regarding how (they) aren't fiscally conservative but route money towards their campaign funders.
+Label for comment 19 [Bob Chuey]: Comments regarding political agenda being radicalized.
+Label for comment 20 [aleatico]: References to the Six Californias Proposal.
+
+GROUP: Journalist's conduct
+Label for comment 24 [gunnison]: Comments regarding journalist's conduct. Suggesting should have pushed to get information even if it provokes violence from bodyguard.
+Label for comment 25 [paullewisreporter]: Reporter of article comments how he "folded" when told to leave.
+Label for comment 26 [kenalexruss]: Comments regarding journalist's conduct. Fight fire with water, it always works best!
+Label for comment 27 [Longhaultrucker]: Comments regarding journalist's conduct.There's no need to invite assault. I like to think that I have moral courage, while lacking physical courage...
+Label for comment 28 [gunnison]: Comments regarding journalist's conduct. A magnificent opportunity squandered; could have created a mortal wound to the Brown campaign. Praise of article.
+Label for comment 29 [Corrections]: Comments regarding journalist's conduct.If get another opportunity make sure phone camera running. Praise of article.
+Label for comment 30 [Philip W]: Comments regarding journalist's conduct and how author behaved professionally. Praise of article.
+Label for comment 31 [sdkeller72]: Comments regarding journalist's conduct. A journalists job is to speak truth to power.
+Label for comment 32 [herebutforfortune]: Comments regarding journalist's conduct and how author behaved professionally adding it was Brown who folded hiding in the men's room. Praise of article.
+Label for comment 33 [Bob Chuey]: Comments regarding journalist's conduct. Lowering yourself to their level would have been spun to somehow make Brown the victim. Praise of article - keep reporting from the front lines of America's dirty campaign front.
+Label for comment 34 [Carol Spade]: Comments regarding journalist's conduct. It was Brown who folded and hid in bathroom.
+Label for comment 35 [tigi]: Comments regarding journalist's conduct. Funny thing that image of America as an open and free country.........it is, as long as you don't cross the line. Comparisons made to Russian politics.
+Label for comment 37 [grogol]: Comments regarding journalist's conduct and how author behaved professionally. Praise of article.
+Label for comment 38 [MovableContent]: Comments regarding journalist's conduct and tremendous job of displaying who this coward (Scott) really is. Praise of article.
+Label for comment 39 [waltzaway]: Comments regarding journalist's conduct and being threatened by Scott's colleagues. Comparison with Chicago Democratic police attacking protesters with billy clubs at the behest of the people inside the Democratic convention.
+Label for comment 40 [Daver Dave]: Comments regarding journalist's conduct. Browns reaction ie hiding in bathroom, threatening violence is answer enough.
+Label for comment 41 [ID7742865]: Comments regarding journalist's conduct. Calling the cops to oust a reporter should be enough to show people the kind of guy Scott Brown is.
+Label for comment 42 [RayMacD]: Agrees with previous comment.
+Label for comment 55 [MartiniShaken1]: Comments regarding journalist's conduct and how author behaved professionally. Good to see a reporter making a politician sweat with a legitimate line of inquiry. Wasn't much reporter could do in a situation where staff of the bar asked him to leave. It was a private business so can ask people to leave for any reason. If this is Brown's staff in action, he hasn't a prayer. This is rank amateurism. Praise of article.
+Label for comment 56 [ukexpat1000]: Comments regarding journalist's conduct and how politicians should be subjected to "Prime Minister's Question Time".
+Label for comment 57 [marshwren]: Repetition of previous comment.
+Label for comment 58 [marshwren]: Repetition of previous comment.
+
+SUBGROUP: Visit to bathroom
+Label for comment 43 [hoyoku]: Visit to bathroom comments. Questions raised.
+
+SUBGROUP: Reporter threatened
+Label for comment 45 [Zepp]: Reporter being threatened comments - comparison with where a Republican Congressman, Michael Grimm, physically threatened a reporter for asking a question about campaign finance irregularities. Comments regarding how Republican elected officials behave in public, a certain caution is called for when dealing with them.
+
+SUBGROUP: Journalism Profession
+Label for comment 62 [aleatico]: Journalism profession - comments outside of press conferences or arranged interviews more like "ambush journalism".
+Label for comment 63 [hoyoku]: Journalism profession - refers to author is British journalist comparing favourably to the generally more "wimpy, conciliatory American journalist".
+Label for comment 64 [Corrections]: Journalism profession - disagrees with "Ambush journalism" comments stating that this applies to celebrities but not to politicians. The job of the free press is to interrogate them.
+Label for comment 65 [aleatico]: Journalism profession - "Ambush journalism" offers wikipedia definition. comments stating that this behaving of campaigning probably not appreciated "across the pond".
+Label for comment 66 [hoyoku]: Journalism profession - the stronger libel laws in the UK compared to the US forces journalists there to be careful to print only the truth.
+Label for comment 67 [aleatico]: Journalism profession - Agrees with previous comment adding being more careful doesn't necessarily make one more searching.
+Label for comment 68 [Johann Olivier]: Journalism profession - We depend on journalists for our information. Politicians who stand for something, are pleased to get their message out.
+Label for comment 69 [marshwren]: Journalism profession - comparison with UK to US. UK laws merely hold reporting and journalism to a higher standard of factual veracity and accuracy than the 'anything goes' substandards found in the US.
+Label for comment 71 [hoyoku]: Journalism profession - over-representing the case somewhat.
+
+GROUP: Comments regarding politicians
+Label for comment 44 [nk1402]: Discouraging remarks about US politicians generally don't think public service ever comes into it. What a joke.
+Label for comment 46 [Northeaster]: Negative comments regarding politicians.
+Label for comment 47 [knuckles66]: Negative comments regarding politicians.
+Label for comment 48 [hrafnkat]: Negative comments regarding politicians.
+Label for comment 49 [Bob Chuey]: Negative comments regarding politicians.
+Label for comment 50 [waltzaway]: Negative comments regarding politicians. Refering to politicians as seeing them as "puppies" rising thru the ranks,
+
+GROUP: Healthcare
+Label for comment 51 [Peter Roe]: Comments regarding problems with healthcare system in America.Its totally broken.
+Label for comment 53 [Bob Chuey]: Comments regarding problems with healthcare system in America referring how Congress keeps insurers as the beneficiaries.
+Label for comment 54 [waltzaway]: Comments regarding problems with healthcare system in America.
+Label for comment 74 [deddzone]: Healthcare - Scott Brown supports women's healthcare and access to contraception,
+Label for comment 75 [waltzaway]: Healthcare - Scott Brown too lazy to look at cost efficient health care delivery.
+Label for comment 90 [FelixOliver]: Healthcare - Scott Brown hates health care for women and children. He will lose in New Hampshire just as he did in Massachusetts.
+Label for comment 95 [OXMS38655]: Healthcare - comment referring to prevention of access to contraceptives following Hobby Lobby case.
+Label for comment 96 [SanJoseGrunge]: Healthcare - In the Hobby Lobby case, the employer is a corporation, a person legally distinct from it's owners.
+Label for comment 97 [marshwren]: Healthcare - Hobby Lobby case. recognizing the "religious rights" of corporations is as funny now as when the same Court recognized their "free speech" rights
+Label for comment 101 [ID3655537]: Healthcare - Affordable Care Act, made law 2010. As of March, there have been 50+ votes against it.
+Label for comment 102 [WillKnotTell]: Healthcare - SCOTUS judgment.
+
+GROUP: Not Relevant/Unclear
+Label for comment 2 [aleatico]: not relevant - references to Hilary Clinton.
+Label for comment 3 [Cooper2345]: not relevant - references to Hilary Clinton.
+Label for comment 9 [Zepp]: Not relevant
+Label for comment 10 [Longhaultrucker]: Not relevant
+Label for comment 11 [proton58]: Not relevant
+Label for comment 17 [Adam Baum]: Not relevant
+Label for comment 18 [aleatico]: Not relevant
+Label for comment 21 [peakchoicedotorg]: Not relevant.
+Label for comment 36 [freedomusa40]: Not clear.
+Label for comment 52 [mrtnjms]: Unclear.
+Label for comment 61 [hoyoku]: Unclear.
+Label for comment 70 [hoyoku]: Unclear
+Label for comment 79 [ArkEton]: Unclear.
+Label for comment 82 [ByrdSong]: Not relevant.
+Label for comment 84 [Jazzy J Man]: Not relevant.
+Label for comment 85 [doingbusinessas]: Not relevant.
+Label for comment 91 [babymamaboy]: Unclear
+Label for comment 98 [donkeybreadth]: Unclear
+Label for comment 99 [Corrections]: Not relevant
+Label for comment 100 [SanJoseGrunge]: Not relevant
+Label for comment 103 [heymac]: Not relevant
+Label for comment 104 [SgtEmileKlinger]: Not relevant
+Label for comment 105 [OXMS38655]: Not relevant
+
+UNCONSTRAINED SUMMARY
+
+The comments were overwhelmingly negative towards Scott Brown and US politics as a whole.
+
+A number of a comments focused on the 'Blunt Amendment' and Brown's support of the recent supreme court decision regarding the Christian, family-run business Hobby Lobby and how such companies, on religious grounds, deny their employees insurance coverage for some types of birth control. Comments highlighted how Brown's support for the amendment was evidence of his hostility to women and how because of this he will lose the elections in New Hampshire. There were also some negative comments regarding the US healthcare system in general, how it is 'broken' and how Congress keeps insurers as the beneficiaries.
+
+Commenters heavily criticised Brown and other US politicians, making a number of comparisons with his career progression and Hilary Clinton's. Many questioned the motivations or agenda of politicians especially around campaign time. One commenter even proposed that Brown's National Guard duty in Afghanistan where he was promoted to Colonel was a publicity stunt.
+
+A majority of the comments focused on the conduct of the journalist reporting the article particularly after Brown repeatedly refused to speak with the journalist when asked about the Hobby Lobby case and how he was physically threatened at a campaign event. Most the comments praised the article and dammed Brown, stating that the journalist acted in a professional manner while Brown and his campaign showed as one commenter stated 'America's dirty campaign front.' Others commented that it was good to see a reporter making 'a politician sweat with a legitimate line of inquiry.' Some comments referred to 'ambush journalism' tactics to gain information which was fine when interviewing politicians. Other commenters proposed it was the job of the free press to interrogate them politicians.
+
+CONSTRAINED SUMMARY
+
+The comments were overwhelmingly negative towards Scott Brown and US politics as a whole.
+
+A number of a comments focused on Brown's support of the recent supreme court decision regarding the Christian, family-run business Hobby Lobby and how such companies, on religious grounds, can deny their employees insurance coverage for some types of birth control. Comments highlighted how Brown's support for the decision was evidence of his hostility to women and how because of this he will lose the elections in New Hampshire. There were also some negative comments regarding the US healthcare system in general, how it is 'broken' and how Congress keeps insurers as the beneficiaries.
+
+Commenters heavily criticised Brown and other US politicians. Many questioned the agenda of politicians especially around campaign time. One commenter proposing that Brown's National Guard duty in Afghanistan was a publicity stunt.
+
+A majority of the comments focused on the conduct of the journalist reporting the article particularly after Brown repeatedly refused to speak with the journalist when asked about the Hobby Lobby case. The journalist was physically threatened at a campaign event. Most of the comments praised the article and dammed Brown, stating that the journalist acted in a professional manner while Brown and his campaign showed as one commenter stated 'America's dirty campaign front.'Others commented that it was good to see a reporter making 'a politician sweat with a legitimate line of inquiry.' Other commenters proposed it was the job of the free press to interrogate politicians.
+
+BACK LINKING
+
+The comments were overwhelmingly negative towards Scott Brown and US politics as a whole.
+(Sub)GroupNames:
+- GROUP: Anti Brown Comments
+- GROUP: Criticisms
+- GROUP: Journalist's conduct
+- SUBGROUP: Reporter threatened
+- SUBGROUP: Journalism Profession
+- GROUP: Comments regarding politicians
+- GROUP: Healthcare
+
+A number of a comments focused on Brown's support of the recent supreme court decision regarding the Christian, family-run business Hobby Lobby and how such companies, on religious grounds, can deny their employees insurance coverage for some types of birth control.
+(Sub)GroupNames:
+- GROUP: Anti Brown Comments
+- GROUP: Healthcare
+
+Comments highlighted how Brown's support for the decision was evidence of his hostility to women and how because of this he will lose the elections in New Hampshire.
+(Sub)GroupNames:
+- GROUP: Anti Brown Comments
+- GROUP: Healthcare
+
+There were also some negative comments regarding the US healthcare system in general, how it is 'broken' and how Congress keeps insurers as the beneficiaries.
+(Sub)GroupNames:
+- GROUP: Healthcare
+
+Commenters heavily criticised Brown and other US politicians.
+(Sub)GroupNames:
+- GROUP: Anti Brown Comments
+- GROUP: References to Hilary Clinton
+- GROUP: Criticisms
+- GROUP: Comments regarding politicians
+
+Many questioned the agenda of politicians especially around campaign time.
+(Sub)GroupNames:
+- GROUP: Anti Brown Comments
+- GROUP: Criticisms
+- GROUP: Comments regarding politicians
+
+One commenter proposing that Brown's National Guard duty in Afghanistan was a publicity stunt.
+(Sub)GroupNames:
+- GROUP: Anti Brown Comments
+
+A majority of the comments focused on the conduct of the journalist reporting the article particularly after Brown repeatedly refused to speak with the journalist when asked about the Hobby Lobby case.
+(Sub)GroupNames:
+- GROUP: Journalist's conduct
+- SUBGROUP: Visit to bathroom
+- SUBGROUP: Reporter threatened
+- SUBGROUP: Journalism Profession
+
+The journalist was physically threatened at a campaign event.
+(Sub)GroupNames:
+- GROUP: Journalist's conduct
+- SUBGROUP: Reporter threatened
+
+Most of the comments praised the article and dammed Brown, stating that the journalist acted in a professional manner while Brown and his campaign showed as one commenter stated 'America's dirty campaign front.'
+(Sub)GroupNames:
+- GROUP: Journalist's conduct
+- SUBGROUP: Journalism Profession
+
+Others commented that it was good to see a reporter making 'a politician sweat with a legitimate line of inquiry.'
+(Sub)GroupNames:
+- GROUP: Journalist's conduct
+
+Other commenters proposed it was the job of the free press to interrogate politicians.
+(Sub)GroupNames:
+- SUBGROUP: Journalism Profession

@@ -1,0 +1,307 @@
+LABELS
+
+Label for comment 1: climate change: natural, may lead to another ice age
+Label for comment 2: climate change: listing of facts, comparison years
+Label for comment 3: climate change: clarifying question
+Label for comment 4: climate change: man made, more facts
+Label for comment 5: climate change: natural, may lead to another ice age: disagrees, sarcasm
+Label for comment 6: climate change: man made: disagrees
+Label for comment 7: climate change: getting warmer for the last 12000 years; personal comment response: sarcasm
+Label for comment 8: climate change: getting warmer for the last 12000 years: disagrees
+Label for comment 9: climate change: man-made: more data
+Label for comment 10: Sarcastic comment
+Label for comment 11: Sarcastic comment
+Label for comment 12: climate change: listing of facts, comparison years: disagrees, should go back further in time
+Label for comment 13: Personal insult
+Label for comment 14: climate change: natural, may lead to another ice age: disagrees: ice age still going on
+Label for comment 15: climate change: listing of facts, comparison years: disagrees, should go back further in time: calls for facts
+Label for comment 16: climate change: statistics: lies, not accurate; climate change: man-made:
+Label for comment 17: Personal insult
+Label for comment 18: Personal insult
+Label for comment 19: climate change: man-made: agrees: proof
+Label for comment 20: climate change: man-made: agrees: sarcasm
+Label for comment 21: climate change: natural, may lead to another ice age: disagrees: what about greenhouse effect
+Label for comment 22: climate change: global warming: 18 years without accelerated warming; article: waste of time and ink
+Label for comment 23: climate change: global warming: agrees: hiatus is over, temperature anomalies
+Label for comment 24: article: addresses serious problem, no point if climate change is man-made or not
+Label for comment 25: Personal comment (insult?)
+Label for comment 26: Personal insult
+Label for comment 27: climate change: global warming: 18 years without accelerated warming: disagrees
+Label for comment 28: climate change: global warming: agrees: hiatus is over, temperature anomalies: agrees
+Label for comment 29: climate change: global warming: agrees: hiatus is over, temperature anomalies: agrees
+Label for comment 30: climate change: statistics: lies, not accurate: disagrees
+Label for comment 31: climate change: global warming: 18 years without accelerated warming: disagrees
+Label for comment 32: climate change: statistics: lies, not accurate: agrees
+Label for comment 33: Article: not helpful, probabilities
+Label for comment 34: Article: not helpful: disagrees: nothing can be calculated that specifically
+Label for comment 35: Personal insult
+Label for comment 36: Personal insult
+Label for comment 37: Article: not helpful: disagrees
+Label for comment 38: Personal insult
+Label for comment 39: Deniers:Conservatives: dumb ideologues
+Label for comment 40: Scientists: political sarcasm
+Label for comment 41: Article: sarcasm on media ownership
+Label for comment 42: climate change: soviet science: everything is just theories
+Label for comment 43: climate change: soviet science: everything is just theories: disagrees
+Label for comment 44: personal insult
+Label for comment 45: climate change: soviet science: everything is just theories: disagrees
+Label for comment 46: climate change: soviet science: everything is just theories: disagrees
+Label for comment 47: climate change: soviet science: everything is just theories: disagrees; Personal insult
+Label for comment 48: Sarcasm, personal insult
+Label for comment 49: Personal insult
+Label for comment 50: climate change: soviet science: everything is just theories: disagrees - hopes it is irony
+Label for comment 51: Article: interesting, not informative; Climate change: positive side: nice weather, just build better infrastructure
+Label for comment 52: Climate change: infrastructure: clarifying question
+Label for comment 53: Deniers:Conservatives: dumb ideologues
+Label for comment 54: Deniers: childish people
+Label for comment 55: Australia scientists: may be problematic finding clerks willing to speak to the press
+Label for comment 56: Deniers: know-it-alls; climate change: government inaction will be catastrophic
+Label for comment 57: Deniers:ignorant and lazy, reject science
+Label for comment 58: Deniers:ignorant and lazy, reject science: agrees: joke
+Label for comment 59: Climate change: sarcastic comment; links to politics
+Label for comment 60: Climate change: fossil fuel companies lie, politicians protect them, hence no help for our planet
+Label for comment 61: Article: a valuable study
+Label for comment 62: Deniers: zero credibility; Scientists: 1 in 9136 rejects global warming
+Label for comment 63: Deniers: have the mob psychology
+Label for comment 64: Deniers: have the mob psychology: disagrees; Personal accusation
+Label for comment 65: personal accusation: response
+Label for comment 66: Personal insult
+Label for comment 67: Deniers: have the mob psychology: disagrees
+Label for comment 68: Deniers: have the mob psychology: disagrees
+Label for comment 69: climate change: will impact all
+Label for comment 70: Climate change: global warming: disagrees
+Label for comment 71: Personal insult
+Label for comment 72: Deniers: dumb ideologues
+Label for comment 73: Personal insult
+Label for comment 74: Personal insult
+Label for comment 75: Climate change: CO2 is plant food
+Label for comment 76: Deniers: dumb ideologues
+Label for comment 77: Climate change: CO2 is plant food; disagrees
+Label for comment 78: Climate change: CO2 is plant food: disagrees
+Label for comment 79: Personal insult
+Label for comment 80: Climate change: global warming: big lie
+Label for comment 81: Climate change: global warming: big lie: disagrees, mentions diseases
+Label for comment 82: Climate change: global warming: big lie: disagrees; personal insult
+Label for comment 83: Deniers: dumb ideologues
+Label for comment 84: Climate change: global warming: big lie: disagrees; Personal accusation
+Label for comment 85: Personal insult
+Label for comment 86: Climate change: humans can't adapt to any climate, people will die from not being able to cope with temperatures
+Label for comment 87: Climate change:  people will die from not being able to cope with temperatures: agrees, happening even now
+Label for comment 88: Climate change: heat is better than cold
+Label for comment 89: Personal insult
+Label for comment 90: Article: excellent; Deniers: doesn't understand them, they are trolls perhaps
+Label for comment 91: Scientists: when they look for a problem, they will find it
+Label for comment 92: Deniers: causing problems
+Label for comment 93: Climate change: started when Ford made his first car
+Label for comment 94: Scientists: fun meeting, but should get democracy first so you can get a change
+Label for comment 95: Deniers: why are houses insured and not the planet by moving to a low carbon economy
+Label for comment 96: Australian government: regressing people with lies and obfuscation
+Label for comment 97: Australian government: outrageous scientists should do studies like these, it is government issue, waste of taxpayers money
+Label for comment 98: Deniers: dumb ideologues: disagrees, name calling makes no case
+Label for comment 99: Deniers: dumb ideologues: disagrees, name calling makes no case: disagrees, he made no case
+Label for comment 100: Deniers: dumb ideologues: disagrees, name calling makes no case: deniers have no argument
+
+GROUPS
+
+GROUP: Climate change
+
+SUBGROUP: Natural or man-made?
+Label for comment 1 [MysteryTor]: climate change: natural, may lead to another ice age
+Label for comment 4 [Wobbly]: climate change: man-made, more facts
+Label for comment 5 [Strollinby]: climate change: natural, may lead to another ice age: disagrees, sarcasm
+Label for comment 6 [MysteryTor]: climate change: man-made: disagrees
+Label for comment 7 [MysteryTor]: climate change: getting warmer for the last 12000 years; personal comment response: sarcasm
+Label for comment 8 [JJRichardson]: climate change: getting warmer for the last 12000 years: disagrees
+Label for comment 9 [Wobbly]: climate change: man-made: more data
+Label for comment 14 [JBowers]: climate change: natural, may lead to another ice age: disagrees: ice age still going on
+Label for comment 19 [celsius233]: climate change: man-made: agrees: proof
+Label for comment 20 [DoomGlitter]: climate change: man-made: agrees: sarcasm
+Label for comment 21 [Alpo88]: climate change: natural, may lead to another ice age: disagrees: what about greenhouse effect
+
+SUBGROUP: Facts & Statistics
+Label for comment 2 [Wobbly]: climate change: listing of facts, comparison years
+Label for comment 3 [MysteryTor]: climate change: clarifying question
+Label for comment 12 [ACTANE]: climate change: listing of facts, comparison years: disagrees, should go back further in time
+Label for comment 15 [LeagueOfNervousFish]: climate change: listing of facts, comparison years: disagrees, should go back further in time: calls for facts
+Label for comment 16 [DougofArmidale]: climate change: statistics: lies, not accurate; climate change: man-made:
+Label for comment 30 [Glamorpig]: climate change: statistics: lies, not accurate: disagrees
+Label for comment 32 [holoscenic]: climate change: statistics: lies, not accurate: agrees
+
+SUBGROUP: 'Soviet Science'
+Label for comment 42 [ACTANE]: climate change: soviet science: everything is just theories
+Label for comment 43 [JJRichardson]: climate change: soviet science: everything is just theories: disagrees
+Label for comment 45 [mrfunbro]: climate change: soviet science: everything is just theories: disagrees
+Label for comment 46 [celsius233]: climate change: soviet science: everything is just theories: disagrees
+Label for comment 47 [DoomGlitter]: climate change: soviet science: everything is just theories: disagrees; Personal insult
+Label for comment 50 [SirGeo]: climate change: soviet science: everything is just theories: disagrees - hopes it is irony
+
+SUBGROUP: Global warming
+Label for comment 22 [DougofArmidale]: climate change: global warming: 18 years without accelerated warming; article: waste of time and ink
+Label for comment 23 [Alpo88]: climate change: global warming: agrees: hiatus is over, temperature anomalies
+Label for comment 27 [DoomGlitter]: climate change: global warming: 18 years without accelerated warming: disagrees
+Label for comment 28 [SirGeo]: climate change: global warming: agrees: hiatus is over, temperature anomalies: agrees
+Label for comment 29 [Alpo88]: climate change: global warming: agrees: hiatus is over, temperature anomalies: agrees
+Label for comment 31 [Glamorpig]: climate change: global warming: 18 years without accelerated warming: disagrees
+Label for comment 70 [GoredToDeath]: Climate change: global warming: disagrees
+Label for comment 80 [123mot]: Climate change: global warming: big lie
+Label for comment 81 [wdberg12155]: Climate change: global warming: big lie: disagrees, mentions diseases
+Label for comment 82 [bcmo2307]: Climate change: global warming: big lie: disagrees; personal insult
+Label for comment 84 [redaussie]: Climate change: global warming: big lie: disagrees; Personal accusation
+
+SUBGROUP: Other climate change comments
+Label for comment 51 [john_lucas]: Article: interesting, not informative; Climate change: positive side: nice weather, just build better infrastructure
+Label for comment 52 [mrfunbro]: Climate change: infrastructure: clarifying question
+Label for comment 56 [mrfunbro]: Deniers: know-it-alls; climate change: government inaction will be catastrophic
+Label for comment 59 [SailorMoon]: Climate change: sarcastic comment; links to politics
+Label for comment 60 [lstorey]: Climate change: fossil fuel companies lie, politicians protect them, hence no help for our planet
+Label for comment 69 [PaulRobert1]: climate change: will impact all
+Label for comment 75 [ianhassall]: Climate change: CO2 is plant food
+Label for comment 77 [Jaget santos]: Climate change: CO2 is plant food; disagrees
+Label for comment 78 [holoscenic]: Climate change: CO2 is plant food: disagrees
+Label for comment 86 [R_Ambrose_Raven]: Climate change: humans can't adapt to any climate, people will die from not being able to cope with temperatures
+Label for comment 87 [DenisPC9]: Climate change:  people will die from not being able to cope with temperatures: agrees, happening even now
+Label for comment 88 [Paul Moulton]: Climate change: heat is better than cold
+Label for comment 93 [icepakk1]: Climate change: started when Ford made his first car
+
+GROUP: Deniers
+Label for comment 39 [DoomGlitter]: Deniers: Conservatives: dumb ideologues
+Label for comment 53 [DoomGlitter]: Deniers: Conservatives: dumb ideologues
+Label for comment 54 [travellersjoy]: Deniers: childish people
+Label for comment 56 [mrfunbro]: Deniers: know-it-alls; climate change: government inaction will be catastrophic
+Label for comment 57 [Jools12]: Deniers: ignorant and lazy, reject science
+Label for comment 58 [PaulRobert1]: Deniers: ignorant and lazy, reject science: agrees: joke
+Label for comment 62 [ID9345255]: Deniers: zero credibility; Scientists: 1 in 9136 rejects global warming
+Label for comment 63 [DougofArmidale]: Deniers: have the mob psychology
+Label for comment 64 [mrfunbro]: Deniers: have the mob psychology: disagrees; Personal accusation
+Label for comment 67 [SirGeo]: Deniers: have the mob psychology: disagrees
+Label for comment 68 [lawrencd]: Deniers: have the mob psychology: disagrees
+Label for comment 72 [DoomGlitter]: Deniers: dumb ideologues
+Label for comment 76 [DoomGlitter]: Deniers: dumb ideologues
+Label for comment 83 [DoomGlitter]: Deniers: dumb ideologues
+Label for comment 90 [Ronnie2014]: Article: excellent; Deniers: doesn't understand them, they are trolls perhaps
+Label for comment 92 [holoscenic]: Deniers: causing problems
+Label for comment 95 [Treefern]: Deniers: why are houses insured and not the planet by moving to a low carbon economy
+Label for comment 98 [BIGBIGBOB]: Deniers: dumb ideologues: disagrees, name calling makes no case
+Label for comment 99 [Jaget santos]: Deniers: dumb ideologues: disagrees, name calling makes no case: disagrees, he made no case
+Label for comment 100 [holoscenic]: Deniers: dumb ideologues: disagrees, name calling makes no case: deniers have no argument
+
+GROUP: Other noteworthy comments
+
+SUBGROUP: About the article
+Label for comment 22 [DougofArmidale]: climate change: global warming: 18 years without accelerated warming
+Label for comment 24 [PaulRobert1]: article: addresses serious problem, no point if climate change is man-made or not; article: waste of time and ink
+Label for comment 33 [Kaikoura]: Article: not helpful, probabilities
+Label for comment 34 [Wobbly]: Article: not helpful: disagrees: nothing can be calculated that specifically
+Label for comment 37 [mrfunbro]: Article: not helpful: disagrees
+Label for comment 41 [Strollinby]: Article: sarcasm on media ownership
+Label for comment 51 [john_lucas]: Article: interesting, not informative; Climate change: positive side: nice weather, just build better infrastructure
+Label for comment 61 [R_Ambrose_Raven]: Article: a valuable study
+Label for comment 90 [Ronnie2014]: Article: excellent; Deniers: doesn't understand them, they are trolls perhaps
+
+SUBGROUP: Scientists
+Label for comment 40 [20reeds]: Scientists: political sarcasm
+Label for comment 55 [ID1106291]: Australia scientists: may be problematic finding clerks willing to speak to the press
+Label for comment 62 [ID9345255]: Deniers: zero credibility; Scientists: 1 in 9136 rejects global warming
+Label for comment 91 [Paul Moulton]: Scientists: when they look for a problem, they will find it
+Label for comment 94 [alloomis]: Scientists: fun meeting, but should get democracy first so you can get a change
+
+SUBGROUP: Australian government
+Label for comment 96 [Withnall]: Australian government: regressing people with lies and obfuscation
+Label for comment 97 [ops2048]: Australian government: outrageous scientists should do studies like these, it is government issue, waste of taxpayers money
+
+GROUP: Insults and accusations
+Label for comment 13 [emmagoldmann]: Personal insult
+Label for comment 17 [travellersjoy]: Personal insult
+Label for comment 18 [ID1106291]: Personal insult
+Label for comment 25 [MysteryTor]: Personal comment (insult?)
+Label for comment 26 [MysteryTor]: Personal insult
+Label for comment 35 [Strollinby]: Personal insult
+Label for comment 36 [Abbott IsGone]: Personal insult
+Label for comment 38 [Alpo88]: Personal insult
+Label for comment 44 [LeagueOfNervousFish]: personal insult
+Label for comment 47 [DoomGlitter]: climate change: soviet science: everything is just theories: disagrees; Personal insult
+Label for comment 48 [Alpo88]: Sarcasm, personal insult
+Label for comment 49 [R_Ambrose_Raven]: Personal insult
+Label for comment 65 [DougofArmidale]: personal accusation: response
+Label for comment 66 [GnuPatterson]: Personal insult
+Label for comment 71 [GnuPatterson]: Personal insult
+Label for comment 73 [ozzoid]: Personal insult
+Label for comment 74 [Glamorpig]: Personal insult
+Label for comment 79 [Glamorpig]: Personal insult
+Label for comment 82 [bcmo2307]: Climate change: global warming: big lie: disagrees; personal insult
+Label for comment 85 [lawrencd]: Personal insult
+Label for comment 89 [holoscenic]: Personal insult
+
+GROUP: miscellaneous
+Label for comment 10 [Abbott IsGone]: Sarcastic comment
+Label for comment 11 [chinaplatemate]: Sarcastic comment
+
+UNCONSTRAINED SUMMARY
+
+The topic was one that made people feel the need to express their opinion and fight for it. Many argued whether climate change is man-made or natural and whether we are still in an ice age or if one is coming soon. Many commenters chose to support their opinion with various data and statistics from a wide range of sources; they compared years and temperatures, each trying hard to prove their point. A commenter made a point that everything is just theories and not true but he faced a strong opposition and not one insult. Others focused just on global warming and listed temperature anomalies which proved that it is upon our planets. Others called it a big fat lie but were dismissed as deniers of science. Other comments focused on positive sides of warming and on political sides of the issue. A huge portion of the comments was dedicated to the people who deny climate change - an ongoing comment many repeated was they were 'dumb ideologues'. Others said their were lazy, ignorant, following mob psychologies or simply trolls. Commenters also spoke about the content of the article, saying it was interesting and valuable, few said it was useless. A few focused on the scientists and the ties the Australian ones have with politics, as well as how little didn't agree with global warming. The Australian government was also mentioned in a couple of comments noting that is was useless and the study was a waste of taxpayers' money. More than a third of the comments were personal insults or contained one to a degree which showed a strong involvement from the commenters but also that they didn't necessarily have evidence for their opinion. There was a also a good deal of sarcasm in most of the comments.
+
+CONSTRAINED SUMMARY
+
+The topic was one that made people feel the need to express their opinion and fight. Many argued whether climate change is man-made or natural and whether we are still in an ice age or if one is coming. Many commenters chose to support their opinion with data and statistics; they compared years and temperatures, each trying hard to prove their point. A commenter made a point that everything is just theories and not true but he faced a strong opposition and not one insult. Others focused on global warming and listed anomalies which proved it. Others called it a big fat lie but were dismissed as deniers of science. Others focused on positive sides of warming and on political sides of the issue. A huge portion of the comments was dedicated to climate change deniers - for many they were 'dumb ideologues'. Others said they were lazy, ignorant, following mob psychologies or simply trolls. Commenters also spoke about the article, saying it was interesting, few said it was useless. A few focused on the scientists. The Australian government was also mentioned, noting that is was useless and the study was a waste of taxpayers' money. More than a third of the comments were personal insults or contained one to a degree which showed a strong involvement from the commenters but also that they didn't necessarily have evidence for their opinion. There was a also a good deal of sarcasm in most of the comments.
+
+BACK LINKING
+
+The topic was one that made people feel the need to express their opinion and fight.
+(Sub)GroupNames:
+- GROUP: Climate change
+- GROUP: Deniers
+- GROUP: Other noteworthy comments
+- GROUP: Insults and accusations
+- GROUP: miscellaneous
+
+Many argued whether climate change is man-made or natural and whether we are still in an ice age or if one is coming.
+(Sub)GroupNames:
+- SUBGROUP: Natural or man-made?
+
+Many commenters chose to support their opinion with data and statistics; they compared years and temperatures, each trying hard to prove their point.
+(Sub)GroupNames:
+- SUBGROUP: Facts & Statistics
+
+A commenter made a point that everything is just theories and not true but he faced a strong opposition and not one insult.
+(Sub)GroupNames:
+- SUBGROUP: 'Soviet Science'
+
+Others focused on global warming and listed anomalies which proved it.
+(Sub)GroupNames:
+- SUBGROUP: Global warming
+
+Others called it a big fat lie but were dismissed as deniers of science.
+(Sub)GroupNames:
+- SUBGROUP: Global warming
+
+Others focused on positive sides of warming and on political sides of the issue.
+(Sub)GroupNames:
+- SUBGROUP: Other climate change comments
+
+A huge portion of the comments was dedicated to climate change deniers - for many they were 'dumb ideologues'.
+(Sub)GroupNames:
+- GROUP: Deniers
+
+Others said they were lazy, ignorant, following mob psychologies or simply trolls.
+(Sub)GroupNames:
+- GROUP: Deniers
+
+Commenters also spoke about the article, saying it was interesting, few said it was useless.
+(Sub)GroupNames:
+- SUBGROUP: About the article
+
+A few focused on the scientists.
+(Sub)GroupNames:
+- SUBGROUP: Scientists
+
+The Australian government was also mentioned, noting that is was useless and the study was a waste of taxpayers' money.
+(Sub)GroupNames:
+- SUBGROUP: Australian government
+
+More than a third of the comments were personal insults or contained one to a degree which showed a strong involvement from the commenters but also that they didn't necessarily have evidence for their opinion.
+(Sub)GroupNames:
+- GROUP: Insults and accusations
+
+There was a also a good deal of sarcasm in most of the comments.
+(Sub)GroupNames:
+- GROUP: miscellaneous

@@ -1,0 +1,462 @@
+LABELS
+
+Label for comment 1: Critical of team. Pithy. Begins chain of mockery and criticism of team!
+Label for comment 2: reply1:agrees and thinks unlikely to get a point.
+Label for comment 3: reply2:agrees - alludes to terrace chant and says fans like he and others self-aware of fact.
+Label for comment 4: irrelevant: mentions Argentine player Riquelme!?
+Label for comment 5: reply1.2: pouring on scorn using England football song title to mock team on way home. Compares hyped and pampered team unfavourably to others quality e.g. the possession
+Label for comment 6: reply5 disagrees: team did have good possession
+Label for comment 7: reply1:jokes mercifully brief; looking on bright side
+Label for comment 8: reply3: agrees: shit on a stick (joke)
+Label for comment 9: reply1: contrasts criticised past teams favourably with this early exit.
+Label for comment 10: reply6: agrees that Spain did too and they are also out, emphasising the result is what counts
+Label for comment 11: reply3: disagrees, close games and attractive style was played. Entertaining. Neutral fan.
+Label for comment 12: reply1: jokes:mocks Hodgson the manager's voice
+Label for comment 13: reply3: emphasises brevity of campaign
+Label for comment 14: reply1:muses rUK team, suggests need to restore the patriotism of playing for country, contrasts with moneyed modern media game. Says club the allegiance now, detriment patriotism. Sceptical the FA can restore patriotic identity.
+Label for comment 15: reply1: tournament more entertaining as team were spirited but not attractive football.
+Label for comment 16: reply3: self-deprecatingly states desire for England to win WC
+Label for comment 17: more scorn and disgust (laughing)
+Label for comment 18: scorn again (laughing)
+Label for comment 19: causes: absurdity-grandiosity of preparation: shrink,water sprayers  jokes Balotelli. Alludes to the hype.
+Label for comment 20: pay and performance correlation: raises issue of pampered team contrasted vs Costa Rican relative poverty
+Label for comment 21: reply20 takes issue with wages (missing sarcasm?)
+Label for comment 22: pay and perf correlation: suggests most agree. Criticises England as overpaid.
+Label for comment 23: more scorn (laughs)
+Label for comment 24: cheery in defeat - emotion
+Label for comment 25: causes: jokes TV replays
+Label for comment 26: jokes about dashed hopes
+Label for comment 27: reply26: jokes that other countries (Even Costa Rica) can do well
+Label for comment 28: reply26: critical of England football style
+Label for comment 29: reply26: jokey, alludes to Scotland not qualifying
+Label for comment 30: reply26: relieved that it is mercifully brief
+Label for comment 31: reply29:contrasting Scotland not being in with England neg. goal difference
+Label for comment 32: Mentions Balotelli and Suarez and that Italy in danger of going out too.
+Label for comment 33: reply32: that England have done so badly so far they quite conceivably might score zero points.
+Label for comment 34: reply34: disavowed England fan who stopped caring about the team long ago owing to repeat disappointment
+Label for comment 35: irrelevant: strange joke!
+Label for comment 36: irrelevant: strange joke!
+Label for comment 37: irrelevant: replies to odd joke
+Label for comment 38: echoes the repeat disappointment and stopped caring
+Label for comment 39: Impressed by Costa Rica qualifying, who were minnows of the group
+Label for comment 40: agrees with 40: looks forward to the entertainment of Italy Uruguay
+Label for comment 41: jokes about bookies win?
+Label for comment 42: jokes about bookies win?
+Label for comment 43: more talk about bets and bookies. Discussing potential winners, Netherlands, Argentina, Germany
+Label for comment 44: reply39:disagrees that minnows of group - known for a while by cognoscenti. Did well in qualifying stage and teams that get to WC will be capable.
+Label for comment 45: reply43:looking toward final - suggests Netherlands vs Argentina. Discussing possible winners and fixtures
+Label for comment 46: reply43: critical of the FA leadership as pathetic
+Label for comment 47: reply43: Italy game was important result, needed to do better. Mentions team startstruck by Italys Pirlo . Also manager knew it (not sure meaning)
+Label for comment 48: discussing manager future, implies he will be sacked
+Label for comment 49: reply48: disagrees manager will be, but wishes for it as calls him a "Dud". Critical of FA boss Greg Dyke and team as being under-achievers.
+Label for comment 50: reply48: jokes to get David Moyes who recently was sacked from Man Utd.
+Label for comment 51: reply48: also mocking Manager voice unkindly while suggesting forwards strategy was wrong
+Label for comment 52: irrelevant (repeated!)
+Label for comment 53: reply48: disagrees he will be. Scorn. Scathing about performance, sets in historical context as worst since 1958. Cannot understand how not sacked therefore and baffled why his tenure will span 3 tournaments. Calls tactics idiotic by Hodgson, moans the worst coach since Kevin Keegan opinion.
+Label for comment 54: reply48: calling out commenter for bullying someone for a speech impediment
+Label for comment 55: bullying repeated by with sarcastic apology of having caused offence
+Label for comment 56: reply54: suggests it fair comment and not bullying
+Label for comment 57: reply56: calling out commenter again for bullying
+Label for comment 58: reply56:another repeats criticism of bullying
+Label for comment 59: reply49: disagrees the manager to blame. Suggests players are not good enough. Several top managers have struggled for England too suggesting it is players. Problem with English game structurally leading to lack of technical ability.
+Label for comment 60: reply56: corrects commenter - worst performance ever, as never eliminated before final group game. Offsets this with it being toughest draw ever. Prefers team to any since 1996. Compliments team.
+Label for comment 61: reply49:manager or players? thinks it is lack of capable players. Managers can not do anything with poor players.
+Label for comment 62: irrelevant: reply49:jokes
+Label for comment 63: reply56: seems to agree, familiar pattern of excuses by England fans
+Label for comment 64: reply59:manager or players debate? disagrees and thins players are fine, as Costa Rica have done alright with no better talent. Manager to blame.
+Label for comment 65: reply60: tetchy reply querying why previous commenter likes current team. They performed just as badly as other teams did. Mentions Ashley Cole omission as a problem and a criticism .
+Label for comment 66: gives mock reason for mocking manager speech. Jousting with other commenter.
+Label for comment 67: reply46:manager or player debate: thinks England have been bad technical ability. Final ball awful, too many players not good enough. Mentions English players do not regularly get games in the League clubs. Defends manager as can only work with what he given. EPL and FA conflict and resulted in a mess, fallen behind rest of Europe.
+Label for comment 68: reply64:manager vs players: not managers fault.Repeats successive managers failing - because players are not good enough. Workmanlike. Thinks managers future is irrelevant. Structural problems echoed - need to look at improving childrens game with more skill and it will take a long time.
+Label for comment 69: applauds Costa Rica for their achievement possibly scorn, sarcastic
+Label for comment 70: reply69: repeats praise for Costa Rica. elaboarates. Qualifying from a group with 3 former WC winners. Suggests referee biased for Italy.
+Label for comment 71: reply70:dont understand this - irrelevant
+Label for comment 72: reply:70 disagreeing as the linesman were biased the other way for Costa Rica.
+Label for comment 73: reply:1 agrees, yet again England do badly, sad.
+Label for comment 74: reply1: choruses that rubbish. Managers v players:agrees players poor but blames media money. Strctural problems. Critical of money and financing of football by Sky and BT. Consumers complicit. Astonished that still disappointment even though people had lowered their expectations this time.
+Label for comment 75: jokes: primadonnas pampered team.
+Label for comment 76: disagrees with reasoning of 74: media and football
+Label for comment 77: echoes that predictable failure. PRimadonna, pampered
+Label for comment 78: reply77: agreeing, critical of those who are surprised as being one of the reasons. Too soft on them?
+Label for comment 79: reply77:primadonnas..German fan saying that pandered to Rooney who would not get picked by Germany.
+Label for comment 80: reply77:manager vs players: blames manager as he has led good players to perform badly
+Label for comment 81: reply77: agrees. Primadonnae
+Label for comment 82: reply78:Guardian newspaper even said the might win- media/adulation/pampered criticism
+Label for comment 83: reply77:criticises idea of passionate players, and also passionate fans. Focus on the technical needed.
+Label for comment 84: reply:79 echoes that overhyped...pundits hyping Rooney
+Label for comment 85: reply77:disagrees, clubs who pamper the players in terms of wages
+Label for comment 86: reply83: against anti-passion idea as it a vital part of success.
+Label for comment 87: again about spelling of primadonne
+Label for comment 88: reply83: manager v players: but was it a question of passion since players were not passionate? Criticises sense of selfsatisfaction of players. Players showed some promise at times.
+Label for comment 89: reply about primadonne spelling
+Label for comment 90: passion discussion: players do not look passionate from the start. Look scared. Media melodramatic. Media pressuring the players a lot. Players should cope however. Expectations were lowered and yet they still disappointed. Echoes.
+Label for comment 91: Repeats praise for Costa Rica. Structural problems with English game, need follow Belgiums example. Transformed their youth approach and improved in 8 years. Lots of talent now. Too few coaches in England, no footballing philosophy. Not MANAGERS fault. Need modernise the system.
+Label for comment 92: reply91: highly sceptical it will ever happen. Echoing that pattern has repeated.
+Label for comment 93: irrelevant
+Label for comment 94: reply91:repeats that not for the first time this analysis been said and had successive failures.
+Label for comment 95: reply92:critical of FA media money relationship. FA not focussed on improving game but getting money. Praises Costa Rica in contrast.Criticises tactics of England.
+Label for comment 96: reply91: repeats critical of education for young players-personal experience playing 11 a side as a child.
+Label for comment 97: reply91: choruses approval of structural crisis.
+Label for comment 98: reply91:mentions children should try FUTSAL, aids skill development. Brazil and Spain both practice it.
+Label for comment 99: reply98: extreme pessimism that will happen either, football not a priority for education . Triggers lots of counter-replies.
+Label for comment 100: reply99: agrees and disagrees - FA and EPL money obsessed, root of problem.
+Label for comment 101: reply98: agrees, about improving football skills with children using small games. Focus on touch skills not power. Not so pessimistic, think England are already heading this way. Not a recipe for success either as mighty Spain out too.
+Label for comment 102: reply99: disagrees that education a priority over football
+Label for comment 103: reply91:agrees children development is problem- thinks not enough chances to play the game, pitches made more available. Learn others lessons eg. from Canada and ice hockey experience.
+Label for comment 104: reply:99, disagrees, only USA gives higher priority to sport than education. Not the issue.
+Label for comment 105: reply91: approves of the lengthy analsyis of structural problems
+Label for comment 106: reply99:again taking issue with education idea.
+Label for comment 107: reply91: agrees with much. Thinks players have talent but lack early development because of education problem in tactics and skill. Thinks performances were not too bad. Possibly even unlucky. Echoes difficult draw. Thinks tactical problems too.
+
+GROUPS
+
+GROUP: Reaction to result which sees England eliminated from the World Cup
+
+SUBGROUP: Fans scorn, mockery and emotional reaction to the England team's early exit 5 comments
+Label for comment 1 [SimonWay]: Critical of team. Pithy. Begins chain of mockery and criticism of team!
+Label for comment 2 [ZapataSD]: reply1:agrees and thinks unlikely to get a point.
+Label for comment 17 [Prince1407]: Rofl-LOL etc more scorn and disgust (laughing)
+Label for comment 18 [funkyginger]: scorn again (laughing)
+Label for comment 23 [harryhaddock]: more scorn (laughs)
+
+SUBGROUP: Vitriolic humour 5 comments
+Label for comment 1 [SimonWay]: "Rubbish" Critical of team. Pithy. Begins chain of mockery and criticism of team!
+Label for comment 3 [funkyginger]: reply2:agrees - "we're shit and we know we are" alludes to terrace chant and says fans like he and others self-aware of fact.
+Label for comment 5 [SchraderBrau]: reply1.2: pouring on scorn using England football song title to mock team on way home. Compares hyped and pampered team unfavourably to others quality e.g. the possession "we're coming home, footballs coming home", pampered and overhyped pat on the back
+Label for comment 7 [Sandmaennchen]: reply1:jokes mercifully brief; looking on bright side
+Label for comment 8 [cornyguy]: reply3: agrees: shit on a stick (joke)
+
+SUBGROUP: and self-deprecating humour..dominant emotion...also despair 6 comments
+Label for comment 16 [Worriedmind]: reply3: self-deprecatingly states desire for England to win WC
+Label for comment 24 [marydole]: cheery in defeat - emotion
+Label for comment 25 [IanGoodwin]:  jokes blames TV replays
+Label for comment 26 [keef1980]: jokes about dashed hopes
+Label for comment 30 [avidfan]: reply26: relieved that it is mercifully brief
+Label for comment 73 [frederama]: reply:1 agrees, yet again England do badly, sad.
+
+SUBGROUP: Past caring 4 comments
+Label for comment 34 [Phil_Porter]: reply34: disavowed England fan who stopped caring about the team long ago owing to repeat disappointment
+Label for comment 38 [leedonel]: echoes the repeat disappointment and stopped caring
+Label for comment 74 [BigAndDaft]: reply1: choruses that were rubbish. Managers v players:agrees players poor but blames media money. Strctural problems. Critical of money and financing of football by Sky and BT. Consumers complicit. Astonished that still disappointment even though people had lowered their expectations this time.
+Label for comment 78 [SchraderBrau]: reply77: agreeing, critical of those who are surprised as being one of the reasons. Too soft on them?
+
+GROUP: Assessing exactly how badly this English showing has been vs played OK at times 7 comments
+Label for comment 2 [ZapataSD]: reply1:agrees and thinks unlikely to get a point.
+Label for comment 33 [RedandBlue5]: reply32: that England have done so badly so far they quite conceivably might score zero points.
+Label for comment 13 [whenthelightsgoout]: reply3: 6 days..emphasises brevity of campaign
+Label for comment 6 [CityActuary]: reply5 disagrees: team did have good possession
+Label for comment 10 [Sechzig66]: reply6: agrees that Spain did too and they are also out, emphasising the result is what counts
+Label for comment 47 [brownshoes]: reply43: Italy game was important result,;  needed to do better. Mentions team starstruck by Italys Pirlo . Also manager knew it (not sure meaning)
+Label for comment 53 [robinr22]: reply48: disagrees he will be. Scorn. Scathing about performance, sets in historical context as worst since 1958. Cannot understand how not sacked therefore and baffled why his tenure will span 3 tournaments. Calls tactics idiotic by Hodgson, moans the worst coach since Kevin Keegan opinion.
+Label for comment 88 [mikeinbrazil]: reply83: manager v players: but was it a question of passion since players were not passionate? Criticises sense of selfsatisfaction of players. Players showed some promise at times.
+
+SUBGROUP: Comparing to other countries success 5 comments
+Label for comment 27 [Sunburst]: reply26: jokes that other countries (Even Costa Rica) can do well
+Label for comment 29 [MikeMoonlight]: reply26: jokey, alludes to Scotland not qualifying
+Label for comment 31 [Valfar]: reply29:contrasting Scotland not being in with England neg. goal difference
+Label for comment 10 [Sechzig66]: reply6: agrees that Spain did too and they are also out, emphasising the result is what counts
+Label for comment 44 [coffeekop]: reply39:disagrees that CR minnows of group - known for a while by cognoscenti. Did well in qualifying stage and teams that get to WC will be capable.
+
+SUBGROUP: Difficulty of the group - consensus? Tough draw? ; Costa Rica surprise? 12 comments
+Label for comment 32 [Phil_Porter]: Mentions Balotelli and Suarez and that Italy in danger of going out too.
+Label for comment 33 [RedandBlue5]: reply32: that England have done so badly so far they quite conceivably might score zero points.
+Label for comment 39 [Ontariolad]: Impressed by Costa Rica qualifying, who were minnows of the group
+Label for comment 40 [RedandBlue5]: agrees with 39: looks forward to the entertainment of Italy Uruguay
+Label for comment 47 [brownshoes]: reply43: Italy game was important result,;  needed to do better. Mentions team starstruck by Italys Pirlo . Also manager knew it (not sure meaning)
+Label for comment 44 [coffeekop]: reply39:disagrees that CR minnows of group - known for a while by cognoscenti. Did well in qualifying stage and teams that get to WC will be capable.
+Label for comment 69 [AdiJazz]: applauds Costa Rica for their achievement possibly scorn, sarcastic about England
+Label for comment 70 [Goonerabroad]: reply69: repeats praise for Costa Rica.;  elaborates. Qualifying from a group with 3 former WC winners. Suggests referee biased for Italy.
+Label for comment 72 [periwinkle27]: reply:70 disagreeing as the linesman were biased the other way for Costa Rica.
+Label for comment 91 [Autonova1]: Repeats praise for Costa Rica. Structural problems with English game, need follow Belgiums example. Transformed their youth approach and improved in 8 years. Lots of talent now. Too few coaches in England, no footballing philosophy. Not MANAGERS fault. Need modernise the system.
+Label for comment 107 [goto100]: reply91: agrees with much. Thinks players have talent but lack early development because of education problem in tactics and skill. Thinks performances were not too bad. Possibly even unlucky. Echoes difficult draw. Thinks tactical problems too.
+
+SUBGROUP: bookies chat on might win the WC 4 comments
+Label for comment 41 [AbFalsoQuodLibet]: jokes about bookies win?
+Label for comment 42 [Bakwaas]: jokes about bookies win?
+Label for comment 43 [AbFalsoQuodLibet]: more talk about bets and bookies.;  Discussing potential winners, Netherlands, Argentina, Germany
+Label for comment 45 [lukasw]: reply43:looking toward final - suggests Netherlands vs Argentina. Discussing possible winners and fixtures
+
+SUBGROUP: Worst ever squad historically? 5 comments
+Label for comment 9 [periwinkle27]: reply1: contrasts criticised past teams favourably with this early exit.
+Label for comment 11 [John_Condor]: reply3: disagrees, close games and attractive style was played. Entertaining. Neutral fan.
+Label for comment 53 [robinr22]: reply48: disagrees he will be. Scorn. Scathing about performance, sets in historical context as worst since 1958. Cannot understand how not sacked therefore and baffled why his tenure will span 3 tournaments. Calls tactics idiotic by Hodgson, moans the worst coach since Kevin Keegan opinion.
+Label for comment 60 [GrCl]: reply53: corrects commenter - worst performance ever, as never eliminated before final group game. Offsets this with it being toughest draw ever. Prefers team to any since 1996. Compliments team.
+Label for comment 65 [ersatzian]: reply60: tetchy reply querying why previous commenter likes current team. They performed just as badly as other teams did. Mentions Ashley Cole omission as a problem and a criticism .
+
+GROUP: Who to blame - managers or players? 
+
+SUBGROUP: Manager Roy Hodgson mocked and criticised 23 comments
+Label for comment 12 [korblimey]: reply1: jokes:mocks Hodgson the manager's speech
+Label for comment 48 [numinous]: discussing manager future, implies he will be sacked
+Label for comment 49 [AbFalsoQuodLibet]: reply48: disagrees manager will be, but wishes for it as calls him a "Dud". Critical of FA boss Greg Dyke and team as being under-achievers.
+Label for comment 50 [Sunburst]: reply48: jokes to get David Moyes who recently was sacked from Man Utd.
+Label for comment 51 [SchraderBrau]: reply48: also mocking Manager voice unkindly while suggesting forwards strategy was wrong
+Label for comment 53 [robinr22]: reply48: disagrees he will be. Scorn. Scathing about performance, sets in historical context as worst since 1958. Cannot understand how not sacked therefore and baffled why his tenure will span 3 tournaments. Calls tactics idiotic by Hodgson, moans the worst coach since Kevin Keegan opinion.
+Label for comment 54 [QuentinSkalawag]: reply48: calling out commenter for bullying someone for a speech impediment
+Label for comment 55 [SchraderBrau]: bullying repeated by with sarcastic apology of having caused offence
+Label for comment 56 [SchraderBrau]: reply54: suggests it fair comment and not bullying
+Label for comment 57 [Jaktar]: reply56: calling out commenter again for bullying
+Label for comment 58 [zidanerockingtheboat]: reply56:another repeats criticism of bullying
+Label for comment 59 [dollishillbilly]: reply49: disagrees the manager to blame. Suggests players are not good enough. Several top managers have struggled for England too suggesting it is players. Problem with English game structurally leading to lack of technical ability.
+Label for comment 61 [gilesjuk]: reply49:manager or players? thinks it is lack of capable players. Managers can not do anything with poor players.
+Label for comment 63 [ersatzian]: reply53: seems to agree, familiar pattern of excuses by England fans
+Label for comment 64 [robinr22]: reply59:manager or players debate? disagrees and thinks players are fine, as Costa Rica have done alright with no better talent. Manager to blame.
+Label for comment 65 [ersatzian]: reply60: tetchy reply querying why previous commenter;  likes current team. They performed just as badly as other teams did. Mentions Ashley Cole omission as a problem and a criticism .
+Label for comment 66 [numinous]: gives mock reason for mocking manager speech. Jousting with other commenter.
+Label for comment 67 [dollishillbilly]: reply46:manager or player debate: thinks England have been bad technical ability. Final ball awful, too many players not good enough. Mentions English players do not regularly get games in the League clubs. Defends manager as can only work with what he given. EPL and FA conflict and resulted in a mess, fallen behind rest of Europe.
+Label for comment 68 [Wonkothesane76]: reply64:manager vs players: not managers fault.Repeats successive managers failing - because players are not good enough. Workmanlike. Thinks managers future is irrelevant. Structural problems echoed - need to look at improving childrens game with more skill and it will take a long time.
+Label for comment 80 [murdamcloud]: reply77:manager vs players: blames manager as he has led good players to perform badly
+Label for comment 91 [Autonova1]: Repeats praise for Costa Rica. Structural problems with English game, need follow Belgiums example. Transformed their youth approach and improved in 8 years. Lots of talent now. Too few coaches in England, no footballing philosophy. Not MANAGERS fault. Need modernise the system.
+
+SUBGROUP: Entertaining style of football? 3 comments
+Label for comment 11 [John_Condor]: reply3: disagrees, close games and attractive style was played. Entertaining. Neutral fan.
+Label for comment 28 [SchraderBrau]: reply26: critical of England football style
+Label for comment 15 [TMGSpurs]: reply1: tournament more entertaining;  as team were spirited but not attractive football.
+
+SUBGROUP: Pampered primadonnas? Overhyped and overpaid 13 comments
+Label for comment 5 [SchraderBrau]: reply1.2: pouring on scorn using England football song title to mock team on way home. Compares hyped and pampered team unfavourably to others quality e.g. the possession "we're coming home, footballs coming home", pampered and overhyped pat on the back
+Label for comment 19 [Capleton]: causes: absurdity-grandiosity of preparation: shrink,water sprayers  jokes Balotelli. Alludes to the hype.
+Label for comment 20 [unaszplodrmann]: pay and performance correlation: raises issue of pampered team contrasted vs Costa Rican relative poverty
+Label for comment 21 [SchraderBrau]: reply20 takes issue with wages (missing sarcasm?)
+Label for comment 22 [unaszplodrmann]: pay and perf correlation: suggests most agree. Criticises England as overpaid.
+Label for comment 75 [TheCorporal]: jokes about Rooney: primadonnas pampered team.
+Label for comment 77 [Bliad]: echoes that predictable failure. overpaid, Primadonna, pampered
+Label for comment 78 [SchraderBrau]: reply77: agreeing, critical of those who are surprised as being one of the reasons. Too soft on them?
+Label for comment 79 [bvbliebe]: reply77:primadonnas..German fan saying that Rooney pandered to Rooney who would not get picked by Germany.
+Label for comment 82 [Sunburst]: reply78:Guardian newspaper even said the might win- media/adulation/pampered criticism
+Label for comment 84 [lukasw]: reply:79 echoes that overhyped...pundits hyping Rooney
+Label for comment 85 [ersatzian]: reply77:disagrees, clubs who pamper the players in terms of wages
+
+SUBGROUP: Unsure of the plural of primadonnas - humour 3 comments
+Label for comment 81 [Hydromatick]: reply77: agrees. Primadonnae
+Label for comment 87 [greghaddock]: again about spelling of primadonne
+Label for comment 89 [Hydromatick]: reply about primadonne spelling
+
+SUBGROUP: Passion and patriotism lacking ? 7 comments
+Label for comment 14 [fulhamfan]: reply1:muses rUK team, suggests need to restore the patriotism of playing for country, contrasts with moneyed modern media game. Says club the allegiance now, detriment patriotism. Sceptical the FA can restore patriotic identity.
+Label for comment 15 [TMGSpurs]: reply1: tournament more entertaining as team were spirited but not attractive football.
+Label for comment 83 [Menotti]: reply77:criticises idea of passionate players, and also passionate fans. Focus on the technical needed.
+Label for comment 86 [Bliad]: reply83: against anti-passion idea as it a vital part of success.
+Label for comment 88 [mikeinbrazil]: reply83: manager v players: ; but did they really have passion, since players were not passionate? Criticises sense of selfsatisfaction of players. Players showed some promise at times.
+Label for comment 90 [ID040454]: passion discussion: players do not look passionate from the start. Look scared. Media melodramatic. Media pressuring the players a lot. Players should cope however. Expectations were lowered and yet they still disappointed. Echoes.
+
+SUBGROUP: lack of technical skill in English football is why team fail repeatedly 4 comments
+Label for comment 59 [dollishillbilly]: reply49: disagrees the manager to blame. Suggests players are not good enough. Several top managers have struggled for England too suggesting it is players. Problem with English game structurally leading to lack of technical ability.
+Label for comment 61 [gilesjuk]: reply49:manager or players? thinks it is lack of capable players. Managers can not do anything with poor players.
+Label for comment 67 [dollishillbilly]: reply46:manager or player debate: thinks England have been bad technical ability. Final ball awful, too many players not good enough. Mentions English players do not regularly get games in the League clubs. Defends manager as can only work with what he given. EPL and FA conflict and resulted in a mess, fallen behind rest of Europe.
+Label for comment 68 [Wonkothesane76]: reply64:manager vs players: not managers fault. Repeats successive managers failing - because players are not good enough. Workmanlike. Thinks managers future is irrelevant. Structural problems echoed - need to look at improving childrens game with more skill and it will take a long time.
+
+GROUP: More systemic problem - FA, EPL, clubs and media role to blame? 7 comments
+Label for comment 14 [fulhamfan]: reply1:muses rUK team, suggests need to restore the patriotism of playing for country, contrasts with moneyed modern media game. Says club the allegiance now, detriment patriotism. Sceptical the FA can restore patriotic identity.
+Label for comment 16 [Worriedmind]: reply3: self-deprecatingly states desire for England to win WC
+Label for comment 46 [CitizenTM]: reply43: critical of the FA leadership as pathetic
+Label for comment 74 [BigAndDaft]: reply1: choruses that were rubbish. Managers v players:agrees players poor but blames media money. Strctural problems. Critical of money and financing of football by Sky and BT. Consumers complicit. Astonished that still disappointment even though people had lowered their expectations this time.
+Label for comment 76 [joe5000]: disagrees with reasoning of 74: media and football
+Label for comment 95 [fickleposter]: reply92:critical of FA media money relationship. FA not focussed on improving game but getting money. Praises Costa Rica in contrast.Criticises tactics of England.
+Label for comment 100 [Cryogenic]: reply99: agrees and disagrees - FA and EPL money obsessed, root of problem.
+
+SUBGROUP: Technical ability heavily criticised, youth game / education require change  17 comments
+Label for comment 15 [TMGSpurs]: reply1: tournament more entertaining as team were spirited but not attractive football.
+Label for comment 91 [Autonova1]: Repeats praise for Costa Rica. Structural problems with English game, need follow Belgiums example. Transformed their youth approach and improved in 8 years. Lots of talent now. Too few coaches in England, no footballing philosophy. Not MANAGERS fault. Need modernise the system.
+Label for comment 92 [BeautfulGame]: reply91: highly sceptical it will ever happen. Echoing that pattern has repeated.
+Label for comment 94 [CSlater]: reply91:repeats that not for the first time this analysis been said and had successive failures.
+Label for comment 96 [Thatingles]: reply91: repeats critical of education for young players-personal experience playing 11 a side as a child.
+Label for comment 97 [LaughingGnome]: reply91: choruses approval of structural crisis.
+Label for comment 98 [chicoscience]: reply91:mentions children should try FUTSAL, aids skill development. Brazil and Spain both practice it.
+Label for comment 99 [BeautfulGame]: reply98: extreme pessimism that will happen either, football not a priority for education . Triggers lots of counter-replies.
+Label for comment 100 [Cryogenic]: reply99: agrees and disagrees - FA and EPL money obsessed, root of problem.
+Label for comment 101 [murdamcloud]: reply98: agrees, about improving football skills with children using small games. Focus on touch skills not power. Not so pessimistic, think England are already heading this way. Not a recipe for success either as mighty Spain out too.
+Label for comment 102 [PaulinNH]: reply99: disagrees that education a priority over football
+Label for comment 103 [JohnnyDaPunk]: reply91:agrees children development is problem- thinks not enough chances to play the game, pitches made more available. Learn others lessons eg. from Canada and ice hockey experience.
+Label for comment 104 [jararaca]: reply:99, disagrees, only USA gives higher priority to sport than education. Not the issue.
+Label for comment 105 [dollishillbilly]: reply91: approves of the lengthy analsyis of structural problems
+Label for comment 106 [lukasw]: reply99:again taking issue with education idea.
+Label for comment 107 [goto100]: reply91: agrees with much. Thinks players have talent but lack early development because of education problem in tactics and skill. Thinks performances were not too bad. Possibly even unlucky. Echoes difficult draw. Thinks tactical problems too.
+
+GROUP: miscellaneous 8 comments
+Label for comment 4 [Matías_Barroca]: irrelevant: mentions Argentine player Riquelme!?
+Label for comment 35 [nightschoolteacher]: irrelevant: strange joke!
+Label for comment 36 [nightschoolteacher]: irrelevant: strange joke!
+Label for comment 37 [PlatoApesSocrates]: irrelevant: replies to odd joke
+Label for comment 52 [weeyin]: irrelevant (repeated!)
+Label for comment 62 [Jaberwocky]: irrelevant: reply49:jokes
+Label for comment 71 [tankerton]: reply70:dont understand this - irrelevant
+Label for comment 93 [Dominicjj]: irrelevant
+
+UNCONSTRAINED SUMMARY
+
+A majority joined in mocking England - often with strong feeling - for an early exit from the World Cup. A sneer of "Rubbish" triggered scorn for England, several labelling the team "shit" and expressing laughter. Many delighted in a sarcastic chorus about the team hype and cursing with vitriol at how badly the team had performed. Many comments balanced this with humour, merciful for the brevity and cheery in defeat for their dashed hopes, while self-deprecatingly blaming it on TV replays! Some expressed sadness, but several admitted the previous disappointments meant they were past caring. One wondered if those still surprised had contributed to the failure.
+
+Assessing the brief England campaign, some stressed how pathetic it was, warning they might end on zero points. One stated "worst since 1958" and the worst coach yet. This was balanced with mentions of "good possession" and promising play; World Champions Spain were also out. The performance was contrasted with minnows Costa Rica - praised for their success - also Spain (also out) and Scotland who were not playing, but had done better! 
+
+The toughness of the group was discussed with disagreement that Costa Rica were really minnows and consensus around their achievement. Italy was an important result and they might go out too; three were former World Champions. Several went on to compare betting opinions. But several complained England had never done this badly before.
+
+Many debated causes - manager, pampered players and systemic issues of the English game. Hodgson's speech was mocked unkindly, although some objected. Possibly replacing him was mentioned, but many thought blame lay with the workmanlike players who were not good enough. Managers are constrained by their players and others had faced the same issue. Disagreement was voiced about how attractive the football was. Many discussed and criticised a primadonna team culture as overpaid and overhyped by the media and fans. Rooney was singled out. Comments humorously wondered what the plural of primadonna was. Questions of passion and patriotism were much debated and media pressure criticised. Many more discussed long-term systemic problems of style and technical ability and the need to develop this in youth football education. The example of other countries needed to be borrowed from. e.g. FUTSAL. Continued FA failure was blamed, and media and clubs were also criticised for creating the moneyed modern England football game. Commenters were pessimistic change would occur.
+
+CONSTRAINED SUMMARY
+
+A majority vigorously mocked England for the early exit from the tournament. One "Rubbish" triggered scorn, several labelling England "shit" and expressing laughter. Many agreed about the hype and were vitriolic at how badly England performed. Commenters balanced this with humour, grateful for the brief campaign, self-deprecating in defeat, one blamed TV replays! Some expressed sadness, but several admitted they were long past caring.
+
+Some stressed how pathetic the campaign was, warning England might end on zero. One stated "worst since 1958". Some reflected on "good possession" and promising play; that champions Spain were also out. This was contrasted with Costa Rican achievement.
+
+The draw difficulty was debated: were successful Costa Rica really minnows? Italy might go out; three were former World Champions. Betting opinions were compared. Several complained England had never failed so badly.
+
+Many argued about causes: manager, players and systemic issues of the English game. Hodgson's speech was mocked, although some objected. Sacking him was mentioned, but more preferred to blame pampered players who were incapable. Earlier managers had the same issue. Commenters disagreed how attractive the football was. Many criticised overpaid players overhyped by the media and fans. Rooney was singled out. Commenters disagreed what the plural of primadonna was. Passion was debated and media pressure criticised. Many discussed systemic problems with technique and education. Other countries could be learned from. e.g. FUTSAL. The FA was blamed; media and clubs were also criticised for creating moneyed modern English football. Commenters were pessimistic about change.
+
+BACK LINKING
+
+A majority vigorously mocked England for the early exit from the tournament.
+(Sub)GroupNames:
+- GROUP: Reaction to result which sees England eliminated from the World Cup
+- SUBGROUP: Fans scorn, mockery and emotional reaction to the England team's early exit 5 comments
+- SUBGROUP: Vitriolic humour 5 comments
+- SUBGROUP: and self-deprecating humour..dominant emotion...also despair 6 comments
+- SUBGROUP: Past caring 4 comments
+
+One "Rubbish" triggered scorn, several labelling England "shit" and expressing laughter.
+(Sub)GroupNames:
+- SUBGROUP: Vitriolic humour 5 comments
+- SUBGROUP: and self-deprecating humour..dominant emotion...also despair 6 comments
+
+Many agreed about the hype and were vitriolic at how badly England performed.
+(Sub)GroupNames:
+- SUBGROUP: Vitriolic humour 5 comments
+- GROUP: Assessing exactly how badly this English showing has been vs played OK at times 7 comments
+- SUBGROUP: Pampered primadonnas? Overhyped and overpaid 13 comments
+
+Commenters balanced this with humour, grateful for the brief campaign, self-deprecating in defeat, one blamed TV replays!
+(Sub)GroupNames:
+- SUBGROUP: Vitriolic humour 5 comments
+- SUBGROUP: and self-deprecating humour..dominant emotion...also despair 6 comments
+
+Some expressed sadness, but several admitted they were long past caring.
+(Sub)GroupNames:
+- SUBGROUP: and self-deprecating humour..dominant emotion...also despair 6 comments
+- SUBGROUP: Past caring 4 comments
+
+Some stressed how pathetic the campaign was, warning England might end on zero.
+(Sub)GroupNames:
+- GROUP: Assessing exactly how badly this English showing has been vs played OK at times 7 comments
+- SUBGROUP: Comparing to other countries success 5 comments
+- SUBGROUP: Difficulty of the group - consensus? Tough draw? ; Costa Rica surprise? 12 comments
+
+One stated "worst since 1958". 
+(Sub)GroupNames:
+- GROUP: Assessing exactly how badly this English showing has been vs played OK at times 7 comments
+
+Some reflected on "good possession" and promising play; that champions Spain were also out.
+(Sub)GroupNames:
+- GROUP: Assessing exactly how badly this English showing has been vs played OK at times 7 comments
+- SUBGROUP: Difficulty of the group - consensus? Tough draw? ; Costa Rica surprise? 12 comments
+
+This was contrasted with Costa Rican achievement.
+(Sub)GroupNames:
+- SUBGROUP: Comparing to other countries success 5 comments
+- SUBGROUP: Difficulty of the group - consensus? Tough draw? ; Costa Rica surprise? 12 comments
+
+The draw difficulty was debated: were successful Costa Rica really minnows?
+(Sub)GroupNames:
+- SUBGROUP: Comparing to other countries success 5 comments
+- SUBGROUP: Difficulty of the group - consensus? Tough draw? ; Costa Rica surprise? 12 comments
+
+Italy might go out; three were former World Champions.
+(Sub)GroupNames:
+- SUBGROUP: Comparing to other countries success 5 comments
+- SUBGROUP: Difficulty of the group - consensus? Tough draw? ; Costa Rica surprise? 12 comments
+
+Betting opinions were compared.
+(Sub)GroupNames:
+- SUBGROUP: bookies chat on might win the WC 4 comments
+
+Several complained England had never failed so badly.
+(Sub)GroupNames:
+- SUBGROUP: Vitriolic humour 5 comments
+- SUBGROUP: and self-deprecating humour..dominant emotion...also despair 6 comments
+- SUBGROUP: Past caring 4 comments
+- GROUP: Assessing exactly how badly this English showing has been vs played OK at times 7 comments
+- SUBGROUP: Difficulty of the group - consensus? Tough draw? ; Costa Rica surprise? 12 comments
+- SUBGROUP: Worst ever squad historically? 5 comments
+
+Many argued about causes: manager, players and systemic issues of the English game.
+(Sub)GroupNames:
+- GROUP: Assessing exactly how badly this English showing has been vs played OK at times 7 comments
+- SUBGROUP: Difficulty of the group - consensus? Tough draw? ; Costa Rica surprise? 12 comments
+- SUBGROUP: Worst ever squad historically? 5 comments
+- GROUP: Who to blame - managers or players?
+- SUBGROUP: Manager Roy Hodgson mocked and criticised 23 comments
+- SUBGROUP: Pampered primadonnas? Overhyped and overpaid 13 comments
+- SUBGROUP: Passion and patriotism lacking ? 7 comments
+- SUBGROUP: lack of technical skill in English football is why team fail repeatedly 4 comments
+
+Hodgson's speech was mocked, although some objected.
+(Sub)GroupNames:
+- SUBGROUP: Manager Roy Hodgson mocked and criticised 23 comments
+
+Sacking him was mentioned, but more preferred to blame pampered players who were incapable.
+(Sub)GroupNames:
+- GROUP: Who to blame - managers or players?
+- SUBGROUP: Manager Roy Hodgson mocked and criticised 23 comments
+- SUBGROUP: Pampered primadonnas? Overhyped and overpaid 13 comments
+
+Earlier managers had the same issue.
+(Sub)GroupNames:
+- SUBGROUP: Manager Roy Hodgson mocked and criticised 23 comments
+- SUBGROUP: Pampered primadonnas? Overhyped and overpaid 13 comments
+
+Commenters disagreed how attractive the football was.
+(Sub)GroupNames:
+- GROUP: Assessing exactly how badly this English showing has been vs played OK at times 7 comments
+- SUBGROUP: Entertaining style of football? 3 comments
+
+Many criticised overpaid players overhyped by the media and fans.
+(Sub)GroupNames:
+- SUBGROUP: Manager Roy Hodgson mocked and criticised 23 comments
+- SUBGROUP: Pampered primadonnas? Overhyped and overpaid 13 comments
+- SUBGROUP: Unsure of the plural of primadonnas - humour 3 comments
+- SUBGROUP: Passion and patriotism lacking ? 7 comments
+
+Rooney was singled out.
+(Sub)GroupNames:
+- SUBGROUP: Pampered primadonnas? Overhyped and overpaid 13 comments
+
+Commenters disagreed what the plural of primadonna was.
+(Sub)GroupNames:
+- SUBGROUP: Unsure of the plural of primadonnas - humour 3 comments
+
+Passion was debated and media pressure criticised.
+(Sub)GroupNames:
+- SUBGROUP: Vitriolic humour 5 comments
+- SUBGROUP: Past caring 4 comments
+- SUBGROUP: Pampered primadonnas? Overhyped and overpaid 13 comments
+- SUBGROUP: Passion and patriotism lacking ? 7 comments
+- GROUP: More systemic problem - FA, EPL, clubs and media role to blame? 7 comments
+
+Many discussed systemic problems with technique and education.
+(Sub)GroupNames:
+- GROUP: More systemic problem - FA, EPL, clubs and media role to blame? 7 comments
+- SUBGROUP: Technical ability heavily criticised, youth game / education require change  17 comments
+
+Other countries could be learned from.
+(Sub)GroupNames:
+- SUBGROUP: Difficulty of the group - consensus? Tough draw? ; Costa Rica surprise? 12 comments
+- SUBGROUP: Manager Roy Hodgson mocked and criticised 23 comments
+- SUBGROUP: lack of technical skill in English football is why team fail repeatedly 4 comments
+- GROUP: More systemic problem - FA, EPL, clubs and media role to blame? 7 comments
+- SUBGROUP: Technical ability heavily criticised, youth game / education require change  17 comments
+
+e.g. FUTSAL.
+(Sub)GroupNames:
+- SUBGROUP: Technical ability heavily criticised, youth game / education require change  17 comments
+
+The FA was blamed; media and clubs were also criticised for creating moneyed modern English football.
+(Sub)GroupNames:
+- SUBGROUP: Past caring 4 comments
+- GROUP: More systemic problem - FA, EPL, clubs and media role to blame? 7 comments
+- SUBGROUP: Technical ability heavily criticised, youth game / education require change  17 comments
+
+Commenters were pessimistic about change.
+(Sub)GroupNames:
+- SUBGROUP: and self-deprecating humour..dominant emotion...also despair 6 comments
+- SUBGROUP: Past caring 4 comments
+- SUBGROUP: Passion and patriotism lacking ? 7 comments
+- SUBGROUP: lack of technical skill in English football is why team fail repeatedly 4 comments

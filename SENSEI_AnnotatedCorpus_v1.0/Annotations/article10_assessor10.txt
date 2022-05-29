@@ -1,0 +1,287 @@
+LABELS
+
+Label for comment 1: sewage heroes
+Label for comment 2: probably poorly paid
+Label for comment 3: joke
+Label for comment 4: joke
+Label for comment 5: appreciation of joke
+Label for comment 6: joke
+Label for comment 7: joke but sympathetic to workers
+Label for comment 8: joke
+Label for comment 9: joke
+Label for comment 10: OT medical question
+Label for comment 11: political joke
+Label for comment 12: hurrah for sewer workers
+Label for comment 13: joke
+Label for comment 14: rambling praise for sewage workers
+Label for comment 15: joke
+Label for comment 16: joke
+Label for comment 17: agreement
+Label for comment 18: technical reponse to statins joke
+Label for comment 19: joke
+Label for comment 20: hurrah for sewer workers
+Label for comment 22: movie?
+Label for comment 23: joke
+Label for comment 24: joke
+Label for comment 25: movie joke
+Label for comment 26: movie joke
+Label for comment 27: movie joke
+Label for comment 28: joke
+Label for comment 29: Dr Who reference
+Label for comment 30: hurrah for sewage workers
+Label for comment 31: political joke
+Label for comment 32: political joke
+Label for comment 33: political joke
+Label for comment 34: obligatory Guardian CIF stereotyping
+Label for comment 35: political joke
+Label for comment 36: Boris Johnson should clean sewers
+Label for comment 37: joke
+Label for comment 38: political question
+Label for comment 39: political question
+Label for comment 40: political joke
+Label for comment 41: joke
+Label for comment 42: political comment
+Label for comment 43: suggestion for routine checking
+Label for comment 44: joke
+Label for comment 45: comment about CCTV
+Label for comment 46: comment about NSA snooping poop
+Label for comment 47: joke
+Label for comment 48: fatberg monitoring
+Label for comment 49: Ghostbusters again
+Label for comment 50: joke, maybe
+Label for comment 51: joke
+Label for comment 52: tenuous link
+Label for comment 53: biodiesel is good
+Label for comment 54: relevant
+Label for comment 55: comment about biodiesel
+Label for comment 56: joke
+Label for comment 57: McDonalds joke
+Label for comment 58: joke
+Label for comment 61: allegation of rudeness
+Label for comment 62: misleading Guardian headlines
+Label for comment 63: more bad jokes follow
+Label for comment 64: joke
+Label for comment 65: joke
+Label for comment 66: joke
+Label for comment 67: political joke
+Label for comment 68: joke
+Label for comment 69: joke
+Label for comment 70: people need to think about what they flush; biodiesel is good
+Label for comment 71: restaurants, not private houses, are flushing grease
+Label for comment 72: unclear about flushable wipes
+Label for comment 73: flushable wipes can be a problem
+Label for comment 74: complaint about other comment
+Label for comment 75: more on wet wipes
+Label for comment 76: complaint about other comment
+Label for comment 77: gross story
+Label for comment 78: wipes are not all the same
+Label for comment 79: complaint about other comment
+Label for comment 80: joke
+Label for comment 81: Boris joke
+Label for comment 82: Boris joke
+Label for comment 83: more Dr Who
+Label for comment 84: movie idea/joke
+Label for comment 85: Anecdote about combined problem of flushing bad stuff with tree damage to sewers
+Label for comment 86: joke, appetite
+Label for comment 87: joke, appetite
+Label for comment 88: joke, appetite
+Label for comment 89: joke, appetite
+Label for comment 90: joke
+Label for comment 91: joke
+Label for comment 92: units of measure
+Label for comment 93: units of measure
+Label for comment 94: units of measure
+Label for comment 95: joke
+Label for comment 96: joke
+Label for comment 97: joke
+Label for comment 98: joke, fast food
+Label for comment 99: joke, fast food
+Label for comment 100: joke
+Label for comment 101: gross anecdote about cattle feed
+Label for comment 102: joke, junk food
+
+GROUPS
+
+GROUP: praise for sewage workers, concerns about pay and conditions
+Label for comment 1 [PatriciaPJ]: sewage heroes
+Label for comment 2 [JulianG]: probably poorly paid
+Label for comment 7 [AShortFuse]: joke but sympathetic to workers
+Label for comment 12 [almorr]: hurrah for sewer workers
+Label for comment 14 [FreakyChucker1]: rambling praise for sewage workers
+Label for comment 20 [IvanDrago1]: hurrah for sewer workers
+Label for comment 30 [HermitBee]: hurrah for sewage workers
+
+GROUP: jokes and movie/TV references
+Label for comment 3 [iamnotwise]: joke
+Label for comment 4 [Dunnyboy]: joke
+Label for comment 5 [MrHeathcliff]: appreciation of joke
+Label for comment 6 [fflump]: joke
+Label for comment 8 [Hartabuna]: joke
+Label for comment 9 [farabundovive]: joke
+Label for comment 11 [londonnites123]: political joke
+Label for comment 13 [horse69outside]: joke
+Label for comment 15 [ponk2k]: joke
+Label for comment 16 [alanomaly]: joke
+Label for comment 17 [JulianG]: agreement
+Label for comment 22 [ArtCritic]: movie?
+Label for comment 23 [dtap]: joke
+Label for comment 24 [Flumpasaurus]: joke
+Label for comment 25 [ArtCritic]: movie joke
+Label for comment 26 [AshleyPomeroy]: movie joke
+Label for comment 27 [unhombredesw19]: movie joke
+Label for comment 28 [mooreoj]: joke
+Label for comment 29 [kiwmaq]: Dr Who reference
+Label for comment 19 [rustlebland]: joke
+Label for comment 31 [XenusVolcano]: political joke
+Label for comment 32 [johnypaty]: political joke
+Label for comment 33 [redduke749]: political joke
+Label for comment 35 [flyingdutchman]: political joke
+Label for comment 36 [Reflexive]: Boris Johnson should clean sewers
+Label for comment 37 [iamnotwise]: joke
+Label for comment 38 [JWhite2479]: political question
+Label for comment 39 [iamnotwise]: political question
+Label for comment 40 [Enheduanna]: political joke
+Label for comment 41 [SteveDavies01]: joke
+Label for comment 42 [jobloobird]: political comment
+Label for comment 44 [LagosKev]: joke
+Label for comment 45 [Hartabuna]: comment about CCTV
+Label for comment 46 [kthxbye]: comment about NSA snooping poop
+Label for comment 47 [BrianHarry]: joke
+Label for comment 49 [MorganFreechild]: Ghostbusters again
+Label for comment 50 [GordonBrown12]: joke, maybe
+Label for comment 51 [kthxbye]: joke
+Label for comment 56 [SpiritedAway]: joke
+Label for comment 57 [Martin_C]: McDonalds joke
+Label for comment 58 [JohnA23]: joke
+Label for comment 63 [MyFlippinValentine]: more bad jokes follow
+Label for comment 64 [globeprober]: joke
+Label for comment 65 [iamnotwise]: joke
+Label for comment 66 [fflump]: joke
+Label for comment 67 [kthxbye]: political joke
+Label for comment 68 [fflump]: joke
+Label for comment 69 [Docroddy]: joke
+Label for comment 80 [GenHernandez]: joke
+Label for comment 81 [pCareca]: Boris joke
+Label for comment 82 [Lightfinger]: Boris joke
+Label for comment 83 [conanthebikeman]: more Dr Who
+Label for comment 84 [Shoe]: movie idea/joke
+Label for comment 86 [Vulcan1969]: joke, appetite
+Label for comment 87 [iamnotwise]: joke, appetite
+Label for comment 88 [Vulcan1969]: joke, appetite
+Label for comment 89 [iamnotwise]: joke, appetite
+Label for comment 90 [JohnnieGoat]: joke
+Label for comment 91 [BrianHarry]: joke
+Label for comment 92 [TVwriter]: units of measure
+Label for comment 93 [muscleguy]: units of measure
+Label for comment 94 [necroflange]: units of measure
+Label for comment 95 [willonone]: joke
+Label for comment 96 [CaressOfSteel]: joke
+Label for comment 97 [JohnDory]: joke
+Label for comment 98 [iamnotwise]: joke, fast food
+Label for comment 99 [T0nyN]: joke, fast food
+Label for comment 100 [epinoa]: joke
+Label for comment 102 [JohnDory]: joke, junk food
+
+GROUP: medical discussion of statins
+Label for comment 10 [iamnotwise]: OT medical question
+Label for comment 18 [Mischieftess]: technical reponse to statins joke
+
+GROUP: serious suggestions about the problem
+Label for comment 43 [toffer9]: suggestion for routine checking
+Label for comment 48 [gotet]: fatberg monitoring
+Label for comment 52 [LondonManc]: tenuous link
+
+SUBGROUP: use fat for biodiesel
+Label for comment 53 [Tonester7]: biodiesel is good
+Label for comment 54 [Illinoisblue]: relevant
+Label for comment 55 [theoldManxman]: comment about biodiesel
+Label for comment 70 [Circlesonic]: people need to think about what they flush; biodiesel is good
+
+SUBGROUP: think about what you flush
+Label for comment 70 [Circlesonic]: people need to think about what they flush; biodiesel is good
+Label for comment 71 [muscleguy]: restaurants, not private houses, are flushing grease
+Label for comment 72 [Alexandria]: unclear about flushable wipes
+Label for comment 73 [T0nyN]: flushable wipes can be a problem
+Label for comment 75 [siff]: more on wet wipes
+Label for comment 78 [JohnnieGoat]: wipes are not all the same
+Label for comment 85 [JohnnieGoat]: Anecdote about combined problem of flushing bad stuff with tree damage to sewers
+Label for comment 77 [noirnoirnoir]: gross story
+
+GROUP: complaints about other commenters, the Guardian
+Label for comment 61 [pickledshrew]: allegation of rudeness
+Label for comment 62 [Lainwilts]: misleading Guardian headlines
+Label for comment 74 [ocdc]: complaint about other comment
+Label for comment 76 [elcid96]: complaint about other comment
+Label for comment 79 [Monty84]: complaint about other comment
+Label for comment 34 [CouchSlob]: obligatory Guardian CIF stereotyping
+
+GROUP: miscellaneous
+Label for comment 101 [bobble4293]: gross anecdote about cattle feed
+
+UNCONSTRAINED SUMMARY
+
+Seven commenters expressed praise for the sewage workers; some of those were concerned about their pay and conditions.
+
+Two comments related to statins, following on from jokes about them.
+
+Several comments seriously addressed the problem.  Some of these discussed using fat to make biodiesel (which some comments said wouldn't work on technical grounds).  Most were concerned about people flushing things that shouldn't go down the sewer anyway.
+
+Six comments were complaints about other commenters, Guardian readers, or the Guardian.
+
+The majority of the comments were jokes or facetious remarks, including unfavourable political comments (especially about Boris Johnson and other Tory politicians), references to films and TV shows, silly suggestions for films, and remarks about junk/fast food.
+
+One comment discussed the use of used fat in cattle feed before it was banned.
+
+CONSTRAINED SUMMARY
+
+Seven commenters expressed praise for the sewage workers; some of those were concerned about their pay and conditions.
+
+Two comments related (seriously) to statins, following on from jokes about them.
+
+Several comments seriously addressed the problem.  Some of these discussed using fat to make biodiesel (which some comments said wouldn't work on technical grounds).  Most were concerned about people flushing things that shouldn't go down the sewer anyway.  Some pointed out that the fatberg problem is caused by restaurants, not houses.
+
+Six comments were complaints about other commenters, Guardian readers in general, and the Guardian headline writers.
+
+The majority of the comments were jokes or facetious remarks, including unfavourable political comments (especially about Boris Johnson and other Tory politicians), references to films and TV shows, silly suggestions for films, and remarks about junk food and fast food.
+
+One comment discussed the use of used fat in cattle feed before it was banned.
+
+BACK LINKING
+
+Seven commenters expressed praise for the sewage workers; some of those were concerned about their pay and conditions.
+(Sub)GroupNames:
+- GROUP: praise for sewage workers, concerns about pay and conditions
+
+The majority of the comments were jokes or facetious remarks, including unfavourable political comments (especially about Boris Johnson and other Tory politicians), references to films and TV shows, silly suggestions for films, and remarks about junk food and fast food.
+(Sub)GroupNames:
+- GROUP: jokes and movie/TV references
+
+Two comments related (seriously) to statins, following on from jokes about them.
+(Sub)GroupNames:
+- GROUP: medical discussion of statins
+
+Several comments seriously addressed the problem.
+(Sub)GroupNames:
+- GROUP: serious suggestions about the problem
+- SUBGROUP: use fat for biodiesel
+- SUBGROUP: think about what you flush
+
+Some of these discussed using fat to make biodiesel (which some comments said wouldn't work on technical grounds).
+(Sub)GroupNames:
+- SUBGROUP: use fat for biodiesel
+
+Most were concerned about people flushing things that shouldn't go down the sewer anyway.
+(Sub)GroupNames:
+- SUBGROUP: think about what you flush
+
+Some pointed out that the fatberg problem is caused by restaurants, not houses.
+(Sub)GroupNames:
+- SUBGROUP: think about what you flush
+
+Six comments were complaints about other commenters, Guardian readers in general, and the Guardian headline writers.
+(Sub)GroupNames:
+- GROUP: complaints about other commenters, the Guardian
+
+One comment discussed the use of used fat in cattle feed before it was banned.
+(Sub)GroupNames:
+- GROUP: miscellaneous

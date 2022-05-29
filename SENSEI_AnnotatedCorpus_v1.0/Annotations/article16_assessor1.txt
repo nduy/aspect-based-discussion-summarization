@@ -1,0 +1,300 @@
+LABELS
+
+Label for comment 1: Technicality: Has an issue with the expression of article
+Label for comment 2: Technicality: Says article is correct
+Label for comment 3: Technicality: Insists previous claim is right
+Label for comment 4: Climate change: Flooding will happen more often in the future
+Label for comment 5: Negative against government: Nothing gets done
+Label for comment 6: Technicality: Previous comment was correct
+Label for comment 7: Frequency: No-one really know how long it will be until another major flood happens.
+Label for comment 8: Frequency: Past records can predict future flooding
+Label for comment 9: Climate change: Flooding will not increase in future
+Label for comment 10: Climate change: Rainfall will increase, and then so will flooding levels
+Label for comment 11: Charles Positive: Should be allowed to speak his mind more often
+Label for comment 12: Charles: Owns too much land
+Label for comment 13: Charles: Most people do not care about his opinions and he is able to respond
+Label for comment 14: Charles: Should give back to the public more
+Label for comment 15: Charles: Should donate more to floods
+Label for comment 16: Charles: Suggests only those related to Prince could defend his actions
+Label for comment 17: Charles Positive: Would be a good King because he takes in interest in issues
+Label for comment 18: Charles: Only cares when the cameras are rolling
+Label for comment 19: Charles: Can't believe that another poster would feel positively towards Prince
+Label for comment 20: Charles: Land he owns was stolen by anscestors
+Label for comment 21: Charles: Only cares when cameras are rolling
+Label for comment 22: Charles: Does not believe his land was stolen by ancestors
+Label for comment 23: Charles: Does not agree that he makes a positive impact on the country
+Label for comment 24: Anti-government: Prime Minister should visit
+Label for comment 25: Anti-government: Government should care more
+Label for comment 26: Unknown meaning
+Label for comment 27: Anti-government: Government pretends to care, but won't visit
+Label for comment 28: Anti-government: Politicans scared to visit floods
+Label for comment 29: Anti-government:
+Label for comment 30: Charles: Doesn't like people on lower incomes
+Label for comment 31: Anti-government: Cameron doesn't care
+Label for comment 32: Anti-government: Cameron doesn't care
+Label for comment 33: Response
+Label for comment 34: Response
+Label for comment 35: Anti-government
+Label for comment 36: Charles: Visit won't help people with flooded homes
+Label for comment 37: Anti-government:
+Label for comment 38: Charles positive: Doesn't agree that his visit won't help people with flooded homes
+Label for comment 39: Charles positive: He does charity work
+Label for comment 40: Charles: Has not worked for what he has
+Label for comment 41: Charles: has an easy life
+Label for comment 42: Charles: has not really done anything to help
+Label for comment 43: Charles: Uses public money
+Label for comment 44: Charles: Could do more
+Label for comment 45: Charles: Money is not his own to give away
+Label for comment 46: Anti-government: Problems stem back to government cuts
+Label for comment 47: UKIP: points out party got rid of outspoken member
+Label for comment 48: Charles positive: Doing more than politicians
+Label for comment 49: Charles: Can afford to give aid
+Label for comment 50: Charles: He's doing more than others
+Label for comment 51: Charles: He can afford to donate
+Label for comment 52: Charles: I donate without being royalty
+Label for comment 53: Charles: Could do more
+Label for comment 54: Charles positive: Doing more than polticians
+Label for comment 55: Charles: It's not his money to spend
+Label for comment 56: Charles: Could do more
+Label for comment 57: Charles: does not like him
+Label for comment 58: Charles positive: He's just offering opinions, not forcing changes to be made to projects
+Label for comment 59: Anti-government: Should do more to tackle flooding
+Label for comment 60: Charles: Is involved in politics
+Label for comment 61: Flooding: Fault of homeowners for buying in the flood plain
+Label for comment 62: Charles: He's no worse than any other lobbyist
+Label for comment 63: Charles: Over-uses his powers
+Label for comment 64: Anti-government: Cameron should visit
+Label for comment 65: Anti-government: Minister should visit
+Label for comment 66: Pro-government: May have expressed concern in another way
+Label for comment 67: Pro-government: Minister did visit
+Label for comment 68: Pro-government: Minister did visit
+Label for comment 69: Anti-government: Environment minister is ignorant
+Label for comment 70: Anti-government: Cameron is a poor prime minister
+Label for comment 71: Charles: Had nothing to lose
+Label for comment 72: Anti-government: Cameron should visit
+Label for comment 73: Anti-government: Cameron should visit
+Label for comment 74: Anti-government: Should be more accontable
+Label for comment 75: Unknown meaning
+Label for comment 76: Anti-government: Should not make as many appearances
+Label for comment 77: Anti-government: Should not make as many appearances
+Label for comment 78: Anti-government: Don't care about people -they want to frack Somerset
+Label for comment 79: Anti-government: Don't care about people -they want to frack Somerset
+Label for comment 80: Anti-government: Don't care about people -they want to frack Somerset
+Label for comment 81: Gramma
+Label for comment 82: Anti-government: Don't care about people -they want to frack Somerset
+Label for comment 83: Comment: Doesn't like people from Somerset
+Label for comment 84: Charles positive: Should do more to make a difference, like lobby government
+Label for comment 85: Pro-government: they are managing the situation
+Label for comment 86: Anti-government: funding cuts don't help
+Label for comment 87: Anti-government: Rich politicians and party donors should donate
+Label for comment 88: Anti-government: Does not like Cameron
+Label for comment 89: Charles: Money he donated does not belong to him
+Label for comment 90: Anti-government: Politicians visiting would not help
+Label for comment 91: Anti-government: Their visit would make a difference
+Label for comment 92: Anti-government: Their visit would make a difference
+Label for comment 93: Anti-government: Politicians visiting would not help
+Label for comment 94: Unknown meaning
+Label for comment 95: Anti-government: Their visit would make a difference
+Label for comment 96: Pro-government: They have a lot of responsibilities and that is probably why they have not visited
+Label for comment 97: Anti-government: Politicians don't have any real world experience
+Label for comment 98: Anti-government: Only care about places they can benefit from helping
+Label for comment 99: Anti-government: Only care about places they can benefit from helping
+Label for comment 100: Anti-government: Won't make promises, because they will break them in the future
+
+GROUPS
+
+GROUP: Anti-government
+Label for comment 5 [scrotgro]: Anti-government: Nothing gets done
+Label for comment 24 [YorkerBo]: Anti-government: Prime Minister should visit
+Label for comment 25 [LoopyTun]: Anti-government: Government should care more
+Label for comment 27 [nadreck]: Anti-government: Government pretends to care, but won't visit
+Label for comment 28 [scrotgro]: Anti-government: Politicans scared to visit floods
+Label for comment 29 [hertsred]: Anti-government:
+Label for comment 31 [Whetherb]: Anti-government: Cameron doesn't care
+Label for comment 32 [RonJB]: Anti-government: Cameron doesn't care
+Label for comment 35 [teaandch]: Anti-government
+Label for comment 37 [00jebus]: Anti-government:
+Label for comment 46 [citizenJ]: Anti-government: Problems stem back to government cuts
+Label for comment 59 [rollerco]: Anti-government: Should do more to tackle flooding
+Label for comment 64 [MakeMPsO]: Anti-government: Cameron should visit
+Label for comment 65 [VSLVSL]: Anti-government: Minister should visit
+Label for comment 69 [nocod]: Anti-government: Environment minister is ignorant
+Label for comment 70 [rollerco]: Anti-government: Cameron is a poor prime minister
+Label for comment 72 [MikeRich]: Anti-government: Cameron should visit
+Label for comment 73 [smeg40]: Anti-government: Cameron should visit
+Label for comment 74 [schwitte]: Anti-government: Should be more accontable
+Label for comment 76 [MELSM]: Anti-government: Should not make as many appearances
+Label for comment 77 [citizenJ]: Anti-government: Should not make as many appearances
+Label for comment 78 [Willemm]: Anti-government: Don't care about people -they want to frack Somerset
+Label for comment 79 [MikeRich]: Anti-government: Don't care about people -they want to frack Somerset
+Label for comment 80 [lichking]: Anti-government: Don't care about people -they want to frack Somerset
+Label for comment 82 [Johnnybo]: Anti-government: Don't care about people -they want to frack Somerset
+Label for comment 90 [uncollec]: Anti-government: Politicians visiting would not help
+Label for comment 91 [00jebus]: Anti-government: Their visit would make a difference
+Label for comment 92 [MrBluebe]: Anti-government: Their visit would make a difference
+Label for comment 93 [uncollec]: Anti-government: Politicians visiting would not help
+Label for comment 95 [citizenJ]: Anti-government: Their visit would make a difference
+Label for comment 97 [venusdew]: Anti-government: Politicians don't have any real world experience
+Label for comment 98 [Grimley]: Anti-government: Only care about places they can benefit from helping
+Label for comment 99 [worksfor]: Anti-government: Only care about places they can benefit from helping
+Label for comment 100 [TheBoyo]: Anti-government: Won't make promises, because they will break them in the future
+Label for comment 86 [VSLVSL]: Anti-government: funding cuts don't help
+Label for comment 87 [Waterkan]: Anti-government: Rich politicians and party donors should donate
+Label for comment 88 [friarjoh]: Anti-government: Does not like Cameron
+
+GROUP: Pro-government
+Label for comment 66 [Maclie]: Pro-government: May have expressed concern in another way
+Label for comment 67 [citizenJ]: Pro-government: Minister did visit
+Label for comment 68 [citizenJ]: Pro-government: Minister did visit
+Label for comment 96 [citizenJ]: Pro-government: They have a lot of responsibilities and that is probably why they have not visited
+Label for comment 85 [Fundamen]: Pro-government: they are managing the situation
+
+GROUP: Flooding and Climate Change
+Label for comment 4 [hertsred]: Climate change: Flooding will happen more often in the future
+Label for comment 7 [bpowell5]: Frequency: No-one really know how long it will be until another major flood happens.
+Label for comment 8 [SinkingS]: Frequency: Past records can predict future flooding
+Label for comment 9 [SinkingS]: Climate change: Flooding will not increase in future
+Label for comment 10 [hertsred]: Climate change: Rainfall will increase, and then so will flooding levels
+Label for comment 61 [BobJanov]: Flooding: Fault of homeowners for buying in the flood plain
+
+GROUP: Prince Charles
+Label for comment 12 [Agir]: Charles: Owns too much land
+Label for comment 13 [VSLVSL]: Charles: Most people do not care about his opinions and he is able to respond
+Label for comment 14 [FrankLit]: Charles: Should give back to the public more
+Label for comment 15 [lierbag]: Charles: Should donate more to floods
+Label for comment 16 [vikingbo]: Charles: Suggests only those related to Prince could defend his actions
+Label for comment 18 [Streatha]: Charles: Only cares when the cameras are rolling
+Label for comment 19 [Helen121]: Charles: Can't believe that another poster would feel positively towards Prince
+Label for comment 20 [Grannies]: Charles: Land he owns was stolen by anscestors
+Label for comment 21 [petertys]: Charles: Only cares when cameras are rolling
+Label for comment 22 [Bangorst]: Charles: Does not believe his land was stolen by ancestors
+Label for comment 23 [Ossie Bu]: Charles: Does not agree that he makes a positive impact on the country
+Label for comment 30 [YorkerBo]: Charles: Doesn't like people on lower incomes
+Label for comment 36 [60boy]: Charles: Visit won't help people with flooded homes
+Label for comment 40 [Addicks1]: Charles: Has not worked for what he has
+Label for comment 41 [Agir]: Charles: has an easy life
+Label for comment 42 [excathed]: Charles: has not really done anything to help
+Label for comment 43 [60boy]: Charles: Uses public money
+Label for comment 44 [Hanzo76]: Charles: Could do more
+Label for comment 45 [Streatha]: Charles: Money is not his own to give away
+Label for comment 49 [appalled]: Charles: Can afford to give aid
+Label for comment 50 [Waterkan]: Charles: He's doing more than others
+Label for comment 51 [SoundWay]: Charles: He can afford to donate
+Label for comment 52 [appalled]: Charles: I donate without being royalty
+Label for comment 53 [Youthema]: Charles: Could do more
+Label for comment 55 [Streatha]: Charles: It's not his money to spend
+Label for comment 56 [citizenJ]: Charles: Could do more
+Label for comment 57 [hertsred]: Charles: does not like him
+Label for comment 60 [hertsred]: Charles: Is involved in politics
+Label for comment 62 [BobJanov]: Charles: He's no worse than any other lobbyist
+Label for comment 63 [hertsred]: Charles: Over-uses his powers
+Label for comment 71 [appalled]: Charles: Had nothing to lose
+Label for comment 89 [Streatha]: Charles: Money he donated does not belong to him
+
+SUBGROUP: Prince Charles: Positive
+Label for comment 11 [spinnysp]: Charles Positive: Should be allowed to speak his mind more often
+Label for comment 17 [obviousp]: Charles Positive: Would be a good King because he takes in interest in issues
+Label for comment 38 [Acamar]: Charles positive: Doesn't agree that his visit won't help people with flooded homes
+Label for comment 39 [MrBluebe]: Charles positive: He does charity work
+Label for comment 48 [BobJanov]: Charles positive: Doing more than politicians
+Label for comment 54 [jessthec]: Charles positive: Doing more than polticians
+Label for comment 58 [BobJanov]: Charles positive: He's just offering opinions, not forcing changes to be made to projects
+Label for comment 84 [00jebus]: Charles positive: Should do more to make a difference, like lobby government
+
+GROUP: miscellaneous
+Label for comment 1 [Fundamen]: Technicality: Has an issue with the expression of article
+Label for comment 2 [jayant]: Technicality: Says article is correct
+Label for comment 3 [Fundamen]: Technicality: Insists previous claim is right
+Label for comment 6 [Fundamen]: Technicality: Previous comment was correct
+Label for comment 26 [Gedl]: Unknown meaning
+Label for comment 33 [StanDard]: Response
+Label for comment 34 [Whetherb]: Response
+Label for comment 47 [Bangorst]: UKIP: points out party got rid of outspoken member
+Label for comment 75 [buckler]: Unknown meaning
+Label for comment 81 [junks]: Grammar
+Label for comment 83 [Shaukit]: Comment: Doesn't like people from Somerset
+Label for comment 94 [00jebus]: Unknown meaning
+
+UNCONSTRAINED SUMMARY
+
+The comments were mostly critical. They normally focused on one of two topics to be negative about - Prince Charles or the government. 
+
+The main issues with the government, specifically David Cameron and the Environmental Minister, was that they did not visit the areas affected by the floods. This was thought to show that they did not care about the people that were currently suffering from the extensive flooding. This led to criticism of the government in general. Some people thought that the government should not visit, but this generally was accompanied by other negative opinions about other things that the government has done such as not giving enough money to help victims of the floods. 
+
+Some people were for the government, saying that they probably had other important things to do that were stopping them from visiting the floods. 
+
+There were a lot of negative comments about Prince Charles, even though he donated a lot of money to help the victims of the floods. People said that the money was not his own, because it was actually taxpayers money or what had been 'stolen' by his ancestors. They also said he should not be as involved in political matters. Some were concerned that he was getting to close to politicians. 
+
+A much smaller number of people were positive towards him. They thought he was doing more than politicians to show that he cared, and they thought it was good that he was donating money. 
+
+There were a few comments about the floods themselves, such as discussion about if the frequency and severity of flooding will go up or down in the coming years.
+
+CONSTRAINED SUMMARY
+
+The comments were mostly critical. They normally focused on one of two topics to be negative about - Prince Charles or the government. 
+
+The main issues with the government, specifically David Cameron and the Environmental Minister, were that they did not visit the areas affected by the floods. This was thought to show that they did not care about the people that were currently suffering from the extensive flooding. This led to criticism of the government in general. Some people thought that the government should not visit, but they usually still thought negatively of the government. 
+
+Others were positive about the government, saying that politicians probably had other important things to do that were stopping them from visiting the floods. 
+
+There were a lot of negative comments about Prince Charles, even though he donated a lot of money to help the victims of the floods. People said that the money was not his own, because it was actually taxpayers money or what had been 'stolen' by his ancestors. They also said he should not be as involved in political matters. 
+
+A much smaller number of people were positive towards him. They thought he was doing more than politicians to show that he cared, and they thought it was good that he was donating money. 
+
+There were a few comments about the floods themselves, such as discussion about if the frequency and severity of flooding will go up or down in the coming years.
+
+BACK LINKING
+
+The comments were mostly critical.
+(Sub)GroupNames:
+- GROUP: Anti-government
+- GROUP: Prince Charles
+
+They normally focused on one of two topics to be negative about - Prince Charles or the government.
+(Sub)GroupNames:
+- GROUP: Anti-government
+- GROUP: Prince Charles
+
+The main issues with the government, specifically David Cameron and the Environmental Minister, were that they did not visit the areas affected by the floods.
+(Sub)GroupNames:
+- GROUP: Anti-government
+
+This was thought to show that they did not care about the people that were currently suffering from the extensive flooding.
+(Sub)GroupNames:
+- GROUP: Anti-government
+
+This led to criticism of the government in general.
+(Sub)GroupNames:
+- GROUP: Anti-government
+
+Some people thought that the government should not visit, but they usually still thought negatively of the government.
+(Sub)GroupNames:
+- GROUP: Anti-government
+
+Others were positive about the government, saying that politicians probably had other important things to do that were stopping them from visiting the floods.
+(Sub)GroupNames:
+- GROUP: Pro-government
+
+There were a lot of negative comments about Prince Charles, even though he donated a lot of money to help the victims of the floods.
+(Sub)GroupNames:
+- GROUP: Prince Charles
+
+People said that the money was not his own, because it was actually taxpayers money or what had been 'stolen' by his ancestors.
+(Sub)GroupNames:
+- GROUP: Flooding and Climate Change
+
+They also said he should not be as involved in political matters.
+(Sub)GroupNames:
+- GROUP: Prince Charles
+
+A much smaller number of people were positive towards him.
+(Sub)GroupNames:
+- SUBGROUP: Prince Charles: Positive
+
+They thought he was doing more than politicians to show that he cared, and they thought it was good that he was donating money.
+(Sub)GroupNames:
+- SUBGROUP: Prince Charles: Positive
+
+There were a few comments about the floods themselves, such as discussion about if the frequency and severity of flooding will go up or down in the coming years.
+(Sub)GroupNames:
+- GROUP: Flooding and Climate Change

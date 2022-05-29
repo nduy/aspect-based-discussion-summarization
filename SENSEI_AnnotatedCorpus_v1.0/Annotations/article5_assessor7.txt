@@ -1,0 +1,271 @@
+LABELS
+
+Label for comment 1: Brown only cares about his politician career; political career ambition
+Label for comment 2: Hillary clinton also only cares about her political career?; Hilary Clinton doesn't take exact stance on women's issues?; political career ambition
+Label for comment 4: Brown claims to be fiscal conservative but plans to spend a lot on welfare; politicoeconomic philosophy;
+Label for comment 5: Hillary only had state level office in New york; political career ambition;
+Label for comment 6: political career ambition; all politicians only think of their political careers;
+Label for comment 7: Moving state to run for office; Both Hillary and Scott Brown moved once to run for the state office; ; Statement that Brown moves from state to state is inaccurate;
+Label for comment 8: Moving state to run for office; Brown moved only once, not repeatedly;
+Label for comment 10: Moving state to run for office; justification; Hillary Clinton only moved once for state office;
+Label for comment 12: New Whig Party hasn't endorsed Hillary or Brown; Both Hillary and Brown are carpetbeggers; Moving state to run for office;
+Label for comment 13: question; information seeking; Hillary's position in Arkansas; Implies how often did she move; Moving state to run for office;
+Label for comment 14: Moving state to run for office; Scott Brown was born in New Hampshire, so not moving states;
+Label for comment 15: Moving state to run for office; Brown's place of brith; ; Born in hapshire, but moved to Mass when under a year old; Implies: He did move state
+Label for comment 16: Politicoeconomic philosophy; Republicans only pretend to be fiscally conversvative, they channel the money to people who vote for them;
+Label for comment 17: Unclear reference; Who is she: Hillary, Jeanne Shaheen?;
+Label for comment 19: republican political strategy out of control; splitting California in 6 states to gain control over congress
+Label for comment 20: republican political strategy out of control; splitting California into 6 states is not republican idea; Democrats are hypocritical as they also do gerrymandering and endorse it when they do it themselves
+Label for comment 24: The journalist should have provoked Brown to physically jurt him. This would end Brown's campaign; Physical fight with Brown
+Label for comment 25: Journalist's reply; Physical fight with Brown;
+Label for comment 26: Fighting would have been courageous and win sympathy, money and ideological war; Physical fight with Brown;
+Label for comment 27: Physical fight with Brown; Journalists reply; Flight is the right tactic;
+Label for comment 28: Physical fight with Brown; Fighting would benefit jounalist's career, morality and reputation and end Brown's campaign.;
+Label for comment 29: Physical fight with Brown; John Oliver would have fought; Fight needs to be recorded on a phone camera;
+Label for comment 30: Physical fight with Brown; The journalsit shouldn't have fought, he behaved professionally;
+Label for comment 31: A journalists job is to speak truth to power; a journalist's job;
+Label for comment 32: Physical fight with Brown; Journalist shouldn't have fought; Brown folded not journalist;
+Label for comment 33: Physical fight with Brown; Journalist shouldn't have fought; Republicans deal dirty with media not under their control;
+Label for comment 34: Brown folded not journalist;
+Label for comment 35: Physical fight with Brown; Journalist shouldn't have fought; Dealing with media in political campaigns contrasts with America's portrait as an open and free country.
+Label for comment 37: Physical fight with Brown; Journalist shouldn't have fought;
+Label for comment 38: Story evaluation; Brown folded;
+Label for comment 39: Chicago Democratic police attacking portersters inside the democratic convention;
+Label for comment 40: Physical fight with Brown; Journalist shouldn't have fought; Brown folded;
+Label for comment 41: Republicans hypocrisy relating to government interference;
+Label for comment 44: What happened in the story is representative of US politics, particularly Republicans; No public service in US politics only personal advantage and "clubs"; political career ambition; political lobbys
+Label for comment 45: Physical fight with Brown; Michael Grimm actually assaulted a reporter;
+Label for comment 46: political career ambition; political lobbys; Chuck Schumer took money from Wll Street Bankers;
+Label for comment 47: Chuck Schumer also doesn't answer on Hobby Lobby;
+Label for comment 48: political lobbys; republicans are weighted in favour of male, white, Christian;
+Label for comment 50: political career ambitions; Democrats ruined Detroit; Personal wealth and contracts to family and friends;
+Label for comment 51: healthcare in America; the story reflects the situation of healthcare in America that is totally broken;
+Label for comment 53: healthcare in America; US should have modeled healthcare after other successful coutries instead inventing its own inefficient system;
+Label for comment 54: HSA is better for healthcare; healthcare in America;
+Label for comment 55: The reporting is good in the article; the journalist made a good job; Evaluating journalist's actions;
+Label for comment 56: USA politicians should be subject to public questioning;
+Label for comment 59: political career ambition; Brown is only after self-interest; Brown would sell out New Hampshire to big companies;
+Label for comment 62: Evaluating journalists' actions; journalists usually don't have an opportunity to ask questions; Ambush journalism;
+Label for comment 63: Evaluating journalists' actions; Journalist is reporting independently;
+Label for comment 64: Evaluating journalists' actions; Journalists are supposed to ask questions at political campaigns;
+Label for comment 65: Discussion of ambush journalism; In the US the campaigns are often private events even though hold on public ground; journalistic code of practice;
+Label for comment 66: Libel laws stronger in the UK; journalistic code of practice;
+Label for comment 67: Being more careful doesn't necessarily make one more searching.; journalistic code of practice;
+Label for comment 68: people depend on journalists for information; politicians like to get messages to the people;
+Label for comment 69: journalistic code of practice; the UK's laws merely hold reporting and journalism to a higher standard of factual veracity and accuracy than the 'anything goes' substandards found in the US.;
+Label for comment 72: Brown like Bush and Cheney who also banned journalists from their campaigns;
+Label for comment 77: Scott Browns political discourse is substance free; Brown is going to lose the election;
+Label for comment 80: Brown cares only about Israel conflict;
+Label for comment 83: Brown is afraid to acknowledge his public position;
+Label for comment 84: Brown or Republicans run a repressive police state;
+Label for comment 86: Brown has no power at the moment;
+Label for comment 87: Brown's publicity stunt as Afghanistan veteran while running for office in Mass;
+Label for comment 89: Senator Graham also did a war stund in Iraq;
+Label for comment 90: Brown's attitude to health care for women and children; Brown will loose New Hampshire;
+Label for comment 91: sarcasm;
+Label for comment 92: Browns stance on Catholic hospitals giving mornging after pills to rape victims;
+Label for comment 94: Details on morning after pill;
+Label for comment 95: hoby lobby's attitude to morning after pill; at the employer's discretion to allow access to contraceptives based on regligious believes;
+Label for comment 96: hoby lobby's attitude to morning after pill; employer is an organisation rather than individuals, can't have religious believes;
+Label for comment 99: problems with company deciding on contraception;
+Label for comment 101: Afordable care Act from 2010 still opposed;
+
+GROUPS
+
+GROUP: Brown's and other politician's career ambitions
+Label for comment 1 [Boston2014]: Brown only cares about his politician career; political career ambition
+Label for comment 2 [aleatico]: Hillary clinton also only cares about her political career?; Hilary Clinton doesn't take exact stance on women's issues?; political career ambition;
+label for comment 5 [Longhaultrucker]: Hillary only had state level office in New york; political career ambition;
+Label for comment 6 [ArkEton]: political career ambition; all politicians only think of their political careers;
+Label for comment 59 [knuckles66]: political career ambition; Brown is only after self-interest; Brown would sell out New Hampshire to big companies;
+
+GROUP: moving state to run for office
+Label for comment 7 [aleatico]: Moving state to run for office; Both Hillary and Scott Brown moved once to run for the state office; Statement that Brown moves from state to state is inaccurate;
+Label for comment 8 [aleatico]: Moving state to run for office; Brown moved only once, not repeatedly;
+Label for comment 10 [Longhaultrucker]: Moving state to run for office; justification; Hillary Clinton only moved once for state office;
+Label for comment 12 [aleatico]:  New Whig Party hasn't endorsed Hillary or Brown; Both Hillary and Brown are carpetbeggers; Moving state to run for office;
+Label for comment 13 [aleatico]: question; information seeking; Hillary's position in Arkansas; Implies how often did she move; Moving state to run for office;
+Label for comment 14 [bushwhacked]: Moving state to run for office; Scott Brown was born in New Hampshire, so not moving states;
+Label for comment 15 [aleatico]: Moving state to run for office; Brown's place of brith; Born in Hampshire, but moved to Mass when under a year old; Implies: He did move state
+
+GROUP: Republican's political strategy
+Label for comment 19 [Bob Chuey]: republican political strategy out of control; splitting California in 6 states to gain control over congress
+Label for comment 4 [beathoven]: Brown claims to be fiscal conservative but plans to spend a lot on welfare; politicoeconomic philosophy;
+Label for comment 16 [Anthony Irwin]: Politicoeconomic philosophy; Republicans only pretend to be fiscally conversvative, they channel the money to people who vote for them;
+Label for comment 20 [aleatico]: republican political strategy out of control; splitting California into 6 states is not republican idea Democrats are hypocritical as they also do gerrymandering and endorse it when they do it themselves
+Label for comment 41 [ID7742865]: Republicans hypocrisy relating to government interference;
+
+SUBGROUP: political lobbies: republican lobbies
+Label for comment 44 [nk1402]: What happened in the story is representative of US politics, particularly Republicans; No public service in US politics only personal advantage and "clubs"; political career ambition; political lobbys
+Label for comment 46 [Northeaster]: political career ambition; political lobbys; Chuck Schumer took money from Wll Street Bankers;
+Label for comment 47 [knuckles66]: Chuck Schumer also doesn't answer on Hobby Lobby;
+Label for comment 48 [hrafnkat]: political lobbys; republicans are weighted in favour of male, white, Christian;
+
+SUBGROUP: political lobbies: Democrat lobbies
+Label for comment 50 [waltzaway]: political career ambitions; Democrats ruined Detroit; Personal wealth and contracts to family and friends;
+
+GROUP: splitting California
+Label for comment 19 [Bob Chuey]: republican political strategy out of control; splitting California in 6 states to gain control over congress;
+Label for comment 20 [aleatico]: republican political strategy out of control; splitting California into 6 states is not republican idea; Democrats are hypocritical as they also do gerrymandering and endorse it when they do it themselves
+
+GROUP: the journalist folded
+
+SUBGROUP: the journalist did well not to provoke Brown to physically assault him
+Label for comment 25 [paullewisreporter]: Journalist's reply; Physical fight with Brown;
+Label for comment 27 [Longhaultrucker]: Physical fight with Brown; Journalists reply; Flight is the right tactic;
+Label for comment 30 [Philip W]: Physical fight with Brown; The journalsit shouldn't have fought, he behaved professionally;
+Label for comment 32 [herebutforfortune]: Physical fight with Brown; Journalist shouldn't have fought; Brown folded not journalist;
+Label for comment 33 [Bob Chuey]: Physical fight with Brown; Journalist shouldn't have fought; Republicans deal dirty with media not under their control;
+Label for comment 34 [Carol Spade]: Brown folded not journalist;
+Label for comment 35 [tigi]: Physical fight with Brown; Journalist shouldn't have fought; Dealing with media in political campaigns contrasts with America's portrait as an open and free country.
+Label for comment 37 [grogol]: Physical fight with Brown; Journalist shouldn't have fought;
+Label for comment 38 [MovableContent]: Story evaluation; Brown folded;
+Label for comment 40 [Daver Dave]: Physical fight with Brown; Journalist shouldn't have fought; Brown folded;
+
+SUBGROUP: the journalist should have provoked Brown to physically assault him
+Label for comment 24 [gunnison]: The journalist should have provoked Brown to physically jurt him. This would end Brown's campaign; Physical fight with Brown
+Label for comment 26 [kenalexruss]: Fighting would have been courageous and win sympathy, money and ideological war; Physical fight with Brown;
+Label for comment 28 [gunnison]: Physical fight with Brown; Fighting would benefit jounalist's career, morality and reputation and end Brown's campaign.;
+Label for comment 29 [Corrections]: Physical fight with Brown; John Oliver would have fought; Fight needs to be recorded on a phone camera;
+
+GROUP: evaluation of the article
+
+SUBGROUP: evaluation of the article: positive
+Label for comment 55 [MartiniShaken1]: The reporting is good in the article; the journalist made a good job; Evaluating journalist's actions;
+Label for comment 63 [hoyoku]: Evaluating journalists' actions; Journalist is reporting independently;
+Label for comment 64 [Corrections]: Evaluating journalists' actions; Journalists are supposed to ask questions at political campaigns;
+
+SUBGROUP: independence of reporting
+Label for comment 31 [sdkeller72]: A journalists job is to speak truth to power; a journalist's job;
+Label for comment 62 [aleatico]: Evaluating journalists' actions; journalists usually don't have an opportunity to ask questions; Ambush journalism;
+Label for comment 65 [aleatico]: Discussion of ambush journalism; In the US the campaigns are often private events even though hold on public ground; journalistic code of practice;
+Label for comment 66 [hoyoku]: Libel laws stronger in the UK; journalistic code of practice;
+Label for comment 67 [aleatico]: Being more careful doesn't necessarily make one more searching; journalistic code of practice;
+Label for comment 68 [Johann Olivier]: people depend on journalists for information; politicians like to get messages to the people;
+Label for comment 69 [marshwren]: journalistic code of practice; the UK's laws merely hold reporting and journalism to a higher standard of factual veracity and accuracy than the 'anything goes' substandards found in the US;
+
+GROUP: Republican't dealing with media
+Label for comment 35 [tigi]: Physical fight with Brown; Journalist shouldn't have fought; Dealing with media in political campaigns contrasts with America's portrait as an open and free country.
+Label for comment 33 [Bob Chuey]: Physical fight with Brown; Journalist shouldn't have fought; Republicans deal dirty with media not under their control;
+Label for comment 39 [waltzaway]: Chicago Democratic police attacking protesters inside the democratic convention;
+Label for comment 45 [Zepp]: Physical fight with Brown; Michael Grimm actually assaulted a reporter;
+Label for comment 56 [ukexpat1000]: USA politicians should be subject to public questioning;
+Label for comment 72 [gwpriester]: Brown like Bush and Cheney who also banned journalists from their campaigns;
+
+GROUP: US healthcare system
+Label for comment 51 [Peter Roe]: healthcare in America; the story reflects the situation of healthcare in America that is totally broken;
+Label for comment 53 [Bob Chuey]: healthcare in America; US should have modeled healthcare after other successful coutries instead inventing its own inefficient system;
+Label for comment 54 [waltzaway]: HSA is better for healthcare; healthcare in America;
+
+GROUP: Brown as a politician
+Label for comment 77 [nagej1]: Scott Browns political discourse is substance free; Brown is going to lose the election;
+Label for comment 80 [ByrdSong]: Brown cares only about Israel conflict;
+Label for comment 83 [Adoniran]: Brown is afraid to acknowledge his public position;
+Label for comment 84 [Jazzy J Man]: Brown or Republicans run a repressive police state;
+Label for comment 86 [herebutforfortune]: Brown has no power at the moment;
+Label for comment 87 [Alwick]: Brown's publicity stunt as Afghanistan veteran while running for office in Mass;
+Label for comment 89 [marshwren]: Senator Graham also did a war stund in Iraq;
+Label for comment 90 [FelixOliver]: Brown's attitude to health care for women and children; Brown will loose New Hampshire;
+
+GROUP: Hobby Lobby's (brown's company) policy of no insurance for contraception
+Label for comment 92 [Corrections]: Browns stance on Catholic hospitals giving mornging after pills to rape victims;
+Label for comment 94 [SanJoseGrunge]: Details on morning after pill;
+Label for comment 95 [OXMS38655]: hoby lobby's attitude to morning after pill; at the employer's discretion to allow access to contraceptives based on regligious believes;
+Label for comment 96 [SanJoseGrunge]: hoby lobby's attitude to morning after pill; employer is an organisation rather than individuals, can't have religious believes;
+Label for comment 99 [Corrections]: problems with company deciding on contraception;
+Label for comment 101 [ID3655537]: Afordable care Act from 2010 still opposed;  
+
+GROUP: miscellaneous
+Label for comment 17 [Adam Baum]: Unclear reference; Who is she: Hillary, Jeanne Shaheen?;
+Label for comment 91 [babymamaboy]: sarcasm;
+
+UNCONSTRAINED SUMMARY
+
+Several readers discuss Scott Brown's career ambitions and claim that he only cares about his personal career progress not about public interest. This is also claimed to be true of Hillary Clinton and all politicians. A few commenters add that this is especially true of Republican politicians who only see to satisfy their lobby of white, male, Christian friends. 
+Moving state to run for office is discussed. Most people agree that both Hillary Clinton and Scott Brown moved only once, so saying that they moved from state to state is unfair. 
+One commenter claims that Republican political strategy is out of control, stating the suggestion to split California into six states as evidence. Another commenter refutes this claiming that splitting California is a businessman's idea that has nothing to do with Republican political agenda. 
+One commenter suggests that the journalist should have provoked Scott Brown to physically assault him and put a recording of the fight on social media. This would have been courageous and win the journalist sympathy, fame and money, while ending Brown's campaign. Most posters agree that the journalist shouldn't have provoked violence, and that he acted professionally. Most posters think that it's Brown who showed cowardice, as evidenced by hiding in the toilet, refusing to answer questions and calling police on the journalist. 
+Several commenters commend the journalist for his independet reporting practice. This leads to a discussion of journalistic standards in USA and UK, most commenters agreeing that UK laws ensure higher quality reporting than US ones. 
+There is a brief discussion of USA health service triggered by the comment that the article also reflects how health system is run, i.e. without possibility to question. One commenter notes that USA should have modelled their health system on other successful ones in other countries, instead of inventing their own inefficient one. 
+Several comments portray Brown as a weak politician without influence, who does not have clear political opinions and who has done a publicity stunt by having himself sent to Afghanistan on his National Guard Duty.  Several commenters claim that he is going to loose the elections in New Hampshire. A few commenters criticise the stance of Hobby Lobby company on providing insurance cover for contraceptives based on religious beliefs claiming that institutions cannot have religious beliefs.
+
+CONSTRAINED SUMMARY
+
+Several readers discuss Scott Brown's career ambitions. Like all politicians Brown only cares about his career not about public interest. Few commenters add that Republicans seek to satisfy their lobbies. Most people agree that Scott Brown moved state to run for office only once.  
+One commenter claims that Republican political strategy is out of control, as they suggest to split California into six states. Another commenter refutes this. Splitting California is a businessman's idea not a Republican one. 
+One commenter suggests that the journalist should have provoked Scott Brown to physically assault him and put a recording of the fight on social media to win sympathy, fame and money, while ending Brown's campaign. Most posters agree that the journalist shouldn't have provoked violence, and that he acted professionally. Most posters think that it's Brown who showed cowardice.
+Several commenters commend the journalist for independet reporting. Most commenters agree that UK laws ensure better reporting than US ones. 
+One comment states that the article reflects how health system is run. USA should have modelled their health system on successful ones in other countries, instead of inventing their own inefficient one. 
+Several comments portray Brown as a weak politician without influence, who does not have clear political opinions. Several commenters claim 
+that he is going to loose the elections in New Hampshire. A few commenters criticise Hobby Lobby company's stance on providing insurance cover for contraceptives.
+
+BACK LINKING
+
+Several readers discuss Scott Brown's career ambitions.
+(Sub)GroupNames:
+- GROUP: Brown's and other politician's career ambitions
+
+Like all politicians Brown only cares about his career not about public interest.
+(Sub)GroupNames:
+- GROUP: Brown's and other politician's career ambitions
+
+Few commenters add that Republicans seek to satisfy their lobbies.
+(Sub)GroupNames:
+- SUBGROUP: political lobbies: republican lobbies
+- SUBGROUP: political lobbies: Democrat lobbies
+
+Most people agree that Scott Brown moved state to run for office only once.
+(Sub)GroupNames:
+- GROUP: moving state to run for office
+
+One commenter claims that Republican political strategy is out of control, as they suggest to split California into six states.
+(Sub)GroupNames:
+- GROUP: splitting California
+
+Another commenter refutes this.
+(Sub)GroupNames:
+- GROUP: splitting California
+
+Splitting California is a businessman's idea not a Republican one. (Sub)GroupNames:
+- GROUP: splitting California
+
+One commenter suggests that the journalist should have provoked Scott Brown to physically assault him and put a recording of the fight on social media to win sympathy, fame and money, while ending Brown's campaign.
+(Sub)GroupNames:
+- SUBGROUP: the journalist should have provoked Brown to physically assault him
+
+Most posters agree that the journalist shouldn't have provoked violence, and that he acted professionally.
+(Sub)GroupNames:
+- SUBGROUP: the journalist did well not to provoke Brown to physically assault him
+
+Most posters think that it's Brown who showed cowardice.
+(Sub)GroupNames:
+- SUBGROUP: the journalist did well not to provoke Brown to physically assault him
+
+Several commenters commend the journalist for independet reporting.
+(Sub)GroupNames:
+- SUBGROUP: evaluation of the article: positive
+- SUBGROUP: independence of reporting
+
+Most commenters agree that UK laws ensure better reporting than US ones.
+(Sub)GroupNames:
+- SUBGROUP: independence of reporting
+
+One comment states that the article reflects how health system is run.
+(Sub)GroupNames:
+- GROUP: US healthcare system
+
+USA should have modelled their health system on successful ones in other countries, instead of inventing their own inefficient one.
+(Sub)GroupNames:
+- GROUP: US healthcare system
+
+Several comments portray Brown as a weak politician without influence, who does not have clear political opinions.
+(Sub)GroupNames:
+- GROUP: Brown as a politician
+
+Several commenters claim that he is going to loose the elections in New Hampshire.
+(Sub)GroupNames:
+- GROUP: Brown as a politician
+
+A few commenters criticise Hobby Lobby company's stance on providing insurance cover for contraceptives.
+(Sub)GroupNames:
+- GROUP: Hobby Lobby's (brown's company) policy of no insurance for contraception

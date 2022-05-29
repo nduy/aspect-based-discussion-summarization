@@ -1,0 +1,330 @@
+LABELS
+
+Label for comment 1: Disputes figures used in article
+Label for comment 2: Tries to explain disputed figures
+Label for comment 3: Discusses figures used in article
+Label for comment 4: Economiclly  beneficial for Tesco - makes sense.
+Label for comment 5: Small Housing - concerns of size and quality of housing
+Label for comment 6: Small Housing - Counter - small size keeps price low
+Label for comment 7: Affordable Housing- Houses need to be affordable
+Label for comment 8: Joke - about clubcard points
+Label for comment 9: Joke - about bogof
+Label for comment 10: Joke - finest/value
+Label for comment 11: Small Housing - Housing type needs to meet the demands of what people want. Do they want big gardens? etc.
+Label for comment 12: Opposes pessimism -supports scheme
+Label for comment 13: Sympathy for owners with small housing
+Label for comment 14: Small Housing - small housing getting smaller
+Label for comment 15: Tesco motive is commercial + small housing getting smaller
+Label for comment 16: Housing prices increasing
+Label for comment 17: In support - tackle housing shortage + small houses can be nice, optimism is needed.
+Label for comment 18: Joke -
+Label for comment 19: Size of rooms are the issue, not a lack of garden/car spaces
+Label for comment 20: Irrelevant chat
+Label for comment 21: In support of construction programme - better than wasting land
+Label for comment 22: Houses too expensive down south - affordable homes needed for first time buyers
+Label for comment 23: Houses too expensive - especially down south - small flats the alternative
+Label for comment 24: Apartments == overcrowded streets
+Label for comment 25: Apartments = bustling, thriving high streets
+Label for comment 26: Against overcrowded housing estates + lack of green space
+Label for comment 27: Tesco's motive is commercial - stores in decline - makes sense economically
+Label for comment 28: Questions whether Tesco hoarding unused land added to the housing crises.
+Label for comment 29: Houses too small + poor quality - built to minimum legal requirements and maximise profits
+Label for comment 30: Environmental concerns of building on greenbelt land
+Label for comment 31: Irrelevant chat
+Label for comment 32: Tesco's motives are commercial - unless they invest in community projects
+Label for comment 33: No reason to believe houses will be built on greenbelts?
+Label for comment 34: Blames people buying small houses for the rise in small houses. Demand allows developers to get away with it.
+Label for comment 35: Small housing is the only choice people have + can afford.
+Label for comment 36: reiterates point- don't buy small houses if you don't want them
+Label for comment 37: Owning a propery is human instinct
+Label for comment 38: Environmental concerns of building on greenbelts
+Label for comment 39: Disputes point that owning a home is human instinct.
+Label for comment 40: Houses mark one's property/ human instinct
+Label for comment 41: Joke
+Label for comment 42: Tesco's motives are commercial
+Label for comment 43: Small house joke
+Label for comment 44: Joke
+Label for comment 45: Irrelvant chat
+Label for comment 46: Won't solve housing crises - but may help - joke - every 'little' helps - small houses
+Label for comment 47: Immigration - Against Labour's 'open door policy' - immigration adds to housing crisis
+Label for comment 48: Blames Tesco + private companies for keeping unused land. Politicians enable it because they care more about the corporate wellbeing than citizens. Can't blame immigration
+Label for comment 49: Immigration - more under Cameron than Labour
+Label for comment 50: Immigration - EU to blame
+Label for comment 51: Power of Tesco and other businesses need to be managed - capitalism - blames politicians for allowing Tesco to hoard land.
+Label for comment 52: Labour's mistakes the past
+Label for comment 53: Labour's mitakes still damaging today
+Label for comment 54: Tory's not supporting average man - UK rich - Immigration is used as smokescreen of blame.
+Label for comment 55: Joke
+Label for comment 56: Joke
+Label for comment 57: Joke
+Label for comment 58: Joke
+Label for comment 59: Tesco's motives are commercial
+Label for comment 60: Tax - Scheme shows strong competition in market. Top supermakets contribue a lot in taxation.
+Label for comment 61: In Support- Better to build than waste land. No company is 'altrusic'.
+Label for comment 62: Tax - Aldi pays its tax in UK.
+Label for comment 63: Tax - How much tax on profits does Aldi pay?
+Label for comment 64: Tax - Aldi pay just under 30%
+Label for comment 65: Tax - Aldi pay just under 30%
+Label for comment 66: Irrelvant chat
+Label for comment 67: Tax - better paid workers contribute more in tax to economy
+Label for comment 68: Land - blames local gov for letting them get away with it
+Label for comment 69: Publicity stunt - lots of spare land
+Label for comment 70: Typo correction
+Label for comment 71: Supports it - what people want
+Label for comment 72: Tesco's motives are commercial
+Label for comment 73: In support - new homes are needed
+Label for comment 74: Not a big deal - Small number of houses - less than 1% of what is needed.
+Label for comment 75: Motives are commercial - Tesco overcharged us and forced councils to buy land when there's no option
+Label for comment 76: In support - good idea and tesco don't overcharge.
+Label for comment 77: irrelevant
+Label for comment 78: irrelevant
+Label for comment 79: Joke
+Label for comment 80: Don't shop at Tesco if you don't like it
+Label for comment 81: In Support- Good business plan - need to sell-off assets and gain publicity
+Label for comment 82: Under-paid staff - should benefit from sales of land
+Label for comment 83: Under-paid staff - could buy houses
+Label for comment 84: Under-paid staff - They couldn't afford to buy a house on low wages
+Label for comment 85: Irrelevant chat
+Label for comment 86: Under-paid staff  why should they be offered to staff?
+Label for comment 87: Under-paid staff - build affordable homes for low-paid staff
+Label for comment 88: Under-paid staff - Tesco's not a charity - always find workers elsewhere
+Label for comment 89: Under-paid staff - No supermarket pays their staff enough
+Label for comment 90: Against - Under-paid staff - they are paid enough
+Label for comment 91: Under-paid staff - Against scheme - only supports people earning high wages
+Label for comment 92: Joke
+Label for comment 93: Expensive housing - they won't be affordable
+Label for comment 94: Expensive housing - they won't sell if they are too expensive. Prices match demand
+Label for comment 95: Undeveloped land - better to build than leave empty
+Label for comment 96: Housing market unsustainable - mortgages mean people are forever in debt
+Label for comment 97: Affordable housing - these won't be. 'Affordable' meaningless term, affordable different for everybody
+Label for comment 98: Expensive Housing - things have to change
+Label for comment 99: Irrelevant chat
+Label for comment 100: JOKE
+Label for comment 101: JOKE
+Label for comment 102: JOKE
+Label for comment 103: JOKE
+Label for comment 104: JOKE
+
+GROUPS
+
+GROUP: The houses Tesco will build will be too small:
+Label for comment 5 [JeffersonAirplane]: Small Housing - concerns of size and quality of housing
+Label for comment 6 [TheRunawayFound]: Small Housing - Counter - small size keeps price low
+Label for comment 13 [JeffersonAirplane]: Sympathy for owners with small housing
+Label for comment 11 [kimdriver]: Small Housing - Housing type needs to meet the demands of what people want. Do they want big gardens? etc.
+Label for comment 14 [JeffersonAirplane]: Small Housing - small housing getting smaller
+Label for comment 15 [JeffersonAirplane]: Tesco motive is commercial + small housing getting smaller
+Label for comment 19 [bromley]: Size of rooms are the issue, not a lack of garden/car spaces
+Label for comment 29 [aquagreen]: Houses too small + poor quality - built to minimum legal requirements and maximise profits
+Label for comment 24 [Lawabider]: Apartments == overcrowded streets
+Label for comment 35 [aquagreen]: Small housing is the only choice people have + can afford.
+Label for comment 26 [FridayWaits]: Against overcrowded housing estates + lack of green space
+Label for comment 34 [themuse]: Blames people buying small houses for the rise in small houses. Demand allows developers to get away with it.
+Label for comment 43 [TheseStonesIThrow]: Small house joke - 'every little helps'
+Label for comment 36 [themuse]: reiterates point- don't buy small houses if you don't want them
+
+GROUP: Lack of affordable housing
+Label for comment 7 [beadster]: Affordable Housing- Houses need to be affordable
+Label for comment 16 [JeffersonAirplane]: Housing prices increasing
+Label for comment 22 [beadster]: Houses too expensive down south - affordable homes needed for first time buyers
+Label for comment 23 [beadster]: Houses too expensive - especially down south - small flats the alternative
+Label for comment 93 [Deja]: Expensive housing - they won't be affordable
+Label for comment 94 [kimdriver]: Expensive housing - they won't sell if they are too expensive. Prices match demand
+Label for comment 96 [wishyouwerehere]: Housing market unsustainable - mortgages mean people are forever in debt
+Label for comment 97 [Cynic24]: Affordable housing - these won't be. 'Affordable' meaningless term, affordable different for everybody
+Label for comment 98 [Deja]: Expensive Housing - things have to change
+Label for comment 87 [leansocialist]: Under-paid staff - build affordable homes for low-paid staff
+
+GROUP: Tesco's motives are commercial - to make a profit and not help community
+Label for comment 15 [JeffersonAirplane]: Tesco motive is commercial + small housing getting smaller
+Label for comment 27 [silverthread]: Tesco's motive is commercial - stores in decline - makes sense economically
+Label for comment 32 [neiallswheel]: Tesco's motives are commercial - unless they invest in community projects
+Label for comment 42 [aliasatyl]: Tesco's motives are commercial
+Label for comment 59 [Jungfreud]: Tesco's motives are commercial
+Label for comment 72 [IGiveTheWatchToYou]: Tesco's motives are commercial
+Label for comment 75 [IGiveTheWatchToYou]: Motives are commercial - Tesco overcharged us and forced councils to buy land when there's no option
+
+GROUP: In support of scheme - better than wasting land - economically sensible + help tackle housing crisis
+Label for comment 4 [StockBet]: Economiclly  beneficial for Tesco - makes sense.
+Label for comment 12 [themuse]: Opposes pessimism of commenters -supports scheme
+Label for comment 17 [themuse]: In support - tackle housing shortage + small houses can be nice, optimism is needed.
+Label for comment 21 [Wonkothesane76]: In support of construction programme - better than wasting land
+Label for comment 25 [beadster]: Apartments = bustling, thriving high streets
+Label for comment 27 [silverthread]: Tesco's motive is commercial - stores in decline - makes sense economically
+Label for comment 46 [reformedoffender]: Won't solve housing crises - but may help - joke - every 'little' helps - small houses
+Label for comment 60 [kimdriver]: Tax - Scheme shows strong competition in market. Top supermakets contribue a lot in taxation.
+Label for comment 61 [Wonkothesane76]: In Support- Better to build than waste land. No company is 'altrusic'.
+Label for comment 71 [Wonkothesane76]: Supports it - what people want
+Label for comment 73 [Wonkothesane76]: In support - new homes are needed
+Label for comment 76 [Wonkothesane76]: In support - good idea and tesco don't overcharge
+Label for comment 95 [Wonkothesane76]: Undeveloped land - better to build than leave empty
+Label for comment 81 [Cape7441]: In Support- Good business plan - need to sell-off assets and gain publicity
+
+GROUP: Tesco's underpaid workers should benefit/ should not
+Label for comment 82 [Lorfarius]: Under-paid staff - should benefit from sales of land
+Label for comment 83 [hashtagthat]: Under-paid staff - could buy houses
+Label for comment 84 [wishyouwerehere]: Under-paid staff - They couldn't afford to buy a house on low wages
+Label for comment 86 [Cape7441]: Under-paid staff  why should they be offered to staff?
+Label for comment 87 [leansocialist]: Under-paid staff - build affordable homes for low-paid staff
+Label for comment 88 [babeldweller]: Under-paid staff - Tesco's not a charity - always find workers elsewhere
+Label for comment 89 [wishyouwerehere]: Under-paid staff - No supermarket pays their staff enough
+Label for comment 90 [GeoffTr]: Against - Under-paid staff - they are paid enough
+Label for comment 91 [Thomas19999]: Under-paid staff - Against scheme - only supports people earning high wages
+
+GROUP: Environmental concerns of building new homes on greenfield sites
+Label for comment 30 [JeffersonAirplane]: Environmental concerns of building on greenbelt land
+Label for comment 33 [Wonkothesane76]: No reason to believe houses will be built on greenbelts?
+Label for comment 38 [JeffersonAirplane]: Environmental concerns of building on greenbelts
+
+GROUP: Politicianss should do more to stop tesco hoarding land + immigration used as an excuse for housing crisis
+Label for comment 47 [Worried9876]: Immigration - Against Labour's 'open door policy' - immigration adds to housing crisis
+Label for comment 48 [Wonkothesane76]: Blames Tesco + private companies for keeping unused land. Politicians enable it because they care more about the corporate wellbeing than citizens. Can't blame immigration
+Label for comment 49 [showmaster]: Immigration - more under Cameron than Labour
+Label for comment 50 [Worried9876]: Immigration - EU to blame
+Label for comment 51 [EuropeanOnion]: Power of Tesco and other businesses need to be managed - capitalism - blames politicians for allowing Tesco to hoard land.
+Label for comment 52 [baggins45]: Labour's mistakes the past
+Label for comment 53 [Worried9876]: Labour's mitakes still damaging today
+Label for comment 54 [Wonkothesane76]: Tory's not supporting average man - UK rich - Immigration is used as smokescreen of blame.
+Label for comment 68 [tirmas]: Land - blames local gov for letting them get away with it
+Label for comment 69 [Dnhnhnntnyet36645656]: Publicity stunt - lots of spare land
+
+GROUP: Rise of Aldi has forced Tesco to sell-off land
+Label for comment 62 [Agit8]: Tax - Aldi pays its tax in UK.
+Label for comment 63 [Wonkothesane76]: Tax - How much tax on profits does Aldi pay?
+Label for comment 64 [Tim Farrell]: Tax - Aldi pay just under 30%
+Label for comment 65 [Reduced]: Tax - Aldi pay just under 30%
+Label for comment 67 [showmaster]: Tax - better paid workers at Aldi contribute more in tax to economy
+
+GROUP: Jokes
+Label for comment 8 [Maggie Ernest]: Joke - about clubcard points
+Label for comment 9 [vikingbones]: Joke - about bogof
+Label for comment 10 [ThornburyBoy]: Joke - finest/value
+Label for comment 100 [Lockhurst]: JOKE
+Label for comment 101 [babeldweller]: JOKE
+Label for comment 102 [RegionalOrganic]: JOKE
+Label for comment 103 [babeldweller]: JOKE
+Label for comment 104 [Wonkothesane76]: JOKE
+Label for comment 79 [NotAgainAgain]: Joke
+Label for comment 55 [Maggie Ernest]: Joke
+Label for comment 56 [vikingbones]: Joke
+Label for comment 57 [aliasatyl]: Joke
+Label for comment 58 [aliasatyl]: Joke
+Label for comment 92 [ID581705]: Joke
+Label for comment 41 [Andrew Maclean]: Joke
+Label for comment 44 [rockyrex]: Joke
+
+GROUP: miscellaneous
+Label for comment 1 [HappyValley]: Disputes figures used in article
+Label for comment 2 [CaptCrash]: Tries to explain disputed figures
+Label for comment 3 [robm2001]: Discusses figures used in article
+Label for comment 31 [JeffersonAirplane]: Irrelevant chat
+Label for comment 99 [Deja]: Irrelevant chat
+Label for comment 66 [Wonkothesane76]: Irrelvant chat
+Label for comment 85 [colinius]: Irrelevant chat
+Label for comment 45 [Deebles]: Irrelvant chat
+Label for comment 80 [MickReid]: Don't shop at Tesco if you don't like it
+Label for comment 37 [aquagreen]: Owning a propery is human instinct
+Label for comment 39 [themuse]: Disputes point that owning a home is human instinct.
+Label for comment 40 [aquagreen]: Houses mark one's property/ human instinct
+
+UNCONSTRAINED SUMMARY
+
+The majority of comments raised concerns over new housing being too small and of a poor quality. Commenters said Tesco as a commercial business would minimise costs at every stage to maximise its profits. This worried the majority. But others suggested that big spacious houses with garages and lots of green space were not needed near London as people didn't own cars and couldn't afford them. 
+
+The other leading concern was about the lack of affordable housing. Commenters said house prices have been consistently increasing and are too expensive for first-time buyers - especially in the south-east. Some concluded that the only option was to build smaller homes to keep prices down. 
+
+A large number of people supported the scheme. They argued that it is better to build homes than to waste unused land. They also pointed out that the housing scheme is a sensible business choice for Tesco. The rise of budget supermarkets like Aldi and Lidl has meant Tesco cannot afford to build more supermarkets. So the commenters said they should sell the land off or develop it to generate profit. 
+
+Others criticised Tesco for using the scheme as a publicity stunt. They disagreed that the scheme will help the community and tackle the housing crises and insisted their motives are commercial - to make money.
+
+A significant number of people questioned how Tesco was allowed to get away with hoarding so much land. They criticised politicians and local governments for not toughening up laws to curtail the power of Tesco and other private companies. Some suggested immigration was used as a smokescreen to blame the housing crises on.
+
+Others criticised Tesco for under-paying its workers. They said their low-paid employees should benefit from the scheme with a pay rise.
+
+A number of people played on the 'every little helps' slogan to make a joke about small housing.
+
+CONSTRAINED SUMMARY
+
+The majority of comments argued new housing was too small and of a poor quality. Commenters said Tesco would minimise its costs to maximise its profits. This worried the majority. But others suggested that big spacious houses with garages and lots of green space were not needed near London as people didn't own cars and couldn't afford them. 
+
+The other leading concern was about the lack of affordable housing. Commenters said house prices have been consistently increasing and are too expensive for first-time buyers - especially in the south-east. Some concluded the only option was to build smaller homes to keep prices down. 
+
+A large number of people supported the scheme. They argued it is better to build homes than to waste unused land. They also pointed out the housing scheme is a sensible business choice for Tesco, who are losing market share to Aldi and Lidl.
+
+Others criticised Tesco for using the scheme as a publicity stunt. They insisted Tesco's motives are to make money and not to help the community.
+
+A significant number of people questioned how Tesco got away with hoarding so much land. They criticised politicians and local governments for not toughening up laws to curtail the power of Tesco and other private companies. Some suggested immigration was used as a smokescreen to blame the housing crisis on.
+
+Others criticised Tesco for under-paying its workers. They said their low-paid employees should benefit from the scheme with a pay rise.
+
+BACK LINKING
+
+The majority of comments argued new housing was too small and of a poor quality.
+(Sub)GroupNames:
+- GROUP: The houses Tesco will build will be too small:
+
+Commenters said Tesco would minimise its costs to maximise its profits.
+(Sub)GroupNames:
+- GROUP: The houses Tesco will build will be too small:
+
+This worried the majority.
+(Sub)GroupNames:
+- GROUP: The houses Tesco will build will be too small:
+
+But others suggested that big spacious houses with garages and lots of green space were not needed near London as people didn't own cars and couldn't afford them.
+(Sub)GroupNames:
+- GROUP: The houses Tesco will build will be too small:
+- GROUP: Lack of affordable housing
+
+The other leading concern was about the lack of affordable housing.
+(Sub)GroupNames:
+- GROUP: Lack of affordable housing
+
+Commenters said house prices have been consistently increasing and are too expensive for first-time buyers - especially in the south-east.
+(Sub)GroupNames:
+- GROUP: Lack of affordable housing
+
+Some concluded the only option was to build smaller homes to keep prices down.
+(Sub)GroupNames:
+- GROUP: The houses Tesco will build will be too small:
+- GROUP: Lack of affordable housing
+
+A large number of people supported the scheme.
+(Sub)GroupNames:
+- GROUP: In support of scheme - better than wasting land - economically sensible + help tackle housing crisis
+
+They argued it is better to build homes than to waste unused land.
+(Sub)GroupNames:
+- GROUP: In support of scheme - better than wasting land - economically sensible + help tackle housing crisis
+
+They also pointed out the housing scheme is a sensible business choice for Tesco, who are losing market share to Aldi and Lidl.
+(Sub)GroupNames:
+- GROUP: In support of scheme - better than wasting land - economically sensible + help tackle housing crisis
+
+Others criticised Tesco for using the scheme as a publicity stunt.
+(Sub)GroupNames:
+- GROUP: Tesco's motives are commercial - to make a profit and not help community
+
+They insisted Tesco's motives are to make money and not to help the community.
+(Sub)GroupNames:
+- GROUP: Tesco's motives are commercial - to make a profit and not help community
+
+A significant number of people questioned how Tesco got away with hoarding so much land.
+(Sub)GroupNames:
+- GROUP: Politicianss should do more to stop tesco hoarding land + immigration used as an excuse for housing crisis
+
+They criticised politicians and local governments for not toughening up laws to curtail the power of Tesco and other private companies.
+(Sub)GroupNames:
+- GROUP: Politicianss should do more to stop tesco hoarding land + immigration used as an excuse for housing crisis
+
+Some suggested immigration was used as a smokescreen to blame the housing crisis on.
+(Sub)GroupNames:
+- GROUP: Politicianss should do more to stop tesco hoarding land + immigration used as an excuse for housing crisis
+
+Others criticised Tesco for under-paying its workers.
+(Sub)GroupNames:
+- GROUP: Tesco's underpaid workers should benefit/ should not
+
+They said their low-paid employees should benefit from the scheme with a pay rise.
+(Sub)GroupNames:
+- GROUP: Tesco's underpaid workers should benefit/ should not

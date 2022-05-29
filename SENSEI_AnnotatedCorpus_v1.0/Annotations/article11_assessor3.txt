@@ -1,0 +1,322 @@
+LABELS
+
+Label for comment 1: Britain: says Britain's only priority should making sure disease does not come to the UK and that far stronger border controls are needed
+Label for comment 2: Britain: replies to 1 saying they are probably more at risk from wealthy holiday makers or businessmen at getting the disease
+Label for comment 3: Britain/immigration: replies to 1 saying they find it sickening that any opportunity to get anti-immigration into comments is used, and that Britain's bet strategy to protect itself is to give health care to other countries as viruses are not prejudiced and we should help out of humanitarian concern.
+Label for comment 4: Immigration: replies to 1.2 saying the original commenter did not mention immigrants just border controls, asks why we shouldn't have better screening at borders if people in other countries have ebola, sarcastically remarks that it would be stupid not to look out for ourselves.
+Label for comment 5: Britain/immigration: replies to 1 saying that it is the same as saying because Scotland is a small country they should be able to control their borders to stop infected English people in.
+Label for comment 6: Britain/immigration: replies to 1.3 saying border control is a knee jerk reaction as the virus has an incubation period, saysthat as the original comment said the UK's only priority should be avoiding importation that it is clear their agenda is anti-foreigner because it is possible to focus on preventing spread to the UK and care about impact elsewhere
+Label for comment 7: Britain/disease control: replies to 1 saying it is an odd thing to say as Ebola doesn't recognise border controls
+Label for comment 8: Britain/disease control: replies to 1 saying the best way to contain a disease is where it broke out, movement there should be restricted and flights out of there stopped, says only way to bring in stronger UK border controls would mean quarantine centres, which would be expensive as the bus has a long incubation period, says best to send expert help to Africa
+Label for comment 9: Britain/ disease control/immigration: replies to 1.3 saying better border screening is not worth the expense, ebola is hard to catch and putting p more barriers is turning us into a nation of racists
+Label for comment 10: Ebola: replies to 1.8 questioning them saying it is not easy to catch and giving a link to a Spanish priest being taken off a plane, asks what fuss is about if it is hard to catch
+Label for comment 11: Disease control/immigration: replies to 1.8 saying when HIV was made a homophobic issue instead on a public health on it continued to spread and kill people, that ebola is a public health issue, and that people in these countries are having their temperatures taken before boarding planes like they should
+Label for comment 12: Disease control: replies to 1.9 saying there is palava about it because they would be complaining if there wasn't enough precautions in place.
+Label for comment 13: Disease control: replies to 1.11 asking why they don't lend a hand as they'll be given minimum protection but that will be enough for a difficult to catch virus and they will return a hero
+Label for comment 14: Disease control: replies to 1.9 saying with ebola, precautionary measures are taken above and beyond what would work because it is better to be safe than sorry because ebola is nasty if caught
+Label for comment 15: Immigration/disease control: replies to 1.3 saying that open borders are more controlled than closed borders as people travel illegally and under the radar an we won't know where or when the virus has spread.
+Label for comment 16: Britain/sympathy: replies to 1 asking if they're not affected by the plight of those in the areas affected, says they are not a pleasant person.
+Label for comment 17: Britain: replies to 1 with a link to the WHO saying that it disagrees with him
+Label for comment 18: Britain: replies to one saying they made mistakes by disregarding the need to do something where ebola is happening, overstating the utility value of border controls and overstating the risk to the UK, posts link saying there has never been a sustained outbreak of Ebola in any rich country.
+Label for comment 19: Disease control/immigration: replies to 1.14 asking them to explain the camp in Calais
+Label for comment 20: Immigration/sympathy: replies to 1.3 saying stricter border controls is linked to immigrants, and that we can look out for ourselves whilst looking out for others.
+Label for comment 21: Misc: replies to 1.8 saying they were being disingenuous
+Label for comment 22: Disease control/immigration: replies to 1.2 saying people affected by plague in China want to leave the infected area and come to the UK but the task of screening them is a big cos and it is cheaper to put travel restrictions in place, says that volunteers are wary of going out there to help making the issue greater, that it would spread like wildfire in London and that t has nothing to do with immigration
+Label for comment 23: Britain/sympathy: replies to 1 questioning why it should be our only priority, says we should prevent suffering of others.
+Label for comment 24: Sympathy/immigration: replies to 1 asking if it's ok for poor black folk to suffer and die but not Brits and says they have a disgraceful attitude
+Label for comment 25: Immigration: replies to 1.3 asking what the earth they are talking about as by checking the first commenters past comments it shows they are a typical UKIP supporter using ebola to push their agenda, says this is another reason UKIP should be banned
+Label for comment 26: Britain/immigration: replies to 1 sarcastically saying they are a charming fellow, said screening travellers is all that is needed, and that it helps everyone to provide aid to the countries affected, and that immigration as nothing to do with it.
+Label for comment 27: Disease control: replies to 1.21 saying the virus does not spread like wildfire, it is not flue and if you do not touch dead people or bodily secretions you are safe, suspects reason doctors are catching it is because they are exhausted from working long hours and immune function is suppressed.
+Label for comment 28: Disease control: replies to 1.17 saying AIDS spread in a rich country in 1980 when it had never seen a sustained outbreak in a rich country before
+Label for comment 29: Disease control/easy to catch: replies to 1.8 saying it easy to catch as a scientist said you could get it just by having particles on your eyelid, says it's quite easy to catch by touching everyday things.
+Label for comment 30: Britain/sympathy: replies to 1 saying that helping others and protecting our borders is not mutually exclusive
+Label for comment 31: Immigration/ disease control: replies to 1.3 saying that border controls only pick up symptomatic people, and it is possible to pass on the infection during the incubation stage, says best chance of fighting disease is at source.
+Label for comment 32: Easy to catch/ disease control: replies to 1.28 with a link to a source who says ebola is hard to catch and that his scientist source is sensationalised and intended to confound the gullible
+Label for comment 33: Disease control: replies to 1.27 saying ebola would be easier to contain than HIV because it is far easier to find the cases
+Label for comment 34: Easy to catch: replies to 1.28 saying the Hot Zone is a semifictional story, the doctors who got infected probably were exhausted from working many days at a time, tells commenter to calm down
+Label for comment 35: Misc: replies to 1 saying paper bag test
+Label for comment 36: Immigration/disease control: replies to 1.8 saying a man from Nigeria is being held in Canada whilse they await test results, not due to racism, says they show the danger of political corectedness
+Label for comment 37: Immigration: replies to 1.3 saying the original comment was unpleasant and basically saying do not let ebola get into the UK
+Label for comment 38: Disease control: replies to 1.32 saying it is actually difficult to spread HIV but ebola is far more likely to spread
+Label for comment 39: Immigration: replies to 1.35 saying talking about an ill person in an isolation ward is different to denying people entry to a country
+Label for comment 40: Disease control: replies to 1 saying you can' just sit and wait for ebola to come to you
+Label for comment 41: Britain/disease control: replies to 1.26 says we should protect the country at all costs, asks why they haven't travelled to an infected country, says how can they not think ebola is a massive threat to british people's health
+Label for comment 42: Immigration: resplies to 1.26 saying Guinea have closed their borders and asks if it s because they are anti immigration nut jobs, idiots or playing it safe
+Label for comment 43: Border controls: says international action should include border controls to help stop disease spreading, says they should go further than trying to spot infected individuals
+Label for comment 44: Border controls: replies to 2 saying sarcastically that we should construct internment camps
+Label for comment 45: Misc: replies to 2 joking that smoking caused it according to the WHO
+Label for comment 46: Misc: replies to 2.1 saying they are uneducated
+Label for comment 47: Border controls: replies to 2.1 saying internment camps wouldn't help and we need to help affected countries to stop this, says idiotic hate here is ridiculous
+Label for comment 48: Border controls: replies to 2.1 saying the internment camps would be for brown people and jokingly says thank god white people are immune to ebola
+Label for comment 49: Misc: replies to 2.4 saying the person about internment camps were being ironic
+Label for comment 50: Disease control: replies to 2.4 saying internment camps commenter was being sarcastic, says diseases are spreadable even when patient doesn't show symptoms, can't stop it once it starts to spread and best chance is to isolate early outbreaks
+Label for comment 51: Illnesses/drug companies: says big problem after things like bird flu, which made money for companies like BigPharma, is the credibility of present and future warnings, says economic system puts shareholder profits over all other concerns
+Label for comment 52: Illnesses/authorities: replies to 3 saying authorities can't predict the future and if they ignore the warnings and are wrong people will complain, and if they follow the warnings and are wrong people will complain
+Label for comment 53: Illnesses/authorities: replies to 3 again saying if they folow warnings and are right people will complain
+Label for comment 54: Illnesses/drug companies: replies to 3.1 saying big pharma sold huge amounts of bird flu vaccine to the UK which may not have worked
+Label for comment 55: Authorities/illnesses: replies to 3.1 sayin problem is not necessarily just with the authorities but with economic system that encourages fear-mongering
+Label for comment 56: Illnesses/authorities: replies to 3 saying their logic is wrong and that there wasn'ta big outbreak of previous illnesses because governments acted on it
+Label for comment 57: Illnesses/drug companies: replies to 2 saying they are comparing apples and oranges, no pharmaceutical companies have made much from SARS, said there was money to be made for bird and swine flu, but ebola prevention means quarantining and creating barriers
+Label for comment 58: Illnesses/authorities: replies to 3 saying no flu has ever had close to a 50% mortality rate, tamiflu was for a whole different illness, hopes ebola can be controlled at source
+Label for comment 59: Authorities/ drug companies: replies to 3.3 saying government were stupid to buy tamiflu, not big pharma
+Label for comment 60: Xenophobia: says this article is causing xenophobia, imagines what the daily mail's servers must be like if the guardian is like this
+Label for comment 61: Xenophobia: replies to 4 joking that it's good we are contained on an island so we don't infect mainland europe
+Label for comment 62: Xenophobia: replies to 4 saying the comments here are the daily mail lite, most people don't buy the guardian just read the site to get outraged.
+Label for comment 63: Xenophobia: replies to 4.2 saying you could say any sample group of people don't buy the guardian
+Label for comment 64: Misc: replies to 4.2 saying their comment was more accurate than they intended
+Label for comment 65: Xenophobia: agrees with 4 saying they are sick of the racist comments and any oppurtunity to be racist and the idiots come on the comment section
+Label for comment 66: Misc: angrily replies to 4.3 saying all their past comments were about football and said they made a glib comment here
+Label for comment 67: Misc: replies to 4.1 saying if only
+Label for comment 68: Guardian: replies to 4.2 saying the guardian is here for free online so they don't buy it, says adverts are a pity
+Label for comment 69: Disease spreading: says as ebola has up to a three week gestation period and london has many people from west africa the handrails and ticket machines in the tube station are ideal infection routes, no hope of keeping it out of london
+Label for comment 70: Disease spreading: jokes that even reading this article can get you infected and says to head to the hills
+Label for comment 71: Disease spreading: replies to 5 saying people fit to travel aren't infectious
+Label for comment 72: Disease spreading: replies to 5.1 joking that their input makes them an expert and assumes they are on there way to the areas affected
+Label for comment 73: Misc: replies to 5 asking where or what is the West Africa
+Label for comment 74: Disease spreading: replies to 5.2 saying a man got on a plane to lagos who had ebola, and that you can travel while experiencing initial symptoms
+Label for comment 75: Disease spreading: replies to 5.2 saying patrick sawyer got on a plane knowing he was infected, and a lady being sick in a cab started that Liberian outbreak
+Label for comment 76: Disease spreading: replies to 5 joking the blood diamond in your partners ring could spread infection
+Label for comment 77: Disease spreading: replies to 5.2 saying someone was fit to travel to Lagos an infected 9 people so far, someone went to morocco and saudi arabia, says they've admitted they don't know how many people are infected in morocco
+Label for comment 78: Disease spreading: replies to 5.8 sarcastically saying London is already infected due to people from West Africa living here
+Label for comment 79: Disease spreading: replies to 5.8 saying morrocan case was a heart attack victim, no confirmed saudi case, you can travel while infected but not show symptoms
+Label for comment 80: Disease spreading: replies to 5.10 saying Liberian man who died in Nigeria showed symptoms on the plane, collapsed whilst getting off then 9 people in contact with him were infected
+Label for comment 81: Disease spreading: replies to 5.11 saying only 6 people in contact were suspected to be infected and none are confirmed
+Label for comment 82: Disease spreading: replies to 5.11 saying all those infected were hospital workers attending to him, no evidence ebola is spread by casual contact, but that they seem desperate to convince everyone that is poses a risk of global pandemic
+Label for comment 83: Disease spreading: replies to 5.13 saying at least one person infected was someone who helped him off the plane
+Label for comment 84: Disease spreading: replies to 5.14 saying they made that up
+Label for comment 85: Misc: replies to 5.1 saying he has a point
+Label for comment 86: Disease spreading: replies to 5.16 saying there has never been ebola in the western hemisphere so their point is moot
+Label for comment 88: Disease spreading: replies to 5.3 saying they find it tiring when people who disagree volunteer the other for service, says London and Paris have ties to Africa and so are exposed, said an infected person not showing symptoms could spread the virus through shared items, says it's a good idea to stop spread at source.
+Label for comment 89: Disease spreading: replies to 5.18 saying doctors who are treating the ill who are infectious, what does it have to do with symptomless travellers
+Label for comment 90: Misc: replies to 5.19 saying they find people who pretend to be experts at disease boring
+Label for comment 91: Disease spreading: replies to 5.1 joking just the thought of this article could make you infected
+Label for comment 92: Disease spreading: says not long until Ebola gets on a plane and visits the whole world
+Label for comment 93: Death: jokes it only a matter of time until we all die and we should panic
+Label for comment 94: Death: replies to 7 saying he doesn't want to die by shark or ebola
+Label for comment 95: Doctor: says dr sawyer got on a plane and dropped dead shortly after, says his movement across west africa spared a 30,000 person search for people he had come into contact with, dr brantly treated him
+Label for comment 96: misc: jokes about wearing tinfoil hats
+Label for comment 97: Doctor: replies to 7.2 saying a doctor was the index patient for SARS in hong kong
+Label for comment 98: Declare outbreak: says they should have declared outbreak and asked for aid two months ago when MSF were saying it was out of control
+Label for comment 99: Declare outbreak: replies to 8 saying the story was just left and if we had sent aid to africa then it would have been contained
+Label for comment 100: Declare outbreak/aid: replies to 8.1 aying if we had sent aid when it broke out an army general would have a nice new car
+Label for comment 101: Aid: replies to 8.2 sarcastically saying yes, that it is like the failure of the world health programs that eliminated smallpox
+Label for comment 102: Declare outbreak/authorities: replies to 8 saying this is the truth but then only africans were dying, and the world thought it would stay there, and only now americans have been infected and it looks like it will spread through the world that the government have decided to do something
+Label for comment 103: Declare outbreak: replies to 8.3 saying the commenter only speaks football and is on these comments by mistake
+Label for comment 104: Declare outbreak/drug resistance/TB: replies to 8.4 saying two months ago they were posting comments saying no one in the western media was paying attention, it is unnecessary that it got to this and it will cost more than it would have to contain and treat it earlier. Says MSF are saying drug resistant TB is now a problem, but western complacency is the same over that
+Label for comment 105: Drug resistance/TB: replies to 8.6 saying they call TB the white death, it will be a problem, it isn't easy to catch unless you are sharing a prison cell with many men who cough all day. risk of catching it is infinitesimal
+Label for comment 106: Drug resistance/TB: replies to 8.7 saying drug resistant TB are an endemic in Africa and parts of asia, parts people go to for gap years and cheap surgery, hard to get but close to impossible to treat, admits CRE bacteria are a growing threat across the West
+
+GROUPS
+
+GROUP: Britain
+Label for comment 1 [Pope123]: Britain: says Britain's only priority should making sure disease does not come to the UK and that far stronger border controls are needed
+Label for comment 2 [surpluspop1]: Britain: replies to 1 saying they are probably more at risk from wealthy holiday makers or businessmen at getting the disease
+Label for comment 17 [shauny]: Britain: replies to 1 with a link to the WHO saying that it disagrees with him
+Label for comment 18 [Deebles]: Britain: replies to one saying they made mistakes by disregarding the need to do something where ebola is happening, overstating the utility value of border controls and overstating the risk to the UK, posts link saying there has never been a sustained outbreak of Ebola in any rich country.
+
+SUBGROUP: Immigration
+Label for comment 3 [logos00]: Britain/immigration: replies to 1 saying they find it sickening that any opportunity to get anti-immigration into comments is used, and that Britain's bet strategy to protect itself is to give health care to other countries as viruses are not prejudiced and we should help out of humanitarian concern.
+Label for comment 4 [AverageJoe23]: Immigration: replies to 1.2 saying the original commenter did not mention immigrants just border controls, asks why we shouldn't have better screening at borders if people in other countries have ebola, sarcastically remarks that it would be stupid not to look out for ourselves.
+Label for comment 5 [Anothersmallcog]: Britain/immigration: replies to 1 saying that it is the same as saying because Scotland is a small country they should be able to control their borders to stop infected English people in.
+Label for comment 6 [Thegentletock]: Britain/immigration: replies to 1.3 saying border control is a knee jerk reaction as the virus has an incubation period, saysthat as the original comment said the UK's only priority should be avoiding importation that it is clear their agenda is anti-foreigner because it is possible to focus on preventing spread to the UK and care about impact elsewhere
+Label for comment 25 [marsCubed]: Immigration: replies to 1.3 asking what the earth they are talking about as by checking the first commenters past comments it shows they are a typical UKIP supporter using ebola to push their agenda, says this is another reason UKIP should be banned
+Label for comment 26 [justanotherflyboy]: Britain/immigration: replies to 1 sarcastically saying they are a charming fellow, said screening travellers is all that is needed, and that it helps everyone to provide aid to the countries affected, and that immigration as nothing to do with it.
+Label for comment 36 [kelebek456]: Immigration/disease control: replies to 1.8 saying a man from Nigeria is being held in Canada whilse they await test results, not due to racism, says they show the danger of political corectedness
+Label for comment 37 [Quicknstraight]: Immigration: replies to 1.3 saying the original comment was unpleasant and basically saying do not let ebola get into the UK
+Label for comment 39 [FuzzySpider]: Immigration: replies to 1.35 saying talking about an ill person in an isolation ward is different to denying people entry to a country
+Label for comment 42 [mightymatt]: Immigration: resplies to 1.26 saying Guinea have closed their borders and asks if it s because they are anti immigration nut jobs, idiots or playing it safe
+Label for comment 43 [figurewizard]: Border controls: says international action should include border controls to help stop disease spreading, says they should go further than trying to spot infected individuals
+Label for comment 44 [TenderBranson]: Border controls: replies to 2 saying sarcastically that we should construct internment camps
+Label for comment 47 [justanotherflyboy]: Border controls: replies to 2.1 saying internment camps wouldn't help and we need to help affected countries to stop this, says idiotic hate here is ridiculous
+Label for comment 48 [ID8088901]: Border controls: replies to 2.1 saying the internment camps would be for brown people and jokingly says thank god white people are immune to ebola
+
+SUBGROUP: Disease control
+Label for comment 7 [conanthebikeman]: Britain/disease control: replies to 1 saying it is an odd thing to say as Ebola doesn't recognise border controls
+Label for comment 8 [madmonty]: Britain/disease control: replies to 1 saying the best way to contain a disease is where it broke out, movement there should be restricted and flights out of there stopped, says only way to bring in stronger UK border controls would mean quarantine centres, which would be expensive as the bus has a long incubation period, says best to send expert help to Africa
+Label for comment 9 [FuzzySpider]: Britain/ disease control/immigration: replies to 1.3 saying better border screening is not worth the expense, ebola is hard to catch and putting p more barriers is turning us into a nation of racists
+Label for comment 10 [dierobdie]: Ebola: replies to 1.8 questioning them saying it is not easy to catch and giving a link to a Spanish priest being taken off a plane, asks what fuss is about if it is hard to catch
+Label for comment 11 [elmerofoz]: Disease control/immigration: replies to 1.8 saying when HIV was made a homophobic issue instead on a public health on it continued to spread and kill people, that ebola is a public health issue, and that people in these countries are having their temperatures taken before boarding planes like they should
+Label for comment 12 [TenderBranson]: Disease control: replies to 1.9 saying there is palava about it because they would be complaining if there wasn't enough precautions in place.
+Label for comment 13 [dierobdie]: Disease control: replies to 1.11 asking why they don't lend a hand as they'll be given minimum protection but that will be enough for a difficult to catch virus and they will return a hero
+Label for comment 14 [FuzzySpider]: Disease control: replies to 1.9 saying with ebola, precautionary measures are taken above and beyond what would work because it is better to be safe than sorry because ebola is nasty if caught
+Label for comment 15 [MissAnneThrope666]: Immigration/disease control: replies to 1.3 saying that open borders are more controlled than closed borders as people travel illegally and under the radar an we won't know where or when the virus has spread.
+Label for comment 19 [Nick Glover]: Disease control/immigration: replies to 1.14 asking them to explain the camp in Calais
+Label for comment 22 [mightymatt]: Disease control/immigration: replies to 1.2 saying people affected by plague in China want to leave the infected area and come to the UK but the task of screening them is a big cos and it is cheaper to put travel restrictions in place, says that volunteers are wary of going out there to help making the issue greater, that it would spread like wildfire in London and that t has nothing to do with immigration
+Label for comment 27 [justanotherflyboy]: Disease control: replies to 1.21 saying the virus does not spread like wildfire, it is not flue and if you do not touch dead people or bodily secretions you are safe, suspects reason doctors are catching it is because they are exhausted from working long hours and immune function is suppressed.
+Label for comment 28 [DaisyPetunia]: Disease control: replies to 1.17 saying AIDS spread in a rich country in 1980 when it had never seen a sustained outbreak in a rich country before
+Label for comment 29 [neolab]: Disease control/easy to catch: replies to 1.8 saying it easy to catch as a scientist said you could get it just by having particles on your eyelid, says it's quite easy to catch by touching everyday things.
+Label for comment 31 [Gastinel]: Immigration/ disease control: replies to 1.3 saying that border controls only pick up symptomatic people, and it is possible to pass on the infection during the incubation stage, says best chance of fighting disease is at source.
+Label for comment 32 [FuzzySpider]: Easy to catch/ disease control: replies to 1.28 with a link to a source who says ebola is hard to catch and that his scientist source is sensationalised and intended to confound the gullible
+Label for comment 33 [Deebles]: Disease control: replies to 1.27 saying ebola would be easier to contain than HIV because it is far easier to find the cases
+Label for comment 34 [justanotherflyboy]: Easy to catch: replies to 1.28 saying the Hot Zone is a semifictional story, the doctors who got infected probably were exhausted from working many days at a time, tells commenter to calm down
+Label for comment 38 [IVAN4]: Disease control: replies to 1.32 saying it is actually difficult to spread HIV but ebola is far more likely to spread
+Label for comment 40 [iGlady]: Disease control: replies to 1 saying you can' just sit and wait for ebola to come to you
+Label for comment 41 [mightymatt]: Britain/disease control: replies to 1.26 says we should protect the country at all costs, asks why they haven't travelled to an infected country, says how can they not think ebola is a massive threat to british people's health
+Label for comment 50 [Gastinel]: Disease control: replies to 2.4 saying internment camps commenter was being sarcastic, says diseases are spreadable even when patient doesn't show symptoms, can't stop it once it starts to spread and best chance is to isolate early outbreaks
+
+SUBGROUP: Sympathy/empathy
+Label for comment 16 [blairsnemesis]: Britain/sympathy: replies to 1 asking if they're not affected by the plight of those in the areas affected, says they are not a pleasant person.
+Label for comment 20 [logos00]: Immigration/sympathy: replies to 1.3 saying stricter border controls is linked to immigrants, and that we can look out for ourselves whilst looking out for others.
+Label for comment 23 [Domn8tricks]: Britain/sympathy: replies to 1 questioning why it should be our only priority, says we should prevent suffering of others.
+Label for comment 24 [MudDoc]: Sympathy/immigration: replies to 1 asking if it's ok for poor black folk to suffer and die but not Brits and says they have a disgraceful attitude
+Label for comment 30 [Wazz Ally]: Britain/sympathy: replies to 1 saying that helping others and protecting our borders is not mutually exclusive
+
+GROUP: Misc
+Label for comment 21 [logos00]: Misc: replies to 1.8 saying they were being disingenuous
+Label for comment 35 [nazcalito]: Misc: replies to 1 saying paper bag test
+Label for comment 45 [unusedusername]: Misc: replies to 2 joking that smoking caused it according to the WHO
+Label for comment 46 [Jamie Laidlaw]: Misc: replies to 2.1 saying they are uneducated
+Label for comment 49 [Deebles]: Misc: replies to 2.4 saying the person about internment camps were being ironic
+Label for comment 64 [Giggidy]: Misc: replies to 4.2 saying their comment was more accurate than they intended
+Label for comment 66 [blairsnemesis]: Misc: angrily replies to 4.3 saying all their past comments were about football and said they made a glib comment here
+Label for comment 67 [takalu]: Misc: replies to 4.1 saying if only
+Label for comment 85 [middleagedman]: Misc: replies to 5.1 saying he has a point
+Label for comment 90 [scuba100]: Misc: replies to 5.19 saying they find people who pretend to be experts at disease boring
+Label for comment 96 [justanotherflyboy]: misc: jokes about wearing tinfoil hats
+
+GROUP: Illnessess
+
+SUBGROUP: Drug companies
+Label for comment 51 [Tim Eslip]: Illnesses/drug companies: says big problem after things like bird flu, which made money for companies like BigPharma, is the credibility of present and future warnings, says economic system puts shareholder profits over all other concerns
+Label for comment 54 [madmonty]: Illnesses/drug companies: replies to 3.1 saying big pharma sold huge amounts of bird flu vaccine to the UK which may not have worked
+Label for comment 57 [Deebles]: Illnesses/drug companies: replies to 2 saying they are comparing apples and oranges, no pharmaceutical companies have made much from SARS, said there was money to be made for bird and swine flu, but ebola prevention means quarantining and creating barriers
+
+SUBGROUP: Government/authorities
+Label for comment 52 [factoryreset]: Illnesses/authorities: replies to 3 saying authorities can't predict the future and if they ignore the warnings and are wrong people will complain, and if they follow the warnings and are wrong people will complain
+Label for comment 53 [factoryreset]: Illnesses/authorities: replies to 3 again saying if they folow warnings and are right people will complain
+Label for comment 55 [Tim Eslip]: Authorities/illnesses: replies to 3.1 sayin problem is not necessarily just with the authorities but with economic system that encourages fear-mongering
+Label for comment 56 [synclsp]: Illnesses/authorities: replies to 3 saying their logic is wrong and that there wasn'ta big outbreak of previous illnesses because governments acted on it
+Label for comment 58 [justanotherflyboy]: Illnesses/authorities: replies to 3 saying no flu has ever had close to a 50% mortality rate, tamiflu was for a whole different illness, hopes ebola can be controlled at source
+Label for comment 59 [Quicknstraight]: Authorities/ drug companies: replies to 3.3 saying government were stupid to buy tamiflu, not big pharma
+
+SUBGROUP: Xenophobia
+Label for comment 60 [NXile]: Xenophobia: says this article is causing xenophobia, imagines what the daily mail's servers must be like if the guardian is like this
+Label for comment 61 [TenderBranson]: Xenophobia: replies to 4 joking that it's good we are contained on an island so we don't infect mainland europe
+Label for comment 62 [fauxtronic]: Xenophobia: replies to 4 saying the comments here are the daily mail lite, most people don't buy the guardian just read the site to get outraged.
+Label for comment 63 [ViktorBurakov]: Xenophobia: replies to 4.2 saying you could say any sample group of people don't buy the guardian
+Label for comment 65 [GoddessOFblah]: Xenophobia: agrees with 4 saying they are sick of the racist comments and any oppurtunity to be racist and the idiots come on the comment section
+
+GROUP: Guardian newspaper
+Label for comment 68 [justanotherflyboy]: Guardian: replies to 4.2 saying the guardian is here for free online so they don't buy it, says adverts are a pity
+
+GROUP: Disease infections
+Label for comment 69 [John Sinclair]: Disease spreading: says as ebola has up to a three week gestation period and london has many people from west africa the handrails and ticket machines in the tube station are ideal infection routes, no hope of keeping it out of london
+Label for comment 70 [TenderBranson]: Disease spreading: jokes that even reading this article can get you infected and says to head to the hills
+Label for comment 71 [KenFine]: Disease spreading: replies to 5 saying people fit to travel aren't infectious
+Label for comment 72 [scuba100]: Disease spreading: replies to 5.1 joking that their input makes them an expert and assumes they are on there way to the areas affected
+Label for comment 73 [thisnamewilldo4now]: Misc: replies to 5 asking where or what is the West Africa
+Label for comment 74 [bamyasinick]: Disease spreading: replies to 5.2 saying a man got on a plane to lagos who had ebola, and that you can travel while experiencing initial symptoms
+Label for comment 75 [Galandriel]: Disease spreading: replies to 5.2 saying patrick sawyer got on a plane knowing he was infected, and a lady being sick in a cab started that Liberian outbreak
+Label for comment 76 [factoryreset]: Disease spreading: replies to 5 joking the blood diamond in your partners ring could spread infection
+Label for comment 77 [bekibunny]: Disease spreading: replies to 5.2 saying someone was fit to travel to Lagos an infected 9 people so far, someone went to morocco and saudi arabia, says they've admitted they don't know how many people are infected in morocco
+Label for comment 78 [TenderBranson]: Disease spreading: replies to 5.8 sarcastically saying London is already infected due to people from West Africa living here
+Label for comment 79 [KenFine]: Disease spreading: replies to 5.8 saying morrocan case was a heart attack victim, no confirmed saudi case, you can travel while infected but not show symptoms
+Label for comment 80 [bekibunny]: Disease spreading: replies to 5.10 saying Liberian man who died in Nigeria showed symptoms on the plane, collapsed whilst getting off then 9 people in contact with him were infected
+Label for comment 81 [TenderBranson]: Disease spreading: replies to 5.11 saying only 6 people in contact were suspected to be infected and none are confirmed
+Label for comment 82 [KenFine]: Disease spreading: replies to 5.11 saying all those infected were hospital workers attending to him, no evidence ebola is spread by casual contact, but that they seem desperate to convince everyone that is poses a risk of global pandemic
+Label for comment 83 [bekibunny]: Disease spreading: replies to 5.13 saying at least one person infected was someone who helped him off the plane
+Label for comment 84 [KenFine]: Disease spreading: replies to 5.14 saying they made that up
+Label for comment 86 [TenderBranson]: Disease spreading: replies to 5.16 saying there has never been ebola in the western hemisphere so their point is moot
+Label for comment 88 [Gastinel]: Disease spreading: replies to 5.3 saying they find it tiring when people who disagree volunteer the other for service, says London and Paris have ties to Africa and so are exposed, said an infected person not showing symptoms could spread the virus through shared items, says it's a good idea to stop spread at source.
+Label for comment 89 [KenFine]: Disease spreading: replies to 5.18 saying doctors who are treating the ill who are infectious, what does it have to do with symptomless travellers
+Label for comment 91 [ID2749122]: Disease spreading: replies to 5.1 joking just the thought of this article could make you infected
+Label for comment 92 [Eikon]: Disease spreading: says not long until Ebola gets on a plane and visits the whole world
+
+SUBGROUP: Death
+Label for comment 93 [rascal87]: Death: jokes it only a matter of time until we all die and we should panic
+Label for comment 94 [elmerofoz]: Death: replies to 7 saying he doesn't want to die by shark or ebola
+
+SUBGROUP: Doctors
+Label for comment 95 [Carolyn Davis]: Doctor: says dr sawyer got on a plane and dropped dead shortly after, says his movement across west africa spared a 30,000 person search for people he had come into contact with, dr brantly treated him
+Label for comment 97 [Gastinel]: Doctor: replies to 7.2 saying a doctor was the index patient for SARS in hong kong
+
+GROUP: Declaring outbreak
+Label for comment 98 [DavidoM]: Declare outbreak: says they should have declared outbreak and asked for aid two months ago when MSF were saying it was out of control
+Label for comment 99 [fatquarter]: Declare outbreak: replies to 8 saying the story was just left and if we had sent aid to africa then it would have been contained
+Label for comment 102 [bekibunny]: Declare outbreak/authorities: replies to 8 saying this is the truth but then only africans were dying, and the world thought it would stay there, and only now americans have been infected and it looks like it will spread through the world that the government have decided to do something
+Label for comment 103 [blairsnemesis]: Declare outbreak: replies to 8.3 saying the commenter only speaks football and is on these comments by mistake
+
+SUBGROUP: Aid
+Label for comment 100 [ViktorBurakov]: Declare outbreak/aid: replies to 8.1 aying if we had sent aid when it broke out an army general would have a nice new car
+Label for comment 101 [factoryreset]: Aid: replies to 8.2 sarcastically saying yes, that it is like the failure of the world health programs that eliminated smallpox
+
+SUBGROUP: Drug resistance
+Label for comment 104 [DavidoM]: Declare outbreak/drug resistance/TB: replies to 8.4 saying two months ago they were posting comments saying no one in the western media was paying attention, it is unnecessary that it got to this and it will cost more than it would have to contain and treat it earlier. Says MSF are saying drug resistant TB is now a problem, but western complacency is the same over that
+Label for comment 105 [justanotherflyboy]: Drug resistance/TB: replies to 8.6 saying they call TB the white death, it will be a problem, it isn't easy to catch unless you are sharing a prison cell with many men who cough all day. risk of catching it is infinitesimal
+Label for comment 106 [DavidoM]: Drug resistance/TB: replies to 8.7 saying drug resistant TB are an endemic in Africa and parts of asia, parts people go to for gap years and cheap surgery, hard to get but close to impossible to treat, admits CRE bacteria are a growing threat across the West
+
+UNCONSTRAINED SUMMARY
+
+The first comment said that Britain's only priority should be to ensure the disease does not come here, which caused an argument. Some said the commenter was bad for not feeling more sympathy for these people, and others said it was clear he was talking about immigration and bringing far-right policies into the topic, and that disease screening was what was needed. Some disagreed with this, saying border controls had nothing to do with immigration.
+Others replied that the best way to control the disease is to provide aid to the country it began in and stop it at source. One said that ebola is quite hard to catch as it is through contact with fluid, and another replied asking why there had been such a fuss then, to which the answer was because ebola is nasty if caught and people would make a fuss if enough precautions weren't taken.
+One person said that big pharmaceutical companies make lots of money from scares like this, as with bird flu which was never a massive problem, and others agreed but said it was the government's fault for purchasing the bird flu vaccines. One person said that it was probably because of the authorities' actions it wasn't as big of a crisis, another saying people would complain if the government did or did not aim to predict and prepare for things like this.
+Some people commented saying they were unhappy with the xenophobia in the comments, another said the comments section online was like the daily mail lite and these people probably didn't read the actual guardian.
+One person said that as ebola has a three week gestation period London was ikely to be a breeding ground through places like train station. Another said people with ebola weren't fit to travel, to which is was noted that a man got on a plane to lagos and spread ebola on his arrival, another person said a lady being sick in a taxi started the Liberian outbreak. People argued about whether various outbreaks were ebola or just a heart attack, how many people had been in contact with the man on the plane to Lagos and how many had got infected through him. It was mentioned that doctors who get ebola are probably very tired and their immune systems are weak.
+One person said they should have declared outbreak back when it was starting to be a problem 8 months previous, another said it was only now americans were getting infected that the news media took interest. One person said if they had started working on it 2 months ago it would have been less expensive than it is now to treat and control, mentioned that drug-resistant TB is a problem there is complacency over in Britain. Another said that this was hard to catch, but someone added that TB is an endemic in Africa and parts of asia.
+
+CONSTRAINED SUMMARY
+
+Some said Britain's priority should be to ensure the disease doesn't reach us. Others said we should be sympathetic for infected people, and that he was bringing in far-right immigration views.
+
+Some said the best way to control the disease is to stop it at source. One said that ebola is hard to catch, another replied asking why there had been such a fuss. The answer was because ebola is nasty and people would make a fuss if enough precautions weren't taken.
+
+One person said that pharmaceutical companies make lots of money from these scares, as with bird flu, and others agreed but said it was the government's fault for purchasing vaccines. One person said that it was the authorities' actions that stopped it being a crisis, another said people would complain if the government did or did not predict and prepare.
+
+One person said London was an ebola breeding ground in places like stations. Another said people with ebola weren't fit to travel, but some said a man got on a plane to Lagos and spread ebola. People argued about the situations in various outbreaks. Someone said doctors who get ebola are probably tired and with weakened immune systems.
+
+One person said they should have declared outbreak when it was a problem 8 months previous, another said it was only now Americans were getting infected that the media took interest. One said it would have been less expensive to treat and control then than now.
+
+BACK LINKING
+
+Some said Britain's priority should be to ensure the disease doesn't reach us.
+(Sub)GroupNames:
+- GROUP: Britain
+
+Others said we should be sympathetic for infected people, and that he was bringing in far-right immigration views.
+(Sub)GroupNames:
+- SUBGROUP: Immigration
+- SUBGROUP: Sympathy/empathy
+
+Some said the best way to control the disease is to stop it at source.
+(Sub)GroupNames:
+- SUBGROUP: Disease control
+
+One said that ebola is hard to catch, another replied asking why there had been such a fuss.
+(Sub)GroupNames:
+- SUBGROUP: Disease control
+
+The answer was because ebola is nasty and people would make a fuss if enough precautions weren't taken.
+(Sub)GroupNames:
+- SUBGROUP: Disease control
+
+One person said that pharmaceutical companies make lots of money from these scares, as with bird flu, and others agreed but said it was the government's fault for purchasing vaccines.
+(Sub)GroupNames:
+- SUBGROUP: Drug companies
+
+One person said that it was the authorities' actions that stopped it being a crisis, another said people would complain if the government did or did not predict and prepare.
+(Sub)GroupNames:
+- SUBGROUP: Government/authorities
+
+One person said London was an ebola breeding ground in places like stations.
+(Sub)GroupNames:
+- GROUP: Disease infections
+
+Another said people with ebola weren't fit to travel, but some said a man got on a plane to Lagos and spread ebola.
+(Sub)GroupNames:
+- GROUP: Disease infections
+
+People argued about the situations in various outbreaks.
+(Sub)GroupNames:
+- GROUP: Disease infections
+
+Someone said doctors who get ebola are probably tired and with weakened immune systems.
+(Sub)GroupNames:
+- GROUP: Disease infections
+
+One person said they should have declared outbreak when it was a problem 8 months previous, another said it was only now Americans were getting infected that the media took interest.
+(Sub)GroupNames:
+- GROUP: Declaring outbreak
+
+One said it would have been less expensive to treat and control then than now.
+(Sub)GroupNames:
+- GROUP: Declaring outbreak

@@ -1,0 +1,19 @@
+Article ID	URL
+article0	http://www.theguardian.com/uk-news/the-northerner/2014/jul/17/rubbish-bury-council-votes-to-collect-wheelie-bins-just-once-every-three-weeks
+article1	http://www.theguardian.com/commentisfree/2014/aug/11/police-access-to-medical-records-will-not-help-vulnerable
+article2	http://www.theguardian.com/uk-news/2014/jul/04/royal-navy-aircraft-carrier-named-queen-elizabeth
+article3	http://www.theguardian.com/uk-news/2014/jul/16/heatwave-alert-england-wales-humid-thunderstorms
+article4	http://www.theguardian.com/uk-news/2014/jul/04/hms-elizabeth-naming-ceremony-hailed-pro-union-occasion
+article5	http://feeds.theguardian.com/c/34708/f/663879/s/3c8febee/sc/7/l/0L0Stheguardian0N0Cworld0C20A140Cjul0C160Cscott0Ebrown0Erepublican0Esenate0Ecampaign0Ehobby0Elobby0Ewomen/story01.htm
+article9	http://www.theguardian.com/uk-news/2014/jul/16/uk-heatwave-alert-how-keep-cool-temperatures-soar
+article10	http://www.theguardian.com/environment/2013/aug/06/fatberg-london-sewer-grease-blockage
+article11	http://www.theguardian.com/society/2014/aug/08/who-ebola-outbreak-international-public-health-emergency
+article12	http://www.theguardian.com/environment/2014/jul/03/uk-complex-geology-challenge-fracking-drinking-water
+article15	http://www.theguardian.com/business/2014/jul/18/tesco-unlocks-landbank-to-build-4000-new-homes
+article16	http://www.theguardian.com/environment/2014/feb/04/prince-charles-flooded-somerset-levels
+article17	http://www.theguardian.com/business/2014/jul/03/wage-gap-opens-up-between-younger-and-older-workers
+article19	http://www.theguardian.com/business/2014/jul/07/network-rail-fined-50m-pounds-late-trains
+article21	http://www.theguardian.com/society/2014/jun/26/plain-cigarette-packaging-regulations-announced
+article22	http://www.theguardian.com/society/2014/jul/27/nhs-tax-health-service-hypthecated
+article23	http://www.theguardian.com/world/2014/jul/25/researchers-tackle-link-between-climate-change-and-public-health
+article25	http://www.theguardian.com/football/2014/jun/20/world-cup-2014-england-crash-out

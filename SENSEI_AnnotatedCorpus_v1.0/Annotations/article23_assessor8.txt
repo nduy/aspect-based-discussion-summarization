@@ -1,0 +1,420 @@
+LABELS
+
+Label for comment 1: CC normal/manmade: climate warming natural process since last ice age. Nothing to worry about. Cynical sceptical tone.
+Label for comment 2: CC normal:disagrees with 1; they are wrong on facts. Temps above avg significantly. Record-breaking.
+Label for comment 3: CC normal: disagrees in reply to 2.Tone patronising. Already agreed temps rising. But is natural.
+Label for comment 4: CC normal: same comm replying back: quotes stats on volume of science supporting view that CC manmade.
+Label for comment 5: CC normal: disagrees, attacks 1 as a perverse denier. Sarcastic.
+Label for comment 6: CC normal: OP1 reply4. (testy exchange). Long view of series of ice ages with warm periods between;this is one. Repeats natural cycle.
+Label for comment 7: CC normal: reply5: disagrees and refutes all points.
+Label for comment 8: CCnormal:wrong. replyOP. Should still be cooling but since 1900, reverse seen: rising. Facts wrong.
+Label for comment 9: CCnormal: no, manmade-75% figure. trend of 12000 yrs reversed in last 30 to extent passing highest temps.
+Label for comment 10: CCnormal:wrong reply1  mocks OP as massively complacent
+Label for comment 11: CCnormal:Wrong reply1 mocking also, joins in.
+Label for comment 12: method:criticises 2010vs2014 , should be vs 1930s. Scathing.
+Label for comment 13: CCnormal:rude putdown of OP
+Label for comment 14: CCnormal:method: corrects OP terminology of ice age.
+Label for comment 15: reply12:accuses drivel and typos. Badtempered
+Label for comment 16: method: "statistics lies" quote. Terms vague-Poor science argued..denying?
+Label for comment 17: reply1 mocking/insults
+Label for comment 18: another mocks OP again
+Label for comment 19: method:reply 16 ,disagrees , rudely. CO2 much manmade is solidly agreed to have warming effect.
+Label for comment 20: CCmainstream support:all political parties in Aus. have CC policy.  reply16 rudely sarcastic about conservative opinion
+Label for comment 21: CCnormal:trend manmade 20th, accelrating, disagrees - attacks OP. "denialist", patronising. Greenhouse CO2 cause. Exasperated.
+Label for comment 22: CCnormal:solar-cycle.reply21 disagreeing..sarcasm- think denying refers solar cycle notion.
+Label for comment 23: method:CCnormal wrong:reply22:seem to know him! Patronising.Determined. Denialists misinterpret solar cycle effect, accelerated temps is the trend. Denialists cherrypick cooling. Mentions dangers to Farming in Aus.
+Label for comment 24: CCnormal:misses point. Planning: Impact is real, need to be prudent and problems to face is article point.
+Label for comment 25: irrelevant:trading insults
+Label for comment 26: tribal:more insults
+Label for comment 27: method: reply22 insults as dogmatic conservative
+Label for comment 28: method: cites link
+Label for comment 29: method:CCnormal:agrees reply28:SeaIce anomaly:explains process global warming salinity
+Label for comment 30: method:denier accused being shill, rude.
+Label for comment 31: method:attacks 18 years claim as debunked.
+Label for comment 32: CCnormal: mocking denier
+Label for comment 33: planning: rude and sarcastic about vagueness and vacillation. Commenter seems to be recognised
+Label for comment 34: method: planning:science cannot predict everything, but prudent to follow its advice. Public health issue. Best available information. Angry disagrees with 33. Attacks deniers.
+Label for comment 35: tribal arguing:agreeing with 34 and also attacks deniers as stupid.
+Label for comment 36: irrelevant: meaning unclear ...swears
+Label for comment 37: reply33:tribal: attacks denier with putdown
+Label for comment 38: tribal:seems established enmity. reply33:again seem to recognise OP. insults
+Label for comment 39: tribal:conservatives are dumb insult reply33
+Label for comment 40: planning:in favour of, but then cynical about plans being derailed by inevitable attacks and distortion by govt. and big business.
+Label for comment 41: media spin:Murdoch press implied as desperate deniers of env. events implications
+Label for comment 42: triggers hostile responses..tribal:CCnormal:it is all a myth, done in order to control people- Soviet style. Scary predictions been shown as without foundation
+Label for comment 43: tribal:vehemently disagrees 42 and calls uninformed
+Label for comment 44: tribal:attacks 42 for drivel. Exasperated.
+Label for comment 45: method:CCnormal:wrong-science sometimes mistaken but models largely right and success in feeding millions and generally with daily forecasts.
+Label for comment 46: CCnormal:wrong:evidence: method:proof misunderstood; question of evidence for science. points out 350 months trend of above average temps. Massive ice loss from Poles, dramatic changes. Drought exacerbated in Aus recent decades. Strong links to Ocean changes and CC. Outlines process details.
+Label for comment 47: tribal:attacks 42 for Soviet label. Impossible to reason with. Calls deniers stupid.
+Label for comment 48: tribal:rejects Soviet label also, paranoid.
+Label for comment 49: seems agrees with 42, CC is a delusion.
+Label for comment 50: reply42, exasperated by denial, can assume only it ironic.
+Label for comment 51: CCnormal:undecided. Outlier moderate opinion! Positive side to CC. Planning:Agrees should plan for it as Aus under-developed. Simple risk managing.
+Label for comment 52: queries51 details infrastructure to be made of renewables.
+Label for comment 53: reply51 denialists are dogmatic conservatives
+Label for comment 54: tribal:thinks deniers are shills. Muses on motivation and psychological balance of such commenters. Exasperated. Method:Contrasts wikipedia with university authority. Deluded deniers. Criticises complacency.
+Label for comment 55: govtCriticism:sarcastic comment on Aus government bureaucracy and uselessness.
+Label for comment 56: tribal:repeats deniers as imbalanced people.Want last word. planning:Dengue Aus;But last word will be nature. Vast majority of climate scientists wd need to be wrong for catastrophe to be avoided. Remedy:move to renewables; Govt criticism:inaction very risky.
+Label for comment 57: benefitScience:deniers attacked for being lazy and ignorant. Thinks vested interest of fossil fuel owners. Wealth of science research should not be ignored. Hypocrisy as they benefit by science in other ways. e.g they use computers.
+Label for comment 58: benefitScience:mocks deniers as not believing in gravity which is just a theory.
+Label for comment 59: remedy:carbon tax, simple to implement and hedges bets. Critical governement sarcastically.
+Label for comment 60: CCnormal:fossil-lobby:compares to tobacco industry. Profit motive to denying CC. GovtCrit:supporting lobby.
+Label for comment 61: GovtCrit:cutting funding research and expertise too much. e.g. less than school chaplain budget.
+Label for comment 62: CCnormal:overwhelming case for CC. Deniers attacked nonscience.1/9136 papers.
+Label for comment 63: CCnormal:denier replying mob mentality in the science. Methods not scientific.
+Label for comment 64: tribal:ripostes to denier
+Label for comment 65: claims again non sci method
+Label for comment 66: tribal:diff commenter dismisses person as being ignorant
+Label for comment 67: attacks 63 also, "nonsense" angry
+Label for comment 68: ridicules 63 denier
+Label for comment 69: planning:CC going to hugely impact economies everywhere everyone. Islands particularly. Samoa. Sea level rise danger.Aus, US Africa droughts, water wars. Disease spread, dengue fever.
+Label for comment 70: CCnormal:self describes as climate sceptic, points out Brisbane temp coldest 100 years in 2014.
+Label for comment 71: attacks 70 for not understanding. Proves nothing.
+Label for comment 72: attacks 70 as ideological position, no point reasoning.
+Label for comment 73: ridicules 70, Nobel worthy
+Label for comment 74: repeats ridicule, taking tablets..
+Label for comment 75: planning:bigger fish to fry argument. CC "esoteric". e.g smoking obesity. CCnormal:food production threat
+Label for comment 76: repeats earlier ideological denier attack to 75
+Label for comment 77: critical 75: food prod. up because of pesticide, technical advances agri.
+Label for comment 78: planning:risks of leaving unchecked massive, accuses complaceny
+Label for comment 79: method:reply75 "Id say" is an opinion, not science.
+Label for comment 80: CCnormal:warming just a big lie, triggers lots of rebuttals
+Label for comment 81: planning:dengue, malaria risks. Attacks denial. Trust in specialists hypocritical.
+Label for comment 82: CCnormal:attacks80 for denial, backward fear of science.
+Label for comment 83: repeats earlier denial ideo.
+Label for comment 84: reply80 fossil-shill hinted at. Religion? not sure point
+Label for comment 85: dismisses80 as denial
+Label for comment 86: planning:catastrophic risks from temperatures rising during this century for humanity. Hard to counteract. Pressure on aircon, power, food supply. Heatwaves deadly.
+Label for comment 87: planning:risks agrees86, example that 70000 died in 2003 heatwave EU. Were that to become norm. Scale of risk.
+Label for comment 88: flippant reply heat preferable to cold
+Label for comment 89: irrelevant:insult
+Label for comment 90: govt crit. Abbott again criticized:for attacking CC orgs and research. Suggests again shills among commenters. Science undeniable. "cataclysmic"
+Label for comment 91: denial:dismisses article subject as scaremongering about problem
+Label for comment 92: replies92 dismisses as facile
+Label for comment 93: remedy:planning: overpopulation simple link - too many cars. NEed to reduce need.
+Label for comment 94: criticises env. meeting of article as irrelevant to politics. NEed democracy to act.
+Label for comment 95: planning:matter of insurance- people insure their houses, same thing. Risky not to.
+Label for comment 96: govt crit. regressive- lies
+Label for comment 97: govt crit: not funding research properly, why Aus Acad Sci having to fund this. Govt lies. Big business vested interests.
+Label for comment 98: tribal:objects to name calling (denier)
+Label for comment 99: reply98: dismissive
+Label for comment 100: reply98:dismissive too
+
+GROUPS
+
+GROUP: Climate Change - denied as a myth or manmade reality? 
+
+SUBGROUP: Tribal: Perhaps a majority of comments polarised, sarcastic and badtempered; fewer deniers than believers. 
+Label for comment 5 [Strollinby]: CC normal: disagrees, attacks 1 as a perverse denier. Sarcastic.
+Label for comment 10 [Abbott IsGone]: CCnormal:wrong reply1  mocks OP as massively complacent
+Label for comment 11 [chinaplatemate]: CCnormal:Wrong reply1 mocking also, joins in.
+Label for comment 13 [emmagoldmann]: CCnormal:rude putdown of OP
+Label for comment 15 [LeagueOfNervousFish]: reply12:accuses drivel and typos. Badtempered
+Label for comment 17 [travellersjoy]: reply1 mocking/insults
+Label for comment 18 [ID1106291]: another mocks OP again
+Label for comment 26 [MysteryTor]: tribal:more insults
+Label for comment 27 [DoomGlitter]: method: reply22 insults as dogmatic conservative
+Label for comment 32 [holoscenic]: CCnormal: mocking denier
+Label for comment 37 [mrfunbro]: reply33:tribal: attacks denier with putdown
+Label for comment 39 [DoomGlitter]: tribal:conservatives are dumb insult reply33
+Label for comment 51 [john_lucas]: CCnormal:undecided. Outlier moderate opinion! Positive side to CC. Planning:Agrees should plan for it as Aus under-developed. Simple risk managing.
+Label for comment 53 [DoomGlitter]: reply51 denialists are dogmatic conservatives
+Label for comment 64 [mrfunbro]: tribal:ripostes to denier
+Label for comment 99 [Jaget santos]: reply98: dismissive
+Label for comment 100 [holoscenic]: reply98:dismissive too
+Label for comment 92 [holoscenic]: replies91 dismisses as facile
+
+SUBGROUP: Ridicule of deniers as drivel and nonsense
+Label for comment 15 [LeagueOfNervousFish]: reply12:accuses drivel and typos. Badtempered
+Label for comment 35 [Strollinby]: tribal arguing:agreeing with 34 and also attacks deniers as stupid.
+Label for comment 39 [DoomGlitter]: tribal:conservatives are dumb insult reply33
+Label for comment 67 [SirGeo]: attacks 63 also, "nonsense" angry
+Label for comment 68 [lawrencd]: ridicules 63 denier
+Label for comment 73 [ozzoid]: ridicules 70, Nobel worthy
+Label for comment 98 [BIGBIGBOB]: tribal:objects to name calling (denier)
+
+SUBGROUP: criticised as unhealthy psychologically: denial, delusion, paranoia 
+Label for comment 42 [ACTANE]: triggers hostile responses.. govt. criticism: tribal:CCnormal:it is all a myth, done in order to control people- Soviet style. Scary predictions been shown as without foundation
+Label for comment 44 [LeagueOfNervousFish]: tribal:attacks 42 for drivel. Exasperated.
+Label for comment 47 [DoomGlitter]: tribal:attacks 42 for Soviet label. Impossible to reason with. Calls deniers stupid.
+Label for comment 48 [Alpo88]: tribal:rejects Soviet label also, paranoid.
+Label for comment 49 [R_Ambrose_Raven]: seems agrees with 42, CC is a delusion.
+Label for comment 50 [SirGeo]: reply42, exasperated by denial, can assume only it ironic.
+Label for comment 54 [travellersjoy]: tribal:thinks deniers are shills. Muses on motivation and psychological balance of such commenters. Exasperated. Method:Contrasts wikipedia with university authority. Deluded deniers. Criticises complacency.
+Label for comment 56 [mrfunbro]: tribal:repeats deniers as imbalanced people.; Want last word. planning:Dengue Aus;But last word will be nature. Vast majority of climate scientists wd need to be wrong for catastrophe to be avoided. Remedy:move to renewables ; Govt criticism:inaction very risky.
+Label for comment 66 [GnuPatterson]: tribal:diff commenter dismisses person as being ignorant
+Label for comment 74 [Glamorpig]: repeats ridicule, taking tablets..
+Label for comment 76 [DoomGlitter]: repeats earlier ideological denier attack to 75
+Label for comment 81 [wdberg12155]: planning:dengue, malaria risks. Attacks denial. Trust in specialists hypocritical.
+Label for comment 83 [DoomGlitter]: repeats earlier denial ideo.
+
+SUBGROUP: Denial posters Shills?
+Label for comment 30 [Glamorpig]: method:denier accused being shill, rude.
+Label for comment 54 [travellersjoy]: tribal:thinks deniers are shills. Muses on motivation and psychological balance of such commenters. Exasperated. Method:Contrasts wikipedia with university authority. Deluded deniers. Criticises complacency.
+Label for comment 84 [redaussie]: reply80 fossil-shill hinted at. Religion? not sure point
+
+SUBGROUP: Commenters seem to recognise each other from different online discussions.
+Label for comment 23 [Alpo88]: method:CCnormal wrong:reply22:seem to know him! Patronising.Determined. Denialists misinterpret solar cycle effect, accelerated temps is the trend. Denialists cherrypick cooling. Mentions dangers to Farming in Aus.
+Label for comment 38 [Alpo88]: tribal:seems established enmity. reply33:again seem to recognise OP. insults
+
+SUBGROUP: Dismissed with cynicism, often condescendingly, as a natural cyclical process - deniers. Opposed vehemently. 
+Label for comment 1 [MysteryTor]: CC normal/manmade: climate warming natural process since last ice age. 
+Label for comment 3 [MysteryTor]: CC normal: disagrees in reply to 2.Tone patronising. Already agreed temps rising. But is natural.; Nothing to worry about. Cynical sceptical tone.
+Label for comment 6 [MysteryTor]: CC normal: OP1 reply4. (testy exchange). Long view of series of ice ages with warm periods between;this is one. Repeats natural cycle.
+Label for comment 5 [Strollinby]: CC normal: disagrees, attacks 1 as a perverse denier. Sarcastic.
+Label for comment 7 [MysteryTor]: CC normal: reply5: disagrees and refutes all points.
+Label for comment 8 [JJRichardson]: CCnormal:wrong. replyOP. Should still be cooling but since 1900, reverse seen: rising. Facts wrong.
+Label for comment 9 [Wobbly]: CCnormal: no, manmade-75% figure. trend of 12000 yrs reversed in last 30 to extent passing highest temps.
+Label for comment 22 [DougofArmidale]: CCnormal:solar-cycle. reply21 disagreeing. sarcasm- think denying refers solar cycle notion.
+Label for comment 29 [Alpo88]: method:CCnormal:agrees reply28:SeaIce anomaly:explains process global warming salinity
+Label for comment 42 [ACTANE]: triggers hostile responses.. govt. criticism: ; tribal:CCnormal:it is all a myth, done in order to control people- Soviet style. Scary predictions been shown as without foundation
+Label for comment 43 [JJRichardson]: tribal:vehemently disagrees 42 and calls uninformed
+Label for comment 45 [mrfunbro]: method:CCnormal:wrong-science sometimes mistaken but models largely right and success in feeding millions and generally with daily forecasts.
+Label for comment 46 [celsius233]: CCnormal:wrong:evidence: method:proof misunderstood; question of evidence for science. points out 350 months trend of above average temps. Massive ice loss from Poles, dramatic changes. Drought exacerbated in Aus recent decades. Strong links to Ocean changes and CC. Outlines process details.
+Label for comment 80 [123mot]: CCnormal:warming just a big lie, triggers lots of rebuttals
+
+SUBGROUP: Deniers ignoring trend of rising temperatures. Testy exchanges.
+Label for comment 2 [Wobbly]: CC normal:disagrees with 1; they are wrong on facts. Temps above avg significantly. Record-breaking.
+Label for comment 3 [MysteryTor]: CC normal: disagrees in reply to 2.Tone patronising. Already agreed temps rising. But is natural.
+Label for comment 9 [Wobbly]: CCnormal: no, manmade-75% figure. trend of 12000 yrs reversed in last 30 to extent passing highest temps.
+Label for comment 46 [celsius233]: CCnormal:wrong:evidence: method:proof misunderstood; question of evidence for science. points out 350 months trend of above average temps. Massive ice loss from Poles, dramatic changes. Drought exacerbated in Aus recent decades. Strong links to Ocean changes and CC. Outlines process details.
+Label for comment 85 [lawrencd]: dismisses80 as denial
+
+SUBGROUP: Wealth of statistical scientific evidence showing manmade climate change. Received opinion?
+Label for comment 4 [Wobbly]: CC normal: same comm replying back: quotes stats on volume of science supporting view that CC manmade.
+Label for comment 16 [DougofArmidale]: method: "statistics lies" quote. Terms vague-Poor science argued..denying?
+Label for comment 19 [celsius233]: method:reply 16 ,disagrees , rudely. CO2 much manmade is solidly agreed to have warming effect.
+Label for comment 20 [DoomGlitter]: CCmainstream support:all political parties in Aus. have CC policy.  reply16 rudely sarcastic about conservative opinion
+Label for comment 24 [PaulRobert1]: CCnormal:misses point. Planning: Impact is real, need to be prudent and problems to face is article point.
+Label for comment 31 [Glamorpig]: method:attacks 18 years claim as debunked.
+Label for comment 43 [JJRichardson]: tribal:vehemently disagrees 42 and calls uninformed
+Label for comment 45 [mrfunbro]: method:CCnormal:wrong-science sometimes mistaken but models largely right and success in feeding millions and generally with daily forecasts.
+Label for comment 62 [ID9345255]: CCnormal:overwhelming case for CC. Deniers attacked nonscience.1/9136 papers.
+Label for comment 66 [GnuPatterson]: tribal:diff commenter dismisses person as being ignorant
+Label for comment 70 [GoredToDeath]: CCnormal:self describes as climate sceptic, points out Brisbane temp coldest 100 years in 2014.
+Label for comment 71 [GnuPatterson]: attacks 70 for not understanding. Proves nothing.
+
+SUBGROUP: Science attitude of deniers hypocritical: its benefits!
+Label for comment 45 [mrfunbro]: method:CCnormal:wrong-science sometimes mistaken but models largely right and success in feeding millions and generally with daily forecasts.
+Label for comment 57 [Jools12]: benefitScience:deniers attacked for being lazy and ignorant. Thinks vested interest of fossil fuel owners. Wealth of science research should not be ignored. Hypocrisy as they benefit by science in other ways. e.g they use computers.
+Label for comment 58 [PaulRobert1]: benefitScience:mocks deniers as not believing in gravity which is just a theory.
+Label for comment 82 [bcmo2307]: CCnormal:attacks80 for denial, backward fear of science.
+
+SUBGROUP: CO2 and fossil fuels in role of warming vs renewables
+Label for comment 19 [celsius233]: method:reply 16 ,disagrees , rudely. CO2 much manmade is solidly agreed to have warming effect.
+Label for comment 21 [Alpo88]: CCnormal:trend manmade 20th, accelrating, disagrees - attacks OP. "denialist", patronising. Greenhouse CO2 cause. Exasperated.
+Label for comment 52 [mrfunbro]: queries51 details infrastructure to be made of renewables.
+Label for comment 59 [SailorMoon]: remedy:carbon tax, simple to implement and hedges bets. Critical governement sarcastically.
+Label for comment 60 [lstorey]: CCnormal:fossil-lobby:compares to tobacco industry. Profit motive to denying CC. GovtCrit:supporting lobby.
+Label for comment 84 [redaussie]: reply80 fossil-shill hinted at. Religion? not sure point
+
+GROUP: Many heated exchanges over scientific methods proof, terms, facts, evidence. Dogmas.
+Label for comment 12 [ACTANE]: method:criticises 2010vs2014 , should be vs 1930s. Scathing.
+Label for comment 14 [JBowers]: CCnormal:method: corrects OP terminology of ice age.
+Label for comment 16 [DougofArmidale]: method: "statistics lies" quote. Terms vague-Poor science argued..denying?
+Label for comment 19 [celsius233]: method:reply 16 ,disagrees , rudely. CO2 much manmade is solidly agreed to have warming effect.
+Label for comment 27 [DoomGlitter]: method: reply22 insults as dogmatic conservative
+Label for comment 28 [SirGeo]: method: cites link
+Label for comment 29 [Alpo88]: method:CCnormal:agrees reply28:SeaIce anomaly:explains process global warming salinity
+Label for comment 30 [Glamorpig]: method:denier accused being shill, rude.
+Label for comment 34 [Wobbly]: method: planning:science cannot predict everything, but prudent to follow its advice. Public health issue. Best available information. Angry disagrees with 33. Attacks deniers.
+Label for comment 46 [celsius233]: CCnormal:wrong:evidence: method:proof misunderstood; question of evidence for science. points out 350 months trend of above average temps. Massive ice loss from Poles, dramatic changes. Drought exacerbated in Aus recent decades. Strong links to Ocean changes and CC. Outlines process details.
+Label for comment 53 [DoomGlitter]: reply51 denialists are dogmatic conservatives
+Label for comment 63 [DougofArmidale]: CCnormal:denier replying mob mentality in the science. Methods not scientific.
+Label for comment 65 [DougofArmidale]: claims again non sci method
+Label for comment 71 [GnuPatterson]: attacks 70 for not understanding. Proves nothing.
+Label for comment 72 [DoomGlitter]: attacks 70 as ideological position, no point reasoning.
+Label for comment 79 [Glamorpig]: method:reply75 "Id say" is an opinion, not science.
+
+GROUP: Planning vs complacency
+Label for comment 10 [Abbott IsGone]: CCnormal:wrong reply1  mocks OP as massively complacent
+Label for comment 24 [PaulRobert1]: CCnormal:misses point. Planning: Impact is real, need to be prudent and problems to face is article point.
+Label for comment 33 [Kaikoura]: planning: rude and sarcastic about vagueness and vacillation. Commenter seems to be recognised
+Label for comment 34 [Wobbly]: method: planning:science cannot predict everything, but prudent to follow its advice. Public health issue. Best available information. Angry disagrees with 33. Attacks deniers.
+Label for comment 40 [20reeds]: planning:in favour of, but then cynical about plans being derailed by inevitable attacks and distortion by govt. and big business.
+Label for comment 51 [john_lucas]: CCnormal:undecided. Outlier moderate opinion! Positive side to CC. Planning:Agrees should plan for it as Aus under-developed. Simple risk managing.
+Label for comment 54 [travellersjoy]: tribal:thinks deniers are shills. Muses on motivation and psychological balance of such commenters. Exasperated. Method:Contrasts wikipedia with university authority. Deluded deniers. Criticises complacency.
+Label for comment 69 [PaulRobert1]: planning:CC going to hugely impact economies everywhere everyone. Islands particularly. Samoa. Sea level rise danger.Aus, US Africa droughts, water wars. Disease spread, dengue fever.
+Label for comment 75 [ianhassall]: planning: AGAINST: as bigger fish to fry argument. CC "esoteric". e.g smoking obesity. CCnormal:food production threat
+Label for comment 77 [Jaget santos]: critical 75: food prod. up because of pesticide, technical advances agri.
+Label for comment 78 [holoscenic]: planning:risks of leaving unchecked massive, accuses complaceny
+Label for comment 86 [R_Ambrose_Raven]: planning:catastrophic risks from temperatures rising during this century for humanity. Hard to counteract. Pressure on aircon, power, food supply. Heatwaves deadly.
+Label for comment 91 [Paul Moulton]: DISAGREES with planning and meeting in article denial:dismisses article subject as scaremongering about problem
+Label for comment 95 [Treefern]: planning:matter of insurance- people insure their houses, same thing. Risky not to.
+
+SUBGROUP: Knock-on effects in Aus like Dengue fever; economic impact 
+Label for comment 56 [mrfunbro]: tribal:repeats deniers as imbalanced people.; Want last word. planning:Dengue Aus;But last word will be nature. Vast majority of climate scientists wd need to be wrong for catastrophe to be avoided. Remedy:move to renewables ; Govt criticism:inaction very risky.
+Label for comment 69 [PaulRobert1]: planning:CC going to hugely impact economies everywhere everyone. Islands particularly. Samoa. Sea level rise danger.Aus, US Africa droughts, water wars. Disease spread, dengue fever.
+Label for comment 81 [wdberg12155]: planning:dengue, malaria risks. Attacks denial. Trust in specialists hypocritical.
+
+SUBGROUP: heatwaves, cars also - historical examples
+Label for comment 87 [DenisPC9]: planning:risks agrees86, example that 70000 died in 2003 heatwave EU. Were that to become norm. Scale of risk.
+Label for comment 88 [Paul Moulton]: flippant reply heat preferable to cold
+Label for comment 93 [icepakk1]: remedy:planning: overpopulation simple link - too many cars. NEed to reduce need.
+
+SUBGROUP: remedy
+Label for comment 59 [SailorMoon]: remedy:carbon tax, simple to implement and hedges bets. Critical governement sarcastically.
+Label for comment 93 [icepakk1]: remedy:planning: overpopulation simple link - too many cars. NEed to reduce need.
+
+GROUP: Government criticism along with media and big business lobbying
+Label for comment 40 [20reeds]: planning:in favour of, but then cynical about plans being derailed by inevitable attacks and distortion by govt. and big business.
+Label for comment 41 [Strollinby]: media spin:Murdoch press implied as desperate deniers of env. events implications
+Label for comment 42 [ACTANE]: triggers hostile responses.. govt. criticism: tribal:CCnormal:it is all a myth, done in order to control people- Soviet style. Scary predictions been shown as without foundation
+Label for comment 55 [ID1106291]: govtCriticism:sarcastic comment on Aus government bureaucracy and uselessness.
+Label for comment 56 [mrfunbro]: tribal:repeats deniers as imbalanced people.; Want last word. planning:Dengue Aus;But last word will be nature. Vast majority of climate scientists wd need to be wrong for catastrophe to be avoided. Remedy:move to renewables ; Govt criticism:inaction very risky.
+Label for comment 60 [lstorey]: CCnormal:fossil-lobby:compares to tobacco industry. Profit motive to denying CC. GovtCrit:supporting lobby.
+Label for comment 61 [R_Ambrose_Raven]: GovtCrit:cutting funding research and expertise too much. e.g. less than school chaplain budget.
+Label for comment 90 [Ronnie2014]: govt crit. Abbott again criticized:for attacking CC orgs and research. Suggests again shills among commenters. Science undeniable. "cataclysmic"
+Label for comment 94 [alloomis]: criticises env. meeting of article as irrelevant to politics. NEed democracy to act.
+Label for comment 96 [Withnall]: govt crit. regressive- lies
+Label for comment 97 [ops2048]: govt crit: not funding research properly, why Aus Acad Sci having to fund this. Govt lies. Big business vested interests.
+
+GROUP: miscellaneous
+Label for comment 25 [MysteryTor]: irrelevant:trading insults
+Label for comment 89 [holoscenic]: irrelevant:insult
+Label for comment 36 [Abbott IsGone]: irrelevant: meaning unclear ...swears
+
+UNCONSTRAINED SUMMARY
+
+Commenters were divided into two camps - a minority sceptical about climate change and the rest who thought it manmade and dangerous. A commenter identifying as undecided was a rare exception. The sceptics were repeatedly called "denialists" and complacent that warming was merely natural, a cycle between ice ages. Several countered that recent temperature trends were in fact anomalous and manmade. Overwhelming scientific evidence had established warming from CO2 and fossil fuel impacting polar ice. This included mentions of worsening Australian droughts and increased heatwaves. A carbon tax and renewables were mentioned as remedies.
+
+Opposing opinions were often dismissive and insulting. Conservatives were characterised as psychologically unbalanced, one triggered much derision for warning that climate predictions were used to control people. Deniers, in turn, called their opponents deluded. Suspicions were raised deniers were shills; some seemed to recognise others from online discussions. Climate change sceptics negative attitudes to science were seen as hypocritical, for their lives had benefitted from it - did they disbelieve theories like gravity too? Many exchanges concerned the validity of evidence and the scientific method - facts and statistics were sneered at, and positions labelled as dogmatic and ignorant. Several commenters argued for prudent planning to protect societies from the potentially catastrophic risks. Warming would mean the advent of Dengue fever to Australia, malaria spreading, economic pressures, wars and heatwaves. 
+
+The Australian government was criticised for inaction over climate change. Comments were sarcastic about bureaucracy and funding cuts to scientific research - why was the Australian Academy of Science having to fund the advocacy? Some blamed lobbying by corporate and fossil fuel interests - who were compared to the tobacco industry for suppressing dangers to public health. The press and media were attacked for their role.
+
+CONSTRAINED SUMMARY
+
+Commenters were divided into two camps - a minority sceptical about climate change and the rest who thought it man-made and dangerous. A commenter identifying as undecided provided a rare exception. Sceptics (repeatedly charged as "denialists") were complacent that warming was merely a natural cycle between ice ages. Several countered this that recent temperature trends were  anomalous and man-made. Overwhelming scientific evidence had established warming from CO2 impacting polar ice. It had led to worsening Australian droughts and heatwaves. A carbon tax and renewables were mentioned as remedies.
+
+Opposing opinions were often dismissive and insulting. Conservatives were characterised as psychologically unbalanced, one triggered much derision for warning that climate predictions were used to control people. Deniers, in turn, called others deluded. Suspicions were raised deniers were shills; some seemed to recognise others from elsewhere online. Climate change scepticism about science was hypocritical - had they not benefitted from it? Did they disbelieve theories like gravity too? Many exchanges concerned the validity of evidence and the scientific method - facts and statistics were sneered at, and positions labelled as dogmatic. Several argued for planning to protect society from the potentially catastrophic risks. Warming would lead to Dengue fever in Australia, economic pressures, wars and heatwaves. 
+
+The government was criticised for inaction over climate change, including funding cuts to scientific research and advocacy. Some blamed lobbying by corporate and fossil fuel interests - likened to the tobacco industry for suppressing dangers to public health. The media was also criticised.
+
+BACK LINKING
+
+Commenters were divided into two camps - a minority sceptical about climate change and the rest who thought it man-made and dangerous.
+(Sub)GroupNames:
+- SUBGROUP: Tribal: Perhaps a majority of comments polarised, sarcastic and badtempered; fewer deniers than believers.
+- SUBGROUP: Ridicule of deniers as drivel and nonsense
+- SUBGROUP: criticised as unhealthy psychologically: denial, delusion, paranoia
+- SUBGROUP: Dismissed with cynicism, often condescendingly, as a natural cyclical process - deniers. Opposed vehemently.
+- SUBGROUP: Deniers ignoring trend of rising temperatures. Testy exchanges.
+- SUBGROUP: Wealth of statistical scientific evidence showing manmade climate change. Received opinion?
+- SUBGROUP: CO2 and fossil fuels in role of warming vs renewables
+- SUBGROUP: Knock-on effects in Aus like Dengue fever; economic impact
+
+A commenter identifying as undecided provided a rare exception.
+(Sub)GroupNames:
+- SUBGROUP: Tribal: Perhaps a majority of comments polarised, sarcastic and badtempered; fewer deniers than believers.
+
+Sceptics (repeatedly charged as "denialists") were complacent that warming was merely a natural cycle between ice ages. 
+(Sub)GroupNames:
+- SUBGROUP: Tribal: Perhaps a majority of comments polarised, sarcastic and badtempered; fewer deniers than believers.
+- SUBGROUP: Ridicule of deniers as drivel and nonsense
+- SUBGROUP: criticised as unhealthy psychologically: denial, delusion, paranoia
+- SUBGROUP: Dismissed with cynicism, often condescendingly, as a natural cyclical process - deniers. Opposed vehemently.
+
+Several countered this that recent temperature trends were  anomalous and man-made.
+(Sub)GroupNames:
+- SUBGROUP: Dismissed with cynicism, often condescendingly, as a natural cyclical process - deniers. Opposed vehemently.
+- SUBGROUP: Deniers ignoring trend of rising temperatures. Testy exchanges.
+- SUBGROUP: Wealth of statistical scientific evidence showing manmade climate change. Received opinion?
+- SUBGROUP: CO2 and fossil fuels in role of warming vs renewables
+- GROUP: Many heated exchanges over scientific methods proof, terms, facts, evidence. Dogmas.
+
+Overwhelming scientific evidence had established warming from CO2 impacting polar ice.
+(Sub)GroupNames:
+- SUBGROUP: Dismissed with cynicism, often condescendingly, as a natural cyclical process - deniers. Opposed vehemently.
+- SUBGROUP: Deniers ignoring trend of rising temperatures. Testy exchanges.
+- SUBGROUP: Wealth of statistical scientific evidence showing manmade climate change. Received opinion?
+- SUBGROUP: CO2 and fossil fuels in role of warming vs renewables
+- GROUP: Many heated exchanges over scientific methods proof, terms, facts, evidence. Dogmas.
+
+It had led to worsening Australian droughts and heatwaves.
+(Sub)GroupNames:
+- SUBGROUP: Commenters seem to recognise each other from different online discussions.
+- SUBGROUP: Dismissed with cynicism, often condescendingly, as a natural cyclical process - deniers. Opposed vehemently.
+- GROUP: Planning vs complacency
+- SUBGROUP: heatwaves, cars also - historical examples
+
+A carbon tax and renewables were mentioned as remedies.
+(Sub)GroupNames:
+- SUBGROUP: criticised as unhealthy psychologically: denial, delusion, paranoia
+- SUBGROUP: CO2 and fossil fuels in role of warming vs renewables
+- GROUP: Planning vs complacency
+
+Opposing opinions were often dismissive and insulting.
+(Sub)GroupNames:
+- SUBGROUP: Tribal: Perhaps a majority of comments polarised, sarcastic and badtempered; fewer deniers than believers.
+- SUBGROUP: Ridicule of deniers as drivel and nonsense
+- SUBGROUP: criticised as unhealthy psychologically: denial, delusion, paranoia
+- SUBGROUP: Denial posters Shills?
+- SUBGROUP: Commenters seem to recognise each other from different online discussions.
+- SUBGROUP: Dismissed with cynicism, often condescendingly, as a natural cyclical process - deniers. Opposed vehemently.
+- SUBGROUP: Deniers ignoring trend of rising temperatures. Testy exchanges.
+
+Conservatives were characterised as psychologically unbalanced, one triggered much derision for warning that climate predictions were used to control people.
+(Sub)GroupNames:
+- SUBGROUP: Ridicule of deniers as drivel and nonsense
+- SUBGROUP: criticised as unhealthy psychologically: denial, delusion, paranoia
+
+Deniers, in turn, called others deluded.
+(Sub)GroupNames:
+- SUBGROUP: criticised as unhealthy psychologically: denial, delusion, paranoia
+- SUBGROUP: Dismissed with cynicism, often condescendingly, as a natural cyclical process - deniers. Opposed vehemently.
+
+Suspicions were raised deniers were shills; some seemed to recognise others from elsewhere online.
+(Sub)GroupNames:
+- SUBGROUP: Denial posters Shills?
+- SUBGROUP: Commenters seem to recognise each other from different online discussions.
+
+Climate change scepticism about science was hypocritical - had they not benefitted from it?
+(Sub)GroupNames:
+- SUBGROUP: criticised as unhealthy psychologically: denial, delusion, paranoia
+- SUBGROUP: Science attitude of deniers hypocritical: its benefits!
+
+Did they disbelieve theories like gravity too?
+(Sub)GroupNames:
+- SUBGROUP: Science attitude of deniers hypocritical: its benefits!
+
+Many exchanges concerned the validity of evidence and the scientific method - facts and statistics were sneered at, and positions labelled as dogmatic.
+(Sub)GroupNames:
+- SUBGROUP: Tribal: Perhaps a majority of comments polarised, sarcastic and badtempered; fewer deniers than believers.
+- SUBGROUP: Ridicule of deniers as drivel and nonsense
+- SUBGROUP: Commenters seem to recognise each other from different online discussions.
+- SUBGROUP: Dismissed with cynicism, often condescendingly, as a natural cyclical process - deniers. Opposed vehemently.
+- SUBGROUP: Deniers ignoring trend of rising temperatures. Testy exchanges.
+- SUBGROUP: Wealth of statistical scientific evidence showing manmade climate change. Received opinion?
+- SUBGROUP: Science attitude of deniers hypocritical: its benefits!
+- GROUP: Many heated exchanges over scientific methods proof, terms, facts, evidence. Dogmas.
+
+Several argued for planning to protect society from the potentially catastrophic risks.
+(Sub)GroupNames:
+- SUBGROUP: Deniers ignoring trend of rising temperatures. Testy exchanges.
+- SUBGROUP: Wealth of statistical scientific evidence showing manmade climate change. Received opinion?
+- SUBGROUP: CO2 and fossil fuels in role of warming vs renewables
+- GROUP: Many heated exchanges over scientific methods proof, terms, facts, evidence. Dogmas.
+- GROUP: Planning vs complacency
+- SUBGROUP: Knock-on effects in Aus like Dengue fever; economic impact
+
+Warming would lead to Dengue fever in Australia, economic pressures, wars and heatwaves.
+(Sub)GroupNames:
+- GROUP: Planning vs complacency
+- SUBGROUP: Knock-on effects in Aus like Dengue fever; economic impact
+- SUBGROUP: heatwaves, cars also - historical examples
+
+The government was criticised for inaction over climate change, including funding cuts to scientific research and advocacy.
+(Sub)GroupNames:
+- GROUP: Planning vs complacency
+- SUBGROUP: remedy
+- GROUP: Government criticism along with media and big business lobbying
+
+Some blamed lobbying by corporate and fossil fuel interests - likened to the tobacco industry for suppressing dangers to public health.
+(Sub)GroupNames:
+- SUBGROUP: CO2 and fossil fuels in role of warming vs renewables
+- GROUP: Government criticism along with media and big business lobbying
+
+The media was also criticised.
+(Sub)GroupNames:
+- GROUP: Government criticism along with media and big business lobbying

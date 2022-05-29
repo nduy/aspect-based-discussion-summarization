@@ -1,0 +1,296 @@
+LABELS
+
+Label for comment 1: Cuts: can't see how this won't be a vermin problem; appreciates difficult decision but seems like a poorly thought idea. Against the issue.
+Label for comment 2: Vermin: suggests people often have compost bins and have no problems.
+Label for comment 3: Composting: suggests if people would do more composting bins could be collected less frequently.
+Label for comment 4: Flats: negative response to comment regarding increased composting.
+Label for comment 5: Flats: in response to comment re increased composting, advises flats normally have sheds to store rubbish away from property.
+Label for comment 6: Composting: Angry response to comment re increased composting and suggests looking at housing stock in borough ie flats.
+Label for comment 7: Bins: comfirmed black/grey bins for items that cannot be composted and therefore composting comments don't solve the issue.Negative comment re council cuts.
+Label for comment 8: Bins: extended clarification of black bins suggesting that package doesn't attract vermin.
+Label for comment 9: Flats: negative response to comment regarding rubbish sheds for flats.
+Label for comment 10: Flats: Clarification that article highlights communal bins serving flats will not be affected by cuts.
+Label for comment 11: Vermin: suggests borough provides larger bins or kitchen and garden waste bins so as not to attract vermin.Suggested many people can't fill bins in three weeks but can just about as a family.
+Label for comment 12: Bins: clarifies borough provides additional bin for families and other bins provided.
+Label for comment 13: Bins:extends clarification on what bins can be used for but highlights has to pay for kitchen/garden waste bin to be emptied fortnightly. People who don't pay compost bin charge put contents in black bin.
+Label for comment 14: Cuts: Strong negative emotion regarding cuts 'Bury will be knee deep in rubbish by Christmas' 'We are moving back to the Middle ages, expect plague and pestilence.' Blames Labour
+Label for comment 15: Recycling education: clarifies food waste goees into brown bin with garden waste. Commentor highlights how much recyclable material is put into grey/black bins. Part of solution in raising recycling rates is to educate households and consider use of fines/rewards to encourage good attitudes to waste disposal.
+Label for comment 16: Vermin: used nappies and left over food on packaging can attract vermin. Also takes issue with tone of earlier comment.
+Label for comment 17: Flats: flats may not be affected by cuts but highlights issues around converted terraced housing and the lack of space for bins which have to go on the pavement.
+Label for comment 18: Vermin: repeats point that vermin is attracted to packaging with leftover food.
+Label for comment 19: Cuts: curses cuts and highlights borough is 'crazy' and possible health issues. 'Do they want a new plague'
+Label for comment 20: Irrelevant: takes issue with previous comment tone.
+Label for comment 21: Cuts: negative reaction to cuts and questions what are taxpayers paying for and did we vote for this.
+Label for comment 22: Cuts: backs up idea that borough is 'crazy'.
+Label for comment 23: Cuts: positive response. As a family their bin is usually half full. In Manchester food waste collected weekly in summer. Clarifies as 38 of 51 council seats are Labour appears we did vote for this.
+Label for comment 24: Cuts: thinks its a bad idea but won't cause a plague.
+Label for comment 25: Recycling education: single person questions previous family commentor having space in their bins despite trying hard to recycle as much as possible.
+Label for comment 26: Recycling education: two poeple household repeat question how does family have space in bins.
+Label for comment 27: Recycling education: questions if single commentor is buying too much food and how they have a food and garden waste bin for composting during the winter.(doen't say if they live in Bury)
+Label for comment 28: Recycling education: tone questions commentors ability to recycle ie 'don't you squash or sort.'
+Label for comment 29: Bins: responds to previous comments highlighting that doesn't have a separate collection for food/garden waste. Highlights what food waste is thrown away and the amount of packaging despite mainly buying fresh.(Not from Bury)
+Label for comment 30: Bins: in response to previous commentor point re no food/garden waste collection suggests pestering council to introduce one as they do in Bury.
+Label for comment 31: Recycling education: in response to how to have half full recycling bin commenter highlights how the recycling collection works where they live and has a council provided compost bin in the garden highlighting how useful the compost bin is.
+Label for comment 32: Recycling education: commenter acknowledges previous commenter doesn't have a garden.
+Label for comment 33: Recycling education: angry response to tone of comments regarding inability to recycle. Commenter highlights how people at different points in their lives generate diffferent levels of waste.
+Label for comment 34: Bins: positive response to idea regarding pestering borough to introduce compost/food waste bins.
+Label for comment 35: Recycling education: talks about using compost bins or visiting recycling centres every few months to take larger recyclable stuff and other items not allowed in bins.
+Label for comment 36: Bins: highlights issue around how some councils collect cardboard in black bins making bins very full rather than separately.
+Label for comment 37: Bins: highlights Derbyshire resells compost collected and food waste collected weekly in separate green bin. Not much left for landfill.
+Label for comment 38: Vermin: reference to earlier exaggerated comment regarding plagues, this time highlighting overpopulation and over consumption.
+Label for comment 39: Vermin: Rats the size of cats.
+Label for comment 40: Bins: David Bowie Future Legend song lyrics quote referring to people living in 'skyscrapers complaining about bin collection.
+Label for comment 41: Cuts: referring to earlier 'rats the size of cats' comment but relating to Councillors rather than cats.
+Label for comment 42: Cuts: repeats remarks regarding Councillors.
+Label for comment 43: Cuts: continuing cutting remarks regarding Councillors. Obviously against proposals.
+Label for comment 44: Cuts: how much do social workers cost? Obviously questioning the expense of social workers against cost of bin collection and environmental health.
+Label for comment 45: Bins: how is bin collection affected after strikes?
+Label for comment 46: Cuts: General moan regarding central government cuts, the reduction of council services etc, and how this commenter already takes lots of waste to the recycling plant and worries if Bury goes ahead with this new bin policy other boroughs will follow. Negative
+Label for comment 47: Cuts: believes cuts are a good thing referring to Stockport council which introduced similar cuts and after a year of residents complaining and adjusting now has one of the highest recycling rates in UK. Positive
+Label for comment 48: Cuts: in response to positive comment regarding Stockport, highlights the difference children make to rubbish levels.
+Label for comment 49: Recycling education: nappies; back to nappy/reusable nappy debate.
+Label for comment 50: Bins: highlights benefit of weekly food collection as opposed to having to put food waste in household rubbish awaiting three week collection.
+Label for comment 51: Recycling education: nappies; discusses how Stockport's council website highlights benefits of real nappies or can apply for an additional black bin for nappy waste. Positive
+Label for comment 52: Recycling education: nappies; discusses how washing real nappies caused huge increase in electricity bills. difficult to decide between expenditure on disposables or slightly lower cost on reusables combined with increased electricity bills.
+Label for comment 53: Recycling education: nappies; plus cost of water needed to wash nappies.
+Label for comment 54: Recycling education: nappies; plus cost of using washing machine to wash nappies.
+Label for comment 55: recycling education: nappies; washable nappies great but still left with poo in the bin for two or three weeks.
+Label for comment 56: Recycling education: nappies; speaking from experience don't have time to wash nappies. Also lots of people live in flats with babies and have no space to dry them.
+Label for comment 57: Recycling education: nappies; how about nappy library schemes. Commentor highlights responses are missing the point. Its not a reduction in bin collection its collecting bins differently.
+Label for comment 58: Recycling education: nappies; repeating issues around disposing of nappies.
+Label for comment 59: Bins: commenter suspects Bury will announce plans of a Bin tax, like bedroom tax where you would lose rubbish oickup days unless you release your spare capacity to larger families.
+Label for comment 60: Bins: irrelevant
+Label for comment 61: Recycling Education: nappies; information on how to wash nappies efficiently and how if done right has less of an environmental impact than disposables.
+Label for comment 62: Recycling Education: nappies; sarcastic comment regarding all for the sake of making zero effect to the environment.
+Label for comment 63: Recycling Education: nappies;repeating issues around disposing of nappies.Comments seem to be straying from the point of the article.
+Label for comment 64: Vermin: negative comments particularly towards local councillors. A family of four despite recycling everything is still going to more than fill a black bin. Suggests in a heat wave it will be a public health hazard.
+Label for comment 65: Bins: single person comments only puts 1 supermerket bag out a fortnight.
+Label for comment 66: Bins: commenter continues from their previous post suggesting could rent bin space to people that have too much rubbish.
+Label for comment 67: Recycling Education: nappies: repeat of previous disposable/reusable nappies debate.
+Label for comment 68: Irrelevant
+Label for comment 69: Irrelevant
+Label for comment 70: Irrelevant
+Label for comment 71: Environmental health: commenter suggests burning rubbish 'after environmental gestapo clock off for the day'.
+Label for comment 72: Irrelevant
+Label for comment 73: Irrelevant
+Label for comment 74: Bins: house of five repeating debate about how they don't fill their bin in two weeks.
+Label for comment 75: Environmental health: commenter suggests burning rubbish is dangerous as could inhale toxic gases.
+Label for comment 76: Bins: house of five repeating debate about how they don't fill their bin in two weeks after everything else has been reccycled - but mentions recycling food waste - may not be in Bury.
+Label for comment 77: Recycling Education: nappies: repeat of previous disposable/reusable nappies debate.
+Label for comment 78: Cuts: negative comments regarding cuts. Ultimately blame should be on central government when it can't provide basic services such as bin collection and social workers.
+Label for comment 79: Environmental health: response to burning rubbish comment commenter suggests will probably be caught on camera.
+Label for comment 80: Cuts: Tell councils to perform services they were elected to deliver, not shift the cost of burden and negative effects to taxpayers.
+Label for comment 81: Bins: family of four repeating debate about how their black bin is put out every 4 to 6 weeks and is rarely full.
+Label for comment 82: Bins: commenter suggests the only way to have space in a bin is if people in deprived areas go around steeling rubbish from bins.
+Label for comment 83: Recycling Education: nappies: highlights how Bury borough has offered the provision to help people dispose of nappies by allowing residents to apply for an additional grey/black bin.
+Label for comment 84: Recycling Education: nappies: repeat of previous disposable/reusable nappies.
+Label for comment 85: Recycling Education: Refering to no need or excess rubbish as long as Bury has a good recycling scheme. Suggests if people are creating a lot of black bin rubbish they are not recycling correctly; nappies.
+Label for comment 86: Bins: highlights how in Edinburgh collections moved to fortnightly and now introducing smaller bins. (doesn't suggest if this is working or not).
+Label for comment 87: Bins: commenter says where they live is the best recycling rate in the country ie 3 bins - green/food waste every week, recyclables and general waste every alternate week.
+Label for comment 88: Bins: food waste recycling is key.
+Label for comment 89: Irrelevant
+Label for comment 90: Irrelevant
+Label for comment 91: Irrelevant
+Label for comment 92: Irrelevant
+Label for comment 93: Irrelevant
+Label for comment 94: Irrelevant
+Label for comment 95: Irrelevant
+Label for comment 96: Irrelevant
+Label for comment 97: Irrelevant
+Label for comment 98: Irrelevant
+Label for comment 99: Irrelevant
+Label for comment 100: Flats: in Stockholm flats have one small communal bin. We put out one bag of non-recycled rubbish a week.
+
+GROUPS
+
+GROUP: Opinions on reducing black/grey bin collections
+
+SUBGROUP: Negative opinions
+Label for comment 1 [majicka]: Cuts: can't see how this won't be a vermin problem; appreciates difficult decision but seems like a poorly thought idea. Against the issue.
+Label for comment 14 [Gladstone Minzie]: Cuts: Strong negative emotion regarding cuts 'Bury will be knee deep in rubbish by Christmas' 'We are moving back to the Middle ages, expect plague and pestilence.' Blames Labour
+Label for comment 19 [megasox]: Cuts: curses cuts and highlights borough is 'crazy' and possible health issues. 'Do they want a new plague'
+Label for comment 22 [Dave C]: Cuts: backs up idea that borough is 'crazy'.label for comment 21 [Iccleste] :Cuts: negative reaction to cuts and questions what are taxpayers paying for and did we vote for this.
+Label for comment 24 [SonOfTheDesert]: Cuts: thinks its a bad idea but won't cause a plague.
+Label for comment 41 [Factsaregood]: Cuts: referring to earlier 'rats the size of cats' comment but relating to Councillors rather than cats.
+Label for comment 42 [magicmingus]: Cuts: repeats remarks regarding Councillors.
+Label for comment 43 [njwimpenny]: Cuts: continuing cutting remarks regarding Councillors. Obviously against proposals.
+Label for comment 44 [OperationAnfield]: Cuts: how much do social workers cost? Obviously questioning the expense of social workers against cost of bin collection and environmental health.
+Label for comment 46 [flyinginn]: Cuts: General moan regarding central government cuts, the reduction of council services etc, and how this commenter already takes lots of waste to the recycling plant and worries if Bury goes ahead with this new bin policy other boroughs will follow. Negative
+Label for comment 78 [junglecitizen]: Cuts: negative comments regarding cuts. Ultimately blame should be on central government when it can't provide basic services such as bin collection and social workers.
+Label for comment 80 [flyinginn]: Cuts: Tell councils to perform services they were elected to deliver, not shift the cost of burden and negative effects to taxpayers.
+
+SUBGROUP: Positive opinions
+Label for comment 23 [alr1970]: Cuts: positive response. As a family their bin is usually half full. In Manchester food waste collected weekly in summer. Clarifies as 38 of 51 council seats are Labour appears we did vote for this.
+Label for comment 47 [babbitt]: Cuts: believes cuts are a good thing referring to Stockport council which introduced similar cuts and after a year of residents complaining and adjusting now has one of the highest recycling rates in UK. Positive
+Label for comment 48 [Ingathewinger]: Cuts: in response to positive comment regarding Stockport, highlights the difference children make to rubbish levels.
+
+GROUP: Vermin
+Label for comment 2 [brendon1]: Vermin: suggests people often have compost bins and have no problems.
+Label for comment 11 [dianab]: Vermin: suggests borough provides larger bins or kitchen and garden waste bins so as not to attract vermin.Suggested many people can't fill bins in three weeks but can just about as a family.
+Label for comment 16 [Iccleste]: Vermin: used nappies and left over food on packaging can attract vermin. Also takes issue with tone of earlier comment.
+Label for comment 18 [mresta]: Vermin: repeats point that vermin is attracted to packaging with leftover food.
+Label for comment 38 [SimpleOldSailor]: Vermin: reference to earlier exaggerated comment regarding plagues, this time highlighting overpopulation and over consumption.
+Label for comment 39 [Thargthemighty]: Vermin: Rats the size of cats.
+Label for comment 64 [Ingathewinger]: Vermin: negative comments particularly towards local councillors. A family of four despite recycling everything is still going to more than fill a black bin. Suggests in a heat wave it will be a public health hazard.
+
+GROUP: Composting
+Label for comment 3 [littleritchie]: Composting: suggests if people would do more composting bins could be collected less frequently.
+Label for comment 6 [Dave C]: Composting: Angry response to comment re increased composting and suggests looking at housing stock in borough ie flats.
+
+GROUP: Flats
+Label for comment 4 [mresta]: Flats: negative response to comment regarding increased composting.
+Label for comment 5 [brendon1]: Flats: in response to comment re increased composting, advises flats normally have sheds to store rubbish away from property.
+Label for comment 9 [ElmerPhudd]: Flats: negative response to comment regarding rubbish sheds for flats.
+Label for comment 10 [VSLVSL]: Flats: Clarification that article highlights communal bins serving flats will not be affected by cuts.
+Label for comment 17 [mresta]: Flats: flats may not be affected by cuts but highlights issues around converted terraced housing and the lack of space for bins which have to go on the pavement.
+Label for comment 100 [vampsinthe]: Flats: in Stockholm flats have one small communal bin. We put out one bag of non-recycled rubbish a week.
+
+GROUP: Bins
+Label for comment 7 [Iccleste]: Bins: comfirmed black/grey bins for items that cannot be composted and therefore composting comments don't solve the issue.Negative comment re council cuts.
+Label for comment 8 [brendon1]: Bins: extended clarification of black bins suggesting that package doesn't attract vermin.
+Label for comment 12 [Factsaregood]: Bins: clarifies borough provides additional bin for families and other bins provided.
+Label for comment 13 [dianab]: Bins:extends clarification on what bins can be used for but highlights has to pay for kitchen/garden waste bin to be emptied fortnightly. People who don't pay compost bin charge put contents in black bin.
+Label for comment 29 [SonOfTheDesert]: Bins: responds to previous comments highlighting that doesn't have a separate collection for food/garden waste. Highlights what food waste is thrown away and the amount of packaging despite mainly buying fresh.(Not from Bury)
+Label for comment 30 [GO123]: Bins: in response to previous commentor point re no food/garden waste collection suggests pestering council to introduce one as they do in Bury.
+Label for comment 34 [SonOfTheDesert]: Bins: positive response to idea regarding pestering borough to introduce compost/food waste bins.
+Label for comment 36 [dianab]: Bins: highlights issue around how some councils collect cardboard in black bins making bins very full rather than separately.
+Label for comment 37 [pgblade]: Bins: highlights Derbyshire resells compost collected and food waste collected weekly in separate green bin. Not much left for landfill.
+Label for comment 40 [SonOfTheDesert]: Bins: David Bowie Future Legend song lyrics quote referring to people living in 'skyscrapers complaining about bin collection.
+Label for comment 45 [Iccleste]: Bins: how is bin collection affected after strikes?
+Label for comment 50 [russiandoll]: Bins: highlights benefit of weekly food collection as opposed to having to put food waste in household rubbish awaiting three week collection.
+Label for comment 59 [flyinginn]: Bins: commenter suspects Bury will announce plans of a Bin tax, like bedroom tax where you would lose rubbish oickup days unless you release your spare capacity to larger families.
+Label for comment 65 [paulrudolph]: Bins: single person comments only puts 1 supermerket bag out a fortnight.
+Label for comment 66 [Ingathewinger]: Bins: commenter continues from their previous post suggesting could rent bin space to people that have too much rubbish.
+Label for comment 74 [TheOLEDman]: Bins: house of five repeating debate about how they don't fill their bin in two weeks.
+Label for comment 76 [egbsw3]: Bins: house of five repeating debate about how they don't fill their bin in two weeks after everything else has been reccycled - but mentions recycling food waste - may not be in Bury.
+Label for comment 81 [IrishIain]: Bins: family of four repeating debate about how their black bin is put out every 4 to 6 weeks and is rarely full.
+Label for comment 82 [thierrytt1]: Bins: commenter suggests the only way to have space in a bin is if people in deprived areas go around steeling rubbish from bins.
+Label for comment 86 [paulrudolph]: Bins: highlights how in Edinburgh collections moved to fortnightly and now introducing smaller bins. (doesn't suggest if this is working or not).
+Label for comment 87 [ID5884238]: Bins: commenter says where they live is the best recycling rate in the country ie 3 bins - green/food waste every week, recyclables and general waste every alternate week.
+Label for comment 88 [Ingathewinger]: Bins: food waste recycling is key.
+
+GROUP: Recycling Education
+Label for comment 15 [GO123]: Recycling education: clarifies food waste goees into brown bin with garden waste. Commentor highlights how much recyclable material is put into grey/black bins. Part of solution in raising recycling rates is to educate households and consider use of fines/rewards to encourage good attitudes to waste disposal.
+Label for comment 25 [SonOfTheDesert]: Recycling education: single person questions previous family commentor having space in their bins despite trying hard to recycle as much as possible.
+Label for comment 26 [MrMondypops]: Recycling education: two poeple household repeat question how does family have space in bins.
+Label for comment 27 [IrishIain]: Recycling education: questions if single commentor is buying too much food and how they have a food and garden waste bin for composting during the winter.(doen't say if they live in Bury)
+Label for comment 28 [dianab]: Recycling education: tone questions commentors ability to recycle ie 'don't you squash or sort.'
+Label for comment 31 [dunnock49]: Recycling education: in response to how to have half full recycling bin commenter highlights how the recycling collection works where they live and has a council provided compost bin in the garden highlighting how useful the compost bin is.
+Label for comment 32 [dunnock49]: Recycling education: commenter acknowledges previous commenter doesn't have a garden.
+Label for comment 33 [Iccleste]: Recycling education: angry response to tone of comments regarding inability to recycle. Commenter highlights how people at different points in their lives generate diffferent levels of waste.
+Label for comment 35 [dunnock49]: Recycling education: talks about using compost bins or visiting recycling centres every few months to take larger recyclable stuff and other items not allowed in bins.
+
+SUBGROUP: Nappies
+Label for comment 51 [babbitt]: Recycling education: nappies; discusses how Stockport's council website highlights benefits of real nappies or can apply for an additional black bin for nappy waste. Positive
+Label for comment 49 [Pudsk]: Recycling education: nappies; back to nappy/reusable nappy debate.
+Label for comment 52 [Skiiltan]: Recycling education: nappies; discusses how washing real nappies caused huge increase in electricity bills. difficult to decide between expenditure on disposables or slightly lower cost on reusables combined with increased electricity bills.
+Label for comment 53 [Iccleste]: Recycling education: nappies; plus cost of water needed to wash nappies.
+Label for comment 54 [healey]: Recycling education: nappies; plus cost of using washing machine to wash nappies.
+Label for comment 55 [ThornDavis]: recycling education: nappies; washable nappies great but still left with poo in the bin for two or three weeks.
+Label for comment 56 [junglecitizen]: Recycling education: nappies; speaking from experience don't have time to wash nappies. Also lots of people live in flats with babies and have no space to dry them.
+Label for comment 57 [worksforcommunityorg]: Recycling education: nappies; how about nappy library schemes. Commentor highlights responses are missing the point. Its not a reduction in bin collection its collecting bins differently.
+Label for comment 58 [ilweran]: Recycling education: nappies; repeating issues around disposing of nappies.
+Label for comment 61 [IrishIain]: Recycling Education: nappies; information on how to wash nappies efficiently and how if done right has less of an environmental impact than disposables.
+Label for comment 62 [OperationAnfield]: Recycling Education: nappies; sarcastic comment regarding all for the sake of making zero effect to the environment.
+Label for comment 63 [IrishIain]: Recycling Education: nappies;repeating issues around disposing of nappies.Comments seem to be straying from the point of the article.
+Label for comment 67 [paulrudolph]: Recycling Education: nappies: repeat of previous disposable/reusable nappies debate.
+Label for comment 77 [ThornDavis]: Recycling Education: nappies: repeat of previous disposable/reusable nappies debate.
+Label for comment 83 [ID5884238]: Recycling Education: nappies: highlights how Bury borough has offered the provision to help people dispose of nappies by allowing residents to apply for an additional grey/black bin.
+Label for comment 84 [thecoordinator]: Recycling Education: nappies: repeat of previous disposable/reusable nappies.
+Label for comment 85 [ID5884238]: Recycling Education: Refering to no need or excess rubbish as long as Bury has a good recycling scheme. Suggests if people are creating a lot of black bin rubbish they are not recycling correctly; nappies.
+
+GROUP: Environmental health
+Label for comment 71 [Chris Davison]: Environmental health: commenter suggests burning rubbish 'after environmental gestapo clock off for the day'.
+Label for comment 75 [junglecitizen]: Environmental health: commenter suggests burning rubbish is dangerous as could inhale toxic gases.
+Label for comment 79 [ElmerPhudd]: Environmental health: response to burning rubbish comment commenter suggests will probably be caught on camera.
+
+GROUP: miscellaneous
+Label for comment 20 [SonOfTheDesert]: Irrelevant: takes issue with previous comment tone.
+Label for comment 60 [DrGargunza]: Bins: irrelevant
+Label for comment 68 [OperationAnfield]: Irrelevant
+Label for comment 69 [Ingathewinger]: Irrelevant
+Label for comment 70 [paulrudolph]: Irrelevant
+Label for comment 72 [paulrudolph]: Irrelevant
+Label for comment 73 [Fractelle]: Irrelevant
+Label for comment 89 [Ingathewinger]: Irrelevant
+Label for comment 90 [jantice]: Irrelevant
+Label for comment 91 [gullymiles]: Irrelevant
+Label for comment 92 [TheHiphopopotamus]: Irrelevant
+Label for comment 93 [CBR1100XX]: Irrelevant
+Label for comment 94 [TheOLEDman]: Irrelevant
+Label for comment 95 [Cynical007]: Irrelevant
+Label for comment 96 [Richard Hall]: Irrelevant
+Label for comment 97 [flyinginn]: Irrelevant
+Label for comment 98 [Cynical007]: Irrelevant
+Label for comment 99 [CBR1100XX]: Irrelevant
+
+UNCONSTRAINED SUMMARY
+
+The main issues that the commenters were talking about included their opinions on local government cuts to basic services notably the decision to collect grey household bins every three weeks rather than every two weeks and the consequences this could have on the environment. Opinions were divided regarding whether residents could cope with the reduction of bin collection and the impact this could have on the environment.Some argued how the reduction in bin collection would attract vermin as bins overflow with rubbish, while others gave suggestions of how waste could be reduced.
+
+The largest group of commenters discussed issues regarding their current bin collection schemes. Some commenters lived in the borough of Bury and others lived elsewhere. From the comments it could be ascertained that bin collection schemes varied from borough to borough as commenters reflected on how successful their specific borough was at reducing waste and increasing recycling. 
+
+Throughout the comments there  appeared to be some confusion on what waste could be recycled and what waste should be put in the grey household bin in Bury. Again this appears to vary from borough to borough. It also appears unclear if the borough of Bury currently provides or is intending to provide a food/garden waste bin. This was a key issue regarding the possibility of uncollected bins attracting vermin. One commenter suggested that the borough should be asked to provide food waste bins if that was not the case.
+
+There were also a large number of comments suggesting how residents could reduce the amount of waste going into the grey household bin by improving their recycling behaviour. This led to an interesting debate where residents from single or small households and larger households and families offered differing perspective of how they currently recycle and the issues around the amount of waste they generate and the size and variety of bins they have. This led to a deeper discussion regarding the disposal of nappies and a debate regarding the pros and cons of reusable and disposable nappies and the effect that both have on the environment.Some commenters noted the benefits of composting where possible, where others questioned the possibility of composting especially those living in flats or shared accommodation with no garden.
+
+Finally there was a re-occuring theme that residents needed to be educated properly in how to recycle effectively to reduce their waste. One commenter even suggested introducing a bin tax similar to the bedroom tax where you could rent bin space to households that struggle to limit their rubbish.
+
+CONSTRAINED SUMMARY
+
+Opinions throughout the comments were divided regarding whether residents could cope with the Borough of Bury's decision to collect grey household bins every three weeks rather than every two, and the impact this could have on households and the environment. Some argued how the reduction in bin collection would attract vermin as bins overflow with rubbish, while others gave suggestions of how waste could be reduced.
+
+The largest group of commenters reflected on how successful (or not)their specific bin collection scheme was at reducing waste and increasing recycling. 
+
+Throughout the comments there appeared to be some confusion on what waste could be recycled in the grey household bin in Bury. It also appeared unclear if Bury currently provides a food waste bin and if not one commenter suggested that the borough should provide one in the effort to reduce grey bin waste.
+
+A large number of comments suggested how residents could reduce the amount of waste going into the grey household bin by improving their recycling behaviour. This led to a debate where residents from small and large households offered differing perspectives of how they currently recycle. This led to a deeper discussion regarding the pros and cons of reusable and disposable nappies. Some commenters also noted the benefits of composting, while others questioned this especially those living in flats or shared accommodation with no garden.
+
+Finally there was a re-occuring theme that residents needed to be educated properly in how to recycle effectively to reduce their waste.
+
+BACK LINKING
+
+It also appeared unclear if Bury currently provides a food waste bin and if not one commenter suggested that the borough should provide one in the effort to reduce grey bin waste.
+(Sub)GroupNames:
+- GROUP: Bins
+
+Some argued how the reduction in bin collection would attract vermin as bins overflow with rubbish, while others gave suggestions of how waste could be reduced.
+(Sub)GroupNames:
+- GROUP: Vermin
+- GROUP: Bins
+- GROUP: Recycling Education
+
+Opinions throughout the comments were divided regarding whether residents could cope with the Borough of Bury's decision to collect grey household bins every three weeks rather than every two, and the impact this could have on households and the environment.
+(Sub)GroupNames:
+- GROUP: Opinions on reducing black/grey bin collections
+
+The largest group of commenters reflected on how successful (or not)their specific bin collection scheme was at reducing waste and increasing recycling.
+(Sub)GroupNames:
+- GROUP: Bins
+
+Throughout the comments there appeared to be some confusion on what waste could be recycled in the grey household bin in Bury.
+(Sub)GroupNames:
+- GROUP: Bins
+- GROUP: Recycling Education
+
+A large number of comments suggested how residents could reduce the amount of waste going into the grey household bin by improving their recycling behaviour.
+(Sub)GroupNames:
+- GROUP: Recycling Education
+
+This led to a debate where residents from small and large households offered differing perspectives of how they currently recycle.
+(Sub)GroupNames:
+- GROUP: Bins
+- GROUP: Recycling Education
+
+This led to a deeper discussion regarding the pros and cons of reusable and disposable nappies.
+(Sub)GroupNames:
+- SUBGROUP: Nappies
+
+Some commenters also noted the benefits of composting, while others questioned this especially those living in flats or shared accommodation with no garden.
+(Sub)GroupNames:
+- GROUP: Composting
+- GROUP: Flats
+
+Finally there was a re-occuring theme that residents needed to be educated properly in how to recycle effectively to reduce their waste.
+(Sub)GroupNames:
+- GROUP: Recycling Education

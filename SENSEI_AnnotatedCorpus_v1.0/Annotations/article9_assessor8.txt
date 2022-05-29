@@ -1,0 +1,460 @@
+LABELS
+
+Label for comment 1: pract:triggers goodnatured coments tips responses,alt:Portugal, 35, ceiling fan night,style:siesta,EngWrong:POKE FUN archi:shutters down not open
+Label for comment 2: reply1 grateful
+Label for comment 3: reply1  alt:jokes move abroad
+Label for comment 4: reply1 agrees, alt:SA 35+, Eng-wrong:; archi: need stone floor,1story,airflow,; clothes: light, cotton,covered,hat. No hat, top off trainers = hotter,women jeans NO! ; style:move slowly
+Label for comment 5: reply2:agrees archi:shutters,eng-wrong,sun heat kept out. airflow supports this. Curtains not so much.
+Label for comment 6: reply4:clothes:disagrees, hot places jeans worn. Eng-wrong:agrees take clothes off as over-the-top to take adv.
+Label for comment 7: reply5:agrees curtains, need do before sun out
+Label for comment 8: reply3:agrees alt:joke move portugal
+Label for comment 9: reply1:alt:Greece, Sleep: balcony+ style:Showers archi:agrees shut shutters, curtains drawn, windows shut. At night reverse this even doors.
+Label for comment 10: reply1: adds more.. style:shade only;tree, umbrella
+Label for comment 11: reply10:style:dreamy appreciate Greece lifestyle
+Label for comment 12: replies - alt:Greece beautiful but poor
+Label for comment 13: reply6:clothes:agrees jeans worst and Western idea. style:disagrees-Brits wrong headed, get burnt, dont enjoy it.
+Label for comment 14: tip:go somewhere cooler , vague + comic
+Label for comment 15: jokes reply14 tip:Tesco freezer?
+Label for comment 16: reply15 joke tip:Asda Sutton particularly EngWrong:POKEfunSurrey for holiday
+Label for comment 17: alt:S. France 2003,32C at night,clothes:wore hat soaked water,style:bath cold before bed, drink plenty water allday. Avoid alcohol.
+Label for comment 18: reply17:agrees with alt:S France. write dissertation heat. archi:agrees all shut day, style:only go out necessary, plenty water,; work night. ; Sleep: on floor (balcony); clothes:Agrees, loose,
+Label for comment 19: reply17: style:shower / bath before bed agrees. archi:doors windows agrees
+Label for comment 20: sleep:tiled floor agrees
+Label for comment 21: common sense:exceptional negative, sarcastic, obvious. style:drinks;; archi:repeats curtains shut
+Label for comment 22: reply21:disagrees, implies overreacting
+Label for comment 23: reply21:also disagrees commonsense:. People dying of heat. Helpful!
+Label for comment 24: notHot:wearing cardigan, duvet, disagrees wth article. Lots people disagree though..
+Label for comment 25: reply24:agrees duvet too
+Label for comment 26: reply25:jokes maybe not summer eider down
+Label for comment 27: reply24 disagrees notHot:above 75 since june. probs:dogs die cars,dehydration,wildfires. UK is hot now
+Label for comment 28: reply24:notHot:disagrees - not that hot but will be.
+Label for comment 29: reply24:they are crazy!
+Label for comment 30: irrelevant:dont understand
+Label for comment 31: reply24:disagrees notHot: sarcastic. Others are, cannot sleep for heat.
+Label for comment 32: reply24:disagrees notHot: depends location. 30 near London. Sleepingon the duvet. Fan out.
+Label for comment 33: reply33: agrees it is notHot..being exageerated bit, outside london too.
+Label for comment 34: archi:agrees close curtains windows shut morning allday. tip:Eat liquorice?! drink water, but add sugar. BAnanas . style:Loose clothes. Slowly More drink if exercise. probs:fainting
+Label for comment 35: reply34:long! agree archi:airflow,dark eg open loft; tip:agree water but fast also. Vit D, helps,explains why. Fasting-digest- less energy. tip:Avoid caffeine, alcohol (repeated). Add salt to water. (repeat sugar); probs:close doors night - burglars! Go to work later ask.
+Label for comment 36: reply35:sarcastic/cheeky academic references?
+Label for comment 37: alt:Turkey-30-agrees loose clothes, shut etc,tip:(gives)drink Ayran LOTS responses. Salty yogurt.
+Label for comment 38: reply37:agrees tip:Aryan. mint garnish
+Label for comment 39: reply37:tip:appreciative. learned Turkey national drink
+Label for comment 40: reply37:jokes Muller Aryan
+Label for comment 41: reply37:loves Aryan agrees! alt:Germany has it. Kefir helps. Salty lassi.
+Label for comment 42: reply37:tip:appreciative
+Label for comment 43: reply:39:agrees
+Label for comment 44: alt:Greece,36. style:pract:tips:less exercise. Chores early/late, SLOW down repeats,shade-5 /10 cooler,loose clothes, disagrees~wear less; tip:drinks iced. No cooking.; archi:agrees shut doors sunny etc.Open on the shady side. sleep: Open window night, fan. damp towel,
+Label for comment 45: reply44:tips:approves most, disagrees:cook. agrees oven though.
+Label for comment 46: reply45 back:chatty discussion. cooki:agrees need to plan day/menus. Cook lot if cooking. Oven for bread then maximise. Military! Use microwave if poss/pressure cook. No more than 3 times week
+Label for comment 47: tip:tie hair up
+Label for comment 48: jokes irrelevant (Cheery though!)
+Label for comment 49: alt:Oz. very hot. archi:repeats open doors winds night. Shut day. EngWrong:airflow vents poor. Aircon + solar panel good cheap
+Label for comment 50: tip:bawdyjoke : have sex lol, triggers responses
+Label for comment 51: tip:joke in the fridge
+Label for comment 52: tip:joke
+Label for comment 53: jokes ice breaker pun
+Label for comment 54: notHot:wishes they needed to keep cool, not even warm
+Label for comment 55: joke reply54 nothot:
+Label for comment 56: notHot:Met Warnings for 31. EngWrong:warnings? alt:Va, USA, 35, namedrop repeated...life goes on fine. LAidback.
+Label for comment 57: notHot:implies aircon and disagrees(?) reply56. Terse /dismissive triggers disagreement
+Label for comment 58: reply56:EngWrong: disagrees - not common in UK. Like snow. repeats bad vent airflow UK
+Label for comment 59: EngWrong: disagrees 56-repeats point forefully of 58. Aircon in cars houses etc, big fridges. probs:pensionser die in UK
+Label for comment 60: notHot also takes issue. Rich country, common heat. Sarcastic. reply56:
+Label for comment 61: notHot:seen this before;media go overboard eg Melton Mowbray hotter than Gibralatar;absurd pictures -predicts expats alt:30 degs. Moans it will be shortlived
+Label for comment 62: reply61:NotHot:predictable moaning - Sarcastic.
+Label for comment 63: joke clothes:invert thermal socks
+Label for comment 64: joke reply tip:get into a camel(!)
+Label for comment 65: style:walk slower
+Label for comment 66: joke tip:sit in fridge
+Label for comment 67: joke reply66:quotes Homer Simpson
+Label for comment 68: reply66:cheerfully adds (not sure of meaning)
+Label for comment 69: archi:repeats advice shut doors. style:Buy a fan use it. Place near cold water bowl. Avoid going out daytime. engWrong:pretend you are on holiday as can cope then somehow!
+Label for comment 70: reply69: engWrong:other countries diff type heat. Less humid or stormy. eg Cyprus Portugal.
+Label for comment 71: reply70:disagrees humidity as Fr/Ger same. V stormy.
+Label for comment 72: style:eat chilli, aids sweating. bizarre:Doesnt wake in night needing loo(?)
+Label for comment 73: reply72 bizarre:jokes at least can dry mattress out.
+Label for comment 74: engWrong:we have nice weather-stop moaning! Not crisis. notHot:disagrees as it is!
+Label for comment 75: notHot:as if UK never been hot before, commonsense, repeats advice. sarcastic-rain:use an umbrella
+Label for comment 76: reply75:jokes what colour raincoat!
+Label for comment 77: amused at overreaction...bizarre:jokes sit on deckchair by freezer. Will help global warming too. style:tips being mocked
+Label for comment 78: bizarre:joke:hang out with Patrick Stewart cool
+Label for comment 79: replies, joke ref
+Label for comment 80: replies laughs at joke above
+Label for comment 81: replies swooning
+Label for comment 82: notHot:MAnchester a whole 24 sarcastic. Wear tshirt sandals jeans.
+Label for comment 83: irrelevant:adds to last
+Label for comment 84: serious- tip:dogs in car so dangerous, even windows open. Dogs in sea, drink,shade. Leave dog at home if out all day. Stresses need lots water.
+Label for comment 85: dogs:reply85:agrees; adds dogs banned on beaches locally is sensible. Implying poop is an issue here.
+Label for comment 86: dogs:replies sarcastic but disagrees about restricting dogs. Responsible owners do clean up!
+Label for comment 87: dogs:chips in most owners not resposnible re:poop.
+Label for comment 88: dogs:criticises earlier reply for being sarcastic unfairly
+Label for comment 89: dogs:criticises reply for restrictive ban culture
+Label for comment 90: dogs:reply87:ripostes with rant about bratty boys
+Label for comment 91: irrelevant:reply88:not snarking
+Label for comment 92: dogs:bickering with reply90;animals before people,kids get mauled by dogs,rights etc
+Label for comment 93: tip:DIVERSITY:cold tap hands. Cools whole body.
+Label for comment 94: tip:DIVERSITY Agrees even better do wrists..blood flow. reply94
+Label for comment 95: sleep:wash and spin not dry bedsheet tip.
+Label for comment 96: dogs:repeats not in cars, adds kids, cats. Window does not help . They are greenhouses.
+Label for comment 97: dogs:reply96:disagrees many wd do this, shocked they need reminding. Meaning?!
+Label for comment 98: dogs:reply97:disagrees to reply- people still leave dogs, even while in pubs. Police allow break window if owner absent.
+Label for comment 99: dogs:reply97 disagrees also, it does happen, predicts it will. Last year police dog died in van. Repeats criticism of while in pub.
+Label for comment 100: dogs:give ice cubes to lick to all pets tip
+Label for comment 101: dogs:reply100 jokes once the pets cool you can lick them.
+
+GROUPS
+
+GROUP: goodnatured, friendly jokey discussion with advice with plenty of tips (commonsesne to practical)
+Label for comment 1 [caxixi]: pract:triggers goodnatured coments tips responses,alt:Portugal, 35, ceiling fan night,style:siesta,EngWrong:POKE FUN archi:shutters down not open
+Label for comment 14 [raleighgrifter]: tip:go somewhere cooler , vague + comic
+Label for comment 21 [LeonRice]: common sense:exceptional negative, sarcastic, obvious. DRINK:style:drinks;; archi:repeats curtains shut
+Label for comment 22 [neko99]: reply21:disagrees, implies overreacting
+Label for comment 23 [foxinwinter]: reply21:also disagrees commonsense:. People dying of heat. Helpful!
+
+SUBGROUP:consensus on keeping houses cool: shutters windows airflow etc
+Label for comment 1 [caxixi]: pract:triggers goodnatured coments tips responses,alt:Portugal, ; 35, ceiling fan night,style:siesta,EngWrong:POKE FUN archi:shutters down not open
+Label for comment 4 [bbmatt]: reply1 agrees, alt:SA 35+, Eng-wrong:; archi: need stone floor,1story,airflow,; clothes: light, cotton,covered,hat. No hat, top off trainers = hotter,women jeans NO! ; style:move slowly
+Label for comment 5 [timtim1]: reply2:agrees archi:shutters,eng-wrong,sun heat kept out. airflow supports this. Curtains not so much.
+Label for comment 7 [Trebor1975]: reply5:agrees curtains, need do before sun out
+Label for comment 9 [kizbot]: reply1:alt:Greece, Sleep: balcony+ style:Showers archi:agrees shut shutters, curtains drawn, windows shut. At night reverse this even doors.
+Label for comment 19 [tarnarama]: reply17: style:shower / bath before bed agrees. archi:doors windows agrees
+Label for comment 21 [LeonRice]: common sense:exceptional negative, sarcastic, obvious. DRINK:style:drinks;; archi:repeats curtains shut
+Label for comment 34 [teaandchocolate]: archi:agrees close curtains windows shut morning allday. tip:Eat liquorice?! drink water, but add sugar. BAnanas . style:Loose clothes. Slowly More drink if exercise. probs:fainting
+Label for comment 35 [tr1ck5t3r]: reply34:long! agree archi:airflow,dark eg open loft; tip:agree water but fast also. Vit D, helps,explains why. Fasting-digest- less energy. tip:Avoid caffeine, alcohol (repeated). Add salt to water. (repeat sugar) probs:close doors night - burglars! Go to work later ask.
+Label for comment 36 [stigglechick]: reply35:sarcastic/cheeky academic references?
+Label for comment 44 [juliespetses]: alt:Greece,36. style:pract:tips:less exercise. Chores early/late, SLOW down repeats,shade-5 /10 cooler,loose clothes, disagrees~wear less; tip:drinks iced. No cooking.; archi:agrees shut doors sunny etc.Open on the shady side. sleep: Open window night, fan. damp towel,
+Label for comment 49 [Alan James]: alt:Oz. very hot. archi:repeats open doors winds night. Shut day. EngWrong:airflow vents poor. Aircon + solar panel good cheap
+Label for comment 58 [Brandybuck]: reply56:EngWrong: disagrees - not common in UK. Like snow. repeats bad vent airflow UK
+Label for comment 69 [neko99]: archi:repeats advice shut doors. bizarre:Buy a fan use it. Place near cold water bowl. Avoid going out daytime. engWrong:pretend you are on holiday as can cope then somehow!
+
+SUBGROUP:lifestyle and behaviour tips
+Label for comment 1 [caxixi]: pract:triggers goodnatured coments tips responses,alt:Portugal, ; 35, ceiling fan night,style:siesta,EngWrong:POKE FUN archi:shutters down not open
+Label for comment 9 [kizbot]: reply1:alt:Greece, Sleep: balcony+ style:Showers archi:agrees shut shutters, curtains drawn, windows shut. At night reverse this even doors.
+Label for comment 10 [kizbot]: reply1: adds more.. style:shade only;tree, umbrella
+Label for comment 11 [ScamWithABigPlate]: reply10:style:dreamy appreciate Greece lifestyle
+Label for comment 12 [kizbot]: replies - alt:Greece beautiful but poor
+Label for comment 13 [bbmatt]: reply6:clothes:agrees jeans worst and Western idea. ; style:engWrong:disagrees-Brits wrong headed, get burnt, dont enjoy it.
+Label for comment 17 [BaronGrovelville]: DRINK:alt:S. France 2003,32C at night,clothes:wore hat soaked water,style:bath cold before bed, drink plenty water allday. Avoid alcohol.
+Label for comment 21 [LeonRice]: common sense:exceptional negative, sarcastic, obvious. DRINK:style:drinks;; archi:repeats curtains shut
+Label for comment 44 [juliespetses]: alt:Greece,36. style:pract:tips:less exercise. Chores early/late, SLOW down repeats,shade-5 /10 cooler,loose clothes, disagrees~wear less; tip:drinks iced. No cooking.; archi:agrees shut doors sunny etc.Open on the shady side. sleep: Open window night, fan. damp towel,
+Label for comment 45 [caxixi]: reply44:tips:approves most, disagrees:cook. agrees oven though.
+Label for comment 46 [juliespetses]: reply45 back:chatty discussion. cooki:agrees need to plan day/menus. Cook lot if cooking. Oven for bread then maximise. Military! Use microwave if poss/pressure cook. No more than 3 times week
+Label for comment 65 [PabloPicasso]: style:walk slower
+
+SUBGROUP:consensus sleep (and its problems) and night time
+Label for comment 1 [caxixi]: pract:triggers goodnatured coments tips responses,alt:Portugal, ; 35, ceiling fan night,style:siesta,EngWrong:POKE FUN archi:shutters down not open
+Label for comment 9 [kizbot]: reply1:alt:Greece, Sleep: balcony+ style:Showers archi:agrees shut shutters, curtains drawn, windows shut. At night reverse this even doors.
+Label for comment 18 [cerinamroth]: reply17:agrees with alt:S France. write dissertation heat. archi:agrees all shut day, style:only go out necessary, plenty water,; work night. ; Sleep: on floor (balcony); clothes:Agrees, loose,
+Label for comment 19 [tarnarama]: reply17: sleep:shower / bath before bed agrees. archi:doors windows agrees
+Label for comment 20 [BaronGrovelville]: sleep:tiled floor agrees
+Label for comment 31 [barnabasdoggie]: reply24:disagrees notHot: sarcastic. Others are, cannot sleep for heat.
+Label for comment 32 [NinaRicky]: reply24:disagrees notHot: depends location. 30 near London. Sleepingon the duvet. Fan out.
+Label for comment 44 [juliespetses]: alt:Greece,36. style:pract:tips:less exercise. Chores early/late, SLOW down repeats,shade-5 /10 cooler,loose clothes, disagrees~wear less; tip:drinks iced. No cooking.; archi:agrees shut doors sunny etc.Open on the shady side. sleep: Open window night, fan. damp towel,
+Label for comment 95 [hannahnoushka]: sleep:wash and spin not dry bedsheet tip.
+
+SUBGROUP:clothes
+Label for comment 4 [bbmatt]: reply1 agrees, alt:SA 35+, Eng-wrong:; archi: need stone floor,1story,airflow,; clothes: light, cotton,covered,hat. No hat, top off trainers = hotter,women jeans NO! ; style:move slowly
+Label for comment 6 [ID6241782]: reply4:clothes:disagrees, hot places jeans worn. Eng-wrong:agrees take clothes off as over-the-top to take adv.
+Label for comment 13 [bbmatt]: reply6:clothes:agrees jeans worst and Western idea. ; style:engWrong:disagrees-Brits wrong headed, get burnt, dont enjoy it.
+Label for comment 17 [BaronGrovelville]: alt:S. France 2003,32C at night,clothes:wore hat soaked water,style:bath cold before bed, drink plenty water allday. Avoid alcohol.
+Label for comment 18 [cerinamroth]: reply17:agrees with alt:S France. write dissertation heat. archi:agrees all shut day, style:only go out necessary, plenty water,; work night. ; Sleep: on floor (balcony); clothes:Agrees, loose,
+
+SUBGROUP:plus bizarre and outlier tips on occasion
+Label for comment 14 [raleighgrifter]: tip:go somewhere cooler , vague + comic
+Label for comment 15 [pollystyrene]: jokes reply14 tip:Tesco freezer?
+Label for comment 16 [LilywhiteGirl]: reply15 joke tip:Asda Sutton particularly EngWrong:POKEfunSurrey for holiday
+Label for comment 34 [teaandchocolate]: archi:agrees close curtains windows shut morning allday. tip:Eat liquorice?! drink water, but add sugar. BAnanas . style:Loose clothes. Slowly More drink if exercise. probs:fainting
+Label for comment 35 [tr1ck5t3r]: reply34:long! agree archi:airflow,dark eg open loft; tip:agree water but fast also. Vit D, helps,explains why. Fasting-digest- less energy. tip:Avoid caffeine, alcohol (repeated). Add salt to water. (repeat sugar) probs:close doors night - burglars! Go to work later ask.
+Label for comment 47 [juliespetses]: tip:tie hair up
+Label for comment 50 [Daniel Dytrych]: tip:bawdyjoke : have sex lol, triggers responses
+Label for comment 51 [stoneface1]: tip:joke in the fridge
+Label for comment 52 [PlatoApesSocrates]: tip:joke
+Label for comment 53 [Kier3216]: jokes ice breaker pun
+Label for comment 63 [stoneface1]: joke clothes:invert thermal socks
+Label for comment 64 [Carlillvs]: joke reply tip:get into a camel(!)
+Label for comment 66 [Uncannyvalley]: joke tip:sit in fridge
+Label for comment 67 [Alex42]: joke reply66:quotes Homer Simpson
+Label for comment 68 [ScamWithABigPlate]: reply66:cheerfully adds (not sure of meaning)
+Label for comment 69 [neko99]: archi:repeats advice shut doors. bizarre:Buy a fan use it. Place near cold water bowl. Avoid going out daytime. engWrong:pretend you are on holiday as can cope then somehow!
+Label for comment 72 [PariahCarefree]: style:eat chilli, aids sweating. bizarre:Doesnt wake in night needing loo(?)
+Label for comment 73 [MartyMcFlytipper]: reply72 bizarre:jokes at least can dry mattress out.
+Label for comment 77 [MartyMcFlytipper]: amused at overreaction...bizarre:jokes sit on deckchair by freezer. Will help global warming too. style:tips being mocked
+Label for comment 78 [IRustEasily]: bizarre:joke:hang out with Patrick Stewart cool
+Label for comment 79 [WelshPaul]: replies, joke ref
+Label for comment 80 [IRustEasily]: replies laughs at joke above
+Label for comment 81 [Alex42]: replies swooning
+Label for comment 93 [PaulUK83]: tip:DIVERSITY:cold tap hands. Cools whole body.
+Label for comment 94 [wryneck201]: tip:DIVERSITY Agrees even better do wrists..blood flow. reply94
+
+GROUP:not all that hot in UK? moaning at times
+Label for comment 24 [littlemissmolly]: notHot:wearing cardigan, duvet, disagrees wth article. Lots people disagree though..
+Label for comment 25 [robinspat]: reply24:agrees duvet too
+Label for comment 26 [stoneface1]: reply25:jokes maybe not summer eider down
+Label for comment 27 [foxinwinter]: reply24 disagrees notHot:above 75 since june. probs:dogs die cars,dehydration,wildfires. UK is hot now
+Label for comment 28 [bbmatt]: reply24:notHot:disagrees - not that hot but will be.
+Label for comment 29 [explorerboy]: reply24:they are crazy!
+Label for comment 31 [barnabasdoggie]: reply24:disagrees notHot: sarcastic. Others are, cannot sleep for heat.
+Label for comment 32 [NinaRicky]: reply24:disagrees notHot: depends location. 30 near London. Sleepingon the duvet. Fan out.
+Label for comment 33 [littlemissmolly]: reply33: agrees it is notHot..being exageerated bit, outside london too.
+Label for comment 54 [kirstysays]: notHot:wishes they needed to keep cool, not even warm
+Label for comment 55 [wryneck201]: joke reply54 nothot:
+Label for comment 56 [bradgate]: notHot:Met Warnings for 31. EngWrong:warnings? alt:Va, USA, 35, namedrop repeated...life goes on fine. LAidback.
+Label for comment 57 [neko99]: notHot:implies aircon and disagrees(?) reply56. Terse /dismissive triggers disagreement
+Label for comment 61 [trieste53512]: notHot:seen this before;media go overboard eg Melton Mowbray hotter than Gibralatar;absurd pictures -predicts expats alt:30 degs. Moans it will be shortlived
+Label for comment 62 [ErnyRoamer]: reply61:NotHot:predictable moaning - Sarcastic.
+Label for comment 82 [pollystyrene]: notHot:MAnchester a whole 24 sarcastic. Wear tshirt sandals jeans.
+Label for comment 74 [mercatorish]: engWrong:we have nice weather-stop moaning! Not crisis. notHot:disagrees as it is!
+Label for comment 75 [PaulLambert]: notHot:as if UK never been hot before, commonsense, repeats advice. sarcastic-rain:use an umbrella
+Label for comment 76 [SamGamgee]: reply75:jokes what colour raincoat!
+
+GROUP:british/english manage heat poorly 
+Label for comment 4 [bbmatt]: reply1 agrees, alt:SA 35+, Eng-wrong:; archi: need stone floor,1story,airflow,; clothes: light, cotton,covered,hat. No hat, top off trainers = hotter,women jeans NO! ; style:move slowly
+Label for comment 5 [timtim1]: reply2:agrees archi:shutters,eng-wrong,sun heat kept out. airflow supports this. Curtains not so much.
+Label for comment 6 [ID6241782]: reply4:clothes:disagrees, hot places jeans worn. Eng-wrong:agrees take clothes off as over-the-top to take adv.
+Label for comment 13 [bbmatt]: reply6:clothes:agrees jeans worst and Western idea. ; style:engWrong:disagrees-Brits wrong headed, get burnt, dont enjoy it.
+Label for comment 16 [LilywhiteGirl]: reply15 joke tip:Asda Sutton particularly EngWrong:POKEfunSurrey for holiday
+Label for comment 49 [Alan James]: alt:Oz. very hot. archi:repeats open doors winds night. Shut day. EngWrong:airflow vents poor. Aircon + solar panel good cheap
+Label for comment 56 [bradgate]: notHot:Met Warnings for 31. EngWrong:warnings? alt:Va, USA, 35, namedrop repeated...life goes on fine. LAidback.
+Label for comment 58 [Brandybuck]: reply56:EngWrong: disagrees - not common in UK. Like snow. repeats bad vent airflow UK
+Label for comment 59 [ID6241782]: EngWrong: disagrees 56-repeats point forefully of 58. Aircon in cars houses etc, big fridges. probs:pensionser die in UK
+Label for comment 60 [Gitfinger]: engWrong: also takes issue. Rich country, common heat. Sarcastic. reply56:
+Label for comment 70 [Brandybuck]: reply69: engWrong:other countries diff type heat. Less humid or stormy. eg Cyprus Portugal.
+Label for comment 71 [cerinamroth]: reply70:disagrees humidity as Fr/Ger same. V stormy.
+Label for comment 75 [PaulLambert]: notHot:as if UK never been hot before, commonsense, repeats advice. sarcastic-rain:use an umbrella
+Label for comment 76 [SamGamgee]: reply75:jokes what colour raincoat!
+
+GROUP: Other countries advising on their experience
+Label for comment 1 [caxixi]: pract:triggers goodnatured coments tips responses,alt:Portugal, 35, ceiling fan night,style:siesta,EngWrong:POKE FUN archi:shutters down not open
+Label for comment 2 [CarmenFishwick]: reply1 grateful
+Label for comment 4 [bbmatt]: reply1 agrees, alt:SA 35+, Eng-wrong:; archi: need stone floor,1story,airflow,; clothes: light, cotton,covered,hat. No hat, top off trainers = hotter,women jeans NO! ; style:move slowly
+Label for comment 5 [timtim1]: reply2:agrees archi:shutters,eng-wrong,sun heat kept out. airflow supports this. Curtains not so much.
+Label for comment 6 [ID6241782]: reply4:clothes:disagrees, hot places jeans worn. Eng-wrong:agrees take clothes off as over-the-top to take adv.
+Label for comment 9 [kizbot]: reply1:alt:Greece, Sleep: balcony+ style:Showers archi:agrees shut shutters, curtains drawn, windows shut. At night reverse this even doors.
+Label for comment 17 [BaronGrovelville]: alt:S. France 2003,32C at night,clothes:wore hat soaked water,style:bath cold before bed, drink plenty water allday. Avoid alcohol.
+Label for comment 18 [cerinamroth]: reply17:agrees with alt:S France. write dissertation heat. archi:agrees all shut day, style:only go out necessary, plenty water,; work night. ; Sleep: on floor (balcony); clothes:Agrees, loose,
+Label for comment 37 [Smyrna]: alt:Turkey-30-agrees loose clothes, shut etc,tip:(gives)drink Ayran LOTS responses. Salty yogurt.
+Label for comment 41 [cerinamroth]: reply37:loves Aryan agrees! alt:Germany has it. Kefir helps. Salty lassi.
+Label for comment 44 [juliespetses]: alt:Greece,36. style:pract:tips:less exercise. Chores early/late, SLOW down repeats,shade-5 /10 cooler,loose clothes, disagrees~wear less; tip:drinks iced. No cooking.; archi:agrees shut doors sunny etc.Open on the shady side. sleep: Open window night, fan. damp towel,
+Label for comment 49 [Alan James]: alt:Oz. very hot. archi:repeats open doors winds night. Shut day. EngWrong:airflow vents poor. Aircon + solar panel good cheap
+
+SUBGROUP:Ayran drink in Turkey
+Label for comment 37 [Smyrna]: alt:Turkey-30-agrees loose clothes, shut etc,tip:(gives)drink Ayran LOTS responses. Salty yogurt.
+Label for comment 38 [LouSnickers]: reply37:agrees tip:Aryan. mint garnish
+Label for comment 39 [Daniel West]: reply37:tip:appreciative. learned Turkey national drink
+Label for comment 40 [Carlillvs]: reply37:jokes Muller Aryan
+Label for comment 41 [cerinamroth]: reply37:loves Aryan agrees! alt:Germany has it. Kefir helps. Salty lassi.
+Label for comment 42 [zcsaa44]: reply37:tip:appreciative
+Label for comment 43 [Kezap]: reply:39:agrees
+
+SUBGROUP:move there! 
+Label for comment 3 [SamGamgee]: reply1  alt:jokes move abroad
+Label for comment 8 [caxixi]: reply3:agrees alt:joke move portugal
+Label for comment 11 [ScamWithABigPlate]: reply10:style:dreamy appreciate Greece lifestyle
+Label for comment 12 [kizbot]: replies - alt:Greece beautiful but poor
+Label for comment 14 [raleighgrifter]: tip:go somewhere cooler , vague + comic
+
+SUBGROUP: How hot it gets there
+Label for comment 1 [caxixi]: pract:triggers goodnatured coments tips responses,alt:Portugal, 35, ceiling fan night,style:siesta,EngWrong:POKE FUN archi:shutters down not open
+Label for comment 4 [bbmatt]: reply1 agrees, alt:SA 35+, Eng-wrong:; archi: need stone floor,1story,airflow,; clothes: light, cotton,covered,hat. No hat, top off trainers = hotter,women jeans NO! ; style:move slowly
+Label for comment 17 [BaronGrovelville]: alt:S. France 2003,32C at night,clothes:wore hat soaked water,style:bath cold before bed, drink plenty water allday. Avoid alcohol.
+Label for comment 44 [juliespetses]: alt:Greece,36. style:pract:tips:less exercise. Chores early/late, SLOW down repeats,shade-5 /10 cooler,loose clothes, disagrees~wear less; tip:drinks iced. No cooking.; archi:agrees shut doors sunny etc.Open on the shady side. sleep: Open window night, fan. damp towel,
+Label for comment 49 [Alan James]: alt:Oz. very hot. archi:repeats open doors winds night. Shut day. EngWrong:airflow vents poor. Aircon + solar panel good cheap
+Label for comment 56 [bradgate]: notHot:Met Warnings for 31. EngWrong:warnings? alt:Va, USA, 35, namedrop repeated...life goes on fine. LAidback.
+
+GROUP:vulnerable in society and problems
+Label for comment 23 [foxinwinter]: reply21:also disagrees commonsense:. People dying of heat. Helpful!
+Label for comment 27 [foxinwinter]: reply24 disagrees notHot:above 75 since june. probs:dogs die cars,dehydration,wildfires. UK is hot now
+Label for comment 34 [teaandchocolate]: archi:agrees close curtains windows shut morning allday. tip:Eat liquorice?! drink water, but add sugar. BAnanas . style:Loose clothes. Slowly More drink if exercise. probs:fainting
+Label for comment 96 [SamGamgee]: dogs:repeats not in cars, adds kids, cats. Window does not help . They are greenhouses.
+
+SUBGROUP:dogs
+Label for comment 27 [foxinwinter]: reply24 disagrees notHot:above 75 since june. probs:dogs die cars,dehydration,wildfires. UK is hot now
+Label for comment 84 [foxinwinter]: serious- tip:dogs in car so dangerous, even windows open. Dogs in sea, drink,shade. Leave dog at home if out all day. Stresses need lots water.
+Label for comment 85 [MartyMcFlytipper]: dogs:reply85:agrees; adds dogs banned on beaches locally is sensible. Implying poop is an issue here.
+Label for comment 86 [Puss]: dogs:replies sarcastic but disagrees about restricting dogs. Responsible owners do clean up!
+Label for comment 87 [ErnyRoamer]: dogs:chips in most owners not resposnible re:poop.
+Label for comment 88 [whood]: dogs:criticises earlier reply for being sarcastic unfairly
+Label for comment 89 [foxinwinter]: dogs:criticises reply for restrictive ban culture
+Label for comment 90 [foxinwinter]: dogs:reply87:ripostes with rant about bratty boys
+Label for comment 92 [ErnyRoamer]: dogs:bickering with reply90;animals before people,kids get mauled by dogs,rights etc
+Label for comment 96 [SamGamgee]: dogs:repeats not in cars, adds kids, cats. Window does not help . They are greenhouses.
+Label for comment 97 [andyinSpain]: dogs:reply96:disagrees many wd do this, shocked they need reminding. Meaning?!
+Label for comment 98 [foxinwinter]: dogs:reply97:disagrees to reply- people still leave dogs, even while in pubs. Police allow break window if owner absent.
+Label for comment 99 [SamGamgee]: dogs:reply97 disagrees also, it does happen, predicts it will. Last year police dog died in van. Repeats criticism of while in pub.
+Label for comment 100 [Garp]: dogs:give ice cubes to lick to all pets tip
+Label for comment 101 [Alex42]: dogs:reply100 jokes once the pets cool you can lick them.
+
+GROUP: miscellaneous
+Label for comment 30 [CodProfundity]: irrelevant:dont understand
+Label for comment 48 [Kier3216]: jokes irrelevant (Cheery though!)
+Label for comment 83 [pollystyrene]: irrelevant:adds to last
+Label for comment 91 [Puss]: irrelevant:reply88:not snarking
+
+UNCONSTRAINED SUMMARY
+
+A mainly convivial discussion saw most comments offering often detailed, practical advice on how to deal with the hot weather. The first comment, for example, told how Portugal copes in the heat, and was endorsed by many others. Lots agreed on keeping homes cool by closing shutters (most effective), curtains and windows as a barrier during daytime sunshine. Several extended such airflow advice to using fans and opening windows etc at night and on shaded sides of houses. Occasionally comments complained at obvious advice but many more contributed and were appreciative. Indeed sleeping was problematic for many and advised cold baths or showers, using dampened bedding or towels, or even sleeping on the floor or balcony.
+
+Much helpful, general advice included keeping to shade, doing chores and working early or later on, siestas and moving slowly. Cool oneself also by wetting hats, wrists and hands and tying hair up.  Some advocated limiting meal cooking in such heat and eating less. Even more mentioned staying hydrated and avoiding alcohol. Many agreed on covering up sensibly and loose clothing - not jeans. Various unusual and humorous comments suggested ingesting diverse foods and vitamins, salted or sugared water, wearing thermal socks or having sex - various jokes followed this latter tip. Vague advice to "go somewhere cooler" was met with silliness including supermarket freezers and the coolness of Patrick Stewart. 
+
+Much negative discussion debated how hot the UK really was. Some sarcastically complained it was exaggerated, and some were still using duvets (but later others claimed difficulties sleeping). Several dismissed such moaning, one pointing out it was over 75 since June and warned of hotter temperatures. 
+
+Many criticised British inadequacy in hot weather compared with other countries. Wearing fewer clothes and getting burned were mentioned. Several countered that this weather was exceptional and the humidity here. Foreign experiences of hot weather and precautions was often discussed, regularly mentioning temperature levels. Several enthused about moving abroad and yogurt, especially Turkish Ayran.
+
+Finally, comments - often angry - mentioned the dangers to people and especially responsibility regarding dogs, who should never be left in cars.
+
+CONSTRAINED SUMMARY
+
+A convivial discussion saw most offering practical advice on dealing with the hot weather. The opening, detailed suggestion  was then endorsed by many others. Lots agreed that keeping homes cool by closing shutters, curtains and windows during daytime sunshine. Several developed such airflow advice to fans and opening windows at night. Occasionally commenters complained at obviousness - but more contributed and were appreciative. Indeed many found sleeping problematic and advised cold baths/showers, dampening bedding, or sleeping on floors or balconies.
+
+More general advice included keeping to shade, working tips and moving slowly. Also, ways to cool oneself by wetting hats, wrists and hands.  Some advocated limiting cooking and eating less. Many mentioned staying hydrated and avoiding alcohol, covering up and loose clothing - not jeans. Various unusual suggestions included ingesting diverse foods, salted or sugared water. One suggested having sex - various jokes ensued. Vague advice to "go somewhere cooler" was met with silliness featuring supermarket freezers or Patrick Stewart. 
+
+Many disagreed how hot the UK really was. Some moaned of exaggeration - some were still using duvets (but more claimed difficulties sleeping). Several dismissed such complaining, confirming the heat. 
+
+Many criticised British inadequacy. Wearing little and getting burned were mentioned. Several countered that Britain's weather was exceptional and humid. Foreign experiences were often discussed, regularly mentioning temperature levels. Several enthused about moving abroad and yogurt, especially Turkish Ayran.
+
+Finally, commenters argued the dangers to people and responsibility regarding dogs especially, who should never be left in cars.
+
+BACK LINKING
+
+A convivial discussion saw most offering practical advice on dealing with the hot weather.
+(Sub)GroupNames:
+- GROUP: goodnatured, friendly jokey discussion with advice with plenty of tips (commonsesne to practical)
+- SUBGROUP: consensus on keeping houses cool: shutters windows airflow etc
+- SUBGROUP: lifestyle and behaviour tips
+- SUBGROUP: consensus sleep (and its problems) and night time
+- SUBGROUP: clothes
+- SUBGROUP: plus bizarre and outlier tips on occasion
+- GROUP: not all that hot in UK? moaning at times
+- GROUP: Other countries advising on their experience
+- SUBGROUP: Ayran drink in Turkey
+- SUBGROUP:  How hot it gets there
+- GROUP: vulnerable in society and problems
+
+The opening, detailed suggestion  was then endorsed by many others.
+(Sub)GroupNames:
+- GROUP: goodnatured, friendly jokey discussion with advice with plenty of tips (commonsesne to practical)
+- SUBGROUP: consensus on keeping houses cool: shutters windows airflow etc
+- GROUP: british/english manage heat poorly
+- GROUP: Other countries advising on their experience
+
+Lots agreed that keeping homes cool by closing shutters, curtains and windows during daytime sunshine.
+(Sub)GroupNames:
+- SUBGROUP: consensus on keeping houses cool: shutters windows airflow etc
+- SUBGROUP: lifestyle and behaviour tips
+- SUBGROUP: consensus sleep (and its problems) and night time
+- GROUP: british/english manage heat poorly
+- GROUP: Other countries advising on their experience
+
+Several developed such airflow advice to fans and opening windows at night.
+(Sub)GroupNames:
+- SUBGROUP: consensus on keeping houses cool: shutters windows airflow etc
+- SUBGROUP: consensus sleep (and its problems) and night time
+
+Occasionally commenters complained at obviousness - but more contributed and were appreciative.
+(Sub)GroupNames:
+- GROUP: goodnatured, friendly jokey discussion with advice with plenty of tips (commonsesne to practical)
+- SUBGROUP: consensus on keeping houses cool: shutters windows airflow etc
+- SUBGROUP: lifestyle and behaviour tips
+- SUBGROUP: consensus sleep (and its problems) and night time
+- GROUP: Other countries advising on their experience
+
+Indeed many found sleeping problematic and advised cold baths/showers, dampening bedding, or sleeping on floors or balconies.
+(Sub)GroupNames:
+- SUBGROUP: lifestyle and behaviour tips
+- SUBGROUP: consensus sleep (and its problems) and night time
+- GROUP: Other countries advising on their experience
+
+More general advice included keeping to shade, working tips and moving slowly.
+(Sub)GroupNames:
+- SUBGROUP: consensus on keeping houses cool: shutters windows airflow etc
+- SUBGROUP: lifestyle and behaviour tips
+- SUBGROUP: consensus sleep (and its problems) and night time
+- SUBGROUP: clothes
+- GROUP: british/english manage heat poorly
+- GROUP: Other countries advising on their experience
+
+Also, ways to cool oneself by wetting hats, wrists and hands.
+(Sub)GroupNames:
+- SUBGROUP: lifestyle and behaviour tips
+- SUBGROUP: plus bizarre and outlier tips on occasion
+
+Some advocated limiting cooking and eating less.
+(Sub)GroupNames:
+- SUBGROUP: lifestyle and behaviour tips
+- SUBGROUP: consensus sleep (and its problems) and night time
+- SUBGROUP: plus bizarre and outlier tips on occasion
+- GROUP: Other countries advising on their experience
+
+Many mentioned staying hydrated and avoiding alcohol, covering up and loose clothing - not jeans.
+(Sub)GroupNames:
+- SUBGROUP: consensus on keeping houses cool: shutters windows airflow etc
+- SUBGROUP: lifestyle and behaviour tips
+- SUBGROUP: clothes
+- SUBGROUP: plus bizarre and outlier tips on occasion
+- GROUP: british/english manage heat poorly
+- GROUP: Other countries advising on their experience
+
+Various unusual suggestions included ingesting diverse foods, salted or sugared water.
+(Sub)GroupNames:
+- SUBGROUP: lifestyle and behaviour tips
+- SUBGROUP: plus bizarre and outlier tips on occasion
+- GROUP: Other countries advising on their experience
+
+One suggested having sex - various jokes ensued.
+(Sub)GroupNames:
+- SUBGROUP: plus bizarre and outlier tips on occasion
+
+Vague advice to "go somewhere cooler" was met with silliness featuring supermarket freezers or Patrick Stewart. 
+(Sub)GroupNames:
+- SUBGROUP: plus bizarre and outlier tips on occasion
+
+Many disagreed how hot the UK really was.
+(Sub)GroupNames:
+- GROUP: goodnatured, friendly jokey discussion with advice with plenty of tips (commonsesne to practical)
+- GROUP:not all that hot in UK? moaning at times
+
+Several dismissed such complaining, confirming the heat.
+(Sub)GroupNames:
+- GROUP: goodnatured, friendly jokey discussion with advice with plenty of tips (commonsesne to practical)
+- GROUP:not all that hot in UK? moaning at times
+- GROUP:british/english manage heat poorly
+
+Some moaned of exaggeration - some were still using duvets (but more claimed difficulties sleeping).
+(Sub)GroupNames:
+- SUBGROUP: consensus sleep (and its problems) and night time
+- GROUP:not all that hot in UK? moaning at times
+- GROUP:british/english manage heat poorly
+
+Many criticised British inadequacy.
+(Sub)GroupNames:
+- GROUP:british/english manage heat poorly
+- GROUP: Other countries advising on their experience
+
+Wearing little and getting burned were mentioned.
+(Sub)GroupNames:
+- SUBGROUP: lifestyle and behaviour tips
+- SUBGROUP: clothes
+- GROUP:british/english manage heat poorly
+
+Several countered that Britain's weather was exceptional and humid.
+(Sub)GroupNames:
+- GROUP:not all that hot in UK? moaning at times
+- GROUP:british/english manage heat poorly
+- GROUP: Other countries advising on their experience
+
+Foreign experiences were often discussed, regularly mentioning temperature levels.
+(Sub)GroupNames:
+- GROUP: Other countries advising on their experience
+- SUBGROUP: Ayran drink in Turkey
+- SUBGROUP: move there!
+- SUBGROUP: How hot it gets there
+
+Several enthused about moving abroad and yogurt, especially Turkish Ayran.
+(Sub)GroupNames:
+- SUBGROUP:Ayran drink in Turkey
+- SUBGROUP:move there!
+
+Finally, commenters argued the dangers to people and responsibility regarding dogs especially, who should never be left in cars.
+(Sub)GroupNames:
+- GROUP: vulnerable in society and problems
+- SUBGROUP:dogs

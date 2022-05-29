@@ -1,0 +1,341 @@
+LABELS
+
+Label for comment 1: UK Priority: Stronger border control
+Label for comment 2: UK Priority: Stronger border control: disagrees - more at risk from holiday makers returning home and businessmen
+Label for comment 3: Anti-immigration: sickening to introduce it in ebola topic; UK Priority: send help to Africa
+Label for comment 4: Anti-immigration: disagrees, commented only suggested stronger border control; Sarcasm: personal comment
+Label for comment 5: Scotland: if independent, could keep infected English out
+Label for comment 6: UK Priority: Stronger border control: disagrees, virus has incubation period; Should not be only priority; Anti-immigration: rather than anti-virus; because there are other ways to contain a virus
+Label for comment 7: UK Priority: Stronger border control: disagrees;; sarcasm - ebola does not care
+Label for comment 8: UK priority: help to Africa: contain hotspot there
+Label for comment 9: UK Priority: Stronger border control: too expensive Ebola: not easy to catch; Anti-immigration: turning nation into racists
+Label for comment 10: Ebola: not easy to catch: disagrees, video proof
+Label for comment 11: Anti-immigration: disagrees; comparison ebola to aids; it is just a public health issue
+Label for comment 12: Ebola: not easy to catch: video proof answer - steps have to be taken otherwise ppl would complain not enough precautions
+Label for comment 13: Ebola: not easy to catch: sarcasm, he should go and help out then, if he feels safe
+Label for comment 14: Ebola: not easy to catch: better safe than sorry, airplane example
+Label for comment 15: Anti-immigration: agrees, closed borders would mean ppl will travel illegally and decease will spread
+Label for comment 16: Personal insult
+Label for comment 17: UK Priority: Stronger border control: disagrees, WHO proof link
+Label for comment 18: UK Priority: Stronger border control: disagrees - too expensive; UK Priority: Help to Africa: agrees; Anti-immigration: border controls may hurt people; Ebola: no outbreak in any rich country
+Label for comment 19: Calais: people can get in without border control
+Label for comment 20: Anti-immigration: posts are suggestive; Sarcasm: reply: selfish to say 'screw the others'
+Label for comment 21: Personal insult
+Label for comment 22: UK Priority: Stronger border control: cheaper and safer to restrict the infected area; Anti-immigration: disagrees, nothing to do with it, it is about protecting the country
+Label for comment 23: UK Priority: Stronger border control: disagrees, why not prevent suffering of others?
+Label for comment 24: UK Priority: Stronger border control: disagrees, is it okay for foreigners to die as long as it is not brits
+Label for comment 25: Anti-immigration: agrees, says they are typical UKIP supporter
+Label for comment 26: UK Priority: Stronger border control: disagrees, expensive; Only screening travelers is required; UK Priority: Help to Africa: outbreak should be moderated to prevent further international spread
+Label for comment 27: Ebola: harder to catch than flu, doctors are catching it because of exhaustion
+Label for comment 28: Ebola: no outbreak in any rich country: disagrees, AIDS was the same until 1980s
+Label for comment 29: Ebola: hard to catch; disagrees, easy if it gets into your eye
+Label for comment 30: UK Priority: Help to Africa and; UK Priority: Stronger border controls ; are not exclusive
+Label for comment 31: UK Priority: Stronger border controls: not effective; UK Priority: Help to Africa: better way to fight it
+Label for comment 32: Ebola: hard to catch: agrees, adds evidence
+Label for comment 33: Ebola: easier to contain than HIV because it is more obvious
+Label for comment 34: Ebola: hard to catch: agrees, calls eye story semifictional; Personal comment
+Label for comment 35: Joke
+Label for comment 36: Anti-immigration: disagrees; even white people are held for tests
+Label for comment 37: Anti-immigration: the tone of the previous comment shows elitist attitude
+Label for comment 38: Ebola: difficult to transmit HIV, Ebola not so much
+Label for comment 39: Anti-immigration: sick people held don't matter, healthy people prevented from traveling based on nationality do
+Label for comment 40: UK Priority: Stronger border controls: disagrees; Personal insult
+Label for comment 41: Ebola: hard to catch: disagrees, victims will spread it, evidence of woman in Scotland; Personal insult
+Label for comment 42: Ebola: hard to catch: disagrees: continues: Guinea have closed borders - are they idiots?
+Label for comment 43: Border controls: more should be done than trying to spot sick people
+Label for comment 44: Sarcasm: construction of internment camps
+Label for comment 45: WHO: negative: useless
+Label for comment 46: Personal comment
+Label for comment 47: Sarcasm: camps: negative: should help the countries and stop the hate
+Label for comment 48: Sarcasm: camps: ridiculing above comment, implying racism
+Label for comment 49: Explains sarcasm.
+Label for comment 50: Explains sarcasm.; Outbreaks: can't stop them, have to be isolated early
+Label for comment 51: Warning credibility: boy who cried wolf - profit over concerns of life and death
+Label for comment 52: Warning credibility: authorities can't predict the future, people will complain no matter what is the outcome of the warning
+Label for comment 53: Warning credibility: people will complain no matter what is the outcome of the warning
+Label for comment 54: Warning credibility: didn't stop bigpharma selling questionable bird flu vaccine
+Label for comment 55: Warning credibility: authorities can't predict: not their problem but an economic one
+Label for comment 56: Warning credibility: disagrees with 'faulty' logic
+Label for comment 57: Warning credibility: disagrees - person above is comparing different things; No vaccine for Ebola, just getting fluids
+Label for comment 58: Warning credibility: ebola is different, should be contained at the source
+Label for comment 59: Warning credibility: down to stupidity of government, not bigpharma
+Label for comment 60: Xenophobes: sarcasm: ebola articles set them alight
+Label for comment 61: Xenophobes: sarcasm: contained in UK
+Label for comment 62: Xenophobes: go to the guardian to comment, not really avid readers of it
+Label for comment 63: Xenophobes: don't read guardian: negative - can be said about any group of ppl
+Label for comment 64: Xenophobes: go to the guardian to comment: agrees
+Label for comment 65: Xenophobes: sick of such comments, jump to every opportunity
+Label for comment 66: Personal comment: insult
+Label for comment 67: Xenophobes: sarcasm: contained in UK: if only
+Label for comment 68: Guardian: response to personal insult about not reading it
+Label for comment 69: Ebola: will be easy to catch in London due to many people and surfaces
+Label for comment 70: Ebola: easy to catch: disagrees; Sarcastic comment
+Label for comment 71: Ebola: easy to catch: disagrees, people fit to travel not infectious
+Label for comment 72: Personal insult
+Label for comment 73: Personal comment correcting previous comment
+Label for comment 74: Ebola: easy to catch: people can't travel disagrees: with early symptoms, evidence
+Label for comment 75: Ebola: easy to catch: people can't travel disagrees, evidence
+Label for comment 76: Ebola: easy to catch: disagrees; Sarcastic comment
+Label for comment 77: Ebola: easy to catch: people can't travel disagrees, evidence
+Label for comment 78: Sarcasm about previous comment
+Label for comment 79: Ebola: easy to catch: people can't travel agrees - not when displaying symptoms
+Label for comment 80: Ebola: easy to catch: people can't travel disagrees, evidence
+Label for comment 81: Ebola: easy to catch: people can't travel  evidence - disagrees
+Label for comment 82: Ebola: easy to catch: disagrees , all infected were hospital workers, no other evidence
+Label for comment 83: Disagreement about previous comment
+Label for comment 84: Disagreement about previous comment continues
+Label for comment 85: Ebola: easy to catch: agrees
+Label for comment 86: Ebola: easy to catch: disagrees
+Label for comment 87: Ebola: easy to catch: agrees, docs wouldn't be wearing those suits otherwise
+Label for comment 88: Ebola: easy to catch: agrees: this is how SARS spread; UK Priority: Help to africa
+Label for comment 89: Ebola: easy to catch: agrees, docs wouldn't be wearing those suits otherwise - disagrees, does not concern travelers
+Label for comment 90: Coverage: finds people who think are experts tiresome
+Label for comment 91: Sarcastic comment
+Label for comment 92: Ebola: a matter of time before it goes around the world
+Label for comment 93: Ebola: joke: everyone will die
+Label for comment 94: Ebola: joke continues: anything but shark and ebola
+Label for comment 95: Ebola: story about ebola's index patient who was a Dr
+Label for comment 96: Ebola: joke continues: sarcastic comment
+Label for comment 97: Ebola: index: SARS also had a Dr index patient
+Label for comment 98: Coverage: should have doing this when it was supposedly out of control
+Label for comment 99: Coverage: before it was a back story, if aid was sent to Africa, it would've been contained by now
+Label for comment 100: Aid to Africa would have contained it: disagrees, sarcasm
+Label for comment 101: Aid to Africa would have contained it: sarcasm continues, smallpox
+Label for comment 102: Coverage: government: only paid attention after US got cases
+Label for comment 103: Personal comment: insult
+Label for comment 104: Coverage: saying it from before; resistant TB is on the streets now
+Label for comment 105: resistant TB: will be a problem but not easy to catch
+Label for comment 106: resistant viruses: many in Africa and Asia due to poor hospital care; still a threat to the West
+
+GROUPS
+
+GROUP: UK Priority
+
+SUBGROUP: Stronger border control positive
+Label for comment 1 [Pope123]: UK Priority: Stronger border control
+Label for comment 22 [mightymatt]: UK Priority: Stronger border control: cheaper and safer to restrict the infected area; Anti-immigration: disagrees, nothing to do with it, it is about protecting the country
+Label for comment 30 [Wazz Ally]: UK Priority: Help to Africa and; UK Priority: Stronger border controls ; are not exclusive
+
+SUBGROUP: Stronger border control negative
+Label for comment 2 [surpluspop1]: UK Priority: Stronger border control: disagrees - more at risk from holiday makers returning home and businessmen
+Label for comment 6 [Thegentletock]: UK Priority: Stronger border control: disagrees, virus has incubation period; Should not be only priority; Anti-immigration: rather than anti-virus; because there are other ways to contain a virus
+Label for comment 7 [conanthebikeman]: UK Priority: Stronger border control: disagrees; ; sarcasm - ebola does not care
+Label for comment 9 [FuzzySpider]: UK Priority: Stronger border control: too expensive ; Ebola: not easy to catch ; Anti-immigration: turning nation into racists
+Label for comment 17 [shauny]: UK Priority: Stronger border control: disagrees, WHO proof link
+Label for comment 18 [Deebles]: UK Priority: Stronger border control: disagrees - too expensive; UK Priority: Help to Africa: agrees; Anti-immigration: border controls may hurt people; Ebola: no outbreak in any rich country
+Label for comment 23 [Domn8tricks]: UK Priority: Stronger border control: disagrees, why not prevent suffering of others?
+Label for comment 24 [MudDoc]: UK Priority: Stronger border control: disagrees, is it okay for foreigners to die as long as it is not brits
+Label for comment 26 [justanotherflyboy]: UK Priority: Stronger border control: disagrees, expensive; Only screening travelers is required; UK Priority: Help to Africa: outbreak should be moderated to prevent further international spread
+Label for comment 31 [Gastinel]: UK Priority: Stronger border controls: not effective; UK Priority: Help to Africa: better way to fight it
+Label for comment 40 [iGlady]: UK Priority: Stronger border controls: disagrees; Personal insult
+Label for comment 43 [figurewizard]: Border controls: more should be done than trying to spot sick people
+
+SUBGROUP: Send help to Africa
+Label for comment 3 [logos00]: Anti-immigration: sickening to introduce it in ebola topic; UK Priority: send help to Africa
+Label for comment 8 [madmonty]: UK priority: help to Africa: contain hotspot there
+Label for comment 18 [Deebles]: UK Priority: Stronger border control: disagrees - too expensive; UK Priority: Help to Africa: agrees; Anti-immigration: border controls may hurt people; Ebola: no outbreak in any rich country
+Label for comment 26 [justanotherflyboy]: UK Priority: Stronger border control: disagrees, expensive; Only screening travelers is required; UK Priority: Help to Africa: outbreak should be moderated to prevent further international spread
+Label for comment 30 [Wazz Ally]: UK Priority: Help to Africa and; UK Priority: Stronger border controls ; are not exclusive
+Label for comment 31 [Gastinel]: UK Priority: Stronger border controls: not effective; UK Priority: Help to Africa: better way to fight it
+Label for comment 88 [Gastinel]: Ebola: easy to catch: agrees: this is how SARS spread; UK Priority: Help to africa
+Label for comment 99 [fatquarter]: Coverage: before it was a back story, if aid was sent to Africa, it would've been contained by now
+Label for comment 100 [ViktorBurakov]: Aid to Africa would have contained it: disagrees, sarcasm
+Label for comment 101 [factoryreset]: Aid to Africa would have contained it: sarcasm continues, smallpox
+
+GROUP: Anti-immigration/Xenophobes
+
+SUBGROUP: Closing borders is anti-immigration
+Label for comment 3 [logos00]: Anti-immigration: sickening to introduce it in ebola topic; UK Priority: send help to Africa
+Label for comment 6 [Thegentletock]: UK Priority: Stronger border control: disagrees, virus has incubation period; Should not be only priority; Anti-immigration: rather than anti-virus; because there are other ways to contain a virus
+Label for comment 9 [FuzzySpider]: UK Priority: Stronger border control: too expensive ; Ebola: not easy to catch ; Anti-immigration: turning nation into racists
+Label for comment 18 [Deebles]: UK Priority: Stronger border control: disagrees - too expensive; UK Priority: Help to Africa: agrees; Anti-immigration: border controls may hurt people; Ebola: no outbreak in any rich country
+Label for comment 15 [MissAnneThrope666]: Anti-immigration: agrees, closed borders would mean ppl will travel illegally and decease will spread
+Label for comment 20 [logos00]: Anti-immigration: posts are suggestive ; Sarcasm: reply: selfish to say 'screw the others'
+Label for comment 25 [marsCubed]: Anti-immigration: agrees, says they are typical UKIP supporter
+Label for comment 37 [Quicknstraight]: Anti-immigration: the tone of the previous comment shows elitist attitude
+Label for comment 39 [FuzzySpider]: Anti-immigration: sick people held don't matter, healthy people prevented from traveling based on nationality do
+
+SUBGROUP: Closing borders is not anti-immigration
+Label for comment 4 [AverageJoe23]: Anti-immigration: disagrees, commented only suggested stronger border control; Sarcasm: personal comment
+Label for comment 22 [mightymatt]: UK Priority: Stronger border control: cheaper and safer to restrict the infected area; Anti-immigration: disagrees, nothing to do with it, it is about protecting the country
+Label for comment 11 [elmerofoz]: Anti-immigration: disagrees; comparison ebola to aids; it is just a public health issue
+Label for comment 36 [kelebek456]: Anti-immigration: disagrees; even white people are held for tests
+
+SUBGROUP: Xenophobes
+Label for comment 60 [NXile]: Xenophobes: sarcasm: ebola articles set them alight
+Label for comment 61 [TenderBranson]: Xenophobes: sarcasm: contained in UK
+Label for comment 62 [fauxtronic]: Xenophobes: go to the guardian to comment, not really avid readers of it
+Label for comment 63 [ViktorBurakov]: Xenophobes: don't read guardian: negative - can be said about any group of ppl
+Label for comment 64 [Giggidy]: Xenophobes: go to the guardian to comment: agrees
+Label for comment 65 [GoddessOFblah]: Xenophobes: sick of such comments, jump to every opportunity
+Label for comment 67 [takalu]: Xenophobes: sarcasm: contained in UK: if only
+
+GROUP: Ebola
+
+SUBGROUP: It is (not) easy to catch
+Label for comment 9 [FuzzySpider]: UK Priority: Stronger border control: too expensive ; Ebola: not easy to catch ; Anti-immigration: turning nation into racists
+Label for comment 10 [dierobdie]: Ebola: not easy to catch: disagrees, video proof
+Label for comment 12 [TenderBranson]: Ebola: not easy to catch: video proof answer - steps have to be taken otherwise ppl would complain not enough precautions
+Label for comment 13 [dierobdie]: Ebola: not easy to catch: sarcasm, he should go and help out then, if he feels safe
+Label for comment 14 [FuzzySpider]: Ebola: not easy to catch: better safe than sorry, airplane example
+Label for comment 27 [justanotherflyboy]: Ebola: harder to catch than flu, doctors are catching it because of exhaustion
+Label for comment 29 [neolab]: Ebola: hard to catch; disagrees, easy if it gets into your eye
+Label for comment 32 [FuzzySpider]: Ebola: hard to catch: agrees, adds evidence
+Label for comment 34 [justanotherflyboy]: Ebola: hard to catch: agrees, calls eye story semifictional; Personal comment
+Label for comment 41 [mightymatt]: Ebola: hard to catch: disagrees, victims will spread it, evidence of woman in Scotland; Personal insult
+Label for comment 42 [mightymatt]: Ebola: hard to catch: disagrees: continues: Guinea have closed borders - are they idiots?
+Label for comment 69 [John Sinclair]: Ebola: will be easy to catch in London due to many people and surfaces
+Label for comment 70 [TenderBranson]: Ebola: easy to catch: disagrees; Sarcastic comment
+Label for comment 71 [KenFine]: Ebola: easy to catch: disagrees, people fit to travel not infectious
+Label for comment 74 [bamyasinick]: Ebola: easy to catch: people can't travel disagrees: with early symptoms, evidence
+Label for comment 75 [Galandriel]: Ebola: easy to catch: people can't travel disagrees, evidence
+Label for comment 76 [factoryreset]: Ebola: easy to catch: disagrees; Sarcastic comment
+Label for comment 77 [bekibunny]: Ebola: easy to catch: people can't travel disagrees, evidence
+Label for comment 79 [KenFine]: Ebola: easy to catch: people can't travel agrees - not when displaying symptoms
+Label for comment 80 [bekibunny]: Ebola: easy to catch: people can't travel disagrees, evidence
+Label for comment 81 [TenderBranson]: Ebola: easy to catch: people can't travel  evidence - disagrees
+Label for comment 82 [KenFine]: Ebola: easy to catch: disagrees , all infected were hospital workers, no other evidence
+Label for comment 85 [middleagedman]: Ebola: easy to catch: agrees
+Label for comment 86 [TenderBranson]: Ebola: easy to catch: disagrees
+Label for comment 87 [screaminkid]: Ebola: easy to catch: agrees, docs wouldn't be wearing those suits otherwise
+Label for comment 88 [Gastinel]: Ebola: easy to catch: agrees: this is how SARS spread; UK Priority: Help to africa
+Label for comment 89 [KenFine]: Ebola: easy to catch: agrees, docs wouldn't be wearing those suits otherwise - disagrees, does not concern travelers
+
+SUBGROUP: Other ebola comments
+Label for comment 18 [Deebles]: UK Priority: Stronger border control: disagrees - too expensive; UK Priority: Help to Africa: agrees; Anti-immigration: border controls may hurt people; Ebola: no outbreak in any rich country
+Label for comment 28 [DaisyPetunia]: Ebola: no outbreak in any rich country: disagrees, AIDS was the same until 1980s
+Label for comment 33 [Deebles]: Ebola: easier to contain than HIV because it is more obvious
+Label for comment 38 [IVAN4]: Ebola: difficult to transmit HIV, Ebola not so much
+Label for comment 92 [Eikon]: Ebola: a matter of time before it goes around the world
+Label for comment 95 [Carolyn Davis]: Ebola: story about ebola's index patient who was a Dr
+Label for comment 97 [Gastinel]: Ebola: index: SARS also had a Dr index patient
+
+SUBGROUP: Ebola jokes
+Label for comment 93 [rascal87]: Ebola: joke: everyone will die
+Label for comment 94 [elmerofoz]: Ebola: joke continues: anything but shark and ebola
+Label for comment 96 [justanotherflyboy]: Ebola: joke continues: sarcastic comment
+
+GROUP: Credibility of information
+Label for comment 51 [Tim Eslip]: Warning credibility: boy who cried wolf - profit over concerns of life and death
+Label for comment 52 [factoryreset]: Warning credibility: authorities can't predict the future, people will complain no matter what is the outcome of the warning
+Label for comment 53 [factoryreset]: Warning credibility: people will complain no matter what is the outcome of the warning
+Label for comment 54 [madmonty]: Warning credibility: didn't stop bigpharma selling questionable bird flu vaccine
+Label for comment 55 [Tim Eslip]: Warning credibility: authorities can't predict: not their problem but an economic one
+Label for comment 56 [synclsp]: Warning credibility: disagrees with 'faulty' logic
+Label for comment 57 [Deebles]: Warning credibility: disagrees - person above is comparing different things; No vaccine for Ebola, just getting fluids
+Label for comment 58 [justanotherflyboy]: Warning credibility: ebola is different, should be contained at the source
+Label for comment 59 [Quicknstraight]: Warning credibility: down to stupidity of government, not bigpharma
+
+SUBGROUP: Coverage
+Label for comment 90 [scuba100]: Coverage: finds people who think are experts tiresome
+Label for comment 98 [DavidoM]: Coverage: should have doing this when it was supposedly out of control
+Label for comment 99 [fatquarter]: Coverage: before it was a back story, if aid was sent to Africa, it would've been contained by now
+Label for comment 102 [bekibunny]: Coverage: government: only paid attention after US got cases
+Label for comment 104 [DavidoM]: Coverage: saying it from before ; resistant TB is on the streets now
+
+GROUP: Other comments
+Label for comment 5 [Anothersmallcog]: Scotland: if independent, could keep infected English out
+Label for comment 19 [Nick Glover]: Calais: people can get in without border control
+Label for comment 45 [unusedusername]: WHO: negative: useless
+Label for comment 50 [Gastinel]: Explains sarcasm.; Outbreaks: can't stop them, have to be isolated early
+Label for comment 68 [justanotherflyboy]: Guardian: response to personal insult about not reading it
+Label for comment 105 [justanotherflyboy]: resistant TB: will be a problem but not easy to catch
+Label for comment 106 [DavidoM]: resistant viruses: many in Africa and Asia due to poor hospital care; still a threat to the West
+
+GROUP: miscellaneous
+Label for comment 16 [blairsnemesis]: Personal insult
+Label for comment 21 [logos00]: Personal insult
+Label for comment 35 [nazcalito]: Joke
+Label for comment 44 [TenderBranson]: Sarcasm: construction of internment camps
+Label for comment 46 [Jamie Laidlaw]: Personal comment
+Label for comment 47 [justanotherflyboy]: Sarcasm: camps: negative: should help the countries and stop the hate
+Label for comment 48 [ID8088901]: Sarcasm: camps: ridiculing above comment, implying racism
+Label for comment 49 [Deebles]: Explains sarcasm.
+Label for comment 50 [Gastinel]: Explains sarcasm.; Outbreaks: can't stop them, have to be isolated early
+Label for comment 66 [blairsnemesis]: Personal comment: insult
+Label for comment 72 [scuba100]: Personal insult
+Label for comment 73 [thisnamewilldo4now]: Personal comment correcting previous comment
+Label for comment 78 [TenderBranson]: Sarcasm about previous comment
+Label for comment 83 [bekibunny]: Disagreement about previous comment
+Label for comment 84 [KenFine]: Disagreement about previous comment continues
+Label for comment 91 [ID2749122]: Sarcastic comment
+Label for comment 103 [blairsnemesis]: Personal comment: insult
+
+UNCONSTRAINED SUMMARY
+
+The commenters mainly focused on what can be done to contain the spread of Ebola to Britain and whether or not Ebola is easily contractible. 
+
+Some vouched for stronger border control as a way to stop infected people coming to the UK but others said it was expensive and ineffective. The topic escalated to accusing commenters of being anti-immigration and noting that closing the borders may be seen as such an act against foreigners traveling to the UK. Other commenters suggested sending to help to Africa or battling the infection's centre as an alternative to contain Ebola. Only one commenter said closing borders and sending help are not exclusive.There was a discussion that the topic was attracting xenophobes and those were always quick to comment. There were as much people who said closing borders is anti-immigration as those who only explained the need of protecting one's country and public health.
+
+Among commenters, a wide discussion occurred, taking up almost half of the comments, about whether Ebola is easy to catch or not. Many said it was easy because of doctors protecting themselves and countries closing borders but many also said it is not contracted by air - hence it is difficult to get it. There were other comments concerning Ebola such as that there has been no outbreak in a rich country so far and a few jokes.
+
+There was a short discussion concerning that information about Ebola may not be credible anymore, with an end result of people complaining no matter what steps are taken. The media coverage of the subject was also mentioned - saying that they should have covered it sooner when it was active in Africa.
+
+There were other singular comments not related to any of these discussions and about 15% of the comments were of personal nature.
+
+CONSTRAINED SUMMARY
+
+The commenters mainly focused on what can be done to contain the spread of Ebola to Britain and whether or not Ebola is easily contractible. 
+
+Some vouched for stronger border control as a way to stop infected people but others said it was expensive and ineffective. The topic escalated to accusing commenters of being anti-immigration and noting that closing the borders may be seen as such an act against foreigners. Other commenters suggested sending to help to Africa as an alternative to contain Ebola. There was a discussion that the topic was attracting xenophobes. As much people said closing borders is anti-immigration as those who only explained the need of protecting one's country and public health.
+
+A wide discussion occurred about whether Ebola is easy to catch or not. Many said it was because of doctors protecting themselves and countries closing borders but many also said it is not contracted by air - hence it is difficult to get it. There were other comments concerning Ebola such and a few jokes.
+
+There was a short discussion that information about Ebola may not be credible anymore, with an end result of people complaining no matter what. The media coverage of the subject was also mentioned - saying that they should have covered it sooner when it was active in Africa.
+
+There were other singular comments not related to any of these discussions and about 15% of the comments were of personal nature.
+
+BACK LINKING
+
+The commenters mainly focused on what can be done to contain the spread of Ebola to Britain and whether or not Ebola is easily contractible.
+(Sub)GroupNames:
+- GROUP: UK Priority
+- SUBGROUP: It is (not) easy to catch
+
+Some vouched for stronger border control as a way to stop infected people but others said it was expensive and ineffective.
+(Sub)GroupNames:
+- SUBGROUP: Stronger border control positive
+- SUBGROUP: Stronger border control negative
+
+The topic escalated to accusing commenters of being anti-immigration and noting that closing the borders may be seen as such an act against foreigners.
+(Sub)GroupNames:
+- SUBGROUP: Closing borders is anti-immigration
+
+Other commenters suggested sending to help to Africa as an alternative to contain Ebola.
+(Sub)GroupNames:
+- SUBGROUP: Send help to Africa
+
+There was a discussion that the topic was attracting xenophobes.
+(Sub)GroupNames:
+- SUBGROUP: Xenophobes
+
+As much people said closing borders is anti-immigration as those who only explained the need of protecting one's country and public health.
+(Sub)GroupNames:
+- SUBGROUP: Closing borders is anti-immigration
+- SUBGROUP: Closing borders is not anti-immigration
+
+A wide discussion occurred about whether Ebola is easy to catch or not.
+(Sub)GroupNames:
+- SUBGROUP: It is (not) easy to catch
+
+Many said it was because of doctors protecting themselves and countries closing borders but many also said it is not contracted by air - hence it is difficult to get it.
+(Sub)GroupNames:
+- SUBGROUP: It is (not) easy to catch
+
+There were other comments concerning Ebola such and a few jokes.
+(Sub)GroupNames:
+- SUBGROUP: Other ebola comments
+- SUBGROUP: Ebola jokes
+
+There was a short discussion that information about Ebola may not be credible anymore, with an end result of people complaining no matter what.
+(Sub)GroupNames:
+- GROUP: Credibility of information
+
+The media coverage of the subject was also mentioned - saying that they should have covered it sooner when it was active in Africa.
+(Sub)GroupNames:
+- SUBGROUP: Coverage
+
+There were other singular comments not related to any of these discussions and about 15% of the comments were of personal nature.
+(Sub)GroupNames:
+- GROUP: Other comments
+- GROUP: miscellaneous

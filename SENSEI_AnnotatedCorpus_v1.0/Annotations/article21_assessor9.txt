@@ -1,0 +1,309 @@
+LABELS
+
+Label for comment 1: Plain packaging: approves
+Label for comment 2: Suggestion: tumour in some packs to drive sales down
+Label for comment 3: Plain packaging: politics: cynicism, not going to happen
+Label for comment 4: Suggestion: tumor: disagrees: who says they want to drive sales down
+Label for comment 5: Joke: crayons must be sold with them
+Label for comment 6: Plain packaging: approves: cool, ppl will return to stylish cigarette tins
+Label for comment 7: Joke: connected with brand name
+Label for comment 8: Plain packaging: approves: cool, iconic - ppl don't start smoking because of the packet
+Label for comment 9: Plain packaging: disagrees: smoking helps the NHS have work, how will tell brands, jokes
+Label for comment 10: Tobacco industry: strong
+Label for comment 11: Tobacco industry: diminishing success at fighting rearguard actions at least in Europe
+Label for comment 12: Tobacco industry: delaying tactics for more profits; Asia and Africa has thriving tobacco industries
+Label for comment 13: Plain packaging: modern and cool, will invest in a tin, better than advertising a brand
+Label for comment 14: Personal comment: sarcasm: keep paying, die early, without a lot of pension, enjoy the tin
+Label for comment 15: Personal comment: response: sinister reply of a health fascist
+Label for comment 16: Tobacco industry: giving up on UK as a market
+Label for comment 17: Plain packaging: not for existent smokers but new ones - Australia shows it works
+Label for comment 18: Personal comment: you are divvy for thinking smoking is cool
+Label for comment 19: Tobacco industry: Africa: surprised by how few people smoke there
+Label for comment 20: Tobacco industry: Africa: surprised by how few people smoke there agrees but is growing
+Label for comment 21: Tobacco: buys because of the way it smokes, not the pack; Diesel: causes lung cancer but still allowed on cars; plain packaging: waste of gov money
+Label for comment 22: Tobacco industry: nothing to fear, joke - it will burn
+Label for comment 23: Diesel: causes lung cancer: disagrees, before, not now - now cleaner than petrol cars
+Label for comment 24: Tobacco: various evidence that cigarettes are one of the main causes of lung cancer
+Label for comment 25: Tobacco industry: fought hard against plain packaging
+Label for comment 26: Plain packaging: approves; Personal comment
+Label for comment 27: plain packaging: waste of gov money: disagrees; they get paid no matter what they do
+Label for comment 28: Diesel: cleaner now: disagrees; Tobacco: still more harmful than diesel
+Label for comment 29: Diesel: cleaner now: disagrees
+Label for comment 30: plain packaging: may not work, rising prices will make people stop smoking
+Label for comment 31: plain packaging: keeps spiteful people happy but suggests may not work - sarcastic tone; plain packaging: Australia: smoking increased after
+Label for comment 32: plain packaging: Australia: smoking increased after: disagrees
+Label for comment 33: Diesel: cleaner now: disagrees
+Label for comment 34: plain packaging: will make people choose the cheaper brand, hence the tobacco industry does not want it; plain packaging: is about brand separation
+Label for comment 35: plain packaging: Australia: smoking increased after: disagrees
+Label for comment 36: Tobacco: buys because of the way it smokes, not the pack: disagrees
+Label for comment 37: Diesel: causes lung cancer: disagrees - all cars have a filter
+Label for comment 38: tobacco: rising prices: will encourage smuggling, won't make people to stop
+Label for comment 39: plain packaging: is about brand separation: agrees
+Label for comment 40: plain packaging: is about brand separation: agrees
+Label for comment 41: plain packaging: Australia: smoking increased after: disagrees
+Label for comment 42: Tobacco: various evidence that cigarettes are one of the main causes of lung cancer: disagrees
+Label for comment 43: Personal comment: joke
+Label for comment 44: Tobacco: various evidence that cigarettes are bad for health: agrees, personal evidence
+Label for comment 45: Diesel: not CO2 causing cancer, but other particles
+Label for comment 46: Diesel: has emissions but most cases still caused by smoking
+Label for comment 47: plain packaging: aim to reduce smoking, not turn it to 0; reducing prices will encourage smuggling but how much can you smuggle?
+Label for comment 48: Tobacco: cigarettes are one of the main causes of lung cancer: agrees
+Label for comment 49: Diesel: cleaner now: depends on the car
+Label for comment 50: plain packaging: ridiculous fannying around by the government
+Label for comment 51: Clarification question
+Label for comment 52: Clarification answer
+Label for comment 53: Personal insult
+Label for comment 54: plain packaging: ridiculous fannying around by the government - either reject or get on with it, be clear & consistent
+Label for comment 55: Clarification question
+Label for comment 56: plain packaging: ridiculous fannying around: disagrees, should give credit where it's due
+Label for comment 57: plain packaging: ridiculous fannying around: agrees, some evidence about secretive trade agreements
+Label for comment 58: Plain packaging: people smoke regardless of the pack, no way to stop people taking up smoking
+Label for comment 59: Clarification question
+Label for comment 60: plain packaging: negative: petty and ugly
+Label for comment 61: plain packaging: negative: petty and ugly
+Label for comment 62: Politicians: haven't banned anything; plain packaging: positive: smoking will be less attractive to youngsters
+Label for comment 63: Sarcasm: how dare doctors desire us all to be healthier
+Label for comment 64: Sarcasm: overreaction; Personal comment
+Label for comment 65: Sarcasm: clean drinking water - terrible
+Label for comment 66: Life: education, snobbery and softness
+Label for comment 67: Personal comment/insult
+Label for comment 68: plain packaging: Australia: smoking increased after: agrees
+Label for comment 69: plain packaging: Australia: smoking increased after:  disagrees, wants evidence
+Label for comment 70: plain packaging: Australia: smoking increased after: wants evidence; plain packaging: if everyone thinks it will work, why not try
+Label for comment 71: plain packaging: Australia: smoking increased after: disagrees, evidence
+Label for comment 72: Politicians: haven't banned anything: disagrees; could smoke in a pub before
+Label for comment 73: Smoking: the anti - lobby not concerned about ppls wellfare
+Label for comment 74: Personal comment/insult
+Label for comment 75: Politicians: haven't banned anything: agrees, people can still smoke outside without making life miserable for non-smokers
+Label for comment 76: Joke: pink for girls
+Label for comment 77: Joke: football for boys
+Label for comment 78: Joke: rainbow for gay
+Label for comment 79: Joke: black with brown like your lungs
+Label for comment 80: Tobacco industry: has strong opposition: joke
+Label for comment 81: Joke continues
+Label for comment 82: smoking: bad for you but oldest person drinker and smoker; Life: crazy, ppl want to leave in peace
+Label for comment 83: plain packaging: no one is stopping you from smoking, just changing the pack colour
+Label for comment 84: Plain packaging: approves: welcomes clean air
+Label for comment 85: Tobacco: subsidising tobacco at the same time as getting people to stop - does not make sense
+Label for comment 86: Tobacco: personal story of crops nearby - tobacco
+Label for comment 87: Tobacco: subsidies stupid, it also needs a lot of pesticides
+Label for comment 88: Tobacco: not eco friendly, evidence
+Label for comment 89: McDonalds and smoking: bad for health, glitzy - plain packaging is babying the nation, we can do it for everything
+Label for comment 90: McDonalds and smoking: still has nutritional value, smoking is just bad
+Label for comment 91: McDonalds and smoking: not comparable, latter has significant long term damage
+Label for comment 92: McDonalds and smoking: bad for health, glitzy: disagrees
+Label for comment 93: Tobacco industry: spending lots on advertising, sending mixed messages to marketers; Plain packaging: babying the nation: disagrees
+Label for comment 94: McDonalds and smoking: still has nutritional value, smoking is just bad: disagrees; Tobacco: has medicinal properties
+Label for comment 95: Marijuana: helps with multiple sclerosis sometimes
+Label for comment 96: Tobacco: has medicinal properties: wants examples
+Label for comment 97: Tobacco: has medicinal properties: wants examples
+Label for comment 98: Tobacco: has medicinal properties: some examples but it is still bad for you and nothing is really confirmed
+Label for comment 99: Life: kills all, no matter how they lived. Not all can live up to 105 = ludicrous
+Label for comment 100: Life: lung cancer - bad way to go, can be avoided; Smoking: his only regret
+Label for comment 101: McDonalds and smoking: not comparable, McD doesn't hurt those around you; living in smoking environment is bad for your health
+Label for comment 102: Smoking: asthma attacks and deaths reduced after smoking bans
+
+GROUPS
+
+GROUP: Plain packaging
+
+SUBGROUP: Positive
+Label for comment 1 [musubi]: Plain packaging: approves
+Label for comment 6 [BWhale]: Plain packaging: approves: cool, ppl will return to stylish cigarette tins
+Label for comment 8 [ManuelHu]: Plain packaging: approves: cool, iconic - ppl don't start smoking because of the packet
+Label for comment 13 [BWhale]: Plain packaging: modern and cool, will invest in a tin, better than advertising a brand
+Label for comment 26 [GoldenPa]: Plain packaging: approves; Personal comment
+Label for comment 62 [Frugal_D]: Politicians: haven't banned anything; plain packaging: positive: smoking will be less attractive to youngsters
+Label for comment 70 [Frugal_D]: plain packaging: Australia: smoking increased after: wants evidence; plain packaging: if everyone thinks it will work, why not try
+Label for comment 84 [balanced]: Plain packaging: approves: welcomes clean air
+
+SUBGROUP: Negative
+Label for comment 3 [retreat3]: Plain packaging: politics: cynicism, not going to happen
+Label for comment 9 [Shellfis]: Plain packaging: disagrees: smoking helps the NHS have work, how will tell brands, jokes
+Label for comment 50 [liberalf]: plain packaging: ridiculous fannying around by the government
+Label for comment 54 [liberalf]: plain packaging: ridiculous fannying around by the government - either reject or get on with it, be clear & consistent
+Label for comment 56 [yeahboy]: plain packaging: ridiculous fannying around: disagrees, should give credit where it's due
+Label for comment 57 [Chenoa]: plain packaging: ridiculous fannying around: agrees, some evidence about secretive trade agreements
+Label for comment 58 [liberalf]: Plain packaging: people smoke regardless of the pack, no way to stop people taking up smoking
+Label for comment 60 [twiglett]: plain packaging: negative: petty and ugly
+Label for comment 61 [Oysterhe]: plain packaging: negative: petty and ugly
+
+SUBGROUP: Plain packaging in Australia
+Label for comment 17 [Deebles]: Plain packaging: not for existent smokers but new ones - Australia shows it works
+Label for comment 31 [Gnoway]: plain packaging: keeps spiteful people happy but suggests may not work - sarcastic tone; plain packaging: Australia: smoking increased after
+Label for comment 32 [retreat3]: plain packaging: Australia: smoking increased after: disagrees
+Label for comment 35 [Abertawe]: plain packaging: Australia: smoking increased after: disagrees
+Label for comment 41 [LordBile]: plain packaging: Australia: smoking increased after: disagrees
+Label for comment 68 [Nicholas]: plain packaging: Australia: smoking increased after: agrees
+Label for comment 69 [Ukulele]: plain packaging: Australia: smoking increased after:  disagrees, wants evidence
+Label for comment 70 [Frugal_D]: plain packaging: Australia: smoking increased after: wants evidence; plain packaging: if everyone thinks it will work, why not try
+Label for comment 71 [hamilton]: plain packaging: Australia: smoking increased after: disagrees, evidence
+
+SUBGROUP: Plain packaging: other comments
+Label for comment 27 [JimNolan]: plain packaging: waste of gov money: disagrees; they get paid no matter what they do
+Label for comment 30 [Cordwain]: plain packaging: may not work, rising prices will make people stop smoking
+Label for comment 31 [Gnoway]: plain packaging: keeps spiteful people happy but suggests may not work - sarcastic tone; plain packaging: Australia: smoking increased after
+Label for comment 34 [Turnbull]: plain packaging: will make people choose the cheaper brand, hence the tobacco industry does not want it ; plain packaging: is about brand separation
+Label for comment 39 [austerli]: plain packaging: is about brand separation: agrees
+Label for comment 40 [RichardM]: plain packaging: is about brand separation: agrees 
+Label for comment 47 [Cordwain]: plain packaging: aim to reduce smoking, not turn it to 0; tobacco: reducing prices will encourage smuggling but how much can you smuggle?
+Label for comment 83 [olivebla]: plain packaging: no one is stopping you from smoking, just changing the pack colour
+Label for comment 93 [Alderbar]: Tobacco industry: spending lots on advertising, sending mixed messages to marketers; Plain packaging: babying the nation: disagrees
+
+GROUP: Tobacco industry
+Label for comment 10 [Wassboy]: Tobacco industry: strong
+Label for comment 11 [AlfalfaF]: Tobacco industry: diminishing success at fighting rearguard actions at least in Europe
+Label for comment 12 [jdandi]: Tobacco industry: delaying tactics for more profits; Asia and Africa has thriving tobacco industries 
+Label for comment 16 [Deebles]: Tobacco industry: giving up on UK as a market
+Label for comment 19 [Zamindar]: Tobacco industry: Africa: surprised by how few people smoke there
+Label for comment 20 [Deebles]: Tobacco industry: Africa: surprised by how few people smoke there agrees but is growing
+Label for comment 22 [MrsBertB]: Tobacco industry: nothing to fear, joke - it will burn
+Label for comment 25 [Barry841]: Tobacco industry: fought hard against plain packaging
+Label for comment 80 [colourfu]: Tobacco industry: has strong opposition: joke
+Label for comment 93 [Alderbar]: Tobacco industry: spending lots on advertising, sending mixed messages to marketers; Plain packaging: babying the nation: disagrees
+
+GROUP: Tobacco
+Label for comment 21 [LoPann]: Tobacco: buys because of the way it smokes, not the pack; Diesel: causes lung cancer but still allowed on cars; plain packaging: waste of gov money
+Label for comment 24 [Ezra85]: Tobacco: various evidence that cigarettes are one of the main causes of lung cancer
+Label for comment 28 [dogprese]: Diesel: cleaner now: disagrees ; Tobacco: still more harmful than diesel
+Label for comment 36 [kmanley]: Tobacco: buys because of the way it smokes, not the pack: disagrees
+Label for comment 38 [dessiato]: tobacco: rising prices: will encourage smuggling, won't make people to stop
+Label for comment 42 [LoPann]: Tobacco: various evidence that cigarettes are one of the main causes of lung cancer: disagrees
+Label for comment 44 [tiredgir]: Tobacco: various evidence that cigarettes are bad for health: agrees, personal evidence
+Label for comment 47 [Cordwain]: plain packaging: aim to reduce smoking, not turn it to 0; tobacco: reducing prices will encourage smuggling but how much can you smuggle?
+Label for comment 48 [Ezra85]: Tobacco: cigarettes are one of the main causes of lung cancer: agrees
+Label for comment 85 [bunkendr]: Tobacco: subsidising tobacco at the same time as getting people to stop - does not make sense
+Label for comment 86 [birtland]: Tobacco: personal story of crops nearby - tobacco
+Label for comment 87 [Deebles]: Tobacco: subsidies stupid, it also needs a lot of pesticides
+Label for comment 88 [Deebles]: Tobacco: not eco friendly, evidence
+Label for comment 94 [ID537335]: McDonalds and smoking: still has nutritional value, smoking is just bad: disagrees; Tobacco: has medicinal properties
+Label for comment 96 [MammysLi]: Tobacco: has medicinal properties: wants examples
+Label for comment 97 [ID943290]: Tobacco: has medicinal properties: wants examples
+Label for comment 98 [MammysLi]: Tobacco: has medicinal properties: some examples but it is still bad for you and nothing is really confirmed
+
+GROUP: Smoking
+Label for comment 73 [discobed]: Smoking: the anti - lobby not concerned about ppls wellfare
+Label for comment 82 [colourfu]: smoking: bad for you but oldest person drinker and smoker; Life: crazy, ppl want to leave in peace
+Label for comment 100 [mitch666]: Life: lung cancer - bad way to go, can be avoided; Smoking: his only regret
+Label for comment 102 [Deebles]: Smoking: asthma attacks and deaths reduced after smoking bans
+
+SUBGROUP: McDonalds and smoking
+Label for comment 89 [Oysterhe]: McDonalds and smoking: bad for health, glitzy - plain packaging is babying the nation, we can do it for everything
+Label for comment 90 [MammysLi]: McDonalds and smoking: still has nutritional value, smoking is just bad
+Label for comment 91 [GoldenPa]: McDonalds and smoking: not comparable, latter has significant long term damage
+Label for comment 92 [wobwobwo]: McDonalds and smoking: bad for health, glitzy: disagrees
+Label for comment 94 [ID537335]: McDonalds and smoking: still has nutritional value, smoking is just bad: disagrees; Tobacco: has medicinal properties
+Label for comment 101 [tiredgir]: McDonalds and smoking: not comparable, McD doesn't hurt those around you; living in smoking environment is bad for your health
+
+SUBGROUP: Personal comments about smoking
+Label for comment 14 [Wassboy]: Personal comment: sarcasm: keep paying, die early, without a lot of pension, enjoy the tin
+Label for comment 15 [BWhale]: Personal comment: response: sinister reply of a health fascist
+Label for comment 18 [Tonights]: Personal comment: you are divvy for thinking smoking is cool
+
+GROUP: Diesel 
+Label for comment 21 [LoPann]: Tobacco: buys because of the way it smokes, not the pack; Diesel: causes lung cancer but still allowed on cars; plain packaging: waste of gov money
+Label for comment 23 [kimorris]: Diesel: causes lung cancer: disagrees, before, not now - now cleaner than petrol cars
+Label for comment 28 [dogprese]: Diesel: cleaner now: disagrees ; Tobacco: still more harmful than diesel
+Label for comment 29 [demagogu]: Diesel: cleaner now: disagrees
+Label for comment 33 [Nick321]: Diesel: cleaner now: disagrees
+Label for comment 37 [Jane Smi]: Diesel: causes lung cancer: disagrees - all cars have a filter
+Label for comment 45 [Chalcedo]: Diesel: not CO2 causing cancer, but other particles
+Label for comment 46 [Deebles]: Diesel: has emissions but most cases still caused by smoking
+Label for comment 49 [Novelist]: Diesel: cleaner now: depends on the car
+
+GROUP: Life
+Label for comment 66 [JimNolan]: Life: education, snobbery and softness
+Label for comment 82 [colourfu]: smoking: bad for you but oldest person drinker and smoker; Life: crazy, ppl want to leave in peace
+Label for comment 99 [ID680823]: Life: kills all, no matter how they lived. Not all can live up to 105 = ludicrous
+Label for comment 100 [mitch666]: Life: lung cancer - bad way to go, can be avoided; Smoking: his only regret
+
+GROUP: Other comments
+Label for comment 2 [lierbag]: Suggestion: tumour in some packs to drive sales down
+Label for comment 4 [Monosyll]: Suggestion: tumor: disagrees: who says they want to drive sales down
+Label for comment 62 [Frugal_D]: Politicians: haven't banned anything; plain packaging: positive: smoking will be less attractive to youngsters
+Label for comment 63 [SleepieH]: Sarcasm: how dare doctors desire us all to be healthier
+Label for comment 64 [Barry841]: Sarcasm: overreaction; Personal comment
+Label for comment 65 [GoldenPa]: Sarcasm: clean drinking water - terrible
+Label for comment 72 [discobed]: Politicians: haven't banned anything: disagrees; could smoke in a pub before
+Label for comment 75 [Frugal_D]: Politicians: haven't banned anything: agrees, people can still smoke outside without making life miserable for non-smokers 
+Label for comment 95 [tryingto]: Marijuana: helps with multiple sclerosis sometimes
+
+GROUP: miscellaneous
+Label for comment 5 [jibber19]: Joke: crayons must be sold with them
+Label for comment 7 [mhmediao]: Joke: connected with brand name
+Label for comment 43 [mitch666]: Personal comment: joke
+Label for comment 51 [alexiram]: Clarification question
+Label for comment 52 [liberalf]: Clarification answer
+Label for comment 53 [Matt Pen]: Personal insult
+Label for comment 55 [alexiram]: Clarification question
+Label for comment 59 [alexiram]: Clarification question
+Label for comment 74 [TRISHJAR]: Personal comment/insult
+Label for comment 76 [Clearing]: Joke: pink for girls
+Label for comment 77 [Ruffles7]: Joke: football for boys
+Label for comment 78 [Bishop_B]: Joke: rainbow for gay
+Label for comment 79 [MalikSha]: Joke: black with brown like your lungs
+Label for comment 67 [TRISHJAR]: Personal comment/insult
+Label for comment 81 [olivebla]: Joke continues
+
+UNCONSTRAINED SUMMARY
+
+The commenters mainly discussed plain packaging. Some approved  and said it would be cool and that it would help while others believe it is a waste of government time and money and a useless initiative. A lot of commenters argued whether introducing it in Australia has reduced smoking and brought many examples. There were other various comments on the topic, such as that it might encourage smuggling and that the move was mainly about brand separation. Commenters also focused on the strength of the tobacco industry and its state in different continents in relation to bans and restrictions. Other explained how and why they buy tobacco and extensively discussed health risks and benefits. Commenters also talked about the connection between lung cancer and smoking. A commenter made an analogy between McDonalds and smoking but many opposed his view, saying they are not comparable. There were some aggressive personal comments against smokers, telling them to smoke and die. A discussion about the health risks of Diesel fumes occurred, with people defending and attacking it. There were also a few comments focusing on the meaning of life and how crazy it can get in relation to smoking, lung cancer and snobbery on the issue. Comments, vaguely related to plain packaging, mainly about politics, using sarcasm and suggestions, were also submitted. There was a good deal of jokes and personal insults as well.
+
+CONSTRAINED SUMMARY
+
+The commenters mainly discussed plain packaging. Some approved  and said it would be cool and that it would help while others believe it is a waste of government time and money and a useless initiative. A lot of commenters argued whether introducing it in Australia has reduced smoking and brought many examples. There were other various comments on the topic, such as that it might encourage smuggling and that the move was mainly about brand separation. Commenters also focused on the strength of the tobacco industry and its state in different continents in relation to bans and restrictions. Other explained how and why they buy tobacco and extensively discussed health risks and benefits. Commenters also talked about the connection between lung cancer and smoking. A commenter made an analogy between McDonalds and smoking but many opposed his view, saying they are not comparable. There were some aggressive personal comments against smokers, telling them to smoke and die. A discussion about the health risks of Diesel fumes occurred, with people defending and attacking it. There were also a few comments focusing on the meaning of life and how crazy it can get in relation to smoking, lung cancer and snobbery on the issue. Comments, vaguely related to plain packaging, mainly about politics, using sarcasm and suggestions, were also submitted. There was a good deal of jokes and personal insults as well.
+
+BACK LINKING
+
+The commenters mainly discussed plain packaging.
+(Sub)GroupNames:
+- GROUP: Plain packaging
+
+Some approved  and said it would be cool and that it would help while others believe it is a waste of government time and money and a useless initiative.
+(Sub)GroupNames:
+- SUBGROUP: Positive
+- SUBGROUP: Negative
+
+A lot of commenters argued whether introducing it in Australia has reduced smoking and brought many examples.
+(Sub)GroupNames:
+- SUBGROUP: Plain packaging in Australia
+
+There were other various comments on the topic, such as that it might encourage smuggling and that the move was mainly about brand separation.
+(Sub)GroupNames:
+- SUBGROUP: Plain packaging: other comments
+
+Commenters also focused on the strength of the tobacco industry and its state in different continents in relation to bans and restrictions.
+(Sub)GroupNames:
+- GROUP: Tobacco industry
+
+Other explained how and why they buy tobacco and extensively discussed health risks and benefits.
+(Sub)GroupNames:
+- GROUP: Tobacco
+
+Commenters also talked about the connection between lung cancer and smoking.
+(Sub)GroupNames:
+- GROUP: Smoking
+
+A commenter made an analogy between McDonalds and smoking but many opposed his view, saying they are not comparable.
+(Sub)GroupNames:
+- SUBGROUP: McDonalds and smoking
+
+There were some aggressive personal comments against smokers, telling them to smoke and die.
+(Sub)GroupNames:
+- SUBGROUP: Personal comments about smoking
+
+A discussion about the health risks of Diesel fumes occurred, with people defending and attacking it.
+(Sub)GroupNames:
+- GROUP: Diesel
+
+There were also a few comments focusing on the meaning of life and how crazy it can get in relation to smoking, lung cancer and snobbery on the issue.
+(Sub)GroupNames:
+- GROUP: Life
+
+Comments, vaguely related to plain packaging, mainly about politics, using sarcasm and suggestions, were also submitted.
+(Sub)GroupNames:
+- GROUP: Other comments
+
+There was a good deal of jokes and personal insults as well.
+(Sub)GroupNames:
+- GROUP: miscellaneous

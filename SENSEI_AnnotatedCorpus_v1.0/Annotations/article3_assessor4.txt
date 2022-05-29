@@ -1,0 +1,314 @@
+LABELS
+
+Label for comment 1: Positive: exclamation of excitement about the heatwave
+Label for comment 2: Negative/dislike of heat: dislikes heatwaves
+Label for comment 3: Irrelevant: correcting a typo
+Label for comment 4: Irrelevant: making a joke about the previous typo
+Label for comment 5: Irrelevant: making a joke in response to previous joke
+Label for comment 6: Hesitant about Met Office predictions: report is only a weather forecast, this are often wrong
+Label for comment 7: Negative/dislike of heat: dislikes heatwaves, jokes about taking refuge from the heat in a cave
+Label for comment 8: Negative/dislike of heat: suggests a stone cottage in North Yorkshire for refuge from the heat
+Label for comment 9: Negative/dislike of heat: jokes about wanting to move
+Label for comment 10: Negative/dislike of heat: asks previous commenter to make room in the cave so s/he can join
+Label for comment 11: Negative/dislike of heat: asks previous commenter if s/he wants to be in the aforementioned cave or cottage
+Label for comment 12: Heat tolerance/Climate of Britain: comments to international readers that the 'mid to high twenties' cited in the article is what the UK considers a heatwave (i.e. low heat tolerance among Brits due to a mild climate)
+Label for comment 13: Heat tolerance: air conditioning - used to live in Southern US with no aircon but slept well, so no problem would be had in the UK
+Label for comment 14: Heat tolerance: air conditioning - would hate living in the Southern US with no aircon, previously lived in Indiana with 3 fans always on
+Label for comment 15: Heat tolerance: air conditioning - suggests buying a portable air conditioning unit would have proved cheaper
+Label for comment 16: Heat tolerance: air conditioning - fans are more effective than a portable aircon unit
+Label for comment 17: Heat tolerance: jokes that commenter who slept well in Southern US despite no heating must be a lizard
+Label for comment 18: Heat tolerance: commenter's Australia-dwelling parents have been warned about the heatwave and will likely need to pack more warm clothes (facetious about British perception of what constitutes a high temperature)
+Label for comment 19: Heat tolerance: air conditioning - expensive and encourages people not to venture outside, likens it to a useless drug
+Label for comment 20: Heat tolerance: air conditioning - best invention other than beer
+Label for comment 21: Heat tolerance/Climate of Britain: explains how the Gulf Stream gives the British Isles a mild climate. Compares climite to that of Alabama, where mid-twenties is pleasantly cool. People become acclimatised to the heat.
+Label for comment 22: Heat tolerance: air conditioning - explains how fans are not very effective unless pointed directly at someone
+Label for comment 23: Heat tolerance: air conditioning - clarifies previous comment, notes that fans are a personal preference
+Label for comment 24: Heat tolerance: air conditioning - cannot sleep with noisy aircon
+Label for comment 25: Heat tolerance: Australia reached 46C last year
+Label for comment 26: Irrelevant: duplicate of previous comment
+Label for comment 27: Heat tolerance: air conditioning - prefers heat to cold but finds air conditioning too expensive
+Label for comment 28: Heatwave and harvest: concerned his/her chestnut harvest will be affected by seasonal increase in rainfall like last year
+Label for comment 29: Irrelevant: humour - makes a joke out of 'nuts'
+Label for comment 30: Irrelevant: humour - makes a joke out of 'nuts'
+Label for comment 31: Heatwave and harvest: last year's climate was ideal, a mast year. Enquires where previous commenter lives
+Label for comment 32: Irrelevant: humour - chastises previous commenter for making jokes, tells them to go to the Daily Mail website instead
+Label for comment 33: Irrelevant: humour - links to Daily Mail website to 'help' commenter who made jokes
+Label for comment 34: Irrelevant: humour - appreciates jokes
+Label for comment 35: Self-reporting weather: very hot in London, no aircon at work
+Label for comment 36: Irrelevant: humour
+Label for comment 37: Irrelevant: humour - gives own report not related to the weather
+Label for comment 38: Self-reporting weather: cool and pleasant in the north
+Label for comment 39: Self-reporting weather: sympathetic reply to comment about heat in London and lack of aircon, seriously considers it to be a human rights violation
+Label for comment 40: Self-reporting weather: not pleasant in the Midlands; hot, no sun, high pollen count
+Label for comment 41: Reporting on weather: wants an option to hide local weather forecasts for the South East from site
+Label for comment 42: Reporting on weather: quotes from article to prove that it not purely about the South East
+Label for comment 43: Reporting on weather: humorous suggestion
+Label for comment 44: Reporting on weather: humorous suggestion
+Label for comment 45: Heat tolerance/Climate of Britain: states 30C is not a heatwave, just summer, will be over in a few hours and it will rain
+Label for comment 46: London: muggy but pleasant
+Label for comment 47: London: pleasant in the sunshine; happy people, pubs and beer gardens to go to. Whole office will leave work early because of the heat
+Label for comment 48: London: smog not pleasant though
+Label for comment 49: London: smog not pleasant but typical of a big city and London is still worth it
+Label for comment 50: Sun: things look better when the sun is shining
+Label for comment 51: Irrelevant: humorous - commenter doesn't look better when the sun is shining
+Label for comment 52: Sun: things look better in the sun and snow, is logging off to go to the pub
+Label for comment 53: London: agrees with comment about smog being not pleasant but typical of a big city. Hopes commenter enjoys the pub
+Label for comment 54: London: disputes that London has smog
+Label for comment 55: Irrelevant: humorous
+Label for comment 56: Irrelevant: humorous
+Label for comment 57: London: prefers being on the beach where you can't see the air, beer doesn't taste of diesel and stars are visible
+Label for comment 58: London: lists negative things about London
+Label for comment 59: London: lists negative things about London, prefers other places
+Label for comment 60: London: wants to know where negative commenter lives so s/he can respond in kind
+Label for comment 61: Negative: midges - come in in the summer
+Label for comment 62: Negative: midges - close the window or get a screen
+Label for comment 63: Negative: midges - start smoking to repel midges
+Label for comment 64: Negative: midges - humorous anecdote on mishearing 'repelling midges'
+Label for comment 65: Negative: midges - humorous response
+Label for comment 66: Negative: midges - humorous response
+Label for comment 67: Negative: midges - difficult to repel
+Label for comment 68: Negative: midges - humorous response
+Label for comment 69: Heat tolerance/climate of Britain: disagrees that this constitutes a heatwave, can easily survive months of heat without aircon with lots of water and the right clothes, climate in Ontario more extreme
+Label for comment 70: Heat tolerance/climate of Britain: the UK is not the same as Ontario, people are used to a different climate
+Label for comment 71: Irrelevant: finds a previous comment amusing
+Label for comment 72: Irrelevant: humour - mocking a previous commenter
+Label for comment 73: Irrelevant: humour - heat tolerance
+Label for comment 74: Heat tolerance/climate of Britain: tells previous commenter to move, climate does not sound good
+Label for comment 75: Irrelevant - humour - heat tolerance
+Label for comment 76: Heat tolerance: absolute temperature not good for comparison; air in Britain wet and humid so temperature (hot or cold) feels more extreme
+Label for comment 77: Heat tolerance: tips for those who don't have aircon to make heat more bearable
+Label for comment 78: Heat tolerance: tips for using fans when sleeping
+Label for comment 79: Heat tolerance: suggests drinking beer to sleep well in heat
+Label for comment 80: Heat tolerance: tips given by previous commenter were obvious
+Label for comment 81: Irrelevant: humour
+Label for comment 82: Heat tolerance: suggests getting a ceiling fan
+Label for comment 83: Heat tolerance: renters can't get a ceiling fan. Fans useless as there wouldn't be much use for them; not sufficiently hot in Britain often enough
+Label for comment 84: Heat tolerance: suggestions not obvious to everyone
+Label for comment 85: Irrelevant: humour
+Label for comment 86: Heat tolerance: suggestions useful and novel
+Label for comment 87: Heat tolerance: beer perhaps not a good idea
+Label for comment 88: Irrelevant: duplicate of previous comment
+Label for comment 89: Heat tolerance/climate of Britain: what constitutes a heatwave is relative. Brits finding it hot should buy a small air conditioner for their bedrooms; works for this commenter in the US
+Label for comment 90: Heat tolerance/climate of Britain: nobody in the UK would buy an air conditioner as the heat is only unberable for a couple of weeks each year
+Label for comment 91: Heat tolerance: air conditioning - air conditioning in UK a waste and noisy, likes to avoid it, finds it strange that we chill what little warm air we have
+Label for comment 92: Heat tolerance/climate of Britain: air conditioners popular where commenter lives among the Hasidic Jewish community
+Label for comment 93: Heat tolerance: air conditioning - cheaper to run than a fan
+Label for comment 94: Heat tolerance: air conditioning - air conditioning shouldn't be cheaper to run than a fan as it is a fan plus a refridgeration unit
+Label for comment 95: Heat tolerance/climate of Britain: can get very hot in some buildings, especially converted lofts [so aircon might be useful]
+Label for comment 96: Heat tolerance/climate of Britain: people do in fact buy air conditioners in the UK, commenter likes theirs
+Label for comment 97: Heat tolerance/climate of Britain: UK will get hotter due to climate change. People do not have to buy units if they do not want to but it is preferable to some than trying to sleep in a sweaty bed
+Label for comment 98: Hosepipe ban: predicts one soon in the south of England
+Label for comment 99: Reporting on weather: unnecessary
+Label for comment 100: Reporting on weather: headlines always the same
+Label for comment 101: Reporting on weather: headlines always the same
+Label for comment 102: Reporting on weather: headlines always the same
+Label for comment 103: Reporting on weather: headlines always the same
+Label for comment 104: Reporting on weather: headlines always the same
+Label for comment 105: Reporting on weather: headlines always the same
+Label for comment 106: Reporting on weather: no need as UK has a temperate climate
+Label for comment 107: Reporting on weather: heat will not last long and will be localised to the south east
+Label for comment 108: Reporting on weather: Daily Express will start reporting weather forecasts on front page for a few days
+Label for comment 109: Reporting on weather: humour
+
+GROUPS
+
+GROUP: Heat tolerance and Britain's climate
+
+SUBGROUP: a heatwave in the UK compared to elsewhere, relativity of heat, UK climate
+Label for comment 12 [AlanWest81]: Heat tolerance/Climate of Britain: comments to international readers that the 'mid to high twenties' cited in the article is what the UK considers a heatwave (i.e. low heat tolerance among Brits due to a mild climate)
+Label for comment 18 [RonJB]: Heat tolerance: commenter's Australia-dwelling parents have been warned about the heatwave and will likely need to pack more warm clothes (facetious about British perception of what constitutes a high temperature)
+Label for comment 21 [BlakeK]: Heat tolerance/Climate of Britain: explains how the Gulf Stream gives the British Isles a mild climate. Compares climate to that of Alabama, where mid-twenties is pleasantly cool. People become acclimatised to the heat.
+Label for comment 25 [EvilCommieDictator]: Heat tolerance: Australia reached 46C last year
+Label for comment 45 [Sakuranbo]: Heat tolerance/Climate of Britain: states 30C is not a heatwave, just summer, will be over in a few hours and it will rain
+Label for comment 69 [JaitcH]: Heat tolerance/climate of Britain: disagrees that this constitutes a heatwave, can easily survive months of heat without aircon with lots of water and the right clothes, climate in Ontario more extreme
+Label for comment 70 [Mangala]: Heat tolerance/climate of Britain: the UK is not the same as Ontario, people are used to a different climate
+Label for comment 74 [quittoexit]: Heat tolerance/climate of Britain: tells previous commenter to move, climate does not sound good
+Label for comment 76 [justask]: Heat tolerance: absolute temperature not good for comparison; air in Britain wet and humid so temperature (hot or cold) feels more extreme
+Label for comment 89 [Leer]: Heat tolerance/climate of Britain: what constitutes a heatwave is relative. Brits finding it hot should buy a small air conditioner for their bedrooms; works for this commenter in the US
+Label for comment 90 [waltjabsco]: Heat tolerance/climate of Britain: nobody in the UK would buy an air conditioner as the heat is only unberable for a couple of weeks each year
+Label for comment 97 [Leer]: Heat tolerance/climate of Britain: UK will get hotter due to climate change. People do not have to buy units if they do not want to but it is preferable to some than trying to sleep in a sweaty bed
+
+SUBGROUP: the need for and use of air conditioning
+Label for comment 13 [Madranon]: Heat tolerance: air conditioning - used to live in Southern US with no aircon but slept well, so no problem would be had in the UK
+Label for comment 14 [AlanWest81]: Heat tolerance: air conditioning - would hate living in the Southern US with no aircon, previously lived in Indiana with 3 fans always on
+Label for comment 15 [Aliktren]: Heat tolerance: air conditioning - suggests buying a portable air conditioning unit would have proved cheaper
+Label for comment 16 [AlanWest81]: Heat tolerance: air conditioning - fans are more effective than a portable aircon unit
+Label for comment 17 [Foom]: Heat tolerance: jokes that commenter who slept well in Southern US despite no aircon must be a lizard
+Label for comment 19 [madtom1999]: Heat tolerance: air conditioning - expensive and encourages people not to venture outside, likens it to a useless drug
+Label for comment 20 [vincent19]: Heat tolerance: air conditioning - best invention other than beer
+Label for comment 22 [sergeberard]: Heat tolerance: air conditioning - explains how fans are not very effective unless pointed directly at someone
+Label for comment 23 [AlanWest81]: Heat tolerance: air conditioning - clarifies previous comment, notes that fans are a personal preference
+Label for comment 24 [sergeberard]: Heat tolerance: air conditioning - cannot sleep with noisy aircon
+Label for comment 27 [Madranon]: Heat tolerance: air conditioning - prefers heat to cold but finds air conditioning too expensive
+Label for comment 89 [Leer]: Heat tolerance/climate of Britain: what constitutes a heatwave is relative. Brits finding it hot should buy a small air conditioner for their bedrooms; works for this commenter in the US
+Label for comment 90 [waltjabsco]: Heat tolerance/climate of Britain: nobody in the UK would buy an air conditioner as the heat is only unberable for a couple of weeks each year
+Label for comment 91 [bigredroo]: Heat tolerance: air conditioning - air conditioning in UK a waste and noisy, likes to avoid it, finds it strange that we chill what little warm air we have
+Label for comment 92 [freewheelingfrankie]: Heat tolerance/climate of Britain: air conditioners popular where commenter lives among the Hasidic Jewish community
+Label for comment 93 [Aliktren]: Heat tolerance: air conditioning - cheaper to run than a fan
+Label for comment 94 [HenryBlince]: Heat tolerance: air conditioning - air conditioning shouldn't be cheaper to run than a fan as it is a fan plus a refrigeration unit
+Label for comment 95 [Ortho]: Heat tolerance/climate of Britain: can get very hot in some buildings, especially converted lofts [so aircon might be useful]
+Label for comment 96 [horrypops]: Heat tolerance/climate of Britain: people do in fact buy air conditioners in the UK, commenter likes theirs
+Label for comment 97 [Leer]: Heat tolerance/climate of Britain: UK will get hotter due to climate change. People do not have to buy units if they do not want to but it is preferable to some than trying to sleep in a sweaty bed
+
+SUBGROUP: bearing the heat without air conditioning
+Label for comment 77 [retsdon]: Heat tolerance: tips for those who don't have aircon to make heat more bearable
+Label for comment 78 [retsdon]: Heat tolerance: tips for using fans when sleeping
+Label for comment 79 [midasman]: Heat tolerance: suggests drinking beer to sleep well in heat
+Label for comment 80 [HenryBlince]: Heat tolerance: tips given by previous commenter were obvious
+Label for comment 82 [MrGenius]: Heat tolerance: suggests getting a ceiling fan
+Label for comment 83 [retsdon]: Heat tolerance: renters can't get a ceiling fan. Fans useless as there wouldn't be much use for them; not sufficiently hot in Britain often enough
+Label for comment 84 [retsdon]: Heat tolerance: suggestions not obvious to everyone
+Label for comment 86 [Ortho]: Heat tolerance: suggestions useful and novel
+Label for comment 87 [Fergusp]: Heat tolerance: beer perhaps not a good idea
+
+GROUP: Negative comments about the heatwave, high temperatures, the summer
+
+SUBGROUP: dislike of the heat
+Label for comment 2 [Freddie2014]: Negative/dislike of heat: dislikes heatwaves
+Label for comment 7 [Dolpheran]: Negative/dislike of heat: dislikes heatwaves, jokes about taking refuge from the heat in a cave
+Label for comment 8 [JackTheJuggler]: Negative/dislike of heat: suggests a stone cottage in North Yorkshire for refuge from the heat
+Label for comment 9 [Dolpheran]: Negative/dislike of heat: jokes about wanting to move
+Label for comment 10 [olderiamthelessiknow]: Negative/dislike of heat: asks previous commenter to make room in the cave so s/he can join
+Label for comment 11 [Dolpheran]: Negative/dislike of heat: asks previous commenter if s/he wants to be in the aforementioned cave or cottage
+
+SUBGROUP: midges
+Label for comment 61 [Madranon]: Negative: midges - come in in the summer
+Label for comment 62 [JaitcH]: Negative: midges - close the window or get a screen
+Label for comment 63 [realisscum]: Negative: midges - start smoking to repel midges
+Label for comment 64 [SugarPlumpFairy]: Negative: midges - humorous anecdote on mishearing 'repelling midges'
+Label for comment 65 [jonnie2thumbs]: Negative: midges - humorous response
+Label for comment 66 [SugarPlumpFairy]: Negative: midges - humorous response
+Label for comment 67 [Typingmonkeys]: Negative: midges - difficult to repel
+Label for comment 68 [jonnie2thumbs]: Negative: midges - humorous response
+
+GROUP: commenters reporting on the weather where they are
+Label for comment 35 [michaelfromlondon]: Self-reporting weather: very hot in London, no aircon at work
+Label for comment 38 [mercatorish]: Self-reporting weather: cool and pleasant in the north
+Label for comment 39 [RogueStatement9000]: Self-reporting weather: sympathetic reply to comment about heat in London and lack of aircon, seriously considers it to be a human rights violation
+Label for comment 40 [Ortho]: Self-reporting weather: not pleasant in the Midlands; hot, no sun, high pollen count
+
+GROUP: comments on newspapers publishing articles on the weather
+Label for comment 41 [MitchellAdcow]: Reporting on weather: wants an option to hide local weather forecasts for the South East from site
+Label for comment 42 [MZorin]: Reporting on weather: quotes from article to prove that it not purely about the South East
+Label for comment 43 [diotavelli]: Reporting on weather: humorous suggestion
+Label for comment 44 [almorr]: Reporting on weather: humorous suggestion
+Label for comment 99 [scrapthebbc]: Reporting on weather: unnecessary
+Label for comment 100 [MikeRichards]: Reporting on weather: headlines always the same
+Label for comment 101 [Anusol]: Reporting on weather: headlines always the same
+Label for comment 102 [waltjabsco]: Reporting on weather: headlines always the same
+Label for comment 103 [RogueStatement9000]: Reporting on weather: headlines always the same
+Label for comment 104 [Wifeandthreekids]: Reporting on weather: headlines always the same
+Label for comment 105 [Wifeandthreekids]: Reporting on weather: headlines always the same
+Label for comment 106 [CoconutJoe]: Reporting on weather: no need as UK has a temperate climate
+Label for comment 107 [blairsnemesis]: Reporting on weather: heat will not last long and will be localised to the south east
+Label for comment 108 [MikeRichards]: Reporting on weather: Daily Express will start reporting weather forecasts on front page for a few days
+Label for comment 109 [Leer]: Reporting on weather: humour
+
+GROUP: Summer in London
+Label for comment 46 [Silliband]: London: muggy but pleasant
+Label for comment 47 [IceCreamTony]: London: pleasant in the sunshine; happy people, pubs and beer gardens to go to. Whole office will leave work early because of the heat
+Label for comment 48 [hapaxlegomenon]: London: smog not pleasant though
+Label for comment 49 [IceCreamTony]: London: smog not pleasant but typical of a big city and London is still worth it
+Label for comment 53 [RogueStatement9000]: London: agrees with comment about smog being not pleasant but typical of a big city. Hopes commenter enjoys the pub
+Label for comment 54 [MrGenius]: London: disputes that London has smog
+Label for comment 57 [madtom1999]: London: prefers being on the beach where you can't see the air, beer doesn't taste of diesel and stars are visible
+Label for comment 58 [MikeyMovement]: London: lists negative things about London
+Label for comment 59 [Sakuranbo]: London: lists negative things about London, prefers other places
+Label for comment 60 [IceCreamTony]: London: wants to know where negative commenter lives so s/he can respond in kind
+
+GROUP: miscellaneous
+Label for comment 1 [Bunn]: Positive: exclamation of excitement about the heatwave
+Label for comment 6 [Jack Jazz]: Hesitant about Met Office predictions: report is only a weather forecast, this are often wrong
+Label for comment 50 [Bunn]: Sun: things look better when the sun is shining
+Label for comment 52 [IceCreamTony]: Sun: things look better in the sun and snow, is logging off to go to the pub
+Label for comment 98 [FloodZilla]: Hosepipe ban: predicts one soon in the south of England
+
+SUBGROUP: heatwave and the harvest
+Label for comment 28 [QuinSleeps]: Heatwave and harvest: concerned his/her chestnut harvest will be affected by seasonal increase in rainfall like last year
+Label for comment 31 [Briar]: Heatwave and harvest: last year's climate was ideal, a mast year. Enquires where previous commenter lives
+
+SUBGROUP: humorous comments and those that do not otherwise add to the discussion
+Label for comment 3 [Freddie2014]: Irrelevant: correcting a typo
+Label for comment 4 [BrotherGorilla]: Irrelevant: making a joke about the previous typo
+Label for comment 5 [peugeott]: Irrelevant: making a joke in response to previous joke
+Label for comment 26 [EvilCommieDictator]: Irrelevant: duplicate of previous comment
+Label for comment 29 [RogueStatement9000]: Irrelevant: humour - makes a joke out of 'nuts'
+Label for comment 32 [EconomicDeterminist]: Irrelevant: humour - chastises previous commenter for making jokes, tells them to go to the Daily Mail website instead
+Label for comment 33 [EconomicDeterminist]: Irrelevant: humour - links to Daily Mail website to 'help' commenter who made jokes
+Label for comment 34 [HappyChickie]: Irrelevant: humour - appreciates jokes
+Label for comment 30 [MasterPale]: Irrelevant: humour - makes a joke out of 'nuts'
+Label for comment 36 [RichWoods]: Irrelevant: humour
+Label for comment 37 [Salcombe]: Irrelevant: humour - gives own report not related to the weather
+Label for comment 51 [Salcombe]: Irrelevant: humorous - commenter doesn't look better when the sun is shining
+Label for comment 55 [CeilingCat]: Irrelevant: humorous
+Label for comment 56 [creetree]: Irrelevant: humorous
+Label for comment 71 [waltjabsco]: Irrelevant: finds a previous comment amusing
+Label for comment 72 [HenryBlince]: Irrelevant: humour - mocking a previous commenter
+Label for comment 73 [warmerwherewewere]: Irrelevant: humour - heat tolerance
+Label for comment 75 [lissendis]: Irrelevant - humour - heat tolerance
+Label for comment 81 [IceCreamTony]: Irrelevant: humour
+Label for comment 85 [jackheron]: Irrelevant: humour
+Label for comment 88 [Fergusp]: Irrelevant: duplicate of previous comment
+
+UNCONSTRAINED SUMMARY
+
+The majority of the comments discussed the climate of Britain and what constitutes a heatwave here compared to other places or how people tolerate the heat. Some comments expressed disbelief at temperatures in the twenties meaning a heatwave for Britain and referred to temperatures elsewhere in the world, while others reminded them that a heatwave is relative and that Britain tends to have a mild, temperate climate. The discussion of heat tolerance mainly focused on air conditioning, with several commenters feeling fans would suffice and units are not necessary in the UK and too expensive to run, while others felt air conditioning was useful. A few comments detailed ways of tolerating the heat without relying on air conditioning. A small about commenters expressed negative opinions about the heat. A small group of comments discussed how the heat brings about the nuisance of midges and how to deal with them. A few comments reported on the weather where commenters were. Several comments discussed how newspapers report on weather in Britain, with all in agreement that headlines were predictable and many feeling that the articles were not necessary and redundant. A minority of comments mentioned how reporting on summer weather tends to focus on the south of England and not be relevant elsewhere. In a similar vein, several comments discussed the weather and summer in general in London, with opinion fairly divided on whether or not it was a positive experience. Outliers included a positive comment about the heatwave, positive comments on the sun, a prediction of an imminent hosepipe ban and hesitancy over Met Office forecasts. A couple of commenters discussed what the heatwave means for chestnuts harvests. The light-hearted nature of the article meant much of the discussion was not serious, leading to many humorous comments and jokes.
+
+CONSTRAINED SUMMARY
+
+The majority of the comments discussed the climate of Britain and what constitutes a heatwave or how people tolerate the heat. Some comments expressed disbelief at temperatures in the twenties meaning a heatwave for Britain and referred to temperatures elsewhere in the world, while others reminded them that a heatwave is relative and that Britain tends to have a mild, temperate climate. The discussion of heat tolerance mainly focused on air conditioning, with several commenters feeling fans would suffice and units are unnecessary in the UK and too expensive to run, while others felt air conditioning was useful. A few comments detailed ways of tolerating the heat without relying on air conditioning. 
+
+Some comments people expressed negative opinions about the heat. A small group of comments discussed midges.
+A few comments reported on the weather in commenters' locations. Several comments discussed how newspapers report on weather in Britain, with commenters in agreement that headlines were predictable and many feeling that such articles were not necessary. Several comments discussed the weather and summer in general in London, with opinion fairly divided on whether or not it was a positive experience. 
+
+Outliers included a positive comments on the heatwave and the sun, a prediction of an imminent hosepipe ban and hesitancy over Met Office forecasts. A couple of commenters discussed what heatwaves mean for chestnuts harvests. Many comments were humorous.
+
+BACK LINKING
+
+Many comments were humorous.
+(Sub)GroupNames:
+- SUBGROUP: humorous comments and those that do not otherwise add to the discussion
+
+A couple of commenters discussed what heatwaves mean for chestnuts harvests.
+(Sub)GroupNames:
+- SUBGROUP: heatwave and the harvest
+
+Outliers included a positive comments on the heatwave and the sun, a prediction of an imminent hosepipe ban and hesitancy over Met Office forecasts.
+(Sub)GroupNames:
+- GROUP: miscellaneous
+
+Several comments discussed the weather and summer in general in London, with opinion fairly divided on whether or not it was a positive experience.
+(Sub)GroupNames:
+- GROUP: Summer in London
+
+Several comments discussed how newspapers report on weather in Britain, with commenters in agreement that headlines were predictable and many feeling that such articles were not necessary.
+(Sub)GroupNames:
+- GROUP: comments on newspapers publishing articles on the weather
+
+A few comments reported on the weather in commenters' locations.
+(Sub)GroupNames:
+- GROUP: commenters reporting on the weather where they are
+
+A small group of comments discussed midges.
+(Sub)GroupNames:
+- SUBGROUP: midges
+
+Some comments people expressed negative opinions about the heat.
+(Sub)GroupNames:
+- GROUP: Negative comments about the heatwave, high temperatures, the summer
+
+A few comments detailed ways of tolerating the heat without relying on air conditioning.
+(Sub)GroupNames:
+- SUBGROUP: bearing the heat without air conditioning
+
+The discussion of heat tolerance mainly focused on air conditioning, with several commenters feeling fans would suffice and units are unnecessary in the UK and too expensive to run, while others felt air conditioning was useful.
+(Sub)GroupNames:
+- SUBGROUP: the need for and use of air conditioning
+
+Some comments expressed disbelief at temperatures in the twenties meaning a heatwave for Britain and referred to temperatures elsewhere in the world, while others reminded them that a heatwave is relative and that Britain tends to have a mild, temperate climate.
+(Sub)GroupNames:
+- SUBGROUP: a heatwave in the UK compared to elsewhere, relativity of heat, UK climate
+
+The majority of the comments discussed the climate of Britain and what constitutes a heatwave or how people tolerate the heat.
+(Sub)GroupNames:
+- GROUP: Heat tolerance and Britain's climate

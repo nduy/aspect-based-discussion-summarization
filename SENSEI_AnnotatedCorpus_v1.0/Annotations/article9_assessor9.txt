@@ -1,0 +1,334 @@
+LABELS
+
+Label for comment 1: suggestion: day: close windows/curtains
+Label for comment 2: suggestion: day: close windows/curtains
+Label for comment 3: Joke: move to Portugal
+Label for comment 4: Suggestion: day: wear light clothing; people are dressing the wrong way in England.
+Label for comment 5: suggestion: day: close windows/curtains;  shutters better than curtains
+Label for comment 6: Suggestion: day: wear light clothing: opposes, people wear jeans all the time in hot countries
+Label for comment 7: suggestion: day: close windows/curtains, to do before sun comes
+Label for comment 8: Joke: Portugal
+Label for comment 9: suggestion: day: close windows/curtains approves; suggestion: day: cool showers; suggestion: night: sleep on balcony
+Label for comment 10: suggestion: day: don't sit in the sun
+Label for comment 11: Personal answer
+Label for comment 12: Personal answer
+Label for comment 13: Brits don't know how to handle hot weather
+Label for comment 14: Suggestion: day : go somewhere cooler
+Label for comment 15: Joke: freezer supermarket section
+Label for comment 16: Joke: Asda is freezing
+Label for comment 17: Suggestion: avoid alcohol; suggestion: drink lots of water; story about heat wave in France
+Label for comment 18: Suggestion: night: sleep on tiled floor;; suggestion: drinking lots of water;; suggestion: day: wear light clothing;; suggestion: day: close windows/curtains; suggestion: doing work outside hot hours
+Label for comment 19: Suggestion: day: cool showers; Suggestion: day: close windows/curtains
+Label for comment 20: Suggestion: night: sleep on tiled floor: approves
+Label for comment 21: Negative comment: pointless article, sarcasm
+Label for comment 22: Remark about the previous comment.
+Label for comment 23: Positive: not pointless, heat waves cause mortality in the country
+Label for comment 24: Negative: not that hot yet
+Label for comment 25: Negative: not that hot yet
+Label for comment 26: Personal comment
+Label for comment 27: Positive: some of the uk is baking, still useful
+Label for comment 28: Positive: it will get hot soon
+Label for comment 29: Personal accusation
+Label for comment 30: Personal accusation
+Label for comment 31: Personal comment, hot at night
+Label for comment 32: Personal comment, hot outside London
+Label for comment 33: Negative: the media are over exaggerating
+Label for comment 34: suggestion: day: close windows/curtains;; suggestion: drink lots of water - put sugar in it; suggestion: get a fan; suggestion: day: wear light clothing
+Label for comment 35: Suggestion: higher intake of Vit D; Suggestion: avoid alcohol/caffeine; suggestion: day: close windows/curtains; suggestion: night: doors and windows open but be careful of burglars; suggestion: doing work outside hot hours
+Label for comment 36: Personal: asks for confirmation of sources
+Label for comment 37: Suggestion: day: drink ayran (Turkey)
+Label for comment 38: Suggestion: day: drink ayran ; add mint
+Label for comment 39: Personal comment about Turkey
+Label for comment 40: Joke: Muller and ayran
+Label for comment 41: Suggestion: day: drink ayran/kefir
+Label for comment 42: Suggestion: day: drink ayran
+Label for comment 43: Joke: Turkish prime minister
+Label for comment 44: Suggestion: day: don't overexercise; Suggestion: night: open doors/windows; Suggestion: night: put damp towel to cool off; Suggestion: day: Don't use the oven/ cook
+Label for comment 45: Suggestion: day: Don't use the oven/ cook; Suggestion: day: don't over exercise
+Label for comment 46: Suggestion: day: Don't use the oven/ cook - cook early and for a few meals
+Label for comment 47: Suggestion: day: tie up your hair
+Label for comment 48: Joke about spelling
+Label for comment 49: Suggestion: night: open doors/windows; suggestion: air con; get solar panels
+Label for comment 50: Joke suggestion: have sex
+Label for comment 51: Joke: sex: continues
+Label for comment 52: Joke: sex: continues
+Label for comment 53: Joke: sex: continues
+Label for comment 54: Negative - would love to feel hot. still cold where they are
+Label for comment 55: Joke: personal
+Label for comment 56: Negative: Britain making a fuss, not that serious
+Label for comment 57: suggestion: air con
+Label for comment 58: Positive: people not used to the condition hence big news, don't have ACs
+Label for comment 59: Positive with sarcasm: mentions pensioners with no AC who die
+Label for comment 60: Positive with sarcasm: connects USA's wealth to the ability to cope
+Label for comment 61: Negative: media is going crazy over a few days of summer
+Label for comment 62: Positive with sarcasm: there will always be someone moaning
+Label for comment 63: Joke: thermal socks
+Label for comment 64: Joke: camel
+Label for comment 65: Joke: walk slowly
+Label for comment 66: Joke: sit in fridge
+Label for comment 67: Joke: fridge: continues
+Label for comment 68: Joke: fridge: continues
+Label for comment 69: suggestion: day: close windows/curtains; suggestion: get a fan; suggestion: day: don't sit in the sun/ go out in the day; joke: pretend you are on holiday
+Label for comment 70: Comment: different type of heat in different places
+Label for comment 71: comment: weather in Germany
+Label for comment 72: suggestion: day: eat spicy food, makes you sweat
+Label for comment 73: Joke personal comment
+Label for comment 74: negative: good summer, stop making it a crisis
+Label for comment 75: negative: common sense, not useful advice
+Label for comment 76: joke, comment on above
+Label for comment 77: Joke: sit in front of freezer
+Label for comment 78: Joke: hang out with Patrick Stewart
+Label for comment 79: Joke: celebrity: continues
+Label for comment 80: Joke: celebrity: continues
+Label for comment 81: Joke: celebrity: continues
+Label for comment 82: Sarcasm
+Label for comment 83: Sarcasm continues
+Label for comment 84: Suggestion: dogs: don't leave them in cars; Suggestion: dogs: walk them early or late; Suggestion: dogs: give them plenty of water
+Label for comment 85: comment: dogs are banned on their local beach
+Label for comment 86: comment continues: why ban dogs? owners should clean after them
+Label for comment 87: comment: majority of dog owners not responsible; dog poop prevents children from playing; would ban dogs and cats from the world
+Label for comment 88: Personal accusation
+Label for comment 89: Sarcasm, personal comment
+Label for comment 90: Personal comment - would have little boys, world would be better without them
+Label for comment 91: Personal accusation
+Label for comment 92: Comment: dog owners treat their dogs as children
+Label for comment 93: suggestion: run hands under cold tap
+Label for comment 94: suggestion: run hands under cold tap - wrists better
+Label for comment 95: suggestion: night: wash and spin, without drying, your bed sheets
+Label for comment 96: Suggestion: dogs: don't leave it in the car
+Label for comment 97: comment: shocked to know people leave pets in cars
+Label for comment 98: comment: they do leave dogs while in pubs/supermarkets; police can tackle that
+Label for comment 99: comment: last year police dog died in police van
+Label for comment 100: suggestion: dogs: give them ice cubes to lick
+Label for comment 101: joke: lick your pets
+
+GROUPS
+
+GROUP: Suggestions 
+
+SUBGROUP: suggestion: day: close windows/curtains
+Label for comment 1 [caxixi]: suggestion: day: close windows/curtains
+Label for comment 2 [CarmenFishwick]: suggestion: day: close windows/curtains
+Label for comment 5 [timtim1]: suggestion: day: close windows/curtains;  shutters better than curtains
+Label for comment 7 [Trebor1975]: suggestion: day: close windows/curtains, to do before sun comes
+Label for comment 9 [kizbot]: suggestion: day: close windows/curtains approves; suggestion: day: cool showers; suggestion: night: sleep on balcony
+Label for comment 18 [cerinamroth]: Suggestion: night: sleep on tiled floor; ; suggestion: drinking lots of water;; suggestion: day: wear light clothing;; suggestion: day: close windows/curtains; suggestion: doing work outside hot hours
+Label for comment 34 [teaandchocolate]: suggestion: day: close windows/curtains;; suggestion: drink lots of water - put sugar in it; suggestion: get a fan; suggestion: day: wear light clothing
+Label for comment 35 [tr1ck5t3r]: Suggestion: higher intake of Vit D; Suggestion: avoid alcohol/caffeine; suggestion: day: close windows/curtains; suggestion: night: doors and windows open but be careful of burglars; suggestion: doing work outside hot hours
+Label for comment 69 [neko99]: suggestion: day: close windows/curtains; suggestion: get a fan; suggestion: day: don't sit in the sun/ go out in the day; joke: pretend you are on holiday
+
+SUBGROUP: suggestion: day: cool showers
+Label for comment 9 [kizbot]: suggestion: day: close windows/curtains approves; suggestion: day: cool showers; suggestion: night: sleep on balcony
+Label for comment 19 [tarnarama]: Suggestion: day: cool showers; Suggestion: day: close windows/curtains
+
+SUBGROUP: Suggestion: day: wear light clothing
+Label for comment 4 [bbmatt]: Suggestion: day: wear light clothing; people are dressing the wrong way in England.
+Label for comment 18 [cerinamroth]: Suggestion: night: sleep on tiled floor; ; suggestion: drinking lots of water;; suggestion: day: wear light clothing;; suggestion: day: close windows/curtains; suggestion: doing work outside hot hours
+Label for comment 19 [tarnarama]: Suggestion: day: cool showers; Suggestion: day: close windows/curtains
+Label for comment 34 [teaandchocolate]: suggestion: day: close windows/curtains;; suggestion: drink lots of water - put sugar in it; suggestion: get a fan; suggestion: day: wear light clothing
+
+SUBGROUP: suggestion: day: other
+Label for comment 10 [kizbot]: suggestion: day: don't sit in the sun
+Label for comment 14 [raleighgrifter]: Suggestion: day : go somewhere cooler
+Label for comment 17 [BaronGrovelville]: Suggestion: avoid alcohol; suggestion: drink lots of water; story about heat wave in France
+Label for comment 18 [cerinamroth]: Suggestion: night: sleep on tiled floor; ; suggestion: drinking lots of water;; suggestion: day: wear light clothing;; suggestion: day: close windows/curtains; suggestion: doing work outside hot hours
+Label for comment 34 [teaandchocolate]: suggestion: day: close windows/curtains;; suggestion: drink lots of water - put sugar in it; suggestion: get a fan; suggestion: day: wear light clothing
+Label for comment 35 [tr1ck5t3r]: Suggestion: higher intake of Vit D; Suggestion: avoid alcohol/caffeine; suggestion: day: close windows/curtains; suggestion: night: doors and windows open but be careful of burglars; suggestion: doing work outside hot hours
+Label for comment 37 [Smyrna]: Suggestion: day: drink ayran (Turkey)
+Label for comment 38 [LouSnickers]: Suggestion: day: drink ayran ; add mint
+Label for comment 41 [cerinamroth]: Suggestion: day: drink ayran/kefir
+Label for comment 42 [zcsaa44]: Suggestion: day: drink ayran
+Label for comment 44 [juliespetses]: Suggestion: day: don't overexercise; Suggestion: night: open doors/windows; Suggestion: night: put damp towel to cool off; Suggestion: day: Don't use the oven/ cook
+Label for comment 45 [caxixi]: Suggestion: day: Don't use the oven/ cook; Suggestion: day: don't over exercise
+Label for comment 46 [juliespetses]: Suggestion: day: Don't use the oven/ cook - cook early and for a few meals
+Label for comment 47 [juliespetses]: Suggestion: day: tie up your hair
+Label for comment 69 [neko99]: suggestion: day: close windows/curtains; suggestion: get a fan; suggestion: day: don't sit in the sun/ go out in the day; joke: pretend you are on holiday
+Label for comment 72 [PariahCarefree]: suggestion: day: eat spicy food, makes you sweat
+Label for comment 93 [PaulUK83]: suggestion: day: run hands under cold tap
+Label for comment 94 [wryneck201]: suggestion: day: run hands under cold tap - wrists better
+
+SUBGROUP: Opposing to day suggestions
+Label for comment 6 [ID6241782]: Suggestion: day: wear light clothing: opposes, people wear jeans all the time in hot countries
+
+SUBGROUP: Suggestion: night: Sleep on balcony/tiled floor
+Label for comment 9 [kizbot]: suggestion: day: close windows/curtains approves; suggestion: day: cool showers; suggestion: night: sleep on balcony
+Label for comment 18 [cerinamroth]: Suggestion: night: sleep on tiled floor; ; suggestion: drinking lots of water;; suggestion: day: wear light clothing;; suggestion: day: close windows/curtains; suggestion: doing work outside hot hours
+Label for comment 20 [BaronGrovelville]: Suggestion: night: sleep on tiled floor: approves
+
+SUBGROUP: Suggestion: night: open doors/windows
+Label for comment 49 [Alan James]: Suggestion: night: open doors/windows; suggestion: air con; get solar panels
+Label for comment 35 [tr1ck5t3r]: Suggestion: higher intake of Vit D; Suggestion: avoid alcohol/caffeine; suggestion: day: close windows/curtains; suggestion: night: doors and windows open but be careful of burglars; suggestion: doing work outside hot hours
+
+SUBGROUP: Suggestion: night: other
+Label for comment 95 [hannahnoushka]: suggestion: night: wash and spin, without drying, your bed sheets
+
+SUBGROUP: Suggestion: dogs
+Label for comment 84 [foxinwinter]: Suggestion: dogs: don't leave them in cars; Suggestion: dogs: walk them early or late; Suggestion: dogs: give them plenty of water
+Label for comment 96 [SamGamgee]: Suggestion: dogs: don't leave it in the car
+Label for comment 100 [Garp]: suggestion: dogs: give them ice cubes to lick
+
+GROUP: Is the article worth reading? Is it relevant and useful?
+
+SUBGROUP: Yes
+Label for comment 23 [foxinwinter]: Positive: not pointless, heat waves cause mortality in the country
+Label for comment 27 [foxinwinter]: Positive: some of the uk is baking, still useful
+Label for comment 28 [bbmatt]: Positive: it will get hot soon
+Label for comment 58 [Brandybuck]: Positive: people not used to the condition hence big news, don't have ACs
+Label for comment 59 [ID6241782]: Positive with sarcasm: mentions pensioners with no AC who die
+Label for comment 60 [Gitfinger]: Positive with sarcasm: connects USA's wealth to the ability to cope
+Label for comment 62 [ErnyRoamer]: Positive with sarcasm: there will always be someone moaning
+
+SUBGROUP: No
+Label for comment 21 [LeonRice]: Negative comment: pointless article, sarcasm
+Label for comment 24 [littlemissmolly]: Negative: not that hot yet
+Label for comment 25 [robinspat]: Negative: not that hot yet
+Label for comment 33 [littlemissmolly]: Negative: the media are over exaggerating
+Label for comment 54 [kirstysays]: Negative - would love to feel hot. still cold where they are
+Label for comment 56 [bradgate]: Negative: Britain making a fuss, not that serious
+Label for comment 61 [trieste53512]: Negative: media is going crazy over a few days of summer
+Label for comment 74 [mercatorish]: negative: good summer, stop making it a crisis
+Label for comment 75 [PaulLambert]: negative: common sense, not useful advice
+
+GROUP: Jokes
+Label for comment 3 [SamGamgee]: Joke: move to Portugal
+Label for comment 8 [caxixi]: Joke: Portugal
+Label for comment 15 [pollystyrene]: Joke: freezer supermarket section
+Label for comment 16 [LilywhiteGirl]: Joke: Asda is freezing
+Label for comment 40 [Carlillvs]: Joke: Muller and ayran
+Label for comment 43 [Kezap]: Joke: Turkish prime minister
+Label for comment 48 [Kier3216]: Joke about spelling
+Label for comment 50 [Daniel Dytrych]: Joke suggestion: have sex
+Label for comment 51 [stoneface1]: Joke: sex: continues
+Label for comment 52 [PlatoApesSocrates]: Joke: sex: continues
+Label for comment 53 [Kier3216]: Joke: sex: continues
+Label for comment 55 [wryneck201]: Joke: personal
+Label for comment 63 [stoneface1]: Joke: thermal socks
+Label for comment 64 [Carlillvs]: Joke: camel
+Label for comment 65 [PabloPicasso]: Joke: walk slowly
+Label for comment 66 [Uncannyvalley]: Joke: sit in fridge
+Label for comment 67 [Alex42]: Joke: fridge: continues
+Label for comment 68 [ScamWithABigPlate]: Joke: fridge: continues
+Label for comment 73 [MartyMcFlytipper]: Joke personal comment
+Label for comment 76 [SamGamgee]: joke, comment on above
+Label for comment 77 [MartyMcFlytipper]: Joke: sit in front of freezer
+Label for comment 78 [IRustEasily]: Joke: hang out with Patrick Stewart
+Label for comment 79 [WelshPaul]: Joke: celebrity: continues
+Label for comment 80 [IRustEasily]: Joke: celebrity: continues
+Label for comment 81 [Alex42]: Joke: celebrity: continues
+Label for comment 82 [pollystyrene]: Sarcasm
+Label for comment 83 [pollystyrene]: Sarcasm continues
+Label for comment 101 [Alex42]: joke: lick your pets
+
+GROUP: Other noteworthy comments
+Label for comment 13 [bbmatt]: Comment: Brits don't know how to handle hot weather
+Label for comment 70 [Brandybuck]: Comment: different type of heat in different places
+Label for comment 85 [MartyMcFlytipper]: comment: dogs are banned on their local beach
+Label for comment 86 [Puss]: comment continues: why ban dogs? owners should clean after them
+Label for comment 87 [ErnyRoamer]: comment: majority of dog owners not responsible; dog poop prevents children from playing; would ban dogs and cats from the world
+Label for comment 92 [ErnyRoamer]: Comment: dog owners treat their dogs as children
+Label for comment 97 [andyinSpain]: comment: shocked to know people leave pets in cars
+Label for comment 98 [foxinwinter]: comment: they do leave dogs while in pubs/supermarkets; police can tackle that
+Label for comment 99 [SamGamgee]: comment: last year police dog died in police van
+
+GROUP: miscellaneous
+Label for comment 11 [ScamWithABigPlate]: Personal answer
+Label for comment 12 [kizbot]: Personal answer
+Label for comment 26 [stoneface1]: Personal comment
+Label for comment 29 [explorerboy]: Personal accusation
+Label for comment 30 [CodProfundity]: Personal accusation
+Label for comment 31 [barnabasdoggie]: Personal comment, hot at night
+Label for comment 32 [NinaRicky]: Personal comment, hot outside London
+Label for comment 22 [neko99]: Remark about the previous comment.
+Label for comment 71 [cerinamroth]: comment: weather in Germany
+Label for comment 88 [whood]: Personal accusation
+Label for comment 89 [foxinwinter]: Sarcasm, personal comment
+Label for comment 90 [foxinwinter]: Personal comment - would have little boys, world would be better without them
+Label for comment 91 [Puss]: Personal accusation
+
+UNCONSTRAINED SUMMARY
+
+The largest group of commenters proposed suggestions for coping with hot weather and there was little opposition to their ideas. The most popular prepositions were closing the windows, shutters and curtains during the day so hear cannot get in; wearing light clothing and avoiding jeans and bare skin; taking cool showers or baths.
+
+There were various other suggestions which consisted of advice on what to drink and eat and how to correctly do exercise and work while a heat wave is going on.
+Not using the oven and drinking a salty yoghurt drink were two other things which the many commenters agreed on.
+
+During the night, opening doors and windows and sleeping on the balcony or a tiled floor were the most suggested ideas.
+
+There was a wide discussion about dogs which mainly involved the suggestion to not leave dogs in cars during the heat wave. Commenters expressed their amazement that dogs are being treated this way and others contributed personal stories on the topic. A discussion was started on the decision to ban dogs at a local beach which led to commenters accusing others and various commenters referring to the likeness of dogs and kids - or the opposite.
+
+Commenters also questioned whether the article was relevant and useful with an equal amount on both sides. Many suggested the article is just the media over exaggerating and that it is not that hot, while others focused on how the advice inside is useless as it is common sense. The ones who were not against the article said the heat was different in different parts of the country and that many die every year from overheating so the article is not worthless.
+
+A big part of the commenters shared personal experiences from heat waves abroad and based their opinions on that. Almost one third of the comments were jokes and sarcasm, there was a good amount of personal comments unrelated to the topics discussed, too.
+
+CONSTRAINED SUMMARY
+
+The largest group of commenters proposed suggestions for coping with hot weather. There was little opposition to their ideas. The most popular prepositions were closing the windowsand curtains during the day; wearing light clothing ; taking cool showers.
+
+Other suggestions consisted of advice on what to drink and eat and how to correctly do exercise and work during a heat wave. Not using the oven and drinking yoghurt were two other things which many commenters agreed on.
+
+During the night, opening doors and windows and sleeping on a tiled floor were the most suggested ideas.
+
+There was a wide discussion about dogs involving the suggestion to not leave dogs in cars during the heat. Commenters expressed their amazement dogs were being treated this way and others contributed personal stories on the topic. 
+
+Commenters also questioned whether the article was useful with an equal amount on both sides. Many suggested the article is just the media over-exaggerating and that it is not that hot, while others focused on how the advice inside is useless as it is common sense. The ones who were not against the article said the heat was different in different parts of the country and that many die every year from overheating so the article is not worthless.
+
+Big part of the commenters shared personal experiences from abroad. Almost one third of the comments were jokes and there were many personal comments unrelated to the topics discussed, too.
+
+BACK LINKING
+
+The largest group of commenters proposed suggestions for coping with hot weather.
+(Sub)GroupNames:
+- GROUP: Suggestions
+
+There was little opposition to their ideas.
+(Sub)GroupNames:
+- SUBGROUP: Opposing to day suggestions
+
+The most popular prepositions were closing the windowsand curtains during the day; wearing light clothing ; taking cool showers.
+(Sub)GroupNames:
+- SUBGROUP: suggestion: day: close windows/curtains
+- SUBGROUP: suggestion: day: cool showers
+- SUBGROUP: Suggestion: day: wear light clothing
+
+Other suggestions consisted of advice on what to drink and eat and how to correctly do exercise and work during a heat wave.
+(Sub)GroupNames:
+- SUBGROUP: suggestion: day: other
+
+Not using the oven and drinking yoghurt were two other things which many commenters agreed on.
+(Sub)GroupNames:
+- SUBGROUP: suggestion: day: other
+
+During the night, opening doors and windows and sleeping on a tiled floor were the most suggested ideas.
+(Sub)GroupNames:
+- SUBGROUP: Suggestion: night: Sleep on balcony/tiled floor
+- SUBGROUP: Suggestion: night: open doors/windows
+
+There was a wide discussion about dogs involving the suggestion to not leave dogs in cars during the heat.
+(Sub)GroupNames:
+- SUBGROUP: Suggestion: dogs
+
+Commenters expressed their amazement dogs were being treated this way and others contributed personal stories on the topic.
+(Sub)GroupNames:
+- GROUP: Other noteworthy comments
+
+Commenters also questioned whether the article was useful with an equal amount on both sides.
+(Sub)GroupNames:
+- GROUP: Is the article worth reading? Is it relevant and useful?
+
+Many suggested the article is just the media over-exaggerating and that it is not that hot, while others focused on how the advice inside is useless as it is common sense.
+(Sub)GroupNames:
+- SUBGROUP: No
+
+The ones who were not against the article said the heat was different in different parts of the country and that many die every year from overheating so the article is not worthless.
+(Sub)GroupNames:
+- SUBGROUP: Yes
+
+Big part of the commenters shared personal experiences from abroad.
+(Sub)GroupNames:
+- GROUP: Other noteworthy comments
+- GROUP: miscellaneous
+
+Almost one third of the comments were jokes and there were many personal comments unrelated to the topics discussed, too.
+(Sub)GroupNames:
+- GROUP: Jokes
+- GROUP: miscellaneous

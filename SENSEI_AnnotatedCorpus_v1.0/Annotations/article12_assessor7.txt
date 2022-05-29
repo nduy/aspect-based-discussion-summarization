@@ -1,0 +1,308 @@
+LABELS
+
+Label for comment 1: montoring of fracking is loosened up due to money cuts; evidence of water contamination from US;
+Label for comment 2: the third paragraph is not true; it is not true that water pollution is likely; the article is not trustworthy;
+Label for comment 3: link; evidence of harmfulness of shale gas exploitation from US;
+Label for comment 4: the third paragraph is true; link; water low risk of water contamination by fracking;
+Label for comment 5: labour or conservatices cuts to environment agency; Labour's anti-environment measures in Wales;
+Label for comment 6: US busniessman joins a lawsuit to stop fracking near his house;
+Label for comment 7: the previous link on US businessman stopping fracking near his house is not reliable;
+Label for comment 8: link; safety of fracking is assessed in industry backed reports influenced y lobbies;
+Label for comment 9: the risk is not fracking specific but applies to any gas exploitation; exploitation process needs to be properly regulated; Uk has a good record in hycarbon production;
+Label for comment 10: destroying environment is nt prevented by any political party;
+Label for comment 11: destroying environment is nt prevented by any political party; Labour's anti-environment measures in Wales;
+Label for comment 12: US busniessman joins a lawsuit to stop fracking near his house; the reson for lawsuit truck traffic; the suit not related to fracking;
+Label for comment 13: US busniessman joins a lawsuit to stop fracking near his house; the lawsuit is related to fracking;
+Label for comment 14: legal solution to the US businessman's lawsuit against water tower; no necessity for a water tower in an expensive US urban area; US busniessman joins a lawsuit to stop fracking near his house;
+Label for comment 15: definition of common sense; gracking company seems necessity for water tower in an expensive US urban area; US busniessman joins a lawsuit to stop fracking near his house;
+Label for comment 16: environmentalists do not understand complex legal and commercial issues around fracking; US busniessman joins a lawsuit to stop fracking near his house;
+Label for comment 17: fracking makes the water tower necessary; US busniessman joins a lawsuit to stop fracking near his house;
+Label for comment 18: fracking is not acceptable even if it bears a small risk;
+Label for comment 19: gas exploitation process needs to be properly regulated; fracking opponents are not credible as they argue with emotions not facts; methane is not toxic;
+Label for comment 20: fracking proponents are also not credible
+Label for comment 21: fracking opponents are not credible; methane is not toxic or soluble in water;
+Label for comment 22: there is no way for safe fracking as fracking fluids goes into fractures uncontrolaably;
+Label for comment 23: risk to water pollution from surface is larger than from fracking;
+Label for comment 24: Royal Society claims that there is no danger from fracking fluids entering the fracktions;
+Label for comment 25: although methane isn't toxic other chemicals used in fracking are;
+Label for comment 26: methane is a pollutant;
+Label for comment 27: methane's pollutin potential depends on quantities;
+Label for comment 29: methane is not toxic;
+Label for comment 30: aggreement that methan is pollutant;
+Label for comment 31: methan is pollutant but not toxic;
+Label for comment 32: link; the danger of fracking is other than methane;
+Label for comment 33: sarcasm frack off;
+Label for comment 34: frack off is not a new joke;
+Label for comment 35: more people should use frack off;
+Label for comment 36: fracking dagers lie in securing the pathways through gas is taken to the surface;
+Label for comment 37: frack fluids are removed and cannot pollute water;
+Label for comment 38: frack fluids cannot be removed;
+Label for comment 39: link; frack fluids will flow through the porouse casings, not upwards;
+Label for comment 40: frack fluids will come up to water through pressure;
+Label for comment 41: Myers is not a reliable source;
+Label for comment 42: large quantities of fracking fuild cannot be removed; fracking fluid  contaminates the surrounding of the well; industry cannot be regulated for safe fracking;
+Label for comment 43: all industrial activieties present a risk togroundwater; fracking can be regulated;
+Label for comment 44: exmple of water making its way up through the stone; counter the claim the fracking fluids can't make their way up;
+Label for comment 45: environmental damage from disposing of fracking fluids;
+Label for comment 46: trade union that is agains fracking doesn't carea about unemployment
+Label for comment 47: trade union is hypocritic being against fracking now but not aginst coal mining in the past
+Label for comment 48: fracking fluids can contaminate aquifiers;
+Label for comment 49: fracking system design; neutral;
+Label for comment 50: fracking is another source of CO2; agaist fracking;
+Label for comment 51: co2 is unnecessary;
+Label for comment 52: sarcasm referring to the logic of we can live well without co2;
+Label for comment 53: rise in co2 is the best argument against fracking; others are hysterics;
+Label for comment 54: fracking opponents would say that co2 is good forl plants;
+Label for comment 55: it's possible to frack safely;
+Label for comment 56: fracking propagates fossil-fuel model; against fracking;
+Label for comment 57: there is no rise in termperature;
+Label for comment 58: no rise in temperature arguments are wrong;
+Label for comment 59: there is warming globally;
+Label for comment 60: ignoring the moving wind mills on land and on the sea;
+Label for comment 61: about slight warming globally - it doesn't have a rim evidence base;
+Label for comment 62: comments on fracking are too technical and boring;
+Label for comment 63: pro fracking, hope fracking is sped up; guardian pro fracking article welcome;
+Label for comment 64: against fracking; there is a lot of evidence for its harm;
+Label for comment 65: fracking is good for environment as replacing coal;
+Label for comment 66: compares pro fracking comment with the claim that titanic was deemed unsinkable;
+Label for comment 68: against fracking; fossil fuels are harmful for the environment;
+Label for comment 69: why does a previous comment complain about Tories losing votes over fracking;
+Label for comment 70: fracking has made USA energy independent and people rich;
+Label for comment 71: demand for gas is higher than supply; USA gas is cheap due to the closed market;
+Label for comment 72: in Queensland gas prices are rising;
+Label for comment 73: US state profits from fracking;
+Label for comment 74: germany is moving to no fossil energy;
+Label for comment 75: germany is building 27 coal fired power stations;
+Label for comment 76: fracking in USA has cause lower gas prices and fueled economy;
+Label for comment 78: germany is importing most of its energy;
+Label for comment 79: fracking is helpig reduce co2 emission is ignorance;
+Label for comment 80: against fracking, pro renewable energies; US fracking investors damage environment;
+Label for comment 81: fracking is ponzi scheme is not serious;
+Label for comment 82: link; proof that fracking is a ponzi scheme;
+Label for comment 83: link sent as a proof is outdated;
+Label for comment 84: fracking is a ponzi scheme;
+Label for comment 85: irony; shouting makes things true;
+Label for comment 86: there is a lot fo email evidence for the harm of fracking;
+Label for comment 87: irony; fracking investors also investig in renewables;
+Label for comment 88: natural gas is making money;
+Label for comment 89: USA has decreased co2 and boosted economy with shale gas;
+Label for comment 90: the integrity of shale is a key to safe fracking and keeping aquifier in tact;
+Label for comment 91: the water is treated before we drink it no danger from methane contamination due to fracking;
+Label for comment 92: british geological soceity disagrees on no water contamination through frackgin;
+Label for comment 93: treatment of water is not reassuring;
+Label for comment 94: methane occurence is tracked in UK, so there is transparency about potential fracking dangers compared to US;
+Label for comment 95: UK's water treatment would not remove shale gas contamination;
+Label for comment 96: it's not possible to clean water contaminated by fracking; all fracking chemicals are not known;
+Label for comment 97: the list of fracking chemicals is known;
+Label for comment 98: the quanitiy of chemicals in fracking infrastructure is not known, chemicals are known;
+Label for comment 99: ethylene glycol is not a dangerous chemical;
+Label for comment 100: obama quote, medium term advantages of natural gas exploitation;
+Label for comment 101: offer to explain the fracking infrastructure in detail and easy to undertand on his blog;
+
+GROUPS
+
+GROUP: environmental consequences of fracking
+
+SUBGROUP: water pollution: fracking pollutes water 
+Label for comment 1 [madmonty]: montoring of fracking is loosened up due to money cuts; evidence of water contamination from US;
+Label for comment 3 [JBowers]: link; evidence of harmfulness of shale gas exploitation from US;
+Label for comment 22 [Helen Chuntso]: there is no way for safe fracking as fracking fluids goes into fractures uncontrolaably;
+Label for comment 38 [Boodicca]: frack fluids cannot be removed;
+Label for comment 39 [JBowers]: link; frack fluids will flow through the porouse casings, not upwards;
+Label for comment 40 [NorthernGeneration]: frack fluids will come up to water through pressure;
+Label for comment 42 [Helen Chuntso]: large quantities of fracking fuild cannot be removed; fracking fluid  contaminates the surrounding of the well; industry cannot be regulated for safe fracking;
+Label for comment 48 [AfterOil]: fracking fluids can contaminate aquifiers;
+Label for comment 92 [Boodicca]: british geological soceity disagrees on no water contamination through frackgin;
+Label for comment 93 [JBowers]: treatment of water is not reassuring;
+Label for comment 95 [NorthernGeneration]: UK's water treatment would not remove shale gas contamination;
+Label for comment 96 [Helen Chuntso]: it's not possible to clean water contaminated by fracking; all fracking chemicals are not known;
+
+SUBGROUP: water pollution: fracking doesn't pollute water
+Label for comment 2 [Yetypu]: the third paragraph is not true; it is not true that water pollution is likely; the article is not trustworthy;
+Label for comment 4 [JBowers]: the third paragraph is true; link; water low risk of water contamination by fracking;
+Label for comment 21 [Jacksavage]: fracking opponents are not credible; methane is not toxic or soluble in water;
+Label for comment 23 [oakwood]: risk to water pollution from surface is larger than from fracking;
+Label for comment 24 [Bangorstu]: Royal Society claims that there is no danger from fracking fluids entering the fracktions;
+Label for comment 37 [demagogue8]: frack fluids are removed and cannot pollute water;
+Label for comment 91 [demagogue8]: the water is treated before we drink it no danger from methane contamination due to fracking;
+
+SUBGROUP: fracking can be safely regulated
+Label for comment 9 [FredNacker]: the risk is not fracking specific but applies to any gas exploitation; exploitation process needs to be properly regulated; Uk has a good record in hycarbon production;
+Label for comment 19 [Bangorstu]: gas exploitation process needs to be properly regulated; fracking opponents are not credible as they argue with emotions not facts; methane is not toxic;
+Label for comment 42 [Helen Chuntso]: large quantities of fracking fuild cannot be removed; fracking fluid  contaminates the surrounding of the well; industry cannot be regulated for safe fracking;
+Label for comment 43 [oakwood]: all industrial activieties present a risk togroundwater; fracking can be regulated;
+Label for comment 55 [Bangorstu]: it's possible to frack safely;
+Label for comment 90 [ID9876]: the integrity of shale is a key to safe fracking and keeping aquifier in tact;
+Label for comment 94 [Geologybob]: methane occurence is tracked in UK, so there is transparency about potential fracking dangers compared to US;
+
+SUBGROUP: evidence of the environmental impact of fracking
+Label for comment 8 [JBowers]: link; safety of fracking is assessed in industry backed reports influenced y lobbies;
+Label for comment 18 [Beki Adam]: fracking is not acceptable even if it bears a small risk;
+Label for comment 41 [Yetypu]: Myers is not a reliable source;
+Label for comment 64 [ratherbered]: against fracking; there is a lot of evidence for its harm;
+Label for comment 86 [JBowers]: there is a lot fo email evidence for the harm of fracking;
+Label for comment 20 [semyorka]: fracking proponents are also not credible
+
+SUBGROUP: fracking chemicals: methane is toxic
+Label for comment 27 [StevenJ1957]: methane's pollutin potential depends on quantities;
+Label for comment 26 [JBowers]: methane is a pollutant;
+Label for comment 30 [JBowers]: aggreement that methan is pollutant;
+
+SUBGROUP: fracking chemicals: methane is not toxic
+Label for comment 25 [moderatesocial]: although methane isn't toxic other chemicals used in fracking are;
+Label for comment 29 [Bangorstu]: methane is not toxic;
+Label for comment 31 [Bangorstu]: methan is pollutant but not toxic;
+Label for comment 32 [SMOGBAD]: link; the danger of fracking is other than methane;
+
+SUBGROUP: fracking chemicals 
+Label for comment 97 [demagogue8]: the list of fracking chemicals is known;
+Label for comment 98 [JBowers]: the quanitiy of chemicals in fracking infrastructure is not known, chemicals are known;
+Label for comment 99 [PatLogan]: ethylene glycol is not a dangerous chemical;
+
+SUBGROUP: leaking of fracking gases to the surface
+Label for comment 36 [Boodicca]: fracking dangers lie in securing the pathways through gas is taken to the surface;
+Label for comment 44 [Walsunda]: exmple of water making its way up through the stone; counter the claim the fracking fluids can't make their way up;
+Label for comment 45 [itchyvet]: environmental damage from disposing of fracking fluids;
+
+SUBGROUP: fracking and co2: fracking doesn't reduce co2
+Label for comment 51 [oakwood]: co2 is unnecessary;
+Label for comment 53 [Bangorstu]: rise in co2 is the best argument against fracking; others are hysterics;
+Label for comment 50 [semyorka]: fracking is another source of CO2; agaist fracking;
+Label for comment 56 [buddingBuddha]: fracking propagates fossil-fuel model; against fracking;
+Label for comment 68 [Helen Chuntso]: against fracking; fossil fuels are harmful for the environment;
+Label for comment 79 [Stunning]: fracking helpig reduce co2 emission is ignorance;
+
+SUBGROUP: fracking and co2: fracking reduces co2
+Label for comment 63 [jsw2011]: pro fracking, hope fracking is sped up; guardian pro fracking article welcome;
+Label for comment 65 [jsw2011]: fracking is good for environment as replacing coal;
+
+SUBGROUP: fracking and co2: global warming
+Label for comment 57 [FredNacker]: there is no rise in termperature;
+Label for comment 58 [semyorka]: no rise in temperature arguments are wrong;
+Label for comment 59 [Fernando Leanme]: there is warming globally;
+Label for comment 61 [semyorka]: about slight warming globally - it doesn't have a firm evidence base;
+
+GROUP: economic impact of fracking
+Label for comment 70 [Bangorstu]: fracking has made USA energy independent and people rich;
+Label for comment 71 [Walsunda]: demand for gas is higher than supply; USA gas is cheap due to the closed market;
+Label for comment 72 [Walsunda]: in Queensland gas prices are rising;
+Label for comment 73 [ColinMay]: US state profits from fracking;
+Label for comment 76 [FredNacker]: fracking in USA has cause lower gas prices and fueled economy;
+Label for comment 80 [ratherbered]: against fracking, pro renewable energies; US fracking investors damage environment;
+Label for comment 81 [demagogue8]: fracking is ponzi scheme is not serious;
+Label for comment 82 [JBowers]: link; proof that fracking is a ponzi scheme;
+Label for comment 83 [jsw2011]: link sent as a proof is outdated;
+Label for comment 84 [NorthernGeneration]: fracking is a ponzi scheme;
+Label for comment 88 [Fernando Leanme]: natural gas is making money;
+Label for comment 89 [Stunning]: USA has decreased co2 and boosted economy with shale gas;
+
+GROUP: Examples of people's experience with fracking
+
+SUBGROUP: US businessman's lawsuit is related to fracking
+Label for comment 6 [Yetypu]: US busniessman joins a lawsuit to stop fracking near his house;
+Label for comment 13 [JBowers]: US busniessman joins a lawsuit to stop fracking near his house; the lawsuit is related to fracking;
+Label for comment 15 [JBowers]: definition of common sense; gracking company seems necessity for water tower in an expensive US urban area; US busniessman joins a lawsuit to stop fracking near his house;
+Label for comment 17 [JBowers]: fracking makes the water tower necessary; US busniessman joins a lawsuit to stop fracking near his house;
+
+SUBGROUP: US businessman's lawsuit is unrelated to fracking
+Label for comment 7 [ColinMay]: the previous link on US businessman stopping fracking near his house is not reliable;
+Label for comment 12 [Fernando Leanme]: US busniessman joins a lawsuit to stop fracking near his house; the reson for lawsuit truck traffic; the suit not related to fracking;
+
+SUBGROUP: other comments on US businessman's lawsuit
+Label for comment 14 [Fernando Leanme]: legal solution to the US businessman's lawsuit against water tower; no necessity for a water tower in an expensive US urban area; US busniessman joins a lawsuit to stop fracking near his house;
+Label for comment 16 [Fernando Leanme]: environmentalists do not understand complex legal and commercial issues around fracking; US busniessman joins a lawsuit to stop fracking near his house;
+
+GROUP: fracking in politics
+Label for comment 5 [Bangorstu]: labour or conservatices cuts to environment agency; Labour's anti-environment measures in Wales;
+Label for comment 10 [Gigoachef]: destroying environment is nt prevented by any political party;
+Label for comment 11 [Bangorstu]: destroying environment is nt prevented by any political party; Labour's anti-environment measures in Wales;
+Label for comment 69 [Jacksavage]: why does a previous comment complain about Tories losing votes over fracking;
+Label for comment 100 [Fumnx9vfmnx]: obama quote, medium term advantages of natural gas exploitation;
+
+GROUP: irony
+Label for comment 33 [StuartIanNaylor1968]: sarcasm frack off;
+Label for comment 34 [ColinMay]: frack off is not a new joke;
+Label for comment 35 [Gigoachef]: more people should use frack off;
+Label for comment 52 [semyorka]: sarcasm referring to the logic of we can live well without co2;
+Label for comment 54 [buddingBuddha]: fracking opponents would say that co2 is good forl plants;
+Label for comment 60 [JBowers]: ignoring the moving wind mills on land and on the sea;
+Label for comment 66 [JBowers]: compares pro fracking comment with the claim that titanic was deemed unsinkable;
+Label for comment 85 [Jacksavage]: irony; shouting makes things true;
+Label for comment 87 [PatLogan]: irony; fracking investors also investig in renewables;
+
+GROUP: trade union's opposing fracking: 
+Label for comment 46 [Fumnx9vfmnx]: trade union that is agains fracking doesn't carea about unemployment
+Label for comment 47 [FredNacker]: trade union is hypocritic being against fracking now but not aginst coal mining in the past
+
+GROUP: explanation how fracking works
+Label for comment 49 [Fernando Leanme]: fracking system design; neutral;
+
+GROUP: energy strategy in Germany
+Label for comment 74 [StevenJ1957]: germany is moving to no fossil energy;
+Label for comment 75 [Yetypu]: germany is building 27 coal fired power stations;
+Label for comment 78 [Howard Winston]: germany is importing most of its energy;
+
+GROUP: miscellaneous
+Label for comment 62 [Fernando Leanme]: comments on fracking are too technical and boring;
+Label for comment 101 [Fernando Leanme]: offer to explain the fracking infrastructure in detail and easy to undertand on his blog;
+
+UNCONSTRAINED SUMMARY
+
+Te comments discuss differnt apects od shale gas fracking. Most people are against fracking as they are concerned about its negative impact on the environment notably on drinking water contamination by fracking fluids and gas leackeges. A substantial minority, however, supports fracking arguing that there is no risk of water contamination or that fracking can be regulated such as to avoid such water contamination or any other damage to the environment. In addition fracking reduces Co2 and hels avoid global warning. Fracking opponents counter these statements claiming that shale gas as fossil fuel is not environmentally friendly. Also fracking chemicals and the ways they could leak through to the surface are discussed, and both pro and contra arguments are given for such possibility. Many posters give evidence both pro and contra fracking, explain how fracking works and discuss the credibility of the evidence. Posters generally agree that fracking is profitable for the economy as demonstrated by US. However, it is also noted that people involved in exploiting economc benefits from fracking are worried about their effect on health and environment and examples of a US businessman who filed a lawsuit against fracking is given. All posters agree that environment topics are not high on political agendas, but that pro-fracking attitude could cost parties votes. There are many jokes and ironic comments around fracking.
+
+CONSTRAINED SUMMARY
+
+Te comments discuss differnt apects od shale gas fracking. Most people are against fracking as they are concerned about its negative impact on the environment notably on drinking water contamination by fracking fluids and gas leackeges. A substantial minority, however, supports fracking arguing that there is no risk of water contamination or that fracking can be regulated such as to avoid such water contamination or any other damage to the environment. In addition fracking reduces Co2 and hels avoid global warning. Fracking opponents counter these statements claiming that shale gas as fossil fuel is not environmentally friendly. Also fracking chemicals and the ways they could leak through to the surface are discussed, and both pro and contra arguments are given for such possibility. Many posters give evidence both pro and contra fracking, explain how fracking works and discuss the credibility of the evidence. Posters generally agree that fracking is profitable for the economy as demonstrated by US. However, it is also noted that people involved in exploiting economc benefits from fracking are worried about their effect on health and environment and examples of a US businessman who filed a lawsuit against fracking is given. All posters agree that environment topics are not high on political agendas, but that pro-fracking attitude could cost parties votes. There are many jokes and ironic comments around fracking.
+
+BACK LINKING
+
+A substantial minority, however, supports fracking arguing that there is no risk of water contamination or that fracking can be regulated such as to avoid such water contamination or any other damage to the environment.
+(Sub)GroupNames:
+- SUBGROUP: water pollution: fracking doesn't pollute water
+- SUBGROUP: fracking can be safely regulated
+
+Most people are against fracking as they are concerned about its negative impact on the environment notably on drinking water contamination by fracking fluids and gas leackeges.
+(Sub)GroupNames:
+- SUBGROUP: water pollution: fracking pollutes water
+- SUBGROUP: leaking of fracking gases to the surface
+
+In addition fracking reduces Co2 and hels avoid global warning.
+(Sub)GroupNames:
+- SUBGROUP: fracking and co2: fracking reduces co2
+- SUBGROUP: fracking and co2: global warming
+
+Fracking opponents counter these statements claiming that shale gas as fossil fuel is not environmentally friendly.
+(Sub)GroupNames:
+- SUBGROUP: fracking and co2: fracking doesn't reduce co2
+
+Also fracking chemicals and the ways they could leak through to the surface are discussed, and both pro and contra arguments are given for such possibility.
+(Sub)GroupNames:
+- SUBGROUP: fracking chemicals: methane is toxic
+- SUBGROUP: fracking chemicals
+- SUBGROUP: leaking of fracking gases to the surface
+
+Many posters give evidence both pro and contra fracking, explain how fracking works and discuss the credibility of the evidence.
+(Sub)GroupNames:
+- SUBGROUP: evidence of the environmental impact of fracking
+- GROUP: explanation how fracking works
+
+Posters generally agree that fracking is profitable for the economy as demonstrated by US.
+(Sub)GroupNames:
+- GROUP: economic impact of fracking
+
+However, it is also noted that people involved in exploiting economc benefits from fracking are worried about their effect on health and environment and examples of a US businessman who filed a lawsuit against fracking is given.
+(Sub)GroupNames:
+- GROUP: Examples of people's experience with fracking
+- SUBGROUP: US businessman's lawsuit is related to fracking
+- SUBGROUP: US businessman's lawsuit is unrelated to fracking
+- SUBGROUP: other comments on US businessman's lawsuit
+
+All posters agree that environment topics are not high on political agendas, but that pro-fracking attitude could cost parties votes.
+(Sub)GroupNames:
+- GROUP: fracking in politics
+- GROUP: trade union's opposing fracking:
+- GROUP: energy strategy in Germany
+
+There are many jokes and ironic comments around fracking.
+(Sub)GroupNames:
+- GROUP: irony

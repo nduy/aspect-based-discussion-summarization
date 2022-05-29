@@ -1,0 +1,314 @@
+LABELS
+
+Label for comment 1: Size/government: should have been built larger to carry more aircrafts, Conservatives will shelve one ship as part of cuts.
+Label for comment 2: Size: replies to 1 saying a bigger ship would be a bigger 'killing machine' and make other countries dislike the UK.
+Label for comment 3: Government: replies to 1 sarcastically saying Labour will not spend a lot on the armed forces either, and that because Labour did not do the commissioning job sensibly armed forces costs are higher. Sarcastically says the cuts are because of the Conservatives.
+Label for comment 4: Government: replies to 1.2 saying that because of the Conservative government's actions since 2010 he thinks 'commissioning more sensibly' means awarding building contracts to business partners rather than competitive tendering.
+Label for comment 5: Size: replies to 1.1 saying a bigger ship would be better to help protect England and that he is not annoyed at Tony Blair for participating in Iraq.
+Label for comment 6: Government: compliments 1.3 on his answer, says the Conservatives are butchering the Armed Forces and that if Labour had put into place the current cuts right-wing media would be angry. Says the Conservatives are penny pinchers and cut costs by reducing the Army to a border defence force.
+Label for comment 7: Government: replies to 1 saying it is harsh to blame the Conservatives for inadequate aircraft carriers, says it is Labour's fault for ordering two carriers but not planning for associated support craft and ordering the wrong planes, which is why one carrier will be shelved.
+Label for comment 8: Government: replies to 1.6 saying he is not blaming the Conservatives for the carriers but that their defence cuts are disgraceful, and it is these cuts that will cause one carrier to be shelved.
+Label for comment 9: Government: replies to 1 saying one ship will be shelved, as in it will be tied to a dock in extended readiness, but that this is not only the Coalition government's fault as it is equally their fault and Labour's because of over-runs and procurement mistakes.
+Label for comment 10: Government/funding cuts: 3 replies to 1 expressing anger towards armed forces cuts but says there is no money to avoid cuts. Says to imagine the anger is defence spending was ring-fenced and other areas cut more, says it is a no-win situation as there is no money for more ships and soldiers.
+Label for comment 11: Size: replies to 1 saying why would they build a bigger ship when the government cannot afford more aircrafts to fill even one.
+Label for comment 12: Government/ anti-Conservative: replies to 1.8 saying he was just illustrating the Conservative's obsession with cutting money from Britain's armed forces.
+Label for comment 13: Misc: replies to 1.7 saying Bob Ainsworth cut number of destroyers from 8 to 6.
+Label for comment 14: Government/ anti-Conservative: replies to 1.1 saying the Conservatives say nothing can be afforded except for tax cuts for the rich and increases for the poor.
+Label for comment 15: Government/ anti-Labour: replies to 1.3 saying Labour commissioned the building of the two carriers, when one would be enough, to gain votes in Scotland, and due to wrong decisions they left an expensive mess for the Coalition to sort out. Says contracts for party 'mates' would have been done by Labour and not the Conservatives and asks why 1.3 is trying to 'smear' the Tories.
+Label for comment 16: Government: replies to 1.13 saying they think they are joking about saying nothing can be afforded by the Conservatives as the party will spend £732 billion this year.
+Label for comment 17: Government: replies to 1.12 thanking them for the correction and saying Labour hold the blame for cutting the number of destroyers in the armed forces.
+Label for comment 19: Government, anti-Labour: replies to 1.7 saying it was 2008 when type 45 destroyers were cut to 6. Adds that he does not agree with defence cuts and would prefer overseas aid to be cut but says Labour deserve more blame than the Conservatives.
+Label for comment 20: Government/ anti-Conservative: replies to 1.2 saying the Conservatives are 'pretty shit.'
+Label for comment 21: Government: replies to 1.14 asking them to explain how the Coalition affected the contractsm cost and over-all project with their 'flip-flopping' on plans, and how it was acceptable for the government to renege on contracts. Says reneging on business contracts is bad practice because it is expensive, and that the Coalition's 'petulance' since they came into power has undermined the UK government's reputation as a business partner.
+Label for comment 22: Size/anti-military: replies to 1.1 agreeing, says that the aircraft carriers should have been cancelled as they were ordered during Iraq 'lunacy', and says their only point is to project military power overseas which we don't need.
+Label for comment 23: Armed forces cuts: replies to 1.9 saying their anger is their own problem as Britain has the 4th largest military budget in the world, and that our armed forces are too big unless we plan to use them in 'foreign adventures' as Blair did.
+Label for comment 24: Government/ anti-Labour: replies to 1.6 saying Labour ordered the aircraft carriers to be built as a way to get votes by creating jobs, suggests jokingly it would have been cheaper just to pay the builders £100k.
+Label for comment 25: Misc: replies to 1.18 saying thank-you and that someone else had pointed out his mistake.
+Label for comment 26: Building: replies to 1.14's point that the carriers were made in Scotland to garner Labour votes by saying they were assembled in Scotland but built in 4 British yards. Explains that other yards do not have dry-dock facilities large enough to hold a hull of that size. Sarcastically says that maybe these physical and logistical impossibilities are purely down to Brown garnering votes as 1.14 suggested.
+Label for comment 27: Building: replies to 1.23 saying their opinion is wrong but it is a change from people saying Brown ordered the carriers as they would be built in his constituency, which is wrong as it was built in different places in the UK. Says Western navies are ordering carriers and landing ships to deal with terrorist threats and have been doing so for years.
+Label for comment 28: Government: replies to 1.14 saying the Coalition had put the economy into extended contraction and have cut public services. Accuses them of thinking the world financial crash was due to 'socialist overspending' as well.
+Label for comment 29: Anti-military: replies to 1.21 agreeing that aircraft carriers have nothing to do with defence.
+Label for comment 30: Government/ anti-Conservative: replies to 1.25 saying the Conservatives know the accusation that Labour commissioned the aircraft carriers to gain votes is a lie, reminds them of how Labour are accused of being lazy and yet they are blamed for introducing ATOS.
+Label for comment 31: Government/ anti-Conservative: angrily says a million people are receiving food from food banks and yet the government are spending money on this.
+Label for comment 32: Government/ anti-Conservative: says we now know that the Conservatives implemented austerity to build up the British military, and that Obama is doing the same whilst pretending to be liberal. Says aren't liberals supposed to care about the working class, but Conservatives do not care.
+Label for comment 33: Government/ anti-Conservative: replies to 1.14 saying that the government declined the opportunity to make adaptions to the carriers to make them more cost effective and insisted this would cost too much, meaning the carriers are now less adaptable. Says this is a disgrace and happened on the Conservative's watch after BaE blackmailed them government.
+Label for comment 34: Building: replies to 1.25 saying the carriers were not assembled on the Clyde but on the east coast. Some modules were built on the Clyde by BaE and at the soon to be closed Govan shipyard.
+Label for comment 35: Government/ anti-Conservative: replies to 1.14 sarcastically saying they think their suggestion that the Conservatives have restored the economy and faith in public services to be a tasteless attempt at humour.
+Label for comment 36: Government/misc: replies to 1.2 questioning about the elections and saying that at least the 'halfwits' are in work as Central Office are paying them.
+Label for comment 37: Military spending: replies to 1.22 saying Britain has the sixth largest military expenditure and is the sixth largest economy so the spending corresponds.
+Label for comment 38: Anti-carrier: says by the time the aircrafts are ready for the carrier it will probably be obsolete.
+Label for comment 39: Government/building: replies to 1.32 saying their comment is not quite correct, that the carriers in question are powered by gas turbine/electric drives unlike previous carriers, but should have been powered by nuclear power with steam catapults.
+Label for comment 40: Pro-military: replies to 1.21 saying that if we do not need to project military powers overseas then surely we would not need armed forces as they will not be deployed at home. Says if they think we will not need protection and intervention in the next 50 years them we don't need the armed forces but that it is likely we will in this unstable and chaotic world.
+Label for comment 41: Government/ anti-Labour: says Nu Labour cut the forces more than the coalition, committed the forces to two conflicts they were not prepared for and everything they did in defence, including these carriers, was a shambles and none of their secretaries could stay in the job very long.
+Label for comment 42: Government/ anti-Labour: replies to 1.7 saying Nu Labour defence cuts were worse than Coalition ones, and they covered up 35% cuts to the Navy with spin.
+Label for comment 43: Foreign military/misc: replies to 1.36 saying Saudi Arabia big spending in the past two years is a short term spike, and that it is likely in another year or two the UK will be back in the top 5.
+Label for comment 44: Misc: replies to 1.38 explaining the EMALS system they were talking about is about to undergo sea trials and is further along than unproven, and the US navy offered full support for their installation in the new carriers.
+Label for comment 45: Availability: says the carrier is a shared resource for the European Rapid Reaction Force.
+Label for comment 46: Military cuts: replies to 1.9 saying the money to avoid cuts is mostly in the Cayman Islands. Joke?
+Label for comment 47: Government/Conservatives: replies to 1.45 saying they may not like the suggestion that the Conservatives are fixing the economy and restoring faith in public services, but that they believe they are getting there.
+Label for comment 48: Anti-military: replies to 1.39 saying that the UK's military adventures in the past decade have contributed to world instability.
+Label for comment 49: Military spending: replies to 1.42 saying that it is quite possible Saudi Arabia's spending spike will mean the UK are back in the top 5 in the next few years, spending in China, Russia, Japan and India means the UK looks set to fall behind big spenders.
+Label for comment 50: Misc: replies to 1.3 asking for hard evidence to their claim that the government are wasting money on these carriers when people are receiving aid from food banks.
+Label for comment 51: Government/ anti-Conservative: replies to 1.6 saying Labour ordered the same planes the Conservatives went back to after they announced they were the wrong planes which delayed the date the aircraft carrier actually had an aircraft. Questions why this is Labour's fault.
+Label for comment 52: Government/anti-Labour: replies to 1.5 saying Labour ordered the worst planes, which the Tories realised and tried to change but then Labour had also ordered an inadequate carrier so had to accept bad planes and it is all Labour's fault.
+Label for comment 53: Aircraft carrier planes: asks if it has any planes
+Label for comment 54: Aircraft carrier planes: replies to 2 saying no it does not have planes and the test flight program was grounded yesterday.
+Label for comment 55: Aircraft carrier planes/negative: replies to 2 saying it does not yet have planes and the aircraft it should carry are of dubious capability, and that the best system choice for the future is now too expensive to integrate. Says money is being converted into profit in the defence industry and projects are being rubber-stamped during the design phase and all mistakes are funded by the tax-payer.
+Label for comment 56: Aircraft carrier planes: replies to 2 saying the carrier is fitted for planes but not with planes.
+Label for comment 57: Aircraft carrier planes/anti-conservative: replies to 2 saying the planes could have been Harriers but the Conservatives sold them cheaply to the US Marine Corps.
+Label for comment 58: Aircraft carrier planes/anti-Labour: replies to 2.4 saying the Harriers would have been too old by the time the carriers come into service, and Labour made the mistake by commissioning two carriers when only one was required.
+Label for comment 59: Aircraft carrier planes: replies to 2.5 saying they stand corrected about using Harriers, although two carriers were commissioned so one would always be available as the French had a problem with this.
+Label for comment 60: Aircraft carrier planes: replies to 2.5 saying the  ships have been in service for four years.
+Label for comment 61: Aircraft carrier planes: replies to 2.4 saying one harrier crashed recently and telling them to look at a list of Harrier related deaths as it is high.
+Label for comment 62: Aircraft carrier: replies to 2.5 saying it is rubbish only one carrier is required as if one goes wrong we lose all capability.
+Label for comment 63: Aircraft carrier planes: replies to 2.2 saying they will fly drones from the carrier eventually once the original programme fails, and that drone will be smaller, lighter and carry more weaponry and fuel.
+Label for comment 64: Aircraft carrier planes: replies to 2.2 saying they are sure the Sea Harriers would have done fine.
+Label for comment 65: Aircraft carrier planes: replies to 2.11 saying Harriers are lovely aircrafts but complex, expensive and old, although running costs are probably less than the large amount spend on dubious replacements.
+Label for comment 66: Misc/aircraft carrier: replies to 2.7 saying they obviously made a typing mistake and sarcastically says it showed how smart 2.7 was.
+Label for comment 67: Aircraft carrier/anti-Labour: replies to 2.9 saying that we managed with one smaller carrier for many tears, and that it is not just ships and aircrafts but their support groups. Says the extra carrier was Gordon Brown bribing Scotland and has cost the taxpayer.
+Label for comment 68: Aircraft carrier/anti-Labour: replies to 2.14 agreeing, saying the support group will take up almost half the Navy's major combat vessels and give no defence against anti-carrier missiles.
+Label for comment 69: Aircraft carrier planes/Harrier: replies to 2.5 asking why USAF and USMC bought the Harriers immediately if they were too old and continue to use their own Harriers, vets Americans felt lucky.
+Label for comment 70: Aircraft carrier planes/Harrier: replies to 2.8 saying there have been plenty of Harrier crashes but not many deaths, and that the F35 will be no more reliable or survivable for at least 10 times the money if it is ever off the drawing board.
+Label for comment 71: Aircraft carrier planes/anti F35: replies to 2.2 saying it was BaE than made it so expensive to install catapults and it is them who is partly responsible for the F35B's they are now having to use. Says what a coincedence.
+Label for comment 72: Misc/aircraft carrier planes: replies to 2.13 saying there was a number of tying errors in their post.
+Label for comment 73: Aircraft carrier planes: replies to 2.1 saying you could easily fly drones off different carriers at a lower price with added assault capability.
+Label for comment 74: Aircraft carrier planes/Harriers: replies to 2.12 sarcastically asking if they are joking about Harriers being complex/expensive as the engine has been in use since 1960s and is well understood, not expensive, asks jokingly if they work for BaE.
+Label for comment 75: Anti-carrier missiles: replies to 2.15 saying anti carrier missiles will not work well as it is hard to hit a carrier thousands of miles away in the ocean.
+Label for comment 76: Misc: replies to 2.18 saying they very much agree.
+Label for comment 77: Aircraft carriers/shouldn't have 2: replies to 2.9 sarcastically saying why not build even more carriers as they will help with climate change, terrorists and failing antibiotics. Suggests they are a distraction.
+Label for comment 78: Aircraft carrier planes: replies to 2.2 saying we should have kept the old planes as they had been upgraded and some of the drones being looked at will be as big as carrier planes. Says having a massive deck will come in useful if the carrier ever gets equipment to operate safely and effectively.
+Label for comment 79: Aircraft carrier planes/against F35: replies to 2.2 saying if the F35s don't perform well we have essentially built helicopter pads, and if we had installed catapults we could have had a choice of planes from different countries. Says things must change since we used to lead the world in carrier technology.
+Label for comment 80: Aircraft carrier planes: replies to 2 saying it has one plane bolted down for display purposes if the Sky news footage is true.
+Label for comment 81: Aircraft carriers: replies to 2.24 saying the ships cost about 33.2billion of the equivalent to 6 months of UK aid budget.
+Label for comment 82: Aircraft carrier planes: replies to 2.1 saying test flights were grounded because of the 'slight' problem of their engine catching fire.
+Label for comment 83: Aircraft carriers/anti-Labour: replies to 2.19 saying abour spent billions of tax-payer's money on a vanity project to secure Scottish votes and the Coalition have to sort it out, ad that it is immature to say Labour good, Tory bad.
+Label for comment 84: Harrier/anti-Labour: replies to 2.4 saying Nu Labour killed British fixed-wing naval aviation by scrapping Sea Harriers, and ghat we had no fixed-wing carrier capability by 2007/8, and that the only reason the ASMC bought Harriers is to use for spares.
+Label for comment 85: Harrier: replies to 2.4 saying Harriers not a viable option for Air Defence/Strike roles.
+Label for comment 86: Harrier/anti-F35: replies to 2.21 saying they were not saying Harriers are obsolete just complex and fuel-hungry, and costs twice as much to train the one pilot compared to a Tornado pilot and flying costs are greater. Says both aircrafts hav strengths and weaknesses but they are both better than F35 currently. Sarcastically asks if they work for the Navy.
+Label for comment 87: Misc: replies to 2.18 agreeing saying isn't politics wonderful.
+Label for comment 88: Harrier/anti-Labour: replies to 2.32 agreeing but says most people don't realise this and that Nu Labour did real damage scrapping the Sea Harriers, but that it was done so sneakily that unless you take interest in the military you wouldn't know about it.
+Label for comment 89: Tradition: questions part of article which says the naval tradition of smashing the bottle on the boat dates back thousands of years.
+Label for comment 90: Tradition: Replies to 3, says they wondered about it dating back thousands of years too as Wikipedia says this tradition has been around since the Babylonians.
+Label for comment 91: Tradition: first names ship was PRaise of the Two Lands from more than 4,500 years agom says although breaking the bottle is more recent, ship naming has existed since ancient times.
+Label for comment 92: Tradition: replies to 3.3 thanking them for the information.
+Label for comment 93: Tradition: replies to 3.2 saying it used to be a gold cup thrown into the sea.
+Label for comment 94: Tradition: replies to 3 saying Alfred's efforts were over a millennium ago and the Saxons shore was nearer to two.
+Label for comment 95: Tradition: replies to 3 agreeing and asking when 'debut' was a verb.
+Label for comment 96: Tradition: replies to 3 saying HMS Dugout, found in mud in the Dogger Bank, was thousands of years old.
+Label for comment 97: Misc: replies to 3.6 agreeing.
+Label for comment 98: Armed forces boost: says it is nice to see something going into the Armed Forces rather than out.
+Label for comment 99: Armed forces boost: replies to 4 saying they should have spent the money on saving service people's jobs.
+Label for comment 100: Armed forces boost: replies to 4.1 saying they should put money towards saving lives.
+Label for comment 101: Armed forces boost: replies to 4.2 questioning what their comment even means as it seems they are suggesting to put money in the military instead of in the military!
+Label for comment 102: Armed forces boost: replies to 4 saying they can't afford to put planes on the carrier but that it's just as well as the ones they were going to buy have a habit of catching on fire.
+
+GROUPS
+
+GROUP: Problems with the carriers
+
+SUBGROUP: Size
+Label for comment 2 [UncleBacterial]: Size: replies to 1 saying a bigger ship would be a bigger 'killing machine' and make other countries dislike the UK.
+Label for comment 5 [blatantfraud]: Size: replies to 1.1 saying a bigger ship would be better to help protect England and that he is not annoyed at Tony Blair for participating in Iraq.
+Label for comment 11 [Daveinireland]: Size: replies to 1 saying why would they build a bigger ship when the government cannot afford more aircrafts to fill even one.
+
+SUBGROUP: Anti-military
+Label for comment 22 [kvlx387]: Size/anti-military: replies to 1.1 agreeing, says that the aircraft carriers should have been cancelled as they were ordered during Iraq 'lunacy', and says their only point is to project military power overseas which we don't need.
+Label for comment 29 [Swedinburgh]: Anti-military: replies to 1.21 agreeing that aircraft carriers have nothing to do with defence.
+Label for comment 48 [kvlx387]: Anti-military: replies to 1.39 saying that the UK's military adventures in the past decade have contributed to world instability.
+
+SUBGROUP: Anti-Conservative
+Label for comment 1 [blatantfraud]: Size/government: should have been built larger to carry more aircrafts, Conservatives will shelve one ship as part of cuts.
+Label for comment 4 [smifee]: Government: replies to 1.2 saying that because of the Conservative government's actions since 2010 he thinks 'commissioning more sensibly' means awarding building contracts to business partners rather than competitive tendering.
+Label for comment 6 [blatantfraud]: Government: compliments 1.3 on his answer, says the Conservatives are butchering the Armed Forces and that if Labour had put into place the current cuts right-wing media would be angry. Says the Conservatives are penny pinchers and cut costs by reducing the Army to a border defence force.
+Label for comment 8 [blatantfraud]: Government: replies to 1.6 saying he is not blaming the Conservatives for the carriers but that their defence cuts are disgraceful, and it is these cuts that will cause one carrier to be shelved.
+Label for comment 12 [blatantfraud]: Government/ anti-Conservative: replies to 1.8 saying he was just illustrating the Conservative's obsession with cutting money from Britain's armed forces.
+Label for comment 14 [blatantfraud]: Government/ anti-Conservative: replies to 1.1 saying the Conservatives say nothing can be afforded except for tax cuts for the rich and increases for the poor.
+Label for comment 20 [nondescrpt]: Government/ anti-Conservative: replies to 1.2 saying the Conservatives are 'pretty shit.'
+Label for comment 21 [smifee]: Government: replies to 1.14 asking them to explain how the Coalition affected the contractsm cost and over-all project with their 'flip-flopping' on plans, and how it was acceptable for the government to renege on contracts. Says reneging on business contracts is bad practice because it is expensive, and that the Coalition's 'petulance' since they came into power has undermined the UK government's reputation as a business partner.
+Label for comment 28 [blatantfraud]: Government: replies to 1.14 saying the Coalition had put the economy into extended contraction and have cut public services. Accuses them of thinking the world financial crash was due to 'socialist overspending' as well.
+Label for comment 30 [blatantfraud]: Government/ anti-Conservative: replies to 1.25 saying the Conservatives know the accusation that Labour commissioned the aircraft carriers to gain votes is a lie, reminds them of how Labour are accused of being lazy and yet they are blamed for introducing ATOS.
+Label for comment 31 [SB Lancaster]: Government/ anti-Conservative: angrily says a million people are receiving food from food banks and yet the government are spending money on this.
+Label for comment 32 [LloydHart]: Government/ anti-Conservative: says we now know that the Conservatives implemented austerity to build up the British military, and that Obama is doing the same whilst pretending to be liberal. Says aren't liberals supposed to care about the working class, but Conservatives do not care.
+Label for comment 33 [crystaltips2]: Government/ anti-Conservative: replies to 1.14 saying that the government declined the opportunity to make adaptions to the carriers to make them more cost effective and insisted this would cost too much, meaning the carriers are now less adaptable. Says this is a disgrace and happened on the Conservative's watch after BaE blackmailed them government.
+Label for comment 35 [Giffard]: Government/ anti-Conservative: replies to 1.14 sarcastically saying they think their suggestion that the Conservatives have restored the economy and faith in public services to be a tasteless attempt at humour.
+Label for comment 51 [hattyfarbuckle]: Government/ anti-Conservative: replies to 1.6 saying Labour ordered the same planes the Conservatives went back to after they announced they were the wrong planes which delayed the date the aircraft carrier actually had an aircraft. Questions why this is Labour's fault.
+
+SUBGROUP: Anti-Labour
+Label for comment 3 [boulay]: Government: replies to 1 sarcastically saying Labour will not spend a lot on the armed forces either, and that because Labour did not do the commissioning job sensibly armed forces costs are higher. Sarcastically says the cuts are because of the Conservatives.
+Label for comment 7 [TVGuide]: Government: replies to 1 saying it is harsh to blame the Conservatives for inadequate aircraft carriers, says it is Labour's fault for ordering two carriers but not planning for associated support craft and ordering the wrong planes, which is why one carrier will be shelved.
+Label for comment 15 [Ellis000]: Government/ anti-Labour: replies to 1.3 saying Labour commissioned the building of the two carriers, when one would be enough, to gain votes in Scotland, and due to wrong decisions they left an expensive mess for the Coalition to sort out. Says contracts for party 'mates' would have been done by Labour and not the Conservatives and asks why 1.3 is trying to 'smear' the Tories.
+Label for comment 17 [blatantfraud]: Government: replies to 1.12 thanking them for the correction and saying Labour hold the blame for cutting the number of destroyers in the armed forces.
+Label for comment 19 [TVGuide]: Government, anti-Labour: replies to 1.7 saying it was 2008 when type 45 destroyers were cut to 6. Adds that he does not agree with defence cuts and would prefer overseas aid to be cut but says Labour deserve more blame than the Conservatives.
+Label for comment 24 [Oldgroaner]: Government/ anti-Labour: replies to 1.6 saying Labour ordered the aircraft carriers to be built as a way to get votes by creating jobs, suggests jokingly it would have been cheaper just to pay the builders £100k
+Label for comment 41 [shortcake]: Government/ anti-Labour: says Nu Labour cut the forces more than the coalition, committed the forces to two conflicts they were not prepared for and everything they did in defence, including these carriers, was a shambles and none of their secretaries could stay in the job very long.
+Label for comment 42 [shortcake]: Government/ anti-Labour: replies to 1.7 saying Nu Labour defence cuts were worse than Coalition ones, and they covered up 35% cuts to the Navy with spin.
+Label for comment 47 [petrolheadpaul]: Government/Conservatives: replies to 1.45 saying they may not like the suggestion that the Conservatives are fixing the economy and restoring faith in public services, but that they believe they are getting there.
+Label for comment 52 [TVGuide]: Government/anti-Labour: replies to 1.5 saying Labour ordered the worst planes, which the Tories realised and tried to change but then Labour had also ordered an inadequate carrier so had to accept bad planes and it is all Labour's fault.
+Label for comment 67 [Ellis000]: Aircraft carrier/anti-Labour: replies to 2.9 saying that we managed with one smaller carrier for many tears, and that it is not just ships and aircrafts but their support groups. Says the extra carrier was Gordon Brown bribing Scotland and has cost the taxpayer.
+Label for comment 68 [Oldgroaner]: Aircraft carrier/anti-Labour: replies to 2.14 agreeing, saying the support group will take up almost half the Navy's major combat vessels and give no defence against anti-carrier missiles.
+Label for comment 83 [Ellis000]: Aircraft carriers/anti-Labour: replies to 2.19 saying abour spent billions of tax-payer's money on a vanity project to secure Scottish votes and the Coalition have to sort it out, ad that it is immature to say Labour good, Tory bad.
+Label for comment 88 [shortcake]: Harrier/anti-Labour: replies to 2.32 agreeing but says most people don't realise this and that Nu Labour did real damage scrapping the Sea Harriers, but that it was done so sneakily that unless you take interest in the military you wouldn't know about it.
+
+SUBGROUP: Neutral
+Label for comment 9 [Eisenhorn]: Government: replies to 1 saying one ship will be shelved, as in it will be tied to a dock in extended readiness, but that this is not only the Coalition government's fault as it is equally their fault and Labour's because of over-runs and procurement mistakes.
+Label for comment 16 [Daveinireland]: Government: replies to 1.13 saying they think they are joking about saying nothing can be afforded by the Conservatives as the party will spend £732 billion this year.
+Label for comment 13 [Daveinireland]: Misc: replies to 1.7 saying Bob Ainsworth cut number of destroyers from 8 to 6.
+
+SUBGROUP: Technical problems
+Label for comment 39 [Abimelech]: Government/building: replies to 1.32 saying their comment is not quite correct, that the carriers in question are powered by gas turbine/electric drives unlike previous carriers, but should have been powered by nuclear power with steam catapults.
+Label for comment 44 [crystaltips2]: Misc: replies to 1.38 explaining the EMALS system they were talking about is about to undergo sea trials and is further along than unproven, and the US navy offered full support for their installation in the new carriers.
+Label for comment 45 [alanww]: Availability: says the carrier is a shared resource for the European Rapid Reaction Force.
+
+GROUP: Armed Forces spending/cuts
+Label for comment 10 [boulay]: Government/funding cuts: 3 replies to 1 expressing anger towards armed forces cuts but says there is no money to avoid cuts. Says to imagine the anger is defence spending was ring-fenced and other areas cut more, says it is a no-win situation as there is no money for more ships and soldiers.
+Label for comment 23 [kvlx387]: Armed forces cuts: replies to 1.9 saying their anger is their own problem as Britain has the 4th largest military budget in the world, and that our armed forces are too big unless we plan to use them in 'foreign adventures' as Blair did.
+Label for comment 37 [Bogoas81]: Military spending: replies to 1.22 saying Britain has the sixth largest military expenditure and is the sixth largest economy so the spending corresponds.
+Label for comment 43 [Swedinburgh]: Foreign military/misc: replies to 1.36 saying Saudi Arabia big spending in the past two years is a short term spike, and that it is likely in another year or two the UK will be back in the top 5.
+Label for comment 46 [DevoDog]: Military cuts: replies to 1.9 saying the money to avoid cuts is mostly in the Cayman Islands. Joke?
+Label for comment 49 [Bogoas81]: Military spending: replies to 1.42 saying that it is quite possible Saudi Arabia's spending spike will mean the UK are back in the top 5 in the next few years, spending in China, Russia, Japan and India means the UK looks set to fall behind big spenders.
+Label for comment 81 [maico]: Aircraft carriers: replies to 2.24 saying the ships cost about 33.2billion of the equivalent to 6 months of UK aid budget.
+Label for comment 98 [grumpylion]: Armed forces boost: says it is nice to see something going into the Armed Forces rather than out.
+Label for comment 99 [Charaku]: Armed forces boost: replies to 4 saying they should have spent the money on saving service people's jobs.
+Label for comment 100 [SB Lancaster]: Armed forces boost: replies to 4.1 saying they should put money towards saving lives.
+Label for comment 101 [Maclie]: Armed forces boost: replies to 4.2 questioning what their comment even means as it seems they are suggesting to put money in the military instead of in the military!
+
+GROUP: Misc
+Label for comment 25 [blatantfraud]: Misc: replies to 1.18 saying thank-you and that someone else had pointed out his mistake.
+Label for comment 36 [theparson]: Government/misc: replies to 1.2 questioning about the elections and saying that at least the 'halfwits' are in work as Central Office are paying them.
+Label for comment 50 [liamrel]: Misc: replies to 1.3 asking for hard evidence to their claim that the government are wasting money on these carriers when people are receiving aid from food banks.
+Label for comment 66 [Ellis000]: Misc/aircraft carrier: replies to 2.7 saying they obviously made a typing mistake and sarcastically says it showed how smart 2.7 was.
+Label for comment 72 [jackthekipper]: Misc/aircraft carrier planes: replies to 2.13 saying there was a number of tying errors in their post.
+Label for comment 76 [fevriul]: Misc: replies to 2.18 saying they very much agree.
+Label for comment 87 [Polymorph]: Misc: replies to 2.18 agreeing saying isn't politics wonderful.
+Label for comment 40 [jasonbirder]: Pro-military: replies to 1.21 saying that if we do not need to project military powers overseas then surely we would not need armed forces as they will not be using military powers on ourselves in the UK
+
+GROUP: Building location
+Label for comment 26 [theonionmurders]: Building: replies to 1.14's point that the carriers were made in Scotland to garner Labour votes by saying they were assembled in Scotland but built in 4 British yards. Explains that other yards do not have dry-dock facilities large enough to hold a hull of that size. Sarcastically says that maybe these physical and logistical impossibilities are purely down to Brown garnering votes as 1.14 suggested.
+Label for comment 27 [blatantfraud]: Building: replies to 1.23 saying their opinion is wrong but it is a change from people saying Brown ordered the carriers as they would be built in his constituency, which is wrong as it was built in different places in the UK. Says Western navies are ordering carriers and landing ships to deal with terrorist threats and have been doing so for years.
+Label for comment 34 [Williamballoch]: Building: replies to 1.25 saying the carriers were not assembled on the Clyde but on the east coast. Some modules were built on the Clyde by BaE and at the soon to be closed Govan shipyard.
+
+GROUP: Planes for the carriers
+Label for comment 60 [jackthekipper]: Aircraft carrier planes: replies to 2.5 saying the  ships have been in service for four years.
+Label for comment 63 [matthewpringle]: Aircraft carrier planes: replies to 2.2 saying they will fly drones from the carrier eventually once the original programme fails, and that drone will be smaller, lighter and carry more weaponry and fuel.
+Label for comment 73 [jackthekipper]: Aircraft carrier planes: replies to 2.1 saying you could easily fly drones off different carriers at a lower price with added assault capability.
+Label for comment 75 [fevriul]: Anti-carrier missiles: replies to 2.15 saying anti carrier missiles will not work well as it is hard to hit a carrier thousands of miles away in the ocean.
+Label for comment 80 [BStroszek]: Aircraft carrier planes: replies to 2 saying it has one plane bolted down for display purposes if the Sky news footage is true.
+Label for comment 82 [Cynical007]: Aircraft carrier planes: replies to 2.1 saying test flights were grounded because of the 'slight' problem of their engine catching fire.
+Label for comment 102 [Cynical007]: Armed forces boost: replies to 4 saying they can't afford to put planes on the carrier but that it's just as well as the ones they were going to buy have a habit of catching on fire.
+Label for comment 38 [jontywanderer]: Anti-carrier: says by the time the aircrafts are ready for the carrier it will probably be obsolete.
+
+SUBGROUP: Pro-Harriers
+Label for comment 57 [blatantfraud]: Aircraft carrier planes/anti-conservative: replies to 2 saying the planes could have been Harriers but the Conservatives sold them cheaply to the US Marine Corps.
+Label for comment 64 [DrCockfingers]: Aircraft carrier planes: replies to 2.2 saying they are sure the Sea Harriers would have done fine.
+Label for comment 69 [theonionmurders]: Aircraft carrier planes/Harrier: replies to 2.5 asking why USAF and USMC bought the Harriers immediately if they were too old and continue to use their own Harriers, vets Americans felt lucky.
+Label for comment 70 [jackthekipper]: Aircraft carrier planes/Harrier: replies to 2.8 saying there have been plenty of Harrier crashes but not many deaths, and that the F35 will be no more reliable or survivable for at least 10 times the money if it is ever off the drawing board.
+Label for comment 74 [fevriul]: Aircraft carrier planes/Harriers: replies to 2.12 sarcastically asking if they are joking about Harriers being complex/expensive as the engine has been in use since 1960s and is well understood, not expensive, asks jokingly if they work for BaE.
+Label for comment 78 [matthewpringle]: Aircraft carrier planes: replies to 2.2 saying we should have kept the old planes as they had been upgraded and some of the drones being looked at will be as big as carrier planes. Says having a massive deck will come in useful if the carrier ever gets equipment to operate safely and effectively.
+
+SUBGROUP: Anti-Harriers
+Label for comment 58 [Ellis000]: Aircraft carrier planes/anti-Labour: replies to 2.4 saying the Harriers would have been too old by the time the carriers come into service, and Labour made the mistake by commissioning two carriers when only one was required.
+Label for comment 61 [gilesjuk]: Aircraft carrier planes: replies to 2.4 saying one harrier crashed recently and telling them to look at a list of Harrier related deaths as it is high.
+Label for comment 65 [Polymorph]: Aircraft carrier planes: replies to 2.11 saying Harriers are lovely aircrafts but complex, expensive and old, although running costs are probably less than the large amount spend on dubious replacements.
+Label for comment 84 [shortcake]: Harrier/anti-Labour: replies to 2.4 saying Nu Labour killed British fixed-wing naval aviation by scrapping Sea Harriers, and ghat we had no fixed-wing carrier capability by 2007/8, and that the only reason the ASMC bought Harriers is to use for spares.
+Label for comment 85 [jasonbirder]: Harrier: replies to 2.4 saying Harriers not a viable option for Air Defence/Strike roles.
+
+SUBGROUP: Anti-F35B planes
+Label for comment 71 [crystaltips2]: Aircraft carrier planes/anti F35: replies to 2.2 saying it was BaE than made it so expensive to install catapults and it is them who is partly responsible for the F35B's they are now having to use. Says what a coincedence.
+Label for comment 79 [bellebrise]: Aircraft carrier planes/against F35: replies to 2.2 saying if the F35s don't perform well we have essentially built helicopter pads, and if we had installed catapults we could have had a choice of planes from different countries. Says things must change since we used to lead the world in carrier technology.
+Label for comment 86 [Polymorph]: Harrier/anti-F35: replies to 2.21 saying they were not saying Harriers are obsolete just complex and fuel-hungry, and costs twice as much to train the one pilot compared to a Tornado pilot and flying costs are greater. Says both aircrafts hav strengths and weaknesses but they are both better than F35 currently. Sarcastically asks if they work for the Navy.
+Label for comment 55 [Polymorph]: Aircraft carrier planes/negative: replies to 2 saying it does not yet have planes and the aircraft it should carry are of dubious capability, and that the best system choice for the future is now too expensive to integrate. Says money is being converted into profit in the defence industry and projects are being rubber-stamped during the design phase and all mistakes are funded by the tax-payer.
+
+GROUP: Number of carriers built
+Label for comment 59 [blatantfraud]: Aircraft carrier planes: replies to 2.5 saying they stand corrected about using Harriers, although two carriers were commissioned so one would always be available as the French had a problem with this.
+Label for comment 62 [fevriul]: Aircraft carrier: replies to 2.5 saying it is rubbish only one carrier is required as if one goes wrong we lose all capability.
+Label for comment 77 [Frugal_Dougal]: Aircraft carriers/shouldn't have 2: replies to 2.9 sarcastically saying why not build even more carriers as they will help with climate change, terrorists and failing antibiotics. Suggests they are a distraction.
+
+GROUP: Ship-naming tradition
+Label for comment 89 [eoinomahony]: Tradition: questions part of article which says the naval tradition of smashing the bottle on the boat dates back thousands of years.
+Label for comment 90 [mutie]: Tradition: Replies to 3, says they wondered about it dating back thousands of years too as Wikipedia says this tradition has been around since the Babylonians.
+Label for comment 91 [Alphagamma]: Tradition: first names ship was PRaise of the Two Lands from more than 4,500 years agom says although breaking the bottle is more recent, ship naming has existed since ancient times.
+Label for comment 92 [morph]: Tradition: replies to 3.3 thanking them for the information.
+Label for comment 93 [blatantfraud]: Tradition: replies to 3.2 saying it used to be a gold cup thrown into the sea.
+Label for comment 94 [DonEvans]: Tradition: replies to 3 saying Alfred's efforts were over a millennium ago and the Saxons shore was nearer to two.
+Label for comment 95 [zitan]: Tradition: replies to 3 agreeing and asking when 'debut' was a verb.
+Label for comment 96 [JerryColebyWilliams]: Tradition: replies to 3 saying HMS Dugout, found in mud in the Dogger Bank, was thousands of years old.
+Label for comment 97 [eoinomahony]: Misc: replies to 3.6 agreeing.
+
+UNCONSTRAINED SUMMARY
+
+One person asked why the Government did not order a bigger carrier, although another replies saying this would make other countries hate the UK and another said there was no point as the Government could not afford more aircrafts to fill it.
+
+Some people said the aircraft carriers should have been cancelled because there only point was to project military power where we do not need it, which two others agreed with, saying that the UK's military had contributed to world instability.
+
+Many people blamed the Conservative's for faults with the aircraft carriers. One person said that it was likely the Tories would  shelve one of the carriers due to cuts. Others agreed that they were 'butchering' the Armed Forces and that the cuts are disgraceful. Another person mentioned how the Tories reneged on contracts during the building. Other criticised the Conservative's cuts to public services and the fact they were spending money on this and not food banks. One person said the Tories did not make adaptations to the carriers that would make them cost effective so they are now less adaptable, and another said they went back to the planes they knew were wrong after Labour ordered them firstly.
+
+Others blamed Labour for the problems, saying that they did not spend a lot on the armed forces and it is because of their decisions during the commissioning that the costs were higher, another adding that they ordered two carriers without thought for the support crafts that would be needed, and ordered the wrong planes. Some people said Labour commissioned two carriers as Gordon Brown wanted to gain votes in Scotland. Some mentioned that Labour cuts to the military were worse than Conservative ones. 
+
+Some people talked about the technicalities of the carriers. One said that the planes should have been powered by nuclear powered catapults. Two said that two carriers should have been built so one can always be used, but one person disagreed and said this would be a distraction from other issues.
+
+Some talked about their dissatisfaction with the cut to the armed forces, although others noted that Britain has one of the largest military budgets in the world, which corresponds with our economy. One person said it was nice to see money going in to the armed forces, but someone else said they should have spent the money on saving jobs.
+
+One person said that although the carriers were assembled in Scotland they were built in 4 British yards, another said that the carriers were not assembled on the Clyde but on the east coast.
+
+One person asked whether the carriers had any planes yet, which two people replies no to, and one person said that by the time the planes are ready the carriers will be obsolete. One person added that on test flights with the planes their engines caught fire, which another person confirmed. One said that drones would be flown from the carriers when the original programme fails, another added this would be at a low price. 
+
+Talking of the planes, some people were saying the Government should have used the Harrier planes, which were sold to the US Marine Corps, although other said these planes were old, dangerous, expensive and complex. Some said that the F35B planes set to be used in the carriers are of dubious capability, and that they were not the best system to be used. Two people said catapults should have been installed, one adding that they were not because BaE made it too expensive.
+
+One person questioned if the tradition of smashing a bottle on a boat dated back thousands of years. One person said ship naming had been around since the Babylonians, another said it was from about 4,500 years ago, although bottle breaking is more recent. Another person said it used to involve throwing a gold cup into the sea, another said that HMS Dugout which was found in the Dogger Bank was named thousands of years ago.
+
+CONSTRAINED SUMMARY
+
+Some blamed the Conservative's for faults with the carriers, saying it was likely the Tories would shelve one of the carriers due to cuts, and that they were 'butchering' the Armed Forces, although others noted that Britain has one of the largest military budgets in the world. Some said the Tories did not make adaptations to the carriers (such as catapults) that would make them cost effective so they are now less adaptable.
+
+Others blamed Labour for problems, saying it was their decisions during commissioning that meant higher costs, another adding that they ordered two carriers without thought for support crafts needed, and ordered the wrong planes. Some said Labour commissioned two carriers as Gordon Brown wanted to gain votes in Scotland. 
+
+Two said that two carriers should have been built so one can always be used, one person disagreed. Some said the aircraft carriers should have been cancelled because there only point was to project military power where we do not need it.
+
+One person asked whether the carriers had any planes yet, two people replied no, and others added that on test flights the planes' engines caught fire.
+
+Some people said the Government should have used Harrier planes, although others said these planes were old, dangerous, expensive and complex. Some said that the F35B planes set to be used in the carriers were not good.
+
+Some questioned when the tradition of smashing a bottle on a boat to name it dated back to.
+
+BACK LINKING
+
+Some blamed the Conservative's for faults with the carriers, saying it was likely the Tories would shelve one of the carriers due to cuts, and that they were 'butchering' the Armed Forces, although others noted that Britain has one of the largest military budgets in the world.
+(Sub)GroupNames:
+- SUBGROUP: Anti-Conservative
+
+Some said the Tories did not make adaptations to the carriers (such as catapults) that would make them cost effective so they are now less adaptable.
+(Sub)GroupNames:
+- SUBGROUP: Anti-Conservative
+
+Others blamed Labour for problems, saying it was their decisions during commissioning that meant higher costs, another adding that they ordered two carriers without thought for support crafts needed, and ordered the wrong planes.
+(Sub)GroupNames:
+- SUBGROUP: Anti-Labour
+
+Some said Labour commissioned two carriers as Gordon Brown wanted to gain votes in Scotland.
+(Sub)GroupNames:
+- SUBGROUP: Anti-Labour
+
+Two said that two carriers should have been built so one can always be used, one person disagreed.
+(Sub)GroupNames:
+- GROUP: Number of carriers built
+
+Some said the aircraft carriers should have been cancelled because there only point was to project military power where we do not need it.
+(Sub)GroupNames:
+- SUBGROUP: Anti-military
+
+One person asked whether the carriers had any planes yet, two people replied no, and others added that on test flights the planes' engines caught fire.
+(Sub)GroupNames:
+- GROUP: Planes for the carriers
+
+Some people said the Government should have used Harrier planes, although others said these planes were old, dangerous, expensive and complex.
+(Sub)GroupNames:
+- SUBGROUP: Pro-Harriers
+- SUBGROUP: Anti-Harriers
+
+Some said that the F35B planes set to be used in the carriers were not good.
+(Sub)GroupNames:
+- SUBGROUP: Anti-F35B planes
+
+Some questioned when the tradition of smashing a bottle on a boat to name it dated back to.
+(Sub)GroupNames:
+- GROUP: Ship-naming tradition

@@ -1,0 +1,318 @@
+LABELS
+
+Label for comment 1: Cameras: Police want to invade privacy by filming people. They should not be able to.
+Label for comment 2: Police injustice: Sarcasm
+Label for comment 3: Privacy: Police know everything about me
+Label for comment 4: Cameras: Police would not film themselves
+Label for comment 5: Cameras: Police need to turn on body cameras more
+Label for comment 6: Cameras: Suggestion of police hiding truth
+Label for comment 7: Cameras: Agrees that police may hide truth
+Label for comment 8: Data protection: Doctors are better with confidential information than police
+Label for comment 9: Anti-police
+Label for comment 10: Data protection: Doesn't want police to get access to their medical records
+Label for comment 11: Cameras: Asks question about body cameras
+Label for comment 12: Privacy: Invade privacy for national security excuses
+Label for comment 13: Data protection: Information on children is only shared if there is a legitimate concern.
+Label for comment 14: Cameras: Could be a good thing
+Label for comment 15: Privacy: State, not police, want to breach privacy
+Label for comment 16: Unknown meaning
+Label for comment 17: Response
+Label for comment 18: Irrlevant to discussion: Link to news article about Ed Milliband saying Labour will attempt to cut the welfare bill by ensuring poorer workers are paid better
+Label for comment 19: Cameras: State could have more to lose than what they will gain by using cameras
+Label for comment 20: Cameras: Does not want the state to have access to private life
+Label for comment 21: Privacy: Police should uphold privacy
+Label for comment 22: Privacy: Police do not uphold freedom or privacy
+Label for comment 23: Unknown meaning
+Label for comment 24: Data protection: Does not want police acting with private information
+Label for comment 25: Data protection: Police already have access to private information
+Label for comment 26: Police injustice: Information could be used to smear people
+Label for comment 27: Privacy: Thinks people with medical history of drugs could be searched
+Label for comment 28: Privacy: Tells people to opt out of the NHS Summary Care Record
+Label for comment 29: Hacking: Police will easily be able to access information
+Label for comment 30: Hacking: Only 'normal' people would be vulnerable
+Label for comment 31: Vulnerable children: Social workers need a bigger involvement in child care so that police will not have to deal with incidents
+Label for comment 32: Vulnerable children: Police having medical records will not help
+Label for comment 33: Police injustice: Suggests police harm ill people
+Label for comment 34: Police injustice: Seems to agree that police could do more for mentally ill people
+Label for comment 35: Police surgeons: Police have a way to help
+Label for comment 36: Police: Need more officers
+Label for comment 37: Medical conditions: Police should be more aware
+Label for comment 38: Medical conditions: People should have ID to say if they have a serious condition. That way police won't need access to records.
+Label for comment 39: Medical conditions: Hard to enforce people wearing a bracelet
+Label for comment 40: Medical conditions: Which conditions should be specified so police are aware?
+Label for comment 41: Anti-Police: Police already have too much power
+Label for comment 42: Police: Need specialists to assess individuals after an incident
+Label for comment 43: Data protection: Only specially trained officers should have access
+Label for comment 44: Privacy: May dissuade victims from coming forward
+Label for comment 45: Mental Health: Could have helped in my situation
+Label for comment 46: Mental Health: Just because a victim has mental health problems, it doesn't mean nothing happened
+Label for comment 47: Privacy: Right to keep your medical history to yourself
+Label for comment 48: Mental Health: Should have no impact on a police inquiry
+Label for comment 49: Police: wasted their time in my case
+Label for comment 50: Mental health: Ruling out claims from people with mental health problems suggests they are all liars
+Label for comment 51: Data protection: Above poster is now known to social services for no reason
+Label for comment 52: Mental health: Ruling out claims from people with mental health problems suggests they are all liars
+Label for comment 53: Police: Could call a GP and ask for information on a person's background
+Label for comment 54: Data protection: Asks if police should have a right to look at medical information
+Label for comment 55: False accusation
+Label for comment 56: Mental health: Ruling out claims from people with mental health problems suggests they are all liars
+Label for comment 57: Data protection: Do not give police access to medical records, but make their records better
+Label for comment 58: Mental health: Not saying that relative should not have been investigated
+Label for comment 59: Mental health: Ruling out claims from people with mental health problems suggests they are all liars
+Label for comment 60: Mental health: Lack of provision puts burden onto police forces
+Label for comment 61: Data protection: GPs are good at holding data, but the state is not
+Label for comment 62: Data protection: The wording of the Act could be changed to allow police access
+Label for comment 63: Data Protection: NHS tried to make everyone's records accesible
+Label for comment 64: Mental health: Police do not believe people with mental health issues
+Label for comment 65: Mental health: Police do not believe people with mental health issues
+Label for comment 66: Mental health: Police do not believe people with mental health issues
+Label for comment 67: Mental health: Police do not believe people with mental health issues
+Label for comment 68: Mental health: Police do not believe people with mental health issues. They need more education on this.
+Label for comment 69: Police: Don't trust them with medical records
+Label for comment 70: Privacy: Some information is already shared between other bodies
+Label for comment 71: Police: Questions Sir Peter Fahy's competence
+Label for comment 72: Medical records: Police are meant to diagnose health problems and react to them
+Label for comment 73: Medical records: Police are not meant to diagnose health problems and react to them
+Label for comment 74: Medical records: Police are not meant to diagnose health problems and react to them
+Label for comment 75: Prejudice: Are police prejudiced?
+Label for comment 76: Mental health: Police are prejudiced against people with mental illnesses
+Label for comment 77: Prejudice: Examples of police prejudice
+Label for comment 78: Mental health: Police shot schizophrenic man, but if they knew about his condition they may not have
+Label for comment 79: Mental health: Police act the same if someone is a danger to the public no matter if they have mental health problems or not
+Label for comment 80: Mental health: Police are prejudiced against disabled
+Label for comment 81: Police injustice: Does not trust police
+Label for comment 82: Police injustice: Should be getting less power, rather than more
+Label for comment 83: Privacy: Police want to invade privacy
+Label for comment 84: Data protection: Records could be used to discredit people
+Label for comment 85: Police surgeons: already help
+Label for comment 86: Police surgeons: do not already help
+Label for comment 87: Police surgeons: Incompetent
+Label for comment 88: Mental Health: Services need more investment
+Label for comment 89: Mental health: Police could look at who has mental illness before they have committed a crime
+Label for comment 90: Unknown meaning
+Label for comment 91: Unknown meaning response
+Label for comment 92: Unknown meaning response
+Label for comment 93: Police: Should focus on catching criminals, not personal records
+Label for comment 94: Mental health: Police cells should not be an alternative to a mental health bed in hospital
+Label for comment 95: Mental health: Police cells should not be an alternative to a mental health bed in hospital. Need better care.
+Label for comment 96: Mental health: Police cells should not be an alternative to a mental health bed in hospital
+Label for comment 97: Response: comments on pejorative term for people with mental illnesses
+Label for comment 98: Police surgeons: Seek medical help when detainees are believed to be unwell
+Label for comment 99: Mental health: I was in a police cell instead of a hospital
+Label for comment 100: Mental health: police treat mentally ill people badly
+Label for comment 101: Police surgeons: should not be qualified to make decisions
+
+GROUPS
+
+GROUP: Cameras
+Label for comment 1 [TheGreatRonRafferty]: Cameras: Police want to invade privacy by filming people. They should not be able to.
+Label for comment 4 [OrangeLagoon]: Cameras: Police would not film themselves
+Label for comment 5 [TheGreatRonRafferty]: Cameras: Police need to turn on body cameras more
+Label for comment 6 [OrangeLagoon]: Cameras: Suggestion of police hiding truth
+Label for comment 7 [TheGreatRonRafferty]: Cameras: Agrees that police may hide truth
+Label for comment 11 [ABasu]: Cameras: Asks question about body cameras
+Label for comment 14 [OrangeLagoon]: Cameras: Could be a good thing
+Label for comment 19 [gtegte]: Cameras: State could have more to lose than what they will gain by using cameras
+Label for comment 20 [mcole003]: Cameras: Does not want the state to have access to private life
+
+GROUP: Police injustice
+Label for comment 2 [Bob_Helpful]: Police injustice: Sarcasm
+
+GROUP: Privacy
+Label for comment 3 [TheGreatRonRafferty]: Privacy: Police know everything about me
+Label for comment 12 [salamandertome]: Privacy: Invade privacy for national security excuses
+Label for comment 15 [gtegte]: Privacy: State, not police, want to breach privacy
+Label for comment 21 [whatithink]: Privacy: Police should uphold privacy
+Label for comment 22 [conanthebarbarian]: Privacy: Police do not uphold freedom or privacy
+Label for comment 27 [mattmcneany]: Privacy: Thinks people with medical history of drugs could be searched
+Label for comment 28 [Imageark]: Privacy: Tells people to opt out of the NHS Summary Care Record
+Label for comment 44 [carcetti]: Privacy: May dissuade victims from coming forward
+Label for comment 47 [carcetti]: Privacy: Right to keep your medical history to yourself
+Label for comment 70 [acehlortt]: Privacy: Some information is already shared between other bodies
+Label for comment 83 [HarryTheHorse]: Privacy: Police want to invade privacy
+
+GROUP: Data Protection
+Label for comment 8 [OldBristolian]: Data protection: Doctors are better with confidential information than police
+Label for comment 10 [snowcat3]: Data protection: Doesn't want police to get access to their medical records
+Label for comment 13 [OldBristolian]: Data protection: Information on children is only shared if there is a legitimate concern.
+Label for comment 24 [Ian Russell]: Data protection: Does not want police acting with private information
+Label for comment 25 [philipphilip99]: Data protection: Police already have access to private information
+Label for comment 43 [HarryTheHorse]: Data protection: Only specially trained officers should have access
+Label for comment 51 [OldBristolian]: Data protection: Above poster is now known to social services for no reason
+Label for comment 54 [carcetti]: Data protection: Asks if police should have a right to look at medical information
+Label for comment 57 [HomerJS]: Data protection: Do not give police access to medical records, but make their records better
+Label for comment 61 [SirTalbotBuxomly]: Data protection: GPs are good at holding data, but the state is not
+Label for comment 62 [ABasu]: Data protection: The wording of the Act could be changed to allow police access
+Label for comment 63 [speedTriple]: Data Protection: NHS tried to make everyone's records accesible
+Label for comment 84 [OldBristolian]: Data protection: Records could be used to discredit people
+
+SUBGROUP: Medical Records
+Label for comment 72 [philipphilip99]: Medical records: Police are meant to diagnose health problems and react to them
+Label for comment 73 [Blaydon]: Medical records: Police are not meant to diagnose health problems and react to them
+Label for comment 74 [SE26lad]: Medical records: Police are not meant to diagnose health problems and react to them
+
+GROUP: Negative towards police
+Label for comment 9 [Pagey]: Anti-police
+Label for comment 26 [dermaptera]: Police injustice: Information could be used to smear people
+Label for comment 34 [MutantNinjaThinktank]: Police injustice: Seems to agree that police could do more for mentally ill people
+Label for comment 36 [thylacosmilus]: Police: Need more officers
+Label for comment 41 [SteveRP]: Anti-Police: Police already have too much power
+Label for comment 42 [Patrician]: Police: Need specialists to assess individuals after an incident
+Label for comment 33 [retreat33]: Police injustice: Suggests police harm ill people
+Label for comment 49 [lisalane]: Police: wasted their time in my case
+Label for comment 53 [snowcat3]: Police: Could call a GP and ask for information on a person's background
+Label for comment 69 [Roundearther]: Police: Don't trust them with medical records
+Label for comment 71 [SteB1]: Police: Questions Sir Peter Fahy's competence
+Label for comment 81 [bailliegillies]: Police injustice: Does not trust police
+Label for comment 82 [conanthebarbarian]: Police injustice: Should be getting less power, rather than more
+Label for comment 93 [GrandHotel30]: Police: Should focus on catching criminals, not personal records
+
+SUBGROUP: Police Surgeons
+Label for comment 35 [Remoxnoir]: Police surgeons: Police have a way to help
+Label for comment 85 [Remoxnoir]: Police surgeons: already help
+Label for comment 86 [HarryTheHorse]: Police surgeons: do not already help
+Label for comment 87 [Theoacme]: Police surgeons: Incompetent
+Label for comment 98 [Remoxnoir]: Police surgeons: Seek medical help when detainees are believed to be unwell
+Label for comment 101 [koolkarmauk]: Police surgeons: should not be qualified to make decisions
+
+SUBGROUP: Police Prejudice 
+Label for comment 75 [Remoxnoir]: Prejudice: Are police prejudiced?
+Label for comment 77 [Blaydon]: Prejudice: Examples of police prejudice
+
+GROUP: Phone hacking
+Label for comment 29 [pharos]: Hacking: Police will easily be able to access information
+Label for comment 30 [TheGreatRonRafferty]: Hacking: Only 'normal' people would be vulnerable
+
+GROUP: Vulnerable children
+Label for comment 31 [MutantNinjaThinktank]: Vulnerable children: Social workers need a bigger involvement in child care so that police will not have to deal with incidents
+Label for comment 32 [HarryTheHorse]: Vulnerable children: Police having medical records will not help
+
+GROUP: Medical conditions
+Label for comment 37 [bobbysixty]: Medical conditions: Police should be more aware
+Label for comment 38 [SuburbanHomeboy]: Medical conditions: People should have ID to say if they have a serious condition. That way police won't need access to records.
+Label for comment 39 [bobbysixty]: Medical conditions: Hard to enforce people wearing a bracelet
+Label for comment 40 [AntHopkins]: Medical conditions: Which conditions should be specified so police are aware?
+
+GROUP: Mental health
+Label for comment 45 [lisalane]: Mental Health: Could have helped in my situation
+Label for comment 46 [Swan17]: Mental Health: Just because a victim has mental health problems, it doesn't mean nothing happened
+Label for comment 48 [TheGreatRonRafferty]: Mental Health: Should have no impact on a police inquiry
+Label for comment 50 [conanthebarbarian]: Mental health: Ruling out claims from people with mental health problems suggests they are all liars
+Label for comment 52 [Blaydon]: Mental health: Ruling out claims from people with mental health problems suggests they are all liars
+Label for comment 56 [MiIney]: Mental health: Ruling out claims from people with mental health problems suggests they are all liars
+Label for comment 58 [lisalane]: Mental health: Not saying that relative should not have been investigated
+Label for comment 59 [learningtofly]: Mental health: Ruling out claims from people with mental health problems suggests they are all liars
+Label for comment 60 [BewilderedMark]: Mental health: Lack of provision puts burden onto police forces
+Label for comment 64 [JohntheLith]: Mental health: Police do not believe people with mental health issues
+Label for comment 65 [JohntheLith]: Mental health: Police do not believe people with mental health issues
+Label for comment 66 [JohntheLith]: Mental health: Police do not believe people with mental health issues
+Label for comment 67 [conanthebarbarian]: Mental health: Police do not believe people with mental health issues
+Label for comment 68 [snowcat3]: Mental health: Police do not believe people with mental health issues. They need more education on this.
+Label for comment 76 [HarryTheHorse]: Mental health: Police are prejudiced against people with mental illnesses
+Label for comment 78 [SteB1]: Mental health: Police shot schizophrenic man, but if they knew about his condition they may not have
+Label for comment 79 [HarryTheHorse]: Mental health: Police act the same if someone is a danger to the public no matter if they have mental health problems or not
+Label for comment 80 [retreat33]: Mental health: Police are prejudiced against disabled
+Label for comment 88 [Calimocho]: Mental Health: Services need more investment
+Label for comment 89 [Pagey]: Mental health: Police could look at who has mental illness before they have committed a crime
+Label for comment 94 [koolkarmauk]: Mental health: Police cells should not be an alternative to a mental health bed in hospital
+Label for comment 95 [JohntheLith]: Mental health: Police cells should not be an alternative to a mental health bed in hospital. Need better care.
+Label for comment 96 [koolkarmauk]: Mental health: Police cells should not be an alternative to a mental health bed in hospital
+Label for comment 99 [JohntheLith]: Mental health: I was in a police cell instead of a hospital
+Label for comment 100 [JohntheLith]: Mental health: police treat mentally ill people badly
+
+GROUP: miscellaneous
+Label for comment 16 [Wehadonebutitbroke]: Unknown meaning
+Label for comment 17 [thylacosmilus]: Response
+Label for comment 23 [GrandMoffTanner]: Unknown meaning
+Label for comment 55 [TheGreatRonRafferty]: False accusation
+Label for comment 90 [JohntheLith]: Unknown meaning
+Label for comment 91 [Pagey]: Unknown meaning response
+Label for comment 92 [SuburbanHomeboy]: Unknown meaning response
+Label for comment 97 [LittleGhost]: Response: comments on pejorative term for people with mental illnesses
+Label for comment 18 [gtegte]: Irrlevant to discussion: Link to news article about Ed Milliband saying Labour will attempt to cut the welfare bill by ensuring poorer workers are paid better
+
+UNCONSTRAINED SUMMARY
+
+The comments were overwhelmingly negative in response to the prospect of police officers getting increased powers, which would give them the right to look at medical records. 
+
+The main concern was that this would prejudice the police against people with mental health conditions, such as if they saw that a potential victim was mentally ill they would be more likely to ignore their complaint. Without being able to see medical records, writers thought the police would be forced to take a fair approach to all cases. 
+
+Many people saw increased access to their medical records as as a breach of their privacy. They were worried that the police would know personal information about themselves. Others said that they were happy for doctors to have their medical records because they were careful to protect their information, but they did not trust the police to have the same level of protection and respect for their personal records. 
+
+There was a general lack of trust towards the police throughout the comments. SteveRP suggested that police already have too much power without access to medical records. Some people suggested alternative methods for the police to use, such as calling a person's GP to find out about their medical history without having direct access to it. Some people showed their disdain for the police without specifically commenting on the subject of the article. 
+
+There was some fairly off-topic discussion about ways that medical history could be shown without needing to access records. SuburbanHomeboy said that people should carry ID to say if they had a serious medical condition.
+
+CONSTRAINED SUMMARY
+
+The comments were overwhelmingly negative in response to the prospect of police officers getting increased powers, which would give them the right to look at medical records. 
+
+The main concern was that this would prejudice the police against people with mental health conditions, such as if they saw that a potential victim was mentally ill they would be more likely to ignore their complaint. Without being able to see medical records, writers thought the police would be forced to take a fair approach to all cases. 
+
+Many people saw increased access to their medical records as as a breach of their privacy. They were worried that the police would know personal information about themselves. Others said that they were happy for doctors to have their medical records because they were careful to protect their information, but they did not trust the police to have the same level of protection and respect for their personal records. 
+
+There was a general lack of trust towards the police throughout the comments. SteveRP suggested that police already have too much power without access to medical records. Some people suggested alternative methods for the police to use, such as calling a person's GP to find out about their medical history without having direct access to it. 
+
+There was some fairly off-topic discussion about ways that medical history could be shown without needing to access records. SuburbanHomeboy said that people should carry ID to say if they had a serious medical condition.
+
+BACK LINKING
+
+The comments were overwhelmingly negative in response to the prospect of police officers getting increased powers, which would give them the right to look at medical records.
+(Sub)GroupNames:
+- GROUP: Police injustice
+- GROUP: Privacy
+- GROUP: Data Protection
+- SUBGROUP: Medical Records
+- GROUP: Negative towards police
+- SUBGROUP: Police Prejudice
+- GROUP: Vulnerable children
+- GROUP: Medical conditions
+- GROUP: Mental health
+
+The main concern was that this would prejudice the police against people with mental health conditions, such as if they saw that a potential victim was mentally ill they would be more likely to ignore their complaint.
+(Sub)GroupNames:
+- GROUP: Mental health
+
+Without being able to see medical records, writers thought the police would be forced to take a fair approach to all cases.
+(Sub)GroupNames:
+- GROUP: Mental health
+
+Many people saw increased access to their medical records as as a breach of their privacy.
+(Sub)GroupNames:
+- GROUP: Privacy
+- GROUP: Data Protection
+- SUBGROUP: Medical Records
+
+They were worried that the police would know personal information about themselves.
+(Sub)GroupNames:
+- GROUP: Privacy
+- GROUP: Data Protection
+- SUBGROUP: Medical Records
+- GROUP: Negative towards police
+
+Others said that they were happy for doctors to have their medical records because they were careful to protect their information, but they did not trust the police to have the same level of protection and respect for their personal records.
+(Sub)GroupNames:
+- GROUP: Privacy
+- GROUP: Data Protection
+- SUBGROUP: Medical Records
+- GROUP: Negative towards police
+
+There was a general lack of trust towards the police throughout the comments.
+(Sub)GroupNames:
+- GROUP: Negative towards police
+
+SteveRP suggested that police already have too much power without access to medical records.
+(Sub)GroupNames:
+- GROUP: Negative towards police
+
+Some people suggested alternative methods for the police to use, such as calling a person's GP to find out about their medical history without having direct access to it.
+(Sub)GroupNames:
+- GROUP: Negative towards police
+
+There was some fairly off-topic discussion about ways that medical history could be shown without needing to access records.
+(Sub)GroupNames:
+- GROUP: Medical conditions
+
+SuburbanHomeboy said that people should carry ID to say if they had a serious medical condition.
+(Sub)GroupNames:
+- GROUP: Medical conditions

@@ -1,0 +1,312 @@
+LABELS
+
+Label for comment 1: measurement: comment: article misleading 1:100 is a measurement of scale not time
+Label for comment 2: measurement: comment: measurement explained
+Label for comment 3: measurement: comment: Agrees
+Label for comment 4: measurement: comment: Global warming: it will get worse with time
+Label for comment 5: measurement: discussion: Sarcasm: good timescale to justify large infrastructure
+Label for comment 6: measurement: comment: Article: misleading: explanation
+Label for comment 7: measurement: comment: Article: misleading: explanation
+Label for comment 8: measurement: comment:: why the system is good and workable
+Label for comment 9: measurement: discussion: opposing, does not show anything of the sort
+Label for comment 10: measurement: discussion: requires explanation, there is data available
+Label for comment 11: Charles: positive: might be going where he does not belong, political issues with visit but glad he did it, easy target as can't respond
+Label for comment 12: Charles: negative: sarcasm: 'his' land - why not give it away?
+Label for comment 13: Charles: positive, not many republicans care about what he is doing, also he has chance to respond
+Label for comment 14: Charles: opposing: he is doing it for the publicity, negative comment about the royal
+Label for comment 15: Charles: negative: sarcasm: has only given a bit of his money
+Label for comment 16: Political joke: Duchess
+Label for comment 17: Charles: positive: good to the people, he takes an interest rather than just nodding for the cameras
+Label for comment 18: Charles: negative: he is a parasite like the previous one, he is a joke
+Label for comment 19: Personal comment
+Label for comment 20: Charles: negative: ppl would still be okay without Charles on their lands
+Label for comment 21: Charles: negative: he is a joke approves
+Label for comment 22: Historical comment: challenges comment on stolen lands
+Label for comment 23: Personal comment: discussion on previous sarcastic comment, personal accusation
+Label for comment 24: Political joke: Cameron: hasn't visited because they are all plebs
+Label for comment 25: Political joke: Cameron: continues about lib-dems
+Label for comment 26: Political joke: Cameron: continues
+Label for comment 27: Political joke: Cameron: is a gutless prick, only doing things for the camera
+Label for comment 28: Political joke: Cameron: scared someone will drown him
+Label for comment 29: Political joke: Cameron: difference between plebs and peasants
+Label for comment 30: Political joke: Cameron: thinks all the people not from the City are scum
+Label for comment 31: Political joke: Cameron: hasn't visited because can't walk on water, only on people
+Label for comment 32: Political joke: Cameron: approves
+Label for comment 33: Political joke: Cameron: continues
+Label for comment 34: Political joke: Cameron: approves
+Label for comment 35: Political joke: Cameron: he is 'frit' = frightened
+Label for comment 36: Flood visit: negative: royals wouldn't make him feel better, Charles is a prat
+Label for comment 37: Flood visit: negative: all the politicians would be unpleasant, drowning joke
+Label for comment 38: Flood visit: positive: think commenter is being rude
+Label for comment 39: Charles: positive: you haven't done anything, so who is the prat?
+Label for comment 40: Charles: positive with a bit of negative: he is very rich due to inheritance but still nice he gives away a bit of money
+Label for comment 41: Charles: negative: if he cared he wouldn't be in the position of a prince
+Label for comment 42: Charles: negative: royal celebrity culture, hasn't done anything himself
+Label for comment 43: Charles: negative: we pay more to fly him to a trade fair
+Label for comment 44: Charles: negative: has lots of charities in his name but doesn't have anything to do with them
+Label for comment 45: Charles: negative: parasite - every penny he has is stolen
+Label for comment 46: Charles: negative: would be good to give away his stuff; comment: country ruled badly, the public services should be back, leaders are not doing their job right
+Label for comment 47: Political comment: explanation
+Label for comment 48: Charles: positive: Charles has devoted himself to rural affairs, one of the best royals
+Label for comment 49: Charles: comment: give money is the least he can do
+Label for comment 50: Personal comment about judging people and money
+Label for comment 51: Comment: royals have too much money compared to the general person
+Label for comment 52: Personal comment answer: he is a giver to charities and pays tax
+Label for comment 53: Charles: negative: insult
+Label for comment 54: Charles: positive with a bit negative: government useless about time someone did something
+Label for comment 55: Charles: negative: parasite, every penny stolen
+Label for comment 56: Charles: comment: give money is the least he can do
+Label for comment 57: Charles: negative: everything is for show, he is a corrupt little man
+Label for comment 58: Charles: negative: his opinions don't matter anyway
+Label for comment 59: Flood: comment: state should be accountable for the state of rivers, there should be insurance
+Label for comment 60: Charles: negative: his opinions don't matter anyway: opposes, he and mother sit in meetings with ministers
+Label for comment 61: Flood: comment: insurance not reliable if known flood area, wouldn't offer it to houses like that
+Label for comment 62: Charles: comment: explaining more or blocking legislation, not sure if there is veto
+Label for comment 63: Charles: comment: dodgy consulting about legal matters
+Label for comment 64: Political joke: Cameron: will be drowned
+Label for comment 65: Political question: Owen secretary of state of Environment hasn't visited - why?
+Label for comment 66: Political answer: Owen: used the telephone
+Label for comment 67: Political answer: Owen: he did once but got heckled
+Label for comment 68: Clarifying a link in top comment.
+Label for comment 69: Political answer: Owen: because is close to the worst politician picked for a duty
+Label for comment 70: Political joke: Cameron: wet enough
+Label for comment 71: Political comment: Charles and Cameron different status and responsibilities, Charles has it easier
+Label for comment 72: Political comment with sarcasm: Cameron: should have gone, there are conservatives there
+Label for comment 73: Political joke: conservatives
+Label for comment 74: Political comment: government just doesn't want to get involved because of agenda
+Label for comment 75: Political comment: Cameron: unclear
+Label for comment 76: Political comment: Cameron: all the time on tv, but hasn't visited? all mystique in politics gone
+Label for comment 77: Political comment: Cameron: all the time on tv, but hasn't visited? all mystique in politics gone approves
+Label for comment 78: Political joke: somerset not potential site for fracking
+Label for comment 79: Political joke: comment: there are sites considered around somerset
+Label for comment 80: Political joke: comment: additional fracking comment
+Label for comment 81: Personal spelling comment
+Label for comment 82: Fracking joke: Somerset
+Label for comment 83: Political joke: comment: additional fracking comment continues
+Label for comment 84: Political comment: floods: no one accountable; Charles: positive: well done
+Label for comment 85: Political comment: floods: EA people there but not seniors, doesn't trust them
+Label for comment 86: Political sarcasm: Owen: cut finding, wouldn't want to tell ppl
+Label for comment 87: Charles: positive; Cameron: negative; wouldn't even go there, where are the tory donors
+Label for comment 88: Political joke: Cameron: drown him
+Label for comment 89: Charles: negative: every penny stolen
+Label for comment 90: Political questions: Cameron & Lord Smith - even if they came, what would they do there
+Label for comment 91: Political answer: Cameron & Lord Smith - would send a message, add empathy
+Label for comment 92: Political answer: Cameron & Lord Smith - would send a message, add empathy approves
+Label for comment 93: Political answer: Cameron & Lord Smith - negative: useless
+Label for comment 94: Personal comment
+Label for comment 95: Political answer: Cameron & Lord Smith - would send a message, add empathy approves
+Label for comment 96: Political answer: Cameron & Lord Smith - demonstrate they know what they have to do as ministers
+Label for comment 97: Political answer: Cameron & Lord Smith - not going because decisions are easier to make when abstract
+Label for comment 98: Political sarcasm: Cameron: no weapons to exploit in Somerset
+Label for comment 99: Political sarcasm: continues with weapon elaboration
+Label for comment 100: Political: reason: won't come to visit because will be scrutinised and answers will be required after
+
+GROUPS
+
+GROUP: About Charles
+
+SUBGROUP: Positive
+Label for comment 11 [spinnysp]: Charles: positive: might be going where he does not belong, political issues with visit but glad he did it, easy target as can't respond
+Label for comment 13 [VSLVSL]: Charles: positive, not many republicans care about what he is doing, also he has chance to respond
+Label for comment 17 [obviousp]: Charles: positive: good to the people, he takes an interest rather than just nodding for the cameras
+Label for comment 39 [MrBluebe]: Charles: positive: you haven't done anything, so who is the prat?
+Label for comment 40 [Addicks1]: Charles: positive with a bit of negative: he is very rich due to inheritance but still nice he gives away a bit of money
+Label for comment 48 [BobJanov]: Charles: positive: Charles has devoted himself to rural affairs, one of the best royals
+Label for comment 54 [jessthec]: Charles: positive with a bit negative: government useless about time someone did something
+Label for comment 84 [00jebus]: Political comment: floods: no one accountable; Charles: positive: well done
+Label for comment 87 [Waterkan]: Charles: positive; Cameron: negative; wouldn't even go there, where are the tory donors
+
+SUBGROUP: Negative
+Label for comment 12 [Agir]: Charles: negative: sarcasm: 'his' land - why not give it away?
+Label for comment 14 [FrankLit]: Charles: negative: he is doing it for the publicity, negative comment about the royal
+Label for comment 15 [lierbag]: Charles: negative: sarcasm: has only given a bit of his money
+Label for comment 18 [Streatha]: Charles: negative: he is a parasite like the previous one, he is a joke
+Label for comment 20 [Grannies]: Charles: negative: ppl would still be okay without Charles on their lands
+Label for comment 21 [petertys]: Charles: negative: he is a joke approves
+Label for comment 36 [60boy]: Flood visit: negative: royals wouldn't make him feel better, Charles is a prat
+Label for comment 41 [Agir]: Charles: negative: if he cared he wouldn't be in the position of a prince
+Label for comment 42 [excathed]: Charles: negative: royal celebrity culture, hasn't done anything himself
+Label for comment 43 [60boy]: Charles: negative: we pay more to fly him to a trade fair
+Label for comment 44 [Hanzo76]: Charles: negative: has lots of charities in his name but doesn't have anything to do with them
+Label for comment 45 [Streatha]: Charles: negative: parasite - every penny he has is stolen
+Label for comment 46 [citizenJ]: Charles: negative: would be good to give away his stuff; comment: country ruled badly, the public services should be back, leaders are not doing their job right
+Label for comment 53 [Youthema]: Charles: negative: insult
+Label for comment 57 [hertsred]: Charles: negative: everything is for show, he is a corrupt little man
+Label for comment 58 [BobJanov]: Charles: negative: his opinions don't matter anyway
+Label for comment 55 [Streatha]: Charles: negative: parasite, every penny stolen
+Label for comment 60 [hertsred]: Charles: negative: his opinions don't matter anyway: opposes, he and mother sit in meetings with ministers
+Label for comment 89 [Streatha]: Charles: negative: every penny stolen
+
+SUBGROUP: Other comments
+Label for comment 49 [appalled]: Charles: comment: give money is the least he can do
+Label for comment 51 [SoundWay]: Comment: royals have too much money compared to the general person
+Label for comment 56 [citizenJ]: Charles: comment: give money is the least he can do
+Label for comment 62 [BobJanov]: Charles: comment: explaining more or blocking legislation, not sure if there is veto
+Label for comment 63 [hertsred]: Charles: comment: dodgy consulting about legal matters
+
+GROUP: Jokes About Cameron
+Label for comment 24 [YorkerBo]: Political joke: Cameron: hasn't visited because they are all plebs
+Label for comment 25 [LoopyTun]: Political joke: Cameron: continues about lib-dems
+Label for comment 26 [Gedl]: Political joke: Cameron: continues
+Label for comment 27 [nadreck]: Political joke: Cameron: is a gutless prick, only doing things for the camera
+Label for comment 28 [scrotgro]: Political joke: Cameron: scared someone will drown him
+Label for comment 29 [hertsred]: Political joke: Cameron: difference between plebs and peasants
+Label for comment 30 [YorkerBo]: Political joke: Cameron: thinks all the people not from the City are scum
+Label for comment 31 [Whetherb]: Political joke: Cameron: hasn't visited because can't walk on water, only on people
+Label for comment 32 [RonJB]: Political joke: Cameron: approves
+Label for comment 33 [StanDard]: Political joke: Cameron: continues
+Label for comment 34 [Whetherb]: Political joke: Cameron: approves
+Label for comment 35 [teaandch]: Political joke: Cameron: he is 'frit' = frightened
+Label for comment 88 [friarjoh]: Political joke: Cameron: drown him
+Label for comment 64 [MakeMPsO]: Political joke: Cameron: will be drowned
+Label for comment 70 [rollerco]: Political joke: Cameron: wet enough
+
+GROUP: About politics/politicians in general
+Label for comment 46 [citizenJ]: Charles: negative: would be good to give away his stuff; comment: country ruled badly, the public services should be back, leaders are not doing their job right
+Label for comment 47 [Bangorst]: Political comment: explanation
+Label for comment 65 [VSLVSL]: Political question: Owen secretary of state of Environment hasn't visited - why?
+Label for comment 66 [Maclie]: Political answer: Owen: used the telephone
+Label for comment 67 [citizenJ]: Political answer: Owen: he did once but got heckled
+Label for comment 69 [nocod]: Political answer: Owen: because is close to the worst politician picked for a duty
+Label for comment 71 [appalled]: Political comment: Charles and Cameron different status and responsibilities, Charles has it easier
+Label for comment 72 [MikeRich]: Political comment with sarcasm: Cameron: should have gone, there are conservatives there
+Label for comment 74 [schwitte]: Political comment: government just doesn't want to get involved because of agenda
+Label for comment 76 [MELSM]: Political comment: Cameron: all the time on tv, but hasn't visited? all mystique in politics gone
+Label for comment 77 [citizenJ]: Political comment: Cameron: all the time on tv, but hasn't visited? all mystique in politics gone approves
+Label for comment 84 [00jebus]: Political comment: floods: no one accountable; Charles: positive: well done
+Label for comment 85 [Fundamen]: Political comment: floods: EA people there but not seniors, doesn't trust them
+Label for comment 86 [VSLVSL]: Political sarcasm: Owen: cut finding, wouldn't want to tell ppl
+Label for comment 87 [Waterkan]: Charles: positive; Cameron: negative; wouldn't even go there, where are the tory donors
+Label for comment 90 [uncollec]: Political questions: Cameron & Lord Smith - even if they came, what would they do there
+Label for comment 91 [00jebus]: Political answer: Cameron & Lord Smith - would send a message, add empathy
+Label for comment 92 [MrBluebe]: Political answer: Cameron & Lord Smith - would send a message, add empathy approves
+Label for comment 93 [uncollec]: Political answer: Cameron & Lord Smith - negative: useless
+Label for comment 95 [citizenJ]: Political answer: Cameron & Lord Smith - would send a message, add empathy approves
+Label for comment 96 [citizenJ]: Political answer: Cameron & Lord Smith - demonstrate they know what they have to do as ministers
+Label for comment 97 [venusdew]: Political answer: Cameron & Lord Smith - not going because decisions are easier to make when abstract
+Label for comment 98 [Grimley]: Political sarcasm: Cameron: no weapons to exploit in Somerset
+Label for comment 99 [worksfor]: Political sarcasm: continues with weapon elaboration
+Label for comment 100 [TheBoyo]: Political: reason: won't come to visit because will be scrutinised and answers will be required after
+
+GROUP: About the flood/article
+
+SUBGROUP: About the measurements
+Label for comment 1 [Fundamen]: measurement: comment: article misleading 1:100 is a measurement of scale not time
+Label for comment 2 [jayant]: measurement: comment: measurement explained
+Label for comment 3 [Fundamen]: measurement: comment: Agrees
+Label for comment 4 [hertsred]: measurement: comment: Global warming: it will get worse with time
+Label for comment 5 [scrotgro]: measurement: discussion: Sarcasm: good timescale to justify large infrastructure
+Label for comment 6 [Fundamen]: measurement: comment: Article: misleading: explanation
+Label for comment 7 [bpowell5]: measurement: comment: Article: misleading: explanation
+Label for comment 8 [SinkingS]: measurement: comment:: why the system is good and workable
+Label for comment 9 [SinkingS]: measurement: discussion: opposing, does not show anything of the sort
+Label for comment 10 [hertsred]: measurement: discussion: requires explanation, there is data available
+
+SUBGROUP: About the flood visit
+Label for comment 36 [60boy]: Flood visit: negative: royals wouldn't make him feel better, Charles is a prat
+Label for comment 37 [00jebus]: Flood visit: negative: all the politicians would be unpleasant, drowning joke
+Label for comment 38 [Acamar]: Flood visit: positive: think commenter is being rude
+
+SUBGROUP: Flood suggestions
+Label for comment 59 [rollerco]: Flood: comment: state should be accountable for the state of rivers, there should be insurance
+Label for comment 61 [BobJanov]: Flood: comment: insurance not reliable if known flood area, wouldn't offer it to houses like that
+
+GROUP: miscellaneous
+Label for comment 16 [vikingbo]: Political joke: Duchess
+Label for comment 19 [Helen121]: Personal comment
+Label for comment 22 [Bangorst]: Historical comment: challenges comment on stolen lands
+Label for comment 23 [Ossie Bu]: Personal comment: discussion on previous sarcastic comment, personal accusation
+Label for comment 50 [Waterkan]: Personal comment about judging people and money
+Label for comment 52 [appalled]: Personal comment answer: he is a giver to charities and pays tax
+Label for comment 68 [citizenJ]: Clarifying a link in top comment.
+Label for comment 73 [smeg40]: Political joke: conservatives
+Label for comment 75 [buckler]: Political comment: Cameron: unclear
+Label for comment 78 [Willemm]: Political joke: somerset not potential site for fracking
+Label for comment 79 [MikeRich]: Political joke: comment: there are sites considered around somerset
+Label for comment 80 [lichking]: Political joke: comment: additional fracking comment
+Label for comment 81 [junks]: Personal spelling comment
+Label for comment 82 [Johnnybo]: Fracking joke: Somerset
+Label for comment 83 [Shaukit]: Political joke: comment: additional fracking comment continues
+Label for comment 94 [00jebus]: Personal comment
+
+UNCONSTRAINED SUMMARY
+
+Most of the commenters focused on expressing their opinions on the character and actions of Prince Charles. The negative views, which accused him of being a parasite and a thief from the taxpayer, prevailed. Others suggested he was not giving enough money and that he was only doing this for the publicity of it. 
+
+The positive commenters were fewer and focused on the fact that he did something and that he shows he cares about the people, they thought he did well by going to the flooded areas. Commenters also talked about the practices of royals to block legislation and the amount of wealth he has compared to his donation.
+
+There was a large number of jokes about David Cameron which showed a considerable disbelief in his power as a Prime Minister. Commenters suggested he was afraid to go there and that he was to be drowned.
+
+A lot of commenters engaged in political discussions on different topics which were related to the article. They questioned why the Secretary of the Environment did not visit and whether it was government agenda to stay clear of issues like that. They urged a return of public services and underlined that there seems to be nobody accountable for the floods. Upon the question of what Cameron's and Owen's visit would change, there were a number of answers which pointed out that it would send the right message to the public if they were there.
+
+Only a few commenters focused on the flood itself, suggesting insurance but then opposing to the idea as it would have been unsuccessful. There was a considerable amount of personal comments and some other political jokes. There were some geographical references to fracking, connecting Cameron's interest in fracking and his lack of initiative in the flooded areas in Somerset. The tone of most of the comments was sarcastic.
+
+CONSTRAINED SUMMARY
+
+Most of the commenters focused on Prince Charles. The negative views, which accused him of being a parasite and a thief, prevailed. Others suggested he was not giving enough money and that he was only doing this for the publicity. 
+
+The positive commenters were fewer and focused on the fact that he did something and that he shows he cares about the people. Commenters also talked about the practices of royals to block legislation and the amount of wealth he has compared to his donation.
+
+A large number of jokes about David Cameron which showed a considerable disbelief in his power as a Prime Minister. Commenters suggested he was afraid to visit and that he was to be drowned.
+
+A lot of commenters engaged in political discussions on different topics. They questioned why Owen did not visit and whether it was government agenda to stay clear of issues like that. They urged a return of public services and underlined there seems to be nobody accountable for the floods. Upon the question of what Cameron's and Owen's visit would change, there were a number of answers which pointed out that it would send the right message to the public.
+
+Only a few commenters focused on the flood itself. There was a considerable amount of personal comments and some other political jokes. There were references to fracking, connecting Cameron's interest in fracking and his lack of initiative in the flooded areas. The tone of most of the comments was sarcastic.
+
+BACK LINKING
+
+Most of the commenters focused on Prince Charles.
+(Sub)GroupNames:
+- GROUP: About Charles
+
+The negative views, which accused him of being a parasite and a thief, prevailed.
+(Sub)GroupNames:
+- SUBGROUP: Negative
+
+Others suggested he was not giving enough money and that he was only doing this for the publicity.
+(Sub)GroupNames:
+- SUBGROUP: Negative
+
+The positive commenters were fewer and focused on the fact that he did something and that he shows he cares about the people.
+(Sub)GroupNames:
+- SUBGROUP: Positive
+
+Commenters also talked about the practices of royals to block legislation and the amount of wealth he has compared to his donation.
+(Sub)GroupNames:
+- SUBGROUP: Other comments
+
+A large number of jokes about David Cameron which showed a considerable disbelief in his power as a Prime Minister.
+(Sub)GroupNames:
+- GROUP: Jokes About Cameron
+
+Commenters suggested he was afraid to visit and that he was to be drowned.
+(Sub)GroupNames:
+- GROUP: Jokes About Cameron
+
+A lot of commenters engaged in political discussions on different topics.
+(Sub)GroupNames:
+- GROUP: About politics/politicians in general
+
+They questioned why Owen did not visit and whether it was government agenda to stay clear of issues like that.
+(Sub)GroupNames:
+- GROUP: About politics/politicians in general
+
+They urged a return of public services and underlined there seems to be nobody accountable for the floods.
+(Sub)GroupNames:
+- GROUP: About politics/politicians in general
+
+Upon the question of what Cameron's and Owen's visit would change, there were a number of answers which pointed out that it would send the right message to the public.
+(Sub)GroupNames:
+- GROUP: About politics/politicians in general
+
+Only a few commenters focused on the flood itself.
+(Sub)GroupNames:
+- GROUP: About the flood/article
+
+There was a considerable amount of personal comments and some other political jokes.
+(Sub)GroupNames:
+- GROUP: miscellaneous
+
+There were references to fracking, connecting Cameron's interest in fracking and his lack of initiative in the flooded areas.
+(Sub)GroupNames:
+- GROUP: miscellaneous

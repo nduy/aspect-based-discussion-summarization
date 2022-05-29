@@ -1,0 +1,341 @@
+LABELS
+
+Label for comment 1: NR - ticket prices (implies too high)
+Label for comment 2: NR do not set fares / operate trains
+Label for comment 3: NR do not set fares / operate trains
+Label for comment 4: NR do not set fares - accepted
+Label for comment 5: non-topic; calm down
+Label for comment 6: Ticket prices set by government; NR not-for-profit; system not transparent
+Label for comment 7: non-topic; joke
+Label for comment 8: NR do not set fares
+Label for comment 9: NR do not set fares. TOCs set fares, under government restrictions.
+Label for comment 10: Privitised rail system 'demented;
+Label for comment 11: TOCs / NR separate.
+Label for comment 12: NR do not set fares / operate trains
+Label for comment 13: System bad, as it is fractured.
+Label for comment 14: non-topic; unclear
+Label for comment 15: Ticket prices - discourage travellers.
+Label for comment 16: Ticket prices more important than delays.
+Label for comment 17: non-topic; personal rudeness
+Label for comment 18: NR do not set fares
+Label for comment 19: NR taxpayer owned; Fines = fining ourselves; Nationalise and control prices.
+Label for comment 20: Agree should nationalise. TOCs also at fault. Planning poor.
+Label for comment 21: Should fine directors, but won't happen.
+Label for comment 22: NR taxpayer owned; Fares depend on level of state support. Fining ourselves ridiculous. System much busier than 20yrs ago.
+Label for comment 23: Agree should fine directors.
+Label for comment 24: Meaningless fining company receiving massive public subsidy.
+Label for comment 25: Fine aims to damage public service, as step towards privatisation.
+Label for comment 26: BR rationalisation in 60,70s due to Conservatives. 80s cuts by Conservatives to undermine BR, as step towards privatisation. Suspect some want privatisation now. Previous privatisation (Railtrack) bad.
+Label for comment 27: Previous privatisation (Railtrack) bad.
+Label for comment 28: Nationalisation bad (e.g. Stafford hospital, BBC/Savile).
+Label for comment 29: Stafford hospital claims scaremongering.
+Label for comment 30: Fining public body counter-productive. Individual in body unaffected. Doubts sense of regulatory system.
+Label for comment 31: non-topic: poster biased.
+Label for comment 32: non-topic: poster bias
+Label for comment 33: Fares up. NR don't contribute. TOCs pass costs to passengers.
+Label for comment 34: NR non-profit. Income ploughed back, or to government.
+Label for comment 35: NR "not for dividend" private company.
+Label for comment 36: NR "not for dividend" private company - but becoming public body soon.
+Label for comment 37: NR really public. So fine meaningless.
+Label for comment 38: Coalition view: private good, public bad.
+Label for comment 39: fine meaningless, as NR funded by public subsidy.
+Label for comment 40: ONS decided NR private-to-public change. Becoming public step towards privatisation.
+Label for comment 41: NR becoming public: step towards privatisation - supports view.
+Label for comment 42: Fining NR won't solve congestion.
+Label for comment 43: Maybe TOCs responsible for lateness.
+Label for comment 44: Trains can be delayed for track issues, not fault of TOCs.
+Label for comment 45: Don't fine NR for failings. Sack managers instead.
+Label for comment 46: NR managers lose bonuses for performance failings.
+Label for comment 47: Delays often due to train staff problems, so TOCs fault.
+Label for comment 48: Are TOCs punished for delays.
+Label for comment 49: Delays sometimes due to TOCs, but will face penalties.
+Label for comment 50: South-east commuter network disproportionately subsidised. SE greed also in other areas.
+Label for comment 51: Supports view that London/SE is better funded, in many areas.
+Label for comment 52: Questions view that London is better funded.
+Label for comment 53: Supports view that London is better funded.
+Label for comment 54: Funds redirected to SE commuters.
+Label for comment 55: Joke: rail directors and gravy train.
+Label for comment 56: NR directors' bonuses cut - disagrees with 'gravy train'
+Label for comment 57: NR directors' bonuses still large.
+Label for comment 58: NR directors' bonuses still large.
+Label for comment 59: NR directors' bonuses - unclear.
+Label for comment 60: NR directors' bonuses large - for failure.
+Label for comment 61: Fixing "speed restriction" areas: more important than WIFI. Executives still get bonuses, despite delays.
+Label for comment 62: Passengers should pay for better service, not other taxpayers.
+Label for comment 63: Counter-argument (passengers should pay) - tax payers subsidise roads.
+Label for comment 64: Roads funded by road tax, fuel taxes.
+Label for comment 65: Better rail, means fewer cars, so better road travel.
+Label for comment 66: Counter-argument (passengers should pay) - tax payers subsidise many things they may not use.
+Label for comment 67: Agrees - better rail, means fewer cars, so better road travel.
+Label for comment 68: Better rail has positive effects for other modes of travel.
+Label for comment 69: Road maintenance paid for from council tax.
+Label for comment 70: Supports arg that tax payers subsidise many things they may not use.
+Label for comment 71: Supports arg that tax payers subsidise many things they may not use.
+Label for comment 72: Road maintenance paid for from general and local taxes, not Road Tax.
+Label for comment 73: Road tax/fuel duty more than pays for road maintenance.
+Label for comment 74: TOCs don't care about poor performance, as regulation ineffective.
+Label for comment 75: non-topic; joke directed at other commenter
+Label for comment 76: Crazy system that when trains late, taxpayer pays fine (as fund NR)
+Label for comment 77: WIFI no use to passengers on crowded trains. Fine gives more taxpayer money to TOCs. TOCs are government supported pirates.
+Label for comment 78: WIFI on train allows passengers to work.
+Label for comment 79: Don't blaim the south-east: has busiest trains/stations.
+Label for comment 80: Should nationalise NR.
+Label for comment 81: Should nationalise whole system, not just NR.
+Label for comment 82: Agree should nationalise whole rail system - current system crazy.
+Label for comment 83: Joke: that NR boss defines "on time" as whatever chooses.
+Label for comment 84: JobCentre staff think it's okay for interviewee to turn up late.
+Label for comment 85: Joke: that other poster is Benito Mussolini.
+Label for comment 86: Discussion of thread-first poster's business, and hiring new staff.
+Label for comment 87: Discussion of thread-first poster's business, and hiring new staff.
+Label for comment 88: Discussion of thread-first poster's business, and hiring new staff.
+Label for comment 89: Discussion of thread-first poster's business, and hiring new staff.
+Label for comment 90: Weather to blame for many delays.
+Label for comment 91: Should cut senior manager pay for delays.
+Label for comment 92: Joke: newspaper slow to report this news.
+Label for comment 93: Breaking up BR, Railtrack problems, etc, has resulted in loss of staff with vital knowledge and experience.
+Label for comment 94: Sorry to hear about loss of staff with vital knowledge and experience.
+Label for comment 95: WIFI not needed, given 3G/4G.
+Label for comment 96: WIFI better than 3G/4G, allowing decent work.
+Label for comment 97: Limited signal availability for 3G/4G, so unreliable.
+Label for comment 98: joke
+Label for comment 99: Money from fine should be spent of better travel, not WIFI.
+Label for comment 100: Agree that money from fine should be spent of better travel, not WIFI.
+
+GROUPS
+
+GROUP: NR do not set fares / operate trains
+Label for comment 2 [Cynic24]: NR do not set fares / operate trains
+Label for comment 3 [Cynic24]: NR do not set fares / operate trains
+Label for comment 4 [lindalusardi]: NR do not set fares - accepted
+Label for comment 6 [Craig Axon]: Ticket prices set by government; NR not-for-profit; system not transparent
+Label for comment 8 [PrimitivePerson]: NR do not set fares
+Label for comment 9 [Cynic24]: NR do not set fares. TOCs set fares, under government restrictions.
+Label for comment 11 [C2H4n]: TOCs / NR separate.
+Label for comment 12 [Cynic24]: NR do not set fares / operate trains
+Label for comment 18 [Cynic24]: NR do not set fares
+
+GROUP: NR is non-profit / "not for dividend"
+Label for comment 6 [Craig Axon]: Ticket prices set by government; NR not-for-profit; system not transparent
+Label for comment 34 [Cynic24]: NR non-profit. Income ploughed back, or to government.
+Label for comment 35 [C2H4n]: NR "not for dividend" private company.
+Label for comment 36 [Cynic24]: NR "not for dividend" private company - but becoming public body soon.
+
+GROUP: fares too high
+Label for comment 1 [lindalusardi]: NR - ticket prices (implies too high)
+Label for comment 15 [Snapshackle]: Ticket prices - discourage travellers.
+Label for comment 16 [ChineseDazza]: Ticket prices more important than delays.
+Label for comment 22 [thomo21]: NR taxpayer owned; Fares depend on level of state support. Fining ourselves ridiculous. System much busier than 20yrs ago.
+Label for comment 33 [C2H4n]: Fares up. NR don't contribute. TOCs pass costs to passengers.
+
+GROUP: Fine meaningless, as company publicly owned. Fine directors instead??
+Label for comment 19 [KeithClan]: NR taxpayer owned; Fines = fining ourselves; Nationalise and control prices.
+Label for comment 22 [thomo21]: NR taxpayer owned; Fares depend on level of state support. Fining ourselves ridiculous. System much busier than 20yrs ago.
+Label for comment 24 [lierbag]: Meaningless fining company receiving massive public subsidy.
+Label for comment 30 [Bluestone]: Fining public body counter-productive. Individual in body unaffected. Doubts sense of regulatory system.
+Label for comment 37 [LabourStoleMyCash]: NR really public. So fine meaningless.
+Label for comment 39 [C2H4n]: fine meaningless, as NR funded by public subsidy.
+Label for comment 42 [Agir]: Fining NR won't solve congestion.
+Label for comment 76 [alanomaly]: Crazy system that when trains late, taxpayer pays fine (as fund NR)
+Label for comment 91 [jembal]: Should cut senior manager pay for delays.
+
+GROUP: who responsible for delays / poor service - TOCs or not?
+Label for comment 43 [MIAsin]: Maybe TOCs responsible for lateness.
+Label for comment 44 [FellOffMeChair]: Trains can be delayed for track issues, not fault of TOCs.
+Label for comment 47 [Snapshackle]: Delays often due to train staff problems, so TOCs fault.
+Label for comment 48 [MIAsin]: Are TOCs punished for delays.
+Label for comment 49 [FellOffMeChair]: Delays sometimes due to TOCs, but will face penalties.
+Label for comment 74 [strawwdog]: TOCs don't care about poor performance, as regulation ineffective.
+Label for comment 90 [gristsparger]: Weather to blame for many delays.
+
+GROUP: Fine/punish directors instead??
+Label for comment 21 [hosede88]: Should fine directors, but won't happen.
+Label for comment 23 [KallisteHill]: Agree should fine directors.
+Label for comment 45 [MIAsin]: Don't fine NR for failings. Sack managers instead.
+Label for comment 46 [ElChisellero]: NR managers lose bonuses for performance failings.
+Label for comment 55 [RousselBland]: Joke: rail directors and gravy train.
+Label for comment 56 [Skathi]: NR directors' bonuses cut - disagrees with 'gravy train'
+Label for comment 57 [UncleMartin]: NR directors' bonuses still large.
+Label for comment 58 [Streatham]: NR directors' bonuses still large.
+Label for comment 59 [ricmondo]: NR directors' bonuses - unclear.
+Label for comment 60 [fernandopartridge87]: NR directors' bonuses large - for failure.
+
+GROUP: privisation / nationalisation
+Label for comment 10 [Socialismaintdead]: Privitised rail system 'demented;
+Label for comment 13 [mathnawi]: System bad, as it is fractured.
+Label for comment 19 [KeithClan]: NR taxpayer owned; Fines = fining ourselves; Nationalise and control prices.
+Label for comment 20 [Deviant]: Agree should nationalise. TOCs also at fault. Planning poor.
+Label for comment 25 [Tim Eslip]: Fine aims to damage public service, as step towards privatisation.
+Label for comment 26 [Speenhamland]: BR rationalisation in 60,70s due to Conservatives. 80s cuts by Conservatives to undermine BR, as step towards privatisation. Suspect some want privatisation now. Previous privatisation (Railtrack) bad.
+Label for comment 27 [Cynic24]: Previous privatisation (Railtrack) bad.
+Label for comment 28 [printerink]: Nationalisation bad (e.g. Stafford hospital, BBC/Savile).
+Label for comment 29 [C2H4n]: Stafford hospital claims scaremongering.
+Label for comment 38 [C2H4n]: Coalition view: private good, public bad.
+Label for comment 40 [Cynic24]: ONS decided NR private-to-public change. Becoming public step towards privatisation.
+Label for comment 41 [C2H4n]: NR becoming public: step towards privatisation - supports view.
+Label for comment 80 [Innowaybored]: Should nationalise NR.
+Label for comment 81 [Independentview]: Should nationalise whole system, not just NR.
+Label for comment 82 [citizenJA]: Agree should nationalise whole rail system - current system crazy.
+Label for comment 93 [TRT1968]: Breaking up BR, Railtrack problems, etc, has resulted in loss of staff with vital knowledge and experience.
+Label for comment 94 [citizenJA]: Sorry to hear about loss of staff with vital knowledge and experience.
+
+GROUP: London / SE is "greedy" / gets preferential treatment
+Label for comment 50 [showmaster]: South-east commuter network disproportionately subsidised. SE greed also in other areas.
+Label for comment 51 [Cynic24]: Supports view that London/SE is better funded, in many areas.
+Label for comment 52 [ricmondo]: Questions view that London is better funded.
+Label for comment 53 [Cynic24]: Supports view that London is better funded.
+Label for comment 54 [Orthus]: Funds redirected to SE commuters.
+Label for comment 79 [ricmondo]: Don't blaim the south-east: has busiest trains/stations.
+
+GROUP: proper use of fine money / spending on WIFI justified?
+Label for comment 61 [dunless]: Fixing "speed restriction" areas: more important than WIFI. Executives still get bonuses, despite delays.
+Label for comment 77 [viper61]: WIFI no use to passengers on crowded trains. Fine gives more taxpayer money to TOCs. TOCs are government supported pirates.
+Label for comment 78 [bachemobile]: WIFI on train allows passengers to work.
+Label for comment 95 [MisterSinge]: WIFI not needed, given 3G/4G.
+Label for comment 96 [BetterandBetter]: WIFI better than 3G/4G, allowing decent work.
+Label for comment 97 [Danno81]: Limited signal availability for 3G/4G, so unreliable.
+Label for comment 99 [wombatman]: Money from fine should be spent of better travel, not WIFI.
+Label for comment 100 [citizenJA]: Agree that money from fine should be spent of better travel, not WIFI.
+
+GROUP: Who should pay for a better service: taxpayers vs. passengers
+Label for comment 62 [Peter Fisher]: Passengers should pay for better service, not other taxpayers.
+Label for comment 63 [Streatham]: Counter-argument (passengers should pay) - tax payers subsidise roads.
+Label for comment 64 [GrandMoffTanner]: Roads funded by road tax, fuel taxes.
+Label for comment 65 [ArmchairPundit]: Better rail, means fewer cars, so better road travel.
+Label for comment 66 [Trilobyte]: Counter-argument (passengers should pay) - tax payers subsidise many things they may not use.
+Label for comment 67 [GrandMoffTanner]: Agrees - better rail, means fewer cars, so better road travel.
+Label for comment 68 [ricmondo]: Better rail has positive effects for other modes of travel.
+Label for comment 69 [jackosullivan]: Road maintenance paid for from council tax.
+Label for comment 70 [Cynic24]: Supports arg that tax payers subsidise many things they may not use.
+Label for comment 71 [nocausetoaddopt]: Supports arg that tax payers subsidise many things they may not use.
+Label for comment 72 [SirRammickHobbs]: Road maintenance paid for from general and local taxes, not Road Tax.
+Label for comment 73 [GrandMoffTanner]: Road tax/fuel duty more than pays for road maintenance.
+
+GROUP: largely irrelevant strand about one poster's businesses
+Label for comment 83 [fry10d]: Joke: that NR boss defines "on time" as whatever chooses.
+Label for comment 84 [GeoffTr]: JobCentre staff think it's okay for interviewee to turn up late.
+Label for comment 85 [nocausetoaddopt]: Joke: that other poster is Benito Mussolini.
+Label for comment 86 [citizenJA]: Discussion of thread-first poster's business, and hiring new staff.
+Label for comment 87 [GeoffTr]: Discussion of thread-first poster's business, and hiring new staff.
+Label for comment 88 [citizenJA]: Discussion of thread-first poster's business, and hiring new staff.
+Label for comment 89 [GeoffTr]: Discussion of thread-first poster's business, and hiring new staff.
+
+GROUP: miscellaneous
+Label for comment 5 [martin77]: non-topic; calm down
+Label for comment 7 [Beeron]: non-topic; joke
+Label for comment 14 [simonsays247]: non-topic; unclear
+Label for comment 17 [Orthus]: non-topic; personal rudeness
+Label for comment 31 [Orthus]: non-topic: poster biased.
+Label for comment 32 [C2H4n]: non-topic: poster bias
+Label for comment 75 [CogitosDad]: non-topic; joke directed at other commenter
+Label for comment 92 [RalphTheStaller]: Joke: newspaper slow to report this news.
+Label for comment 98 [nocausetoaddopt]: joke
+
+UNCONSTRAINED SUMMARY
+
+Several commenters thought that fining Network Rail was either meaningless or counter-productive. They argued that it is really a fine on the taxpayer, as the company is publicly funded. 
+
+A number argued that it would make more sense to fine the directors instead, or even sack them. It was pointed out that their bonuses would be cut for poor performance, but several thought that their bonuses would still be too large. It was joked that the directors were on a "gravy train".
+
+There was some debate as to whether Network Rail should be held responsible for delays, or whether they might be the fault of the train operating companies or the weather. A joke was made suggesting that the train operating companies don't care about delays, as the regulatory system is ineffective.
+
+Many commenters discussed whether a nationalised or privatised rail system would be better. One commenter thought the current system is bad, as it is too fractured. Another thought the break up of British Rail had caused much damage. Several thought that the system should be nationalised. One argued against nationalisation. 
+
+Several comments expressed the view that fares are too high. There was discussion of whether the government or the train operating companies are responsible for fares. Several comments noted that Network Rail does not set fares, or operate trains.
+
+The status of Network Rail as a "not for dividend" private company was discussed in several comments. It was noted that it will soon become an officially public body. 
+
+Several comments addressed whether giving the fine money to the train companies to spend on improving wi-fi was a good use of the money. There was disagreement about whether the money would be better spent improving wi-fi or improving travel. 
+
+One commenter argued that an improved rail service should be paid for by passenger only, not by taxpayers. Several others disagreed, arguing that the rail system benefits everyone, even if they don't directly use it. There was also disagreement on whether the London and South-East network is better funded, at the expense of other areas.
+
+CONSTRAINED SUMMARY
+
+Several commenters thought fining Network Rail was meaningless or counter-productive, as it is publicly funded, making it really a fine on the taxpayer.
+
+A number argued the directors should be fined instead, or sacked. One commenter said directors' bonuses would be cut for poor performance, but several thought their bonuses would still be too large. A joke suggested the directors were on a "gravy train".
+
+Whether Network Rail was to blame for delays, rather than the train companies, was discussed. A joke suggested the train companies don't care about delays, as regulation is ineffective.
+
+Several commenters thought the current privatised rail system doesn't work and should be nationalised. One suggested that the break up of British Rail had caused great damage. One commenter argued against nationalisation.
+
+Several commenters thought that fares are too high. Whether the government or the train companies are responsible for fares was discussed. Several noted that Network Rail does not set fares.
+
+The status of Network Rail as a "not for dividend" private company was discussed in several comments. It was noted that it will soon become an officially public body. 
+
+Commenters disagreed on whether the fine money should be spent improving wi-fi or improving travel.
+
+One commenter thought passengers should pay for rail service improvements, not taxpayers. Several disagreed, arguing the system benefits everyone. There was disagreement on whether the London/South-East network is better funded, at the expense of other areas.
+
+BACK LINKING
+
+Several commenters thought fining Network Rail was meaningless or counter-productive, as it is publicly funded, making it really a fine on the taxpayer.
+(Sub)GroupNames:
+- GROUP: Fine meaningless, as company publicly owned. Fine directors instead??
+
+A number argued the directors should be fined instead, or sacked.
+(Sub)GroupNames:
+- GROUP: Fine/punish directors instead??
+
+One commenter said directors' bonuses would be cut for poor performance, but several thought their bonuses would still be too large.
+(Sub)GroupNames:
+- GROUP: Fine/punish directors instead??
+
+A joke suggested the directors were on a "gravy train".
+(Sub)GroupNames:
+- GROUP: Fine/punish directors instead??
+
+Whether Network Rail was to blame for delays, rather than the train companies, was discussed.
+(Sub)GroupNames:
+- GROUP: who responsible for delays / poor service - TOCs or not?
+
+A joke suggested the train companies don't care about delays, as regulation is ineffective.
+(Sub)GroupNames:
+- GROUP: who responsible for delays / poor service - TOCs or not?
+
+Several commenters thought the current privatised rail system doesn't work and should be nationalised.
+(Sub)GroupNames:
+- GROUP: privisation / nationalisation
+
+One suggested that the break up of British Rail had caused great damage.
+(Sub)GroupNames:
+- GROUP: privisation / nationalisation
+
+One commenter argued against nationalisation.
+(Sub)GroupNames:
+- GROUP: privisation / nationalisation
+
+Several commenters thought that fares are too high.
+(Sub)GroupNames:
+- GROUP: fares too high
+
+Whether the government or the train companies are responsible for fares was discussed.
+(Sub)GroupNames:
+- GROUP: NR do not set fares / operate trains
+
+Several noted that Network Rail does not set fares.
+(Sub)GroupNames:
+- GROUP: NR do not set fares / operate trains
+
+The status of Network Rail as a "not for dividend" private company was discussed in several comments. 
+(Sub)GroupNames:
+- GROUP: NR is non-profit / "not for dividend"
+
+It was noted that it will soon become an officially public body.
+(Sub)GroupNames:
+- GROUP: NR is non-profit / "not for dividend"
+
+Commenters disagreed on whether the fine money should be spent improving wi-fi or improving travel.
+(Sub)GroupNames:
+- GROUP: proper use of fine money / spending on WIFI justified?
+
+One commenter thought passengers should pay for rail service improvements, not taxpayers.
+(Sub)GroupNames:
+- GROUP: Who should pay for a better service: taxpayers vs. passengers
+
+Several disagreed, arguing the system benefits everyone.
+(Sub)GroupNames:
+- GROUP: Who should pay for a better service: taxpayers vs. passengers
+
+There was disagreement on whether the London/South-East network is better funded, at the expense of other areas.
+(Sub)GroupNames:
+- GROUP: London / SE is

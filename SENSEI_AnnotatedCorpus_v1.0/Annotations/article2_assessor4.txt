@@ -1,0 +1,318 @@
+LABELS
+
+Label for comment 1: The ship: should have been bigger to carry more aircraft.; Politics: the Conservatives will likely put this ship out of action because of budget cuts to the armed forces.
+Label for comment 2: Politics: we do not need more/bigger warships as this would mean increased warfare and worse international relations
+Label for comment 3: Politics: disagrees that only the Conservative Party would make cuts to the armed forces. Discusses the wrongdoings of the Labour Party.
+Label for comment 4: Politics: rebuts previous comment disparaging Labour by insinuating that the Conservatives tend to award contracts in a nepotistic manner
+Label for comment 5: Politics: defends original comment about bigger warships, states it is about defence, did not disagree with British involvement in Iraq
+Label for comment 6: Politics: states the Conservatives are responsible for armed forces cuts, not Labour. Conservative Party likes to save money but this is detrimental to the armed forces.
+Label for comment 7: Politics: states Labour's lack of planning meant that one of two ordered aircraft carriers will not be used, wrong planes also ordered
+Label for comment 8: Politics: reiterates how crippling Conservative cuts to armed forces are. Conservatives cut T45 destroyers from 8 to 6.
+Label for comment 9: Politics: no single party is to blame for the fact that only one of two ships
+Label for comment 10: Politics: strongly against armed forces cuts but understands it as there is little money to spare
+Label for comment 11: Politics: a larger ship would not be useful as there is not enough money to buy aircraft to fill it
+Label for comment 12: Politics: Conservative Party makes a lot of cuts to armed forces
+Label for comment 13: Politics: claims it was Bob Ainsworth [Labour MP] who cut T45 destroyers, not the Conservatives
+Label for comment 14: Politics: claims Conservatives state nothing can be afforded while lowering taxes for the rich but increasing them for the poor
+Label for comment 15: Politics: carriers were built in Scotland by Labour to garner votes. Wrong planes and an extra unnecessary carrier, Coalition left to sort it out. Any nepotist contracts would have been dealt by Labour. Other comments smear Conservatives who have brought back faith in public services and economy.
+Label for comment 16: Politics: Conservatives will spend 732 billion pounds this year, evidently things can be afforded
+Label for comment 17: Politics: accepts correction on T45 destroyers
+Label for comment 18: Politics: deficit and national debt still large [so nothing can be afforded]
+Label for comment 19: Politics: again, T45 cuts not due to Conservatives. Armed forces cuts not good, overseas aid budget should be cut. Labour more to blame than Conservatives.
+Label for comment 20: Politics: not a fan of the Conservatives
+Label for comment 21: Politics: Coalition should not have reneged on government contracts and commitments; this has had a negative impact on the government's reputation as a business partner
+Label for comment 22: The ship: unnecessary, ordered during Iraq war.; Politics: Coalition should have cancelled order, UK does not need large aircraft carrier
+Label for comment 23: Politics: armed forces in fact too big, UK has 4th largest military budget in world but does not face threats and will not unless it makes its own
+Label for comment 24: Politics: reiterates that Labour ordered ships for votes
+Label for comment 25: Irrelevant: accepts repeated correction of previous error
+Label for comment 26: Politics: disputes claims of building in Scotland for votes, real reason is because of specialised naval yards not available elsewhere
+Label for comment 27: Politics: ships not ordered for votes. Other western navies order carriers and landing ships because of terrorist threats, not a new occurrence
+Label for comment 28: Politics: disagrees that the Conservatives restored faith in public services, economy. Conservatives thought banks were too regulated, financial crash would have been worse if they had been in power
+Label for comment 29: Politics: aircraft carriers not to do with defence
+Label for comment 30: Politics: reiterates carriers not ordered for votes
+Label for comment 31: Politics: carriers a waste of money when a million people cannot afford food
+Label for comment 32: Politics: Conservative austerity for military, same in US. Neither Obama nor UK Conservatives care about working class
+Label for comment 33: Politics: Conservatives to blame for fiasco. Carriers could have been compatible with French/US naval aircraft and other cheaper services used but BaE blackmailed government, raised costs, made ship only compatible with BaE planes
+Label for comment 34: The ship: correcting previous comment about where ships were made
+Label for comment 35: Politics: Conservatives have not restored faith in public services, economy
+Label for comment 36: Politics: job creation good at least
+Label for comment 37: Politics: correction to 4th largest military spending - is 6th, also has 6th largest economy
+Label for comment 38: The ship: could be obsolete by the time aircraft built
+Label for comment 39: The ship: corrects previous comment, states how carriers are powered and why this means incompatibility with some aircraft
+Label for comment 40: Politics: disagrees that military is not needed, states reasons why
+Label for comment 41: Politics: Labour cut armed forces more than Conservatives and entered into two conflicts
+Label for comment 42: Politics: gives examples of Labour cuts to armed forces
+Label for comment 43: Politics: UK defence spending will be back in top 5 soon as other countries increased spending only temporarily
+Label for comment 44: The ship: disputes previous comment about how carriers are powered
+Label for comment 45: The ship: this carrier is a shared resource for the European Rapid Reaction Force
+Label for comment 46: Politics: money needed to stop cuts is in offshore account
+Label for comment 47: Politics: Conservatives are becoming a party who restore economy and faith in public services
+Label for comment 48: Politics: world is more chaotic and unstable in part because of recent UK military interventions
+Label for comment 49: Politics: UK might not be among biggest military spenders in a few years, other countries are spending more
+Label for comment 50: Politics: asks for evidence on nepotistic contracts
+Label for comment 51: Politics: Conservatives to blame for wasting money on wrong planes and wrong components for the carriers
+Label for comment 52: Politics: since Labour ordered the planes and carriers, they are at fault
+Label for comment 53: The ship: asks if carrier has any planes
+Label for comment 54: The ship: no planes, test flight program grounded
+Label for comment 55: The ship: no planes yet, those it can accommodate are not good, future-proof components too expensive to use; Politics: lots of money wasted, tax payers bear cost
+Label for comment 56: The ship: has planes fitted for it but not with it
+Label for comment 57: The ship: Harrier planes could have been used but Conservatives sold these to US Marine Corps
+Label for comment 58: The ship: Harriers obsolete by the time ships come into service, had to be sold off; Politics: Labour to blame for ordering 2 carriers instead of 1
+Label for comment 59: The ship: 2 ordered so at least 1 always available, French navy has only 1 and this causes problems
+Label for comment 60: Irrelevant: facetious comment on a date-related typo
+Label for comment 61: The ship: lots of harrier related deaths
+Label for comment 62: The ship: need at least two carriers
+Label for comment 63: The ship: drones will eventually be used instead, have advantages
+Label for comment 64: The ship: Sea Harriers would have been fine
+Label for comment 65: The ship: Harriers nice but problematic, expensive to run. May have proved cheaper than research and development expenditure on replacements though
+Label for comment 66: Irrelevant: expresses annoyance at facetious comment over typo
+Label for comment 67: The ship: previously managed with only one small carrier; Politics: extra carrier Labour bribe for votes, has cost tax payers
+Label for comment 68: Politics: support group for carrier will use many Navy resources, no defence against missiles
+Label for comment 69: The ship: Harriers obsolete soon but US bought and continue to use them
+Label for comment 70: The ship: Harriers crash often but do not cause many deaths. Alternative being used no more reliable, costs more
+Label for comment 71: The ship: BaE at fault for problems
+Label for comment 72: Irrelevant: explains reasons for mocking typo
+Label for comment 73: The ship: drones could be flown off other assault ships more cheaply and more effectively
+Label for comment 74: The ship: Harriers are in fact good and not expensive
+Label for comment 75: The ship: not easy to hit a carrier or even find it, so missiles will not hit carrier
+Label for comment 76: The ship: very much agrees with comment about BaE being at fault for problems
+Label for comment 77: The ship: facetiously suggests buying 6 or 8. Believes superfluous aircraft carriers are a waste of funds
+Label for comment 78: The ship: old planes should have been kept, drones are almost as big as carrier plans, large deck will be useful if carrier gets effective equipment
+Label for comment 79: The ship: should have installed catapults for choice of different planes, planes carrier was built for might not perform
+Label for comment 80: The ship: one plane has been bolted onto the bow for display purposes
+Label for comment 81: Politics: corrects cost of ship, states it is equivalent to six months of the UK aid budget
+Label for comment 82: The ship: test program grounded due to engines of planes catching fire
+Label for comment 83: Politics: Labour wasted money to get votes, Coalition left to sort out mess
+Label for comment 84: The ship: scrapped Harriers were more useful. US Marine Corps bought Harriers for spare parts
+Label for comment 85: The ship: Harriers not useful for air strikes and not operated from aircraft carriers
+Label for comment 86: The ship: Harriers complex, large fuel costs, large training costs. Both aircraft have positive and negative aspects
+Label for comment 87: Politics: political aspects saddening
+Label for comment 88: Politics: Harriers scrapped too early by Labour, done covertly so those without an interest in the military were unaware
+Label for comment 89: Naming ceremony: disputes article's claim that naming ceremony is a naval tradition dates back thousands of years
+Label for comment 90: Naming ceremony: ancient Greeks, Romans, Egyptians, even Babylonians all had rituals for new ships
+Label for comment 91: Naming ceremony: tradition has existed for at least 4500 years
+Label for comment 92: Naming ceremony: grateful for information provided
+Label for comment 93: Naming ceremony: mentions an element of previous naming ceremonies
+Label for comment 94: Naming ceremony: tradition over a thousand years old
+Label for comment 95: Irrelevant: comment on grammar
+Label for comment 96: Naming ceremony: named ship found from thousands of years ago
+Label for comment 97: Irrelevant: response to comment of grammar
+Label for comment 98: Politics: pleased to see this instead of cuts to armed forces
+Label for comment 99: Politics: money should have been spent on saving jobs in armed forces
+Label for comment 100: Politics: or money should have been spent on saving the lives of service people
+Label for comment 101: Politics: it's all money invested in the military
+Label for comment 102: Politics: no money to afford planes, which is somewhat lucky as planned planes catch fire
+
+GROUPS
+
+GROUP: Political debate concerning cuts to armed forces (encompassing comments on the state of the economy and public spending)
+
+SUBGROUP: Labour at fault
+Label for comment 3 [boulay]: Politics: disagrees that only the Conservative Party would make cuts to the armed forces. Discusses the wrongdoings of the Labour Party.
+Label for comment 13 [Daveinireland]: Politics: claims it was Bob Ainsworth [Labour MP] who cut T45 destroyers, not the Conservatives
+Label for comment 17 [blatantfraud]: Politics: accepts correction on T45 destroyers
+Label for comment 19 [TVGuide]: Politics: again, T45 cuts not due to Conservatives. Armed forces cuts not good, overseas aid budget should be cut. Labour more to blame than Conservatives.
+Label for comment 41 [shortcake]: Politics: Labour cut armed forces more than Conservatives and entered into two conflicts
+Label for comment 42 [shortcake]: Politics: gives examples of Labour cuts to armed forces
+Label for comment 47 [petrolheadpaul]: Politics: Conservatives are becoming a party who restore economy and faith in public services
+Label for comment 88 [shortcake]: Politics: Harriers scrapped too early by Labour, done covertly so those without an interest in the military were unaware
+
+SUBGROUP: Conservatives at fault
+Label for comment 4 [smifee]: Politics: rebuts previous comment disparaging Labour by insinuating that the Conservatives tend to award contracts in a nepotistic manner
+Label for comment 6 [blatantfraud]: Politics: states the Conservatives are responsible for armed forces cuts, not Labour. Conservative Party likes to save money but this is detrimental to the armed forces.
+Label for comment 8 [blatantfraud]: Politics: reiterates how crippling Conservative cuts to armed forces are. Conservatives cut T45 destroyers from 8 to 6.
+Label for comment 12 [blatantfraud]: Politics: Conservative Party makes a lot of cuts to armed forces
+Label for comment 14 [blatantfraud]: Politics: claims Conservatives state nothing can be afforded while lowering taxes for the rich but increasing them for the poor
+Label for comment 16 [Daveinireland]: Politics: Conservatives will spend 732 billion pounds this year, evidently things can be afforded
+Label for comment 18 [gilesjuk]: Politics: deficit and national debt still large [so nothing can be afforded]
+Label for comment 20 [nondescrpt]: Politics: not a fan of the Conservatives
+Label for comment 28 [blatantfraud]: Politics: disagrees that the Conservatives restored faith in public services, economy. Conservatives thought banks were too regulated, financial crash would have been worse if they had been in power
+Label for comment 35 [Giffard]: Politics: Conservatives have not restored faith in public services, economy
+Label for comment 1 [blatantfraud]: The ship: should have been bigger to carry more aircraft.; Politics: the Conservatives will likely put this ship out of action because of budget cuts to the armed forces.
+
+SUBGROUP: neutral or general comments
+Label for comment 10 [boulay]: Politics: strongly against armed forces cuts but understands it as there is little money to spare
+Label for comment 11 [Daveinireland]: Politics: a larger ship would not be useful as there is not enough money to buy aircraft to fill it
+Label for comment 46 [DevoDog]: Politics: money needed to stop cuts is in offshore account
+Label for comment 50 [liamrel]: Politics: asks for evidence on nepotistic contracts
+Label for comment 98 [grumpylion]: Politics: pleased to see this instead of cuts to armed forces
+Label for comment 102 [Cynical007]: Politics: no money to afford planes, which is somewhat lucky as planned planes catch fire
+
+GROUP: Political debate on problems concerning ordering and building of aircraft carriers
+
+SUBGROUP: Labour at fault
+Label for comment 7 [TVGuide]: Politics: states Labour's lack of planning meant that one of two ordered aircraft carriers will not be used, wrong planes also ordered
+Label for comment 15 [Ellis000]: Politics: carriers were built in Scotland by Labour to garner votes. Wrong planes and an extra unnecessary carrier, Coalition left to sort it out. Any nepotistic contracts would have been dealt by Labour. Other comments smear Conservatives who have brought back faith in public services and economy.
+Label for comment 24 [Oldgroaner]: Politics: reiterates that Labour ordered ships for votes
+Label for comment 52 [TVGuide]: Politics: since Labour ordered the planes and carriers, they are at fault
+Label for comment 83 [Ellis000]: Politics: Labour wasted money to get votes, Coalition left to sort out mess
+Label for comment 58 [Ellis000]: The ship: Harriers obsolete by the time ships come into service, had to be sold off; Politics: Labour to blame for ordering 2 carriers instead of 1
+Label for comment 67 [Ellis000]: The ship: previously managed with only one small carrier; Politics: extra carrier Labour bribe for votes, has cost tax payers
+Label for comment 77 [Frugal_Dougal]: The ship: facetiously suggests buying 6 or 8. Believes superfluous aircraft carriers are a waste of funds
+
+SUBGROUP: Conservatives at fault
+Label for comment 21 [smifee]: Politics: Coalition should not have reneged on government contracts and commitments; this has had a negative impact on the government's reputation as a business partner
+Label for comment 33 [crystaltips2]: Politics: Conservatives to blame for fiasco. Carriers could have been compatible with French/US naval aircraft and other cheaper services used but BaE blackmailed government, raised costs, made ship only compatible with BaE planes
+Label for comment 51 [hattyfarbuckle]: Politics: Conservatives to blame for wasting money on wrong planes and wrong components for the carriers
+Label for comment 57 [blatantfraud]: The ship: Harrier planes could have been used but Conservatives sold these to US Marine Corps
+
+SUBGROUP: Neutral or general comments
+Label for comment 9 [Eisenhorn]: Politics: no single party is to blame for the fact that only one of two ships
+Label for comment 26 [theonionmurders]: Politics: disputes claims of building in Scotland for votes, real reason is because of specialised naval yards not available elsewhere
+Label for comment 27 [blatantfraud]: Politics: ships not ordered for votes. Other western navies order carriers and landing ships because of terrorist threats, not a new occurrence
+Label for comment 30 [blatantfraud]: Politics: reiterates carriers not ordered for votes
+Label for comment 87 [Polymorph]: Politics: political aspects saddening
+
+GROUP: Debate over military, British war involvement, necessity of aircraft carrier
+
+SUBGROUP: Leaning anti-war 
+Label for comment 2 [UncleBacterial]: Politics: we do not need more/bigger warships as this would mean increased warfare and worse international relations
+Label for comment 23 [kvlx387]: Politics: armed forces in fact too big, UK has 4th largest military budget in world but does not face threats and will not unless it makes its own
+Label for comment 29 [Swedinburgh]: Politics: aircraft carriers not to do with defence
+Label for comment 31 [SB Lancaster]: Politics: carriers a waste of money when a million people cannot afford food
+Label for comment 32 [LloydHart]: Politics: Conservative austerity for military, same in US. Neither Obama nor UK Conservatives care about working class
+Label for comment 48 [kvlx387]: Politics: world is more chaotic and unstable in part because of recent UK military interventions
+Label for comment 22 [kvlx387]: The ship: unnecessary, ordered during Iraq war.; Politics: Coalition should have cancelled order, UK does not need large aircraft carrier
+
+SUBGROUP: Leaning pro-war
+Label for comment 5 [blatantfraud]: Politics: defends original comment about bigger warships, states it is about defence, did not disagree with British involvement in Iraq
+Label for comment 36 [theparson]: Politics: job creation good at least
+Label for comment 40 [jasonbirder]: Politics: disagrees that military is not needed, states reasons why
+Label for comment 62 [fevriul]: The ship: need at least two carriers
+
+SUBGROUP: Neutral or general
+Label for comment 37 [Bogoas81]: Politics: correction to 4th largest military spending - is 6th, also has 6th largest economy
+Label for comment 43 [Swedinburgh]: Politics: UK defence spending will be back in top 5 soon as other countries increased spending only temporarily
+Label for comment 49 [Bogoas81]: Politics: UK might not be among biggest military spenders in a few years, other countries are spending more
+Label for comment 81 [maico]: Politics: corrects cost of ship, states it is equivalent to six months of the UK aid budget
+Label for comment 99 [Charaku]: Politics: money should have been spent on saving jobs in armed forces
+Label for comment 100 [SB Lancaster]: Politics: or money should have been spent on saving the lives of service people
+Label for comment 101 [Maclie]: Politics: it's all money invested in the military
+
+GROUP: comments on the aircraft carrier
+
+SUBGROUP: Aircraft carrier not up to scratch/should have been designed differently
+Label for comment 38 [jontywanderer]: The ship: could be obsolete by the time aircraft built
+Label for comment 44 [crystaltips2]: The ship: disputes previous comment about how carriers are powered
+Label for comment 53 [shoutyboy]: The ship: asks if carrier has any planes
+Label for comment 54 [pansapians]: The ship: no planes, test flight program grounded
+Label for comment 55 [Polymorph]: The ship: no planes yet, those it can accommodate are not good, future-proof components too expensive to use; Politics: lots of money wasted, tax payers bear cost
+Label for comment 56 [RobinGoodfellow]: The ship: has planes fitted for it but not with it
+Label for comment 64 [DrCockfingers]: The ship: Sea Harriers would have been fine
+Label for comment 68 [Oldgroaner]: The ship: support group for carrier will use many Navy resources, no defence against missiles
+Label for comment 69 [theonionmurders]: The ship: Harriers obsolete soon but US bought and continue to use them
+Label for comment 70 [jackthekipper]: The ship: Harriers crash often but do not cause many deaths. Alternative being used no more reliable, costs more
+Label for comment 71 [crystaltips2]: The ship: BaE at fault for problems
+Label for comment 73 [jackthekipper]: The ship: drones could be flown off other assault ships more cheaply and more effectively
+Label for comment 74 [fevriul]: The ship: Harriers are in fact good and not expensive
+Label for comment 76 [fevriul]: The ship: very much agrees with comment about BaE being at fault for problems
+Label for comment 79 [bellebrise]: The ship: should have installed catapults for choice of different planes, planes carrier was built for might not perform
+Label for comment 82 [Cynical007]: The ship: test program grounded due to engines of planes catching fire
+Label for comment 84 [shortcake]: The ship: scrapped Harriers were more useful. US Marine Corps bought Harriers for spare parts
+
+SUBGROUP: Aircraft carrier will be sufficient and appropriate, fine as is
+Label for comment 39 [Abimelech]: The ship: corrects previous comment, states how carriers are powered and why this means incompatibility with some aircraft
+Label for comment 59 [blatantfraud]: The ship: 2 ordered so at least 1 always available, French navy has only 1 and this causes problems
+Label for comment 61 [gilesjuk]: The ship: lots of harrier related deaths
+Label for comment 63 [matthewpringle]: The ship: drones will eventually be used instead, have advantages
+Label for comment 65 [Polymorph]: The ship: Harriers nice but problematic, expensive to run. May have proved cheaper than research and development expenditure on replacements though
+Label for comment 75 [fevriul]: The ship: not easy to hit a carrier or even find it, so missiles will not hit carrier
+Label for comment 78 [matthewpringle]: The ship: old planes should have been kept, drones are almost as big as carrier plans, large deck will be useful if carrier gets effective equipment
+Label for comment 85 [jasonbirder]: The ship: Harriers not useful for air strikes and not operated from aircraft carriers
+Label for comment 86 [Polymorph]: The ship: Harriers complex, large fuel costs, large training costs. Both aircraft have positive and negative aspects
+
+SUBGROUP: Miscellaneous
+Label for comment 34 [Williamballoch]: The ship: correcting previous comment about where ships were made
+Label for comment 45 [alanww]: The ship: this carrier is a shared resource for the European Rapid Reaction Force
+Label for comment 80 [BStroszek]: The ship: one plane has been bolted onto the bow for display purposes
+
+GROUP: History of naming ceremonies as a naval tradition
+Label for comment 89 [eoinomahony]: Naming ceremony: disputes article's claim that naming ceremony is a naval tradition dates back thousands of years
+Label for comment 90 [mutie]: Naming ceremony: ancient Greeks, Romans, Egyptians, even Babylonians all had rituals for new ships
+Label for comment 91 [Alphagamma]: Naming ceremony: tradition has existed for at least 4500 years
+Label for comment 92 [morph]: Naming ceremony: grateful for information provided
+Label for comment 93 [blatantfraud]: Naming ceremony: mentions an element of previous naming ceremonies
+Label for comment 94 [DonEvans]: Naming ceremony: tradition over a thousand years old
+Label for comment 96 [JerryColebyWilliams]: Naming ceremony: named ship found from thousands of years ago
+
+GROUP: miscellaneous/irrelevant comments
+Label for comment 25 [blatantfraud]: Irrelevant: accepts repeated correction of previous error
+Label for comment 60 [jackthekipper]: Irrelevant: facetious comment on a date-related typo
+Label for comment 66 [Ellis000]: Irrelevant: expresses annoyance at facetious comment over typo
+Label for comment 72 [jackthekipper]: Irrelevant: explains reasons for mocking typo
+Label for comment 95 [zitan]: Irrelevant: comment on grammar
+Label for comment 97 [eoinomahony]: Irrelevant: response to comment on grammar
+
+UNCONSTRAINED SUMMARY
+
+A number of commenters discussed the perceived failures of the aircraft carrier in question, with most relating this topic to the two main political parties, Labour and the Conservatives.
+
+Several commenters mentioned issues that had arisen during the ordering and building of the aircraft carrier, with a few commenters claiming Labour had decided to commission two aircraft carriers to garner votes while others regarded the Conservatives as more to blame. A few comments noted problems without ascribing blame to a party.
+
+A substantial number of comments branched away from the aircraft carrier itself to discuss cuts to the armed forces 
+more generally. Opinion was divided on whether Labour or the Conservatives were more to blame for the cuts, with several commenters arguing for each side. Some commenters mentioned lack of money for the armed forces without an overtly political bent.
+
+Some comments debated the need for the aircraft carrier, with a number of comments branching out into a discussion of the military and British involvement in foreign conflicts, with more comments leaning anti-war than pro.
+
+There was also discussion about the ship itself and whether or not it could have been improved, with many comments on the intracacies of aircraft carrier design with regard to suitability for defence. More than half of these comments were critical of the design and felt elements of the design were either unsuitable or not ideal.
+
+A few comments discussed the tradition of naming ships, with some comments providing historical insight into the long practice.
+
+There were also a small number of comments on grammar and typos.
+
+CONSTRAINED SUMMARY
+
+Several commenters mentioned issues that had arisen during the ordering and building of the aircraft carrier, with a few commenters claiming Labour had decided to commission two aircraft carriers to garner votes while others regarded the Conservatives as more to blame. A few comments noted problems without ascribing blame to a particular party.
+
+A substantial number of comments branched away from the aircraft carrier in question to discuss cuts to the armed forces more generally. Opinion was divided on whether Labour or the Conservatives were more to blame for the cuts, with several commenters arguing for each side. Some comments mentioned lack of money for the armed forces without an overtly political bent.
+
+Some comments debated the need for the aircraft carrier, with a number of comments branching out into a discussion of the military and British involvement in foreign conflicts, a slight majority leaning anti-war.
+
+There was also discussion about whether the ship could have been improved, with many comments on suitability for defence. More than half of these comments were critical of the design, arguing that various elements were either unsuitable or not ideal.
+
+A few comments discussed the tradition of naming ships, with some comments mentioning historical evidence that ships were named millennia ago.
+
+Outliers mentioned grammar and typos.
+
+BACK LINKING
+
+Outliers mentioned grammar and typos.
+(Sub)GroupNames:
+- GROUP: miscellaneous/irrelevant comments
+
+A few comments noted problems without ascribing blame to a particular party.
+(Sub)GroupNames:
+- SUBGROUP: Neutral or general comments
+
+Several commenters mentioned issues that had arisen during the ordering and building of the aircraft carrier, with a few commenters claiming Labour had decided to commission two aircraft carriers to garner votes while others regarded the Conservatives as more to blame.
+(Sub)GroupNames:
+- GROUP: Political debate on problems concerning ordering and building of aircraft carriers
+
+A substantial number of comments branched away from the aircraft carrier in question to discuss cuts to the armed forces more generally.
+(Sub)GroupNames:
+- GROUP: Political debate concerning cuts to armed forces (encompassing comments on the state of the economy and public spending)
+
+Opinion was divided on whether Labour or the Conservatives were more to blame for the cuts, with several commenters arguing for each side.
+(Sub)GroupNames:
+- SUBGROUP: Labour at fault
+- SUBGROUP: Conservatives at fault
+
+Some comments mentioned lack of money for the armed forces without an overtly political bent.
+(Sub)GroupNames:
+- SUBGROUP: neutral or general comments
+
+Some comments debated the need for the aircraft carrier, with a number of comments branching out into a discussion of the military and British involvement in foreign conflicts, a slight majority leaning anti-war.
+(Sub)GroupNames:
+- GROUP: Debate over military, British war involvement, necessity of aircraft carrier
+
+There was also discussion about whether the ship could have been improved, with many comments on suitability for defence.
+(Sub)GroupNames:
+- GROUP: comments on the aircraft carrier
+
+More than half of these comments were critical of the design, arguing that various elements were either unsuitable or not ideal.
+(Sub)GroupNames:
+- SUBGROUP: Aircraft carrier not up to scratch/should have been designed differently
+
+A few comments discussed the tradition of naming ships, with some comments mentioning historical evidence that ships were named millennia ago.
+(Sub)GroupNames:
+- GROUP: History of naming ceremonies as a naval tradition
